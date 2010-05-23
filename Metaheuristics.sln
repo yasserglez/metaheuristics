@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "QAP", "QAP", "{D0245E5D-CF89-49BE-95BE-542DAD6C6E97}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2SP", "2SP", "{E5ABD8C0-F4E3-4143-8D4D-3CED2030F719}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TSP", "TSP", "{AED07241-7E5D-46FD-9134-09464D9D1B15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UMDA4TSP", "TSP\UMDA4TSP\UMDA4TSP.csproj", "{28D86552-5EA6-4F82-8812-3BBA2FEA15D7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SPP", "SPP", "{0E37AA99-7729-4FD3-A15F-0882A26EE0FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{4630C8D3-67C9-443D-89C4-F11A2CCEC50C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{28D86552-5EA6-4F82-8812-3BBA2FEA15D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28D86552-5EA6-4F82-8812-3BBA2FEA15D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28D86552-5EA6-4F82-8812-3BBA2FEA15D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28D86552-5EA6-4F82-8812-3BBA2FEA15D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4630C8D3-67C9-443D-89C4-F11A2CCEC50C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4630C8D3-67C9-443D-89C4-F11A2CCEC50C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4630C8D3-67C9-443D-89C4-F11A2CCEC50C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4630C8D3-67C9-443D-89C4-F11A2CCEC50C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{28D86552-5EA6-4F82-8812-3BBA2FEA15D7} = {AED07241-7E5D-46FD-9134-09464D9D1B15}
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Common\Common.csproj
+	EndGlobalSection
+EndGlobal
