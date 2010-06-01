@@ -35,6 +35,9 @@
   <ItemGroup>
     <Compile Include="AssemblyInfo.cs" />
     <Compile Include="Statistics.cs" />
+    <Compile Include="Instances.cs" />
+    <Compile Include="Solutions.cs" />
+    <Compile Include="BinaryUMDA.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
