@@ -79,6 +79,6 @@ namespace Metaheuristics
 		public static double StandardDeviation(ICollection<double> sample, double mean)
 		{
 			return Math.Sqrt(Variance(sample, mean));
-		}		
+		}
 	}
 }

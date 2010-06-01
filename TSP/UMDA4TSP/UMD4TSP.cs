@@ -14,6 +14,16 @@ namespace Metaheuristics
 		
 		public static List<double> Start(string fileInput, string fileOutput, int timeLimit)
 		{
+			TSPInstance instance = new TSPInstance(fileInput);
+			return new List<double>();
+		}
+	}
+	
+	class DiscreteUMDA4TSP : DiscreteUMDA
+	{
+		protected override double Fitness(int[] individual)
+		{
+			return 0;
 		}
 	}
 }
