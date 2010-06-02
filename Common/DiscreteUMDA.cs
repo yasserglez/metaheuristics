@@ -6,70 +6,96 @@ namespace Metaheuristics
 {
 	public abstract class DiscreteUMDA
 	{
+		public int PopulationSize { get; protected set; }
+		public double TruncationFactor {get; protected set; }
+		public int[] LowerBounds { get; protected set; }
+		public int[] UpperBounds { get; protected set; }
+		
 		public int[] BestIndividual { get; protected set; }
+		public double BestFitness { get; protected set; }
 		
-		private double bestIndividualFitness;
+		public DiscreteUMDA(int popSize, double truncFactor, int[] lowerBounds, int[] upperBounds)
+		{
+			PopulationSize = popSize;
+			TruncationFactor = truncFactor;
+			LowerBounds = lowerBounds;
+			UpperBounds = upperBounds;
+			BestIndividual = null;
+			BestFitness = 0;
+		}
 		
+		// Evaluate an individual of the population.
 		protected abstract double Fitness(int[] individual);
 		
-		public List<double> Start(int dimension, int timeLimit, int popSize, double truncFactor)
+		// Repairing method to handle constraints.
+		protected virtual void Repair(int[][] population)
 		{
-			int currentTime;
-			int[][] population = new int[popSize][];
-			int selectedSize = (int) Math.Round(popSize * truncFactor);
-			double[] model = new double[dimension];
-			double[] evaluation = new double[popSize];
+		}
+		
+		public List<double> Run(int timeLimit)
+		{	
+			int startTime = Environment.TickCount;
+			int numVariables = LowerBounds.Length;
+			int selectedSize = (int) Math.Round(TruncationFactor * PopulationSize);
 			List<double> solutions = new List<double>();
-			
-			currentTime = 0;
+			int[][] population = new int[PopulationSize][];
+			double[] evaluation = new double[PopulationSize];
+			double[][] model = new double[numVariables][];
+			for (int i = 0; i < numVariables; i++) {
+				model[i] = new double[(UpperBounds[i] - LowerBounds[i]) + 1];
+			}
 			
 			// Generate the initial random population.
-			for (int k = 0; k < popSize; k++) {
-				int[] individual = new int[dimension];
-				for (int i = 0; i < dimension; i++) {
-					individual[i] = Statistics.RandomDiscreteUniform(0, 1);
+			for (int k = 0; k < PopulationSize; k++) {
+				population[k] = new int[numVariables];
+				for (int i = 0; i < numVariables; i++) {
+					population[k][i] = Statistics.RandomDiscreteUniform(LowerBounds[i], UpperBounds[i]);
 				}
-				population[k] = individual;
 			}
 
 			BestIndividual = null;
-			while (currentTime < timeLimit) {
+			while (Environment.TickCount - startTime < timeLimit) {
+				// Handle constraints using a repairing method.
+				Repair(population);	
+				
 				// Evaluate the population.
-				for (int k = 0; k < popSize; k++) {
+				for (int k = 0; k < PopulationSize; k++) {
 					evaluation[k] = Fitness(population[k]);
 				}
-				
+
 				// Apply the selection method.
 				Array.Sort(evaluation, population);
-				if (BestIndividual == null || bestIndividualFitness < evaluation[0]) {
+				if (BestIndividual == null || evaluation[0] < BestFitness) {
 					BestIndividual = population[0];
-					bestIndividualFitness = evaluation[0];
-					solutions.Add(evaluation[0]);
+					BestFitness = evaluation[0];
+					solutions.Add(BestFitness);
 				}
-				
-				// Learn the probabilistic model from the selected population
-				// (Probability of xi = 1 for all 0 <= i <= dimension - 1).
-				for (int i = 0; i < dimension; i++) {
-					double numOnes = 0;
+
+				// Learn the probabilistic model from the selected population.
+				for (int i = 0; i < numVariables; i++) {
+					// Set the counters to zero.
+					for (int k = 0; k <= UpperBounds[i] - LowerBounds[i]; k++) {
+						model[i][k] = 0;
+					}
+					// Count the values of the variable.
 					for (int k = 0; k < selectedSize; k++) {
-						numOnes += population[k][i];
+						model[i][population[k][i] - LowerBounds[i]] += 1;
 					}
-					model[i] = numOnes / selectedSize;
+					// Calculate the frequency of each value of the variable.
+					for (int k = 0; k <= UpperBounds[i] - LowerBounds[i]; k++) {
+						model[i][k] /= selectedSize;
+					}
 				}
-				
+
 				// Sample the population for the next generation.
-				for (int k = 0; k < popSize; k++) {
-					int[] individual = new int[dimension];
-					for (int i = 0; i < dimension; i++) {
-						individual[i] = Statistics.RandomUniform() <= model[i] ? 1 : 0;
+				for (int k = 0; k < PopulationSize; k++) {
+					population[k] = new int[numVariables];
+					for (int i = 0; i < numVariables; i++) {
+						population[k][i] = LowerBounds[i] + Statistics.SampleRoulette(model[i]);
 					}
-					population[k] = individual;
 				}
-				
-				// Prepare for the next generation.
-				break;
 			}
-			
+
 			return solutions;
 		}
 	}

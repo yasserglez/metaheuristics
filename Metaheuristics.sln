@@ -38,6 +38,6 @@ Global
 		{28D86552-5EA6-4F82-8812-3BBA2FEA15D7} = {AED07241-7E5D-46FD-9134-09464D9D1B15}
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Common\Common.csproj
+		StartupItem = Test\Test.csproj
 	EndGlobalSection
 EndGlobal

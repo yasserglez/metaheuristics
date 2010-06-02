@@ -7,18 +7,9 @@ namespace Test
 	{
 		public static void Main(string[] args)
 		{
-			string fileInput, fileOutput;
-			
-			if (args.Length == 2) {
-				// Files from command line arguments.
-				fileInput = args[0];
-				fileOutput = args[1];
-			}
-			else {
-				// Hardcoded files. Util for debugging?
-				fileInput = "";
-				fileOutput = "";
-			}
+			string fileInput = "../../../TSP/Instances/att48.in";
+			string fileOutput = "../../../TSP/Instances/att48.out";
+			UMD4TSP.Start(fileInput, fileOutput, 10000);
 		}
 	}
 }

@@ -19,9 +19,9 @@ namespace Metaheuristics
 		{
 			double cost = 0;
 			for (int i = 1; i < Path.Length; i++) {
-				cost += Instance.Costs[i-1,i];
+				cost += Instance.Costs[Path[i-1],Path[i]];
 			}
-			cost += Instance.Costs[Path.Length-1,0];
+			cost += Instance.Costs[Path[Path.Length-1],Path[0]];
 			
 			using (StreamWriter writer = File.CreateText(file)) {
 				writer.WriteLine(cost);

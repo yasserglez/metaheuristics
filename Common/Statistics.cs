@@ -80,5 +80,22 @@ namespace Metaheuristics
 		{
 			return Math.Sqrt(Variance(sample, mean));
 		}
+		
+		public static int SampleRoulette(double[] probabilities)
+		{
+			double accumulative = 0;
+			int selected = probabilities.Length - 1;
+			double u = RandomUniform();
+
+			for (int i = 0; i < probabilities.Length; i++) {
+				accumulative += probabilities[i];
+				if (u <= accumulative) {
+					selected = i;
+					break;
+				}
+			}
+
+			return selected;
+		}
 	}
 }
