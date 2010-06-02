@@ -8,9 +8,9 @@ namespace Metaheuristics
 	{
 		public static string Algoritmo = "UMDA4TSP";
 		
-		public static string[] Integrantes = new string[] { "Ariel Hernández", "Yasser González" };
+		public static string[] Integrantes = Team.Members;
 		
-		public static string Nombre_equipo = "";
+		public static string Nombre_equipo = Team.Name;
 		
 		public static List<double> Start(string fileInput, string fileOutput, int timeLimit)
 		{
@@ -39,49 +39,48 @@ namespace Metaheuristics
 	class DiscreteUMDA4TSP : DiscreteUMDA
 	{
 		public TSPInstance Instance { get; protected set; }
-		public double PenaltyParameter { get; protected set; }
 		
 		public DiscreteUMDA4TSP(TSPInstance instance, int popSize, double truncFactor, int[] lowerBounds, int[] upperBounds)
 			: base(popSize, truncFactor, lowerBounds, upperBounds)
 		{
 			Instance = instance;
+			RepairEnabled = true;
 		}
 		
-		protected override void Repair(int[][] population)
+		protected override void Repair(int[] individual)
 		{
-			for (int k = 0; k < population.Length; k++) {
-				int visitedCitiesCount = 0;
-				bool[] visitedCities = new bool[Instance.Dimension];
-				bool[] repeatedPositions = new bool[Instance.Dimension];
+			int visitedCitiesCount = 0;
+			bool[] visitedCities = new bool[Instance.Dimension];
+			bool[] repeatedPositions = new bool[Instance.Dimension];
 				
-				for (int i = 0; i < Instance.Dimension; i++) {
-					if (!visitedCities[population[k][i]]) {
-						visitedCitiesCount += 1;
-						visitedCities[population[k][i]] = true;
-					}
-					else {
-						repeatedPositions[i] = true;
-					}
+			// Get information to decide if the individual is valid.
+			for (int i = 0; i < Instance.Dimension; i++) {
+				if (!visitedCities[individual[i]]) {
+					visitedCitiesCount += 1;
+					visitedCities[individual[i]] = true;
 				}
+				else {
+					repeatedPositions[i] = true;
+				}
+			}
 				
-				if (visitedCitiesCount != Instance.Dimension) {
-					// Repair the individual.
-					for (int i = 0; i < repeatedPositions.Length; i++) {
-						if (repeatedPositions[i]) {
-							int count = Statistics.RandomDiscreteUniform(1, Instance.Dimension - visitedCitiesCount);
-							for (int c = 0; c < visitedCities.Length; c++) {
-								if (!visitedCities[c]) {
-									count -= 1;
-									if (count == 0) {
-										population[k][i] = c;
-										repeatedPositions[i] = false;
-										visitedCities[c] = true;
-										visitedCitiesCount += 1;
-										break;
-									}
+			// If the individual is invalid, make it valid.
+			if (visitedCitiesCount != Instance.Dimension) {
+				for (int i = 0; i < repeatedPositions.Length; i++) {
+					if (repeatedPositions[i]) {
+						int count = Statistics.RandomDiscreteUniform(1, Instance.Dimension - visitedCitiesCount);
+						for (int c = 0; c < visitedCities.Length; c++) {
+							if (!visitedCities[c]) {
+								count -= 1;
+								if (count == 0) {
+									individual[i] = c;
+									repeatedPositions[i] = false;
+									visitedCities[c] = true;
+									visitedCitiesCount += 1;
+									break;
 								}
-							}							
-						}
+							}
+						}							
 					}
 				}
 			}

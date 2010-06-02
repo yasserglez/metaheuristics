@@ -51,7 +51,7 @@ namespace Metaheuristics
 			}
 			mean /= sample.Count;
 			
-			return mean;			
+			return mean;
 		}
 		
 		public static double Variance(ICollection<double> sample)

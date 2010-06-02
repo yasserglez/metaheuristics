@@ -98,13 +98,13 @@ namespace Metaheuristics
 				}
 			}
 		}			
-	}	
+	}
 	
 	public class TwoSPInstance
 	{
 		public TwoSPInstance(string file)
 		{
-		}		
+		}
 	}	
 	
 	public class SPPInstance

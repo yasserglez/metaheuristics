@@ -10,6 +10,8 @@ namespace Metaheuristics
 		public double TruncationFactor {get; protected set; }
 		public int[] LowerBounds { get; protected set; }
 		public int[] UpperBounds { get; protected set; }
+		public bool RepairEnabled { get; protected set; }
+		public bool LocalOptimizationEnabled { get; protected set; }
 		
 		public int[] BestIndividual { get; protected set; }
 		public double BestFitness { get; protected set; }
@@ -20,6 +22,8 @@ namespace Metaheuristics
 			TruncationFactor = truncFactor;
 			LowerBounds = lowerBounds;
 			UpperBounds = upperBounds;
+			RepairEnabled = false;
+			LocalOptimizationEnabled = false;
 			BestIndividual = null;
 			BestFitness = 0;
 		}
@@ -28,7 +32,12 @@ namespace Metaheuristics
 		protected abstract double Fitness(int[] individual);
 		
 		// Repairing method to handle constraints.
-		protected virtual void Repair(int[][] population)
+		protected virtual void Repair(int[] individual)
+		{
+		}
+		
+		// Local optimization method.
+		protected virtual void LocalOptimization(int[] individual)
 		{
 		}
 		
@@ -56,7 +65,18 @@ namespace Metaheuristics
 			BestIndividual = null;
 			while (Environment.TickCount - startTime < timeLimit) {
 				// Handle constraints using a repairing method.
-				Repair(population);	
+				if (RepairEnabled) {
+					for (int k = 0; k < PopulationSize; k++) {
+						Repair(population[k]);
+					}
+				}
+				
+				// Run a local optimization method for each individual in the population.
+				if (LocalOptimizationEnabled) {
+					for (int k = 0; k < PopulationSize; k++) {
+						LocalOptimization(population[k]);
+					}
+				}				
 				
 				// Evaluate the population.
 				for (int k = 0; k < PopulationSize; k++) {
