@@ -6,6 +6,7 @@ namespace Metaheuristics
 	public class TSPInstance
 	{
 		public int Dimension { get; protected set; }
+
 		public double[,] Costs { get; protected set; }
 		
 		public TSPInstance(string file)
@@ -50,11 +51,53 @@ namespace Metaheuristics
 		}
 	}
 	
-	public class SPPInstance
+	public class QAPInstance
 	{
-		public SPPInstance(string file)
+		public int Dimension { get; protected set; }
+		
+		public double[,] Distances { get; protected set; }
+		
+		public double[,] Flows { get; protected set; }
+		
+		public QAPInstance(string file)
 		{
-		}
+			using (StreamReader reader = File.OpenText(file)) {
+				string line = "";
+				
+				// Getting the dimension.
+				line = reader.ReadLine();
+				while (line.Trim() == "") {
+					line = reader.ReadLine();
+				}
+				Dimension = int.Parse(line);
+				
+				// Getting the distance matrix.			
+				Distances = new double[Dimension,Dimension];
+				for (int i = 0; i < Dimension; i++) {
+					line = reader.ReadLine();
+					while (line.Trim() == "") {
+						line = reader.ReadLine();
+					}			
+					string[] parts = line.Split(' ');
+					for (int j = 0; j < Dimension; j++) {
+						Distances[i,j] = double.Parse(parts[j]);
+					}
+				}
+				
+				// Getting the flow matrix.
+				Flows = new double[Dimension,Dimension];
+				for (int i = 0; i < Dimension; i++) {
+					line = reader.ReadLine();
+					while (line.Trim() == "") {
+						line = reader.ReadLine();
+					}
+					string[] parts = line.Split(' ');
+					for (int j = 0; j < Dimension; j++) {
+						Flows[i,j] = double.Parse(parts[j]);
+					}
+				}
+			}
+		}			
 	}	
 	
 	public class TwoSPInstance
@@ -62,12 +105,12 @@ namespace Metaheuristics
 		public TwoSPInstance(string file)
 		{
 		}		
-	}
+	}	
 	
-	public class QAPInstance
+	public class SPPInstance
 	{
-		public QAPInstance(string file)
+		public SPPInstance(string file)
 		{
-		}			
+		}
 	}
 }

@@ -18,6 +18,7 @@ namespace Metaheuristics
 		public void Write(string file)
 		{
 			double cost = 0;
+			
 			for (int i = 1; i < Path.Length; i++) {
 				cost += Instance.Costs[Path[i-1],Path[i]];
 			}
@@ -33,17 +34,35 @@ namespace Metaheuristics
 		}
 	}
 	
-	public class SPPSolution
+	public class QAPSolution
 	{
-		public SPPInstance Instance { get; protected set; }
+		public QAPInstance Instance { get; protected set; }
 		
-		public SPPSolution(SPPInstance instance)
+		public int[] Assignment { get; protected set; }
+		
+		public QAPSolution(QAPInstance instance, int[] assignment)
 		{
 			Instance = instance;
+			Assignment = assignment;
 		}
 		
 		public void Write(string file)
 		{
+			double cost = 0;
+			
+			for (int i = 1; i < Assignment.Length; i++) {
+				for (int j = 0; j < Assignment.Length; j++) {
+					cost += Instance.Distances[i,j] * Instance.Flows[Assignment[i],Assignment[j]];
+				}
+			}
+			
+			using (StreamWriter writer = File.CreateText(file)) {
+				writer.WriteLine(cost);
+				writer.WriteLine(Assignment.Length);
+				for (int i = 0; i < Assignment.Length; i++) {
+					writer.WriteLine(Assignment[i] + 1);
+				}
+			}			
 		}
 	}
 	
@@ -61,11 +80,11 @@ namespace Metaheuristics
 		}
 	}	
 	
-	public class QAPSolution
+	public class SPPSolution
 	{
-		public QAPInstance Instance { get; protected set; }
+		public SPPInstance Instance { get; protected set; }
 		
-		public QAPSolution(QAPInstance instance)
+		public SPPSolution(SPPInstance instance)
 		{
 			Instance = instance;
 		}
