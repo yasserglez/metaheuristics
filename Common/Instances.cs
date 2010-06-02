@@ -1,5 +1,6 @@
 using System;
 using System.IO;
+using System.Text.RegularExpressions;
 
 namespace Metaheuristics
 {
@@ -11,6 +12,7 @@ namespace Metaheuristics
 		
 		public TSPInstance(string file)
 		{
+			Regex regex = new Regex(@"\s+");
 			double[] xCoords = null, yCoords = null;
 			
 			using (StreamReader reader = File.OpenText(file)) {
@@ -34,7 +36,7 @@ namespace Metaheuristics
 				}
 				for (int k = 0; k < Dimension; k++) {
 					line = reader.ReadLine();
-					string[] parts = line.Split(' ');
+					string[] parts = regex.Split(line.Trim());
 					int i = int.Parse(parts[0]) - 1;
 					xCoords[i] = int.Parse(parts[1]);
 					yCoords[i] = int.Parse(parts[2]);
@@ -61,6 +63,8 @@ namespace Metaheuristics
 		
 		public QAPInstance(string file)
 		{
+			Regex regex = new Regex(@"\s+");
+			
 			using (StreamReader reader = File.OpenText(file)) {
 				string line = "";
 				
@@ -69,7 +73,7 @@ namespace Metaheuristics
 				while (line.Trim() == "") {
 					line = reader.ReadLine();
 				}
-				Dimension = int.Parse(line);
+				Dimension = int.Parse(line.Trim());
 				
 				// Getting the distance matrix.			
 				Distances = new double[Dimension,Dimension];
@@ -78,7 +82,7 @@ namespace Metaheuristics
 					while (line.Trim() == "") {
 						line = reader.ReadLine();
 					}			
-					string[] parts = line.Split(' ');
+					string[] parts = regex.Split(line.Trim());
 					for (int j = 0; j < Dimension; j++) {
 						Distances[i,j] = double.Parse(parts[j]);
 					}
@@ -91,7 +95,7 @@ namespace Metaheuristics
 					while (line.Trim() == "") {
 						line = reader.ReadLine();
 					}
-					string[] parts = line.Split(' ');
+					string[] parts = regex.Split(line.Trim());
 					for (int j = 0; j < Dimension; j++) {
 						Flows[i,j] = double.Parse(parts[j]);
 					}

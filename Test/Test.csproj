@@ -43,6 +43,10 @@
       <Project>{28D86552-5EA6-4F82-8812-3BBA2FEA15D7}</Project>
       <Name>UMDA4TSP</Name>
     </ProjectReference>
+    <ProjectReference Include="..\QAP\UMDA4QAP\UMDA4QAP.csproj">
+      <Project>{996DAABA-52E8-4A6A-AE45-4A8A21AE50FD}</Project>
+      <Name>UMDA4QAP</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

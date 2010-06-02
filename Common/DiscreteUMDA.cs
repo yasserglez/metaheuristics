@@ -11,7 +11,7 @@ namespace Metaheuristics
 		public int[] LowerBounds { get; protected set; }
 		public int[] UpperBounds { get; protected set; }
 		public bool RepairEnabled { get; protected set; }
-		public bool LocalOptimizationEnabled { get; protected set; }
+		public bool LocalSearchEnabled { get; protected set; }
 		
 		public int[] BestIndividual { get; protected set; }
 		public double BestFitness { get; protected set; }
@@ -23,7 +23,7 @@ namespace Metaheuristics
 			LowerBounds = lowerBounds;
 			UpperBounds = upperBounds;
 			RepairEnabled = false;
-			LocalOptimizationEnabled = false;
+			LocalSearchEnabled = false;
 			BestIndividual = null;
 			BestFitness = 0;
 		}
@@ -36,8 +36,8 @@ namespace Metaheuristics
 		{
 		}
 		
-		// Local optimization method.
-		protected virtual void LocalOptimization(int[] individual)
+		// Local search method.
+		protected virtual void LocalSearch(int[] individual)
 		{
 		}
 		
@@ -71,10 +71,10 @@ namespace Metaheuristics
 					}
 				}
 				
-				// Run a local optimization method for each individual in the population.
-				if (LocalOptimizationEnabled) {
+				// Run a local search method for each individual in the population.
+				if (LocalSearchEnabled) {
 					for (int k = 0; k < PopulationSize; k++) {
-						LocalOptimization(population[k]);
+						LocalSearch(population[k]);
 					}
 				}				
 				
