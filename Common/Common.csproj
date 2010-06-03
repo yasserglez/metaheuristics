@@ -39,6 +39,9 @@
     <Compile Include="Solutions.cs" />
     <Compile Include="DiscreteUMDA.cs" />
     <Compile Include="Team.cs" />
+    <Compile Include="TwoSPUtils.cs" />
+    <Compile Include="TSPUtils.cs" />
+    <Compile Include="QAPUtils.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
