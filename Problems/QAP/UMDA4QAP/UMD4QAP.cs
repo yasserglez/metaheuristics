@@ -8,9 +8,9 @@ namespace Metaheuristics
 	{
 		public static string Algoritmo = "UMDA4QAP";
 		
-		public static string[] Integrantes = Team.Members;
+		public static string[] Integrantes = TeamInfo.Members;
 		
-		public static string Nombre_equipo = Team.Name;
+		public static string Nombre_equipo = TeamInfo.Name;
 		
 		public static List<double> Start(string fileInput, string fileOutput, int timeLimit)
 		{
@@ -33,28 +33,6 @@ namespace Metaheuristics
 			solution.Write(fileOutput);
 			
 			return solutions;
-		}
-	}
-	
-	class DiscreteUMDA4QAP : DiscreteUMDA
-	{
-		public QAPInstance Instance { get; protected set; }
-		
-		public DiscreteUMDA4QAP(QAPInstance instance, int popSize, double truncFactor, int[] lowerBounds, int[] upperBounds)
-			: base(popSize, truncFactor, lowerBounds, upperBounds)
-		{
-			Instance = instance;
-			RepairEnabled = true;
-		}
-		
-		protected override void Repair(int[] individual)
-		{
-			QAPUtils.Repair(Instance, individual);		
-		}
-		
-		protected override double Fitness(int[] individual)
-		{
-			return QAPUtils.Cost(Instance, individual);
 		}
 	}
 }

@@ -5,10 +5,10 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{4630C8D3-67C9-443D-89C4-F11A2CCEC50C}</ProjectGuid>
+    <ProjectGuid>{996DAABA-52E8-4A6A-AE45-4A8A21AE50FD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>Metaheuristics</RootNamespace>
-    <AssemblyName>Common</AssemblyName>
+    <AssemblyName>UMDA4QAP</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -33,29 +33,14 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="UMD4QAP.cs" />
     <Compile Include="AssemblyInfo.cs" />
-    <Compile Include="Statistics.cs" />
-    <Compile Include="DiscreteUMDA.cs" />
-    <Compile Include="TeamInfo.cs" />
-    <Compile Include="TSP\TSPInstance.cs" />
-    <Compile Include="TSP\TSPSolution.cs" />
-    <Compile Include="TSP\TSPUtils.cs" />
-    <Compile Include="QAP\QAPInstance.cs" />
-    <Compile Include="QAP\QAPSolution.cs" />
-    <Compile Include="QAP\QAPUtils.cs" />
-    <Compile Include="2SP\TwoSPInstance.cs" />
-    <Compile Include="2SP\TwoSPSolution.cs" />
-    <Compile Include="2SP\TwoSPUtils.cs" />
-    <Compile Include="SPP\SPPInstance.cs" />
-    <Compile Include="SPP\SPPSolution.cs" />
-    <Compile Include="QAP\DiscreteUMDA4QAP.cs" />
-    <Compile Include="TSP\DiscreteUMDA4TSP.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\Common.csproj">
+      <Project>{4630C8D3-67C9-443D-89C4-F11A2CCEC50C}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <ItemGroup>
-    <Folder Include="TSP\" />
-    <Folder Include="QAP\" />
-    <Folder Include="2SP\" />
-    <Folder Include="SPP\" />
-  </ItemGroup>
 </Project>
