@@ -6,7 +6,7 @@ namespace Metaheuristics
 {
 	public static class UMD4QAP
 	{
-		public static string Algoritmo = "UMDA4QAP";
+		public static string Algoritmo = "UMDA for QAP";
 		
 		public static string[] Integrantes = TeamInfo.Members;
 		

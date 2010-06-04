@@ -6,7 +6,7 @@ namespace Metaheuristics
 {
 	public static class UMD4TSP
 	{
-		public static string Algoritmo = "UMDA4TSP";
+		public static string Algoritmo = "UMDA for TSP";
 		
 		public static string[] Integrantes = TeamInfo.Members;
 		
