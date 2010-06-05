@@ -63,6 +63,14 @@
       <Project>{13C4A8C5-928B-464D-8620-1112F795D645}</Project>
       <Name>UMDA2OptFirst4QAP</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Problems\TSP\UMDA2OptBest4TSP\UMDA2OptBest4TSP.csproj">
+      <Project>{BC7E79ED-602F-4A92-8B5B-D8912C10CA8C}</Project>
+      <Name>UMDA2OptBest4TSP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\TSP\UMDA2OptFirst4TSP\UMDA2OptFirst4TSP.csproj">
+      <Project>{6DB55593-ED82-45AB-8213-2ADF3791FAAB}</Project>
+      <Name>UMDA2OptFirst4TSP</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

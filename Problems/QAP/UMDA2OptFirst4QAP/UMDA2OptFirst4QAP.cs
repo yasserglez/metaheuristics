@@ -6,7 +6,7 @@ namespace Metaheuristics
 {
 	public static class UMDA2OptFirst4QAP
 	{
-		public static string Algoritmo = "UMDA with 2-opt (first improvement) for QAP";
+		public static string Algoritmo = "UMDA with 2-opt (first improvement) local search for QAP";
 		
 		public static string[] Integrantes = TeamInfo.Members;
 		

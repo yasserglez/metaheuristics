@@ -65,25 +65,23 @@ namespace Metaheuristics
 			double currentFitness, bestFitness;
 
 			bestFitness = Fitness(instance, assignment);			
-			for (int i = 0; i < assignment.Length; i++) {
-				for (int j = 0; j < assignment.Length; j++) {
-					if (i < j) {
-						// Swap the items.
-						tmp = assignment[i];
-						assignment[i] = assignment[j];
-						assignment[j] = tmp;
-						
-						// Evaluate the fitness of this new solution.
-						currentFitness = Fitness(instance, assignment);
-						if (currentFitness < bestFitness) {
-							return;
-						}
-						
-						// Undo the swap.
-						tmp = assignment[i];
-						assignment[i] = assignment[j];
-						assignment[j] = tmp;
+			for (int j = 0; j < assignment.Length; j++) {
+				for (int i = 0; i < j; i++) {
+					// Swap the items.
+					tmp = assignment[j];
+					assignment[j] = assignment[i];
+					assignment[i] = tmp;
+					
+					// Evaluate the fitness of this new solution.
+					currentFitness = Fitness(instance, assignment);
+					if (currentFitness < bestFitness) {
+						return;
 					}
+					
+					// Undo the swap.
+					tmp = assignment[j];
+					assignment[j] = assignment[i];
+					assignment[i] = tmp;
 				}
 			}
 		}
@@ -96,27 +94,25 @@ namespace Metaheuristics
 			double currentFitness, bestFitness;
 			
 			bestFitness = Fitness(instance, assignment);			
-			for (int i = 0; i < assignment.Length; i++) {
-				for (int j = 0; j < assignment.Length; j++) {
-					if (i < j) {
-						// Swap the items.
-						tmp = assignment[i];
-						assignment[i] = assignment[j];
-						assignment[j] = tmp;
-						
-						// Evaluate the fitness of this new solution.
-						currentFitness = Fitness(instance, assignment);
-						if (currentFitness < bestFitness) {
-							firstSwapItem = i;
-							secondSwapItem = j;
-							bestFitness = currentFitness;
-						}
-						
-						// Undo the swap.
-						tmp = assignment[i];
-						assignment[i] = assignment[j];
-						assignment[j] = tmp;
+			for (int j = 0; j < assignment.Length; j++) {
+				for (int i = 0; i < j; i++) {
+					// Swap the items.
+					tmp = assignment[j];
+					assignment[j] = assignment[i];
+					assignment[i] = tmp;
+					
+					// Evaluate the fitness of this new solution.
+					currentFitness = Fitness(instance, assignment);
+					if (currentFitness < bestFitness) {
+						firstSwapItem = j;
+						secondSwapItem = i;
+						bestFitness = currentFitness;
 					}
+					
+					// Undo the swap.
+					tmp = assignment[j];
+					assignment[j] = assignment[i];
+					assignment[i] = tmp;
 				}
 			}
 			

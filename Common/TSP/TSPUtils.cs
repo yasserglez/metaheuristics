@@ -55,6 +55,70 @@ namespace Metaheuristics
 					}
 				}
 			}
-		}	
+		}
+		
+		// Implementation of the 2-opt (first improvement) local search algorithm.
+		public static void LocalSearch2OptFirst(TSPInstance instance, int[] path)
+		{
+			int tmp;
+			double currentFitness, bestFitness;
+
+			bestFitness = Fitness(instance, path);			
+			for (int j = 0; j < path.Length; j++) {
+				for (int i = 0; i < j; i++) {
+					// Swap the cities.
+					tmp = path[j];
+					path[j] = path[i];
+					path[i] = tmp;
+					
+					// Evaluate the fitness of this new solution.
+					currentFitness = Fitness(instance, path);
+					if (currentFitness < bestFitness) {
+						return;
+					}
+					
+					// Undo the swap.
+					tmp = path[j];
+					path[j] = path[i];
+					path[i] = tmp;
+				}
+			}
+		}
+		
+		// Implementation of the 2-opt (best improvement) local search algorithm.
+		public static void LocalSearch2OptBest(TSPInstance instance, int[] path)
+		{
+			int tmp;
+			int firstSwapItem = 0, secondSwapItem = 0;
+			double currentFitness, bestFitness;
+			
+			bestFitness = Fitness(instance, path);			
+			for (int j = 0; j < path.Length; j++) {
+				for (int i = 0; i < j; i++) {
+					// Swap the cities.
+					tmp = path[j];
+					path[j] = path[i];
+					path[i] = tmp;
+					
+					// Evaluate the fitness of this new solution.
+					currentFitness = Fitness(instance, path);
+					if (currentFitness < bestFitness) {
+						firstSwapItem = j;
+						secondSwapItem = i;
+						bestFitness = currentFitness;
+					}
+					
+					// Undo the swap.
+					tmp = path[j];
+					path[j] = path[i];
+					path[i] = tmp;
+				}
+			}
+			
+			// Use the best assignment.
+			tmp = path[firstSwapItem];
+			path[firstSwapItem] = path[secondSwapItem];
+			path[secondSwapItem] = tmp;
+		}		
 	}
 }

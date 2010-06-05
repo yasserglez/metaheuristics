@@ -7,7 +7,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{28D86552-5EA6-4F82-8812-3BBA2FEA15D7}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>UMDA4TSP</RootNamespace>
+    <RootNamespace>Metaheuristics</RootNamespace>
     <AssemblyName>UMDA4TSP</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
   </PropertyGroup>
@@ -33,8 +33,8 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UMD4TSP.cs" />
     <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="UMDA4TSP.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\Common\Common.csproj">

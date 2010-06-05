@@ -21,7 +21,7 @@ namespace Metaheuristics
 			QAPUtils.Repair(Instance, individual);
 		}
 		
-		protected override void LocalSearch (int[] individual)
+		protected override void LocalSearch(int[] individual)
 		{
 			QAPUtils.LocalSearch2OptBest(Instance, individual);
 		}

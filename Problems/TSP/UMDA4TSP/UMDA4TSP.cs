@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Metaheuristics
 {
-	public static class UMD4TSP
+	public static class UMDA4TSP
 	{
 		public static string Algoritmo = "UMDA for TSP";
 		
