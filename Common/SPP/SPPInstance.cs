@@ -16,6 +16,9 @@ namespace Metaheuristics
 		
 		public SPPInstance(string file)
 		{
+			string[] parts;
+			Regex regex = new Regex(@"\s+");
+			
 			using (StreamReader reader = File.OpenText(file)) {
 				string line = "";
 				
@@ -24,7 +27,8 @@ namespace Metaheuristics
 				while (line.Trim() == "") {
 					line = reader.ReadLine();
 				}
-				NumberItems = int.Parse(line.Trim());				
+				parts = regex.Split(line.Trim());
+				NumberItems = int.Parse(parts[0]);				
 				
 				// Getting the weights of the items.
 				ItemsWeight = new double[NumberItems];
@@ -33,7 +37,8 @@ namespace Metaheuristics
 					while (line.Trim() == "") {
 						line = reader.ReadLine();
 					}			
-					ItemsWeight[i] = int.Parse(line);
+					parts = regex.Split(line.Trim());
+					ItemsWeight[i] = int.Parse(parts[0]);
 				}
 				
 				// Getting the number of subsets.
@@ -41,7 +46,8 @@ namespace Metaheuristics
 				while (line.Trim() == "") {
 					line = reader.ReadLine();
 				}
-				NumberSubsets = int.Parse(line.Trim());				
+				parts = regex.Split(line.Trim());
+				NumberSubsets = int.Parse(parts[0]);				
 				
 				// Getting the weights of the subsets.
 				SubsetsWeight = new double[NumberSubsets];
@@ -50,7 +56,8 @@ namespace Metaheuristics
 					while (line.Trim() == "") {
 						line = reader.ReadLine();
 					}	
-					SubsetsWeight[i] = int.Parse(line);
+					parts = regex.Split(line.Trim());
+					SubsetsWeight[i] = int.Parse(parts[0]);
 				}				
 			}
 		}
