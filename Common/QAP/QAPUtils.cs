@@ -57,5 +57,73 @@ namespace Metaheuristics
 				}
 			}				
 		}
+		
+		// Implementation of the 2-opt (first improvement) local search algorithm.
+		public static void LocalSearch2OptFirst(QAPInstance instance, int[] assignment)
+		{
+			int tmp;
+			double currentFitness, bestFitness;
+
+			bestFitness = Fitness(instance, assignment);			
+			for (int i = 0; i < assignment.Length; i++) {
+				for (int j = 0; j < assignment.Length; j++) {
+					if (i < j) {
+						// Swap the items.
+						tmp = assignment[i];
+						assignment[i] = assignment[j];
+						assignment[j] = tmp;
+						
+						// Evaluate the fitness of this new solution.
+						currentFitness = Fitness(instance, assignment);
+						if (currentFitness < bestFitness) {
+							return;
+						}
+						
+						// Undo the swap.
+						tmp = assignment[i];
+						assignment[i] = assignment[j];
+						assignment[j] = tmp;
+					}
+				}
+			}
+		}
+		
+		// Implementation of the 2-opt (best improvement) local search algorithm.
+		public static void LocalSearch2OptBest(QAPInstance instance, int[] assignment)
+		{
+			int tmp;
+			int firstSwapItem = 0, secondSwapItem = 0;
+			double currentFitness, bestFitness;
+			
+			bestFitness = Fitness(instance, assignment);			
+			for (int i = 0; i < assignment.Length; i++) {
+				for (int j = 0; j < assignment.Length; j++) {
+					if (i < j) {
+						// Swap the items.
+						tmp = assignment[i];
+						assignment[i] = assignment[j];
+						assignment[j] = tmp;
+						
+						// Evaluate the fitness of this new solution.
+						currentFitness = Fitness(instance, assignment);
+						if (currentFitness < bestFitness) {
+							firstSwapItem = i;
+							secondSwapItem = j;
+							bestFitness = currentFitness;
+						}
+						
+						// Undo the swap.
+						tmp = assignment[i];
+						assignment[i] = assignment[j];
+						assignment[j] = tmp;
+					}
+				}
+			}
+			
+			// Use the best assignment.
+			tmp = assignment[firstSwapItem];
+			assignment[firstSwapItem] = assignment[secondSwapItem];
+			assignment[secondSwapItem] = tmp;				
+		}
 	}
 }

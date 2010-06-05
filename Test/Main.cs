@@ -7,9 +7,9 @@ namespace Test
 	{
 		public static void Main(string[] args)
 		{
-			string fileInput = "../../../Problems/SPP/Instances/inst1.in";
-			string fileOutput = "../../../Problems/SPP/Instances/inst1.out";
-			UMDA4SPP.Start(fileInput, fileOutput, 10000);
+			string fileInput = "../../../Problems/QAP/Instances/nug15.in";
+			string fileOutput = "../../../Problems/QAP/Instances/nug15.out";
+			UMDA2OptBest4QAP.Start(fileInput, fileOutput, 10000);
 		}
 	}
 }

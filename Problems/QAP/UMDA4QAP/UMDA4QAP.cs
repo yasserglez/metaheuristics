@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Metaheuristics
 {
-	public static class UMD4QAP
+	public static class UMDA4QAP
 	{
 		public static string Algoritmo = "UMDA for QAP";
 		

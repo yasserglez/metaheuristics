@@ -51,9 +51,17 @@
       <Project>{9AA09190-3651-4985-B1A7-EDB5F4D9544E}</Project>
       <Name>UMDANPS42SP</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Problems\UMDA4SPP\UMDA4SPP.csproj">
+    <ProjectReference Include="..\Problems\SPP\UMDA4SPP\UMDA4SPP.csproj">
       <Project>{987986E7-1AF1-469E-9910-95353754BD03}</Project>
       <Name>UMDA4SPP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\QAP\UMDA2OptBest4QAP\UMDA2OptBest4QAP.csproj">
+      <Project>{D046BDE9-5B53-4080-BF5B-12537700100A}</Project>
+      <Name>UMDA2OptBest4QAP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\QAP\UMDA2OptFirst4QAP\UMDA2OptFirst4QAP.csproj">
+      <Project>{13C4A8C5-928B-464D-8620-1112F795D645}</Project>
+      <Name>UMDA2OptFirst4QAP</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
