@@ -7,9 +7,9 @@ namespace Test
 	{
 		public static void Main(string[] args)
 		{
-			string fileInput = "../../../Problems/TSP/Instances/att48.in";
-			string fileOutput = "../../../Problems/TSP/Instances/att48.out";
-			UMDA4TSP.Start(fileInput, fileOutput, 50000);
+			string fileInput = "../../../Problems/SPP/Instances/inst1.in";
+			string fileOutput = "../../../Problems/SPP/Instances/inst1.out";
+			UMDA2OptFirst4SPP.Start(fileInput, fileOutput, 25000);
 		}
 	}
 }

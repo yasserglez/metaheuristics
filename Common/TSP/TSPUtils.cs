@@ -64,9 +64,9 @@ namespace Metaheuristics
 			double currentFitness, bestFitness;
 
 			bestFitness = Fitness(instance, path);			
-			for (int j = 0; j < path.Length; j++) {
+			for (int j = 1; j < path.Length; j++) {
 				for (int i = 0; i < j; i++) {
-					// Swap the cities.
+					// Swap the items.
 					tmp = path[j];
 					path[j] = path[i];
 					path[i] = tmp;
@@ -93,9 +93,9 @@ namespace Metaheuristics
 			double currentFitness, bestFitness;
 			
 			bestFitness = Fitness(instance, path);			
-			for (int j = 0; j < path.Length; j++) {
+			for (int j = 1; j < path.Length; j++) {
 				for (int i = 0; i < j; i++) {
-					// Swap the cities.
+					// Swap the items.
 					tmp = path[j];
 					path[j] = path[i];
 					path[i] = tmp;
@@ -116,9 +116,11 @@ namespace Metaheuristics
 			}
 			
 			// Use the best assignment.
-			tmp = path[firstSwapItem];
-			path[firstSwapItem] = path[secondSwapItem];
-			path[secondSwapItem] = tmp;
+			if (firstSwapItem != secondSwapItem) {
+				tmp = path[firstSwapItem];
+				path[firstSwapItem] = path[secondSwapItem];
+				path[secondSwapItem] = tmp;
+			}
 		}		
 	}
 }

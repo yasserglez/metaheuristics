@@ -57,6 +57,8 @@
     <Compile Include="QAP\DiscreteUMDA2OptBest4QAP.cs" />
     <Compile Include="TSP\DiscreteUMDA2OptFirst4TSP.cs" />
     <Compile Include="TSP\DiscreteUMDA2OptBest4TSP.cs" />
+    <Compile Include="SPP\DiscreteUMDA2OptFirst4SPP.cs" />
+    <Compile Include="SPP\DiscreteUMDA2OptBest4SPP.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
