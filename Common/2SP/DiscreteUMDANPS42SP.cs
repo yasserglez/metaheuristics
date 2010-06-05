@@ -22,7 +22,7 @@ namespace Metaheuristics
 		
 		protected override double Fitness(int[] individual)
 		{
-			return TwoSPUtils.TotalHeight(Instance, individual);
+			return TwoSPUtils.Fitness(Instance, individual);
 		}		
 	}
 }

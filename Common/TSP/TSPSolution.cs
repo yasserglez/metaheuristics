@@ -19,7 +19,7 @@ namespace Metaheuristics
 		
 		public void Write(string file)
 		{
-			double cost = TSPUtils.Cost(Instance, Path);
+			double cost = TSPUtils.Fitness(Instance, Path);
 			
 			using (StreamWriter writer = File.CreateText(file)) {
 				writer.WriteLine(cost);

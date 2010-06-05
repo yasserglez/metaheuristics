@@ -22,7 +22,7 @@ namespace Metaheuristics
 		
 		protected override double Fitness(int[] individual)
 		{
-			return QAPUtils.Cost(Instance, individual);
+			return QAPUtils.Fitness(Instance, individual);
 		}
 	}
 }

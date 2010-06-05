@@ -22,7 +22,7 @@ namespace Metaheuristics
 		
 		public void Write(string file)
 		{
-			int totalHeight = TwoSPUtils.TotalHeight(Instance, Coordinates);
+			int totalHeight = TwoSPUtils.Fitness(Instance, Coordinates);
 
 			using (StreamWriter writer = File.CreateText(file)) {
 				writer.WriteLine(totalHeight);

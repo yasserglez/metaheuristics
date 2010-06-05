@@ -139,7 +139,7 @@ namespace Metaheuristics
 			return true;
 		}
 		
-		public static int TotalHeight(TwoSPInstance instance, int[,] coordinates)
+		public static int Fitness(TwoSPInstance instance, int[,] coordinates)
 		{
 			int totalHeight = 0;
 			
@@ -153,9 +153,9 @@ namespace Metaheuristics
 			return totalHeight;
 		}
 		
-		public static int TotalHeight(TwoSPInstance instance, int[] ordering)
+		public static int Fitness(TwoSPInstance instance, int[] ordering)
 		{
-			return TotalHeight(instance, NPS2Coordinates(instance, ordering));
+			return Fitness(instance, NPS2Coordinates(instance, ordering));
 		}
 		
 		private static double NPSQuality(TwoSPInstance instance, int[,] coordinates, bool[] allocatedItem, int item)

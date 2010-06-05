@@ -19,7 +19,7 @@ namespace Metaheuristics
 		
 		public void Write(string file)
 		{
-			double cost = QAPUtils.Cost(Instance, Assignment);
+			double cost = QAPUtils.Fitness(Instance, Assignment);
 			
 			using (StreamWriter writer = File.CreateText(file)) {
 				writer.WriteLine(cost);

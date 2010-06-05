@@ -22,7 +22,7 @@ namespace Metaheuristics
 		
 		protected override double Fitness(int[] individual)
 		{
-			return TSPUtils.Cost(Instance, individual);
+			return TSPUtils.Fitness(Instance, individual);
 		}
 	}
 }

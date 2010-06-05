@@ -6,7 +6,7 @@ namespace Metaheuristics
 {
 	public static class TSPUtils
 	{
-		public static double Cost(TSPInstance instance, int[] path)
+		public static double Fitness(TSPInstance instance, int[] path)
 		{
 			double cost = 0;
 			

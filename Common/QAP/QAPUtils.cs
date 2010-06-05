@@ -6,12 +6,12 @@ namespace Metaheuristics
 {
 	public static class QAPUtils
 	{
-		public static double Cost(QAPInstance instance, int[] assignment)
+		public static double Fitness(QAPInstance instance, int[] assignment)
 		{
 			double cost = 0;
 			
-			for (int i = 1; i < assignment.Length; i++) {
-				for (int j = 0; j < assignment.Length; j++) {
+			for (int i = 1; i < instance.NumberFacilities; i++) {
+				for (int j = 0; j < instance.NumberFacilities; j++) {
 					cost += instance.Distances[i,j] * instance.Flows[assignment[i],assignment[j]];
 				}
 			}
