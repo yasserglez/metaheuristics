@@ -50,6 +50,7 @@
     <Compile Include="SPP\SPPSolution.cs" />
     <Compile Include="QAP\DiscreteUMDA4QAP.cs" />
     <Compile Include="TSP\DiscreteUMDA4TSP.cs" />
+    <Compile Include="2SP\DiscreteUMDANPS42SP.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

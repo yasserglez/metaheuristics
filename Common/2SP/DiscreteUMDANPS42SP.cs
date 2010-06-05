@@ -4,11 +4,11 @@ using System.Collections.Generic;
 
 namespace Metaheuristics
 {
-	public class DiscreteUMDA4QAP : DiscreteUMDA
+	public class DiscreteUMDANPS42SP : DiscreteUMDA
 	{
-		public QAPInstance Instance { get; protected set; }
+		public TwoSPInstance Instance { get; protected set; }
 		
-		public DiscreteUMDA4QAP(QAPInstance instance, int popSize, double truncFactor, int[] lowerBounds, int[] upperBounds)
+		public DiscreteUMDANPS42SP(TwoSPInstance instance, int popSize, double truncFactor, int[] lowerBounds, int[] upperBounds)
 			: base(popSize, truncFactor, lowerBounds, upperBounds)
 		{
 			Instance = instance;
@@ -17,12 +17,12 @@ namespace Metaheuristics
 		
 		protected override void Repair(int[] individual)
 		{
-			QAPUtils.Repair(Instance, individual);
-		}
+			TwoSPUtils.Repair(Instance, individual);
+		}		
 		
 		protected override double Fitness(int[] individual)
 		{
-			return QAPUtils.Cost(Instance, individual);
-		}
+			return TwoSPUtils.TotalHeight(Instance, individual);
+		}		
 	}
 }

@@ -42,6 +42,7 @@ namespace Metaheuristics
 							// If this is valid, it's the best position.
 							position[x] = coordinates[item,x];
 							position[y] = coordinates[item,y];
+							candidatePositions.Add(position);
 						}
 						else {
 							// Try to put the item next to other items.
@@ -51,14 +52,12 @@ namespace Metaheuristics
 									if (IsFeasible(instance, coordinates, allocatedItem, item) && 
 									    SatisfiesNPP(instance, coordinates, allocatedItem, item)) {
 										position[x] = coordinates[item,x];
-										position[y] = coordinates[item,y];							
+										position[y] = coordinates[item,y];
+										candidatePositions.Add(position);
 									}
 								}
 							}
-							
-						}
-
-						candidatePositions.Add(position);
+						}						
 					}
 					
 					foreach (int[] position in bottomRightSeeds) {
@@ -73,6 +72,7 @@ namespace Metaheuristics
 							// If this is valid, it's the best position.
 							position[x] = coordinates[item,x];
 							position[y] = coordinates[item,y];
+							candidatePositions.Add(position);
 						}
 						else {
 							// Try to put the item on top of other item.
@@ -82,13 +82,12 @@ namespace Metaheuristics
 									if (IsFeasible(instance, coordinates, allocatedItem, item) && 
 									    SatisfiesNPP(instance, coordinates, allocatedItem, item)) {
 										position[x] = coordinates[item,x];
-										position[y] = coordinates[item,y];							
+										position[y] = coordinates[item,y];
+										candidatePositions.Add(position);
 									}
 								}
 							}
 						}
-						
-						candidatePositions.Add(position);
 					}
 
 					// Choose the lowest and leftmost position that maximizes the quality.
@@ -101,13 +100,14 @@ namespace Metaheuristics
 							finalPosition[y] = position[y];
 						}
 						else if (currentQuality == bestQuality && 
-						         (position[x] < finalPosition[x] || position[x] < finalPosition[x])) {
+						         position[x] <= finalPosition[x] && 
+						         position[x] <= finalPosition[x]) {
 							finalPosition[x] = position[x];
 							finalPosition[y] = position[y];
 						}
 					}
 				}
-				
+
 				// Set the position of the current item.
 				allocatedItem[item] = true;
 				coordinates[item,x] = finalPosition[x];
@@ -119,6 +119,43 @@ namespace Metaheuristics
 			}
 				
 			return coordinates;
+		}
+		
+		// Check if a coordinates assigment is valid.
+		public static bool IsFeasible(TwoSPInstance instance, int[,] coordinates)
+		{
+			bool[] itemAllocated = new bool[instance.NumberItems];
+			
+			for (int item = 0; item < itemAllocated.Length; item++) {
+				itemAllocated[item] = true;
+			}			
+			for (int item = 0; item < coordinates.GetLength(0); item++) {
+				itemAllocated[item] = false;
+				if (!IsFeasible(instance, coordinates, itemAllocated, item)) {
+					return false;
+				}
+				itemAllocated[item] = true;
+			}
+			return true;
+		}
+		
+		public static int TotalHeight(TwoSPInstance instance, int[,] coordinates)
+		{
+			int totalHeight = 0;
+			
+			for (int item = 0; item < coordinates.GetLength(0); item++) {
+				int itemHeight = coordinates[item,1] + instance.ItemsHeight[item];
+				if (itemHeight > totalHeight) {
+					totalHeight = itemHeight;
+				}
+			}
+			
+			return totalHeight;
+		}
+		
+		public static int TotalHeight(TwoSPInstance instance, int[] ordering)
+		{
+			return TotalHeight(instance, NPS2Coordinates(instance, ordering));
 		}
 		
 		private static double NPSQuality(TwoSPInstance instance, int[,] coordinates, bool[] allocatedItem, int item)
@@ -141,28 +178,9 @@ namespace Metaheuristics
 			return numerator / denominator;
 		}		
 		
-		public static int TotalHeight(TwoSPInstance instance, int[,] coordinates)
-		{
-			int totalHeight = 0;
-			
-			for (int item = 0; item < coordinates.GetLength(0); item++) {
-				int itemHeight = coordinates[item,1] + instance.ItemsHeight[item];
-				if (itemHeight > totalHeight) {
-					totalHeight = itemHeight;
-				}
-			}
-			
-			return totalHeight;
-		}
-		
-		public static int TotalHeight(TwoSPInstance instance, int[] ordering)
-		{
-			return TotalHeight(instance, NPS2Coordinates(instance, ordering));
-		}
-
 		// Check if the location given in the coordinates array for the given item is 
 		// valid with respect to the location of the rest of the items.
-		public static bool IsFeasible(TwoSPInstance instance, int[,] coordinates, bool[] allocatedItem, int item)
+		private static bool IsFeasible(TwoSPInstance instance, int[,] coordinates, bool[] allocatedItem, int item)
 		{
 			int x = 0, y = 1;
 			int itemXStart = coordinates[item,x];
@@ -194,27 +212,9 @@ namespace Metaheuristics
 			
 			return true;
 		}
-		
-		// Check if a coordinates assigment is valid.
-		public static bool IsFeasible(TwoSPInstance instance, int[,] coordinates)
-		{
-			bool[] itemAllocated = new bool[instance.NumberItems];
-			
-			for (int item = 0; item < itemAllocated.Length; item++) {
-				itemAllocated[item] = true;
-			}			
-			for (int item = 0; item < coordinates.GetLength(0); item++) {
-				itemAllocated[item] = false;
-				if (!IsFeasible(instance, coordinates, itemAllocated, item)) {
-					return false;
-				}
-				itemAllocated[item] = true;
-			}
-			return true;
-		}
 
 		// Check if the assigment of a location to an item satisfies the normal pattern principle.
-		public static bool SatisfiesNPP(TwoSPInstance instance, int[,] coordinates, bool[] allocatedItem, int item)
+		private static bool SatisfiesNPP(TwoSPInstance instance, int[,] coordinates, bool[] allocatedItem, int item)
 		{
 			// The left-hand edge and the bottom edges should be both adjacent to other
 			// items or to the edges of the strip.
@@ -251,6 +251,45 @@ namespace Metaheuristics
 			}
 			
 			return (leftAdjacent && bottomAdjacent);
+		}
+		
+		public static void Repair(TwoSPInstance instance, int[] individual)
+		{			
+			int itemsAllocatedCount = 0;
+			bool[] itemsAllocated = new bool[instance.NumberItems];
+			bool[] itemsRepeated = new bool[instance.NumberItems];
+				
+			// Get information to decide if the individual is valid.
+			for (int item = 0; item < instance.NumberItems; item++) {
+				if (!itemsAllocated[individual[item]]) {
+					itemsAllocatedCount += 1;
+					itemsAllocated[individual[item]] = true;
+				}
+				else {
+					itemsRepeated[item] = true;
+				}
+			}
+				
+			// If the individual is invalid, make it valid.
+			if (itemsAllocatedCount != instance.NumberItems) {
+				for (int item = 0; item < itemsRepeated.Length; item++) {
+					if (itemsRepeated[item]) {
+						int count = Statistics.RandomDiscreteUniform(1, instance.NumberItems - itemsAllocatedCount);
+						for (int i = 0; i < itemsAllocated.Length; i++) {
+							if (!itemsAllocated[i]) {
+								count -= 1;
+								if (count == 0) {
+									individual[item] = i;
+									itemsRepeated[item] = false;
+									itemsAllocated[i] = true;
+									itemsAllocatedCount += 1;
+									break;
+								}
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 }

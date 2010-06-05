@@ -45,7 +45,7 @@ namespace Metaheuristics
 		{	
 			int startTime = Environment.TickCount;
 			int numVariables = LowerBounds.Length;
-			int selectedSize = (int) Math.Round(TruncationFactor * PopulationSize);
+			int selectedSize = Math.Max(1, (int) Math.Round(TruncationFactor * PopulationSize));
 			List<double> solutions = new List<double>();
 			int[][] population = new int[PopulationSize][];
 			double[] evaluation = new double[PopulationSize];
