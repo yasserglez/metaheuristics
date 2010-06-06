@@ -291,5 +291,71 @@ namespace Metaheuristics
 				}
 			}
 		}
+		
+		// Implementation of the 2-opt (first improvement) local search algorithm.
+		public static void LocalSearch2OptFirst(TwoSPInstance instance, int[] ordering)
+		{
+			int tmp;
+			double currentFitness, bestFitness;
+
+			bestFitness = Fitness(instance, ordering);			
+			for (int j = 1; j < ordering.Length; j++) {
+				for (int i = 0; i < j; i++) {
+					// Swap the items.
+					tmp = ordering[j];
+					ordering[j] = ordering[i];
+					ordering[i] = tmp;
+					
+					// Evaluate the fitness of this new solution.
+					currentFitness = Fitness(instance, ordering);
+					if (currentFitness < bestFitness) {
+						return;
+					}
+					
+					// Undo the swap.
+					tmp = ordering[j];
+					ordering[j] = ordering[i];
+					ordering[i] = tmp;
+				}
+			}
+		}
+		
+		// Implementation of the 2-opt (best improvement) local search algorithm.
+		public static void LocalSearch2OptBest(TwoSPInstance instance, int[] ordering)
+		{
+			int tmp;
+			int firstSwapItem = 0, secondSwapItem = 0;
+			double currentFitness, bestFitness;
+			
+			bestFitness = Fitness(instance, ordering);			
+			for (int j = 1; j < ordering.Length; j++) {
+				for (int i = 0; i < j; i++) {
+					// Swap the items.
+					tmp = ordering[j];
+					ordering[j] = ordering[i];
+					ordering[i] = tmp;
+					
+					// Evaluate the fitness of this new solution.
+					currentFitness = Fitness(instance, ordering);
+					if (currentFitness < bestFitness) {
+						firstSwapItem = j;
+						secondSwapItem = i;
+						bestFitness = currentFitness;
+					}
+					
+					// Undo the swap.
+					tmp = ordering[j];
+					ordering[j] = ordering[i];
+					ordering[i] = tmp;
+				}
+			}
+			
+			// Use the best assignment.
+			if (firstSwapItem != secondSwapItem) {
+				tmp = ordering[firstSwapItem];
+				ordering[firstSwapItem] = ordering[secondSwapItem];
+				ordering[secondSwapItem] = tmp;
+			}
+		}		
 	}
 }

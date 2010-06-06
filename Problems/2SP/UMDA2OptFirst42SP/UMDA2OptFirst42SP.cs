@@ -4,9 +4,9 @@ using System.Collections.Generic;
 
 namespace Metaheuristics
 {
-	public static class UMDANPS42SP
+	public static class UMDA2OptFirst42SP
 	{
-		public static string Algoritmo = "UMDA using the NPS heuristic for 2SP";
+		public static string Algoritmo = "UMDA using the NPS heuristic with 2-opt (first improvement) local search for 2SP";
 		
 		public static string[] Integrantes = TeamInfo.Members;
 		
@@ -25,7 +25,7 @@ namespace Metaheuristics
 				lowerBounds[i] = 0;
 				upperBounds[i] = instance.NumberItems - 1;
 			}
-			DiscreteUMDA umda = new DiscreteUMDANPS42SP(instance, popSize, truncFactor, lowerBounds, upperBounds);
+			DiscreteUMDA umda = new DiscreteUMDA2OptFirst42SP(instance, popSize, truncFactor, lowerBounds, upperBounds);
 			
 			// Solving the problem and writing the best solution found.
 			List<double> solutions = umda.Run(timeLimit);

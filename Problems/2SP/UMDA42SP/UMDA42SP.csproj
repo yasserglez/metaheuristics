@@ -8,7 +8,7 @@
     <ProjectGuid>{9AA09190-3651-4985-B1A7-EDB5F4D9544E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>Metaheuristics</RootNamespace>
-    <AssemblyName>UMDANPS42SP</AssemblyName>
+    <AssemblyName>UMDA42SP</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -33,7 +33,7 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UMDANPS42SP.cs" />
+    <Compile Include="UMDA42SP.cs" />
     <Compile Include="AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

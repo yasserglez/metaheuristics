@@ -50,7 +50,7 @@
     <Compile Include="SPP\SPPSolution.cs" />
     <Compile Include="QAP\DiscreteUMDA4QAP.cs" />
     <Compile Include="TSP\DiscreteUMDA4TSP.cs" />
-    <Compile Include="2SP\DiscreteUMDANPS42SP.cs" />
+    <Compile Include="2SP\DiscreteUMDA42SP.cs" />
     <Compile Include="SPP\SPPUtils.cs" />
     <Compile Include="SPP\DiscreteUMDA4SPP.cs" />
     <Compile Include="QAP\DiscreteUMDA2OptFirst4QAP.cs" />
@@ -59,6 +59,8 @@
     <Compile Include="TSP\DiscreteUMDA2OptBest4TSP.cs" />
     <Compile Include="SPP\DiscreteUMDA2OptFirst4SPP.cs" />
     <Compile Include="SPP\DiscreteUMDA2OptBest4SPP.cs" />
+    <Compile Include="2SP\DiscreteUMDA2OptBest42SP.cs" />
+    <Compile Include="2SP\DiscreteUMDA2OptFirst42SP.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
