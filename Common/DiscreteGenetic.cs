@@ -16,8 +16,7 @@ namespace Metaheuristics
 		public int[] BestIndividual { get; protected set; }
 		public double BestFitness { get; protected set; }
 
-		public DiscreteGenetic (int popSize, int[] lowerBounds, int[] upperBounds, 
-		                        double mutatuionProbability)
+		public DiscreteGenetic (int popSize,  double mutationProbability, int[] lowerBounds, int[] upperBounds)
 		{
 			PopulationSize = popSize;
 			LowerBounds = lowerBounds;
@@ -26,7 +25,7 @@ namespace Metaheuristics
 			LocalSearchEnabled = false;
 			BestIndividual = null;
 			BestFitness = 0;
-			MutationProbability = mutatuionProbability;
+			MutationProbability = mutationProbability;
 		}
 		
 		// Evaluate an individual of the population.
@@ -118,6 +117,8 @@ namespace Metaheuristics
 					                              Math.Min(Statistics.RandomDiscreteUniform(0,PopulationSize-1),
 					                                       Statistics.RandomDiscreteUniform(0,PopulationSize-1)))];
 					// Crossover UX.
+					descend1 = new int[numVariables];
+					descend2 = new int[numVariables];
 					for (int j = 0; j < numVariables; j++) {
 						if (crossMask[j]) {
 							descend1[j] = parent2[j];
