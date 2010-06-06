@@ -8,9 +8,10 @@ namespace Test
 		public static void Main(string[] args)
 		{
 			string fileInput = "../../../Problems/TSP/Instances/att48.in";
-			string fileOutput = "../../../Problems/TSP/Instances/att48_GA.out";
-			//UMD4TSP.Start(fileInput, fileOutput, 10000);
-			Genetic4TSP.Start(fileInput, fileOutput, 10000);
+			string fileOutputUMDA = "../../../Problems/TSP/Instances/att48_UMDA.out";
+			string fileOutputGA = "../../../Problems/TSP/Instances/att48_GA.out";
+			UMD4TSP.Start(fileInput, fileOutputUMDA, 10000);
+			Genetic4TSP.Start(fileInput, fileOutputGA, 10000);
 		}
 	}
 }

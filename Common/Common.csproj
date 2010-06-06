@@ -52,6 +52,7 @@
     <Compile Include="TSP\DiscreteUMDA4TSP.cs" />
     <Compile Include="DiscreteGenetic.cs" />
     <Compile Include="TSP\DiscreteGenetic4TSP.cs" />
+    <Compile Include="QAP\DiscreteGenetic4QAP.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

@@ -51,6 +51,10 @@
       <Project>{7F8A5A1E-F5C2-469A-AA46-0E08930CF4EF}</Project>
       <Name>Genetic4TSP</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Problems\QAP\Genetic4QAP\Genetic4QAP.csproj">
+      <Project>{3B269FC5-095D-4897-8CCB-FE2581A575CD}</Project>
+      <Name>Genetic4QAP</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
