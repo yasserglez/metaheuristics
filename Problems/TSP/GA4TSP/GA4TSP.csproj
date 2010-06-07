@@ -7,7 +7,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{7F8A5A1E-F5C2-469A-AA46-0E08930CF4EF}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>GA4TSP</RootNamespace>
+    <RootNamespace>Metaheuristics</RootNamespace>
     <AssemblyName>GA4TSP</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
   </PropertyGroup>
