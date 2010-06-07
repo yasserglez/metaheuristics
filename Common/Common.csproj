@@ -71,6 +71,9 @@
     <Compile Include="SPP\DiscreteGA2OptFirst4SPP.cs" />
     <Compile Include="QAP\DiscreteGA2OptFirst4QAP.cs" />
     <Compile Include="QAP\DiscreteGA2OptBest4QAP.cs" />
+    <Compile Include="2SP\DiscreteGA42SP.cs" />
+    <Compile Include="2SP\DiscreteGA2OptFirst42SP.cs" />
+    <Compile Include="2SP\DiscreteGA2OptBest42SP.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

@@ -123,6 +123,18 @@
       <Project>{F22B778E-648D-457F-9D40-4A99D2510B7A}</Project>
       <Name>GA2OptFirst4QAP</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Problems\2SP\GA2OptBest42SP\GA2OptBest42SP.csproj">
+      <Project>{C4927BD4-C7CE-458A-A4F3-3AD0FFE0C153}</Project>
+      <Name>GA2OptBest42SP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\2SP\GA2OptFirst42SP\GA2OptFirst42SP.csproj">
+      <Project>{0484417A-EA16-4A8D-BAC9-90620EC1F71B}</Project>
+      <Name>GA2OptFirst42SP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\2SP\GA42SP\GA42SP.csproj">
+      <Project>{F479D3C9-46D8-453B-A07E-4143F892063C}</Project>
+      <Name>GA42SP</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
