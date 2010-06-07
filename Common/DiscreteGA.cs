@@ -55,6 +55,10 @@ namespace Metaheuristics
 			int[] descend2 = null;
 			bool[] crossMask = new bool[numVariables];
 			bool[] mutMask = new bool[numVariables];
+			int[][] iterationPopulation = new int[PopulationSize][];
+			double[] iterationEvaluation = new double[PopulationSize];
+			int[][] newPopulation = null;
+			double[] newEvaluation = null;
 			
 			// Generate the initial random population.
 			for (int k = 0; k < PopulationSize; k++) {
@@ -65,30 +69,32 @@ namespace Metaheuristics
 			}
 
 			BestIndividual = null;
-			while (Environment.TickCount - startTime < timeLimit) {
-				int[][] newPopulation = new int[PopulationSize][];
-				
-				// Handle constraints using a repairing method.
-				if (RepairEnabled) {
-					for (int k = 0; k < PopulationSize; k++) {
-						Repair(population[k]);
-					}
-				}
-				
-				// Run a local search method for each individual in the population.
-				if (LocalSearchEnabled) {
-					for (int k = 0; k < PopulationSize; k++) {
-						LocalSearch(population[k]);
-					}
-				}				
-				
-				// Evaluate the population.
+			
+			// Handle constraints using a repairing method.
+			if (RepairEnabled) {
 				for (int k = 0; k < PopulationSize; k++) {
-					evaluation[k] = Fitness(population[k]);
+					Repair(population[k]);
 				}
+			}
+			
+			// Run a local search method for each individual in the population.
+			if (LocalSearchEnabled) {
+				for (int k = 0; k < PopulationSize; k++) {
+					LocalSearch(population[k]);
+				}
+			}				
+			
+			// Evaluate the population.
+			for (int k = 0; k < PopulationSize; k++) {
+				evaluation[k] = Fitness(population[k]);
+			}
+			Array.Sort(evaluation, population);
+			
+			while (Environment.TickCount - startTime < timeLimit) {
+				newPopulation = new int[PopulationSize][];
+				newEvaluation = new double[PopulationSize];
 
 				// Apply the selection method.
-				Array.Sort(evaluation, population);
 				if (BestIndividual == null || evaluation[0] < BestFitness) {
 					BestIndividual = population[0];
 					BestFitness = evaluation[0];
@@ -139,11 +145,48 @@ namespace Metaheuristics
 							}
 						}
 					}
-					newPopulation[i] = descend1;
-					newPopulation[i+PopulationSize/2] = descend2;
+					iterationPopulation[i] = descend1;
+					iterationPopulation[i+PopulationSize/2] = descend2;
+				}
+				
+				// Handle constraints using a repairing method.
+				if (RepairEnabled) {
+					for (int k = 0; k < PopulationSize; k++) {
+						Repair(iterationPopulation[k]);
+					}
+				}
+				
+				// Run a local search method for each individual in the population.
+				if (LocalSearchEnabled) {
+					for (int k = 0; k < PopulationSize; k++) {
+						LocalSearch(iterationPopulation[k]);
+					}
+				}				
+				
+				// Evaluate the population.
+				for (int k = 0; k < PopulationSize; k++) {
+					iterationEvaluation[k] = Fitness(iterationPopulation[k]);
+				}
+				Array.Sort(iterationEvaluation, iterationPopulation);
+				
+				// Merge the new population with the existing.
+				int iterationIndex = 0;
+				int existingIndex = 0;
+				for (int k = 0; k < PopulationSize; k++) {
+					if (evaluation[existingIndex] < iterationEvaluation[iterationIndex]) {
+						newPopulation[k] = population[existingIndex];
+						newEvaluation[k] = evaluation[existingIndex];
+						existingIndex++;
+					}
+					else {
+						newPopulation[k] = iterationPopulation[iterationIndex];
+						newEvaluation[k] = iterationEvaluation[iterationIndex];
+						iterationIndex++;
+					}
 				}
 				
 				population = newPopulation;
+				evaluation = newEvaluation;
 			}
 
 			return solutions;
