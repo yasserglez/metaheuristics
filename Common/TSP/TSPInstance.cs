@@ -38,8 +38,8 @@ namespace Metaheuristics
 					line = reader.ReadLine();
 					string[] parts = regex.Split(line.Trim());
 					int i = int.Parse(parts[0]) - 1;
-					xCoords[i] = int.Parse(parts[1]);
-					yCoords[i] = int.Parse(parts[2]);
+					xCoords[i] = double.Parse(parts[1]);
+					yCoords[i] = double.Parse(parts[2]);
 				}
 			}
 			

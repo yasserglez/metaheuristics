@@ -5,10 +5,10 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{1B42597A-1C86-4396-9612-249AA795CB95}</ProjectGuid>
+    <ProjectGuid>{3B269FC5-095D-4897-8CCB-FE2581A575CD}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>Metaheuristics</RootNamespace>
-    <AssemblyName>UMDA2OptFirst42SP</AssemblyName>
+    <RootNamespace>GA4QAP</RootNamespace>
+    <AssemblyName>GA4QAP</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -33,7 +33,7 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UMDA2OptFirst42SP.cs" />
+    <Compile Include="GA4QAP.cs" />
     <Compile Include="AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
