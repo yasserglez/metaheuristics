@@ -4,9 +4,9 @@ using System.Collections.Generic;
 
 namespace Metaheuristics
 {
-	public static class GA4QAP
-	{		
-		public static string Algoritmo = "GA for QAP";
+	public static class GA2OptBest4QAP
+	{
+		public static string Algoritmo = "GA with 2-opt (best improvement) local search for QAP";
 		
 		public static string[] Integrantes = TeamInfo.Members;
 		
@@ -16,7 +16,7 @@ namespace Metaheuristics
 		{
 			QAPInstance instance = new QAPInstance(fileInput);
 			
-			// Setting the parameters of the UMDA for this instance of the problem.
+			// Setting the parameters of the GA for this instance of the problem.
 			int popSize = 50 * instance.NumberFacilities;
 			double mutProbability = 0.3;
 			int[] lowerBounds = new int[instance.NumberFacilities];
@@ -25,7 +25,7 @@ namespace Metaheuristics
 				lowerBounds[i] = 0;
 				upperBounds[i] = instance.NumberFacilities - 1;
 			}
-			DiscreteGA genetic = new DiscreteGA4QAP(instance, popSize, mutProbability, lowerBounds, upperBounds);
+			DiscreteGA genetic = new DiscreteGA2OptBest4QAP(instance, popSize, mutProbability, lowerBounds, upperBounds);
 			
 			// Solving the problem and writing the best solution found.
 			List<double> solutions = genetic.Run(timeLimit);

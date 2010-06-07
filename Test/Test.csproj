@@ -115,6 +115,14 @@
       <Project>{F505EA66-2450-4167-AD8F-4C6BE9425B10}</Project>
       <Name>GA4SPP</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Problems\QAP\GA2OptBest4QAP\GA2OptBest4QAP.csproj">
+      <Project>{5004B489-62D1-4964-A9A8-C141C9C6A5FB}</Project>
+      <Name>GA2OptBest4QAP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\QAP\GA2OptFirst4QAP\GA2OptFirst4QAP.csproj">
+      <Project>{F22B778E-648D-457F-9D40-4A99D2510B7A}</Project>
+      <Name>GA2OptFirst4QAP</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
