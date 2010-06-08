@@ -67,6 +67,8 @@
     <Compile Include="DiscreteGRASP.cs" />
     <Compile Include="TSP\DiscreteGRASP2OptBest4TSP.cs" />
     <Compile Include="TSP\DiscreteGRASP2OptFirst4TSP.cs" />
+    <Compile Include="QAP\DiscreteGRASP2OptBest4QAP.cs" />
+    <Compile Include="QAP\DiscreteGRASP2OptFirst4QAP.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

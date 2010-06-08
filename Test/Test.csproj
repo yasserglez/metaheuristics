@@ -103,6 +103,14 @@
       <Project>{3420DDC7-6D6F-4D88-9095-3181361C325B}</Project>
       <Name>GRASP2OptFirst4TSP</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Problems\QAP\GRASP2OptBest4QAP\GRASP2OptBest4QAP.csproj">
+      <Project>{C3849A7C-D487-468B-9490-8B5FD52AAA84}</Project>
+      <Name>GRASP2OptBest4QAP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\QAP\GRASP2OptFirst4QAP\GRASP2OptFirst4QAP.csproj">
+      <Project>{C9DCE13B-7251-4CEE-8A5D-08F480FAEC06}</Project>
+      <Name>GRASP2OptFirst4QAP</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

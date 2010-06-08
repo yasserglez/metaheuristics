@@ -16,7 +16,7 @@ namespace Metaheuristics
 		public double RCLThreshold { get; protected set; }
 		public bool RepairEnabled { get; protected set; }
 		
-		public int[] BestIndividual { get; protected set; }
+		public int[] BestSolution { get; protected set; }
 		public double BestFitness { get; protected set; }
 
 		public DiscreteGRASP (double rclThreshold, int[] lowerBounds, int[] upperBounds)
@@ -25,7 +25,7 @@ namespace Metaheuristics
 			UpperBounds = upperBounds;
 			RCLThreshold = rclThreshold;			
 			RepairEnabled = false;
-			BestIndividual = null;
+			BestSolution = null;
 			BestFitness = 0;
 		}
 		
@@ -35,9 +35,7 @@ namespace Metaheuristics
 		protected abstract void GRCSolution(int[] solution);
 		
 		// Local search method.
-		protected virtual void LocalSearch(int[] individual)
-		{
-		}
+		protected abstract void LocalSearch(int[] solution);
 		
 		public List<double> Run(int limit, RunType runType)
 		{
@@ -67,7 +65,7 @@ namespace Metaheuristics
 			
 			newFitness = Fitness(newSolution);
 			
-			BestIndividual = newSolution;
+			BestSolution = newSolution;
 			BestFitness = newFitness;		
 			
 			while (Environment.TickCount - startTime < timeLimit && iteration < iterationsLimit) {
@@ -78,7 +76,7 @@ namespace Metaheuristics
 				newFitness = Fitness(newSolution);
 				
 				if (newFitness < BestFitness) {
-					BestIndividual = newSolution;
+					BestSolution = newSolution;
 					BestFitness = newFitness;		
 				}
 				solutions.Add(newFitness);

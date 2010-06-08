@@ -29,7 +29,7 @@ namespace Metaheuristics
 			
 			// Solving the problem and writing the best solution found.
 			List<double> solutions = grasp.Run(timeLimit, RunType.TimeLimit);
-			TSPSolution solution = new TSPSolution(instance, grasp.BestIndividual);
+			TSPSolution solution = new TSPSolution(instance, grasp.BestSolution);
 			solution.Write(fileOutput);
 			
 			return solutions;
