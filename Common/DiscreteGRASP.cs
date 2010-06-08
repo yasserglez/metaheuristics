@@ -19,7 +19,7 @@ namespace Metaheuristics
 		public int[] BestIndividual { get; protected set; }
 		public double BestFitness { get; protected set; }
 
-		public DiscreteGRASP (int[] lowerBounds, int[] upperBounds, double rclThreshold)
+		public DiscreteGRASP (double rclThreshold, int[] lowerBounds, int[] upperBounds)
 		{
 			LowerBounds = lowerBounds;
 			UpperBounds = upperBounds;
@@ -70,16 +70,19 @@ namespace Metaheuristics
 			BestIndividual = newSolution;
 			BestFitness = newFitness;		
 			
-			while (Environment.TickCount - startTime < timeLimit || iteration < iterationsLimit) {
+			while (Environment.TickCount - startTime < timeLimit && iteration < iterationsLimit) {
 				GRCSolution(newSolution);
 				
 				// Run a local search method for each individual in the population.
 				LocalSearch(newSolution);
-				
 				newFitness = Fitness(newSolution);
 				
-				BestIndividual = newSolution;
-				BestFitness = newFitness;		
+				if (newFitness < BestFitness) {
+					BestIndividual = newSolution;
+					BestFitness = newFitness;		
+				}
+				solutions.Add(newFitness);
+				iteration++;
 			}
 
 			return solutions;
