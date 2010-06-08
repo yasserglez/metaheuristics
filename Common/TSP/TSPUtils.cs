@@ -122,5 +122,59 @@ namespace Metaheuristics
 				path[secondSwapItem] = tmp;
 			}
 		}		
+	
+		// Implementation of the GRC solution's construction algorithm.
+		public static void GRCSolution(TSPInstance instance, int[] path, double rclThreshold)
+		{
+			int numCities = instance.NumberCities;
+			int totalCities = numCities;
+			int index = 0;
+			double best = 0;
+			double cost = 0;
+			int city = 0;
+			// Restricted Candidate List.
+			SortedList<double, int> rcl = new SortedList<double, int>();
+			// Available cities.
+			bool[] visited = new bool[numCities];
+			
+			path[0] = Statistics.RandomDiscreteUniform(0, numCities-1);
+			visited[path[0]] = true;
+			numCities --;
+			
+			while (numCities > 0) {
+				rcl = new SortedList<double, int>();
+				for (int i = 0; i < totalCities; i++) {
+					if (!visited[i]) {
+						cost = instance.Costs[path[index], i];
+						if(rcl.Count == 0) {	
+							best = cost;
+							rcl.Add(cost, i);
+						}
+						else if( cost < best) {
+							// The new city is the new best;
+							best = cost;
+							for (int j = rcl.Count-1; j > 0; j--) {
+								if (rcl.Keys[j] > rclThreshold * best) {
+									rcl.RemoveAt(j);
+								}
+								else {
+									break;
+								}
+							}
+							rcl.Add(cost, i);
+						}
+						else if (cost < rclThreshold * best) {
+							// The new city is a mostly good candidate.
+							rcl.Add(cost, i);
+						}							
+					}
+				}
+				city = rcl.Values[Statistics.RandomDiscreteUniform(0, rcl.Count-1)];
+				index++;
+				visited[city] = true;
+				path[index] = city;
+				numCities--;
+			}
+		}
 	}
 }

@@ -5,10 +5,10 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{ECCBA484-5526-48E9-AEBC-2749C2C013AA}</ProjectGuid>
+    <ProjectGuid>{3420DDC7-6D6F-4D88-9095-3181361C325B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>Metaheuristics</RootNamespace>
-    <AssemblyName>GA2OptBest4TSP</AssemblyName>
+    <AssemblyName>GRASP2OptFirst4TSP</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -33,7 +33,7 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GA2OptBest4TSP.cs" />
+    <Compile Include="GRASP2OptFirst4TSP.cs" />
     <Compile Include="AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

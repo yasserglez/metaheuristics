@@ -74,6 +74,13 @@
     <Compile Include="2SP\DiscreteGA42SP.cs" />
     <Compile Include="2SP\DiscreteGA2OptFirst42SP.cs" />
     <Compile Include="2SP\DiscreteGA2OptBest42SP.cs" />
+    <Compile Include="DiscreteGRASP.cs" />
+    <Compile Include="TSP\DiscreteGRASP2OptBest4TSP.cs" />
+    <Compile Include="TSP\DiscreteGRASP2OptFirst4TSP.cs" />
+    <Compile Include="QAP\DiscreteGRASP2OptBest4QAP.cs" />
+    <Compile Include="QAP\DiscreteGRASP2OptFirst4QAP.cs" />
+    <Compile Include="SPP\DiscreteGRASP2OptBest4SPP.cs" />
+    <Compile Include="SPP\DiscreteGRASP2OptFirst4SPP.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
