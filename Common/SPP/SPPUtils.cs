@@ -98,7 +98,6 @@ namespace Metaheuristics
 		{
 			int numItems = instance.NumberItems;
 			int numSets = instance.NumberSubsets;
-			int totalItems = numItems;
 			int index = 0;
 			double best = 0;
 			double cost = 0;
@@ -116,11 +115,11 @@ namespace Metaheuristics
 				rcl = new SortedList<double, int>();
 				for (int i = 0; i < numSets; i++) {
 					cost = Math.Abs(setWeigths[i] + instance.ItemsWeight[index] - instance.SubsetsWeight[i]);
-					if(rcl.Count == 0) {	
+					if(rcl.Count == 0) {
 						best = cost;
 						rcl.Add(cost, i);
 					}
-					else if( cost < best) {
+					else if(cost < best) {
 						// The new assignment is the new best;
 						best = cost;
 						for (int j = rcl.Count-1; j > 0; j--) {
