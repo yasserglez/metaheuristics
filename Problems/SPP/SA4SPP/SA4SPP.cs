@@ -1,15 +1,26 @@
-
 using System;
+using System.Collections;
+using System.Collections.Generic;
 
-namespace SA4SPP
+namespace Metaheuristics
 {
-
-
-	public class SA4SPP
+	public static class SA4SPP
 	{
-
-		public SA4SPP ()
+		public static string Algoritmo = "SA for SPP";
+		
+		public static string[] Integrantes = TeamInfo.Members;
+		
+		public static string Nombre_equipo = TeamInfo.Name;
+		
+		public static List<double> Start(string fileInput, string fileOutput, int timeLimit)
 		{
+			SPPInstance instance = new SPPInstance(fileInput);
+			DiscreteSA sa = new DiscreteSA4SPP(instance);
+			List<double> solutions = sa.Run(timeLimit);
+			SPPSolution solution = new SPPSolution(instance, sa.BestSolution);
+			solution.Write(fileOutput);
+			
+			return solutions;
 		}
 	}
 }

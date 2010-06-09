@@ -85,6 +85,7 @@
     <Compile Include="TSP\DiscreteSA4TSP.cs" />
     <Compile Include="QAP\DiscreteSA4QAP.cs" />
     <Compile Include="2SP\DiscreteSA42SP.cs" />
+    <Compile Include="SPP\DiscreteSA4SPP.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

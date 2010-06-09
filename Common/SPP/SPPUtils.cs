@@ -144,5 +144,37 @@ namespace Metaheuristics
 				numItems--;
 			}
 		}
+		
+		public static int[] RandomSolution(SPPInstance instance)
+		{
+			int[] solution = new int[instance.NumberItems];
+			
+			for (int i = 0; i < instance.NumberItems; i++) {
+				solution[i] = Statistics.RandomDiscreteUniform(0, instance.NumberSubsets - 1);
+			}
+			
+			return solution;
+		}
+		
+		public static int[] GetNeighbor(SPPInstance instance, int[] solution)
+		{
+			int[] neighbor = new int[instance.NumberItems];
+			int index = Statistics.RandomDiscreteUniform(0, solution.Length - 1);
+			int oldSubset = solution[index];
+			int newSubset = oldSubset;
+			while (newSubset == oldSubset) {
+				newSubset = Statistics.RandomDiscreteUniform(0, instance.NumberSubsets - 1);
+			}
+			for (int i = 0; i < solution.Length; i++) {
+				if (i == index) {
+					neighbor[i] = newSubset;
+				}
+				else {
+					neighbor[i] = solution[i];
+				}
+			}
+			
+			return neighbor;
+		}		
 	}
 }
