@@ -83,6 +83,7 @@
     <Compile Include="SPP\DiscreteGRASP2OptFirst4SPP.cs" />
     <Compile Include="DiscreteSA.cs" />
     <Compile Include="TSP\DiscreteSA4TSP.cs" />
+    <Compile Include="QAP\DiscreteSA4QAP.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

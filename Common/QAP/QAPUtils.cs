@@ -19,6 +19,47 @@ namespace Metaheuristics
 			return cost;
 		}
 		
+		public static int[] RandomSolution(QAPInstance instance)
+		{
+			int[] solution = new int[instance.NumberFacilities];
+			List<int> facilities = new List<int>();
+			
+			for (int facility = 0; facility < instance.NumberFacilities; facility++) {
+				facilities.Add(facility);
+			}
+			for (int i = 0; i < instance.NumberFacilities; i++) {
+				int facilityIndex = Statistics.RandomDiscreteUniform(0, facilities.Count - 1);
+				int facility = facilities[facilityIndex];
+				facilities.RemoveAt(facilityIndex);				
+				solution[i] = facility;
+			}
+			
+			return solution;
+		}
+		
+		public static int[] GetNeighbor(QAPInstance instance, int[] solution)
+		{
+			int[] neighbor = new int[instance.NumberFacilities];
+			int a = Statistics.RandomDiscreteUniform(0, solution.Length - 1);
+			int b = a;
+			while (b == a) {
+				b = Statistics.RandomDiscreteUniform(0, solution.Length - 1);
+			}
+			for (int i = 0; i < solution.Length; i++) {
+				if (i == a) {
+					neighbor[i] = solution[b];
+				}
+				else if (i == b) {
+					neighbor[i] = solution[a];
+				}
+				else {
+					neighbor[i] = solution[i];
+				}
+			}
+			
+			return neighbor;
+		}		
+		
 		public static void Repair(QAPInstance instance, int[] individual)
 		{
 			int facilitiesCount = 0;
