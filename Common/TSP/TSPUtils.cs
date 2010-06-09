@@ -18,6 +18,47 @@ namespace Metaheuristics
 			return cost;
 		}
 		
+		public static int[] RandomSolution(TSPInstance instance)
+		{
+			int[] solution = new int[instance.NumberCities];
+			List<int> cities = new List<int>();
+			
+			for (int city = 0; city < instance.NumberCities; city++) {
+				cities.Add(city);
+			}
+			for (int i = 0; i < instance.NumberCities; i++) {
+				int cityIndex = Statistics.RandomDiscreteUniform(0, cities.Count - 1);
+				int city = cities[cityIndex];
+				cities.RemoveAt(cityIndex);				
+				solution[i] = city;
+			}
+			
+			return solution;
+		}
+		
+		public static int[] GetNeighbor(TSPInstance instance, int[] solution)
+		{
+			int[] neighbor = new int[instance.NumberCities];
+			int a = Statistics.RandomDiscreteUniform(0, solution.Length - 1);
+			int b = a;
+			while (b == a) {
+				b = Statistics.RandomDiscreteUniform(0, solution.Length - 1);
+			}
+			for (int i = 0; i < solution.Length; i++) {
+				if (i == a) {
+					neighbor[i] = solution[b];
+				}
+				else if (i == b) {
+					neighbor[i] = solution[a];
+				}
+				else {
+					neighbor[i] = solution[i];
+				}
+			}
+			
+			return neighbor;
+		}
+		
 		public static void Repair(TSPInstance instance, int[] individual)
 		{
 			int visitedCitiesCount = 0;
