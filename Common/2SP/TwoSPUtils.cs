@@ -356,6 +356,47 @@ namespace Metaheuristics
 				ordering[firstSwapItem] = ordering[secondSwapItem];
 				ordering[secondSwapItem] = tmp;
 			}
+		}
+		
+		public static int[] RandomSolution(TwoSPInstance instance)
+		{
+			int[] solution = new int[instance.NumberItems];
+			List<int> items = new List<int>();
+			
+			for (int item = 0; item < instance.NumberItems; item++) {
+				items.Add(item);
+			}
+			for (int i = 0; i < instance.NumberItems; i++) {
+				int itemIndex = Statistics.RandomDiscreteUniform(0, items.Count - 1);
+				int item = items[itemIndex];
+				items.RemoveAt(itemIndex);				
+				solution[i] = item;
+			}
+			
+			return solution;
+		}
+		
+		public static int[] GetNeighbor(TwoSPInstance instance, int[] solution)
+		{
+			int[] neighbor = new int[instance.NumberItems];
+			int a = Statistics.RandomDiscreteUniform(0, solution.Length - 1);
+			int b = a;
+			while (b == a) {
+				b = Statistics.RandomDiscreteUniform(0, solution.Length - 1);
+			}
+			for (int i = 0; i < solution.Length; i++) {
+				if (i == a) {
+					neighbor[i] = solution[b];
+				}
+				else if (i == b) {
+					neighbor[i] = solution[a];
+				}
+				else {
+					neighbor[i] = solution[i];
+				}
+			}
+
+			return neighbor;
 		}		
 	}
 }
