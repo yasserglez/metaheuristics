@@ -86,6 +86,16 @@
     <Compile Include="QAP\DiscreteSA4QAP.cs" />
     <Compile Include="2SP\DiscreteSA42SP.cs" />
     <Compile Include="SPP\DiscreteSA4SPP.cs" />
+    <Compile Include="DiscretePSO.cs" />
+    <Compile Include="TSP\DiscretePSO2TSP.cs" />
+    <Compile Include="2SP\DiscretePSO42SP.cs" />
+    <Compile Include="QAP\DiscretePSO4QAP.cs" />
+    <Compile Include="TSP\DiscretePSO2OptBest4TSP.cs" />
+    <Compile Include="TSP\DiscretePSO2OptFirst4TSP.cs" />
+    <Compile Include="QAP\DiscretePSO2OptBest4QAP.cs" />
+    <Compile Include="QAP\DiscretePSO2OptFirst4QAP.cs" />
+    <Compile Include="2SP\DiscretePSO2OptBest42SP.cs" />
+    <Compile Include="2SP\DiscretePSO2OptFirst42SP.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

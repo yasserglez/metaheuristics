@@ -183,10 +183,6 @@
       <Project>{DF3531BE-CD46-4FA6-BEEF-1A57FB97523A}</Project>
       <Name>PSO4QAP</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Problems\SPP\PSO4SPP\PSO4SPP.csproj">
-      <Project>{2F0AC79E-3867-46BB-88BC-2C4043D3A631}</Project>
-      <Name>PSO4SPP</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Problems\TSP\PSO4TSP\PSO4TSP.csproj">
       <Project>{57044B23-620E-4AAD-BF94-CEB43D6031B9}</Project>
       <Name>PSO4TSP</Name>

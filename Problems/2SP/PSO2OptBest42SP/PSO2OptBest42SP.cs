@@ -3,9 +3,10 @@ using System.Collections.Generic;
 
 namespace Metaheuristics
 {
-    public static class PSO42SP
-    {
-        public static string Algoritmo = "PSO using the NPS heuristic with 2-opt (first improvement) local search for 2SP";
+	public static class PSO2OptFirst42SP
+	{
+
+		public static string Algoritmo = "PSO using the NPS heuristic with 2-opt (best improvement) local search for 2SP";
 
         public static string[] Integrantes = TeamInfo.Members;
 
@@ -25,7 +26,7 @@ namespace Metaheuristics
                 lowerBounds[i] = 0;
                 upperBounds[i] = instance.NumberItems - 1;
             }
-            DiscretePSO pso = new DiscretePSO42SP(instance, particlesCount, prevConf, neighConf, lowerBounds, upperBounds);
+            DiscretePSO pso = new DiscretePSO2OptBest42SP(instance, particlesCount, prevConf, neighConf, lowerBounds, upperBounds);
 
             // Solving the problem and writing the best solution found.
             List<double> solutions = pso.Run(timeLimit);
