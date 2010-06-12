@@ -36,7 +36,6 @@
     <Compile Include="AssemblyInfo.cs" />
     <Compile Include="Statistics.cs" />
     <Compile Include="DiscreteUMDA.cs" />
-    <Compile Include="TeamInfo.cs" />
     <Compile Include="TSP\TSPInstance.cs" />
     <Compile Include="TSP\TSPSolution.cs" />
     <Compile Include="TSP\TSPUtils.cs" />
@@ -96,6 +95,7 @@
     <Compile Include="QAP\DiscretePSO2OptFirst4QAP.cs" />
     <Compile Include="2SP\DiscretePSO2OptBest42SP.cs" />
     <Compile Include="2SP\DiscretePSO2OptFirst42SP.cs" />
+    <Compile Include="About.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

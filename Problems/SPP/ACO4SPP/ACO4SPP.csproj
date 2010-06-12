@@ -31,10 +31,20 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="Metaheuristic, Version=1.0.3814.42444, Culture=neutral, PublicKeyToken=null">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Metaheuristic.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.cs" />
     <Compile Include="ACO4SPP.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\Common.csproj">
+      <Project>{4630C8D3-67C9-443D-89C4-F11A2CCEC50C}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>

@@ -121,11 +121,10 @@ namespace Metaheuristics
         {
         }
 
-        public List<double> Run(int timeLimit)
+        public void Run(int timeLimit)
         {
             int startTime = Environment.TickCount;
             int numVariables = LowerBounds.Length;
-            List<double> solutions = new List<double>();
             int[][] partBestPrevPosition = new int[ParticlesCount][];
             int[][] partPosition = new int[ParticlesCount][];
             List<Tuple>[] partVelocitys = new List<Tuple>[ParticlesCount];
@@ -204,8 +203,6 @@ namespace Metaheuristics
                     }
                 }
             }
-
-            return solutions;
         }
     }
 }

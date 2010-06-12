@@ -3,15 +3,9 @@ using System.Collections.Generic;
 
 namespace Metaheuristics
 {
-	public static class GA2OptBest4TSP
+	public class GA2OptBest4TSP : IMetaheuristic
 	{
-		public static string Algoritmo = "GA with 2-opt (best improvement) local search for TSP";
-		
-		public static string[] Integrantes = TeamInfo.Members;
-		
-		public static string Nombre_equipo = TeamInfo.Name;
-		
-		public static List<double> Start(string fileInput, string fileOutput, int timeLimit)
+		public void Start(string fileInput, string fileOutput, int timeLimit)
 		{
 			TSPInstance instance = new TSPInstance(fileInput);
 			
@@ -27,11 +21,33 @@ namespace Metaheuristics
 			DiscreteGA genetic = new DiscreteGA2OptBest4TSP(instance, popSize, mutProbability, lowerBounds, upperBounds);
 			
 			// Solving the problem and writing the best solution found.
-			List<double> solutions = genetic.Run(timeLimit);
+			genetic.Run(timeLimit);
 			TSPSolution solution = new TSPSolution(instance, genetic.BestIndividual);
 			solution.Write(fileOutput);
-			
-			return solutions;
+		}
+		
+		public string Name {
+			get {
+				return "GA with 2-opt (best improvement) local search for TSP";
+			}
+		}
+		
+		public MetaheuristicType Type {
+			get {
+				return MetaheuristicType.GA;
+			}
+		}
+		
+		public ProblemType Problem {
+			get {
+				return ProblemType.TSP;
+			}
+		}
+		
+		public string[] Team {
+			get {
+				return About.Team;
+			}
 		}
 	}
 }

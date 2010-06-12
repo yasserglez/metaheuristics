@@ -1,15 +1,36 @@
-
 using System;
 
-namespace ACO4QAP
+namespace Metaheuristics
 {
-
-
-	public class ACO4QAP
+	public class ACO42SP : IMetaheuristic
 	{
-
-		public ACO4QAP ()
+		public void Start(string inputFile, string outputFile, int timeLimit)
 		{
+			throw new NotImplementedException();
+		}
+
+		public string Name {
+			get {
+				return "ACO for QAP";
+			}
+		}
+		
+		public MetaheuristicType Type {
+			get {
+				return MetaheuristicType.ACO;
+			}
+		}
+		
+		public ProblemType Problem {
+			get {
+				return ProblemType.QAP;
+			}
+		}
+		
+		public string[] Team {
+			get {
+				return About.Team;
+			}
 		}
 	}
 }

@@ -3,15 +3,9 @@ using System.Collections.Generic;
 
 namespace Metaheuristics
 {
-	public static class GA42SP
+	public class GA42SP : IMetaheuristic
 	{
-		public static string Algoritmo = "GA using the NPS heuristic for 2SP";
-		
-		public static string[] Integrantes = TeamInfo.Members;
-		
-		public static string Nombre_equipo = TeamInfo.Name;
-		
-		public static List<double> Start(string fileInput, string fileOutput, int timeLimit)
+		public void Start(string fileInput, string fileOutput, int timeLimit)
 		{
 			TwoSPInstance instance = new TwoSPInstance(fileInput);
 			
@@ -27,12 +21,34 @@ namespace Metaheuristics
 			DiscreteGA genetic = new DiscreteGA42SP(instance, popSize, mutProbability, lowerBounds, upperBounds);
 			
 			// Solving the problem and writing the best solution found.
-			List<double> solutions = genetic.Run(timeLimit);
+			genetic.Run(timeLimit);
 			int[,] coordinates = TwoSPUtils.NPS2Coordinates(instance, genetic.BestIndividual);
 			TwoSPSolution solution = new TwoSPSolution(instance, coordinates);
 			solution.Write(fileOutput);
-			
-			return solutions;
+		}
+		
+		public string Name {
+			get {
+				return "GA using the NPS heuristic for 2SP";
+			}
+		}
+		
+		public MetaheuristicType Type {
+			get {
+				return MetaheuristicType.GA;
+			}
+		}
+		
+		public ProblemType Problem {
+			get {
+				return ProblemType.TwoSP;
+			}
+		}
+		
+		public string[] Team {
+			get {
+				return About.Team;
+			}
 		}
 	}
 }

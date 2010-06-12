@@ -1,15 +1,36 @@
-
 using System;
 
-namespace ACO4TSP
+namespace Metaheuristics
 {
-
-
-	public class ACO4TSP
+	public class ACO4TSP : IMetaheuristic
 	{
-
-		public ACO4TSP ()
+		public void Start(string inputFile, string outputFile, int timeLimit)
 		{
+			throw new NotImplementedException();
+		}
+
+		public string Name {
+			get {
+				return "ACO for TSP";
+			}
+		}
+		
+		public MetaheuristicType Type {
+			get {
+				return MetaheuristicType.ACO;
+			}
+		}
+		
+		public ProblemType Problem {
+			get {
+				return ProblemType.TSP;
+			}
+		}
+		
+		public string[] Team {
+			get {
+				return About.Team;
+			}
 		}
 	}
 }

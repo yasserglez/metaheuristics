@@ -3,15 +3,9 @@ using System.Collections.Generic;
 
 namespace Metaheuristics
 {
-    public static class PSO4QAP
+    public class PSO4QAP : IMetaheuristic
     {
-        public static string Algoritmo = "PSO for QAP";
-
-        public static string[] Integrantes = TeamInfo.Members;
-
-        public static string Nombre_equipo = TeamInfo.Name;
-
-        public static List<double> Start(string fileInput, string fileOutput, int timeLimit)
+        public void Start(string fileInput, string fileOutput, int timeLimit)
         {
             QAPInstance instance = new QAPInstance(fileInput);
 
@@ -28,11 +22,33 @@ namespace Metaheuristics
             DiscretePSO pso = new DiscretePSO4QAP(instance, particlesCount, prevConf, neighConf, lowerBounds, upperBounds);
 
             // Solving the problem and writing the best solution found.
-            List<double> solutions = pso.Run(timeLimit);
+            pso.Run(timeLimit);
             QAPSolution solution = new QAPSolution(instance, pso.BestPosition);
             solution.Write(fileOutput);
-
-            return solutions;
+        }
+        
+        public string Name {
+        	get {
+        		return "PSO for QAP";
+        	}
+        }
+        
+        public MetaheuristicType Type {
+        	get {
+        		return MetaheuristicType.PSO;
+        	}
+        }
+        
+        public ProblemType Problem {
+        	get {
+        		return ProblemType.QAP;
+        	}
+        }
+        
+        public string[] Team {
+        	get {
+        		return About.Team;
+        	}
         }
     }
 }

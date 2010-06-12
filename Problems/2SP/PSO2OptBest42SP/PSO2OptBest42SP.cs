@@ -3,16 +3,9 @@ using System.Collections.Generic;
 
 namespace Metaheuristics
 {
-	public static class PSO2OptFirst42SP
+	public class PSO2OptFirst42SP : IMetaheuristic
 	{
-
-		public static string Algoritmo = "PSO using the NPS heuristic with 2-opt (best improvement) local search for 2SP";
-
-        public static string[] Integrantes = TeamInfo.Members;
-
-        public static string Nombre_equipo = TeamInfo.Name;
-
-        public static List<double> Start(string fileInput, string fileOutput, int timeLimit)
+        public void Start(string fileInput, string fileOutput, int timeLimit)
         {
             TwoSPInstance instance = new TwoSPInstance(fileInput);
 
@@ -29,12 +22,34 @@ namespace Metaheuristics
             DiscretePSO pso = new DiscretePSO2OptBest42SP(instance, particlesCount, prevConf, neighConf, lowerBounds, upperBounds);
 
             // Solving the problem and writing the best solution found.
-            List<double> solutions = pso.Run(timeLimit);
+            pso.Run(timeLimit);
             int[,] coordinates = TwoSPUtils.NPS2Coordinates(instance, pso.BestPosition);
             TwoSPSolution solution = new TwoSPSolution(instance, coordinates);
             solution.Write(fileOutput);
-
-            return solutions;
+        }
+        
+        public string Name {
+        	get {
+        		return "PSO using the NPS heuristic with 2-opt (best improvement) local search for 2SP";
+        	}
+        }
+        
+        public MetaheuristicType Type {
+        	get {
+        		return MetaheuristicType.PSO;
+        	}
+        }
+        
+        public ProblemType Problem {
+        	get {
+        		return ProblemType.TwoSP;
+        	}
+        }
+        
+        public string[] Team {
+        	get {
+        		return About.Team;
+        	}
         }
     }
 }

@@ -41,12 +41,11 @@ namespace Metaheuristics
 		{
 		}
 		
-		public List<double> Run(int timeLimit)
+		public void Run(int timeLimit)
 		{	
 			int startTime = Environment.TickCount;
 			int numVariables = LowerBounds.Length;
 			int selectedSize = Math.Max(1, (int) Math.Round(TruncationFactor * PopulationSize));
-			List<double> solutions = new List<double>();
 			int[][] population = new int[PopulationSize][];
 			double[] evaluation = new double[PopulationSize];
 			double[][] model = new double[numVariables][];
@@ -88,7 +87,6 @@ namespace Metaheuristics
 				if (BestIndividual == null || evaluation[0] < BestFitness) {
 					BestIndividual = population[0];
 					BestFitness = evaluation[0];
-					solutions.Add(BestFitness);
 				}
 
 				// Learn the probabilistic model from the selected population.
@@ -115,8 +113,6 @@ namespace Metaheuristics
 					}
 				}
 			}
-
-			return solutions;
 		}
 	}
 }

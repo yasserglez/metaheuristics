@@ -4,15 +4,9 @@ using System.Collections.Generic;
 
 namespace Metaheuristics
 {
-	public static class UMDA2OptFirst42SP
+	public class UMDA2OptFirst42SP : IMetaheuristic
 	{
-		public static string Algoritmo = "UMDA using the NPS heuristic with 2-opt (first improvement) local search for 2SP";
-		
-		public static string[] Integrantes = TeamInfo.Members;
-		
-		public static string Nombre_equipo = TeamInfo.Name;
-		
-		public static List<double> Start(string fileInput, string fileOutput, int timeLimit)
+		public void Start(string fileInput, string fileOutput, int timeLimit)
 		{
 			TwoSPInstance instance = new TwoSPInstance(fileInput);
 			
@@ -28,12 +22,34 @@ namespace Metaheuristics
 			DiscreteUMDA umda = new DiscreteUMDA2OptFirst42SP(instance, popSize, truncFactor, lowerBounds, upperBounds);
 			
 			// Solving the problem and writing the best solution found.
-			List<double> solutions = umda.Run(timeLimit);
+			umda.Run(timeLimit);
 			int[,] coordinates = TwoSPUtils.NPS2Coordinates(instance, umda.BestIndividual);
 			TwoSPSolution solution = new TwoSPSolution(instance, coordinates);
 			solution.Write(fileOutput);
-			
-			return solutions;
+		}
+		
+		public string Name {
+			get {
+				return "UMDA using the NPS heuristic with 2-opt (first improvement) local search for 2SP";
+			}
+		}
+		
+		public MetaheuristicType Type {
+			get {
+				return MetaheuristicType.EDA;
+			}
+		}
+		
+		public ProblemType Problem {
+			get {
+				return ProblemType.TwoSP;
+			}
+		}
+		
+		public string[] Team {
+			get {
+				return About.Team;
+			}
 		}
 	}
 }

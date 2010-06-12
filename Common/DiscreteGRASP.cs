@@ -37,23 +37,24 @@ namespace Metaheuristics
 		// Local search method.
 		protected abstract void LocalSearch(int[] solution);
 		
-		public List<double> Run(int limit, RunType runType)
+		public void Run(int limit, RunType runType)
 		{
 			switch (runType) {
 			case RunType.IterationsLimit:
-				return Run(int.MaxValue, limit);
+				Run(int.MaxValue, limit);
+				break;
 			case RunType.TimeLimit:
-				return Run(limit, int.MaxValue);
+				Run(limit, int.MaxValue);
+				break;
 			default:
-				return null;
+				break;
 			}
 		}
 		
-		public List<double> Run(int timeLimit, int iterationsLimit)
+		public void Run(int timeLimit, int iterationsLimit)
 		{
 			int startTime = Environment.TickCount;
 			int numVariables = LowerBounds.Length;
-			List<double> solutions = new List<double>();
 			int[] newSolution = new int[numVariables];
 			double newFitness = 0;
 			int iteration = 0;
@@ -79,11 +80,8 @@ namespace Metaheuristics
 					BestSolution = newSolution;
 					BestFitness = newFitness;		
 				}
-				solutions.Add(newFitness);
 				iteration++;
 			}
-
-			return solutions;
 		}
 	}
 }

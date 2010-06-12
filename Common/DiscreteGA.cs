@@ -41,11 +41,10 @@ namespace Metaheuristics
 		{
 		}
 		
-		public List<double> Run(int timeLimit)
+		public void Run(int timeLimit)
 		{	
 			int startTime = Environment.TickCount;
 			int numVariables = LowerBounds.Length;
-			List<double> solutions = new List<double>();
 			int[][] population = new int[PopulationSize][];
 			double[] evaluation = new double[PopulationSize];
 			
@@ -98,7 +97,6 @@ namespace Metaheuristics
 				if (BestIndividual == null || evaluation[0] < BestFitness) {
 					BestIndividual = population[0];
 					BestFitness = evaluation[0];
-					solutions.Add(BestFitness);
 				}
 				
 				// Crossover's and Mutation's masks.
@@ -188,8 +186,6 @@ namespace Metaheuristics
 				population = newPopulation;
 				evaluation = newEvaluation;
 			}
-
-			return solutions;
 		}
 	}
 }

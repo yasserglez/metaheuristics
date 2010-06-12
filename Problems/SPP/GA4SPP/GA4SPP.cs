@@ -3,15 +3,9 @@ using System.Collections.Generic;
 
 namespace Metaheuristics
 {
-	public static class GA4SPP
+	public class GA4SPP : IMetaheuristic
 	{
-		public static string Algoritmo = "GA for SPP";
-		
-		public static string[] Integrantes = TeamInfo.Members;
-		
-		public static string Nombre_equipo = TeamInfo.Name;
-		
-		public static List<double> Start(string fileInput, string fileOutput, int timeLimit)
+		public void Start(string fileInput, string fileOutput, int timeLimit)
 		{
 			SPPInstance instance = new SPPInstance(fileInput);
 			
@@ -27,11 +21,33 @@ namespace Metaheuristics
 			DiscreteGA genetic = new DiscreteGA4SPP(instance, popSize, mutProbability, lowerBounds, upperBounds);
 			
 			// Solving the problem and writing the best solution found.
-			List<double> solutions = genetic.Run(timeLimit);
+			genetic.Run(timeLimit);
 			SPPSolution solution = new SPPSolution(instance, genetic.BestIndividual);
 			solution.Write(fileOutput);
-			
-			return solutions;
+		}
+		
+		public string Name {
+			get {
+				return "GA for SPP";
+			}
+		}
+		
+		public MetaheuristicType Type {
+			get {
+				return MetaheuristicType.GA;
+			}
+		}
+		
+		public ProblemType Problem {
+			get {
+				return ProblemType.SPP;
+			}
+		}
+		
+		public string[] Team {
+			get {
+				return About.Team;
+			}
 		}
 	}
 }

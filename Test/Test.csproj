@@ -29,6 +29,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="Metaheuristic, Version=1.0.3814.42444, Culture=neutral, PublicKeyToken=null">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Metaheuristic.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
@@ -218,6 +222,30 @@
     <ProjectReference Include="..\Problems\TSP\TS4TSP\TS4TSP.csproj">
       <Project>{2E7E6DB1-10DF-40BD-9B93-9E6ABE0657B5}</Project>
       <Name>TS4TSP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\2SP\PSO2OptBest42SP\PSO2OptBest42SP.csproj">
+      <Project>{9D862599-6623-426D-83C9-B1364AD5D1F9}</Project>
+      <Name>PSO2OptBest42SP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\QAP\PSO2OptBest4QAP\PSO2OptBest4QAP.csproj">
+      <Project>{83745B16-A6F6-4E5D-B508-356A5E0F93A8}</Project>
+      <Name>PSO2OptBest4QAP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\TSP\PSO2OptBest4TSP\PSO2OptBest4TSP.csproj">
+      <Project>{9214FCD6-40C4-49E1-AF06-D58595D44AE3}</Project>
+      <Name>PSO2OptBest4TSP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\2SP\PSO2OptFirst42SP\PSO2OptFirst42SP.csproj">
+      <Project>{5CD44FF4-4235-410B-8319-CF0136F6B6CC}</Project>
+      <Name>PSO2OptFirst42SP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\TSP\PSO2OptFirst4TSP\PSO2OptFirst4TSP.csproj">
+      <Project>{B0E1644D-D248-4753-A052-BF6DEE526B73}</Project>
+      <Name>PSO2OptFirst4TSP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\QAP\PSO2OptFirst4QAP\PSO2OptFirst4QAP.csproj">
+      <Project>{36A251E8-E284-43CC-BC60-CA7EBE509346}</Project>
+      <Name>PSO2OptFirst4QAP</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

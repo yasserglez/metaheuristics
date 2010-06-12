@@ -4,15 +4,9 @@ using System.Collections.Generic;
 
 namespace Metaheuristics
 {
-	public class GRASP2OptBest4SPP
+	public class GRASP2OptBest4SPP: IMetaheuristic
 	{
-		public static string Algoritmo = "GRASP with 2-opt (best improvement) local search for SPP";
-		
-		public static string[] Integrantes = TeamInfo.Members;
-		
-		public static string Nombre_equipo = TeamInfo.Name;
-		
-		public static List<double> Start(string fileInput, string fileOutput, int timeLimit)
+		public void Start(string fileInput, string fileOutput, int timeLimit)
 		{
 			SPPInstance instance = new SPPInstance(fileInput);
 			
@@ -28,11 +22,33 @@ namespace Metaheuristics
 			DiscreteGRASP grasp = new DiscreteGRASP2OptBest4SPP(instance, rclThreshold, lowerBounds, upperBounds);
 			
 			// Solving the problem and writing the best solution found.
-			List<double> solutions = grasp.Run(timeLimit, RunType.TimeLimit);
+			grasp.Run(timeLimit, RunType.TimeLimit);
 			SPPSolution solution = new SPPSolution(instance, grasp.BestSolution);
 			solution.Write(fileOutput);
-			
-			return solutions;
+		}
+		
+		public string Name {
+			get {
+				return "GRASP with 2-opt (best improvement) local search for SPP";
+			}
+		}
+		
+		public MetaheuristicType Type {
+			get {
+				return MetaheuristicType.GRASP;
+			}
+		}
+		
+		public ProblemType Problem {
+			get {
+				return ProblemType.SPP;
+			}
+		}
+		
+		public string[] Team {
+			get {
+				return About.Team;
+			}
 		}
 	}
 }

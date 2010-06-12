@@ -5,10 +5,10 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{0E9D32E6-2C53-41D4-85CD-0C5A00136BF2}</ProjectGuid>
+    <ProjectGuid>{36A251E8-E284-43CC-BC60-CA7EBE509346}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>Metaheuristics</RootNamespace>
-    <AssemblyName>GA2OptBest4SPP</AssemblyName>
+    <AssemblyName>PSO42OptFirstQAP</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -37,8 +37,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GA2OptBest4SPP.cs" />
     <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="PSO2OptFirst4QAP.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\Common\Common.csproj">

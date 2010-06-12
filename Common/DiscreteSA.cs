@@ -29,7 +29,7 @@ namespace Metaheuristics
 		// Get a new solution in the neighborhood of the given solution.
 		protected abstract int[] GetNeighbor(int[] solution);
 		
-		public List<double> Run(int timeLimit)
+		public void Run(int timeLimit)
 		{	
 			List<double> solutions = new List<double>();
 			int startTime = Environment.TickCount;			
@@ -38,7 +38,7 @@ namespace Metaheuristics
 			// This is also used to choose an initial temperature valuel.
 			int[] currentSolution = null;
 			double currentFitness = 0;
-			for (int i = 0; i <= 5; i++) {
+			for (int i = 1; i <= 3; i++) {
 				int[] solution = InitialSolution();
 				double solutionFitness = Fitness(solution);
 				
@@ -65,7 +65,6 @@ namespace Metaheuristics
 						if (newFitness < BestFitness) {
 							BestSolution = newSolution;
 							BestFitness = newFitness;
-							solutions.Add(BestFitness);
 						}
 						currentSolution = newSolution;
 						currentFitness = newFitness;
@@ -76,7 +75,6 @@ namespace Metaheuristics
 							if (newFitness < BestFitness) {
 								BestSolution = newSolution;
 								BestFitness = newFitness;
-								solutions.Add(BestFitness);
 							}
 							currentSolution = newSolution;
 							currentFitness = newFitness;
@@ -87,8 +85,6 @@ namespace Metaheuristics
 				// Apply a geometric schema by default.
 				temperature = TempReduction * temperature;
 			}
-
-			return solutions;
 		}
 	}
 }
