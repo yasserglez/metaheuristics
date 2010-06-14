@@ -247,6 +247,38 @@
       <Project>{36A251E8-E284-43CC-BC60-CA7EBE509346}</Project>
       <Name>PSO2OptFirst4QAP</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Problems\2SP\2OptBest42SP\2OptBest42SP.csproj">
+      <Project>{BF5F6622-DB97-4487-9B30-A6FA92BF8E54}</Project>
+      <Name>2OptBest42SP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\2SP\2OptFirst42SP\2OptFirst42SP.csproj">
+      <Project>{5EC8DC7C-2E7F-447E-9CD1-1DF4A39CB868}</Project>
+      <Name>2OptFirst42SP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\2SP\SS42SP\SS42SP.csproj">
+      <Project>{B5CD16A8-C078-4D53-B46F-07E4CED58F0F}</Project>
+      <Name>SS42SP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\QAP\SS4QAP\SS4QAP.csproj">
+      <Project>{DFC8A759-B4BD-4C80-ADF3-BC0F056CF91C}</Project>
+      <Name>SS4QAP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\SPP\SS4SPP\SS4SPP.csproj">
+      <Project>{E84FAE46-BF5D-4D6D-B5FD-E9EAF72C1EF8}</Project>
+      <Name>SS4SPP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\TSP\SS4TSP\SS4TSP.csproj">
+      <Project>{12DA6195-B58F-4FC7-8ADB-1209D5E63C00}</Project>
+      <Name>SS4TSP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\QAP\2OptBest4QAP\2OptBest4QAP.csproj">
+      <Project>{54BC93A0-8865-4C93-A4DF-E393D565E431}</Project>
+      <Name>2OptBest4QAP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\QAP\2OptFirst4QAP\2OptFirst4QAP.csproj">
+      <Project>{96973FF6-D706-4B64-888E-F75A32EA506D}</Project>
+      <Name>2OptFirst4QAP</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -48,7 +48,7 @@ namespace Metaheuristics
 		
 		public string[] Team {
 			get {
-				throw new System.NotImplementedException();
+				return About.Team;
 			}
 		}
 	}
