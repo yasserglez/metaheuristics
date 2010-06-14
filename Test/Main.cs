@@ -8,9 +8,9 @@ namespace Test
 		public static void Main(string[] args)
 		{
 		    int time = 3000;
-			string input = "../../../Problems/QAP/Instances/had20.in";
-			string output = "../../../Problems/QAP/Instances/had20.out";
-			(new TwoOptBest4QAP()).Start(input, output, time);
+			string input = "../../../Problems/2SP/Instances/inst1.in";
+			string output = "../../../Problems/2SP/Instances/inst1.out";
+			(new NPS2OptBest42SP()).Start(input, output, time);
 		}
 	}
 }

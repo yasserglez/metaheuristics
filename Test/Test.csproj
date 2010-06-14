@@ -219,65 +219,81 @@
       <Project>{96973FF6-D706-4B64-888E-F75A32EA506D}</Project>
       <Name>2OptFirst4QAP</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Problems\2SP\2OptBest42SP\NPS2OptBest42SP.csproj">
+    <ProjectReference Include="..\Problems\2SP\NPS2OptBest42SP\NPS2OptBest42SP.csproj">
       <Project>{BF5F6622-DB97-4487-9B30-A6FA92BF8E54}</Project>
       <Name>NPS2OptBest42SP</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Problems\2SP\2OptFirst42SP\NPS2OptFirst42SP.csproj">
+    <ProjectReference Include="..\Problems\2SP\NPS2OptFirst42SP\NPS2OptFirst42SP.csproj">
       <Project>{5EC8DC7C-2E7F-447E-9CD1-1DF4A39CB868}</Project>
       <Name>NPS2OptFirst42SP</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Problems\2SP\UMDA42SP\UMDANPS42SP.csproj">
+    <ProjectReference Include="..\Problems\2SP\UMDANPS42SP\UMDANPS42SP.csproj">
       <Project>{9AA09190-3651-4985-B1A7-EDB5F4D9544E}</Project>
       <Name>UMDANPS42SP</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Problems\2SP\UMDA2OptFirst42SP\UMDANPS2OptFirst42SP.csproj">
+    <ProjectReference Include="..\Problems\2SP\UMDANPS2OptFirst42SP\UMDANPS2OptFirst42SP.csproj">
       <Project>{1B42597A-1C86-4396-9612-249AA795CB95}</Project>
       <Name>UMDANPS2OptFirst42SP</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Problems\2SP\UMDA2OptBest42SP\UMDANPS2OptBest42SP.csproj">
+    <ProjectReference Include="..\Problems\2SP\UMDANPS2OptBest42SP\UMDANPS2OptBest42SP.csproj">
       <Project>{2A349632-0FFC-4B3E-B310-616EAD60F7F5}</Project>
       <Name>UMDANPS2OptBest42SP</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Problems\2SP\TS42SP\TSNPS42SP.csproj">
+    <ProjectReference Include="..\Problems\2SP\TSNPS42SP\TSNPS42SP.csproj">
       <Project>{5D8C7CF3-A94C-451C-99FC-C1C1E7CF2ED0}</Project>
       <Name>TSNPS42SP</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Problems\2SP\SS42SP\SSNPS42SP.csproj">
+    <ProjectReference Include="..\Problems\2SP\SSNPS42SP\SSNPS42SP.csproj">
       <Project>{B5CD16A8-C078-4D53-B46F-07E4CED58F0F}</Project>
       <Name>SSNPS42SP</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Problems\2SP\SA42SP\SANPS42SP.csproj">
+    <ProjectReference Include="..\Problems\2SP\SANPS42SP\SANPS42SP.csproj">
       <Project>{E6AB3E8F-DCA1-4F78-ACF3-9E673CD49F25}</Project>
       <Name>SANPS42SP</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Problems\2SP\PSO42SP\PSONPS42SP.csproj">
+    <ProjectReference Include="..\Problems\2SP\PSONPS42SP\PSONPS42SP.csproj">
       <Project>{8B0EEB18-CAFE-436E-A3EE-90AE924DDB29}</Project>
       <Name>PSONPS42SP</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Problems\2SP\PSO2OptFirst42SP\PSONPS2OptFirst42SP.csproj">
+    <ProjectReference Include="..\Problems\2SP\PSONPS2OptFirst42SP\PSONPS2OptFirst42SP.csproj">
       <Project>{5CD44FF4-4235-410B-8319-CF0136F6B6CC}</Project>
       <Name>PSONPS2OptFirst42SP</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Problems\2SP\PSO2OptBest42SP\PSONPS2OptBest42SP.csproj">
+    <ProjectReference Include="..\Problems\2SP\PSONPS2OptBest42SP\PSONPS2OptBest42SP.csproj">
       <Project>{9D862599-6623-426D-83C9-B1364AD5D1F9}</Project>
       <Name>PSONPS2OptBest42SP</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Problems\2SP\ACO42SP\ACONPS42SP.csproj">
+    <ProjectReference Include="..\Problems\2SP\ACONPS42SP\ACONPS42SP.csproj">
       <Project>{40F39BBB-CB49-417E-B662-20F39BCAB6F1}</Project>
       <Name>ACONPS42SP</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Problems\2SP\GA2OptBest42SP\GANPS2OptBest42SP.csproj">
+    <ProjectReference Include="..\Problems\2SP\GANPS2OptBest42SP\GANPS2OptBest42SP.csproj">
       <Project>{C4927BD4-C7CE-458A-A4F3-3AD0FFE0C153}</Project>
       <Name>GANPS2OptBest42SP</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Problems\2SP\GA2OptFirst42SP\GANPS2OptFirst42SP.csproj">
+    <ProjectReference Include="..\Problems\2SP\GANPS2OptFirst42SP\GANPS2OptFirst42SP.csproj">
       <Project>{0484417A-EA16-4A8D-BAC9-90620EC1F71B}</Project>
       <Name>GANPS2OptFirst42SP</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Problems\2SP\GA42SP\GANPS42SP.csproj">
+    <ProjectReference Include="..\Problems\2SP\GANPS42SP\GANPS42SP.csproj">
       <Project>{F479D3C9-46D8-453B-A07E-4143F892063C}</Project>
       <Name>GANPS42SP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\SPP\2OptBest4SPP\2OptBest4SPP.csproj">
+      <Project>{4A6E2314-A541-4E61-AABC-CD4A02B0C63A}</Project>
+      <Name>2OptBest4SPP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\TSP\2OptBest4TSP\2OptBest4TSP.csproj">
+      <Project>{9FDF8936-C91B-4905-A3BF-99A8610ABDAE}</Project>
+      <Name>2OptBest4TSP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\SPP\2OptFirst4SPP\2OptFirst4SPP.csproj">
+      <Project>{8B935086-7AF9-4FF9-BB96-4D2BBB2EAD2F}</Project>
+      <Name>2OptFirst4SPP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\TSP\2OptFirst4TSP\2OptFirst4TSP.csproj">
+      <Project>{71A9EA8E-F097-4212-9EF1-10F4FF7F992C}</Project>
+      <Name>2OptFirst4TSP</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

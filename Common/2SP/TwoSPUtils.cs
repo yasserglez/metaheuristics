@@ -12,109 +12,104 @@ namespace Metaheuristics
 		public static int[,] NPS2Coordinates(TwoSPInstance instance, int[] ordering)
 		{
 			int x = 0, y = 1;
-			int[,] coordinates = new int[instance.NumberItems,2];
-			List<int[]> topLeftSeeds = new List<int[]>();
-			List<int[]> bottomRightSeeds = new List<int[]>();
-			List<int[]> candidatePositions = new List<int[]>();
-			bool[] allocatedItem = new bool[instance.NumberItems];
+			int xpos, ypos;
+			int currentItem;
+			int[,] coordinates = new int[instance.NumberItems,2]; 
+			List<int[]> topLeftSeeds = new List<int[]>(instance.NumberItems);
+			List<int[]> bottomRightSeeds = new List<int[]>(instance.NumberItems);
+			bool[] allocatedItems = new bool[instance.NumberItems];
+			double finalQuality, currentQuality;
 			int[] finalPosition = new int[2];
 			
-			for (int i = 0; i < instance.NumberItems; i++) {
-				int item = ordering[i];
+			// Set the coordinates of the first item.
+			currentItem = ordering[0];
+			coordinates[currentItem,x] = 0;
+			coordinates[currentItem,y] = 0;
+			allocatedItems[currentItem] = true;
+			topLeftSeeds.Add(new int[] {0, instance.ItemsHeight[currentItem]});
+			bottomRightSeeds.Add(new int[] {instance.ItemsWidth[currentItem], 0});
+			
+			// Set the coordinates of the rest of the items.
+			for (int i = 1; i < instance.NumberItems; i++) {
+				currentItem = ordering[i];
+				finalQuality = double.MinValue;
 				
-				if (i == 0) {
-					// The first item uses the starting position.
-					finalPosition[x] = 0;
-					finalPosition[y] = 0;
-				}
-				else {
-					candidatePositions.Clear();
-					
-					foreach (int[] position in topLeftSeeds) {
-						// Move left the item as much as possible.
+				foreach (int[] position in topLeftSeeds) {
+					// Move left the item as much as possible.
 
-						// Check if we can put the item next to the left border of the strip.
-						coordinates[item,x] = 0;
-						coordinates[item,y] = position[y];
-						if (NPSIsFeasible(instance, coordinates, allocatedItem, item)) {
-							// If this is valid, it's the best position.
-							position[x] = coordinates[item,x];
-							position[y] = coordinates[item,y];
-							candidatePositions.Add(new int[] {position[x], position[y]});
-						}
-						else {
-							// Try to put the item next to other items.
-							position[x] = int.MaxValue;
-							for (int otherItem = 0; otherItem < instance.NumberItems; otherItem++) {
-								coordinates[item,x] = coordinates[otherItem,x] + instance.ItemsWidth[otherItem];
-								if (allocatedItem[otherItem] && coordinates[item,x] < position[x]) {
-									if (NPSIsFeasible(instance, coordinates, allocatedItem, item)) {
-										position[x] = coordinates[item,x];
-										position[y] = coordinates[item,y];
+					// Check if we can put the item next to the left border of the strip.
+					coordinates[currentItem,x] = 0;
+					coordinates[currentItem,y] = position[y];
+					if (NPSIsFeasible(instance, coordinates, allocatedItems, currentItem)) {
+						// If this is valid, it's the best position.
+						finalPosition[x] = coordinates[currentItem,x];
+						finalPosition[y] = coordinates[currentItem,y];
+						finalQuality = NPSQuality(instance, coordinates, allocatedItems, currentItem);
+					}
+					else {
+						// Try to put the item next to other items.
+						xpos = int.MaxValue;
+						for (int otherItem = 0; otherItem < instance.NumberItems; otherItem++) {
+							coordinates[currentItem,x] = coordinates[otherItem,x] + instance.ItemsWidth[otherItem];
+							if (allocatedItems[otherItem] && coordinates[currentItem,x] < xpos) {
+								if (NPSIsFeasible(instance, coordinates, allocatedItems, currentItem)) {
+									currentQuality = NPSQuality(instance, coordinates, allocatedItems, currentItem);
+									if (currentQuality > finalQuality || (currentQuality == finalQuality && 
+									                                      coordinates[currentItem,x] <= finalPosition[x] && 
+									                                      coordinates[currentItem,y] <= finalPosition[y])) {
+										xpos = coordinates[currentItem,x];
+										finalPosition[x] = coordinates[currentItem,x];
+										finalPosition[y] = coordinates[currentItem,y];
+										finalQuality = currentQuality;
 									}
 								}
 							}
-							if (position[x] != int.MaxValue) {
-								candidatePositions.Add(new int[] {position[x], position[y]});
-							}
-						}
-					}
-					
-					foreach (int[] position in bottomRightSeeds) {
-						// Move down the item as much as possible.
-
-						// Check if we can put the item at the bottom of the strip.
-						coordinates[item,x] = position[x];
-						coordinates[item,y] = 0;
-						if (NPSIsFeasible(instance, coordinates, allocatedItem, item)) {
-							// If this is valid, it's the best position.
-							position[x] = coordinates[item,x];
-							position[y] = coordinates[item,y];
-							candidatePositions.Add(new int[] {position[x], position[y]});
-						}
-						else {
-							// Try to put the item on top of other item.
-							position[y] = int.MaxValue;
-							for (int otherItem = 0; otherItem < instance.NumberItems; otherItem++) {
-								coordinates[item,y] = coordinates[otherItem,y] + instance.ItemsHeight[otherItem];
-								if (allocatedItem[otherItem] && coordinates[item,y] < position[y]) {
-									if (NPSIsFeasible(instance, coordinates, allocatedItem, item)) {
-										position[x] = coordinates[item,x];
-										position[y] = coordinates[item,y];
-									}
-								}
-							}
-							if (position[y] != int.MaxValue) {
-								candidatePositions.Add(new int[] {position[x], position[y]});
-							}
-						}
-					}
-
-					// Choose the lowest and leftmost position that maximizes the quality.
-					double bestQuality = double.MinValue, currentQuality;
-					foreach (int[] position in candidatePositions) {
-						coordinates[item,x] = position[x];
-						coordinates[item,y] = position[y];
-						currentQuality = NPSQuality(instance, coordinates, allocatedItem, item);
-						if (currentQuality > bestQuality) {
-							finalPosition[x] = position[x];
-							finalPosition[y] = position[y];
-						}
-						else if (currentQuality == bestQuality && position[x] <= finalPosition[x] && position[x] <= finalPosition[x]) {
-							finalPosition[x] = position[x];
-							finalPosition[y] = position[y];
 						}
 					}
 				}
 				
+				foreach (int[] position in bottomRightSeeds) {
+					// Move down the item as much as possible.
+
+					// Check if we can put the item at the bottom of the strip.
+					coordinates[currentItem,x] = position[x];
+					coordinates[currentItem,y] = 0;
+					if (NPSIsFeasible(instance, coordinates, allocatedItems, currentItem)) {
+						// If this is valid, it's the best position.
+						finalPosition[x] = coordinates[currentItem,x];
+						finalPosition[y] = coordinates[currentItem,y];
+						finalQuality = NPSQuality(instance, coordinates, allocatedItems, currentItem);
+					}
+					else {
+						// Try to put the item on top of other item.
+						ypos = int.MaxValue;
+						for (int otherItem = 0; otherItem < instance.NumberItems; otherItem++) {
+							coordinates[currentItem,y] = coordinates[otherItem,y] + instance.ItemsHeight[otherItem];
+							if (allocatedItems[otherItem] && coordinates[currentItem,y] < ypos) {
+								if (NPSIsFeasible(instance, coordinates, allocatedItems, currentItem)) {
+									currentQuality = NPSQuality(instance, coordinates, allocatedItems, currentItem);
+									if (currentQuality > finalQuality || (currentQuality == finalQuality && 
+									                                      coordinates[currentItem,x] <= finalPosition[x] && 
+									                                      coordinates[currentItem,y] <= finalPosition[y])) {
+										ypos = coordinates[currentItem,y];
+										finalPosition[x] = coordinates[currentItem,x];
+										finalPosition[y] = coordinates[currentItem,y];
+										finalQuality = currentQuality;
+									}
+								}
+							}
+						}
+					}
+				}
+
 				// Set the position of the current item.
-				allocatedItem[item] = true;
-				coordinates[item,x] = finalPosition[x];
-				coordinates[item,y] = finalPosition[y];
+				allocatedItems[currentItem] = true;
+				coordinates[currentItem,x] = finalPosition[x];
+				coordinates[currentItem,y] = finalPosition[y];
 				
 				// Update the lists with the seed positions.
-				topLeftSeeds.Add(new int[] {coordinates[item,x], coordinates[item,y] + instance.ItemsHeight[item]});
-				bottomRightSeeds.Add(new int[] {coordinates[item,x] + instance.ItemsWidth[item], coordinates[item,y]});
+				topLeftSeeds.Add(new int[] {coordinates[currentItem,x], coordinates[currentItem,y] + instance.ItemsHeight[currentItem]});
+				bottomRightSeeds.Add(new int[] {coordinates[currentItem,x] + instance.ItemsWidth[currentItem], coordinates[currentItem,y]});
 			}
 			
 			return coordinates;
@@ -154,7 +149,7 @@ namespace Metaheuristics
 		private static double NPSQuality(TwoSPInstance instance, int[,] coordinates, bool[] allocatedItem, int item)
 		{
 			int y = 1;
-			double numerator = 0, denominator;			
+			double numerator = 0, denominator;
 			double currentItemHeight, maxHeight = 0;
 
 			for (int currentItem = 0; currentItem < instance.NumberItems; currentItem++) {
@@ -172,7 +167,7 @@ namespace Metaheuristics
 		}		
 		
 		private static bool NPSIsFeasible(TwoSPInstance instance, int[,] coordinates, bool[] allocatedItems, int item)
-		{
+		{		
 			int x = 0, y = 1;
 			int itemXStart = coordinates[item,x];
 			int itemXEnd = coordinates[item,x] + instance.ItemsWidth[item];
@@ -219,14 +214,10 @@ namespace Metaheuristics
 					    (itemXStart == otherItemXEnd)) {
 						leftAdjacent = true;
 					}
-					
-					if (leftAdjacent && bottomAdjacent) {
-						return true;
-					}
 				}
 			}
 			
-			return false;
+			return (leftAdjacent && bottomAdjacent);
 		}
 		
 		// Check if the location given in the coordinates array for the given 
