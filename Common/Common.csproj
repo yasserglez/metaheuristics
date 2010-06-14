@@ -49,7 +49,6 @@
     <Compile Include="SPP\SPPSolution.cs" />
     <Compile Include="QAP\DiscreteUMDA4QAP.cs" />
     <Compile Include="TSP\DiscreteUMDA4TSP.cs" />
-    <Compile Include="2SP\DiscreteUMDA42SP.cs" />
     <Compile Include="SPP\SPPUtils.cs" />
     <Compile Include="SPP\DiscreteUMDA4SPP.cs" />
     <Compile Include="QAP\DiscreteUMDA2OptFirst4QAP.cs" />
@@ -58,8 +57,6 @@
     <Compile Include="TSP\DiscreteUMDA2OptBest4TSP.cs" />
     <Compile Include="SPP\DiscreteUMDA2OptFirst4SPP.cs" />
     <Compile Include="SPP\DiscreteUMDA2OptBest4SPP.cs" />
-    <Compile Include="2SP\DiscreteUMDA2OptBest42SP.cs" />
-    <Compile Include="2SP\DiscreteUMDA2OptFirst42SP.cs" />
     <Compile Include="DiscreteGA.cs" />
     <Compile Include="TSP\DiscreteGA4TSP.cs" />
     <Compile Include="QAP\DiscreteGA4QAP.cs" />
@@ -70,9 +67,6 @@
     <Compile Include="SPP\DiscreteGA2OptFirst4SPP.cs" />
     <Compile Include="QAP\DiscreteGA2OptFirst4QAP.cs" />
     <Compile Include="QAP\DiscreteGA2OptBest4QAP.cs" />
-    <Compile Include="2SP\DiscreteGA42SP.cs" />
-    <Compile Include="2SP\DiscreteGA2OptFirst42SP.cs" />
-    <Compile Include="2SP\DiscreteGA2OptBest42SP.cs" />
     <Compile Include="DiscreteGRASP.cs" />
     <Compile Include="TSP\DiscreteGRASP2OptBest4TSP.cs" />
     <Compile Include="TSP\DiscreteGRASP2OptFirst4TSP.cs" />
@@ -83,19 +77,25 @@
     <Compile Include="DiscreteSA.cs" />
     <Compile Include="TSP\DiscreteSA4TSP.cs" />
     <Compile Include="QAP\DiscreteSA4QAP.cs" />
-    <Compile Include="2SP\DiscreteSA42SP.cs" />
     <Compile Include="SPP\DiscreteSA4SPP.cs" />
     <Compile Include="DiscretePSO.cs" />
     <Compile Include="TSP\DiscretePSO2TSP.cs" />
-    <Compile Include="2SP\DiscretePSO42SP.cs" />
     <Compile Include="QAP\DiscretePSO4QAP.cs" />
     <Compile Include="TSP\DiscretePSO2OptBest4TSP.cs" />
     <Compile Include="TSP\DiscretePSO2OptFirst4TSP.cs" />
     <Compile Include="QAP\DiscretePSO2OptBest4QAP.cs" />
     <Compile Include="QAP\DiscretePSO2OptFirst4QAP.cs" />
-    <Compile Include="2SP\DiscretePSO2OptBest42SP.cs" />
-    <Compile Include="2SP\DiscretePSO2OptFirst42SP.cs" />
     <Compile Include="About.cs" />
+    <Compile Include="2SP\DiscreteUMDANPS42SP.cs" />
+    <Compile Include="2SP\DiscreteUMDANPS2OptBest42SP.cs" />
+    <Compile Include="2SP\DiscreteUMDANPS2OptFirst42SP.cs" />
+    <Compile Include="2SP\DiscreteGANPS42SP.cs" />
+    <Compile Include="2SP\DiscreteGANPS2OptFirst42SP.cs" />
+    <Compile Include="2SP\DiscreteGANPS2OptBest42SP.cs" />
+    <Compile Include="2SP\DiscreteSANPS42SP.cs" />
+    <Compile Include="2SP\DiscretePSONPS42SP.cs" />
+    <Compile Include="2SP\DiscretePSONPS2OptBest42SP.cs" />
+    <Compile Include="2SP\DiscretePSONPS2OptFirst42SP.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

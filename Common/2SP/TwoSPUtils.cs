@@ -6,8 +6,8 @@ namespace Metaheuristics
 {
 	public static class TwoSPUtils
 	{
-		// We use the Normal Pattern Shifting (NPS) heuristic to encode a solution of the 2SP as an
-		// integer vector describing an ordering of the items. This method calculates the coordinates 
+		// Normal Pattern Shifting (NPS) heuristic to encode a solution of the 2SP as an
+		// integer vector for the ordering of the items. This method calculates the coordinates 
 		// of all items in the strip from an ordering of the items following the NPS heuristic.
 		public static int[,] NPS2Coordinates(TwoSPInstance instance, int[] ordering)
 		{
@@ -36,7 +36,7 @@ namespace Metaheuristics
 						// Check if we can put the item next to the left border of the strip.
 						coordinates[item,x] = 0;
 						coordinates[item,y] = position[y];
-						if (IsFeasibleAndSatisfiesNPP(instance, coordinates, allocatedItem, item)) {
+						if (NPSIsFeasible(instance, coordinates, allocatedItem, item)) {
 							// If this is valid, it's the best position.
 							position[x] = coordinates[item,x];
 							position[y] = coordinates[item,y];
@@ -48,7 +48,7 @@ namespace Metaheuristics
 							for (int otherItem = 0; otherItem < instance.NumberItems; otherItem++) {
 								coordinates[item,x] = coordinates[otherItem,x] + instance.ItemsWidth[otherItem];
 								if (allocatedItem[otherItem] && coordinates[item,x] < position[x]) {
-									if (IsFeasibleAndSatisfiesNPP(instance, coordinates, allocatedItem, item)) {
+									if (NPSIsFeasible(instance, coordinates, allocatedItem, item)) {
 										position[x] = coordinates[item,x];
 										position[y] = coordinates[item,y];
 									}
@@ -66,7 +66,7 @@ namespace Metaheuristics
 						// Check if we can put the item at the bottom of the strip.
 						coordinates[item,x] = position[x];
 						coordinates[item,y] = 0;
-						if (IsFeasibleAndSatisfiesNPP(instance, coordinates, allocatedItem, item)) {
+						if (NPSIsFeasible(instance, coordinates, allocatedItem, item)) {
 							// If this is valid, it's the best position.
 							position[x] = coordinates[item,x];
 							position[y] = coordinates[item,y];
@@ -78,7 +78,7 @@ namespace Metaheuristics
 							for (int otherItem = 0; otherItem < instance.NumberItems; otherItem++) {
 								coordinates[item,y] = coordinates[otherItem,y] + instance.ItemsHeight[otherItem];
 								if (allocatedItem[otherItem] && coordinates[item,y] < position[y]) {
-									if (IsFeasibleAndSatisfiesNPP(instance, coordinates, allocatedItem, item)) {
+									if (NPSIsFeasible(instance, coordinates, allocatedItem, item)) {
 										position[x] = coordinates[item,x];
 										position[y] = coordinates[item,y];
 									}
@@ -120,7 +120,6 @@ namespace Metaheuristics
 			return coordinates;
 		}
 		
-		// Check if a coordinates assigment is valid.
 		public static bool IsFeasible(TwoSPInstance instance, int[,] coordinates)
 		{
 			bool[] allocatedItems = new bool[instance.NumberItems];
@@ -152,11 +151,6 @@ namespace Metaheuristics
 			return totalHeight;
 		}
 		
-		public static int Fitness(TwoSPInstance instance, int[] ordering)
-		{
-			return Fitness(instance, NPS2Coordinates(instance, ordering));
-		}
-		
 		private static double NPSQuality(TwoSPInstance instance, int[,] coordinates, bool[] allocatedItem, int item)
 		{
 			int y = 1;
@@ -177,10 +171,7 @@ namespace Metaheuristics
 			return numerator / denominator;
 		}		
 		
-		// Check if the location given in the coordinates array for the given item is valid with 
-		// respect to the location of the rest of the items and the assigment of a location to an 
-		// item satisfies the normal pattern principle.
-		private static bool IsFeasibleAndSatisfiesNPP(TwoSPInstance instance, int[,] coordinates, bool[] allocatedItems, int item)
+		private static bool NPSIsFeasible(TwoSPInstance instance, int[,] coordinates, bool[] allocatedItems, int item)
 		{
 			int x = 0, y = 1;
 			int itemXStart = coordinates[item,x];
@@ -238,8 +229,8 @@ namespace Metaheuristics
 			return false;
 		}
 		
-		// Check if the location given in the coordinates array for the given item is 
-		// valid with respect to the location of the rest of the items.
+		// Check if the location given in the coordinates array for the given 
+		// item is valid considering the location of the rest of the items.
 		private static bool IsFeasible(TwoSPInstance instance, int[,] coordinates, bool[] allocatedItem, int item)
 		{
 			int x = 0, y = 1;
@@ -313,12 +304,12 @@ namespace Metaheuristics
 		}
 		
 		// Implementation of the 2-opt (first improvement) local search algorithm.
-		public static void LocalSearch2OptFirst(TwoSPInstance instance, int[] ordering)
+		public static void NPSLocalSearch2OptFirst(TwoSPInstance instance, int[] ordering)
 		{
 			int tmp;
 			double currentFitness, bestFitness;
 
-			bestFitness = Fitness(instance, ordering);			
+			bestFitness = Fitness(instance, NPS2Coordinates(instance, ordering));			
 			for (int j = 1; j < ordering.Length; j++) {
 				for (int i = 0; i < j; i++) {
 					// Swap the items.
@@ -327,7 +318,7 @@ namespace Metaheuristics
 					ordering[i] = tmp;
 					
 					// Evaluate the fitness of this new solution.
-					currentFitness = Fitness(instance, ordering);
+					currentFitness = Fitness(instance, NPS2Coordinates(instance, ordering));
 					if (currentFitness < bestFitness) {
 						return;
 					}
@@ -341,13 +332,13 @@ namespace Metaheuristics
 		}
 		
 		// Implementation of the 2-opt (best improvement) local search algorithm.
-		public static void LocalSearch2OptBest(TwoSPInstance instance, int[] ordering)
+		public static void NPSLocalSearch2OptBest(TwoSPInstance instance, int[] ordering)
 		{
 			int tmp;
 			int firstSwapItem = 0, secondSwapItem = 0;
 			double currentFitness, bestFitness;
 			
-			bestFitness = Fitness(instance, ordering);
+			bestFitness = Fitness(instance, NPS2Coordinates(instance, ordering));
 			for (int j = 1; j < ordering.Length; j++) {
 				for (int i = 0; i < j; i++) {
 					// Swap the items.
@@ -356,7 +347,7 @@ namespace Metaheuristics
 					ordering[i] = tmp;
 					
 					// Evaluate the fitness of this new solution.
-					currentFitness = Fitness(instance, ordering);
+					currentFitness = Fitness(instance, NPS2Coordinates(instance, ordering));
 					if (currentFitness < bestFitness) {
 						firstSwapItem = j;
 						secondSwapItem = i;

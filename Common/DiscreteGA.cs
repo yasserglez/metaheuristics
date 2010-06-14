@@ -16,7 +16,7 @@ namespace Metaheuristics
 		public int[] BestIndividual { get; protected set; }
 		public double BestFitness { get; protected set; }
 
-		public DiscreteGA (int popSize,  double mutationProbability, int[] lowerBounds, int[] upperBounds)
+		public DiscreteGA (int popSize, double mutationProbability, int[] lowerBounds, int[] upperBounds)
 		{
 			PopulationSize = popSize;
 			LowerBounds = lowerBounds;

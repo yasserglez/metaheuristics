@@ -5,10 +5,10 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{12DA6195-B58F-4FC7-8ADB-1209D5E63C00}</ProjectGuid>
+    <ProjectGuid>{5D8C7CF3-A94C-451C-99FC-C1C1E7CF2ED0}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>SS4TSP</RootNamespace>
-    <AssemblyName>SS4TSP</AssemblyName>
+    <RootNamespace>Metaheuristics</RootNamespace>
+    <AssemblyName>TSNPS42SP</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -37,14 +37,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SS4TSP.cs" />
+    <Compile Include="TS42SP.cs" />
     <Compile Include="AssemblyInfo.cs" />
   </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\..\..\Common\Common.csproj">
       <Project>{4630C8D3-67C9-443D-89C4-F11A2CCEC50C}</Project>
       <Name>Common</Name>
     </ProjectReference>
   </ItemGroup>
-  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
