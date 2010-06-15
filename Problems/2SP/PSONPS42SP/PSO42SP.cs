@@ -23,7 +23,7 @@ namespace Metaheuristics
 
             // Solving the problem and writing the best solution found.
             pso.Run(timeLimit);
-            int[,] coordinates = TwoSPUtils.NPS2Coordinates(instance, pso.BestPosition);
+            int[,] coordinates = TwoSPUtils.NPSCoordinates(instance, pso.BestPosition);
             TwoSPSolution solution = new TwoSPSolution(instance, coordinates);
             solution.Write(fileOutput);
         }

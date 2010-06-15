@@ -295,6 +295,10 @@
       <Project>{71A9EA8E-F097-4212-9EF1-10F4FF7F992C}</Project>
       <Name>2OptFirst4TSP</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Problems\2SP\BL2OptFirst42SP\BL2OptFirst42SP.csproj">
+      <Project>{F87FB820-E72B-4F24-BC03-C90AD816264A}</Project>
+      <Name>BL2OptFirst42SP</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

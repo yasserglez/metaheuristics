@@ -11,7 +11,7 @@ namespace Metaheuristics
 			TwoSPInstance instance = new TwoSPInstance(fileInput);
 			DiscreteSA sa = new DiscreteSANPS42SP(instance);
 			sa.Run(timeLimit);
-			int[,] coordinates = TwoSPUtils.NPS2Coordinates(instance, sa.BestSolution);
+			int[,] coordinates = TwoSPUtils.NPSCoordinates(instance, sa.BestSolution);
 			TwoSPSolution solution = new TwoSPSolution(instance, coordinates);
 			solution.Write(fileOutput);
 		}

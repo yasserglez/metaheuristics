@@ -4,21 +4,22 @@ using System.Collections.Generic;
 
 namespace Metaheuristics
 {
-	public class NPS2OptFirst42SP : IMetaheuristic
+	public class BL2OptFirst42SP : IMetaheuristic
 	{
 		public void Start(string fileInput, string fileOutput, int timeLimit)
 		{
 			TwoSPInstance instance = new TwoSPInstance(fileInput);
 			int[] ordering = TwoSPUtils.RandomSolution(instance);
-			TwoSPUtils.NPSLocalSearch2OptFirst(instance, ordering);
-			int[,] coordinates = TwoSPUtils.NPSCoordinates(instance, ordering);
+			TwoSPUtils.BLLocalSearch2OptFirst(instance, ordering);
+			int[,] coordinates = TwoSPUtils.BLCoordinates(instance, ordering);
+			Console.WriteLine(TwoSPUtils.IsFeasible(instance, coordinates));
 			TwoSPSolution solution = new TwoSPSolution(instance, coordinates);
 			solution.Write(fileOutput);
 		}
 
 		public string Name {
 			get {
-				return "2-opt (first improvement) with the NPS heuristic for 2SP";
+				return "2-opt (first improvement) with the BL heuristic for 2SP";
 			}
 		}
 		

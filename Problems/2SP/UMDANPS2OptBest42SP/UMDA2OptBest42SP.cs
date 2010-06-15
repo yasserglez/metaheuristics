@@ -23,7 +23,7 @@ namespace Metaheuristics
 			
 			// Solving the problem and writing the best solution found.
 			umda.Run(timeLimit);
-			int[,] coordinates = TwoSPUtils.NPS2Coordinates(instance, umda.BestIndividual);
+			int[,] coordinates = TwoSPUtils.NPSCoordinates(instance, umda.BestIndividual);
 			TwoSPSolution solution = new TwoSPSolution(instance, coordinates);
 			solution.Write(fileOutput);
 		}

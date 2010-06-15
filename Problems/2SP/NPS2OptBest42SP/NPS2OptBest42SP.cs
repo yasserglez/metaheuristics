@@ -11,7 +11,7 @@ namespace Metaheuristics
 			TwoSPInstance instance = new TwoSPInstance(fileInput);
 			int[] ordering = TwoSPUtils.RandomSolution(instance);
 			TwoSPUtils.NPSLocalSearch2OptBest(instance, ordering);
-			int[,] coordinates = TwoSPUtils.NPS2Coordinates(instance, ordering);
+			int[,] coordinates = TwoSPUtils.NPSCoordinates(instance, ordering);
 			TwoSPSolution solution = new TwoSPSolution(instance, coordinates);
 			solution.Write(fileOutput);
 		}

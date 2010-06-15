@@ -24,7 +24,7 @@ namespace Metaheuristics
 
         protected override double Fitness(int[] individual)
         {
-            return TwoSPUtils.Fitness(Instance, TwoSPUtils.NPS2Coordinates(Instance, individual));
+            return TwoSPUtils.Fitness(Instance, TwoSPUtils.NPSCoordinates(Instance, individual));
         }
 		
 		protected override void LocalSearch (int[] solution)

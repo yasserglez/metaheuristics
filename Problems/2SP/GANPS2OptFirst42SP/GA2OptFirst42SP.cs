@@ -22,7 +22,7 @@ namespace Metaheuristics
 			
 			// Solving the problem and writing the best solution found.
 			genetic.Run(timeLimit);
-			int[,] coordinates = TwoSPUtils.NPS2Coordinates(instance, genetic.BestIndividual);
+			int[,] coordinates = TwoSPUtils.NPSCoordinates(instance, genetic.BestIndividual);
 			TwoSPSolution solution = new TwoSPSolution(instance, coordinates);
 			solution.Write(fileOutput);
 		}
