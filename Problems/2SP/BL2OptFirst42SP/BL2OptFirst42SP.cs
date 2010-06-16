@@ -12,7 +12,6 @@ namespace Metaheuristics
 			int[] ordering = TwoSPUtils.RandomSolution(instance);
 			TwoSPUtils.BLLocalSearch2OptFirst(instance, ordering);
 			int[,] coordinates = TwoSPUtils.BLCoordinates(instance, ordering);
-			Console.WriteLine(TwoSPUtils.IsFeasible(instance, coordinates));
 			TwoSPSolution solution = new TwoSPSolution(instance, coordinates);
 			solution.Write(fileOutput);
 		}

@@ -416,7 +416,7 @@ namespace Metaheuristics
 			int x = 0, y = 1;
 			int[] currentPosition = new int[2];
 			int[] oldPosition = new int[2];
-			bool moveLeft = false, moveBottom = true;
+			bool moveLeft = false, moveDown = true;
 			int itemXStart, itemXEnd, itemYStart, itemYEnd;
 			int otherItemXStart, otherItemXEnd, otherItemYStart, otherItemYEnd;
 			
@@ -424,14 +424,15 @@ namespace Metaheuristics
 			currentPosition[x] = instance.StripWidth - instance.ItemsWidth[item];
 			currentPosition[y] = int.MaxValue - instance.ItemsHeight[item];
 			
-			do {
-				if (moveBottom) {
-					itemXStart = coordinates[item,x];
+			while (moveLeft || moveDown) {
+				if (moveDown) {
+					itemXStart = currentPosition[x];
 					itemXEnd = itemXStart + instance.ItemsWidth[item];
-					itemYStart = coordinates[item,y];
+					itemYStart = currentPosition[y];
 					itemYEnd = itemYStart + instance.ItemsHeight[item];
 					
 					oldPosition[y] = currentPosition[y];
+
 					currentPosition[y] = 0;
 					foreach (int otherItem in placedItems) {
 						otherItemXStart = coordinates[otherItem,x];
@@ -440,26 +441,26 @@ namespace Metaheuristics
 						otherItemYEnd = otherItemYStart + instance.ItemsHeight[otherItem];
 						
 						if ((otherItemXStart >= itemXStart && otherItemXStart < itemXEnd) ||
-						    (otherItemXEnd > itemXStart && otherItemXEnd <= itemXEnd)) {
+						    (otherItemXEnd > itemXStart && otherItemXEnd <= itemXEnd) ||
+						    (otherItemXStart < itemXStart && otherItemXEnd > itemXEnd)) {
 							if (otherItemYEnd > currentPosition[y] && otherItemYEnd <= oldPosition[y]) {
 								currentPosition[y] = otherItemYEnd;
 							}
 						}
 					}
 					
-					moveBottom = false;
-					if (currentPosition[y] != oldPosition[y]) {
-						moveLeft = true;
-					}
+					moveDown = false;
+					moveLeft = currentPosition[y] != oldPosition[y];
 				}
-
+				
 				if (moveLeft) {
-					itemXStart = coordinates[item,x];
+					itemXStart = currentPosition[x];
 					itemXEnd = itemXStart + instance.ItemsWidth[item];
-					itemYStart = coordinates[item,y];
+					itemYStart = currentPosition[y];
 					itemYEnd = itemYStart + instance.ItemsHeight[item];
 					
 					oldPosition[x] = currentPosition[x];
+
 					currentPosition[x] = 0;
 					foreach (int otherItem in placedItems) {
 						otherItemXStart = coordinates[otherItem,x];
@@ -468,7 +469,8 @@ namespace Metaheuristics
 						otherItemYEnd = otherItemYStart + instance.ItemsHeight[otherItem];
 							
 						if ((otherItemYStart >= itemYStart && otherItemYStart < itemYEnd) ||
-						    (otherItemYEnd > itemYStart && otherItemYEnd <= itemYEnd)) {
+						    (otherItemYEnd > itemYStart && otherItemYEnd <= itemYEnd) ||
+						    (otherItemYStart < itemYStart && otherItemYEnd > itemYEnd)) {
 							if (otherItemXEnd > currentPosition[x] && otherItemXEnd <= oldPosition[x]) {
 								currentPosition[x] = otherItemXEnd;
 							}
@@ -476,12 +478,9 @@ namespace Metaheuristics
 					}
 					
 					moveLeft = false;
-					if (currentPosition[x] != oldPosition[x]) {
-						moveBottom = true;
-					}
+					moveDown = currentPosition[x] != oldPosition[x];
 				}
 			}
-			while (moveLeft || moveBottom);
 			
 			coordinates[item,x] = currentPosition[x];
 			coordinates[item,y] = currentPosition[y];
@@ -511,6 +510,43 @@ namespace Metaheuristics
 					ordering[j] = ordering[i];
 					ordering[i] = tmp;
 				}
+			}
+		}
+		
+		public static void BLLocalSearch2OptBest(TwoSPInstance instance, int[] ordering)
+		{
+			int tmp;
+			int firstSwapItem = 0, secondSwapItem = 0;
+			double currentFitness, bestFitness;
+			
+			bestFitness = Fitness(instance, BLCoordinates(instance, ordering));
+			for (int j = 1; j < ordering.Length; j++) {
+				for (int i = 0; i < j; i++) {
+					// Swap the items.
+					tmp = ordering[j];
+					ordering[j] = ordering[i];
+					ordering[i] = tmp;
+					
+					// Evaluate the fitness of this new solution.
+					currentFitness = Fitness(instance, BLCoordinates(instance, ordering));
+					if (currentFitness < bestFitness) {
+						firstSwapItem = j;
+						secondSwapItem = i;
+						bestFitness = currentFitness;
+					}
+					
+					// Undo the swap.
+					tmp = ordering[j];
+					ordering[j] = ordering[i];
+					ordering[i] = tmp;
+				}
+			}
+			
+			// Use the best assignment.
+			if (firstSwapItem != secondSwapItem) {
+				tmp = ordering[firstSwapItem];
+				ordering[firstSwapItem] = ordering[secondSwapItem];
+				ordering[secondSwapItem] = tmp;
 			}
 		}		
 	}

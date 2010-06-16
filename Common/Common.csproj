@@ -87,15 +87,15 @@
     <Compile Include="QAP\DiscretePSO2OptFirst4QAP.cs" />
     <Compile Include="About.cs" />
     <Compile Include="2SP\DiscreteUMDANPS42SP.cs" />
-    <Compile Include="2SP\DiscreteUMDANPS2OptBest42SP.cs" />
-    <Compile Include="2SP\DiscreteUMDANPS2OptFirst42SP.cs" />
     <Compile Include="2SP\DiscreteGANPS42SP.cs" />
-    <Compile Include="2SP\DiscreteGANPS2OptFirst42SP.cs" />
-    <Compile Include="2SP\DiscreteGANPS2OptBest42SP.cs" />
     <Compile Include="2SP\DiscreteSANPS42SP.cs" />
     <Compile Include="2SP\DiscretePSONPS42SP.cs" />
-    <Compile Include="2SP\DiscretePSONPS2OptBest42SP.cs" />
-    <Compile Include="2SP\DiscretePSONPS2OptFirst42SP.cs" />
+    <Compile Include="2SP\DiscreteUMDABL2OptBest42SP.cs" />
+    <Compile Include="2SP\DiscreteUMDABL2OptFirst42SP.cs" />
+    <Compile Include="2SP\DiscreteGABL2OptFirst42SP.cs" />
+    <Compile Include="2SP\DiscreteGABL2OptBest42SP.cs" />
+    <Compile Include="2SP\DiscretePSOBL2OptBest42SP.cs" />
+    <Compile Include="2SP\DiscretePSOBL2OptFirst42SP.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

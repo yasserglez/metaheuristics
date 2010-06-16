@@ -2,12 +2,12 @@ using System;
 
 namespace Metaheuristics
 {
-	public class DiscreteGANPS2OptFirst42SP : DiscreteGA
+	public class DiscreteGABL2OptFirst42SP : DiscreteGA
 	{
 		public TwoSPInstance Instance { get; protected set; }
 		
-		public DiscreteGANPS2OptFirst42SP(TwoSPInstance instance, int popSize, double mutationProbability,
-		                                  int[] lowerBounds, int[] upperBounds)
+		public DiscreteGABL2OptFirst42SP(TwoSPInstance instance, int popSize, double mutationProbability,
+		                                 int[] lowerBounds, int[] upperBounds)
 			: base(popSize, mutationProbability, lowerBounds, upperBounds)
 		{
 			Instance = instance;
@@ -22,12 +22,12 @@ namespace Metaheuristics
 		
 		protected override void LocalSearch(int[] individual)
 		{		
-			TwoSPUtils.NPSLocalSearch2OptFirst(Instance, individual);
+			TwoSPUtils.BLLocalSearch2OptFirst(Instance, individual);
 		}		
 		
 		protected override double Fitness(int[] individual)
 		{
-			return TwoSPUtils.Fitness(Instance, TwoSPUtils.NPSCoordinates(Instance, individual));
+			return TwoSPUtils.Fitness(Instance, TwoSPUtils.BLCoordinates(Instance, individual));
 		}
 	}
 }
