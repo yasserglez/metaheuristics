@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Metaheuristics
 {
-    public class PSO42SP : IMetaheuristic
+    public class PSONPS42SP : IMetaheuristic
     {
         public void Start(string fileInput, string fileOutput, int timeLimit)
         {

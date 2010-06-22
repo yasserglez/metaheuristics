@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Metaheuristics
 {
-	public class SA42SP : IMetaheuristic
+	public class SANPS42SP : IMetaheuristic
 	{
 		public void Start(string fileInput, string fileOutput, int timeLimit)
 		{
@@ -18,7 +18,7 @@ namespace Metaheuristics
 		
 		public string Name {
 			get {
-				return "SA for 2SP";
+				return "SA using the NPS heuristic for 2SP";
 			}
 		}
 		

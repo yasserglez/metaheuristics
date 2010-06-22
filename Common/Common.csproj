@@ -96,6 +96,10 @@
     <Compile Include="2SP\DiscreteGABL2OptBest42SP.cs" />
     <Compile Include="2SP\DiscretePSOBL2OptBest42SP.cs" />
     <Compile Include="2SP\DiscretePSOBL2OptFirst42SP.cs" />
+    <Compile Include="2SP\DiscreteGABL42SP.cs" />
+    <Compile Include="2SP\DiscretePSOBL42SP.cs" />
+    <Compile Include="2SP\DiscreteSABL42SP.cs" />
+    <Compile Include="2SP\DiscreteUMDABL42SP.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

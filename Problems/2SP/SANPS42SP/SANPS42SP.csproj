@@ -37,8 +37,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SA42SP.cs" />
     <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="SANPS42SP.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\Common\Common.csproj">
