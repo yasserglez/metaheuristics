@@ -306,11 +306,18 @@ namespace Metaheuristics
 					int otherItemYStart = coordinates[otherItem,y];
 					int otherItemYEnd = coordinates[otherItem,y] + instance.ItemsHeight[otherItem];
 					
-					if (((otherItemXStart >= itemXStart && otherItemXStart < itemXEnd) ||
-					     (otherItemXEnd > itemXStart && otherItemXEnd <= itemXEnd)) &&
-					    ((otherItemYStart >= itemYStart && otherItemYStart < itemYEnd) ||
-					     (otherItemYEnd > itemYStart && otherItemYEnd <= itemYEnd))) {
+					if ((((otherItemXStart >= itemXStart && otherItemXStart < itemXEnd) ||
+					      (otherItemXEnd > itemXStart && otherItemXEnd <= itemXEnd)) &&
+					     ((otherItemYStart >= itemYStart && otherItemYStart < itemYEnd) ||
+					      (otherItemYEnd > itemYStart && otherItemYEnd <= itemYEnd))) ||
+					    (((otherItemXStart >= itemXStart && otherItemXStart < itemXEnd) ||
+					      (otherItemXEnd > itemXStart && otherItemXEnd <= itemXEnd)) &&
+					     (otherItemYStart < itemYStart && otherItemYEnd > itemYEnd)) ||
+					    (((otherItemYStart >= itemYStart && otherItemYStart < itemYEnd) ||
+					      (otherItemYEnd > itemYStart && otherItemYEnd <= itemYEnd)) &&
+					     (otherItemXStart < itemXStart && otherItemXEnd > itemXEnd))) {
 						return false;
+						
 					}
 					
 					// The left-hand edge and the bottom edges should be both adjacent to other
