@@ -4,15 +4,17 @@ using System.Collections.Generic;
 
 namespace Metaheuristics
 {
-	public class UMDA2OptFirst4QAP : IMetaheuristic
+	public class UMDA2OptFirst4QAP : IMetaheuristic, ITunableMetaheuristic
 	{
+		protected double popFactor = 50;
+		protected double truncFactor = 0.3;
+		
 		public void Start(string fileInput, string fileOutput, int timeLimit)
 		{
 			QAPInstance instance = new QAPInstance(fileInput);
 			
 			// Setting the parameters of the UMDA for this instance of the problem.
-			int popSize = 50 * instance.NumberFacilities;
-			double truncFactor = 0.3;
+			int popSize = (int) Math.Floor(popFactor * instance.NumberFacilities);
 			int[] lowerBounds = new int[instance.NumberFacilities];
 			int[] upperBounds = new int[instance.NumberFacilities];
 			for (int i = 0; i < instance.NumberFacilities; i++) {
@@ -50,5 +52,11 @@ namespace Metaheuristics
 				return About.Team;
 			}
 		}
+		
+		public void UpdateParameters(double[] parameters)
+		{
+			popFactor = parameters[0];
+			truncFactor = parameters[1];
+		}				
 	}
 }

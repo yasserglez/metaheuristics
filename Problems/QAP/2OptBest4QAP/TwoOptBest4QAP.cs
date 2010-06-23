@@ -17,7 +17,7 @@ namespace Metaheuristics
 
 		public string Name {
 			get {
-				return "2-opt (best improvement) with the NPS heuristic for QAP";
+				return "2-opt (best improvement) for QAP";
 			}
 		}
 		

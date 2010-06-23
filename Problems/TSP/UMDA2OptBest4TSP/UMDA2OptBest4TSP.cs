@@ -4,15 +4,17 @@ using System.Collections.Generic;
 
 namespace Metaheuristics
 {
-	public class UMDA2OptBest4TSP : IMetaheuristic
+	public class UMDA2OptBest4TSP : IMetaheuristic, ITunableMetaheuristic
 	{
+		protected double popFactor = 50;
+		protected double truncFactor = 0.3;		
+		
 		public void Start(string fileInput, string fileOutput, int timeLimit)
 		{
 			TSPInstance instance = new TSPInstance(fileInput);
 			
 			// Setting the parameters of the UMDA for this instance of the problem.
-			int popSize = 50 * instance.NumberCities;
-			double truncFactor = 0.3;
+			int popSize = (int) Math.Floor(popFactor * instance.NumberCities);
 			int[] lowerBounds = new int[instance.NumberCities];
 			int[] upperBounds = new int[instance.NumberCities];
 			for (int i = 0; i < instance.NumberCities; i++) {
@@ -50,5 +52,11 @@ namespace Metaheuristics
 				return About.Team;
 			}
 		}
+
+		public void UpdateParameters(double[] parameters)
+		{
+			popFactor = parameters[0];
+			truncFactor = parameters[1];
+		}	
 	}
 }
