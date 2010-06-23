@@ -29,16 +29,18 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="Metaheuristic, Version=1.0.3814.42444, Culture=neutral, PublicKeyToken=null">
+    <Reference Include="Metaheuristic, Version=1.0.3825.24303, Culture=neutral, PublicKeyToken=null">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Metaheuristic.dll</HintPath>
     </Reference>
+    <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AssemblyInfo.cs" />
     <Compile Include="Tuner.cs" />
     <Compile Include="UMDATuner.cs" />
+    <Compile Include="ParallelForEach.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Problems\TSP\UMDA4TSP\UMDA4TSP.csproj">

@@ -19,11 +19,11 @@ namespace Tune
 				new UMDA2OptBest4TSP(),
 			};
 			
-			foreach (ITunableMetaheuristic umda in umdas) {
+			umdas.ParallelForEach(umda => {
 				UMDATuner tuner = new UMDATuner(umda, "../../../Problems/TSP/");
 				string logFile = umda.GetType().Name + ".txt";
 				tuner.Start(logFile);
-			}
+			});
 		}
 		
 		public static void TuneUMDA4SPP()
@@ -34,11 +34,11 @@ namespace Tune
 				new UMDA2OptBest4SPP(),
 			};
 			
-			foreach (ITunableMetaheuristic umda in umdas) {
+			umdas.ParallelForEach(umda => {
 				UMDATuner tuner = new UMDATuner(umda, "../../../Problems/SPP/");
 				string logFile = umda.GetType().Name + ".txt";
 				tuner.Start(logFile);
-			}
+			});
 		}		
 		
 		public static void TuneUMDA4QAP()
@@ -49,11 +49,11 @@ namespace Tune
 				new UMDA2OptBest4QAP(),
 			};
 			
-			foreach (ITunableMetaheuristic umda in umdas) {
+			umdas.ParallelForEach(umda => {
 				UMDATuner tuner = new UMDATuner(umda, "../../../Problems/QAP/");
 				string logFile = umda.GetType().Name + ".txt";
 				tuner.Start(logFile);
-			}
+			});
 		}
 		
 		public static void TuneUMDA42SP()
@@ -65,11 +65,11 @@ namespace Tune
 				new UMDABL2OptBest42SP(),
 			};
 			
-			foreach (ITunableMetaheuristic umda in umdas) {
+			umdas.ParallelForEach(umda => {
 				UMDATuner tuner = new UMDATuner(umda, "../../../Problems/2SP/");
 				string logFile = umda.GetType().Name + ".txt";
 				tuner.Start(logFile);
-			}
+			});
 		}		
 	}
 }
