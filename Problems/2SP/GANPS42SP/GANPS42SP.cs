@@ -3,15 +3,17 @@ using System.Collections.Generic;
 
 namespace Metaheuristics
 {
-	public class GA42SP : IMetaheuristic
+	public class GANPS42SP : IMetaheuristic, ITunableMetaheuristic
 	{
+		protected double popFactor = 50;
+		protected double mutProbability = 0.3;
+
 		public void Start(string fileInput, string fileOutput, int timeLimit)
 		{
 			TwoSPInstance instance = new TwoSPInstance(fileInput);
 			
 			// Setting the parameters of the GA for this instance of the problem.
-			int popSize = (int) Math.Max(10, instance.NumberItems / 3.0);
-			double mutProbability = 0.3;
+			int popSize = (int) Math.Ceiling(popFactor * instance.NumberItems);
 			int[] lowerBounds = new int[instance.NumberItems];
 			int[] upperBounds = new int[instance.NumberItems];
 			for (int i = 0; i < instance.NumberItems; i++) {
@@ -19,7 +21,7 @@ namespace Metaheuristics
 				upperBounds[i] = instance.NumberItems - 1;
 			}
 			DiscreteGA genetic = new DiscreteGANPS42SP(instance, popSize, mutProbability, lowerBounds, upperBounds);
-			
+
 			// Solving the problem and writing the best solution found.
 			genetic.Run(timeLimit);
 			int[,] coordinates = TwoSPUtils.NPSCoordinates(instance, genetic.BestIndividual);
@@ -49,6 +51,12 @@ namespace Metaheuristics
 			get {
 				return About.Team;
 			}
+		}
+
+		public void UpdateParameters(double[] parameters)
+		{
+			popFactor = parameters[0];
+			mutProbability = parameters[1];
 		}
 	}
 }

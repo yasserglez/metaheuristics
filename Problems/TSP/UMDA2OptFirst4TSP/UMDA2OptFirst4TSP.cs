@@ -14,7 +14,7 @@ namespace Metaheuristics
 			TSPInstance instance = new TSPInstance(fileInput);
 			
 			// Setting the parameters of the UMDA for this instance of the problem.
-			int popSize = (int) Math.Floor(popFactor * instance.NumberCities);
+			int popSize = (int) Math.Ceiling(popFactor * instance.NumberCities);
 			int[] lowerBounds = new int[instance.NumberCities];
 			int[] upperBounds = new int[instance.NumberCities];
 			for (int i = 0; i < instance.NumberCities; i++) {

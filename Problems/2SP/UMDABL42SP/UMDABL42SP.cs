@@ -14,7 +14,7 @@ namespace Metaheuristics
 			TwoSPInstance instance = new TwoSPInstance(fileInput);
 			
 			// Setting the parameters of the UMDA for this instance of the problem.
-			int popSize = (int) Math.Floor(popFactor * instance.NumberItems);
+			int popSize = (int) Math.Ceiling(popFactor * instance.NumberItems);
 			int[] lowerBounds = new int[instance.NumberItems];
 			int[] upperBounds = new int[instance.NumberItems];
 			for (int i = 0; i < instance.NumberItems; i++) {

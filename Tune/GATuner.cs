@@ -5,9 +5,9 @@ using Metaheuristics;
 
 namespace Tune
 {
-	public class UMDATuner : Tuner
+	public class GATuner : Tuner
 	{
-		public UMDATuner(ITunableMetaheuristic metaheuristic, string dirInstances)
+		public GATuner(ITunableMetaheuristic metaheuristic, string dirInstances)
 			: base(metaheuristic, dirInstances, 6, new int[] { 2000, 10000 }, 5)
 		{
 		}
@@ -18,11 +18,11 @@ namespace Tune
 			for (int i = 0; i < popFactors.Length; i++) {
 				popFactors[i] = (2 * i) + 1;
 			}
-			double[] truncFactors = new double[] { 0.2, 0.4, 0.6, 0.8 };
+			double[] mutProbabilities = new double[] { 0.1, 0.2, 0.3, 0.4, 0.5, 0.6 };
 			
 			foreach (double popFactor in popFactors) {
-				foreach (double truncFactor in truncFactors) {
-					yield return new double[] { popFactor, truncFactor };
+				foreach (double mutProbability in mutProbabilities) {
+					yield return new double[] { popFactor, mutProbability };
 				}
 			}
 		}

@@ -41,6 +41,7 @@
     <Compile Include="Tuner.cs" />
     <Compile Include="UMDATuner.cs" />
     <Compile Include="ParallelForEach.cs" />
+    <Compile Include="GATuner.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Problems\TSP\UMDA4TSP\UMDA4TSP.csproj">
@@ -98,6 +99,58 @@
     <ProjectReference Include="..\Problems\2SP\UMDANPS42SP\UMDANPS42SP.csproj">
       <Project>{9AA09190-3651-4985-B1A7-EDB5F4D9544E}</Project>
       <Name>UMDANPS42SP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\QAP\GA2OptBest4QAP\GA2OptBest4QAP.csproj">
+      <Project>{5004B489-62D1-4964-A9A8-C141C9C6A5FB}</Project>
+      <Name>GA2OptBest4QAP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\SPP\GA2OptBest4SPP\GA2OptBest4SPP.csproj">
+      <Project>{0E9D32E6-2C53-41D4-85CD-0C5A00136BF2}</Project>
+      <Name>GA2OptBest4SPP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\TSP\GA2OptBest4TSP\GA2OptBest4TSP.csproj">
+      <Project>{ECCBA484-5526-48E9-AEBC-2749C2C013AA}</Project>
+      <Name>GA2OptBest4TSP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\QAP\GA2OptFirst4QAP\GA2OptFirst4QAP.csproj">
+      <Project>{F22B778E-648D-457F-9D40-4A99D2510B7A}</Project>
+      <Name>GA2OptFirst4QAP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\SPP\GA2OptFirst4SPP\GA2OptFirst4SPP.csproj">
+      <Project>{EB74C46A-BE02-4A09-ADFD-0F34EEC7D1AE}</Project>
+      <Name>GA2OptFirst4SPP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\TSP\GA2OptFirst4TSP\GA2OptFirst4TSP.csproj">
+      <Project>{D3319F9B-407B-4910-8417-FB86F822EA03}</Project>
+      <Name>GA2OptFirst4TSP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\QAP\GA4QAP\GA4QAP.csproj">
+      <Project>{3B269FC5-095D-4897-8CCB-FE2581A575CD}</Project>
+      <Name>GA4QAP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\SPP\GA4SPP\GA4SPP.csproj">
+      <Project>{F505EA66-2450-4167-AD8F-4C6BE9425B10}</Project>
+      <Name>GA4SPP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\TSP\GA4TSP\GA4TSP.csproj">
+      <Project>{7F8A5A1E-F5C2-469A-AA46-0E08930CF4EF}</Project>
+      <Name>GA4TSP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\2SP\GABL2OptBest42SP\GABL2OptBest42SP.csproj">
+      <Project>{2A723B4F-3E19-4E06-AAA2-E4A325B5E932}</Project>
+      <Name>GABL2OptBest42SP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\2SP\GABL2OptFirst42SP\GABL2OptFirst42SP.csproj">
+      <Project>{201271C3-E76C-4A8B-9BE5-0D2AB94BA54C}</Project>
+      <Name>GABL2OptFirst42SP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\2SP\GABL42SP\GABL42SP.csproj">
+      <Project>{355DBB4A-20A4-4D74-AE1F-31E0A73D7F35}</Project>
+      <Name>GABL42SP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\2SP\GANPS42SP\GANPS42SP.csproj">
+      <Project>{F479D3C9-46D8-453B-A07E-4143F892063C}</Project>
+      <Name>GANPS42SP</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

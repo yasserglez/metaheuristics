@@ -61,7 +61,7 @@ namespace Metaheuristics
 				}
 			}
 
-			BestIndividual = population[0];
+			BestIndividual = null;
 			while (Environment.TickCount - startTime < timeLimit) {
 				// Handle constraints using a repairing method.
 				if (RepairEnabled) {

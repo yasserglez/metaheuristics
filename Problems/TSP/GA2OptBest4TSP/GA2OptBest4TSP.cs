@@ -3,15 +3,17 @@ using System.Collections.Generic;
 
 namespace Metaheuristics
 {
-	public class GA2OptBest4TSP : IMetaheuristic
+	public class GA2OptBest4TSP : IMetaheuristic, ITunableMetaheuristic
 	{
+		protected double popFactor = 50;
+		protected double mutProbability = 0.3;
+		
 		public void Start(string fileInput, string fileOutput, int timeLimit)
 		{
 			TSPInstance instance = new TSPInstance(fileInput);
 			
 			// Setting the parameters of the GA for this instance of the problem.
-			int popSize = 50 * instance.NumberCities;
-			double mutProbability = 0.3;
+			int popSize = (int) Math.Ceiling(popFactor * instance.NumberCities);
 			int[] lowerBounds = new int[instance.NumberCities];
 			int[] upperBounds = new int[instance.NumberCities];
 			for (int i = 0; i < instance.NumberCities; i++) {
@@ -43,11 +45,17 @@ namespace Metaheuristics
 				return ProblemType.TSP;
 			}
 		}
-		
+
 		public string[] Team {
 			get {
 				return About.Team;
 			}
 		}
+
+		public void UpdateParameters(double[] parameters)
+		{
+			popFactor = parameters[0];
+			mutProbability = parameters[1];
+		}			
 	}
 }

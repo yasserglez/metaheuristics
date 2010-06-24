@@ -66,8 +66,6 @@ namespace Metaheuristics
 					population[k][i] = Statistics.RandomDiscreteUniform(LowerBounds[i], UpperBounds[i]);
 				}
 			}
-
-			BestIndividual = null;
 			
 			// Handle constraints using a repairing method.
 			if (RepairEnabled) {
@@ -88,6 +86,9 @@ namespace Metaheuristics
 				evaluation[k] = Fitness(population[k]);
 			}
 			Array.Sort(evaluation, population);
+			
+			BestIndividual = population[0];
+			BestFitness = evaluation[0];
 			
 			while (Environment.TickCount - startTime < timeLimit) {
 				newPopulation = new int[PopulationSize][];

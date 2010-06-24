@@ -4,15 +4,17 @@ using System.Collections.Generic;
 
 namespace Metaheuristics
 {
-	public class GA4QAP : IMetaheuristic
-	{		
+	public class GA4QAP : IMetaheuristic, ITunableMetaheuristic
+	{
+		protected double popFactor = 50;
+		protected double mutProbability = 0.3;
+
 		public void Start(string fileInput, string fileOutput, int timeLimit)
 		{
 			QAPInstance instance = new QAPInstance(fileInput);
 			
-			// Setting the parameters of the UMDA for this instance of the problem.
-			int popSize = 50 * instance.NumberFacilities;
-			double mutProbability = 0.3;
+			// Setting the parameters of the GA for this instance of the problem.
+			int popSize = (int) Math.Ceiling(popFactor * instance.NumberFacilities);
 			int[] lowerBounds = new int[instance.NumberFacilities];
 			int[] upperBounds = new int[instance.NumberFacilities];
 			for (int i = 0; i < instance.NumberFacilities; i++) {
@@ -49,6 +51,12 @@ namespace Metaheuristics
 			get {
 				return About.Team;
 			}
+		}
+
+		public void UpdateParameters(double[] parameters)
+		{
+			popFactor = parameters[0];
+			mutProbability = parameters[1];
 		}
 	}
 }
