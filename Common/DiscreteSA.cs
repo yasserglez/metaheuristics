@@ -6,14 +6,16 @@ namespace Metaheuristics
 {
 	public abstract class DiscreteSA
 	{
+		public int InitialSolutions { get; protected set; }
 		public int LevelLength { get; protected set; }
 		public double TempReduction { get; protected set; }
 		
 		public int[] BestSolution { get; protected set; }
 		public double BestFitness { get; protected set; }
 		
-		public DiscreteSA(int levelLength, double tempReduction)
+		public DiscreteSA(int initialSolutions, int levelLength, double tempReduction)
 		{
+			InitialSolutions = initialSolutions;
 			LevelLength = levelLength;
 			TempReduction = tempReduction;
 			BestSolution = null;
@@ -35,10 +37,10 @@ namespace Metaheuristics
 			int startTime = Environment.TickCount;			
 			
 			// Generate initial solutions and select the one with the best fitness.
-			// This is also used to choose an initial temperature valuel.
+			// This is also used to choose an initial temperature value.
 			int[] currentSolution = null;
 			double currentFitness = 0;
-			for (int i = 1; i <= 3; i++) {
+			for (int i = 1; i <= InitialSolutions; i++) {
 				int[] solution = InitialSolution();
 				double solutionFitness = Fitness(solution);
 				

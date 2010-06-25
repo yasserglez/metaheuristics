@@ -6,8 +6,8 @@ namespace Metaheuristics
 	{
 		public QAPInstance Instance { get; protected set; }
 		
-		public DiscreteSA4QAP(QAPInstance instance)
-			: base(instance.NumberFacilities * (instance.NumberFacilities - 1), 0.95)
+		public DiscreteSA4QAP(QAPInstance instance, int initialSolutions, int levelLength, double tempReduction)
+			: base(initialSolutions, levelLength, tempReduction)
 		{
 			Instance = instance;
 		}

@@ -4,12 +4,17 @@ using System.Collections.Generic;
 
 namespace Metaheuristics
 {
-	public class SA4SPP : IMetaheuristic
+	public class SA4SPP : IMetaheuristic, ITunableMetaheuristic
 	{
+		public int initialSolutions = 5;
+		public double levelLengthFactor = 1;
+		public double tempReduction = 0.95;
+
 		public void Start(string fileInput, string fileOutput, int timeLimit)
 		{
 			SPPInstance instance = new SPPInstance(fileInput);
-			DiscreteSA sa = new DiscreteSA4SPP(instance);
+			int levelLength = (int) Math.Ceiling(levelLengthFactor * (instance.NumberSubsets - 1));
+			DiscreteSA sa = new DiscreteSA4SPP(instance, initialSolutions, levelLength, tempReduction);
 			sa.Run(timeLimit);
 			SPPSolution solution = new SPPSolution(instance, sa.BestSolution);
 			solution.Write(fileOutput);
@@ -38,5 +43,12 @@ namespace Metaheuristics
 				return About.Team;
 			}
 		}
+		
+		public void UpdateParameters(double[] parameters)
+		{
+			initialSolutions = (int) parameters[0];
+			levelLengthFactor = parameters[1];
+			tempReduction = parameters[2];
+		}				
 	}
 }

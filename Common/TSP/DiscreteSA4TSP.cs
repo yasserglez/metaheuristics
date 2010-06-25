@@ -6,8 +6,8 @@ namespace Metaheuristics
 	{
 		public TSPInstance Instance { get; protected set; }
 		
-		public DiscreteSA4TSP(TSPInstance instance)
-			: base(instance.NumberCities * (instance.NumberCities - 1), 0.95)
+		public DiscreteSA4TSP(TSPInstance instance, int initialSolutions, int levelLength, double tempReduction)
+			: base(initialSolutions, levelLength, tempReduction)
 		{
 			Instance = instance;
 		}

@@ -17,7 +17,7 @@ namespace Tune
 
 		public static void Main(string[] args)
 		{
-			TuneGA42SP();
+			TuneSA42SP();
 		}
 
 		#region UMDA Tuners
@@ -149,5 +149,62 @@ namespace Tune
 		}
 		
 		#endregion		
+		
+		#region SA Tuners
+		
+		public static void TuneSA4TSP()
+		{
+			ITunableMetaheuristic[] algorithms = new ITunableMetaheuristic[] {
+				new SA4TSP(),
+			};
+			
+			algorithms.ParallelForEach(algorithm => {
+				SATuner tuner = new SATuner(algorithm, TSPDir);
+				string logFile = algorithm.GetType().Name + ".txt";
+				tuner.Start(logFile);
+			});
+		}
+		
+		public static void TuneSA4QAP()
+		{
+			ITunableMetaheuristic[] algorithms = new ITunableMetaheuristic[] {
+				new SA4QAP(),
+			};
+			
+			algorithms.ParallelForEach(algorithm => {
+				SATuner tuner = new SATuner(algorithm, QAPDir);
+				string logFile = algorithm.GetType().Name + ".txt";
+				tuner.Start(logFile);
+			});
+		}
+		
+		public static void TuneSA4SPP()
+		{
+			ITunableMetaheuristic[] algorithms = new ITunableMetaheuristic[] {
+				new SA4SPP(),
+			};
+			
+			algorithms.ParallelForEach(algorithm => {
+				SATuner tuner = new SATuner(algorithm, SPPDir);
+				string logFile = algorithm.GetType().Name + ".txt";
+				tuner.Start(logFile);
+			});
+		}
+		
+		public static void TuneSA42SP()
+		{
+			ITunableMetaheuristic[] algorithms = new ITunableMetaheuristic[] {
+				new SANPS42SP(),
+				new SABL42SP(),
+			};
+			
+			algorithms.ParallelForEach(algorithm => {
+				SATuner tuner = new SATuner(algorithm, TwoSPDir);
+				string logFile = algorithm.GetType().Name + ".txt";
+				tuner.Start(logFile);
+			});
+		}
+		
+		#endregion
 	}
 }

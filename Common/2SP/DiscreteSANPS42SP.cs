@@ -6,8 +6,8 @@ namespace Metaheuristics
 	{
 		public TwoSPInstance Instance { get; protected set; }
 		
-		public DiscreteSANPS42SP(TwoSPInstance instance)
-			: base(2 * instance.NumberItems, 0.95)
+		public DiscreteSANPS42SP(TwoSPInstance instance, int initialSolutions, int levelLength, double tempReduction)
+			: base(initialSolutions, levelLength, tempReduction)
 		{
 			Instance = instance;
 		}
