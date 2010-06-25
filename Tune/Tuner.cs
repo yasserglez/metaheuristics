@@ -1,6 +1,7 @@
 using System;
 using System.IO;
 using System.Collections.Generic;
+using System.Linq;
 
 using Metaheuristics;
 
@@ -39,6 +40,7 @@ namespace Tune
 			
 			log.AutoFlush = true;
 			log.WriteLine("Parameters tuning for " + Metaheuristic.Name + ".");
+			log.WriteLine("The estimated running time is " + ApproxRunningTime() + ".");
 			log.WriteLine();
 			
 			foreach (double[] currentParameters in EnumerateParameters()) {
@@ -113,6 +115,17 @@ namespace Tune
 				stringParameters[i] = parameters[i].ToString();
 			}
 			return string.Join(", ", stringParameters);
+		}
+		
+		protected string ApproxRunningTime()
+		{
+			int miliseconds = 0;
+			int runsPerTime = EnumerateParameters().Count() * InputFiles.Length * RunsPerProblem;
+			foreach (int timeLimit in TimeLimits) {
+				miliseconds += timeLimit * runsPerTime;
+			}
+			TimeSpan time = new TimeSpan(0, 0, 0, 0, miliseconds);
+			return time.ToString();			
 		}
 		
 		protected abstract IEnumerable<double[]> EnumerateParameters();
