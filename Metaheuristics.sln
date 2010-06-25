@@ -153,6 +153,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{E06C3E27-AFA5-46B4-9239-387DC7CE88AB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tune", "Tune\Tune.csproj", "{3E40AD8D-96D7-424F-BD48-CF6C4599B27A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -219,6 +221,10 @@ Global
 		{3B269FC5-095D-4897-8CCB-FE2581A575CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B269FC5-095D-4897-8CCB-FE2581A575CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B269FC5-095D-4897-8CCB-FE2581A575CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E40AD8D-96D7-424F-BD48-CF6C4599B27A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E40AD8D-96D7-424F-BD48-CF6C4599B27A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E40AD8D-96D7-424F-BD48-CF6C4599B27A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E40AD8D-96D7-424F-BD48-CF6C4599B27A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{40F39BBB-CB49-417E-B662-20F39BCAB6F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{40F39BBB-CB49-417E-B662-20F39BCAB6F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40F39BBB-CB49-417E-B662-20F39BCAB6F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -520,6 +526,6 @@ Global
 		{9FDF8936-C91B-4905-A3BF-99A8610ABDAE} = {5C02854E-D520-43F3-9C24-D8E16BA6405E}
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Test\Test.csproj
+		StartupItem = Tune\Tune.csproj
 	EndGlobalSection
 EndGlobal

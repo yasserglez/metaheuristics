@@ -17,7 +17,7 @@ namespace Metaheuristics
 
 		public string Name {
 			get {
-				return "2-opt (first improvement) with the NPS heuristic for TSP";
+				return "2-opt (first improvement) for TSP";
 			}
 		}
 		

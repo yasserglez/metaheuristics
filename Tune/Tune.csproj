@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3E40AD8D-96D7-424F-BD48-CF6C4599B27A}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Tune</RootNamespace>
+    <AssemblyName>Tune</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="Metaheuristic, Version=1.0.3825.24303, Culture=neutral, PublicKeyToken=null">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Metaheuristic.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Tuner.cs" />
+    <Compile Include="UMDATuner.cs" />
+    <Compile Include="ParallelForEach.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Problems\TSP\UMDA4TSP\UMDA4TSP.csproj">
+      <Project>{28D86552-5EA6-4F82-8812-3BBA2FEA15D7}</Project>
+      <Name>UMDA4TSP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\TSP\UMDA2OptFirst4TSP\UMDA2OptFirst4TSP.csproj">
+      <Project>{6DB55593-ED82-45AB-8213-2ADF3791FAAB}</Project>
+      <Name>UMDA2OptFirst4TSP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\TSP\UMDA2OptBest4TSP\UMDA2OptBest4TSP.csproj">
+      <Project>{BC7E79ED-602F-4A92-8B5B-D8912C10CA8C}</Project>
+      <Name>UMDA2OptBest4TSP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{4630C8D3-67C9-443D-89C4-F11A2CCEC50C}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\SPP\UMDA2OptFirst4SPP\UMDA2OptFirst4SPP.csproj">
+      <Project>{91E9E90B-8999-4B69-96C2-1AD4762F0CB3}</Project>
+      <Name>UMDA2OptFirst4SPP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\SPP\UMDA2OptBest4SPP\UMDA2OptBest4SPP.csproj">
+      <Project>{93195036-15E3-4549-B427-5C911EE071B4}</Project>
+      <Name>UMDA2OptBest4SPP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\SPP\UMDA4SPP\UMDA4SPP.csproj">
+      <Project>{987986E7-1AF1-469E-9910-95353754BD03}</Project>
+      <Name>UMDA4SPP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\QAP\UMDA2OptBest4QAP\UMDA2OptBest4QAP.csproj">
+      <Project>{D046BDE9-5B53-4080-BF5B-12537700100A}</Project>
+      <Name>UMDA2OptBest4QAP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\QAP\UMDA2OptFirst4QAP\UMDA2OptFirst4QAP.csproj">
+      <Project>{13C4A8C5-928B-464D-8620-1112F795D645}</Project>
+      <Name>UMDA2OptFirst4QAP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\QAP\UMDA4QAP\UMDA4QAP.csproj">
+      <Project>{996DAABA-52E8-4A6A-AE45-4A8A21AE50FD}</Project>
+      <Name>UMDA4QAP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\2SP\UMDABL2OptBest42SP\UMDABL2OptBest42SP.csproj">
+      <Project>{8EB28062-C501-434E-9482-3D0D570B148A}</Project>
+      <Name>UMDABL2OptBest42SP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\2SP\UMDABL2OptFirst42SP\UMDABL2OptFirst42SP.csproj">
+      <Project>{A504A3BB-325E-41B9-AE09-32240340596C}</Project>
+      <Name>UMDABL2OptFirst42SP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\2SP\UMDABL42SP\UMDABL42SP.csproj">
+      <Project>{AFD08309-92BD-49DF-A021-2389160FAF5B}</Project>
+      <Name>UMDABL42SP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\2SP\UMDANPS42SP\UMDANPS42SP.csproj">
+      <Project>{9AA09190-3651-4985-B1A7-EDB5F4D9544E}</Project>
+      <Name>UMDANPS42SP</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
