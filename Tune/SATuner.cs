@@ -14,9 +14,9 @@ namespace Tune
 		
 		protected override IEnumerable<double[]> EnumerateParameters()
 		{
-			double[] initialSolutions = new double[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-			double[] levelLengthFactors = new double[] { 0.5, 0.6, 0.7, 0.8, 0.9, 1.0 };
-			double[] tempReductions = new double[] { 0.70, 0.75, 0.80, 0.85, 0.90, 0.95 };
+			double[] initialSolutions = new double[] { 5, 6, 7, 8, 9, 10 };
+			double[] levelLengthFactors = new double[] { 0.5, 0.7, 0.9, 1.0 };
+			double[] tempReductions = new double[] { 0.75, 0.80, 0.85, 0.90, 0.95 };
 			
 			foreach (double initialSolution in initialSolutions) {
 				foreach (double levelLengthFactor in levelLengthFactors) {

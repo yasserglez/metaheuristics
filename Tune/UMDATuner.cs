@@ -14,11 +14,11 @@ namespace Tune
 		
 		protected override IEnumerable<double[]> EnumerateParameters()
 		{
-			double[] popFactors = new double[25];
-			for (int i = 0; i < popFactors.Length; i++) {
-				popFactors[i] = (2 * i) + 1;
+			List<double> popFactors = new List<double>();
+			for (int i = 5; i <= 51; i += 2) {
+				popFactors.Add(i);
 			}
-			double[] truncFactors = new double[] { 0.2, 0.4, 0.6, 0.8 };
+			double[] truncFactors = new double[] { 0.2, 0.3, 0.4, 0.5 };
 			
 			foreach (double popFactor in popFactors) {
 				foreach (double truncFactor in truncFactors) {

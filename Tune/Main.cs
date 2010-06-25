@@ -17,7 +17,7 @@ namespace Tune
 
 		public static void Main(string[] args)
 		{
-			TuneSA42SP();
+			TuneGA4TSP();
 		}
 
 		#region UMDA Tuners
