@@ -35,6 +35,9 @@ namespace Metaheuristics
 		{	
 			List<double> solutions = new List<double>();
 			int startTime = Environment.TickCount;			
+			int iterationStartTime = 0;
+			int iterationTime = 0;
+			int maxIterationTime = 0;			
 			
 			// Generate initial solutions and select the one with the best fitness.
 			// This is also used to choose an initial temperature value.
@@ -56,8 +59,11 @@ namespace Metaheuristics
 
 			BestSolution = currentSolution;
 			BestFitness = currentFitness;
+			
+			maxIterationTime = Environment.TickCount - startTime;
 
-			while (Environment.TickCount - startTime < timeLimit) {
+			while (Environment.TickCount - startTime < timeLimit - maxIterationTime) {
+				iterationStartTime = Environment.TickCount;
 				for (int level = 0; level < LevelLength; level++) {
 					int[] newSolution = GetNeighbor(currentSolution);
 					double newFitness = Fitness(newSolution);
@@ -86,6 +92,9 @@ namespace Metaheuristics
 				
 				// Apply a geometric schema by default.
 				temperature = TempReduction * temperature;
+				
+				iterationTime = Environment.TickCount - iterationStartTime;
+				maxIterationTime = (maxIterationTime < iterationTime) ? iterationTime : maxIterationTime;				
 			}
 		}
 	}

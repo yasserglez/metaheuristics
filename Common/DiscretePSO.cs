@@ -124,6 +124,9 @@ namespace Metaheuristics
         public void Run(int timeLimit)
         {
             int startTime = Environment.TickCount;
+			int iterationStartTime = 0;
+			int iterationTime = 0;
+			int maxIterationTime = 0;			
             int numVariables = LowerBounds.Length;
             int[][] partBestPrevPosition = new int[ParticlesCount][];
             int[][] partPosition = new int[ParticlesCount][];
@@ -172,8 +175,11 @@ namespace Metaheuristics
                     BestPosition = partPosition[k];
                 }
             }
+			
+			maxIterationTime = Environment.TickCount - startTime;
 
-            while (Environment.TickCount - startTime < timeLimit) {
+            while (Environment.TickCount - startTime < timeLimit - maxIterationTime) {
+				iterationStartTime = Environment.TickCount;
                 for (int i = 0; i < ParticlesCount; i++) {
                     rg = Statistics.RandomUniform();
                     rp = Statistics.RandomUniform();
@@ -202,6 +208,9 @@ namespace Metaheuristics
                         BestPosition = partPosition[k];
                     }
                 }
+				
+				iterationTime = Environment.TickCount - iterationStartTime;
+				maxIterationTime = (maxIterationTime < iterationTime) ? iterationTime : maxIterationTime;				
             }
         }
     }

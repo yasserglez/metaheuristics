@@ -54,6 +54,9 @@ namespace Metaheuristics
 		public void Run(int timeLimit, int iterationsLimit)
 		{
 			int startTime = Environment.TickCount;
+			int iterationStartTime = 0;
+			int iterationTime = 0;
+			int maxIterationTime = 0;			
 			int numVariables = LowerBounds.Length;
 			int[] newSolution = new int[numVariables];
 			double newFitness = 0;
@@ -69,7 +72,10 @@ namespace Metaheuristics
 			BestSolution = newSolution;
 			BestFitness = newFitness;		
 			
-			while (Environment.TickCount - startTime < timeLimit && iteration < iterationsLimit) {
+			maxIterationTime = Environment.TickCount - startTime;
+			
+			while (Environment.TickCount - startTime < timeLimit - maxIterationTime && iteration < iterationsLimit) {
+				iterationStartTime = Environment.TickCount;
 				GRCSolution(newSolution);
 				
 				// Run a local search method for each individual in the population.
@@ -81,6 +87,9 @@ namespace Metaheuristics
 					BestFitness = newFitness;		
 				}
 				iteration++;
+				
+				iterationTime = Environment.TickCount - iterationStartTime;
+				maxIterationTime = (maxIterationTime < iterationTime) ? iterationTime : maxIterationTime;				
 			}
 		}
 	}
