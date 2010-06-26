@@ -9,7 +9,7 @@ namespace Tune
 		public static void Main(string[] args)
 		{
 			ITunableMetaheuristic[] algorithms = new ITunableMetaheuristic[] {
-				new UMDABL42SP(),
+				new UMDA4TSP(),
 				new UMDABL2OptBest42SP(),
 				new UMDABL2OptFirst42SP(),
 				new GABL42SP(),
