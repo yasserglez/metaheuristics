@@ -44,6 +44,9 @@ namespace Metaheuristics
 		public void Run(int timeLimit)
 		{	
 			int startTime = Environment.TickCount;
+			int iterationStartTime = 0;
+			int iterationTime = 0;
+			int maxIterationTime = 0;			
 			int numVariables = LowerBounds.Length;
 			int selectedSize = Math.Max(1, (int) Math.Round(TruncationFactor * PopulationSize));
 			int[][] population = new int[PopulationSize][];
@@ -62,7 +65,10 @@ namespace Metaheuristics
 			}
 
 			BestIndividual = null;
-			while (Environment.TickCount - startTime < timeLimit) {
+			maxIterationTime = Environment.TickCount - startTime;
+			
+			while (Environment.TickCount - startTime < timeLimit - maxIterationTime) {
+				iterationStartTime = Environment.TickCount;
 				// Handle constraints using a repairing method.
 				if (RepairEnabled) {
 					for (int k = 0; k < PopulationSize; k++) {
@@ -112,6 +118,9 @@ namespace Metaheuristics
 						population[k][i] = LowerBounds[i] + Statistics.SampleRoulette(model[i]);
 					}
 				}
+								
+				iterationTime = Environment.TickCount - iterationStartTime;
+				maxIterationTime = (maxIterationTime < iterationTime) ? iterationTime : maxIterationTime;				
 			}
 		}
 	}

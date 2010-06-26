@@ -18,7 +18,7 @@ namespace Metaheuristics
 
 		public DiscreteGA (int popSize, double mutationProbability, int[] lowerBounds, int[] upperBounds)
 		{
-			PopulationSize = popSize;
+			PopulationSize = popSize + popSize%2;
 			LowerBounds = lowerBounds;
 			UpperBounds = upperBounds;
 			RepairEnabled = false;
@@ -44,6 +44,9 @@ namespace Metaheuristics
 		public void Run(int timeLimit)
 		{	
 			int startTime = Environment.TickCount;
+			int iterationStartTime = 0;
+			int iterationTime = 0;
+			int maxIterationTime = 0;			
 			int numVariables = LowerBounds.Length;
 			int[][] population = new int[PopulationSize][];
 			double[] evaluation = new double[PopulationSize];
@@ -90,7 +93,10 @@ namespace Metaheuristics
 			BestIndividual = population[0];
 			BestFitness = evaluation[0];
 			
-			while (Environment.TickCount - startTime < timeLimit) {
+			maxIterationTime = Environment.TickCount - startTime;
+			
+			while (Environment.TickCount - startTime < timeLimit - maxIterationTime) {
+				iterationStartTime = Environment.TickCount;
 				newPopulation = new int[PopulationSize][];
 				newEvaluation = new double[PopulationSize];
 
@@ -101,13 +107,8 @@ namespace Metaheuristics
 				}
 				
 				// Crossover's and Mutation's masks.
-				double mutMaskProbability = 1/numVariables;
-				for (int i = 0; i < numVariables; i++) {
-					crossMask[i] = Statistics.RandomUniform() < 0.5;
-					mutMask[i] = Statistics.RandomUniform() < mutMaskProbability;
-				}
-				// Ensures that, at least, it will make a 1X 
-				// crossover and mutation.
+				crossMask[Statistics.RandomDiscreteUniform(0, numVariables-1)] = true;
+				mutMask[Statistics.RandomDiscreteUniform(0, numVariables-1)] = true;
 				crossMask[Statistics.RandomDiscreteUniform(0, numVariables-1)] = true;
 				mutMask[Statistics.RandomDiscreteUniform(0, numVariables-1)] = true;
 				
@@ -186,6 +187,9 @@ namespace Metaheuristics
 				
 				population = newPopulation;
 				evaluation = newEvaluation;
+				
+				iterationTime = Environment.TickCount - iterationStartTime;
+				maxIterationTime = (maxIterationTime < iterationTime) ? iterationTime : maxIterationTime;				
 			}
 		}
 	}
