@@ -35,57 +35,67 @@ namespace Tune
 			double bestCost = double.PositiveInfinity;
 			double currentCost;
 			double currentFitness;
-			List<double> means = new List<double>();
-			List<double> fitness = new List<double>();
+			List<double> meanFitness = new List<double>();
+			List<double> runFitness = new List<double>();
 			
 			log.AutoFlush = true;
-			log.WriteLine("Parameters tuning for " + Metaheuristic.Name + ".");
-			log.WriteLine("The estimated running time is " + ApproxRunningTime() + ".");
-			log.WriteLine();
+			log.WriteLine("Parameters tuning for: " + Metaheuristic.Name);
+			log.WriteLine("Estimated run time: " + ApproxRunningTime());
 			
 			foreach (double[] currentParameters in EnumerateParameters()) {
-				means.Clear();
-				Metaheuristic.UpdateParameters(currentParameters);
+				log.WriteLine();
 				log.WriteLine("Current parameters: " + ParametersToString(currentParameters));
 				
+				Metaheuristic.UpdateParameters(currentParameters);
+				meanFitness.Clear();
 				foreach (string inputFile in InputFiles) {
+					runFitness.Clear();
 					foreach (int timeLimit in TimeLimits) {
-						fitness.Clear();
 						for (int run = 0; run < RunsPerProblem; run++) {
-							currentFitness = Run(inputFile, timeLimit);
-							if (double.IsPositiveInfinity(currentFitness)) break;
-							fitness.Add(currentFitness);
+							currentFitness = Run(log, inputFile, timeLimit);
+							if (double.IsPositiveInfinity(currentFitness)) {
+								runFitness.Clear();
+								break;
+							}
+							runFitness.Add(currentFitness);
 						}
-						if (fitness.Count == 0) break;
-						means.Add(Statistics.Mean(fitness));
+						if (runFitness.Count == 0) {
+							meanFitness.Clear();
+							break;
+						}
 					}
-					if (means.Count == 0) break;
+					if (runFitness.Count == 0) {
+						meanFitness.Clear();
+						break;
+					}
+					meanFitness.Add(Statistics.Mean(runFitness));
+					log.WriteLine("Mean fitness for " + Path.GetFileName(inputFile) + ": " + meanFitness[meanFitness.Count-1]);
 				}
-				if (means.Count == 0) continue;
+				if (meanFitness.Count == 0) {
+					log.WriteLine("Skiping this parameters.");
+					continue;
+				}
 				
-				currentCost = 0.0;
-				foreach (double mean in means) {
-					currentCost += mean;
-				}
+				currentCost = meanFitness.Sum();
+				log.WriteLine("Current cost: " + currentCost);
 				if (currentCost < bestCost) {
 					bestCost = currentCost;
 					bestParameters = currentParameters;
-					log.WriteLine("Best parameters: " + ParametersToString(bestParameters));
+					log.WriteLine("This is the best cost until now.");
 				}
 			}
 			
+			log.WriteLine();
 			if (bestParameters != null) {
-				log.WriteLine("Best parameters: " + ParametersToString(bestParameters));
+				log.WriteLine("Final best parameters: " + ParametersToString(bestParameters));
 			}
 			else {
 				log.WriteLine("Not feasible parameters found.");
 			}
-			log.WriteLine("Parameters tuning for " + Metaheuristic.Name + " finished.");
-			
 			log.Close();
 		}
 		
-		protected double Run(string inputFile, int timeLimit)
+		protected double Run(StreamWriter log, string inputFile, int timeLimit)
 		{
 			int startTime, elapsedTime;
 			string outputFile = Path.GetTempFileName();
@@ -94,6 +104,7 @@ namespace Tune
 			startTime = Environment.TickCount;
 			Metaheuristic.Start(inputFile, outputFile, timeLimit);
 			elapsedTime = Environment.TickCount - startTime;
+			log.WriteLine("Elapsed time for " + Path.GetFileName(inputFile) + ": " + elapsedTime + " of " + maxTime);
 			if (elapsedTime > maxTime) {
 				return double.PositiveInfinity;
 			}
@@ -103,7 +114,7 @@ namespace Tune
 					while (line.Trim() == "") {
 						line = reader.ReadLine();
 					}
-					return double.Parse(line);
+					return double.Parse(line); 
 				}
 			}
 		}
