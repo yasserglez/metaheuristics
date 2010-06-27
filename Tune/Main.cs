@@ -9,12 +9,10 @@ namespace Tune
 		public static void Main(string[] args)
 		{
 			ITunableMetaheuristic[] algorithms = new ITunableMetaheuristic[] {
-				new UMDA4TSP(),
-				new UMDABL2OptBest42SP(),
-				new UMDABL2OptFirst42SP(),
-				new GABL42SP(),
-				new GABL2OptBest42SP(),
-				new GABL2OptFirst42SP(),
+                new UMDABL42SP(),
+                new UMDA4TSP(),
+                new UMDABL2OptFirst42SP(),
+                new UMDA2OptFirst4TSP(),
 			};
 			
 			algorithms.ParallelForEach(algorithm => {
@@ -27,10 +25,10 @@ namespace Tune
 					dir = "../../../Problems/SPP/Instances";
 					break;
 				case ProblemType.TSP:
-					dir = "../../../Problems/TSP/Instances";
+                    dir = "../../../Problems/TSP/Instances";
 					break;
 				case ProblemType.TwoSP:
-					dir = "../../../Problems/2SP/Instances";
+                    dir = "../../../Problems/2SP/Instances";
 					break;	
 				default:
 					break;

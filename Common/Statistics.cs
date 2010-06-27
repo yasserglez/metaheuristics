@@ -6,40 +6,50 @@ namespace Metaheuristics
 {
 	public static class Statistics
 	{
-		private static Random random = new Random();
+        private static Random random = new Random();
 		
 		public static double RandomUniform()
 		{
-			return random.NextDouble();
+            lock (random) {
+                return random.NextDouble();
+            }
 		}
 		
 		public static double RandomUniform(double a, double b)
 		{
-			return a + (b - a) * random.NextDouble();
+            lock (random) {
+                return a + (b - a) * random.NextDouble();
+            }
 		}
 
         public static int RandomDiscreteUniform(int a, int b)
         {
-            return (int) Math.Floor(RandomUniform(a, b + 1));
+            lock (random) {
+                return (int) Math.Floor(RandomUniform(a, b + 1));
+            }
         }
 		
 		public static int RandomPoisson(double lambda)
 		{
-			int k = 0;
-			double p = 1.0;
-			double L = Math.Exp(-lambda);
-			
-			do {
-				k++;
-				p *= random.NextDouble();
-			} while (p >= L);
-			
-			return k - 1;
+            lock (random) {
+			    int k = 0;
+			    double p = 1.0;
+			    double L = Math.Exp(-lambda);
+    			
+			    do {
+				    k++;
+				    p *= random.NextDouble();
+			    } while (p >= L);
+    			
+			    return k - 1;
+            }
 		}
 		
 		public static double RandomExponential(double alpha)
-		{
-			return -Math.Log(random.NextDouble()) / alpha;
+        {
+            lock (random) {
+			    return -Math.Log(random.NextDouble()) / alpha;
+            }
 		}
 		
 		public static double Mean(ICollection<double> sample)
@@ -83,19 +93,21 @@ namespace Metaheuristics
 		
 		public static int SampleRoulette(double[] probabilities)
 		{
-			double accumulative = 0;
-			int selected = probabilities.Length - 1;
-			double u = RandomUniform();
+            lock (random) {
+                double accumulative = 0;
+                int selected = probabilities.Length - 1;
+                double u = RandomUniform();
 
-			for (int i = 0; i < probabilities.Length; i++) {
-				accumulative += probabilities[i];
-				if (u <= accumulative) {
-					selected = i;
-					break;
-				}
-			}
+                for (int i = 0; i < probabilities.Length; i++) {
+                    accumulative += probabilities[i];
+                    if (u <= accumulative) {
+                        selected = i;
+                        break;
+                    }
+                }
 
-			return selected;
+                return selected;
+            }
 		}
 	}
 }

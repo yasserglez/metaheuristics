@@ -8,20 +8,23 @@ namespace Tune
 	public class SATuner : Tuner
 	{
 		public SATuner(ITunableMetaheuristic metaheuristic, string dirInstances)
-			: base(metaheuristic, dirInstances, 6, new int[] { 2000, 10000 }, 5)
+			: base(metaheuristic, dirInstances, 3, new int[] { 2000, 10000 }, 5)
 		{
 		}
 		
 		protected override IEnumerable<double[]> EnumerateParameters()
 		{
-			double[] initialSolutions = new double[] { 5, 6, 7, 8, 9, 10 };
-			double[] levelLengthFactors = new double[] { 0.5, 0.7, 0.9, 1.0 };
-			double[] tempReductions = new double[] { 0.75, 0.80, 0.85, 0.90, 0.95 };
+            double[] timePenalties = new double[] { 250, 500, 750, 1000 };		
+			double[] initialSolutions = new double[] { 3, 5, 7, 10 };
+			double[] levelLengthFactors = new double[] { 0.7, 0.9, 1.0 };
+			double[] tempReductions = new double[] { 0.75, 0.85, 0.95 };
 			
-			foreach (double initialSolution in initialSolutions) {
-				foreach (double levelLengthFactor in levelLengthFactors) {
-					foreach (double tempReduction in tempReductions) {
-						yield return new double[] { initialSolution, levelLengthFactor, tempReduction };
+			foreach (double timePenalty in timePenalties) {
+				foreach (double initialSolution in initialSolutions) {
+					foreach (double levelLengthFactor in levelLengthFactors) {
+						foreach (double tempReduction in tempReductions) {
+							yield return new double[] { timePenalty, initialSolution, levelLengthFactor, tempReduction };
+						}
 					}
 				}
 			}

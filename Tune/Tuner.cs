@@ -114,7 +114,7 @@ namespace Tune
 					while (line.Trim() == "") {
 						line = reader.ReadLine();
 					}
-					return double.Parse(line); 
+                    return double.Parse(line);
 				}
 			}
 		}

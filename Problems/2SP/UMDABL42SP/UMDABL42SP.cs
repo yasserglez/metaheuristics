@@ -6,6 +6,7 @@ namespace Metaheuristics
 {
 	public class UMDABL42SP : IMetaheuristic, ITunableMetaheuristic
 	{
+		protected int timePenalty = 250;
 		protected double popFactor = 50;
 		protected double truncFactor = 0.3;
 
@@ -24,7 +25,7 @@ namespace Metaheuristics
 			DiscreteUMDA umda = new DiscreteUMDABL42SP(instance, popSize, truncFactor, lowerBounds, upperBounds);
 			
 			// Solving the problem and writing the best solution found.
-			umda.Run(timeLimit);
+			umda.Run(timeLimit - timePenalty);
 			int[,] coordinates = TwoSPUtils.BLCoordinates(instance, umda.BestIndividual);
 			TwoSPSolution solution = new TwoSPSolution(instance, coordinates);
 			solution.Write(fileOutput);
@@ -56,8 +57,9 @@ namespace Metaheuristics
 		
 		public void UpdateParameters(double[] parameters)
 		{
-			popFactor = parameters[0];
-			truncFactor = parameters[1];
+			timePenalty = (int) parameters[0];
+			popFactor = parameters[1];
+			truncFactor = parameters[2];
 		}		
 	}
 }
