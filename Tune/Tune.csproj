@@ -46,14 +46,6 @@
     <Compile Include="GRASPTuner.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Problems\TSP\UMDA4TSP\UMDA4TSP.csproj">
-      <Project>{28D86552-5EA6-4F82-8812-3BBA2FEA15D7}</Project>
-      <Name>UMDA4TSP</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Problems\TSP\UMDA2OptFirst4TSP\UMDA2OptFirst4TSP.csproj">
-      <Project>{6DB55593-ED82-45AB-8213-2ADF3791FAAB}</Project>
-      <Name>UMDA2OptFirst4TSP</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Problems\TSP\UMDA2OptBest4TSP\UMDA2OptBest4TSP.csproj">
       <Project>{BC7E79ED-602F-4A92-8B5B-D8912C10CA8C}</Project>
       <Name>UMDA2OptBest4TSP</Name>
@@ -90,14 +82,6 @@
       <Project>{8EB28062-C501-434E-9482-3D0D570B148A}</Project>
       <Name>UMDABL2OptBest42SP</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Problems\2SP\UMDABL2OptFirst42SP\UMDABL2OptFirst42SP.csproj">
-      <Project>{A504A3BB-325E-41B9-AE09-32240340596C}</Project>
-      <Name>UMDABL2OptFirst42SP</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Problems\2SP\UMDABL42SP\UMDABL42SP.csproj">
-      <Project>{AFD08309-92BD-49DF-A021-2389160FAF5B}</Project>
-      <Name>UMDABL42SP</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Problems\2SP\UMDANPS42SP\UMDANPS42SP.csproj">
       <Project>{9AA09190-3651-4985-B1A7-EDB5F4D9544E}</Project>
       <Name>UMDANPS42SP</Name>
@@ -122,10 +106,6 @@
       <Project>{EB74C46A-BE02-4A09-ADFD-0F34EEC7D1AE}</Project>
       <Name>GA2OptFirst4SPP</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Problems\TSP\GA2OptFirst4TSP\GA2OptFirst4TSP.csproj">
-      <Project>{D3319F9B-407B-4910-8417-FB86F822EA03}</Project>
-      <Name>GA2OptFirst4TSP</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Problems\QAP\GA4QAP\GA4QAP.csproj">
       <Project>{3B269FC5-095D-4897-8CCB-FE2581A575CD}</Project>
       <Name>GA4QAP</Name>
@@ -134,14 +114,6 @@
       <Project>{F505EA66-2450-4167-AD8F-4C6BE9425B10}</Project>
       <Name>GA4SPP</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Problems\TSP\GA4TSP\GA4TSP.csproj">
-      <Project>{7F8A5A1E-F5C2-469A-AA46-0E08930CF4EF}</Project>
-      <Name>GA4TSP</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Problems\2SP\GABL2OptBest42SP\GABL2OptBest42SP.csproj">
-      <Project>{2A723B4F-3E19-4E06-AAA2-E4A325B5E932}</Project>
-      <Name>GABL2OptBest42SP</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Problems\2SP\GABL2OptFirst42SP\GABL2OptFirst42SP.csproj">
       <Project>{201271C3-E76C-4A8B-9BE5-0D2AB94BA54C}</Project>
       <Name>GABL2OptFirst42SP</Name>
@@ -149,10 +121,6 @@
     <ProjectReference Include="..\Problems\2SP\GABL42SP\GABL42SP.csproj">
       <Project>{355DBB4A-20A4-4D74-AE1F-31E0A73D7F35}</Project>
       <Name>GABL42SP</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Problems\2SP\GANPS42SP\GANPS42SP.csproj">
-      <Project>{F479D3C9-46D8-453B-A07E-4143F892063C}</Project>
-      <Name>GANPS42SP</Name>
     </ProjectReference>
     <ProjectReference Include="..\Problems\QAP\SA4QAP\SA4QAP.csproj">
       <Project>{D0D3F464-1F48-478C-A2A1-DE10FE22686A}</Project>
@@ -173,6 +141,70 @@
     <ProjectReference Include="..\Problems\2SP\SANPS42SP\SANPS42SP.csproj">
       <Project>{E6AB3E8F-DCA1-4F78-ACF3-9E673CD49F25}</Project>
       <Name>SANPS42SP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\QAP\GRASP2OptBest4QAP\GRASP2OptBest4QAP.csproj">
+      <Project>{C3849A7C-D487-468B-9490-8B5FD52AAA84}</Project>
+      <Name>GRASP2OptBest4QAP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\SPP\GRASP2OptBest4SPP\GRASP2OptBest4SPP.csproj">
+      <Project>{8FD51241-F5B8-423E-9F0C-9F3E050B6F93}</Project>
+      <Name>GRASP2OptBest4SPP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\TSP\GRASP2OptBest4TSP\GRASP2OptBest4TSP.csproj">
+      <Project>{65D17E7E-C0FA-4CBA-97B3-B32416BBE4F5}</Project>
+      <Name>GRASP2OptBest4TSP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\QAP\GRASP2OptFirst4QAP\GRASP2OptFirst4QAP.csproj">
+      <Project>{C9DCE13B-7251-4CEE-8A5D-08F480FAEC06}</Project>
+      <Name>GRASP2OptFirst4QAP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\SPP\GRASP2OptFirst4SPP\GRASP2OptFirst4SPP.csproj">
+      <Project>{85909D54-6F7B-4654-B8A5-FB51148B3413}</Project>
+      <Name>GRASP2OptFirst4SPP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\TSP\GRASP2OptFirst4TSP\GRASP2OptFirst4TSP.csproj">
+      <Project>{3420DDC7-6D6F-4D88-9095-3181361C325B}</Project>
+      <Name>GRASP2OptFirst4TSP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\QAP\PSO2OptBest4QAP\PSO2OptBest4QAP.csproj">
+      <Project>{83745B16-A6F6-4E5D-B508-356A5E0F93A8}</Project>
+      <Name>PSO2OptBest4QAP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\TSP\PSO2OptBest4TSP\PSO2OptBest4TSP.csproj">
+      <Project>{9214FCD6-40C4-49E1-AF06-D58595D44AE3}</Project>
+      <Name>PSO2OptBest4TSP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\QAP\PSO2OptFirst4QAP\PSO2OptFirst4QAP.csproj">
+      <Project>{36A251E8-E284-43CC-BC60-CA7EBE509346}</Project>
+      <Name>PSO2OptFirst4QAP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\TSP\PSO2OptFirst4TSP\PSO2OptFirst4TSP.csproj">
+      <Project>{B0E1644D-D248-4753-A052-BF6DEE526B73}</Project>
+      <Name>PSO2OptFirst4TSP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\QAP\PSO4QAP\PSO4QAP.csproj">
+      <Project>{DF3531BE-CD46-4FA6-BEEF-1A57FB97523A}</Project>
+      <Name>PSO4QAP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\TSP\PSO4TSP\PSO4TSP.csproj">
+      <Project>{57044B23-620E-4AAD-BF94-CEB43D6031B9}</Project>
+      <Name>PSO4TSP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\2SP\PSOBL2OptBest42SP\PSOBL2OptBest42SP.csproj">
+      <Project>{D3F5BDD9-BC4E-4F08-83FC-E7EE2F9B9FD2}</Project>
+      <Name>PSOBL2OptBest42SP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\2SP\PSOBL2OptFirst42SP\PSOBL2OptFirst42SP.csproj">
+      <Project>{C823299B-D916-426A-AC52-D7214D2652B8}</Project>
+      <Name>PSOBL2OptFirst42SP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\2SP\PSOBL42SP\PSOBL42SP.csproj">
+      <Project>{E594B32C-D443-422F-99B7-8D873EEE494C}</Project>
+      <Name>PSOBL42SP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\2SP\PSONPS42SP\PSONPS42SP.csproj">
+      <Project>{8B0EEB18-CAFE-436E-A3EE-90AE924DDB29}</Project>
+      <Name>PSONPS42SP</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

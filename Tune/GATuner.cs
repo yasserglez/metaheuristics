@@ -8,7 +8,7 @@ namespace Tune
 	public class GATuner : Tuner
 	{
 		public GATuner(ITunableMetaheuristic metaheuristic, string dirInstances)
-			: base(metaheuristic, dirInstances, 3, new int[] { 2000, 10000 }, 5)
+			: base(metaheuristic, dirInstances, 6, new int[] { 2000, 10000 }, 5)
 		{
 		}
 		

@@ -9,28 +9,23 @@ namespace Tune
 		public static void Main(string[] args)
 		{
 			ITunableMetaheuristic[] algorithms = new ITunableMetaheuristic[] {
-				new UMDA4TSP(),
-				new UMDABL2OptBest42SP(),
-				new UMDABL2OptFirst42SP(),
-				new GABL42SP(),
-				new GABL2OptBest42SP(),
-				new GABL2OptFirst42SP(),
+				new SA4QAP(),
 			};
 			
 			algorithms.ParallelForEach(algorithm => {
-				string dir = "";
+				string instancesDir = "";
 				switch (algorithm.Problem) {
 				case ProblemType.QAP:
-					dir = "../../../Problems/QAP/Instances";
+					instancesDir = "../../../Problems/QAP/Instances";
 					break;
 				case ProblemType.SPP:
-					dir = "../../../Problems/SPP/Instances";
+					instancesDir = "../../../Problems/SPP/Instances";
 					break;
 				case ProblemType.TSP:
-					dir = "../../../Problems/TSP/Instances";
+					instancesDir = "../../../Problems/TSP/Instances";
 					break;
 				case ProblemType.TwoSP:
-					dir = "../../../Problems/2SP/Instances";
+					instancesDir = "../../../Problems/2SP/Instances";
 					break;	
 				default:
 					break;
@@ -39,16 +34,16 @@ namespace Tune
 				Tuner tuner = null;
 				switch(algorithm.Type) {
 				case MetaheuristicType.EDA:
-					tuner = new UMDATuner(algorithm, dir);
+					tuner = new UMDATuner(algorithm, instancesDir);
 					break;
 				case MetaheuristicType.GA:
-					tuner = new GATuner(algorithm, dir);
+					tuner = new GATuner(algorithm, instancesDir);
 					break;
 				case MetaheuristicType.SA:
-					tuner = new SATuner(algorithm, dir);
+					tuner = new SATuner(algorithm, instancesDir);
 					break;
 				case MetaheuristicType.GRASP:
-					tuner = new GRASPTuner(algorithm, dir);
+					tuner = new GRASPTuner(algorithm, instancesDir);
 					break;
 				default:
 					break;
