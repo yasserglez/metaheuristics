@@ -43,6 +43,7 @@
     <Compile Include="ParallelForEach.cs" />
     <Compile Include="GATuner.cs" />
     <Compile Include="SATuner.cs" />
+    <Compile Include="GRASPTuner.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Problems\TSP\UMDA4TSP\UMDA4TSP.csproj">
