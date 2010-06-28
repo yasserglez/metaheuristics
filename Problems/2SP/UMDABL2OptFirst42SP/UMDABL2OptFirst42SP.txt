@@ -1,0 +1,1482 @@
+Parameters tuning for: UMDA using the BL heuristic with 2-opt (first improvement) local search for 2SP
+Estimated run time: 04:12:00
+
+Current parameters: 250, 0.25, 0.2
+Elapsed time for inst1.in: 1498 of 2100
+Elapsed time for inst1.in: 1498 of 2100
+Elapsed time for inst1.in: 1420 of 2100
+Elapsed time for inst1.in: 1700 of 2100
+Elapsed time for inst1.in: 1451 of 2100
+Elapsed time for inst1.in: 1482 of 2100
+Elapsed time for inst1.in: 9220 of 10500
+Elapsed time for inst1.in: 9719 of 10500
+Elapsed time for inst1.in: 8252 of 10500
+Elapsed time for inst1.in: 9406 of 10500
+Elapsed time for inst1.in: 9313 of 10500
+Elapsed time for inst1.in: 8643 of 10500
+Mean fitness for inst1.in: 397.916666666667
+Elapsed time for inst2.in: 1451 of 2100
+Elapsed time for inst2.in: 1373 of 2100
+Elapsed time for inst2.in: 1560 of 2100
+Elapsed time for inst2.in: 1981 of 2100
+Elapsed time for inst2.in: 1856 of 2100
+Elapsed time for inst2.in: 1529 of 2100
+Elapsed time for inst2.in: 9313 of 10500
+Elapsed time for inst2.in: 9220 of 10500
+Elapsed time for inst2.in: 9158 of 10500
+Elapsed time for inst2.in: 9734 of 10500
+Elapsed time for inst2.in: 10452 of 10500
+Elapsed time for inst2.in: 9282 of 10500
+Mean fitness for inst2.in: 3543.16666666667
+Elapsed time for inst3.in: 1263 of 2100
+Elapsed time for inst3.in: 1482 of 2100
+Elapsed time for inst3.in: 1981 of 2100
+Elapsed time for inst3.in: 1529 of 2100
+Elapsed time for inst3.in: 1591 of 2100
+Elapsed time for inst3.in: 1451 of 2100
+Elapsed time for inst3.in: 9422 of 10500
+Elapsed time for inst3.in: 9423 of 10500
+Elapsed time for inst3.in: 9687 of 10500
+Elapsed time for inst3.in: 8627 of 10500
+Elapsed time for inst3.in: 10015 of 10500
+Elapsed time for inst3.in: 9391 of 10500
+Mean fitness for inst3.in: 2978.25
+Elapsed time for inst4.in: 1591 of 2100
+Elapsed time for inst4.in: 1701 of 2100
+Elapsed time for inst4.in: 1576 of 2100
+Elapsed time for inst4.in: 1575 of 2100
+Elapsed time for inst4.in: 1482 of 2100
+Elapsed time for inst4.in: 1482 of 2100
+Elapsed time for inst4.in: 9657 of 10500
+Elapsed time for inst4.in: 9375 of 10500
+Elapsed time for inst4.in: 10047 of 10500
+Elapsed time for inst4.in: 9329 of 10500
+Elapsed time for inst4.in: 9392 of 10500
+Elapsed time for inst4.in: 9703 of 10500
+Mean fitness for inst4.in: 3170.66666666667
+Elapsed time for inst5.in: 1607 of 2100
+Elapsed time for inst5.in: 1762 of 2100
+Elapsed time for inst5.in: 1482 of 2100
+Elapsed time for inst5.in: 1763 of 2100
+Elapsed time for inst5.in: 1560 of 2100
+Elapsed time for inst5.in: 1513 of 2100
+Elapsed time for inst5.in: 9173 of 10500
+Elapsed time for inst5.in: 8627 of 10500
+Elapsed time for inst5.in: 9141 of 10500
+Elapsed time for inst5.in: 9969 of 10500
+Elapsed time for inst5.in: 9251 of 10500
+Elapsed time for inst5.in: 9188 of 10500
+Mean fitness for inst5.in: 3558.75
+Elapsed time for inst6.in: 1606 of 2100
+Elapsed time for inst6.in: 1607 of 2100
+Elapsed time for inst6.in: 1545 of 2100
+Elapsed time for inst6.in: 1638 of 2100
+Elapsed time for inst6.in: 1622 of 2100
+Elapsed time for inst6.in: 1731 of 2100
+Elapsed time for inst6.in: 9423 of 10500
+Elapsed time for inst6.in: 9656 of 10500
+Elapsed time for inst6.in: 9578 of 10500
+Elapsed time for inst6.in: 9469 of 10500
+Elapsed time for inst6.in: 9563 of 10500
+Elapsed time for inst6.in: 9501 of 10500
+Mean fitness for inst6.in: 1617.41666666667
+Elapsed time for inst7.in: 1934 of 2100
+Elapsed time for inst7.in: 1716 of 2100
+Elapsed time for inst7.in: 1467 of 2100
+Elapsed time for inst7.in: 1591 of 2100
+Elapsed time for inst7.in: 1575 of 2100
+Elapsed time for inst7.in: 1560 of 2100
+Elapsed time for inst7.in: 9173 of 10500
+Elapsed time for inst7.in: 9360 of 10500
+Elapsed time for inst7.in: 9313 of 10500
+Elapsed time for inst7.in: 9329 of 10500
+Elapsed time for inst7.in: 9251 of 10500
+Elapsed time for inst7.in: 9344 of 10500
+Mean fitness for inst7.in: 1538.25
+Current cost: 16804.4166666667
+This is the best cost until now.
+
+Current parameters: 250, 0.5, 0.2
+Elapsed time for inst1.in: 1529 of 2100
+Elapsed time for inst1.in: 1857 of 2100
+Elapsed time for inst1.in: 1622 of 2100
+Elapsed time for inst1.in: 1388 of 2100
+Elapsed time for inst1.in: 1529 of 2100
+Elapsed time for inst1.in: 1482 of 2100
+Elapsed time for inst1.in: 9220 of 10500
+Elapsed time for inst1.in: 9141 of 10500
+Elapsed time for inst1.in: 8799 of 10500
+Elapsed time for inst1.in: 9501 of 10500
+Elapsed time for inst1.in: 9563 of 10500
+Elapsed time for inst1.in: 9329 of 10500
+Mean fitness for inst1.in: 405.25
+Elapsed time for inst2.in: 1420 of 2100
+Elapsed time for inst2.in: 1232 of 2100
+Elapsed time for inst2.in: 1482 of 2100
+Elapsed time for inst2.in: 1435 of 2100
+Elapsed time for inst2.in: 1186 of 2100
+Elapsed time for inst2.in: 1544 of 2100
+Elapsed time for inst2.in: 9157 of 10500
+Elapsed time for inst2.in: 8783 of 10500
+Elapsed time for inst2.in: 9188 of 10500
+Elapsed time for inst2.in: 9361 of 10500
+Elapsed time for inst2.in: 8704 of 10500
+Elapsed time for inst2.in: 9080 of 10500
+Mean fitness for inst2.in: 3648
+Elapsed time for inst3.in: 1809 of 2100
+Elapsed time for inst3.in: 1591 of 2100
+Elapsed time for inst3.in: 1201 of 2100
+Elapsed time for inst3.in: 1420 of 2100
+Elapsed time for inst3.in: 1513 of 2100
+Elapsed time for inst3.in: 1794 of 2100
+Elapsed time for inst3.in: 9251 of 10500
+Elapsed time for inst3.in: 9407 of 10500
+Elapsed time for inst3.in: 9329 of 10500
+Elapsed time for inst3.in: 9017 of 10500
+Elapsed time for inst3.in: 9250 of 10500
+Elapsed time for inst3.in: 9594 of 10500
+Mean fitness for inst3.in: 3047
+Elapsed time for inst4.in: 1732 of 2100
+Elapsed time for inst4.in: 1732 of 2100
+Elapsed time for inst4.in: 1701 of 2100
+Elapsed time for inst4.in: 1607 of 2100
+Elapsed time for inst4.in: 1404 of 2100
+Elapsed time for inst4.in: 1622 of 2100
+Elapsed time for inst4.in: 9532 of 10500
+Elapsed time for inst4.in: 9219 of 10500
+Elapsed time for inst4.in: 9547 of 10500
+Elapsed time for inst4.in: 9142 of 10500
+Elapsed time for inst4.in: 9282 of 10500
+Elapsed time for inst4.in: 9111 of 10500
+Mean fitness for inst4.in: 3248.08333333333
+Elapsed time for inst5.in: 1264 of 2100
+Elapsed time for inst5.in: 1404 of 2100
+Elapsed time for inst5.in: 1279 of 2100
+Elapsed time for inst5.in: 1997 of 2100
+Elapsed time for inst5.in: 1404 of 2100
+Elapsed time for inst5.in: 1404 of 2100
+Elapsed time for inst5.in: 9314 of 10500
+Elapsed time for inst5.in: 9641 of 10500
+Elapsed time for inst5.in: 9235 of 10500
+Elapsed time for inst5.in: 8877 of 10500
+Elapsed time for inst5.in: 9360 of 10500
+Elapsed time for inst5.in: 9188 of 10500
+Mean fitness for inst5.in: 3641.66666666667
+Elapsed time for inst6.in: 1575 of 2100
+Elapsed time for inst6.in: 1467 of 2100
+Elapsed time for inst6.in: 1560 of 2100
+Elapsed time for inst6.in: 1544 of 2100
+Elapsed time for inst6.in: 1591 of 2100
+Elapsed time for inst6.in: 1498 of 2100
+Elapsed time for inst6.in: 9578 of 10500
+Elapsed time for inst6.in: 9079 of 10500
+Elapsed time for inst6.in: 9329 of 10500
+Elapsed time for inst6.in: 9516 of 10500
+Elapsed time for inst6.in: 9376 of 10500
+Elapsed time for inst6.in: 9189 of 10500
+Mean fitness for inst6.in: 1661.08333333333
+Elapsed time for inst7.in: 1513 of 2100
+Elapsed time for inst7.in: 1638 of 2100
+Elapsed time for inst7.in: 1451 of 2100
+Elapsed time for inst7.in: 1623 of 2100
+Elapsed time for inst7.in: 1482 of 2100
+Elapsed time for inst7.in: 1451 of 2100
+Elapsed time for inst7.in: 9391 of 10500
+Elapsed time for inst7.in: 9501 of 10500
+Elapsed time for inst7.in: 9516 of 10500
+Elapsed time for inst7.in: 9469 of 10500
+Elapsed time for inst7.in: 9391 of 10500
+Elapsed time for inst7.in: 9251 of 10500
+Mean fitness for inst7.in: 1589.58333333333
+Current cost: 17240.6666666667
+
+Current parameters: 250, 0.75, 0.2
+Elapsed time for inst1.in: 1591 of 2100
+Elapsed time for inst1.in: 1123 of 2100
+Elapsed time for inst1.in: 1482 of 2100
+Elapsed time for inst1.in: 1404 of 2100
+Elapsed time for inst1.in: 1326 of 2100
+Elapsed time for inst1.in: 1263 of 2100
+Elapsed time for inst1.in: 8565 of 10500
+Elapsed time for inst1.in: 8798 of 10500
+Elapsed time for inst1.in: 9017 of 10500
+Elapsed time for inst1.in: 9157 of 10500
+Elapsed time for inst1.in: 8924 of 10500
+Elapsed time for inst1.in: 9266 of 10500
+Mean fitness for inst1.in: 408.333333333333
+Elapsed time for inst2.in: 1279 of 2100
+Elapsed time for inst2.in: 1342 of 2100
+Elapsed time for inst2.in: 1295 of 2100
+Elapsed time for inst2.in: 1700 of 2100
+Elapsed time for inst2.in: 1467 of 2100
+Elapsed time for inst2.in: 1700 of 2100
+Elapsed time for inst2.in: 9329 of 10500
+Elapsed time for inst2.in: 9064 of 10500
+Elapsed time for inst2.in: 8814 of 10500
+Elapsed time for inst2.in: 9500 of 10500
+Elapsed time for inst2.in: 9189 of 10500
+Elapsed time for inst2.in: 8689 of 10500
+Mean fitness for inst2.in: 3646.91666666667
+Elapsed time for inst3.in: 1342 of 2100
+Elapsed time for inst3.in: 1591 of 2100
+Elapsed time for inst3.in: 1326 of 2100
+Elapsed time for inst3.in: 1716 of 2100
+Elapsed time for inst3.in: 1435 of 2100
+Elapsed time for inst3.in: 1420 of 2100
+Elapsed time for inst3.in: 8798 of 10500
+Elapsed time for inst3.in: 9157 of 10500
+Elapsed time for inst3.in: 9782 of 10500
+Elapsed time for inst3.in: 9406 of 10500
+Elapsed time for inst3.in: 9095 of 10500
+Elapsed time for inst3.in: 9236 of 10500
+Mean fitness for inst3.in: 3064.66666666667
+Elapsed time for inst4.in: 1342 of 2100
+Elapsed time for inst4.in: 1419 of 2100
+Elapsed time for inst4.in: 1514 of 2100
+Elapsed time for inst4.in: 1606 of 2100
+Elapsed time for inst4.in: 1451 of 2100
+Elapsed time for inst4.in: 1248 of 2100
+Elapsed time for inst4.in: 9251 of 10500
+Elapsed time for inst4.in: 9220 of 10500
+Elapsed time for inst4.in: 9641 of 10500
+Elapsed time for inst4.in: 9251 of 10500
+Elapsed time for inst4.in: 8876 of 10500
+Elapsed time for inst4.in: 9298 of 10500
+Mean fitness for inst4.in: 3267.58333333333
+Elapsed time for inst5.in: 1482 of 2100
+Elapsed time for inst5.in: 1544 of 2100
+Elapsed time for inst5.in: 1622 of 2100
+Elapsed time for inst5.in: 1217 of 2100
+Elapsed time for inst5.in: 1669 of 2100
+Elapsed time for inst5.in: 1779 of 2100
+Elapsed time for inst5.in: 8798 of 10500
+Elapsed time for inst5.in: 8924 of 10500
+Elapsed time for inst5.in: 8580 of 10500
+Elapsed time for inst5.in: 8595 of 10500
+Elapsed time for inst5.in: 9111 of 10500
+Elapsed time for inst5.in: 9110 of 10500
+Mean fitness for inst5.in: 3650.91666666667
+Elapsed time for inst6.in: 1435 of 2100
+Elapsed time for inst6.in: 1529 of 2100
+Elapsed time for inst6.in: 1545 of 2100
+Elapsed time for inst6.in: 1357 of 2100
+Elapsed time for inst6.in: 1466 of 2100
+Elapsed time for inst6.in: 1451 of 2100
+Elapsed time for inst6.in: 9625 of 10500
+Elapsed time for inst6.in: 9422 of 10500
+Elapsed time for inst6.in: 9314 of 10500
+Elapsed time for inst6.in: 9344 of 10500
+Elapsed time for inst6.in: 9345 of 10500
+Elapsed time for inst6.in: 9157 of 10500
+Mean fitness for inst6.in: 1676
+Elapsed time for inst7.in: 1357 of 2100
+Elapsed time for inst7.in: 1451 of 2100
+Elapsed time for inst7.in: 1326 of 2100
+Elapsed time for inst7.in: 1435 of 2100
+Elapsed time for inst7.in: 1794 of 2100
+Elapsed time for inst7.in: 1576 of 2100
+Elapsed time for inst7.in: 9282 of 10500
+Elapsed time for inst7.in: 9329 of 10500
+Elapsed time for inst7.in: 9391 of 10500
+Elapsed time for inst7.in: 9391 of 10500
+Elapsed time for inst7.in: 9376 of 10500
+Elapsed time for inst7.in: 9360 of 10500
+Mean fitness for inst7.in: 1591.58333333333
+Current cost: 17306
+
+Current parameters: 250, 1, 0.2
+Elapsed time for inst1.in: 1419 of 2100
+Elapsed time for inst1.in: 1529 of 2100
+Elapsed time for inst1.in: 1388 of 2100
+Elapsed time for inst1.in: 1591 of 2100
+Elapsed time for inst1.in: 1794 of 2100
+Elapsed time for inst1.in: 1498 of 2100
+Elapsed time for inst1.in: 8580 of 10500
+Elapsed time for inst1.in: 8783 of 10500
+Elapsed time for inst1.in: 8907 of 10500
+Elapsed time for inst1.in: 9095 of 10500
+Elapsed time for inst1.in: 8642 of 10500
+Elapsed time for inst1.in: 9610 of 10500
+Mean fitness for inst1.in: 406.833333333333
+Elapsed time for inst2.in: 1716 of 2100
+Elapsed time for inst2.in: 1560 of 2100
+Elapsed time for inst2.in: 1575 of 2100
+Elapsed time for inst2.in: 1514 of 2100
+Elapsed time for inst2.in: 1263 of 2100
+Elapsed time for inst2.in: 1669 of 2100
+Elapsed time for inst2.in: 8627 of 10500
+Elapsed time for inst2.in: 8237 of 10500
+Elapsed time for inst2.in: 8580 of 10500
+Elapsed time for inst2.in: 8892 of 10500
+Elapsed time for inst2.in: 9329 of 10500
+Elapsed time for inst2.in: 9158 of 10500
+Mean fitness for inst2.in: 3668.75
+Elapsed time for inst3.in: 1404 of 2100
+Elapsed time for inst3.in: 1170 of 2100
+Elapsed time for inst3.in: 1248 of 2100
+Elapsed time for inst3.in: 1170 of 2100
+Elapsed time for inst3.in: 1934 of 2100
+Elapsed time for inst3.in: 1778 of 2100
+Elapsed time for inst3.in: 9595 of 10500
+Elapsed time for inst3.in: 9001 of 10500
+Elapsed time for inst3.in: 9314 of 10500
+Elapsed time for inst3.in: 9360 of 10500
+Elapsed time for inst3.in: 9360 of 10500
+Elapsed time for inst3.in: 8689 of 10500
+Mean fitness for inst3.in: 3083.58333333333
+Elapsed time for inst4.in: 1622 of 2100
+Elapsed time for inst4.in: 1545 of 2100
+Elapsed time for inst4.in: 1263 of 2100
+Elapsed time for inst4.in: 1451 of 2100
+Elapsed time for inst4.in: 1607 of 2100
+Elapsed time for inst4.in: 1607 of 2100
+Elapsed time for inst4.in: 9032 of 10500
+Elapsed time for inst4.in: 8939 of 10500
+Elapsed time for inst4.in: 9547 of 10500
+Elapsed time for inst4.in: 9501 of 10500
+Elapsed time for inst4.in: 9719 of 10500
+Elapsed time for inst4.in: 9391 of 10500
+Mean fitness for inst4.in: 3273.25
+Elapsed time for inst5.in: 1388 of 2100
+Elapsed time for inst5.in: 1638 of 2100
+Elapsed time for inst5.in: 1436 of 2100
+Elapsed time for inst5.in: 1185 of 2100
+Elapsed time for inst5.in: 1233 of 2100
+Elapsed time for inst5.in: 1217 of 2100
+Elapsed time for inst5.in: 9079 of 10500
+Elapsed time for inst5.in: 9142 of 10500
+Elapsed time for inst5.in: 9781 of 10500
+Elapsed time for inst5.in: 8674 of 10500
+Elapsed time for inst5.in: 8455 of 10500
+Elapsed time for inst5.in: 9719 of 10500
+Mean fitness for inst5.in: 3646.91666666667
+Elapsed time for inst6.in: 1622 of 2100
+Elapsed time for inst6.in: 1279 of 2100
+Elapsed time for inst6.in: 1342 of 2100
+Elapsed time for inst6.in: 1388 of 2100
+Elapsed time for inst6.in: 1638 of 2100
+Elapsed time for inst6.in: 1483 of 2100
+Elapsed time for inst6.in: 9079 of 10500
+Elapsed time for inst6.in: 9157 of 10500
+Elapsed time for inst6.in: 9251 of 10500
+Elapsed time for inst6.in: 9266 of 10500
+Elapsed time for inst6.in: 9532 of 10500
+Elapsed time for inst6.in: 9657 of 10500
+Mean fitness for inst6.in: 1678.16666666667
+Elapsed time for inst7.in: 1232 of 2100
+Elapsed time for inst7.in: 1295 of 2100
+Elapsed time for inst7.in: 1575 of 2100
+Elapsed time for inst7.in: 1685 of 2100
+Elapsed time for inst7.in: 1389 of 2100
+Elapsed time for inst7.in: 1497 of 2100
+Elapsed time for inst7.in: 9672 of 10500
+Elapsed time for inst7.in: 9189 of 10500
+Elapsed time for inst7.in: 9173 of 10500
+Elapsed time for inst7.in: 9531 of 10500
+Elapsed time for inst7.in: 9594 of 10500
+Elapsed time for inst7.in: 9204 of 10500
+Mean fitness for inst7.in: 1608.25
+Current cost: 17365.75
+
+Current parameters: 250, 1.5, 0.2
+Elapsed time for inst1.in: 1030 of 2100
+Elapsed time for inst1.in: 967 of 2100
+Elapsed time for inst1.in: 951 of 2100
+Elapsed time for inst1.in: 889 of 2100
+Elapsed time for inst1.in: 2028 of 2100
+Elapsed time for inst1.in: 1123 of 2100
+Elapsed time for inst1.in: 9329 of 10500
+Elapsed time for inst1.in: 8861 of 10500
+Elapsed time for inst1.in: 9157 of 10500
+Elapsed time for inst1.in: 8814 of 10500
+Elapsed time for inst1.in: 9220 of 10500
+Elapsed time for inst1.in: 8517 of 10500
+Mean fitness for inst1.in: 407.583333333333
+Elapsed time for inst2.in: 1061 of 2100
+Elapsed time for inst2.in: 1061 of 2100
+Elapsed time for inst2.in: 1107 of 2100
+Elapsed time for inst2.in: 1155 of 2100
+Elapsed time for inst2.in: 936 of 2100
+Elapsed time for inst2.in: 1139 of 2100
+Elapsed time for inst2.in: 8829 of 10500
+Elapsed time for inst2.in: 9485 of 10500
+Elapsed time for inst2.in: 9968 of 10500
+Elapsed time for inst2.in: 9329 of 10500
+Elapsed time for inst2.in: 9469 of 10500
+Elapsed time for inst2.in: 9329 of 10500
+Mean fitness for inst2.in: 3672.58333333333
+Elapsed time for inst3.in: 1591 of 2100
+Elapsed time for inst3.in: 1779 of 2100
+Elapsed time for inst3.in: 1809 of 2100
+Elapsed time for inst3.in: 1576 of 2100
+Elapsed time for inst3.in: 1482 of 2100
+Elapsed time for inst3.in: 1841 of 2100
+Elapsed time for inst3.in: 9860 of 10500
+Elapsed time for inst3.in: 8377 of 10500
+Elapsed time for inst3.in: 9875 of 10500
+Elapsed time for inst3.in: 9126 of 10500
+Elapsed time for inst3.in: 9064 of 10500
+Elapsed time for inst3.in: 8658 of 10500
+Mean fitness for inst3.in: 3068.5
+Elapsed time for inst4.in: 1482 of 2100
+Elapsed time for inst4.in: 1373 of 2100
+Elapsed time for inst4.in: 1716 of 2100
+Elapsed time for inst4.in: 904 of 2100
+Elapsed time for inst4.in: 1482 of 2100
+Elapsed time for inst4.in: 1560 of 2100
+Elapsed time for inst4.in: 8736 of 10500
+Elapsed time for inst4.in: 8783 of 10500
+Elapsed time for inst4.in: 9220 of 10500
+Elapsed time for inst4.in: 8767 of 10500
+Elapsed time for inst4.in: 8814 of 10500
+Elapsed time for inst4.in: 9313 of 10500
+Mean fitness for inst4.in: 3286.91666666667
+Elapsed time for inst5.in: 952 of 2100
+Elapsed time for inst5.in: 1779 of 2100
+Elapsed time for inst5.in: 1045 of 2100
+Elapsed time for inst5.in: 2012 of 2100
+Elapsed time for inst5.in: 936 of 2100
+Elapsed time for inst5.in: 1841 of 2100
+Elapsed time for inst5.in: 8596 of 10500
+Elapsed time for inst5.in: 8424 of 10500
+Elapsed time for inst5.in: 8798 of 10500
+Elapsed time for inst5.in: 9625 of 10500
+Elapsed time for inst5.in: 9251 of 10500
+Elapsed time for inst5.in: 9360 of 10500
+Mean fitness for inst5.in: 3663.58333333333
+Elapsed time for inst6.in: 1170 of 2100
+Elapsed time for inst6.in: 1357 of 2100
+Elapsed time for inst6.in: 1825 of 2100
+Elapsed time for inst6.in: 1358 of 2100
+Elapsed time for inst6.in: 1762 of 2100
+Elapsed time for inst6.in: 1935 of 2100
+Elapsed time for inst6.in: 9547 of 10500
+Elapsed time for inst6.in: 9251 of 10500
+Elapsed time for inst6.in: 8970 of 10500
+Elapsed time for inst6.in: 9438 of 10500
+Elapsed time for inst6.in: 9578 of 10500
+Elapsed time for inst6.in: 9423 of 10500
+Mean fitness for inst6.in: 1671.25
+Elapsed time for inst7.in: 1170 of 2100
+Elapsed time for inst7.in: 1404 of 2100
+Elapsed time for inst7.in: 1248 of 2100
+Elapsed time for inst7.in: 1154 of 2100
+Elapsed time for inst7.in: 1544 of 2100
+Elapsed time for inst7.in: 1155 of 2100
+Elapsed time for inst7.in: 9282 of 10500
+Elapsed time for inst7.in: 8907 of 10500
+Elapsed time for inst7.in: 9142 of 10500
+Elapsed time for inst7.in: 8783 of 10500
+Elapsed time for inst7.in: 9235 of 10500
+Elapsed time for inst7.in: 8830 of 10500
+Mean fitness for inst7.in: 1614.5
+Current cost: 17384.9166666667
+
+Current parameters: 250, 2, 0.2
+Elapsed time for inst1.in: 1264 of 2100
+Elapsed time for inst1.in: 1232 of 2100
+Elapsed time for inst1.in: 1232 of 2100
+Elapsed time for inst1.in: 1498 of 2100
+Elapsed time for inst1.in: 1248 of 2100
+Elapsed time for inst1.in: 1622 of 2100
+Elapsed time for inst1.in: 7988 of 10500
+Elapsed time for inst1.in: 7535 of 10500
+Elapsed time for inst1.in: 8112 of 10500
+Elapsed time for inst1.in: 8487 of 10500
+Elapsed time for inst1.in: 8236 of 10500
+Elapsed time for inst1.in: 9080 of 10500
+Mean fitness for inst1.in: 407.416666666667
+Elapsed time for inst2.in: 1154 of 2100
+Elapsed time for inst2.in: 1716 of 2100
+Elapsed time for inst2.in: 1217 of 2100
+Elapsed time for inst2.in: 1513 of 2100
+Elapsed time for inst2.in: 1529 of 2100
+Elapsed time for inst2.in: 1404 of 2100
+Elapsed time for inst2.in: 9235 of 10500
+Elapsed time for inst2.in: 9594 of 10500
+Elapsed time for inst2.in: 9282 of 10500
+Elapsed time for inst2.in: 7410 of 10500
+Elapsed time for inst2.in: 8237 of 10500
+Elapsed time for inst2.in: 8174 of 10500
+Mean fitness for inst2.in: 3676.33333333333
+Elapsed time for inst3.in: 1232 of 2100
+Elapsed time for inst3.in: 1046 of 2100
+Elapsed time for inst3.in: 967 of 2100
+Elapsed time for inst3.in: 889 of 2100
+Elapsed time for inst3.in: 1154 of 2100
+Elapsed time for inst3.in: 983 of 2100
+Elapsed time for inst3.in: 9360 of 10500
+Elapsed time for inst3.in: 9485 of 10500
+Elapsed time for inst3.in: 8377 of 10500
+Elapsed time for inst3.in: 9267 of 10500
+Elapsed time for inst3.in: 8736 of 10500
+Elapsed time for inst3.in: 8908 of 10500
+Mean fitness for inst3.in: 3072.25
+Elapsed time for inst4.in: 920 of 2100
+Elapsed time for inst4.in: 1841 of 2100
+Elapsed time for inst4.in: 1060 of 2100
+Elapsed time for inst4.in: 968 of 2100
+Elapsed time for inst4.in: 998 of 2100
+Elapsed time for inst4.in: 967 of 2100
+Elapsed time for inst4.in: 8393 of 10500
+Elapsed time for inst4.in: 8361 of 10500
+Elapsed time for inst4.in: 8877 of 10500
+Elapsed time for inst4.in: 9064 of 10500
+Elapsed time for inst4.in: 8517 of 10500
+Elapsed time for inst4.in: 8549 of 10500
+Mean fitness for inst4.in: 3287.25
+Elapsed time for inst5.in: 1528 of 2100
+Elapsed time for inst5.in: 1139 of 2100
+Elapsed time for inst5.in: 1326 of 2100
+Elapsed time for inst5.in: 1279 of 2100
+Elapsed time for inst5.in: 1123 of 2100
+Elapsed time for inst5.in: 1248 of 2100
+Elapsed time for inst5.in: 8066 of 10500
+Elapsed time for inst5.in: 8330 of 10500
+Elapsed time for inst5.in: 7893 of 10500
+Elapsed time for inst5.in: 8221 of 10500
+Elapsed time for inst5.in: 7941 of 10500
+Elapsed time for inst5.in: 9454 of 10500
+Mean fitness for inst5.in: 3660.33333333333
+Elapsed time for inst6.in: 1654 of 2100
+Elapsed time for inst6.in: 1716 of 2100
+Elapsed time for inst6.in: 1575 of 2100
+Elapsed time for inst6.in: 1607 of 2100
+Elapsed time for inst6.in: 1591 of 2100
+Elapsed time for inst6.in: 1685 of 2100
+Elapsed time for inst6.in: 9407 of 10500
+Elapsed time for inst6.in: 9313 of 10500
+Elapsed time for inst6.in: 8954 of 10500
+Elapsed time for inst6.in: 9610 of 10500
+Elapsed time for inst6.in: 9470 of 10500
+Elapsed time for inst6.in: 8783 of 10500
+Mean fitness for inst6.in: 1678.5
+Elapsed time for inst7.in: 1732 of 2100
+Elapsed time for inst7.in: 1794 of 2100
+Elapsed time for inst7.in: 1544 of 2100
+Elapsed time for inst7.in: 1716 of 2100
+Elapsed time for inst7.in: 1778 of 2100
+Elapsed time for inst7.in: 1997 of 2100
+Elapsed time for inst7.in: 9173 of 10500
+Elapsed time for inst7.in: 9017 of 10500
+Elapsed time for inst7.in: 9594 of 10500
+Elapsed time for inst7.in: 8939 of 10500
+Elapsed time for inst7.in: 9001 of 10500
+Elapsed time for inst7.in: 9282 of 10500
+Mean fitness for inst7.in: 1617.08333333333
+Current cost: 17399.1666666667
+
+Current parameters: 250, 4, 0.2
+Elapsed time for inst1.in: 2543 of 2100
+Skiping this parameters.
+
+Current parameters: 250, 6, 0.2
+Elapsed time for inst1.in: 4040 of 2100
+Skiping this parameters.
+
+Current parameters: 250, 8, 0.2
+Elapsed time for inst1.in: 4821 of 2100
+Skiping this parameters.
+
+Current parameters: 250, 10, 0.2
+Elapsed time for inst1.in: 6427 of 2100
+Skiping this parameters.
+
+Current parameters: 250, 0.25, 0.3
+Elapsed time for inst1.in: 1482 of 2100
+Elapsed time for inst1.in: 1248 of 2100
+Elapsed time for inst1.in: 1419 of 2100
+Elapsed time for inst1.in: 1513 of 2100
+Elapsed time for inst1.in: 1638 of 2100
+Elapsed time for inst1.in: 1514 of 2100
+Elapsed time for inst1.in: 9141 of 10500
+Elapsed time for inst1.in: 9235 of 10500
+Elapsed time for inst1.in: 9126 of 10500
+Elapsed time for inst1.in: 9173 of 10500
+Elapsed time for inst1.in: 9906 of 10500
+Elapsed time for inst1.in: 9438 of 10500
+Mean fitness for inst1.in: 403.333333333333
+Elapsed time for inst2.in: 1342 of 2100
+Elapsed time for inst2.in: 1685 of 2100
+Elapsed time for inst2.in: 1373 of 2100
+Elapsed time for inst2.in: 1404 of 2100
+Elapsed time for inst2.in: 1560 of 2100
+Elapsed time for inst2.in: 1622 of 2100
+Elapsed time for inst2.in: 9423 of 10500
+Elapsed time for inst2.in: 9048 of 10500
+Elapsed time for inst2.in: 9578 of 10500
+Elapsed time for inst2.in: 9345 of 10500
+Elapsed time for inst2.in: 9266 of 10500
+Elapsed time for inst2.in: 9033 of 10500
+Mean fitness for inst2.in: 3619
+Elapsed time for inst3.in: 1529 of 2100
+Elapsed time for inst3.in: 1560 of 2100
+Elapsed time for inst3.in: 1513 of 2100
+Elapsed time for inst3.in: 1342 of 2100
+Elapsed time for inst3.in: 1560 of 2100
+Elapsed time for inst3.in: 1482 of 2100
+Elapsed time for inst3.in: 9313 of 10500
+Elapsed time for inst3.in: 9267 of 10500
+Elapsed time for inst3.in: 8954 of 10500
+Elapsed time for inst3.in: 9891 of 10500
+Elapsed time for inst3.in: 9422 of 10500
+Elapsed time for inst3.in: 9391 of 10500
+Mean fitness for inst3.in: 3036.08333333333
+Elapsed time for inst4.in: 1638 of 2100
+Elapsed time for inst4.in: 1592 of 2100
+Elapsed time for inst4.in: 1435 of 2100
+Elapsed time for inst4.in: 1591 of 2100
+Elapsed time for inst4.in: 1544 of 2100
+Elapsed time for inst4.in: 1716 of 2100
+Elapsed time for inst4.in: 9875 of 10500
+Elapsed time for inst4.in: 9422 of 10500
+Elapsed time for inst4.in: 9516 of 10500
+Elapsed time for inst4.in: 9641 of 10500
+Elapsed time for inst4.in: 9407 of 10500
+Elapsed time for inst4.in: 9189 of 10500
+Mean fitness for inst4.in: 3224.25
+Elapsed time for inst5.in: 1451 of 2100
+Elapsed time for inst5.in: 1747 of 2100
+Elapsed time for inst5.in: 1592 of 2100
+Elapsed time for inst5.in: 1653 of 2100
+Elapsed time for inst5.in: 1591 of 2100
+Elapsed time for inst5.in: 1685 of 2100
+Elapsed time for inst5.in: 9438 of 10500
+Elapsed time for inst5.in: 9345 of 10500
+Elapsed time for inst5.in: 9422 of 10500
+Elapsed time for inst5.in: 10047 of 10500
+Elapsed time for inst5.in: 9376 of 10500
+Elapsed time for inst5.in: 9251 of 10500
+Mean fitness for inst5.in: 3610.66666666667
+Elapsed time for inst6.in: 1653 of 2100
+Elapsed time for inst6.in: 1545 of 2100
+Elapsed time for inst6.in: 1607 of 2100
+Elapsed time for inst6.in: 1591 of 2100
+Elapsed time for inst6.in: 1592 of 2100
+Elapsed time for inst6.in: 1622 of 2100
+Elapsed time for inst6.in: 9407 of 10500
+Elapsed time for inst6.in: 9594 of 10500
+Elapsed time for inst6.in: 9500 of 10500
+Elapsed time for inst6.in: 9532 of 10500
+Elapsed time for inst6.in: 9516 of 10500
+Elapsed time for inst6.in: 9516 of 10500
+Mean fitness for inst6.in: 1639.33333333333
+Elapsed time for inst7.in: 1685 of 2100
+Elapsed time for inst7.in: 1622 of 2100
+Elapsed time for inst7.in: 1607 of 2100
+Elapsed time for inst7.in: 1778 of 2100
+Elapsed time for inst7.in: 1716 of 2100
+Elapsed time for inst7.in: 1529 of 2100
+Elapsed time for inst7.in: 9423 of 10500
+Elapsed time for inst7.in: 9640 of 10500
+Elapsed time for inst7.in: 9548 of 10500
+Elapsed time for inst7.in: 9453 of 10500
+Elapsed time for inst7.in: 9423 of 10500
+Elapsed time for inst7.in: 9500 of 10500
+Mean fitness for inst7.in: 1573.75
+Current cost: 17106.4166666667
+
+Current parameters: 250, 0.5, 0.3
+Elapsed time for inst1.in: 1654 of 2100
+Elapsed time for inst1.in: 1388 of 2100
+Elapsed time for inst1.in: 1466 of 2100
+Elapsed time for inst1.in: 1389 of 2100
+Elapsed time for inst1.in: 1295 of 2100
+Elapsed time for inst1.in: 1935 of 2100
+Elapsed time for inst1.in: 8907 of 10500
+Elapsed time for inst1.in: 9189 of 10500
+Elapsed time for inst1.in: 9470 of 10500
+Elapsed time for inst1.in: 8954 of 10500
+Elapsed time for inst1.in: 8860 of 10500
+Elapsed time for inst1.in: 9267 of 10500
+Mean fitness for inst1.in: 407
+Elapsed time for inst2.in: 1248 of 2100
+Elapsed time for inst2.in: 1404 of 2100
+Elapsed time for inst2.in: 1513 of 2100
+Elapsed time for inst2.in: 1217 of 2100
+Elapsed time for inst2.in: 1732 of 2100
+Elapsed time for inst2.in: 1357 of 2100
+Elapsed time for inst2.in: 9048 of 10500
+Elapsed time for inst2.in: 8517 of 10500
+Elapsed time for inst2.in: 9485 of 10500
+Elapsed time for inst2.in: 9267 of 10500
+Elapsed time for inst2.in: 8814 of 10500
+Elapsed time for inst2.in: 9376 of 10500
+Mean fitness for inst2.in: 3667.41666666667
+Elapsed time for inst3.in: 1450 of 2100
+Elapsed time for inst3.in: 1576 of 2100
+Elapsed time for inst3.in: 1638 of 2100
+Elapsed time for inst3.in: 1482 of 2100
+Elapsed time for inst3.in: 1716 of 2100
+Elapsed time for inst3.in: 1467 of 2100
+Elapsed time for inst3.in: 9219 of 10500
+Elapsed time for inst3.in: 9064 of 10500
+Elapsed time for inst3.in: 9204 of 10500
+Elapsed time for inst3.in: 9126 of 10500
+Elapsed time for inst3.in: 9188 of 10500
+Elapsed time for inst3.in: 9844 of 10500
+Mean fitness for inst3.in: 3062.25
+Elapsed time for inst4.in: 1264 of 2100
+Elapsed time for inst4.in: 1560 of 2100
+Elapsed time for inst4.in: 1404 of 2100
+Elapsed time for inst4.in: 1825 of 2100
+Elapsed time for inst4.in: 1295 of 2100
+Elapsed time for inst4.in: 1638 of 2100
+Elapsed time for inst4.in: 9001 of 10500
+Elapsed time for inst4.in: 8955 of 10500
+Elapsed time for inst4.in: 9235 of 10500
+Elapsed time for inst4.in: 9734 of 10500
+Elapsed time for inst4.in: 9236 of 10500
+Elapsed time for inst4.in: 9188 of 10500
+Mean fitness for inst4.in: 3260.5
+Elapsed time for inst5.in: 1747 of 2100
+Elapsed time for inst5.in: 1466 of 2100
+Elapsed time for inst5.in: 1576 of 2100
+Elapsed time for inst5.in: 1762 of 2100
+Elapsed time for inst5.in: 1389 of 2100
+Elapsed time for inst5.in: 1482 of 2100
+Elapsed time for inst5.in: 9267 of 10500
+Elapsed time for inst5.in: 8705 of 10500
+Elapsed time for inst5.in: 9344 of 10500
+Elapsed time for inst5.in: 9594 of 10500
+Elapsed time for inst5.in: 9345 of 10500
+Elapsed time for inst5.in: 9360 of 10500
+Mean fitness for inst5.in: 3632.08333333333
+Elapsed time for inst6.in: 1419 of 2100
+Elapsed time for inst6.in: 1560 of 2100
+Elapsed time for inst6.in: 1716 of 2100
+Elapsed time for inst6.in: 1778 of 2100
+Elapsed time for inst6.in: 1607 of 2100
+Elapsed time for inst6.in: 1529 of 2100
+Elapsed time for inst6.in: 9500 of 10500
+Elapsed time for inst6.in: 9407 of 10500
+Elapsed time for inst6.in: 9329 of 10500
+Elapsed time for inst6.in: 9485 of 10500
+Elapsed time for inst6.in: 9422 of 10500
+Elapsed time for inst6.in: 9501 of 10500
+Mean fitness for inst6.in: 1665.58333333333
+Elapsed time for inst7.in: 1482 of 2100
+Elapsed time for inst7.in: 1576 of 2100
+Elapsed time for inst7.in: 1560 of 2100
+Elapsed time for inst7.in: 1591 of 2100
+Elapsed time for inst7.in: 1544 of 2100
+Elapsed time for inst7.in: 1592 of 2100
+Elapsed time for inst7.in: 9344 of 10500
+Elapsed time for inst7.in: 9313 of 10500
+Elapsed time for inst7.in: 9719 of 10500
+Elapsed time for inst7.in: 9657 of 10500
+Elapsed time for inst7.in: 9641 of 10500
+Elapsed time for inst7.in: 9687 of 10500
+Mean fitness for inst7.in: 1604.25
+Current cost: 17299.0833333333
+
+Current parameters: 250, 0.75, 0.3
+Elapsed time for inst1.in: 1170 of 2100
+Elapsed time for inst1.in: 1279 of 2100
+Elapsed time for inst1.in: 1436 of 2100
+Elapsed time for inst1.in: 1248 of 2100
+Elapsed time for inst1.in: 1716 of 2100
+Elapsed time for inst1.in: 1498 of 2100
+Elapsed time for inst1.in: 8720 of 10500
+Elapsed time for inst1.in: 8549 of 10500
+Elapsed time for inst1.in: 9126 of 10500
+Elapsed time for inst1.in: 9127 of 10500
+Elapsed time for inst1.in: 9079 of 10500
+Elapsed time for inst1.in: 8970 of 10500
+Mean fitness for inst1.in: 405.75
+Elapsed time for inst2.in: 1451 of 2100
+Elapsed time for inst2.in: 1669 of 2100
+Elapsed time for inst2.in: 1544 of 2100
+Elapsed time for inst2.in: 1544 of 2100
+Elapsed time for inst2.in: 1280 of 2100
+Elapsed time for inst2.in: 1638 of 2100
+Elapsed time for inst2.in: 9110 of 10500
+Elapsed time for inst2.in: 9095 of 10500
+Elapsed time for inst2.in: 8705 of 10500
+Elapsed time for inst2.in: 9064 of 10500
+Elapsed time for inst2.in: 8736 of 10500
+Elapsed time for inst2.in: 9344 of 10500
+Mean fitness for inst2.in: 3672.66666666667
+Elapsed time for inst3.in: 1716 of 2100
+Elapsed time for inst3.in: 1388 of 2100
+Elapsed time for inst3.in: 1560 of 2100
+Elapsed time for inst3.in: 1436 of 2100
+Elapsed time for inst3.in: 1763 of 2100
+Elapsed time for inst3.in: 1732 of 2100
+Elapsed time for inst3.in: 9313 of 10500
+Elapsed time for inst3.in: 8611 of 10500
+Elapsed time for inst3.in: 8814 of 10500
+Elapsed time for inst3.in: 8954 of 10500
+Elapsed time for inst3.in: 9360 of 10500
+Elapsed time for inst3.in: 9189 of 10500
+Mean fitness for inst3.in: 3063.41666666667
+Elapsed time for inst4.in: 1575 of 2100
+Elapsed time for inst4.in: 1388 of 2100
+Elapsed time for inst4.in: 1311 of 2100
+Elapsed time for inst4.in: 1326 of 2100
+Elapsed time for inst4.in: 1809 of 2100
+Elapsed time for inst4.in: 1685 of 2100
+Elapsed time for inst4.in: 9392 of 10500
+Elapsed time for inst4.in: 9297 of 10500
+Elapsed time for inst4.in: 9204 of 10500
+Elapsed time for inst4.in: 9314 of 10500
+Elapsed time for inst4.in: 8860 of 10500
+Elapsed time for inst4.in: 9407 of 10500
+Mean fitness for inst4.in: 3276.75
+Elapsed time for inst5.in: 1545 of 2100
+Elapsed time for inst5.in: 1513 of 2100
+Elapsed time for inst5.in: 1544 of 2100
+Elapsed time for inst5.in: 1217 of 2100
+Elapsed time for inst5.in: 1607 of 2100
+Elapsed time for inst5.in: 1716 of 2100
+Elapsed time for inst5.in: 9204 of 10500
+Elapsed time for inst5.in: 9142 of 10500
+Elapsed time for inst5.in: 8346 of 10500
+Elapsed time for inst5.in: 9719 of 10500
+Elapsed time for inst5.in: 8954 of 10500
+Elapsed time for inst5.in: 8830 of 10500
+Mean fitness for inst5.in: 3663.75
+Elapsed time for inst6.in: 1357 of 2100
+Elapsed time for inst6.in: 1575 of 2100
+Elapsed time for inst6.in: 1638 of 2100
+Elapsed time for inst6.in: 1857 of 2100
+Elapsed time for inst6.in: 1592 of 2100
+Elapsed time for inst6.in: 1622 of 2100
+Elapsed time for inst6.in: 9407 of 10500
+Elapsed time for inst6.in: 9360 of 10500
+Elapsed time for inst6.in: 9485 of 10500
+Elapsed time for inst6.in: 9345 of 10500
+Elapsed time for inst6.in: 9485 of 10500
+Elapsed time for inst6.in: 9609 of 10500
+Mean fitness for inst6.in: 1665.66666666667
+Elapsed time for inst7.in: 1732 of 2100
+Elapsed time for inst7.in: 1575 of 2100
+Elapsed time for inst7.in: 1670 of 2100
+Elapsed time for inst7.in: 1544 of 2100
+Elapsed time for inst7.in: 1404 of 2100
+Elapsed time for inst7.in: 1638 of 2100
+Elapsed time for inst7.in: 9282 of 10500
+Elapsed time for inst7.in: 9625 of 10500
+Elapsed time for inst7.in: 9001 of 10500
+Elapsed time for inst7.in: 9641 of 10500
+Elapsed time for inst7.in: 9407 of 10500
+Elapsed time for inst7.in: 9250 of 10500
+Mean fitness for inst7.in: 1605.16666666667
+Current cost: 17353.1666666667
+
+Current parameters: 250, 1, 0.3
+Elapsed time for inst1.in: 1904 of 2100
+Elapsed time for inst1.in: 1341 of 2100
+Elapsed time for inst1.in: 1280 of 2100
+Elapsed time for inst1.in: 905 of 2100
+Elapsed time for inst1.in: 1576 of 2100
+Elapsed time for inst1.in: 1357 of 2100
+Elapsed time for inst1.in: 8642 of 10500
+Elapsed time for inst1.in: 8908 of 10500
+Elapsed time for inst1.in: 8814 of 10500
+Elapsed time for inst1.in: 9735 of 10500
+Elapsed time for inst1.in: 9282 of 10500
+Elapsed time for inst1.in: 9002 of 10500
+Mean fitness for inst1.in: 408.583333333333
+Elapsed time for inst2.in: 1466 of 2100
+Elapsed time for inst2.in: 1575 of 2100
+Elapsed time for inst2.in: 1451 of 2100
+Elapsed time for inst2.in: 1420 of 2100
+Elapsed time for inst2.in: 1466 of 2100
+Elapsed time for inst2.in: 1591 of 2100
+Elapsed time for inst2.in: 8596 of 10500
+Elapsed time for inst2.in: 9360 of 10500
+Elapsed time for inst2.in: 9220 of 10500
+Elapsed time for inst2.in: 8736 of 10500
+Elapsed time for inst2.in: 8704 of 10500
+Elapsed time for inst2.in: 9142 of 10500
+Mean fitness for inst2.in: 3671.75
+Elapsed time for inst3.in: 1435 of 2100
+Elapsed time for inst3.in: 1170 of 2100
+Elapsed time for inst3.in: 1154 of 2100
+Elapsed time for inst3.in: 1810 of 2100
+Elapsed time for inst3.in: 1638 of 2100
+Elapsed time for inst3.in: 1560 of 2100
+Elapsed time for inst3.in: 9547 of 10500
+Elapsed time for inst3.in: 9017 of 10500
+Elapsed time for inst3.in: 9048 of 10500
+Elapsed time for inst3.in: 9376 of 10500
+Elapsed time for inst3.in: 9532 of 10500
+Elapsed time for inst3.in: 9781 of 10500
+Mean fitness for inst3.in: 3080.66666666667
+Elapsed time for inst4.in: 1466 of 2100
+Elapsed time for inst4.in: 1545 of 2100
+Elapsed time for inst4.in: 1748 of 2100
+Elapsed time for inst4.in: 1716 of 2100
+Elapsed time for inst4.in: 1809 of 2100
+Elapsed time for inst4.in: 1857 of 2100
+Elapsed time for inst4.in: 9032 of 10500
+Elapsed time for inst4.in: 9501 of 10500
+Elapsed time for inst4.in: 9578 of 10500
+Elapsed time for inst4.in: 9422 of 10500
+Elapsed time for inst4.in: 9438 of 10500
+Elapsed time for inst4.in: 9189 of 10500
+Mean fitness for inst4.in: 3278.91666666667
+Elapsed time for inst5.in: 1295 of 2100
+Elapsed time for inst5.in: 1638 of 2100
+Elapsed time for inst5.in: 1388 of 2100
+Elapsed time for inst5.in: 1248 of 2100
+Elapsed time for inst5.in: 1623 of 2100
+Elapsed time for inst5.in: 1404 of 2100
+Elapsed time for inst5.in: 8798 of 10500
+Elapsed time for inst5.in: 9251 of 10500
+Elapsed time for inst5.in: 8767 of 10500
+Elapsed time for inst5.in: 9236 of 10500
+Elapsed time for inst5.in: 9141 of 10500
+Elapsed time for inst5.in: 9314 of 10500
+Mean fitness for inst5.in: 3659.41666666667
+Elapsed time for inst6.in: 1622 of 2100
+Elapsed time for inst6.in: 1435 of 2100
+Elapsed time for inst6.in: 1560 of 2100
+Elapsed time for inst6.in: 1451 of 2100
+Elapsed time for inst6.in: 1794 of 2100
+Elapsed time for inst6.in: 1263 of 2100
+Elapsed time for inst6.in: 9017 of 10500
+Elapsed time for inst6.in: 9968 of 10500
+Elapsed time for inst6.in: 9360 of 10500
+Elapsed time for inst6.in: 9626 of 10500
+Elapsed time for inst6.in: 9500 of 10500
+Elapsed time for inst6.in: 9501 of 10500
+Mean fitness for inst6.in: 1681.5
+Elapsed time for inst7.in: 1794 of 2100
+Elapsed time for inst7.in: 1809 of 2100
+Elapsed time for inst7.in: 1747 of 2100
+Elapsed time for inst7.in: 1280 of 2100
+Elapsed time for inst7.in: 1450 of 2100
+Elapsed time for inst7.in: 1373 of 2100
+Elapsed time for inst7.in: 9064 of 10500
+Elapsed time for inst7.in: 9235 of 10500
+Elapsed time for inst7.in: 9158 of 10500
+Elapsed time for inst7.in: 9189 of 10500
+Elapsed time for inst7.in: 9313 of 10500
+Elapsed time for inst7.in: 9376 of 10500
+Mean fitness for inst7.in: 1607.33333333333
+Current cost: 17388.1666666667
+
+Current parameters: 250, 1.5, 0.3
+Elapsed time for inst1.in: 1217 of 2100
+Elapsed time for inst1.in: 1045 of 2100
+Elapsed time for inst1.in: 1217 of 2100
+Elapsed time for inst1.in: 1279 of 2100
+Elapsed time for inst1.in: 967 of 2100
+Elapsed time for inst1.in: 1248 of 2100
+Elapsed time for inst1.in: 8674 of 10500
+Elapsed time for inst1.in: 8502 of 10500
+Elapsed time for inst1.in: 8877 of 10500
+Elapsed time for inst1.in: 8876 of 10500
+Elapsed time for inst1.in: 8877 of 10500
+Elapsed time for inst1.in: 8424 of 10500
+Mean fitness for inst1.in: 409.75
+Elapsed time for inst2.in: 1061 of 2100
+Elapsed time for inst2.in: 1061 of 2100
+Elapsed time for inst2.in: 1107 of 2100
+Elapsed time for inst2.in: 1108 of 2100
+Elapsed time for inst2.in: 936 of 2100
+Elapsed time for inst2.in: 1202 of 2100
+Elapsed time for inst2.in: 9219 of 10500
+Elapsed time for inst2.in: 8846 of 10500
+Elapsed time for inst2.in: 9719 of 10500
+Elapsed time for inst2.in: 8798 of 10500
+Elapsed time for inst2.in: 8362 of 10500
+Elapsed time for inst2.in: 8595 of 10500
+Mean fitness for inst2.in: 3656.91666666667
+Elapsed time for inst3.in: 1545 of 2100
+Elapsed time for inst3.in: 1778 of 2100
+Elapsed time for inst3.in: 1591 of 2100
+Elapsed time for inst3.in: 1607 of 2100
+Elapsed time for inst3.in: 1747 of 2100
+Elapsed time for inst3.in: 1310 of 2100
+Elapsed time for inst3.in: 9313 of 10500
+Elapsed time for inst3.in: 8409 of 10500
+Elapsed time for inst3.in: 8580 of 10500
+Elapsed time for inst3.in: 9266 of 10500
+Elapsed time for inst3.in: 8876 of 10500
+Elapsed time for inst3.in: 9391 of 10500
+Mean fitness for inst3.in: 3089.58333333333
+Elapsed time for inst4.in: 1467 of 2100
+Elapsed time for inst4.in: 1045 of 2100
+Elapsed time for inst4.in: 1685 of 2100
+Elapsed time for inst4.in: 1575 of 2100
+Elapsed time for inst4.in: 1576 of 2100
+Elapsed time for inst4.in: 1466 of 2100
+Elapsed time for inst4.in: 8487 of 10500
+Elapsed time for inst4.in: 8877 of 10500
+Elapsed time for inst4.in: 8892 of 10500
+Elapsed time for inst4.in: 9578 of 10500
+Elapsed time for inst4.in: 9189 of 10500
+Elapsed time for inst4.in: 8845 of 10500
+Mean fitness for inst4.in: 3276.08333333333
+Elapsed time for inst5.in: 2044 of 2100
+Elapsed time for inst5.in: 2199 of 2100
+Skiping this parameters.
+
+Current parameters: 250, 2, 0.3
+Elapsed time for inst1.in: 1498 of 2100
+Elapsed time for inst1.in: 1529 of 2100
+Elapsed time for inst1.in: 1466 of 2100
+Elapsed time for inst1.in: 1389 of 2100
+Elapsed time for inst1.in: 1216 of 2100
+Elapsed time for inst1.in: 1638 of 2100
+Elapsed time for inst1.in: 8893 of 10500
+Elapsed time for inst1.in: 7425 of 10500
+Elapsed time for inst1.in: 8658 of 10500
+Elapsed time for inst1.in: 8783 of 10500
+Elapsed time for inst1.in: 9344 of 10500
+Elapsed time for inst1.in: 9843 of 10500
+Mean fitness for inst1.in: 409.333333333333
+Elapsed time for inst2.in: 1279 of 2100
+Elapsed time for inst2.in: 1560 of 2100
+Elapsed time for inst2.in: 1451 of 2100
+Elapsed time for inst2.in: 1154 of 2100
+Elapsed time for inst2.in: 1607 of 2100
+Elapsed time for inst2.in: 1701 of 2100
+Elapsed time for inst2.in: 9750 of 10500
+Elapsed time for inst2.in: 9407 of 10500
+Elapsed time for inst2.in: 9843 of 10500
+Elapsed time for inst2.in: 9703 of 10500
+Elapsed time for inst2.in: 8737 of 10500
+Elapsed time for inst2.in: 10249 of 10500
+Mean fitness for inst2.in: 3669.91666666667
+Elapsed time for inst3.in: 1154 of 2100
+Elapsed time for inst3.in: 1014 of 2100
+Elapsed time for inst3.in: 983 of 2100
+Elapsed time for inst3.in: 1123 of 2100
+Elapsed time for inst3.in: 1092 of 2100
+Elapsed time for inst3.in: 983 of 2100
+Elapsed time for inst3.in: 8955 of 10500
+Elapsed time for inst3.in: 8985 of 10500
+Elapsed time for inst3.in: 9111 of 10500
+Elapsed time for inst3.in: 8798 of 10500
+Elapsed time for inst3.in: 8877 of 10500
+Elapsed time for inst3.in: 9625 of 10500
+Mean fitness for inst3.in: 3085.5
+Elapsed time for inst4.in: 1950 of 2100
+Elapsed time for inst4.in: 983 of 2100
+Elapsed time for inst4.in: 967 of 2100
+Elapsed time for inst4.in: 1825 of 2100
+Elapsed time for inst4.in: 905 of 2100
+Elapsed time for inst4.in: 998 of 2100
+Elapsed time for inst4.in: 8674 of 10500
+Elapsed time for inst4.in: 9219 of 10500
+Elapsed time for inst4.in: 9251 of 10500
+Elapsed time for inst4.in: 8595 of 10500
+Elapsed time for inst4.in: 9314 of 10500
+Elapsed time for inst4.in: 9672 of 10500
+Mean fitness for inst4.in: 3275.33333333333
+Elapsed time for inst5.in: 1185 of 2100
+Elapsed time for inst5.in: 1045 of 2100
+Elapsed time for inst5.in: 1139 of 2100
+Elapsed time for inst5.in: 998 of 2100
+Elapsed time for inst5.in: 1030 of 2100
+Elapsed time for inst5.in: 1186 of 2100
+Elapsed time for inst5.in: 8408 of 10500
+Elapsed time for inst5.in: 7894 of 10500
+Elapsed time for inst5.in: 9095 of 10500
+Elapsed time for inst5.in: 7909 of 10500
+Elapsed time for inst5.in: 8970 of 10500
+Elapsed time for inst5.in: 8408 of 10500
+Mean fitness for inst5.in: 3648.33333333333
+Elapsed time for inst6.in: 998 of 2100
+Elapsed time for inst6.in: 1622 of 2100
+Elapsed time for inst6.in: 1467 of 2100
+Elapsed time for inst6.in: 1514 of 2100
+Elapsed time for inst6.in: 1591 of 2100
+Elapsed time for inst6.in: 1716 of 2100
+Elapsed time for inst6.in: 9672 of 10500
+Elapsed time for inst6.in: 8564 of 10500
+Elapsed time for inst6.in: 9064 of 10500
+Elapsed time for inst6.in: 8970 of 10500
+Elapsed time for inst6.in: 9266 of 10500
+Elapsed time for inst6.in: 8845 of 10500
+Mean fitness for inst6.in: 1684.5
+Elapsed time for inst7.in: 1654 of 2100
+Elapsed time for inst7.in: 1669 of 2100
+Elapsed time for inst7.in: 889 of 2100
+Elapsed time for inst7.in: 1529 of 2100
+Elapsed time for inst7.in: 1435 of 2100
+Elapsed time for inst7.in: 1638 of 2100
+Elapsed time for inst7.in: 8627 of 10500
+Elapsed time for inst7.in: 8924 of 10500
+Elapsed time for inst7.in: 9126 of 10500
+Elapsed time for inst7.in: 9547 of 10500
+Elapsed time for inst7.in: 9344 of 10500
+Elapsed time for inst7.in: 8861 of 10500
+Mean fitness for inst7.in: 1621.5
+Current cost: 17394.4166666667
+
+Current parameters: 250, 4, 0.3
+Elapsed time for inst1.in: 2121 of 2100
+Skiping this parameters.
+
+Current parameters: 250, 6, 0.3
+Elapsed time for inst1.in: 4727 of 2100
+Skiping this parameters.
+
+Current parameters: 250, 8, 0.3
+Elapsed time for inst1.in: 5382 of 2100
+Skiping this parameters.
+
+Current parameters: 250, 10, 0.3
+Elapsed time for inst1.in: 6584 of 2100
+Skiping this parameters.
+
+Current parameters: 250, 0.25, 0.4
+Elapsed time for inst1.in: 1544 of 2100
+Elapsed time for inst1.in: 1529 of 2100
+Elapsed time for inst1.in: 1466 of 2100
+Elapsed time for inst1.in: 1575 of 2100
+Elapsed time for inst1.in: 1732 of 2100
+Elapsed time for inst1.in: 1669 of 2100
+Elapsed time for inst1.in: 9766 of 10500
+Elapsed time for inst1.in: 9282 of 10500
+Elapsed time for inst1.in: 9251 of 10500
+Elapsed time for inst1.in: 9438 of 10500
+Elapsed time for inst1.in: 9313 of 10500
+Elapsed time for inst1.in: 9344 of 10500
+Mean fitness for inst1.in: 404.25
+Elapsed time for inst2.in: 1794 of 2100
+Elapsed time for inst2.in: 1841 of 2100
+Elapsed time for inst2.in: 1653 of 2100
+Elapsed time for inst2.in: 1654 of 2100
+Elapsed time for inst2.in: 1622 of 2100
+Elapsed time for inst2.in: 1373 of 2100
+Elapsed time for inst2.in: 9017 of 10500
+Elapsed time for inst2.in: 9313 of 10500
+Elapsed time for inst2.in: 9220 of 10500
+Elapsed time for inst2.in: 9406 of 10500
+Elapsed time for inst2.in: 9376 of 10500
+Elapsed time for inst2.in: 9313 of 10500
+Mean fitness for inst2.in: 3641.58333333333
+Elapsed time for inst3.in: 1529 of 2100
+Elapsed time for inst3.in: 1607 of 2100
+Elapsed time for inst3.in: 1653 of 2100
+Elapsed time for inst3.in: 1732 of 2100
+Elapsed time for inst3.in: 1685 of 2100
+Elapsed time for inst3.in: 1575 of 2100
+Elapsed time for inst3.in: 9298 of 10500
+Elapsed time for inst3.in: 9298 of 10500
+Elapsed time for inst3.in: 9375 of 10500
+Elapsed time for inst3.in: 9438 of 10500
+Elapsed time for inst3.in: 9345 of 10500
+Elapsed time for inst3.in: 9422 of 10500
+Mean fitness for inst3.in: 3033.83333333333
+Elapsed time for inst4.in: 1716 of 2100
+Elapsed time for inst4.in: 1654 of 2100
+Elapsed time for inst4.in: 1825 of 2100
+Elapsed time for inst4.in: 1591 of 2100
+Elapsed time for inst4.in: 1389 of 2100
+Elapsed time for inst4.in: 1528 of 2100
+Elapsed time for inst4.in: 9376 of 10500
+Elapsed time for inst4.in: 9609 of 10500
+Elapsed time for inst4.in: 9360 of 10500
+Elapsed time for inst4.in: 9329 of 10500
+Elapsed time for inst4.in: 9547 of 10500
+Elapsed time for inst4.in: 9454 of 10500
+Mean fitness for inst4.in: 3238.75
+Elapsed time for inst5.in: 1622 of 2100
+Elapsed time for inst5.in: 1576 of 2100
+Elapsed time for inst5.in: 1856 of 2100
+Elapsed time for inst5.in: 1763 of 2100
+Elapsed time for inst5.in: 1529 of 2100
+Elapsed time for inst5.in: 1497 of 2100
+Elapsed time for inst5.in: 9329 of 10500
+Elapsed time for inst5.in: 9438 of 10500
+Elapsed time for inst5.in: 9407 of 10500
+Elapsed time for inst5.in: 9454 of 10500
+Elapsed time for inst5.in: 9422 of 10500
+Elapsed time for inst5.in: 9469 of 10500
+Mean fitness for inst5.in: 3604.33333333333
+Elapsed time for inst6.in: 1545 of 2100
+Elapsed time for inst6.in: 1684 of 2100
+Elapsed time for inst6.in: 1716 of 2100
+Elapsed time for inst6.in: 1654 of 2100
+Elapsed time for inst6.in: 1732 of 2100
+Elapsed time for inst6.in: 1684 of 2100
+Elapsed time for inst6.in: 9485 of 10500
+Elapsed time for inst6.in: 9563 of 10500
+Elapsed time for inst6.in: 9594 of 10500
+Elapsed time for inst6.in: 9516 of 10500
+Elapsed time for inst6.in: 9484 of 10500
+Elapsed time for inst6.in: 9548 of 10500
+Mean fitness for inst6.in: 1656.58333333333
+Elapsed time for inst7.in: 1575 of 2100
+Elapsed time for inst7.in: 1685 of 2100
+Elapsed time for inst7.in: 1560 of 2100
+Elapsed time for inst7.in: 1591 of 2100
+Elapsed time for inst7.in: 1576 of 2100
+Elapsed time for inst7.in: 1576 of 2100
+Elapsed time for inst7.in: 9516 of 10500
+Elapsed time for inst7.in: 9516 of 10500
+Elapsed time for inst7.in: 9640 of 10500
+Elapsed time for inst7.in: 9548 of 10500
+Elapsed time for inst7.in: 9407 of 10500
+Elapsed time for inst7.in: 9501 of 10500
+Mean fitness for inst7.in: 1575.08333333333
+Current cost: 17154.4166666667
+
+Current parameters: 250, 0.5, 0.4
+Elapsed time for inst1.in: 1528 of 2100
+Elapsed time for inst1.in: 1592 of 2100
+Elapsed time for inst1.in: 1482 of 2100
+Elapsed time for inst1.in: 1497 of 2100
+Elapsed time for inst1.in: 1576 of 2100
+Elapsed time for inst1.in: 1856 of 2100
+Elapsed time for inst1.in: 9266 of 10500
+Elapsed time for inst1.in: 8986 of 10500
+Elapsed time for inst1.in: 9095 of 10500
+Elapsed time for inst1.in: 8751 of 10500
+Elapsed time for inst1.in: 10000 of 10500
+Elapsed time for inst1.in: 9329 of 10500
+Mean fitness for inst1.in: 407
+Elapsed time for inst2.in: 1716 of 2100
+Elapsed time for inst2.in: 1607 of 2100
+Elapsed time for inst2.in: 1513 of 2100
+Elapsed time for inst2.in: 1342 of 2100
+Elapsed time for inst2.in: 1638 of 2100
+Elapsed time for inst2.in: 1342 of 2100
+Elapsed time for inst2.in: 9625 of 10500
+Elapsed time for inst2.in: 9157 of 10500
+Elapsed time for inst2.in: 9391 of 10500
+Elapsed time for inst2.in: 8986 of 10500
+Elapsed time for inst2.in: 9063 of 10500
+Elapsed time for inst2.in: 9126 of 10500
+Mean fitness for inst2.in: 3671
+Elapsed time for inst3.in: 1685 of 2100
+Elapsed time for inst3.in: 1607 of 2100
+Elapsed time for inst3.in: 1295 of 2100
+Elapsed time for inst3.in: 1654 of 2100
+Elapsed time for inst3.in: 1591 of 2100
+Elapsed time for inst3.in: 1794 of 2100
+Elapsed time for inst3.in: 9329 of 10500
+Elapsed time for inst3.in: 9484 of 10500
+Elapsed time for inst3.in: 9329 of 10500
+Elapsed time for inst3.in: 9407 of 10500
+Elapsed time for inst3.in: 9375 of 10500
+Elapsed time for inst3.in: 9392 of 10500
+Mean fitness for inst3.in: 3075.58333333333
+Elapsed time for inst4.in: 1653 of 2100
+Elapsed time for inst4.in: 1888 of 2100
+Elapsed time for inst4.in: 1576 of 2100
+Elapsed time for inst4.in: 1419 of 2100
+Elapsed time for inst4.in: 1669 of 2100
+Elapsed time for inst4.in: 1451 of 2100
+Elapsed time for inst4.in: 9142 of 10500
+Elapsed time for inst4.in: 9173 of 10500
+Elapsed time for inst4.in: 9438 of 10500
+Elapsed time for inst4.in: 9189 of 10500
+Elapsed time for inst4.in: 9344 of 10500
+Elapsed time for inst4.in: 9501 of 10500
+Mean fitness for inst4.in: 3268.25
+Elapsed time for inst5.in: 1513 of 2100
+Elapsed time for inst5.in: 1342 of 2100
+Elapsed time for inst5.in: 1544 of 2100
+Elapsed time for inst5.in: 1544 of 2100
+Elapsed time for inst5.in: 1544 of 2100
+Elapsed time for inst5.in: 1560 of 2100
+Elapsed time for inst5.in: 9064 of 10500
+Elapsed time for inst5.in: 9079 of 10500
+Elapsed time for inst5.in: 9407 of 10500
+Elapsed time for inst5.in: 9547 of 10500
+Elapsed time for inst5.in: 9516 of 10500
+Elapsed time for inst5.in: 9609 of 10500
+Mean fitness for inst5.in: 3652.58333333333
+Elapsed time for inst6.in: 1592 of 2100
+Elapsed time for inst6.in: 1638 of 2100
+Elapsed time for inst6.in: 1450 of 2100
+Elapsed time for inst6.in: 1560 of 2100
+Elapsed time for inst6.in: 1607 of 2100
+Elapsed time for inst6.in: 1513 of 2100
+Elapsed time for inst6.in: 9391 of 10500
+Elapsed time for inst6.in: 9407 of 10500
+Elapsed time for inst6.in: 9688 of 10500
+Elapsed time for inst6.in: 9500 of 10500
+Elapsed time for inst6.in: 9360 of 10500
+Elapsed time for inst6.in: 9594 of 10500
+Mean fitness for inst6.in: 1671
+Elapsed time for inst7.in: 1436 of 2100
+Elapsed time for inst7.in: 1529 of 2100
+Elapsed time for inst7.in: 1732 of 2100
+Elapsed time for inst7.in: 1560 of 2100
+Elapsed time for inst7.in: 1513 of 2100
+Elapsed time for inst7.in: 1404 of 2100
+Elapsed time for inst7.in: 9422 of 10500
+Elapsed time for inst7.in: 9470 of 10500
+Elapsed time for inst7.in: 9516 of 10500
+Elapsed time for inst7.in: 9391 of 10500
+Elapsed time for inst7.in: 9454 of 10500
+Elapsed time for inst7.in: 9563 of 10500
+Mean fitness for inst7.in: 1606.58333333333
+Current cost: 17352
+
+Current parameters: 250, 0.75, 0.4
+Elapsed time for inst1.in: 1201 of 2100
+Elapsed time for inst1.in: 1482 of 2100
+Elapsed time for inst1.in: 1233 of 2100
+Elapsed time for inst1.in: 1248 of 2100
+Elapsed time for inst1.in: 1201 of 2100
+Elapsed time for inst1.in: 1482 of 2100
+Elapsed time for inst1.in: 8845 of 10500
+Elapsed time for inst1.in: 8767 of 10500
+Elapsed time for inst1.in: 8861 of 10500
+Elapsed time for inst1.in: 9516 of 10500
+Elapsed time for inst1.in: 9142 of 10500
+Elapsed time for inst1.in: 9485 of 10500
+Mean fitness for inst1.in: 407.333333333333
+Elapsed time for inst2.in: 2137 of 2100
+Skiping this parameters.
+
+Current parameters: 250, 1, 0.4
+Elapsed time for inst1.in: 1279 of 2100
+Elapsed time for inst1.in: 1482 of 2100
+Elapsed time for inst1.in: 1528 of 2100
+Elapsed time for inst1.in: 1654 of 2100
+Elapsed time for inst1.in: 1248 of 2100
+Elapsed time for inst1.in: 1450 of 2100
+Elapsed time for inst1.in: 8425 of 10500
+Elapsed time for inst1.in: 8704 of 10500
+Elapsed time for inst1.in: 8221 of 10500
+Elapsed time for inst1.in: 9516 of 10500
+Elapsed time for inst1.in: 8549 of 10500
+Elapsed time for inst1.in: 8580 of 10500
+Mean fitness for inst1.in: 409.833333333333
+Elapsed time for inst2.in: 1420 of 2100
+Elapsed time for inst2.in: 1185 of 2100
+Elapsed time for inst2.in: 1420 of 2100
+Elapsed time for inst2.in: 1560 of 2100
+Elapsed time for inst2.in: 1357 of 2100
+Elapsed time for inst2.in: 1435 of 2100
+Elapsed time for inst2.in: 9329 of 10500
+Elapsed time for inst2.in: 9657 of 10500
+Elapsed time for inst2.in: 8518 of 10500
+Elapsed time for inst2.in: 9423 of 10500
+Elapsed time for inst2.in: 9110 of 10500
+Elapsed time for inst2.in: 8689 of 10500
+Mean fitness for inst2.in: 3674.83333333333
+Elapsed time for inst3.in: 1747 of 2100
+Elapsed time for inst3.in: 1919 of 2100
+Elapsed time for inst3.in: 1810 of 2100
+Elapsed time for inst3.in: 1966 of 2100
+Elapsed time for inst3.in: 2106 of 2100
+Skiping this parameters.
+
+Current parameters: 250, 1.5, 0.4
+Elapsed time for inst1.in: 936 of 2100
+Elapsed time for inst1.in: 2278 of 2100
+Skiping this parameters.
+
+Current parameters: 250, 2, 0.4
+Elapsed time for inst1.in: 1482 of 2100
+Elapsed time for inst1.in: 1310 of 2100
+Elapsed time for inst1.in: 1310 of 2100
+Elapsed time for inst1.in: 1498 of 2100
+Elapsed time for inst1.in: 1373 of 2100
+Elapsed time for inst1.in: 1264 of 2100
+Elapsed time for inst1.in: 9500 of 10500
+Elapsed time for inst1.in: 7488 of 10500
+Elapsed time for inst1.in: 10000 of 10500
+Elapsed time for inst1.in: 9142 of 10500
+Elapsed time for inst1.in: 9765 of 10500
+Elapsed time for inst1.in: 9189 of 10500
+Mean fitness for inst1.in: 409
+Elapsed time for inst2.in: 1513 of 2100
+Elapsed time for inst2.in: 1731 of 2100
+Elapsed time for inst2.in: 1357 of 2100
+Elapsed time for inst2.in: 1404 of 2100
+Elapsed time for inst2.in: 1451 of 2100
+Elapsed time for inst2.in: 1264 of 2100
+Elapsed time for inst2.in: 8767 of 10500
+Elapsed time for inst2.in: 7987 of 10500
+Elapsed time for inst2.in: 8549 of 10500
+Elapsed time for inst2.in: 8299 of 10500
+Elapsed time for inst2.in: 8907 of 10500
+Elapsed time for inst2.in: 7894 of 10500
+Mean fitness for inst2.in: 3680.08333333333
+Elapsed time for inst3.in: 1107 of 2100
+Elapsed time for inst3.in: 2060 of 2100
+Elapsed time for inst3.in: 982 of 2100
+Elapsed time for inst3.in: 1077 of 2100
+Elapsed time for inst3.in: 983 of 2100
+Elapsed time for inst3.in: 1138 of 2100
+Elapsed time for inst3.in: 8549 of 10500
+Elapsed time for inst3.in: 9828 of 10500
+Elapsed time for inst3.in: 8455 of 10500
+Elapsed time for inst3.in: 8877 of 10500
+Elapsed time for inst3.in: 8236 of 10500
+Elapsed time for inst3.in: 8206 of 10500
+Mean fitness for inst3.in: 3083.83333333333
+Elapsed time for inst4.in: 952 of 2100
+Elapsed time for inst4.in: 1107 of 2100
+Elapsed time for inst4.in: 905 of 2100
+Elapsed time for inst4.in: 1233 of 2100
+Elapsed time for inst4.in: 1092 of 2100
+Elapsed time for inst4.in: 1029 of 2100
+Elapsed time for inst4.in: 9235 of 10500
+Elapsed time for inst4.in: 8486 of 10500
+Elapsed time for inst4.in: 8253 of 10500
+Elapsed time for inst4.in: 9625 of 10500
+Elapsed time for inst4.in: 9360 of 10500
+Elapsed time for inst4.in: 8517 of 10500
+Mean fitness for inst4.in: 3306.91666666667
+Elapsed time for inst5.in: 1108 of 2100
+Elapsed time for inst5.in: 1498 of 2100
+Elapsed time for inst5.in: 1076 of 2100
+Elapsed time for inst5.in: 1139 of 2100
+Elapsed time for inst5.in: 1310 of 2100
+Elapsed time for inst5.in: 1186 of 2100
+Elapsed time for inst5.in: 9157 of 10500
+Elapsed time for inst5.in: 9407 of 10500
+Elapsed time for inst5.in: 9781 of 10500
+Elapsed time for inst5.in: 9266 of 10500
+Elapsed time for inst5.in: 9938 of 10500
+Elapsed time for inst5.in: 8112 of 10500
+Mean fitness for inst5.in: 3667.58333333333
+Elapsed time for inst6.in: 1779 of 2100
+Elapsed time for inst6.in: 1606 of 2100
+Elapsed time for inst6.in: 1607 of 2100
+Elapsed time for inst6.in: 1654 of 2100
+Elapsed time for inst6.in: 905 of 2100
+Elapsed time for inst6.in: 921 of 2100
+Elapsed time for inst6.in: 8736 of 10500
+Elapsed time for inst6.in: 8518 of 10500
+Elapsed time for inst6.in: 8970 of 10500
+Elapsed time for inst6.in: 9235 of 10500
+Elapsed time for inst6.in: 8627 of 10500
+Elapsed time for inst6.in: 9173 of 10500
+Mean fitness for inst6.in: 1681.91666666667
+Elapsed time for inst7.in: 1856 of 2100
+Elapsed time for inst7.in: 1670 of 2100
+Elapsed time for inst7.in: 1467 of 2100
+Elapsed time for inst7.in: 1653 of 2100
+Elapsed time for inst7.in: 1685 of 2100
+Elapsed time for inst7.in: 1716 of 2100
+Elapsed time for inst7.in: 8845 of 10500
+Elapsed time for inst7.in: 8627 of 10500
+Elapsed time for inst7.in: 9079 of 10500
+Elapsed time for inst7.in: 9220 of 10500
+Elapsed time for inst7.in: 9578 of 10500
+Elapsed time for inst7.in: 8596 of 10500
+Mean fitness for inst7.in: 1619.91666666667
+Current cost: 17449.25
+
+Current parameters: 250, 4, 0.4
+Elapsed time for inst1.in: 2652 of 2100
+Skiping this parameters.
+
+Current parameters: 250, 6, 0.4
+Elapsed time for inst1.in: 3916 of 2100
+Skiping this parameters.
+
+Current parameters: 250, 8, 0.4
+Elapsed time for inst1.in: 5444 of 2100
+Skiping this parameters.
+
+Current parameters: 250, 10, 0.4
+Elapsed time for inst1.in: 6864 of 2100
+Skiping this parameters.
+
+Final best parameters: 250, 0.25, 0.2
