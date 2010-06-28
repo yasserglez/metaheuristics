@@ -5,9 +5,10 @@ namespace Metaheuristics
 {
 	public class GABL2OptBest42SP : IMetaheuristic, ITunableMetaheuristic
 	{
-		protected double popFactor = 30;
-		protected double mutProbability = 0.2;
 		protected double timePenalty = 250;
+		protected double popFactor = 0.01;
+		protected double mutProbability = 0.1;
+		
 
 		public void Start(string fileInput, string fileOutput, int timeLimit)
 		{

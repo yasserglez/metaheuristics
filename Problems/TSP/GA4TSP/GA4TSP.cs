@@ -5,9 +5,10 @@ namespace Metaheuristics
 {
 	public class GA4TSP : IMetaheuristic, ITunableMetaheuristic
 	{
-		protected double popFactor = 30;
-		protected double mutProbability = 0.2;
 		protected double timePenalty = 250;
+		protected double popFactor = 12;
+		protected double mutProbability = 0.2;
+	
 		
 		public void Start(string fileInput, string fileOutput, int timeLimit)
 		{

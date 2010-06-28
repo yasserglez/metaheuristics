@@ -47,6 +47,9 @@ namespace Tune
 				case MetaheuristicType.SA:
 					tuner = new SATuner(algorithm, dir);
 					break;
+				case MetaheuristicType.GRASP:
+					tuner = new GRASPTuner(algorithm, dir);
+					break;
 				default:
 					break;
 				}
