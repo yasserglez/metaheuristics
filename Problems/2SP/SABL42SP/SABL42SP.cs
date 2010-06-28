@@ -6,6 +6,7 @@ namespace Metaheuristics
 {
 	public class SABL42SP : IMetaheuristic, ITunableMetaheuristic
 	{
+		protected int timePenalty = 250;		
 		public int initialSolutions = 5;
 		public double levelLengthFactor = 1;
 		public double tempReduction = 0.95;
@@ -15,7 +16,7 @@ namespace Metaheuristics
 			TwoSPInstance instance = new TwoSPInstance(fileInput);
 			int levelLength = (int) Math.Ceiling(levelLengthFactor * (2 * instance.NumberItems));
 			DiscreteSA sa = new DiscreteSABL42SP(instance, initialSolutions, levelLength, tempReduction);
-			sa.Run(timeLimit);
+			sa.Run(timeLimit - timePenalty);
 			int[,] coordinates = TwoSPUtils.BLCoordinates(instance, sa.BestSolution);
 			TwoSPSolution solution = new TwoSPSolution(instance, coordinates);
 			solution.Write(fileOutput);
@@ -47,9 +48,10 @@ namespace Metaheuristics
 		
 		public void UpdateParameters(double[] parameters)
 		{
-			initialSolutions = (int) parameters[0];
-			levelLengthFactor = parameters[1];
-			tempReduction = parameters[2];
+			timePenalty = (int) parameters[0];			
+			initialSolutions = (int) parameters[1];
+			levelLengthFactor = parameters[2];
+			tempReduction = parameters[3];
 		}		
 	}
 }

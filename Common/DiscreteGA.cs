@@ -18,7 +18,7 @@ namespace Metaheuristics
 
 		public DiscreteGA (int popSize, double mutationProbability, int[] lowerBounds, int[] upperBounds)
 		{
-			PopulationSize = popSize + popSize%2;
+			PopulationSize = popSize + (popSize % 2);
 			LowerBounds = lowerBounds;
 			UpperBounds = upperBounds;
 			RepairEnabled = false;
