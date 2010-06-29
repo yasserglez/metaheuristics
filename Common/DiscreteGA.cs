@@ -99,6 +99,8 @@ namespace Metaheuristics
 				iterationStartTime = Environment.TickCount;
 				newPopulation = new int[PopulationSize][];
 				newEvaluation = new double[PopulationSize];
+				crossMask.Initialize();
+				mutMask.Initialize();
 
 				// Apply the selection method.
 				if (BestIndividual == null || evaluation[0] < BestFitness) {
