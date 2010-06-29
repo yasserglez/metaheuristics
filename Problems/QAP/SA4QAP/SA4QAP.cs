@@ -6,6 +6,7 @@ namespace Metaheuristics
 {
 	public class SA4QAP : IMetaheuristic, ITunableMetaheuristic
 	{
+		protected int timePenalty = 250;
 		public int initialSolutions = 5;
 		public double levelLengthFactor = 1;
 		public double tempReduction = 0.95;
@@ -15,7 +16,7 @@ namespace Metaheuristics
 			QAPInstance instance = new QAPInstance(fileInput);
 			int levelLength = (int) Math.Ceiling(levelLengthFactor * (instance.NumberFacilities * (instance.NumberFacilities - 1)));
 			DiscreteSA sa = new DiscreteSA4QAP(instance, initialSolutions, levelLength, tempReduction);
-			sa.Run(timeLimit);
+			sa.Run(timeLimit - timePenalty);
 			QAPSolution solution = new QAPSolution(instance, sa.BestSolution);
 			solution.Write(fileOutput);
 		}
@@ -46,9 +47,10 @@ namespace Metaheuristics
 		
 		public void UpdateParameters(double[] parameters)
 		{
-			initialSolutions = (int) parameters[0];
-			levelLengthFactor = parameters[1];
-			tempReduction = parameters[2];
+			timePenalty = (int) parameters[0];			
+			initialSolutions = (int) parameters[1];
+			levelLengthFactor = parameters[2];
+			tempReduction = parameters[3];
 		}		
 	}
 }
