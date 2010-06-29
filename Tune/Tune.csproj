@@ -130,10 +130,6 @@
       <Project>{CAD08B26-00CD-4C74-A92B-B4CC74E4F8AF}</Project>
       <Name>SA4SPP</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Problems\TSP\SA4TSP\SA4TSP.csproj">
-      <Project>{09A43B72-0AB1-4C7D-BA1B-608F5B62A989}</Project>
-      <Name>SA4TSP</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Problems\2SP\SABL42SP\SABL42SP.csproj">
       <Project>{631D3A3C-0085-4203-AAB1-42489F47D99F}</Project>
       <Name>SABL42SP</Name>

@@ -25,7 +25,7 @@ namespace Metaheuristics
 			DiscreteUMDA umda = new DiscreteUMDA4TSP(instance, popSize, truncFactor, lowerBounds, upperBounds);
 			
 			// Solving the problem and writing the best solution found.
-			umda.Run(timeLimit - (int)timePenalty);
+			umda.Run(timeLimit - (int) timePenalty);
 			TSPSolution solution = new TSPSolution(instance, umda.BestIndividual);
 			solution.Write(fileOutput);
 		}

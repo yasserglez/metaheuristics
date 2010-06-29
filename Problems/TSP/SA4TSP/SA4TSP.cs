@@ -6,16 +6,17 @@ namespace Metaheuristics
 {
 	public class SA4TSP : IMetaheuristic, ITunableMetaheuristic
 	{
-		public int initialSolutions = 5;
-		public double levelLengthFactor = 1;
-		public double tempReduction = 0.95;
+		protected int timePenalty = 250;
+		public int initialSolutions = 2;
+		public double levelLengthFactor = 0.75;
+		public double tempReduction = 0.85;
 		
 		public void Start(string fileInput, string fileOutput, int timeLimit)
 		{
 			TSPInstance instance = new TSPInstance(fileInput);
 			int levelLength = (int) Math.Ceiling(levelLengthFactor * (instance.NumberCities * (instance.NumberCities - 1)));
 			DiscreteSA sa = new DiscreteSA4TSP(instance, initialSolutions, levelLength, tempReduction);
-			sa.Run(timeLimit);
+			sa.Run(timeLimit - timePenalty);
 			TSPSolution solution = new TSPSolution(instance, sa.BestSolution);
 			solution.Write(fileOutput);
 		}
@@ -46,9 +47,10 @@ namespace Metaheuristics
 		
 		public void UpdateParameters(double[] parameters)
 		{
-			initialSolutions = (int) parameters[0];
-			levelLengthFactor = parameters[1];
-			tempReduction = parameters[2];
+			timePenalty = (int) parameters[0];			
+			initialSolutions = (int) parameters[1];
+			levelLengthFactor = parameters[2];
+			tempReduction = parameters[3];
 		}		
 	}
 }
