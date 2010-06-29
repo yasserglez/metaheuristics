@@ -4,15 +4,17 @@ using System.Collections.Generic;
 
 namespace Metaheuristics
 {
-	public class GRASP2OptFirst4QAP : IMetaheuristic
+	public class GRASP2OptFirst4QAP : IMetaheuristic, ITunableMetaheuristic
 	{
+		protected double timePenalty = 250;
+		protected double rclThreshold = 0.4;
+			
 		public void Start(string fileInput, string fileOutput, int timeLimit)
 		{
 			QAPInstance instance = new QAPInstance(fileInput);
 			
 			// Setting the parameters of the GRASP for this instance of the problem.
 			// Bigger Threshold benefits greedy over random.
-			double rclThreshold = 0.6;
 			int[] lowerBounds = new int[instance.NumberFacilities];
 			int[] upperBounds = new int[instance.NumberFacilities];
 			for (int i = 0; i < instance.NumberFacilities; i++) {
@@ -22,7 +24,7 @@ namespace Metaheuristics
 			DiscreteGRASP grasp = new DiscreteGRASP2OptFirst4QAP(instance, rclThreshold, lowerBounds, upperBounds);
 			
 			// Solving the problem and writing the best solution found.
-			grasp.Run(timeLimit, RunType.TimeLimit);
+			grasp.Run(timeLimit - (int)timePenalty, RunType.TimeLimit);
 			QAPSolution solution = new QAPSolution(instance, grasp.BestSolution);
 			solution.Write(fileOutput);
 		}
@@ -49,6 +51,11 @@ namespace Metaheuristics
 			get {
 				return About.Team;
 			}
+		}
+		
+		public void UpdateParameters (double[] parameters) {
+			timePenalty = parameters[0];
+			rclThreshold = parameters[1];
 		}
 	}
 }

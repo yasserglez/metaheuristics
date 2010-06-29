@@ -6,8 +6,8 @@ namespace Metaheuristics
 {
 	public class GRASP2OptFirst4TSP : IMetaheuristic, ITunableMetaheuristic
 	{
-		protected double timePenalty = 0;
-		protected double rclThreshold = 0.6;
+		protected double timePenalty = 250;
+		protected double rclThreshold = 0.75;
 		
 		public void Start(string fileInput, string fileOutput, int timeLimit)
 		{
