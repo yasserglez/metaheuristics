@@ -5,9 +5,9 @@ namespace Metaheuristics
 {
 	public class GANPS42SP : IMetaheuristic, ITunableMetaheuristic
 	{
-		protected double timePenalty = 250;
-		protected double popFactor = 0.05;
-		protected double mutProbability = 0.3;
+		protected double timePenalty = 500;
+		protected double popFactor = 0.06;
+		protected double mutProbability = 0.1;
 
 		public void Start(string fileInput, string fileOutput, int timeLimit)
 		{
