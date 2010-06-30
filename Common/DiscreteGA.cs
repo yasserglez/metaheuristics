@@ -105,9 +105,9 @@ namespace Metaheuristics
 				
 				// Crossover's and Mutation's points.
 				int crossPoint = Statistics.RandomDiscreteUniform(0, numVariables - 1);
-				int mutFirstPoint = Statistics.RandomDiscreteUniform(0, numVariables - 1);		
-				int mutSecPoint = Statistics.RandomDiscreteUniform(0, numVariables - 1);		
-				
+				int mut1stPoint = Statistics.RandomDiscreteUniform(0, numVariables - 1);		
+				int mut2ndPoint = Statistics.RandomDiscreteUniform(0, numVariables - 1);		
+				 
 				for (int i = 0; i < PopulationSize; i++) {
 					// Select by four individual's Tournament.
 					parent1 = population[Math.Min(Math.Min(Statistics.RandomDiscreteUniform(0,PopulationSize-1), 
@@ -131,8 +131,8 @@ namespace Metaheuristics
 					
 					// Mutation.
 					if (Statistics.RandomUniform() < MutationProbability) {
-						descend1[mutFirstPoint] = Statistics.RandomDiscreteUniform(LowerBounds[mutFirstPoint], UpperBounds[mutFirstPoint]);									
-						descend1[mutSecPoint] = Statistics.RandomDiscreteUniform(LowerBounds[mutSecPoint], UpperBounds[mutSecPoint]);									
+						descend1[mut1stPoint] = Statistics.RandomDiscreteUniform(LowerBounds[mut1stPoint], UpperBounds[mut1stPoint]);									
+						descend1[mut2ndPoint] = Statistics.RandomDiscreteUniform(LowerBounds[mut2ndPoint], UpperBounds[mut2ndPoint]);									
 					}
 					iterationPopulation[i] = descend1;
 				}

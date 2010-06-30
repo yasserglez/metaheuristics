@@ -14,7 +14,7 @@ namespace Tune
 		
 		protected override IEnumerable<double[]> EnumerateParameters()
 		{
-            double[] timePenalties = new double[] { 100, 250};
+            double[] timePenalties = new double[] { 0, 100};
 			List<double> popFactors = new List<double>();
 //			popFactors.Add(0.02);
 //			popFactors.Add(0.04);
