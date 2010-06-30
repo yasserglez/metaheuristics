@@ -62,7 +62,7 @@ namespace Metaheuristics
 			
 			maxIterationTime = Environment.TickCount - startTime;
 
-			while (Environment.TickCount - startTime < timeLimit - maxIterationTime) {
+			while (temperature > 0 && Environment.TickCount - startTime < timeLimit - maxIterationTime) {
 				iterationStartTime = Environment.TickCount;
 				for (int level = 0; level < LevelLength; level++) {
 					int[] newSolution = GetNeighbor(currentSolution);
