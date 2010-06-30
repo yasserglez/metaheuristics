@@ -6,15 +6,14 @@ namespace Metaheuristics
 {
 	public class GRASP2OptBest4QAP : IMetaheuristic, ITunableMetaheuristic
 	{
-		protected double timePenalty = 250;
-		protected double rclThreshold = 0.25;
+		protected double timePenalty = 0;
+		protected double rclThreshold = 0.3;
 			
 		public void Start(string fileInput, string fileOutput, int timeLimit)
 		{
 			QAPInstance instance = new QAPInstance(fileInput);
 			
 			// Setting the parameters of the GRASP for this instance of the problem.
-			// Bigger Threshold benefits greedy over random.
 			int[] lowerBounds = new int[instance.NumberFacilities];
 			int[] upperBounds = new int[instance.NumberFacilities];
 			for (int i = 0; i < instance.NumberFacilities; i++) {
