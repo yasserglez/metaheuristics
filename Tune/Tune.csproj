@@ -44,6 +44,7 @@
     <Compile Include="GATuner.cs" />
     <Compile Include="SATuner.cs" />
     <Compile Include="GRASPTuner.cs" />
+    <Compile Include="PSOTuner.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Problems\TSP\UMDA2OptBest4TSP\UMDA2OptBest4TSP.csproj">
@@ -193,6 +194,30 @@
     <ProjectReference Include="..\Problems\TSP\GA4TSP\GA4TSP.csproj">
       <Project>{7F8A5A1E-F5C2-469A-AA46-0E08930CF4EF}</Project>
       <Name>GA4TSP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\2SP\GABL2OptBest42SP\GABL2OptBest42SP.csproj">
+      <Project>{2A723B4F-3E19-4E06-AAA2-E4A325B5E932}</Project>
+      <Name>GABL2OptBest42SP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\2SP\GANPS42SP\GANPS42SP.csproj">
+      <Project>{F479D3C9-46D8-453B-A07E-4143F892063C}</Project>
+      <Name>GANPS42SP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\TSP\GRASP2OptBest4TSP\GRASP2OptBest4TSP.csproj">
+      <Project>{65D17E7E-C0FA-4CBA-97B3-B32416BBE4F5}</Project>
+      <Name>GRASP2OptBest4TSP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\QAP\GRASP2OptFirst4QAP\GRASP2OptFirst4QAP.csproj">
+      <Project>{C9DCE13B-7251-4CEE-8A5D-08F480FAEC06}</Project>
+      <Name>GRASP2OptFirst4QAP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\TSP\GRASP2OptFirst4TSP\GRASP2OptFirst4TSP.csproj">
+      <Project>{3420DDC7-6D6F-4D88-9095-3181361C325B}</Project>
+      <Name>GRASP2OptFirst4TSP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\QAP\GRASP2OptBest4QAP\GRASP2OptBest4QAP.csproj">
+      <Project>{C3849A7C-D487-468B-9490-8B5FD52AAA84}</Project>
+      <Name>GRASP2OptBest4QAP</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
