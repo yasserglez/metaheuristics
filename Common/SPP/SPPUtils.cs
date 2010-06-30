@@ -114,7 +114,7 @@ namespace Metaheuristics
 			while (numItems > 0) {
 				rcl = new SortedList<double, int>();
 				for (int i = 0; i < numSets; i++) {
-					cost = Math.Abs(setWeigths[i] + instance.ItemsWeight[index] - instance.SubsetsWeight[i]);
+					cost = Math.Abs((setWeigths[i] + instance.ItemsWeight[index]) - instance.SubsetsWeight[i]);
 					if(rcl.Count == 0) {
 						best = cost;
 						rcl.Add(cost, i);

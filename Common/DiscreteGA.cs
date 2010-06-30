@@ -54,9 +54,6 @@ namespace Metaheuristics
 			int[] parent1 = null;
 			int[] parent2 = null;
 			int[] descend1 = null;
-			int[] descend2 = null;
-			bool[] crossMask = new bool[numVariables];
-			bool[] mutMask = new bool[numVariables];
 			int[][] iterationPopulation = new int[PopulationSize][];
 			double[] iterationEvaluation = new double[PopulationSize];
 			int[][] newPopulation = null;
@@ -99,8 +96,6 @@ namespace Metaheuristics
 				iterationStartTime = Environment.TickCount;
 				newPopulation = new int[PopulationSize][];
 				newEvaluation = new double[PopulationSize];
-				crossMask.Initialize();
-				mutMask.Initialize();
 
 				// Apply the selection method.
 				if (BestIndividual == null || evaluation[0] < BestFitness) {
@@ -108,13 +103,12 @@ namespace Metaheuristics
 					BestFitness = evaluation[0];
 				}
 				
-				// Crossover's and Mutation's masks.
-				crossMask[Statistics.RandomDiscreteUniform(0, numVariables-1)] = true;
-				mutMask[Statistics.RandomDiscreteUniform(0, numVariables-1)] = true;
-				crossMask[Statistics.RandomDiscreteUniform(0, numVariables-1)] = true;
-				mutMask[Statistics.RandomDiscreteUniform(0, numVariables-1)] = true;
+				// Crossover's and Mutation's points.
+				int crossPoint = Statistics.RandomDiscreteUniform(0, numVariables - 1);
+				int mutFirstPoint = Statistics.RandomDiscreteUniform(0, numVariables - 1);		
+				int mutSecPoint = Statistics.RandomDiscreteUniform(0, numVariables - 1);		
 				
-				for (int i = 0; i < PopulationSize/2; i++) {
+				for (int i = 0; i < PopulationSize; i++) {
 					// Select by four individual's Tournament.
 					parent1 = population[Math.Min(Math.Min(Statistics.RandomDiscreteUniform(0,PopulationSize-1), 
 				 	                                       Statistics.RandomDiscreteUniform(0,PopulationSize-1)),
@@ -124,31 +118,23 @@ namespace Metaheuristics
 					                                       Statistics.RandomDiscreteUniform(0,PopulationSize-1)),
 					                              Math.Min(Statistics.RandomDiscreteUniform(0,PopulationSize-1),
 					                                       Statistics.RandomDiscreteUniform(0,PopulationSize-1)))];
-					// Crossover UX.
+					// Crossover 1X.
 					descend1 = new int[numVariables];
-					descend2 = new int[numVariables];
 					for (int j = 0; j < numVariables; j++) {
-						if (crossMask[j]) {
+						if (j < crossPoint) {
 							descend1[j] = parent2[j];
-							descend2[j] = parent1[j];
 						}
 						else {
 							descend1[j] = parent1[j];
-							descend2[j] = parent2[j];
 						}
 					}
 					
 					// Mutation.
 					if (Statistics.RandomUniform() < MutationProbability) {
-						for (int j = 0; j < numVariables; j++) {
-							if (mutMask[j]) {
-								descend1[j] = Statistics.RandomDiscreteUniform(LowerBounds[j], UpperBounds[j]);									
-								descend2[j] = Statistics.RandomDiscreteUniform(LowerBounds[j], UpperBounds[j]);
-							}
-						}
+						descend1[mutFirstPoint] = Statistics.RandomDiscreteUniform(LowerBounds[mutFirstPoint], UpperBounds[mutFirstPoint]);									
+						descend1[mutSecPoint] = Statistics.RandomDiscreteUniform(LowerBounds[mutSecPoint], UpperBounds[mutSecPoint]);									
 					}
 					iterationPopulation[i] = descend1;
-					iterationPopulation[i+PopulationSize/2] = descend2;
 				}
 				
 				// Handle constraints using a repairing method.

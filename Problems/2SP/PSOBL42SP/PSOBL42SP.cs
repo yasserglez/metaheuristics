@@ -3,16 +3,19 @@ using System.Collections.Generic;
 
 namespace Metaheuristics
 {
-    public class PSOBL42SP : IMetaheuristic
+    public class PSOBL42SP : IMetaheuristic, ITunableMetaheuristic
     {
+		protected double timePenalty = 250;
+		protected double popFactor = 50;
+		protected double prevConf = 0.5;
+        protected double neighConf = 0.8;
+		
         public void Start(string fileInput, string fileOutput, int timeLimit)
         {
             TwoSPInstance instance = new TwoSPInstance(fileInput);
 
             // Setting the parameters of the PSO for this instance of the problem.
-            int particlesCount = (int)Math.Max(10, instance.NumberItems / 3.0);
-            double prevConf = 0.5;
-            double neighConf = 0.8;
+            int particlesCount = (int)(popFactor * instance.NumberItems);
             int[] lowerBounds = new int[instance.NumberItems];
             int[] upperBounds = new int[instance.NumberItems];
             for (int i = 0; i < instance.NumberItems; i++) {
@@ -22,7 +25,7 @@ namespace Metaheuristics
             DiscretePSO pso = new DiscretePSOBL42SP(instance, particlesCount, prevConf, neighConf, lowerBounds, upperBounds);
 
             // Solving the problem and writing the best solution found.
-            pso.Run(timeLimit);
+            pso.Run(timeLimit - (int)timePenalty);
             int[,] coordinates = TwoSPUtils.BLCoordinates(instance, pso.BestPosition);
             TwoSPSolution solution = new TwoSPSolution(instance, coordinates);
             solution.Write(fileOutput);
@@ -50,6 +53,14 @@ namespace Metaheuristics
         	get {
         		return About.Team;
         	}
+        }
+		
+		public void UpdateParameters (double[] parameters)
+        {
+        	timePenalty = parameters[0];
+			popFactor = parameters[1];
+			prevConf = parameters[2];
+			neighConf = parameters[3];
         }
     }
 }

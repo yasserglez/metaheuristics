@@ -6,15 +6,14 @@ namespace Metaheuristics
 {
 	public class GRASP2OptBest4TSP : IMetaheuristic, ITunableMetaheuristic
 	{
-		protected double timePenalty = 0;
-		protected double rclThreshold = 0.5;
+		protected double timePenalty = 250;
+		protected double rclThreshold = 0.6;
 		
 		public void Start(string fileInput, string fileOutput, int timeLimit)
 		{
 			TSPInstance instance = new TSPInstance(fileInput);
 			
 			// Setting the parameters of the GRASP for this instance of the problem.
-			// Bigger Threshold benefits greedy over random.
 			int[] lowerBounds = new int[instance.NumberCities];
 			int[] upperBounds = new int[instance.NumberCities];
 			for (int i = 0; i < instance.NumberCities; i++) {
