@@ -23,7 +23,7 @@ namespace Tune
 			popFactors.Add(1.25);
 			popFactors.Add(1.5);
 			popFactors.Add(1.75);
-			for (int i = 2; i <= 20; i += 2) {
+			for (int i = 2; i <= 10; i += 2) {
 				popFactors.Add(i);
 			}
 			double[] truncFactors = new double[] { 0.2, 0.3, 0.4 };

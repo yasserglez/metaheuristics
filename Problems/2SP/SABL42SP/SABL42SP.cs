@@ -7,9 +7,9 @@ namespace Metaheuristics
 	public class SABL42SP : IMetaheuristic, ITunableMetaheuristic
 	{
 		protected int timePenalty = 250;
-		public int initialSolutions = 5;
-		public double levelLengthFactor = 1;
-		public double tempReduction = 0.95;
+		public int initialSolutions = 10;
+		public double levelLengthFactor = 0.05;
+		public double tempReduction = 0.75;
 
 		public void Start(string fileInput, string fileOutput, int timeLimit)
 		{

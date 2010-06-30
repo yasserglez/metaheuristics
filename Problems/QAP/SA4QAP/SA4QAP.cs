@@ -7,9 +7,9 @@ namespace Metaheuristics
 	public class SA4QAP : IMetaheuristic, ITunableMetaheuristic
 	{
 		protected int timePenalty = 250;
-		public int initialSolutions = 5;
-		public double levelLengthFactor = 1;
-		public double tempReduction = 0.95;
+		public int initialSolutions = 10;
+		public double levelLengthFactor = 0.05;
+		public double tempReduction = 0.85;
 
 		public void Start(string fileInput, string fileOutput, int timeLimit)
 		{
