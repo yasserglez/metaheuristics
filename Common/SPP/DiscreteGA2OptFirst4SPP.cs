@@ -23,5 +23,11 @@ namespace Metaheuristics
 		{
 			return SPPUtils.Fitness(Instance, individual);
 		}
+		
+		protected override int[] InitialSolution ()
+		{
+			return SPPUtils.RandomSolution(Instance);
+		}
+
 	}
 }

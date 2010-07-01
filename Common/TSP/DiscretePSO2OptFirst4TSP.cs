@@ -13,13 +13,7 @@ namespace Metaheuristics
             : base(partsCount, prevConf, neighConf, lowerBounds, upperBounds)
         {
             Instance = instance;
-            RepairEnabled = true;
 			LocalSearchEnabled = true;
-        }
-
-        protected override void Repair(int[] individual)
-        {
-            TSPUtils.Repair(Instance, individual);
         }
 
         protected override double Fitness(int[] individual)
@@ -27,6 +21,11 @@ namespace Metaheuristics
             return TSPUtils.Fitness(Instance, individual);
         }
 		
+		protected override int[] InitialSolution ()
+		{
+			return TSPUtils.RandomSolution(Instance);
+		}
+
 		protected override void LocalSearch (int[] solution)
 		{
 			TSPUtils.LocalSearch2OptFirst(Instance, solution);

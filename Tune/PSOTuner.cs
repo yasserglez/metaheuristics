@@ -8,7 +8,7 @@ namespace Tune
 	public class PSOTuner:Tuner
 	{
 		public PSOTuner (ITunableMetaheuristic metaheuristic, string dirInstances)
-			: base(metaheuristic, dirInstances, 6, new int[] { 10000 }, 5)
+			: base(metaheuristic, dirInstances, 6, new int[] { 2000, 10000 }, 5)
 		{
 		}
 		
@@ -29,8 +29,8 @@ namespace Tune
 			popFactors.Add(0.75);
 			popFactors.Add(1);
 			popFactors.Add(1.5);
-			double[] previousConfidence = new double[] { 0.25, 0.5, 0.75 };
-			double[] neighbourConfidence = new double[] { 0.25, 0.5, 0.75 };
+			double[] previousConfidence = new double[] { 0.5, 0.75 };
+			double[] neighbourConfidence = new double[] { 0.5, 0.75 };
 			
 			foreach (double timePenalty in timePenalties) {
 				foreach (double prevConf in previousConfidence) {

@@ -4,17 +4,6 @@ using System.Collections.Generic;
 
 namespace Metaheuristics
 {
-    public class Tuple
-    {
-        public Tuple(int val1, int val2)
-        {
-            Val1 = val1;
-            Val2 = val2;
-        }
-        public int Val1 { get; set; }
-        public int Val2 { get; set; }
-    }
-
     public abstract class DiscretePSO
     {
         public int ParticlesCount { get; protected set; }
@@ -25,7 +14,6 @@ namespace Metaheuristics
         // Best Neighbour Position Confidence.
         public double NeighbourConfidence { get; protected set; }
 
-        public bool RepairEnabled { get; protected set; }
         public bool LocalSearchEnabled { get; protected set; }
 
         public int[] BestPosition { get; protected set; }
@@ -38,7 +26,6 @@ namespace Metaheuristics
 			UpperBounds = upperBounds;
             PreviousConfidence = prevConf;
             NeighbourConfidence = neighConf;
-			RepairEnabled = false;
 			LocalSearchEnabled = false;
 			BestPosition = null;
 			BestFitness = 0;
@@ -46,23 +33,26 @@ namespace Metaheuristics
 
         // Evaluate an individual of the population.
         protected abstract double Fitness(int[] individual);
+		
+		// Generate the initial solution.
+		protected abstract int[] InitialSolution();
 
         // Velocity "plus" Velocity -> Velocity
-        protected virtual List<Tuple> PlusVelocity(List<Tuple> vel1, List<Tuple> vel2)
+        protected virtual List<Tuple<int,int>> PlusVelocity(List<Tuple<int,int>> vel1, List<Tuple<int,int>> vel2)
         {
-            List<Tuple> result = new List<Tuple>(vel1);
+            List<Tuple<int,int>> result = new List<Tuple<int,int>>(vel1);
             result.AddRange(vel2);
             return result;
         }
 
         // Position "minus" Position -> Velocity
-        protected virtual List<Tuple> MinusPosition(int[] pos1, int[] pos2)
+        protected virtual List<Tuple<int,int>> MinusPosition(int[] pos1, int[] pos2)
         {
-            List<Tuple> result = new List<Tuple>();
+            List<Tuple<int,int>> result = new List<Tuple<int,int>>();
 
             for (int i = 0; i < pos1.Length; i++) {
                 if (pos1[i] != pos2[i]) {
-                    result.Add(new Tuple(pos1[i], pos2[i]));
+                    result.Add(new Tuple<int,int>(pos1[i], pos2[i]));
                 }
             }
 
@@ -70,11 +60,11 @@ namespace Metaheuristics
         }
 
         // Position "plus" Velocity -> Position
-        protected virtual int[] Move(int[] pos, List<Tuple> vel)
+        protected virtual int[] Move(int[] pos, List<Tuple<int,int>> vel)
         {
             int[] result = new int[pos.Length];
             pos.CopyTo(result, 0);
-            foreach (Tuple item in vel) {
+            foreach (Tuple<int,int> item in vel) {
                 for (int i = 0; i < pos.Length; i++) {
                     if (result[i] == item.Val1) {
                         result[i] = item.Val2;
@@ -88,9 +78,9 @@ namespace Metaheuristics
         }
 
         // Scalar "times" Velocity -> Velocity
-        protected virtual List<Tuple> Times( double scalar, List<Tuple> vel)
+        protected virtual List<Tuple<int,int>> Times( double scalar, List<Tuple<int,int>> vel)
         {
-            List<Tuple> result = new List<Tuple>();
+            List<Tuple<int,int>> result = new List<Tuple<int,int>>();
             if (scalar == 0) {
                 return result;
             }
@@ -111,11 +101,6 @@ namespace Metaheuristics
             return result;
         }
 
-        // Repairing method to handle constraints.
-        protected virtual void Repair(int[] individual)
-        {
-        }
-
         // Local search method.
         protected virtual void LocalSearch(int[] individual)
         {
@@ -130,7 +115,7 @@ namespace Metaheuristics
             int numVariables = LowerBounds.Length;
             int[][] partBestPrevPosition = new int[ParticlesCount][];
             int[][] partPosition = new int[ParticlesCount][];
-            List<Tuple>[] partVelocitys = new List<Tuple>[ParticlesCount];
+            List<Tuple<int,int>>[] partVelocitys = new List<Tuple<int,int>>[ParticlesCount];
             double[] partBestPrevFitness = new double[ParticlesCount];
 
             double rp = 1;
@@ -139,23 +124,14 @@ namespace Metaheuristics
             // Generate the initial random positions.
             for (int k = 0; k < ParticlesCount; k++) {
                 partPosition[k] = new int[numVariables];
-                partVelocitys[k] = new List<Tuple>();
-                partVelocitys[k].Add(new Tuple(Statistics.RandomDiscreteUniform(LowerBounds[0], UpperBounds[0]),
+                partVelocitys[k] = new List<Tuple<int,int>>();
+                partVelocitys[k].Add(new Tuple<int,int>(Statistics.RandomDiscreteUniform(LowerBounds[0], UpperBounds[0]),
                                                Statistics.RandomDiscreteUniform(LowerBounds[1], UpperBounds[1])));
-                for (int i = 0; i < numVariables; i++) {
-                    partPosition[k][i] = Statistics.RandomDiscreteUniform(LowerBounds[i], UpperBounds[i]);
-                }
+                partPosition[k] = InitialSolution();
                 partBestPrevPosition[k] = partPosition[k];
             }
 
             BestPosition = null;
-
-            // Handle constraints using a repairing method.
-            if (RepairEnabled) {
-                for (int k = 0; k < ParticlesCount; k++) {
-                    Repair(partPosition[k]);
-                }
-            }
 
             // Run a local search method for each individual in the population.
             if (LocalSearchEnabled) {
@@ -184,14 +160,15 @@ namespace Metaheuristics
                     rg = Statistics.RandomUniform();
                     rp = Statistics.RandomUniform();
 
-                    List<Tuple> vel = PlusVelocity(partVelocitys[i], 
+                    List<Tuple<int,int>> vel = PlusVelocity(partVelocitys[i], 
                                                    PlusVelocity(Times(rp*PreviousConfidence, MinusPosition(partBestPrevPosition[i], partPosition[i])), 
                                                                 Times(rg*NeighbourConfidence, MinusPosition(BestPosition, partPosition[i]))));
                     partPosition[i] = Move(partPosition[i], vel);
                 }
 
                 // Run a local search method for the position of each particle.
-                if (LocalSearchEnabled) {
+                if (LocalSearchEnabled && 
+				    Environment.TickCount - startTime < timeLimit) {
                     for (int k = 0; k < ParticlesCount; k++) {
                         LocalSearch(partPosition[k]);
                     }

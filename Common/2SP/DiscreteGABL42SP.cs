@@ -23,5 +23,10 @@ namespace Metaheuristics
 		{
 			return TwoSPUtils.Fitness(Instance, TwoSPUtils.BLCoordinates(Instance, individual));
 		}
+		
+		protected override int[] InitialSolution ()
+		{
+			return TwoSPUtils.RandomSolution(Instance);
+		}
 	}
 }

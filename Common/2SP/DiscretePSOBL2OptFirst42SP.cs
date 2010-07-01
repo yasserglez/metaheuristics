@@ -13,19 +13,19 @@ namespace Metaheuristics
             : base(partsCount, prevConf, neighConf, lowerBounds, upperBounds)
         {
             Instance = instance;
-            RepairEnabled = true;
 			LocalSearchEnabled = true;
-        }
-
-        protected override void Repair(int[] individual)
-        {
-            TwoSPUtils.Repair(Instance, individual);
         }
 
         protected override double Fitness(int[] individual)
         {
             return TwoSPUtils.Fitness(Instance, TwoSPUtils.BLCoordinates(Instance, individual));
         }
+		
+		protected override int[] InitialSolution ()
+		{
+			return TwoSPUtils.RandomSolution(Instance);
+		}
+
 		
 		protected override void LocalSearch (int[] solution)
 		{

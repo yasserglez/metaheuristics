@@ -29,5 +29,11 @@ namespace Metaheuristics
 		{
 			return QAPUtils.Fitness(Instance, individual);
 		}
+		
+		protected override int[] InitialSolution ()
+		{
+			return QAPUtils.RandomSolution(Instance);
+		}
+
 	}
 }

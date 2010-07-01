@@ -10,13 +10,17 @@ namespace Tune
 		{
 			ITunableMetaheuristic[] algorithms = new ITunableMetaheuristic[] {
 				new GA2OptFirst4SPP(),
-//				new GA4SPP(),
+				new GA4SPP(),
+				new GA2OptFirst4TSP(),
+				new GA4TSP(),
 //				new GA2OptFirst4QAP(),
 //				new GA4QAP(),
+//				new GABL2OptFirst42SP(),
+//				new GABL42SP()
 //				new GA2OptBest4QAP(),
 //				new GA2OptBest4TSP(),
 //				new GA2OptBest4SPP(),
-//				new GABL2OptFirst42SP(),
+//				new GABL2OptBest42SP(),
 //				new GANPS42SP(),
 //				new PSO2OptFirst4QAP(),
 //				new PSO4QAP(),

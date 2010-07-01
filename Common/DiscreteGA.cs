@@ -31,6 +31,9 @@ namespace Metaheuristics
 		// Evaluate an individual of the population.
 		protected abstract double Fitness(int[] individual);
 		
+		// Generate the initial solution.
+		protected abstract int[] InitialSolution();
+		
 		// Repairing method to handle constraints.
 		protected virtual void Repair(int[] individual)
 		{
@@ -54,6 +57,7 @@ namespace Metaheuristics
 			int[] parent1 = null;
 			int[] parent2 = null;
 			int[] descend1 = null;
+			int[] descend2 = null;
 			int[][] iterationPopulation = new int[PopulationSize][];
 			double[] iterationEvaluation = new double[PopulationSize];
 			int[][] newPopulation = null;
@@ -63,14 +67,7 @@ namespace Metaheuristics
 			for (int k = 0; k < PopulationSize; k++) {
 				population[k] = new int[numVariables];
 				for (int i = 0; i < numVariables; i++) {
-					population[k][i] = Statistics.RandomDiscreteUniform(LowerBounds[i], UpperBounds[i]);
-				}
-			}
-			
-			// Handle constraints using a repairing method.
-			if (RepairEnabled) {
-				for (int k = 0; k < PopulationSize; k++) {
-					Repair(population[k]);
+					population[k] = InitialSolution();
 				}
 			}
 			
@@ -93,6 +90,7 @@ namespace Metaheuristics
 			maxIterationTime = Environment.TickCount - startTime;
 			
 			while (Environment.TickCount - startTime < timeLimit - maxIterationTime) {
+				
 				iterationStartTime = Environment.TickCount;
 				newPopulation = new int[PopulationSize][];
 				newEvaluation = new double[PopulationSize];
@@ -108,7 +106,7 @@ namespace Metaheuristics
 				int mut1stPoint = Statistics.RandomDiscreteUniform(0, numVariables - 1);		
 				int mut2ndPoint = Statistics.RandomDiscreteUniform(0, numVariables - 1);		
 				 
-				for (int i = 0; i < PopulationSize; i++) {
+				for (int i = 0; i < PopulationSize/2; i++) {
 					// Select by four individual's Tournament.
 					parent1 = population[Math.Min(Math.Min(Statistics.RandomDiscreteUniform(0,PopulationSize-1), 
 				 	                                       Statistics.RandomDiscreteUniform(0,PopulationSize-1)),
@@ -120,12 +118,15 @@ namespace Metaheuristics
 					                                       Statistics.RandomDiscreteUniform(0,PopulationSize-1)))];
 					// Crossover 1X.
 					descend1 = new int[numVariables];
+					descend2 = new int[numVariables];
 					for (int j = 0; j < numVariables; j++) {
 						if (j < crossPoint) {
 							descend1[j] = parent2[j];
+							descend2[j] = parent1[j];
 						}
 						else {
 							descend1[j] = parent1[j];
+							descend2[j] = parent2[j];
 						}
 					}
 					
@@ -133,8 +134,11 @@ namespace Metaheuristics
 					if (Statistics.RandomUniform() < MutationProbability) {
 						descend1[mut1stPoint] = Statistics.RandomDiscreteUniform(LowerBounds[mut1stPoint], UpperBounds[mut1stPoint]);									
 						descend1[mut2ndPoint] = Statistics.RandomDiscreteUniform(LowerBounds[mut2ndPoint], UpperBounds[mut2ndPoint]);									
+						descend2[mut1stPoint] = Statistics.RandomDiscreteUniform(LowerBounds[mut1stPoint], UpperBounds[mut1stPoint]);									
+						descend2[mut2ndPoint] = Statistics.RandomDiscreteUniform(LowerBounds[mut2ndPoint], UpperBounds[mut2ndPoint]);									
 					}
 					iterationPopulation[i] = descend1;
+					iterationPopulation[i + PopulationSize/2] = descend1;
 				}
 				
 				// Handle constraints using a repairing method.
@@ -145,7 +149,8 @@ namespace Metaheuristics
 				}
 				
 				// Run a local search method for each individual in the population.
-				if (LocalSearchEnabled) {
+				if (LocalSearchEnabled && 
+				    Environment.TickCount - startTime < timeLimit) {
 					for (int k = 0; k < PopulationSize; k++) {
 						LocalSearch(iterationPopulation[k]);
 					}
@@ -180,5 +185,6 @@ namespace Metaheuristics
 				maxIterationTime = (maxIterationTime < iterationTime) ? iterationTime : maxIterationTime;				
 			}
 		}
+		
 	}
 }
