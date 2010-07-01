@@ -7,7 +7,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{DFC8A759-B4BD-4C80-ADF3-BC0F056CF91C}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>SS4QAP</RootNamespace>
+    <RootNamespace>Metaheuristics</RootNamespace>
     <AssemblyName>SS4QAP</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
   </PropertyGroup>
@@ -31,7 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="Metaheuristic, Version=1.0.3814.42444, Culture=neutral, PublicKeyToken=null">
+    <Reference Include="Metaheuristic, Version=1.0.3825.24303, Culture=neutral, PublicKeyToken=null">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\Metaheuristic.dll</HintPath>
     </Reference>

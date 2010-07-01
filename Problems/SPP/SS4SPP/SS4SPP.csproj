@@ -7,7 +7,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{E84FAE46-BF5D-4D6D-B5FD-E9EAF72C1EF8}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>SS4SPP</RootNamespace>
+    <RootNamespace>Metaheuristics</RootNamespace>
     <AssemblyName>SS4SPP</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
   </PropertyGroup>
@@ -31,7 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="Metaheuristic, Version=1.0.3814.42444, Culture=neutral, PublicKeyToken=null">
+    <Reference Include="Metaheuristic, Version=1.0.3825.24303, Culture=neutral, PublicKeyToken=null">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\Metaheuristic.dll</HintPath>
     </Reference>

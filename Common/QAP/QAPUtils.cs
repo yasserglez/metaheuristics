@@ -222,6 +222,18 @@ namespace Metaheuristics
 				numFacilities--;
 			}
 		}
-	
+		
+		public static double Distance(QAPInstance instance, int[] a, int[] b)
+		{
+			double distance = 0;
+			
+			for (int i = 0; i < a.Length; i++) {
+				if (a[i] != b[i]) {
+					distance += 1;
+				}
+			}
+			
+			return distance;
+		}	
 	}
 }

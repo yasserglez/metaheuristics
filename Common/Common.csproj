@@ -31,10 +31,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="Metaheuristic, Version=1.0.3814.42444, Culture=neutral, PublicKeyToken=null">
+    <Reference Include="Metaheuristic, Version=1.0.3825.24303, Culture=neutral, PublicKeyToken=null">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Metaheuristic.dll</HintPath>
     </Reference>
+    <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.cs" />
@@ -105,6 +106,20 @@
     <Compile Include="2SP\DiscreteSABL42SP.cs" />
     <Compile Include="2SP\DiscreteUMDABL42SP.cs" />
     <Compile Include="ITunableMetaheuristic.cs" />
+    <Compile Include="DiscreteSS.cs" />
+    <Compile Include="TSP\DiscreteSS4TSP.cs" />
+    <Compile Include="TSP\DiscreteSS2OptBest4TSP.cs" />
+    <Compile Include="TSP\DiscreteSS2OptFirst4TSP.cs" />
+    <Compile Include="QAP\DiscreteSS4QAP.cs" />
+    <Compile Include="QAP\DiscreteSS2OptFirst4QAP.cs" />
+    <Compile Include="QAP\DiscreteSS2OptBest4QAP.cs" />
+    <Compile Include="SPP\DiscreteSS4SPP.cs" />
+    <Compile Include="SPP\DiscreteSS2OptFirst4SPP.cs" />
+    <Compile Include="SPP\DiscreteSS2OptBest4SPP.cs" />
+    <Compile Include="2SP\DiscreteSSBL42SP.cs" />
+    <Compile Include="2SP\DiscreteSSBL2OptFirst42SP.cs" />
+    <Compile Include="2SP\DiscreteSSBL2OptBest42SP.cs" />
+    <Compile Include="2SP\DiscreteSSNPS42SP.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

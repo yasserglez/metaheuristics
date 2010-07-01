@@ -217,5 +217,18 @@ namespace Metaheuristics
 				numCities--;
 			}
 		}
+		
+		public static double Distance(TSPInstance instance, int[] a, int[] b)
+		{
+			double distance = 0;
+			
+			for (int i = 0; i < a.Length - 1; i++) {
+				if (a[i] != b[i] || a[i+1] != b[i+1]) {
+					distance += 1;
+				}
+			}
+			
+			return distance;
+		}
 	}
 }
