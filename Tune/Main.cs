@@ -9,29 +9,12 @@ namespace Tune
 		public static void Main(string[] args)
 		{
 			ITunableMetaheuristic[] algorithms = new ITunableMetaheuristic[] {
-				new GA2OptFirst4SPP(),
-				new GA4SPP(),
-				new GA2OptFirst4TSP(),
-				new GA4TSP(),
-//				new GA2OptFirst4QAP(),
-//				new GA4QAP(),
-//				new GABL2OptFirst42SP(),
-//				new GABL42SP()
-//				new GA2OptBest4QAP(),
-//				new GA2OptBest4TSP(),
-//				new GA2OptBest4SPP(),
-//				new GABL2OptBest42SP(),
-//				new GANPS42SP(),
-//				new PSO2OptFirst4QAP(),
-//				new PSO4QAP(),
-//				new PSO2OptFirst4TSP(),
-//				new PSO4TSP(),
-//				new PSOBL2OptFirst42SP(),
-//				new PSOBL42SP(),
-//				new PSO2OptBest4TSP(),
-//				new PSO2OptBestQAP(),
-//				new PSOBL2OptBest42SP(),
-//				new PSONPS42SP(),				
+				new SS4TSP(),
+				new SS2OptFirst4TSP(),
+				new SS4QAP(),
+				new SS2OptFirst4QAP(),
+				new SSBL42SP(),
+				new SSBL2OptFirst42SP(),
 			};
 			
 			algorithms.ParallelForEach(algorithm => {
@@ -69,6 +52,9 @@ namespace Tune
 					break;
 				case MetaheuristicType.PSO:
 					tuner = new PSOTuner(algorithm, instancesDir);
+					break;
+				case MetaheuristicType.SS:
+					tuner = new SSTuner(algorithm, instancesDir);
 					break;
 				default:
 					break;
