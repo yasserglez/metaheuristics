@@ -5,8 +5,8 @@ namespace Metaheuristics
 {
 	public class GA2OptFirst4TSP : IMetaheuristic, ITunableMetaheuristic
 	{
-		protected double timePenalty = 250;
-		protected double popFactor = 0.25;
+		protected double timePenalty = 0;
+		protected double popFactor = 0.1;
 		protected double mutProbability = 0.3;
 		
 		public void Start(string fileInput, string fileOutput, int timeLimit)

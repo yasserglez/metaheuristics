@@ -29,5 +29,11 @@ namespace Metaheuristics
 		{
 			return TSPUtils.Fitness(Instance, individual);
 		}
+		
+		protected override int[] InitialSolution ()
+		{
+			return TSPUtils.RandomSolution(Instance);
+		}
+
 	}
 }

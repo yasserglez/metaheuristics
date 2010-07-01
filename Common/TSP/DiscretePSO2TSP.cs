@@ -13,17 +13,17 @@ namespace Metaheuristics
             : base(partsCount, prevConf, neighConf, lowerBounds, upperBounds)
         {
             Instance = instance;
-            RepairEnabled = true;
-        }
-
-        protected override void Repair(int[] individual)
-        {
-            TSPUtils.Repair(Instance, individual);
-        }
+		}
 
         protected override double Fitness(int[] individual)
         {
             return TSPUtils.Fitness(Instance, individual);
         }
+		
+		protected override int[] InitialSolution ()
+		{
+			return TSPUtils.RandomSolution(Instance);
+		}
+
     }
 }

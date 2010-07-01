@@ -10,7 +10,7 @@ namespace Metaheuristics
 		{
 			double deviation = 0;
 			
-			for (int subset = 1; subset < instance.NumberSubsets; subset++) {
+			for (int subset = 0; subset < instance.NumberSubsets; subset++) {
 				double subsetWeight = 0;
 				for (int item = 0; item < instance.NumberItems; item++) {
 					if (subset == assignment[item]) {

@@ -8,10 +8,10 @@ namespace Test
 		public static void Main(string[] args)
 		{
 		    int time = 10000;
-			string input = "../../../Problems/2SP/Instances/inst1.in";
-			string output = "../../../Problems/2SP/Instances/inst1.out";
-			(new BL2OptFirst42SP()).Start(input, output + ".BL2OptFirst", time);
-			(new BL2OptBest42SP()).Start(input, output + ".BL2OptBest", time);
+			string input = "../../../Problems/SPP/Instances/inst2.in";
+			string output = "../../../Problems/SPP/Instances/inst2.out";
+			(new GA4SPP()).Start(input, output + ".GA4SPP", time);
+			(new SA4SPP()).Start(input, output + ".SA4SPP", time);
 		}
 	}
 }
