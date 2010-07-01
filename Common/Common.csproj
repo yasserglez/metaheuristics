@@ -31,7 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="Metaheuristic, Version=1.0.3814.42444, Culture=neutral, PublicKeyToken=null">
+    <Reference Include="Metaheuristic, Version=1.0.3825.24303, Culture=neutral, PublicKeyToken=null">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Metaheuristic.dll</HintPath>
     </Reference>
@@ -105,6 +105,8 @@
     <Compile Include="2SP\DiscreteSABL42SP.cs" />
     <Compile Include="2SP\DiscreteUMDABL42SP.cs" />
     <Compile Include="ITunableMetaheuristic.cs" />
+    <Compile Include="DiscreteTS.cs" />
+    <Compile Include="Utils.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
