@@ -164,6 +164,29 @@ namespace Metaheuristics
 			}
 		}		
 	
+		// Implementation of the Tabu Movement of two movements.
+		public static Tuple<int, int> GetTabu(int[] source, int[] destiny)
+		{
+			int firstPos = -1;
+			int secondPos = -1;
+			
+			for (int i = 0; i < source.Length; i++) {
+				if (source[i] != destiny[i]) {
+					firstPos = i;
+					break;
+				}
+			}
+			
+			for (int i = firstPos + 1; i < source.Length; i++) {
+				if (source[firstPos] != destiny[i]) {
+					secondPos = i;
+					break;
+				}
+			}
+			
+			return new Tuple<int, int>(firstPos, secondPos);
+		}
+		
 		// Implementation of the GRC solution's construction algorithm.
 		public static void GRCSolution(TSPInstance instance, int[] path, double rclThreshold)
 		{
@@ -217,5 +240,6 @@ namespace Metaheuristics
 				numCities--;
 			}
 		}
+	
 	}
 }
