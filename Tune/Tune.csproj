@@ -45,6 +45,7 @@
     <Compile Include="SATuner.cs" />
     <Compile Include="GRASPTuner.cs" />
     <Compile Include="PSOTuner.cs" />
+    <Compile Include="TSTuner.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Problems\TSP\UMDA2OptBest4TSP\UMDA2OptBest4TSP.csproj">
@@ -362,6 +363,10 @@
     <ProjectReference Include="..\Problems\2SP\UMDABL42SP\UMDABL42SP.csproj">
       <Project>{AFD08309-92BD-49DF-A021-2389160FAF5B}</Project>
       <Name>UMDABL42SP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\2SP\TSBL42SP\TSBL42SP.csproj">
+      <Project>{71C70C39-B154-4B0E-9E45-480C63520E48}</Project>
+      <Name>TSBL42SP</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

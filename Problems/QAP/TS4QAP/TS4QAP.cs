@@ -2,13 +2,24 @@ using System;
 
 namespace Metaheuristics
 {
-	public class TS42SP : IMetaheuristic
+	public class TS4QAP : IMetaheuristic, ITunableMetaheuristic
 	{
+		protected int timePenalty = 250;
+		public double neighborChecksFactor = 0.75;
+		public double tabuListFactor = 0.85;
+		public double rclTreshold = 0.2;
+		
 		public void Start(string inputFile, string outputFile, int timeLimit)
 		{
-			throw new NotImplementedException();
+			QAPInstance instance = new QAPInstance(inputFile);
+			int neighborChecks = (int) Math.Ceiling(neighborChecksFactor * (instance.NumberFacilities * (instance.NumberFacilities - 1)));
+			int tabuListLength = (int) Math.Ceiling(tabuListFactor * instance.NumberFacilities);
+			DiscreteTS ts = new DiscreteTS4QAP(instance, rclTreshold, tabuListLength, neighborChecks);
+			ts.Run(timeLimit - timePenalty);
+			QAPSolution solution = new QAPSolution(instance, ts.BestSolution);
+			solution.Write(outputFile);
 		}
-
+		
 		public string Name {
 			get {
 				return "TS for QAP";
@@ -31,6 +42,13 @@ namespace Metaheuristics
 			get {
 				return About.Team;
 			}
+		}
+			
+		public void UpdateParameters (double[] parameters)	{
+			timePenalty = (int) parameters[0];
+			neighborChecksFactor = parameters[1];
+			tabuListFactor = parameters[2];
+			rclTreshold = parameters[3];
 		}
 	}
 }

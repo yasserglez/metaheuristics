@@ -10,12 +10,13 @@ namespace Metaheuristics
 		public int initialSolutions = 2;
 		public double levelLengthFactor = 0.75;
 		public double tempReduction = 0.85;
+		public double rclTreshold = 0.2;
 		
 		public void Start(string fileInput, string fileOutput, int timeLimit)
 		{
 			TSPInstance instance = new TSPInstance(fileInput);
 			int levelLength = (int) Math.Ceiling(levelLengthFactor * (instance.NumberCities * (instance.NumberCities - 1)));
-			DiscreteSA sa = new DiscreteSA4TSP(instance, initialSolutions, levelLength, tempReduction);
+			DiscreteSA sa = new DiscreteSA4TSP(instance, rclTreshold, initialSolutions, levelLength, tempReduction);
 			sa.Run(timeLimit - timePenalty);
 			TSPSolution solution = new TSPSolution(instance, sa.BestSolution);
 			solution.Write(fileOutput);

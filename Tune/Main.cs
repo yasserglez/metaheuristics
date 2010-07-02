@@ -9,29 +9,98 @@ namespace Tune
 		public static void Main(string[] args)
 		{
 			ITunableMetaheuristic[] algorithms = new ITunableMetaheuristic[] {
-//				new GA4SPP(),
-//				new GA2OptFirst4SPP(),
-//				new GA4TSP(),
-//				new GA2OptFirst4TSP(),
-//				new GA4QAP(),
-//				new GA2OptFirst4QAP(),
-//				new GABL42SP()
-//				new GABL2OptFirst42SP(),
-//				new GA2OptBest4QAP(),
-//				new GA2OptBest4TSP(),
-//				new GA2OptBest4SPP(),
-//				new GABL2OptBest42SP(),
-//				new GANPS42SP(),
-//				new PSO2OptFirst4QAP(),
-//				new PSO4QAP(),
-//				new PSO2OptFirst4TSP(),
-//				new PSO4TSP(),
-//				new PSOBL2OptFirst42SP(),
-//				new PSOBL42SP(),
-//				new PSO2OptBest4TSP(),
-//				new PSO2OptBestQAP(),
-//				new PSOBL2OptBest42SP(),
-//				new PSONPS42SP(),				
+				#region To Implement
+//				new ACOBL42SP(),
+//				new ACONPS42SP(),
+//				new SSNPS42SP(),
+//				new TSNPS42SP(),
+				
+//				new ACO4TSP(),		
+//				new SS4TSP(),		
+//				new TS4TSP(),		
+				
+//				new ACO4QAP(),
+//				new SS4QAP(),
+//				new TS4QAP(),
+				
+//				new ACO4SPP(),		
+//				new SS4SPP(),		
+//				new TS4SPP(),		
+				#endregion
+				
+				#region To be Tuned
+//				new GA2OptBest4TSP(), /*A*/
+//				new GA4TSP(), /*A*/ /*Ya*/
+//				new GA2OptFirst4TSP(), /*A*/ /*Ya*/
+//				new PSO2OptBest4TSP(), /*A*/
+//				new PSO2OptFirst4TSP(),	/*A*/ /*Ya*/
+//				new PSO4TSP(), /*A*/ /*Ya*/
+//				new GRASP2OptBest4TSP(), /*A*/ /*Ya*/
+//				new GRASP2OptFirst4TSP(), /*A*/	/*Ya*/
+				new TS4TSP(), /*A*/
+//				new SA4TSP(),		
+//				new UMDA2OptBest4TSP(),		
+//				new UMDA2OptFirst4TSP(),		
+//				new UMDA4TSP(),	
+//				
+//				new GA2OptBest4QAP(), /*A*/
+//				new GA2OptFirst4QAP(), /*A*/ /*Ya*/
+//				new GA4QAP(), /*A*/ /*Ya*/
+//				new PSO2OptBest4QAP(), /*A*/ 
+//				new PSO2OptFirst4QAP(), /*A*/ /*Ya*/
+//				new PSO4QAP(), /*A*/ /*Ya*/
+//				new GRASP2OptBest4QAP(), /*A*/ /*Ya*/
+//				new GRASP2OptFirst4QAP(), /*A*/ /*Ya*/
+				new TS4QAP(), /*A*/
+//				new SA4QAP(),
+//				new UMDA2OptBest4QAP(),
+//				new UMDA2OptFirst4QAP(),
+//				new UMDA4QAP(),		
+//				
+//				new GA2OptBest4SPP(), /*A*/
+//				new GA2OptFirst4SPP(),	/*A*/	
+//				new GA4SPP(), /*A*/
+//				new GRASP2OptBest4SPP(), /*A*/
+//				new GRASP2OptFirst4SPP(), /*A*/	
+				new TS4SPP(), /*A*/
+//				new SA4SPP(),
+//				new UMDA2OptBest4SPP(),		
+//				new UMDA2OptFirst4SPP(),		
+//				new UMDA4SPP(),		
+//				
+//				new GABL2OptBest42SP(), /*A*/
+//				new GABL2OptFirst42SP(), /*A*/
+//				new GABL42SP(), /*A*/
+//				new GANPS42SP(), /*A*/
+//				new PSOBL2OptBest42SP(), /*A*/
+//				new PSOBL2OptFirst42SP(), /*A*/
+//				new PSOBL42SP(), /*A*/
+//				new PSONPS42SP(), /*A*/
+				new TSBL42SP(), /*A*/
+				new TSNPS42SP(), /*A*/
+//				new SANPS42SP(),
+//				new SABL42SP(),
+//				new UMDABL2OptBest42SP(),
+//				new UMDABL2OptFirst42SP(),
+//				new UMDABL42SP(),
+//				new UMDANPS42SP(),
+				#endregion
+				
+				#region Already Tuned
+//				new BL2OptBest42SP(),
+//				new BL2OptFirst42SP(),
+//				new NPS2OptFirst42SP(),
+				
+//				new TwoOptBest4TSP(),		
+//				new TwoOptFirst4TSP(),		
+				
+//				new TwoOptBest4SPP(),		
+//				new TwoOptFirst4SPP(),		
+				
+//				new TwoOptBest4QAP(),
+//				new TwoOptFirst4QAP(),
+				#endregion
+							
 			};
 			
 			algorithms.ParallelForEach(algorithm => {
@@ -40,6 +109,7 @@ namespace Tune
 				case ProblemType.QAP:
 					instancesDir = "../../../Problems/QAP/Instances";
 					break;
+					
 				case ProblemType.SPP:
 					instancesDir = "../../../Problems/SPP/Instances";
 					break;
@@ -69,6 +139,9 @@ namespace Tune
 					break;
 				case MetaheuristicType.PSO:
 					tuner = new PSOTuner(algorithm, instancesDir);
+					break;
+				case MetaheuristicType.TS:
+					tuner = new TSTuner(algorithm, instancesDir);
 					break;
 				default:
 					break;

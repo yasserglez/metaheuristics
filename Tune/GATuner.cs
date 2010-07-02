@@ -19,13 +19,12 @@ namespace Tune
 //			popSize.Add(2);
 //			popSize.Add(4);
 //			popSize.Add(6);
-//			popSize.Add(8);
+			popSize.Add(8);
 			popSize.Add(10);
+			popSize.Add(16);
 			popSize.Add(20);
 	        popSize.Add(30);
 			popSize.Add(40);
-			popSize.Add(50);
-			popSize.Add(60);
 			double[] mutProbabilities = new double[] { 0.1, 0.2, 0.3 };
 			
 			foreach (double timePenalty in timePenalties) {

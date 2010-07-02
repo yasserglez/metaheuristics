@@ -122,6 +122,11 @@
     <Compile Include="2SP\DiscreteSSNPS42SP.cs" />
     <Compile Include="DiscreteTS.cs" />
     <Compile Include="Utils.cs" />
+    <Compile Include="TSP\DiscreteTS4TSP.cs" />
+    <Compile Include="SPP\DiscreteTS4SPP.cs" />
+    <Compile Include="QAP\DiscreteTS4QAP.cs" />
+    <Compile Include="2SP\DiscreteTSBL42SP.cs" />
+    <Compile Include="2SP\DiscreteTSNPS42SP.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

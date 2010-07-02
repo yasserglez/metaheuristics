@@ -359,6 +359,10 @@
       <Project>{9AA09190-3651-4985-B1A7-EDB5F4D9544E}</Project>
       <Name>UMDANPS42SP</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Problems\2SP\TSBL42SP\TSBL42SP.csproj">
+      <Project>{71C70C39-B154-4B0E-9E45-480C63520E48}</Project>
+      <Name>TSBL42SP</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

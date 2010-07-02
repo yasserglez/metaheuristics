@@ -14,7 +14,7 @@ namespace Tune
 		
 		protected override IEnumerable<double[]> EnumerateParameters()
 		{
-			double[] rclThresholds = new double[] { 0.30, 0.40, 0.50, 0.60, 0.75};
+			double[] rclThresholds = new double[] { 0.20, 0.30, 0.40, 0.50, 0.60};
 			double[] timePenalties = new double[] { 0, 250};
 		
 			foreach (double timePenalty in timePenalties) {
