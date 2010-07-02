@@ -5,10 +5,10 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{71C70C39-B154-4B0E-9E45-480C63520E48}</ProjectGuid>
+    <ProjectGuid>{744DC3E0-A15C-4BD1-AE6F-12941A73A272}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>TSBL42SP</RootNamespace>
-    <AssemblyName>TSBL42SP</AssemblyName>
+    <RootNamespace>Metaheuristics</RootNamespace>
+    <AssemblyName>ACO2OptBest4SPP</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -37,7 +37,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="TSBL42SP.cs" />
+    <Compile Include="ACO2OptBest4SPP.cs" />
     <Compile Include="AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
