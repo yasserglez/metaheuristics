@@ -8,8 +8,8 @@ namespace Metaheuristics
 		public TSPInstance Instance { get; protected set; }
 		
 		
-		public DiscreteGRASP2OptFirst4TSP (TSPInstance instance, double rclThreshold, int[] lowerBounds, int[] upperBounds)
-			:base(rclThreshold, lowerBounds, upperBounds)
+		public DiscreteGRASP2OptFirst4TSP (TSPInstance instance, double rclThreshold)
+			:base(rclThreshold)
 		{
 			Instance = instance;
 		}
@@ -19,9 +19,9 @@ namespace Metaheuristics
 			return TSPUtils.Fitness(Instance, solution);
 		}
 		
-		protected override void GRCSolution (int[] solution)
+		protected override int[] GRCSolution ()
 		{
-			TSPUtils.GRCSolution(Instance, solution, RCLThreshold);
+			return TSPUtils.GRCSolution(Instance, RCLThreshold);
 		}
 		
 		protected override void LocalSearch (int[] solution)

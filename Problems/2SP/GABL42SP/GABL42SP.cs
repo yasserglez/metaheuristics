@@ -5,7 +5,7 @@ namespace Metaheuristics
 {
 	public class GABL42SP : IMetaheuristic, ITunableMetaheuristic
 	{
-		protected double popFactor = 30;
+		protected double popSize = 30;
 		protected double mutProbability = 0.2;
 		protected double timePenalty = 250;
 
@@ -14,14 +14,13 @@ namespace Metaheuristics
 			TwoSPInstance instance = new TwoSPInstance(fileInput);
 
 			// Setting the parameters of the GA for this instance of the problem.
-			int popSize = (int) Math.Ceiling(popFactor * instance.NumberItems);
 			int[] lowerBounds = new int[instance.NumberItems];
 			int[] upperBounds = new int[instance.NumberItems];
 			for (int i = 0; i < instance.NumberItems; i++) {
 				lowerBounds[i] = 0;
 				upperBounds[i] = instance.NumberItems - 1;
 			}
-			DiscreteGA genetic = new DiscreteGABL42SP(instance, popSize, mutProbability, lowerBounds, upperBounds);
+			DiscreteGA genetic = new DiscreteGABL42SP(instance, (int)popSize, mutProbability, lowerBounds, upperBounds);
 
 			// Solving the problem and writing the best solution found.
 			genetic.Run(timeLimit - (int)timePenalty);
@@ -57,7 +56,7 @@ namespace Metaheuristics
 		public void UpdateParameters(double[] parameters)
 		{
 			timePenalty = parameters[0];
-			popFactor = parameters[1];
+			popSize = parameters[1];
 			mutProbability = parameters[2];
 		}		
 	}

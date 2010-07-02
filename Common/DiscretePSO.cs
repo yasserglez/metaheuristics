@@ -152,8 +152,6 @@ namespace Metaheuristics
                 }
             }
 			
-			maxIterationTime = Environment.TickCount - startTime;
-
             while (Environment.TickCount - startTime < timeLimit - maxIterationTime) {
 				iterationStartTime = Environment.TickCount;
                 for (int i = 0; i < ParticlesCount; i++) {

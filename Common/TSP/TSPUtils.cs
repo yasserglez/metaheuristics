@@ -167,30 +167,24 @@ namespace Metaheuristics
 		// Implementation of the Tabu Movement of two movements.
 		public static Tuple<int, int> GetTabu(int[] source, int[] destiny)
 		{
-			int firstPos = -1;
-			int secondPos = -1;
+			Tuple<int, int> tabu = new Tuple<int, int>(-1, -1);
 			
 			for (int i = 0; i < source.Length; i++) {
 				if (source[i] != destiny[i]) {
-					firstPos = i;
+					tabu.Val1 = Math.Min(source[i],destiny[i]);
+					tabu.Val2 = Math.Max(source[i],destiny[i]);
 					break;
 				}
 			}
 			
-			for (int i = firstPos + 1; i < source.Length; i++) {
-				if (source[firstPos] != destiny[i]) {
-					secondPos = i;
-					break;
-				}
-			}
-			
-			return new Tuple<int, int>(firstPos, secondPos);
+			return tabu;
 		}
 		
 		// Implementation of the GRC solution's construction algorithm.
-		public static void GRCSolution(TSPInstance instance, int[] path, double rclThreshold)
+		public static int[] GRCSolution(TSPInstance instance, double rclThreshold)
 		{
 			int numCities = instance.NumberCities;
+			int[] path = new int[instance.NumberCities];
 			int totalCities = numCities;
 			int index = 0;
 			double best = 0;
@@ -239,6 +233,8 @@ namespace Metaheuristics
 				path[index] = city;
 				numCities--;
 			}
+			
+			return path;
 		}
 		
 		public static double Distance(TSPInstance instance, int[] a, int[] b)

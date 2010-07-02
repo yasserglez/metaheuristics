@@ -5,11 +5,13 @@ namespace Metaheuristics
 	public class DiscreteSA4TSP : DiscreteSA
 	{
 		public TSPInstance Instance { get; protected set; }
+		public  double RclTreshold { get; protected set; }
 		
-		public DiscreteSA4TSP(TSPInstance instance, int initialSolutions, int levelLength, double tempReduction)
+		public DiscreteSA4TSP(TSPInstance instance, double rclTreshold, int initialSolutions, int levelLength, double tempReduction)
 			: base(initialSolutions, levelLength, tempReduction)
 		{
 			Instance = instance;
+			RclTreshold = rclTreshold;
 		}
 		
 		protected override double Fitness(int[] solution)
@@ -19,7 +21,7 @@ namespace Metaheuristics
 		
 		protected override int[] InitialSolution()
 		{
-			return TSPUtils.RandomSolution(Instance);
+			return TSPUtils.GRCSolution(Instance, RclTreshold);
 		}
 		
 		protected override int[] GetNeighbor(int[] solution)

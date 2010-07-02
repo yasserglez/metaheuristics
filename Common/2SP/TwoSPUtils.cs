@@ -568,6 +568,22 @@ namespace Metaheuristics
 			}
 			
 			return distance;
-		}				
+		}
+		
+		// Implementation of the Tabu Movement of two movements.
+		public static Tuple<int, int> GetTabu(int[] source, int[] destiny)
+		{
+			Tuple<int, int> tabu = new Tuple<int, int>(-1, -1);
+			
+			for (int i = 0; i < source.Length; i++) {
+				if (source[i] != destiny[i]) {
+					tabu.Val1 = Math.Min(source[i],destiny[i]);
+					tabu.Val2 = Math.Max(source[i],destiny[i]);
+					break;
+				}
+			}
+			
+			return tabu;
+		}
 	}
 }

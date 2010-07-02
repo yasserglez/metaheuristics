@@ -6,8 +6,8 @@ namespace Metaheuristics
 	{
 		public QAPInstance Instance { get; protected set; }
 		
-		public DiscreteGRASP2OptFirst4QAP ( QAPInstance instance, double rclThreshold, int[] lowerBounds, int[] upperBounds)
-			:base(rclThreshold, lowerBounds, upperBounds)
+		public DiscreteGRASP2OptFirst4QAP ( QAPInstance instance, double rclThreshold)
+			:base(rclThreshold)
 		{
 			Instance = instance;
 		}
@@ -17,9 +17,9 @@ namespace Metaheuristics
 			return QAPUtils.Fitness(Instance, solution);
 		}
 		
-		protected override void GRCSolution (int[] solution)
+		protected override int[] GRCSolution ()
 		{
-			QAPUtils.GRCSolution(Instance, solution, RCLThreshold);
+			return QAPUtils.GRCSolution(Instance, RCLThreshold);
 		}
 		
 		protected override void LocalSearch (int[] solution)

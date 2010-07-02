@@ -6,7 +6,7 @@ namespace Metaheuristics
 {
 	public class GA2OptBest4QAP : IMetaheuristic, ITunableMetaheuristic
 	{
-		protected double popFactor = 50;
+		protected double popSize = 50;
 		protected double mutProbability = 0.3;
 
 		public void Start (string fileInput, string fileOutput, int timeLimit)
@@ -14,14 +14,13 @@ namespace Metaheuristics
 			QAPInstance instance = new QAPInstance(fileInput);
 			
 			// Setting the parameters of the GA for this instance of the problem.
-			int popSize = (int) Math.Ceiling(popFactor * instance.NumberFacilities);
 			int[] lowerBounds = new int[instance.NumberFacilities];
 			int[] upperBounds = new int[instance.NumberFacilities];
 			for (int i = 0; i < instance.NumberFacilities; i++) {
 				lowerBounds[i] = 0;
 				upperBounds[i] = instance.NumberFacilities - 1;
 			}
-			DiscreteGA genetic = new DiscreteGA2OptBest4QAP(instance, popSize, mutProbability, lowerBounds, upperBounds);
+			DiscreteGA genetic = new DiscreteGA2OptBest4QAP(instance, (int)popSize, mutProbability, lowerBounds, upperBounds);
 			
 			// Solving the problem and writing the best solution found.
 			genetic.Run(timeLimit);
@@ -55,7 +54,7 @@ namespace Metaheuristics
 
 		public void UpdateParameters(double[] parameters)
 		{
-			popFactor = parameters[0];
+			popSize = parameters[0];
 			mutProbability = parameters[1];
 		}			
 	}

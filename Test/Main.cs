@@ -7,11 +7,14 @@ namespace Test
 	{
 		public static void Main(string[] args)
 		{
-		    int time = 10000;
-			string input = "../../../Problems/SPP/Instances/inst2.in";
-			string output = "../../../Problems/SPP/Instances/inst2.out";
-			(new GA4SPP()).Start(input, output + ".GA4SPP", time);
-			(new SA4SPP()).Start(input, output + ".SA4SPP", time);
+		   	int time = 10000;
+			string input = "../../../Problems/2SP/Instances/inst3.in";
+			string output = "../../../Problems/2SP/Instances/inst3.out";
+			(new TSBL42SP()).Start(input, output+".TSBL", time);
+			(new TSNPS42SP()).Start(input, output+".TSNPS", time);
+			(new SABL42SP()).Start(input, output+".SABL", time);
+			(new SANPS42SP()).Start(input, output+".SANPS", time);
+			
 		}
 	}
 }

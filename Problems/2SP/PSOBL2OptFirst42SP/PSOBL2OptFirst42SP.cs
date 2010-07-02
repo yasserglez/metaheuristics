@@ -6,7 +6,7 @@ namespace Metaheuristics
     public class PSOBL2OptFirst42SP : IMetaheuristic, ITunableMetaheuristic
     {
 		protected double timePenalty = 250;
-		protected double popFactor = 50;
+		protected double particlesCount = 50;
 		protected double prevConf = 0.5;
         protected double neighConf = 0.8;
 		
@@ -15,14 +15,13 @@ namespace Metaheuristics
             TwoSPInstance instance = new TwoSPInstance(fileInput);
 
             // Setting the parameters of the PSO for this instance of the problem.
-            int particlesCount = (int)(popFactor * instance.NumberItems);
             int[] lowerBounds = new int[instance.NumberItems];
             int[] upperBounds = new int[instance.NumberItems];
             for (int i = 0; i < instance.NumberItems; i++) {
                 lowerBounds[i] = 0;
                 upperBounds[i] = instance.NumberItems - 1;
             }
-            DiscretePSO pso = new DiscretePSOBL2OptFirst42SP(instance, particlesCount, prevConf, neighConf, lowerBounds, upperBounds);
+            DiscretePSO pso = new DiscretePSOBL2OptFirst42SP(instance, (int)particlesCount, prevConf, neighConf, lowerBounds, upperBounds);
 
             // Solving the problem and writing the best solution found.
             pso.Run(timeLimit - (int)timePenalty);
@@ -58,7 +57,7 @@ namespace Metaheuristics
 		public void UpdateParameters (double[] parameters)
         {
         	timePenalty = parameters[0];
-			popFactor = parameters[1];
+			particlesCount = parameters[1];
 			prevConf = parameters[2];
 			neighConf = parameters[3];
         }

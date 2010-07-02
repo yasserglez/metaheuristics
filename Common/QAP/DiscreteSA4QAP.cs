@@ -5,11 +5,13 @@ namespace Metaheuristics
 	public class DiscreteSA4QAP : DiscreteSA
 	{
 		public QAPInstance Instance { get; protected set; }
+		public  double RclTreshold { get; protected set; }
 		
-		public DiscreteSA4QAP(QAPInstance instance, int initialSolutions, int levelLength, double tempReduction)
+		public DiscreteSA4QAP(QAPInstance instance, double rclTreshold, int initialSolutions, int levelLength, double tempReduction)
 			: base(initialSolutions, levelLength, tempReduction)
 		{
 			Instance = instance;
+			RclTreshold = rclTreshold;
 		}
 		
 		protected override double Fitness(int[] solution)
@@ -19,7 +21,7 @@ namespace Metaheuristics
 		
 		protected override int[] InitialSolution()
 		{
-			return QAPUtils.RandomSolution(Instance);
+			return QAPUtils.GRCSolution(Instance, RclTreshold);
 		}
 		
 		protected override int[] GetNeighbor(int[] solution)

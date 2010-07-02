@@ -2,13 +2,24 @@ using System;
 
 namespace Metaheuristics
 {
-	public class TS4SPP : IMetaheuristic
+	public class TS4SPP : IMetaheuristic, ITunableMetaheuristic
 	{
+		protected int timePenalty = 250;
+		public double neighborChecksFactor = 0.75;
+		public double tabuListFactor = 0.85;
+		public double rclTreshold = 0.2;
+		
 		public void Start(string inputFile, string outputFile, int timeLimit)
 		{
-			throw new NotImplementedException();
+			SPPInstance instance = new SPPInstance(inputFile);
+			int neighborChecks = (int) Math.Ceiling(neighborChecksFactor * (instance.NumberSubsets - 1));
+			int tabuListLength = (int) Math.Ceiling(tabuListFactor * instance.NumberItems);
+			DiscreteTS ts = new DiscreteTS4SPP(instance, rclTreshold, tabuListLength, neighborChecks);
+			ts.Run(timeLimit - timePenalty);
+			SPPSolution solution = new SPPSolution(instance, ts.BestSolution);
+			solution.Write(outputFile);
 		}
-
+		
 		public string Name {
 			get {
 				return "TS for SPP";
@@ -31,6 +42,13 @@ namespace Metaheuristics
 			get {
 				return About.Team;
 			}
+		}
+			
+		public void UpdateParameters (double[] parameters)	{
+			timePenalty = (int) parameters[0];
+			neighborChecksFactor = parameters[1];
+			tabuListFactor = parameters[2];
+			rclTreshold = parameters[3];
 		}
 	}
 }

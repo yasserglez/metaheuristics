@@ -33,12 +33,7 @@ namespace Metaheuristics
 		protected abstract int[] GetNeighbor(int[] solution);
 		
 		// Get the Tabu for two Solutions
-		protected abstract Tuple<int, int> GetTabu(int[] source, int[] destiny);
-		
-		// Local search method.
-		protected virtual void LocalSearch(int[] individual)
-		{
-		}
+		protected abstract Tuple<int, int> GetTabu(int[] current, int[] neighbor);
 		
 		public void Run(int timeLimit)
 		{	
@@ -63,8 +58,6 @@ namespace Metaheuristics
 			BestFitness = currentFitness;
 			BestSolution = currentSolution;
 			
-			maxIterationTime = Environment.TickCount - startTime;
-			
 			while (Environment.TickCount - startTime < timeLimit - maxIterationTime) {
 				iterationStartTime = Environment.TickCount;
 				int count = 0;
@@ -73,10 +66,12 @@ namespace Metaheuristics
 				nextTabu = null;
 				
 				// Finding the next movement.
+				Tuple<int, int> tabu = new Tuple<int, int>(-1, -1);
+				Tuple<int, int> lasTabu = new Tuple<int, int>(-1, -1);
 				while (nextSolution == null  || count < NeighborChecks) {
 					neighbor = GetNeighbor(currentSolution);
-					Tuple<int, int> tabu = GetTabu(currentSolution, neighbor);
-					if(!tabuList.Contains(tabu)) {
+					tabu = GetTabu(currentSolution, neighbor);
+					if(!tabuList.Contains(tabu) && tabu != lasTabu) {
 						neighborFitness = Fitness(neighbor);
 						if (nextFitness > neighborFitness) {
 							nextSolution = neighbor;
@@ -86,12 +81,12 @@ namespace Metaheuristics
 						if (currentFitness > nextFitness) {
 							break;
 						}
+						count++;
 					}
-					count++;
 				}
 				
 				// Aspiration.
-				if (BestFitness < nextFitness) {
+				if (BestFitness > nextFitness) {
 					tabuList.Clear();
 					BestSolution = nextSolution;
 					BestFitness = nextFitness;

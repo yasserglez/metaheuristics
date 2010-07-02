@@ -6,7 +6,7 @@ namespace Metaheuristics
 	public class PSO4TSP : IMetaheuristic, ITunableMetaheuristic
 	{
 		protected double timePenalty = 500;
-		protected double popFactor = 1.5;
+		protected double particlesCount = 1.5;
 		protected double prevConf = 0.75;
         protected double neighConf = 0.75;
 		
@@ -15,14 +15,13 @@ namespace Metaheuristics
             TSPInstance instance = new TSPInstance(fileInput);
 
             // Setting the parameters of the PSO for this instance of the problem.
-            int particlesCount = (int)(popFactor * instance.NumberCities);
             int[] lowerBounds = new int[instance.NumberCities];
             int[] upperBounds = new int[instance.NumberCities];
             for (int i = 0; i < instance.NumberCities; i++) {
                 lowerBounds[i] = 0;
                 upperBounds[i] = instance.NumberCities - 1;
             }
-            DiscretePSO pso = new DiscretePSO4TSP(instance, particlesCount, prevConf, neighConf, lowerBounds, upperBounds);
+            DiscretePSO pso = new DiscretePSO4TSP(instance, (int)particlesCount, prevConf, neighConf, lowerBounds, upperBounds);
             
             // Solving the problem and writing the best solution found.
             pso.Run(timeLimit - (int)timePenalty);
@@ -57,7 +56,7 @@ namespace Metaheuristics
 		public void UpdateParameters (double[] parameters)
         {
         	timePenalty = parameters[0];
-			popFactor = parameters[1];
+			particlesCount = parameters[1];
 			prevConf = parameters[2];
 			neighConf = parameters[3];
         }
