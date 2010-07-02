@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Metaheuristics
 {
-	public class Tuple <T1, T2>
+	public class Tuple <T1, T2> : IComparable<Tuple<T1, T2>> where T1 : IComparable<T1> where T2 : IComparable<T2>
     {
         public Tuple(T1 val1, T2 val2)
         {
@@ -27,6 +27,15 @@ namespace Metaheuristics
 		public override int GetHashCode()
 		{
 			return base.GetHashCode();
+		}
+
+		public int CompareTo (Tuple<T1, T2> other)
+		{
+			int result = this.Val1.CompareTo(other.Val1);
+			if (result == 0) {
+				result = this.Val2.CompareTo(other.Val2);
+			}
+			return result;	
 		}
     }
 	

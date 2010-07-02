@@ -9,7 +9,6 @@ namespace Metaheuristics
 		protected double popFactor = 0.1;
 		protected double mutProbability = 0.3;
 	
-		
 		public void Start(string fileInput, string fileOutput, int timeLimit)
 		{
 			TSPInstance instance = new TSPInstance(fileInput);

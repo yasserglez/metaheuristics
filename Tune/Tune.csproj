@@ -46,6 +46,7 @@
     <Compile Include="GRASPTuner.cs" />
     <Compile Include="PSOTuner.cs" />
     <Compile Include="SSTuner.cs" />
+    <Compile Include="ACOTuner.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Problems\TSP\UMDA2OptBest4TSP\UMDA2OptBest4TSP.csproj">

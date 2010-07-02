@@ -2,11 +2,22 @@ using System;
 
 namespace Metaheuristics
 {
-	public class ACO42SP : IMetaheuristic
+	public class ACO4QAP : IMetaheuristic
 	{
+		protected int timePenalty = 250;
+		protected double rho = 0.02;
+		protected double alpha = 1;
+		protected double beta = 3;
+		protected int maxReinit = 5;
+		
 		public void Start(string inputFile, string outputFile, int timeLimit)
 		{
-			throw new NotImplementedException();
+			QAPInstance instance = new QAPInstance(inputFile);
+			MaxMinAntSystem aco = new MaxMinAntSystem4QAP(instance, instance.NumberFacilities, rho, alpha, beta, maxReinit);
+			// Solving the problem and writing the best solution found.
+			aco.Run(timeLimit - timePenalty);
+			QAPSolution solution = new QAPSolution(instance, aco.BestSolution);
+			solution.Write(outputFile);
 		}
 
 		public string Name {

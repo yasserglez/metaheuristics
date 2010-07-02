@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -91,19 +92,21 @@ namespace Metaheuristics
 			return Math.Sqrt(Variance(sample, mean));
 		}
 		
-		public static int SampleRoulette(double[] probabilities)
+		public static int SampleRoulette(IEnumerable<double> probabilities)
 		{
             lock (random) {
                 double accumulative = 0;
-                int selected = probabilities.Length - 1;
+				int current = 0;
+                int selected = probabilities.Count() - 1;
                 double u = RandomUniform();
 
-                for (int i = 0; i < probabilities.Length; i++) {
-                    accumulative += probabilities[i];
+                foreach (double probability in probabilities) {
+                    accumulative += probability;
                     if (u <= accumulative) {
-                        selected = i;
+                        selected = current;
                         break;
                     }
+					current++;
                 }
 
                 return selected;
