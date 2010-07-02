@@ -9,96 +9,115 @@ namespace Tune
 		public static void Main(string[] args)
 		{
 			ITunableMetaheuristic[] algorithms = new ITunableMetaheuristic[] {
-				#region To Implement
-//				new ACOBL42SP(),
-//				new ACONPS42SP(),
-//				new SSNPS42SP(),
-//				new TSNPS42SP(),
+				#region Yasser
+//				new	ACOBL2OptBest42SP(),            
+//				new ACOBL2OptFirst42SP(),            
+//				new ACOBL42SP(),            
+//				new ACONPS42SP(),            
+//				new BL2OptBest42SP(),            
+//				new BL2OptFirst42SP(),            
+//				new NPS2OptFirst42SP(),            
+//				new SABL42SP(),            
+//				new SANPS42SP(),            
+//				new SSBL2OptBest42SP(),            
+//				new SSBL2OptFirst42SP(),            
+//				new SSBL42SP(),            
+//				new SSNPS42SP(),            
+//				new UMDABL2OptBest42SP(),            
+//				new UMDABL2OptFirst42SP(),            
+//				new UMDABL42SP(),            
+//				new UMDANPS42SP(),        
 				
-//				new ACO4TSP(),		
-//				new SS4TSP(),		
-//				new TS4TSP(),		
+//				new ACO2OptBest4QAP(),            
+//				new ACO2OptFirst4QAP(),            
+//				new ACO4QAP(),            
+//				new SA4QAP(),            
+//				new HMSAwGRASP2OptBest4QAP(),            
+//				new HMSAwGRASP2OptFirst4QAP(),            
+//				new SS2OptBest4QAP(),            
+//				new SS2OptFirst4QAP(),            
+//				new SS4QAP(),            
+//				new UMDA2OptBest4QAP(),            
+//				new UMDA2OptFirst4QAP(),            
+//				new UMDA4QAP(),          
 				
-//				new ACO4QAP(),
-//				new SS4QAP(),
-//				new TS4QAP(),
+//				new TwoOptBest4SPP(),            
+//				new TwoOptFirst4SPP(),            
+//				new ACO2OptBest4SPP(),            
+//				new ACO2OptFirst4SPP(),            
+//				new ACO4SPP(),            
+//				new HMSAwGRASP2OptBest4SPP(),            
+//				new HMSAwGRASP2OptFirst4SPP(),            
+//				new SA4SPP(),            
+//				new SS2OptBest4SPP(),            
+//				new SS2OptFirst4SPP(),            
+//				new SS4SPP(),            
+//				new UMDA2OptBest4SPP(),            
+//				new UMDA2OptFirst4SPP(),            
+//				new UMDA4SPP(),            
 				
-//				new ACO4SPP(),		
-//				new SS4SPP(),		
-//				new TS4SPP(),		
+//				new ACO2OptBest4TSP(),            
+//				new ACO2OptFirst4TSP(),            
+//				new ACO4TSP(),            
+//				new HMSAwGRASP2OptBest4TSP(),            
+//				new HMSAwGRASP2OptFirst4TSP(),            
+//				new SA4TSP(),            
+//				new SS2OptBest4TSP(),            
+//				new SS2OptFirst4TSP(),            
+//				new SS4TSP(),            
+//				new UMDA2OptBest4TSP(),            
+//				new UMDA2OptFirst4TSP(),            
+//				new UMDA4TSP(),
 				#endregion
 				
-				#region To be Tuned
-//				new GA2OptBest4TSP(), /*A*/
-//				new GA4TSP(), /*A*/ /*Ya*/
-//				new GA2OptFirst4TSP(), /*A*/ /*Ya*/
-//				new PSO2OptBest4TSP(), /*A*/
-//				new PSO2OptFirst4TSP(),	/*A*/ /*Ya*/
-//				new PSO4TSP(), /*A*/ /*Ya*/
-//				new GRASP2OptBest4TSP(), /*A*/ /*Ya*/
-//				new GRASP2OptFirst4TSP(), /*A*/	/*Ya*/
-				new TS4TSP(), /*A*/
-//				new SA4TSP(),		
-//				new UMDA2OptBest4TSP(),		
-//				new UMDA2OptFirst4TSP(),		
-//				new UMDA4TSP(),	
-//				
-//				new GA2OptBest4QAP(), /*A*/
-//				new GA2OptFirst4QAP(), /*A*/ /*Ya*/
-//				new GA4QAP(), /*A*/ /*Ya*/
-//				new PSO2OptBest4QAP(), /*A*/ 
-//				new PSO2OptFirst4QAP(), /*A*/ /*Ya*/
-//				new PSO4QAP(), /*A*/ /*Ya*/
-//				new GRASP2OptBest4QAP(), /*A*/ /*Ya*/
-//				new GRASP2OptFirst4QAP(), /*A*/ /*Ya*/
-				new TS4QAP(), /*A*/
-//				new SA4QAP(),
-//				new UMDA2OptBest4QAP(),
-//				new UMDA2OptFirst4QAP(),
-//				new UMDA4QAP(),		
-//				
-//				new GA2OptBest4SPP(), /*A*/
-//				new GA2OptFirst4SPP(),	/*A*/	
-//				new GA4SPP(), /*A*/
-//				new GRASP2OptBest4SPP(), /*A*/
-//				new GRASP2OptFirst4SPP(), /*A*/	
-				new TS4SPP(), /*A*/
-//				new SA4SPP(),
-//				new UMDA2OptBest4SPP(),		
-//				new UMDA2OptFirst4SPP(),		
-//				new UMDA4SPP(),		
-//				
-//				new GABL2OptBest42SP(), /*A*/
-//				new GABL2OptFirst42SP(), /*A*/
-//				new GABL42SP(), /*A*/
-//				new GANPS42SP(), /*A*/
-//				new PSOBL2OptBest42SP(), /*A*/
-//				new PSOBL2OptFirst42SP(), /*A*/
-//				new PSOBL42SP(), /*A*/
-//				new PSONPS42SP(), /*A*/
-				new TSBL42SP(), /*A*/
-				new TSNPS42SP(), /*A*/
-//				new SANPS42SP(),
-//				new SABL42SP(),
-//				new UMDABL2OptBest42SP(),
-//				new UMDABL2OptFirst42SP(),
-//				new UMDABL42SP(),
-//				new UMDANPS42SP(),
-				#endregion
+				#region Ariel
+//				new GABL2OptBest42SP(),            
+//				new GABL2OptFirst42SP(),            
+//				new GABL42SP(),            
+//				new GANPS42SP(),            
+//				new PSOBL2OptBest42SP(),            
+//				new PSOBL2OptFirst42SP(),            
+//				new PSOBL42SP(),            
+//				new PSONPS42SP(),            
+//				new TSBL42SP(),            
+//				new TSNPS42SP(),            
 				
-				#region Already Tuned
-//				new BL2OptBest42SP(),
-//				new BL2OptFirst42SP(),
-//				new NPS2OptFirst42SP(),
+//				new TwoOptBest4QAP(),            
+//				new TwoOptFirst4QAP(),            
+//				new GA2OptBest4QAP(),            
+//				new GA2OptFirst4QAP(),            
+//				new GA4QAP(),            
+//				new GRASP2OptBest4QAP(),            
+//				new GRASP2OptFirst4QAP(),            
+//				new HMTSwGRASP2OptBest4QAP(),            
+//				new HMTSwGRASP2OptFirst4QAP(),            
+//				new PSO2OptBest4QAP(),            
+//				new PSO2OptFirst4QAP(),            
+//				new PSO4QAP(),            
+//				new TS4QAP(),            
 				
-//				new TwoOptBest4TSP(),		
-//				new TwoOptFirst4TSP(),		
+//				new GA2OptBest4SPP(),            
+//				new GA2OptFirst4SPP(),            
+//				new GA4SPP(),            
+//				new GRASP2OptBest4SPP(),            
+//				new GRASP2OptFirst4SPP(),            
+//				new HMTSwGRASP2OptBest4SPP(),            
+//				new HMTSwGRASP2OptFirst4SPP(),            
+//				new TS4SPP(),            
 				
-//				new TwoOptBest4SPP(),		
-//				new TwoOptFirst4SPP(),		
-				
-//				new TwoOptBest4QAP(),
-//				new TwoOptFirst4QAP(),
+//				new TwoOptBest4TSP(),            
+//				new TwoOptFirst4TSP(),            
+//				new GA2OptBest4TSP(),            
+//				new GA2OptFirst4TSP(),            
+//				new GA4TSP(),            
+//				new GRASP2OptBest4TSP(),            
+//				new GRASP2OptFirst4TSP(),            
+//				new HMTSwGRASP2OptBest4TSP(),            
+//				new HMTSwGRASP2OptFirst4TSP(),            
+//				new PSO2OptBest4TSP(),            
+//				new PSO2OptFirst4TSP(),            
+//				new PSO4TSP(),            
+//				new TS4TSP(),            
 				#endregion
 			};
 			
