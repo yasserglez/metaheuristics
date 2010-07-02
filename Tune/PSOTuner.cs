@@ -15,27 +15,24 @@ namespace Tune
 		protected override IEnumerable<double[]> EnumerateParameters()
 		{
             double[] timePenalties = new double[] { 250, 500 };
-			List<double> popFactors = new List<double>();
-//			popFactors.Add(0.02);
-//			popFactors.Add(0.04);
-//			popFactors.Add(0.06);
-//			popFactors.Add(0.08);
-//			popFactors.Add(0.10);
-//			popFactors.Add(0.15);
-	        popFactors.Add(0.25);
-			popFactors.Add(0.50);
-			popFactors.Add(0.50);
-			popFactors.Add(0.60);
-			popFactors.Add(0.75);
-			popFactors.Add(1);
-			popFactors.Add(1.5);
+			List<double> popSizes = new List<double>();
+//			popSizes.Add(2);
+//			popSizes.Add(4);
+//			popSizes.Add(6);
+//			popSizes.Add(8);
+			popSizes.Add(10);
+			popSizes.Add(20);
+	        popSizes.Add(30);
+			popSizes.Add(40);
+			popSizes.Add(50);
+			popSizes.Add(60);
 			double[] previousConfidence = new double[] { 0.5, 0.75 };
 			double[] neighbourConfidence = new double[] { 0.5, 0.75 };
 			
 			foreach (double timePenalty in timePenalties) {
 				foreach (double prevConf in previousConfidence) {
 					foreach (double neighConf in neighbourConfidence) {
-						foreach (double popFactor in popFactors) {
+						foreach (double popFactor in popSizes) {
 							yield return new double[] { timePenalty, popFactor, prevConf, neighConf };
 						}	
 					}
