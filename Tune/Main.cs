@@ -144,6 +144,12 @@ namespace Tune
 				case MetaheuristicType.TS:
 					tuner = new TSTuner(algorithm, instancesDir);
 					break;
+				case MetaheuristicType.HM:
+					tuner = new HMTuner(algorithm, instancesDir);
+					break;
+				case MetaheuristicType.ACO:
+					tuner = new ACOTuner(algorithm, instancesDir);
+					break;
 				default:
 					break;
 				}
