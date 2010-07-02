@@ -127,6 +127,18 @@
     <Compile Include="QAP\DiscreteTS4QAP.cs" />
     <Compile Include="2SP\DiscreteTSBL42SP.cs" />
     <Compile Include="2SP\DiscreteTSNPS42SP.cs" />
+    <Compile Include="TSP\DiscreteHMTSwGRASP2OptFirst4TSP.cs" />
+    <Compile Include="TSP\DiscreteHMTSwGRASP2OptBest4TSP.cs" />
+    <Compile Include="TSP\DiscreteHMSAwGRASP2OptBest4TSP.cs" />
+    <Compile Include="TSP\DiscreteHMSAwGRASP2OptFirst4TSP.cs" />
+    <Compile Include="SPP\DiscreteHMSAwGRASP2OptBest4SPP.cs" />
+    <Compile Include="SPP\DiscreteHMSAwGRASP2OptFirst4SPP.cs" />
+    <Compile Include="QAP\DiscreteHMSAwGRASP2OptBest4QAP.cs" />
+    <Compile Include="QAP\DiscreteHMSAwGRASP2OptFirst4QAP.cs" />
+    <Compile Include="SPP\DiscreteHMTSwGRASP2OptBest4SPP.cs" />
+    <Compile Include="SPP\DiscreteHMTSwGRASP2OptFirst4SPP.cs" />
+    <Compile Include="QAP\DiscreteHMTSwGRASP2OptFirst4QAP.cs" />
+    <Compile Include="QAP\DiscreteHMTSwGRASP2OptBest4QAP.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

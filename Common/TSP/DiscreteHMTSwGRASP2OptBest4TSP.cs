@@ -3,21 +3,24 @@ using System;
 
 namespace Metaheuristics
 {
-	public class DiscreteTS4TSP : DiscreteTS
+	public class DiscreteHMTSwGRASP2OptBest4TSP : DiscreteTS
 	{
 		public TSPInstance Instance { get; protected set; }
-		public  double RclTreshold { get; protected set; }
+		public DiscreteGRASP GRASP { get; protected set; }
+		public int GRASPIterations { get; protected set; }
 		
-		public DiscreteTS4TSP (TSPInstance instance, double rclTreshold, int tabuListLength, int neighborChecks) 
+		public DiscreteHMTSwGRASP2OptBest4TSP(TSPInstance instance, double rclThreshold, int graspIterations, int tabuListLength, int neighborChecks) 
 			: base(tabuListLength, neighborChecks)
 		{
+			GRASP = new DiscreteGRASP2OptBest4TSP(instance, rclThreshold);
 			Instance = instance;
-			RclTreshold = rclTreshold;
+			GRASPIterations = graspIterations;
 		}
 		
 		protected override int[] InitialSolution ()
 		{
-			return TSPUtils.GRCSolution(Instance, RclTreshold);
+			GRASP.Run(GRASPIterations, RunType.IterationsLimit);
+			return GRASP.BestSolution;
 		}
 		
 		protected override double Fitness(int[] individual)

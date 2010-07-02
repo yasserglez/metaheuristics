@@ -14,13 +14,7 @@ namespace Metaheuristics
 			TSPInstance instance = new TSPInstance(fileInput);
 			
 			// Setting the parameters of the GRASP for this instance of the problem.
-			int[] lowerBounds = new int[instance.NumberCities];
-			int[] upperBounds = new int[instance.NumberCities];
-			for (int i = 0; i < instance.NumberCities; i++) {
-				lowerBounds[i] = 0;
-				upperBounds[i] = instance.NumberCities - 1;
-			}
-			DiscreteGRASP grasp = new DiscreteGRASP2OptFirst4TSP(instance, rclThreshold, lowerBounds, upperBounds);
+			DiscreteGRASP grasp = new DiscreteGRASP2OptFirst4TSP(instance, rclThreshold);
 			
 			// Solving the problem and writing the best solution found.
 			grasp.Run(timeLimit - (int)timePenalty, RunType.TimeLimit);

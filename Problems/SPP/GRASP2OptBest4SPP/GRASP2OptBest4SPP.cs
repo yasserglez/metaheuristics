@@ -14,13 +14,7 @@ namespace Metaheuristics
 			SPPInstance instance = new SPPInstance(fileInput);
 			
 			// Setting the parameters of the GRASP for this instance of the problem.
-			int[] lowerBounds = new int[instance.NumberItems];
-			int[] upperBounds = new int[instance.NumberItems];
-			for (int i = 0; i < instance.NumberItems; i++) {
-				lowerBounds[i] = 0;
-				upperBounds[i] = instance.NumberSubsets - 1;
-			}
-			DiscreteGRASP grasp = new DiscreteGRASP2OptBest4SPP(instance, rclThreshold, lowerBounds, upperBounds);
+			DiscreteGRASP grasp = new DiscreteGRASP2OptBest4SPP(instance, rclThreshold);
 			
 			// Solving the problem and writing the best solution found.
 			grasp.Run(timeLimit - (int)timePenalty, RunType.TimeLimit);

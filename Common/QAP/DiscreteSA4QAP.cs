@@ -21,9 +21,7 @@ namespace Metaheuristics
 		
 		protected override int[] InitialSolution()
 		{
-			int[] res = new int[Instance.NumberFacilities];
-			QAPUtils.GRCSolution(Instance, res, RclTreshold);
-			return res;
+			return QAPUtils.GRCSolution(Instance, RclTreshold);
 		}
 		
 		protected override int[] GetNeighbor(int[] solution)

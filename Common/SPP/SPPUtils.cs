@@ -110,10 +110,11 @@ namespace Metaheuristics
 		}
 		
 		// Implementation of the GRC solution's construction algorithm.
-		public static void GRCSolution(SPPInstance instance, int[] assigment, double rclThreshold)
+		public static int[] GRCSolution(SPPInstance instance, double rclThreshold)
 		{
 			int numItems = instance.NumberItems;
 			int numSets = instance.NumberSubsets;
+			int[] assigment = new int[numItems]; 
 			int index = 0;
 			double best = 0;
 			double cost = 0;
@@ -159,6 +160,7 @@ namespace Metaheuristics
 				index++;
 				numItems--;
 			}
+			return assigment;
 		}
 		
 		public static int[] RandomSolution(SPPInstance instance)

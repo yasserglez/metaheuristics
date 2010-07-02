@@ -181,9 +181,10 @@ namespace Metaheuristics
 		}
 		
 		// Implementation of the GRC solution's construction algorithm.
-		public static void GRCSolution(TSPInstance instance, int[] path, double rclThreshold)
+		public static int[] GRCSolution(TSPInstance instance, double rclThreshold)
 		{
 			int numCities = instance.NumberCities;
+			int[] path = new int[instance.NumberCities];
 			int totalCities = numCities;
 			int index = 0;
 			double best = 0;
@@ -232,6 +233,8 @@ namespace Metaheuristics
 				path[index] = city;
 				numCities--;
 			}
+			
+			return path;
 		}
 		
 		public static double Distance(TSPInstance instance, int[] a, int[] b)

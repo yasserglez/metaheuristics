@@ -182,9 +182,10 @@ namespace Metaheuristics
 		}
 	
 		// Implementation of the GRC solution's construction algorithm.
-		public static void GRCSolution(QAPInstance instance, int[] assigment, double rclThreshold)
+		public static int[] GRCSolution(QAPInstance instance, double rclThreshold)
 		{
 			int numFacilities = instance.NumberFacilities;
+			int[] assigment = new int[numFacilities];
 			int totalFacilities = numFacilities;
 			int index = 0;
 			double best = 0;
@@ -237,6 +238,8 @@ namespace Metaheuristics
 				index++;
 				numFacilities--;
 			}
+			
+			return assigment;
 		}
 		
 		public static double Distance(QAPInstance instance, int[] a, int[] b)

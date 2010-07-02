@@ -21,9 +21,7 @@ namespace Metaheuristics
 		
 		protected override int[] InitialSolution()
 		{
-			int[] res = new int[Instance.NumberItems];
-			SPPUtils.GRCSolution(Instance, res, RclTreshold);
-			return res;
+			return SPPUtils.GRCSolution(Instance, RclTreshold);
 		}
 		
 		protected override int[] GetNeighbor(int[] solution)

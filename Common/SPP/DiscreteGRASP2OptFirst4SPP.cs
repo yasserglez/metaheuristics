@@ -8,8 +8,8 @@ namespace Metaheuristics
 	{
 		public SPPInstance Instance { get; protected set; }
 		
-		public DiscreteGRASP2OptFirst4SPP ( SPPInstance instance, double rclThreshold, int[] lowerBounds, int[] upperBounds)
-			:base(rclThreshold, lowerBounds, upperBounds)
+		public DiscreteGRASP2OptFirst4SPP ( SPPInstance instance, double rclThreshold)
+			:base(rclThreshold)
 		{
 			Instance = instance;
 		}
@@ -19,9 +19,9 @@ namespace Metaheuristics
 			return SPPUtils.Fitness(Instance, solution);
 		}
 		
-		protected override void GRCSolution (int[] solution)
+		protected override int[] GRCSolution ()
 		{
-			SPPUtils.GRCSolution(Instance, solution, RCLThreshold);
+			return SPPUtils.GRCSolution(Instance, RCLThreshold);
 		}
 		
 		protected override void LocalSearch (int[] solution)

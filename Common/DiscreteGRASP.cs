@@ -11,18 +11,14 @@ namespace Metaheuristics
 
 	public abstract class DiscreteGRASP
 	{
-		public int[] LowerBounds { get; protected set; }
-		public int[] UpperBounds { get; protected set; }
 		public double RCLThreshold { get; protected set; }
 		public bool RepairEnabled { get; protected set; }
 		
 		public int[] BestSolution { get; protected set; }
 		public double BestFitness { get; protected set; }
 
-		public DiscreteGRASP (double rclThreshold, int[] lowerBounds, int[] upperBounds)
+		public DiscreteGRASP (double rclThreshold)
 		{
-			LowerBounds = lowerBounds;
-			UpperBounds = upperBounds;
 			RCLThreshold = rclThreshold;			
 			RepairEnabled = false;
 			BestSolution = null;
@@ -32,7 +28,7 @@ namespace Metaheuristics
 		protected abstract double Fitness(int[] solution);
 		
 		// Greedy Randomized Construction.
-		protected abstract void GRCSolution(int[] solution);
+		protected abstract int[] GRCSolution();
 		
 		// Local search method.
 		protected abstract void LocalSearch(int[] solution);
@@ -57,12 +53,11 @@ namespace Metaheuristics
 			int iterationStartTime = 0;
 			int iterationTime = 0;
 			int maxIterationTime = 0;			
-			int numVariables = LowerBounds.Length;
-			int[] newSolution = new int[numVariables];
+			int[] newSolution = GRCSolution();
 			double newFitness = 0;
 			int iteration = 0;
 			
-			GRCSolution(newSolution);
+			
 			
 			// Run a local search method for each individual in the population.
 			LocalSearch(newSolution);
@@ -76,7 +71,7 @@ namespace Metaheuristics
 			
 			while (Environment.TickCount - startTime < timeLimit - maxIterationTime && iteration < iterationsLimit) {
 				iterationStartTime = Environment.TickCount;
-				GRCSolution(newSolution);
+				newSolution = GRCSolution();
 				
 				// Run a local search method for each individual in the population.
 				LocalSearch(newSolution);
