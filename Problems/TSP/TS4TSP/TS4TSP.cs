@@ -5,9 +5,9 @@ namespace Metaheuristics
 	public class TS4TSP : IMetaheuristic, ITunableMetaheuristic
 	{
 		protected int timePenalty = 250;
-		public double neighborChecksFactor = 0.75;
-		public double tabuListFactor = 0.85;
-		public double rclTreshold = 0.2;
+		public double neighborChecksFactor = 0.1;
+		public double tabuListFactor = 0.50;
+		public double rclTreshold = 0.30;
 		
 		public void Start(string inputFile, string outputFile, int timeLimit)
 		{

@@ -79,22 +79,22 @@ namespace Tune
 //				new PSOBL2OptFirst42SP(),            
 //				new PSOBL42SP(),            
 //				new PSONPS42SP(),            
-//				new TSBL42SP(),            
 //				new TSNPS42SP(),            
+//				new TSBL42SP(), /* OK */
 				
 //				new TwoOptBest4QAP(),            
 //				new TwoOptFirst4QAP(),            
 //				new GA2OptBest4QAP(),            
-//				new GA2OptFirst4QAP(),            
-//				new GA4QAP(),            
-//				new GRASP2OptBest4QAP(),            
-//				new GRASP2OptFirst4QAP(),            
+				new GA2OptFirst4QAP(),
+				new GA4QAP(),
 //				new HMTSwGRASP2OptBest4QAP(),            
 //				new HMTSwGRASP2OptFirst4QAP(),            
-//				new PSO2OptBest4QAP(),            
-//				new PSO2OptFirst4QAP(),            
-//				new PSO4QAP(),            
-//				new TS4QAP(),            
+//				new TS4QAP(), /* OK */
+//				new PSO2OptBest4QAP(), /* OK */
+//				new PSO2OptFirst4QAP(), /* OK */
+//				new PSO4QAP(), /* OK */
+//				new GRASP2OptBest4QAP(), /* OK */
+//				new GRASP2OptFirst4QAP(), /* OK */    
 				
 //				new GA2OptBest4SPP(),            
 //				new GA2OptFirst4SPP(),            
@@ -103,21 +103,21 @@ namespace Tune
 //				new GRASP2OptFirst4SPP(),            
 //				new HMTSwGRASP2OptBest4SPP(),            
 //				new HMTSwGRASP2OptFirst4SPP(),            
-//				new TS4SPP(),            
+//				new TS4SPP(), /* OK */   
 				
 //				new TwoOptBest4TSP(),            
 //				new TwoOptFirst4TSP(),            
-//				new GA2OptBest4TSP(),            
-//				new GA2OptFirst4TSP(),            
-//				new GA4TSP(),            
-//				new GRASP2OptBest4TSP(),            
-//				new GRASP2OptFirst4TSP(),            
+//				new GA2OptBest4TSP(),  
+				new GA2OptFirst4TSP(),
+				new GA4TSP(),
 //				new HMTSwGRASP2OptBest4TSP(),            
 //				new HMTSwGRASP2OptFirst4TSP(),            
-//				new PSO2OptBest4TSP(),            
-//				new PSO2OptFirst4TSP(),            
-//				new PSO4TSP(),            
-//				new TS4TSP(),            
+//				new TS4TSP(), /* OK */   
+//				new PSO4TSP(), /* OK */           
+//				new PSO2OptBest4TSP(), /* OK */            
+//				new PSO2OptFirst4TSP(), /* OK */            
+//				new GRASP2OptFirst4TSP(), /* OK */
+//				new GRASP2OptBest4TSP(), /* OK */            
 				#endregion
 			};
 			

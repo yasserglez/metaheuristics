@@ -5,9 +5,9 @@ namespace Metaheuristics
 {
 	public class PSO4TSP : IMetaheuristic, ITunableMetaheuristic
 	{
-		protected double timePenalty = 500;
-		protected double particlesCount = 1.5;
-		protected double prevConf = 0.75;
+		protected double timePenalty = 250;
+		protected double particlesCount = 80;
+		protected double prevConf = 0.6;
         protected double neighConf = 0.75;
 		
         public void Start(string fileInput, string fileOutput, int timeLimit)

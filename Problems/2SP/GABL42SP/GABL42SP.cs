@@ -5,9 +5,9 @@ namespace Metaheuristics
 {
 	public class GABL42SP : IMetaheuristic, ITunableMetaheuristic
 	{
-		protected double popSize = 30;
-		protected double mutProbability = 0.2;
 		protected double timePenalty = 250;
+		protected double popSize = 2;
+		protected double mutProbability = 0.3;
 
 		public void Start(string fileInput, string fileOutput, int timeLimit)
 		{

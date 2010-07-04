@@ -5,10 +5,10 @@ namespace Metaheuristics
 {
 	public class PSO2OptBest4TSP : IMetaheuristic, ITunableMetaheuristic
 	{
-		protected double timePenalty = 250;
-		protected double particlesCount = 50;
-		protected double prevConf = 0.5;
-        protected double neighConf = 0.8;
+		protected double timePenalty = 100;
+		protected double particlesCount = 6;
+		protected double prevConf = 0.6;
+        protected double neighConf = 0.6;
 		
         public void Start(string fileInput, string fileOutput, int timeLimit)
         {

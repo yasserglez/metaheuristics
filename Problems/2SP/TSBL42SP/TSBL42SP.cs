@@ -6,9 +6,9 @@ namespace Metaheuristics
 {
 	public class TSBL42SP : IMetaheuristic, ITunableMetaheuristic
 	{
-		protected int timePenalty = 250;
-		public double neighborChecksFactor = 0.75;
-		public double tabuListFactor = 0.85;
+		protected int timePenalty = 100;
+		public double neighborChecksFactor = 0.25;
+		public double tabuListFactor = 0.20;
 		
 		public void Start(string inputFile, string outputFile, int timeLimit)
 		{
@@ -17,7 +17,7 @@ namespace Metaheuristics
 			int tabuListLength = (int) Math.Ceiling(tabuListFactor * instance.NumberItems);
 			DiscreteTS ts = new DiscreteTSBL42SP(instance, tabuListLength, neighborChecks);
 			ts.Run(timeLimit - timePenalty);
-			int[,] coordinates = TwoSPUtils.NPSCoordinates(instance, ts.BestSolution);
+			int[,] coordinates = TwoSPUtils.BLCoordinates(instance, ts.BestSolution);
 			TwoSPSolution solution = new TwoSPSolution(instance, coordinates);
 			solution.Write(outputFile);
 		}
