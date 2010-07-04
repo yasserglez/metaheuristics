@@ -5,14 +5,14 @@ using System.Collections.Generic;
 
 namespace Metaheuristics
 {
-	public class MaxMinAntSystem4TSP : MaxMinAntSystem
+	public class MaxMinAntSystem2OptBest4TSP : MaxMinAntSystem
 	{
 		public TSPInstance Instance { get; protected set; }
 		
 		protected List<Tuple<double,int>>[] candidateLists;
 		protected double candidateWeight;
 		
-		public MaxMinAntSystem4TSP(TSPInstance instance, int numberAnts, double rho, double alpha, double beta, int maxReinit, int candidateLength, double candidateWeight)
+		public MaxMinAntSystem2OptBest4TSP(TSPInstance instance, int numberAnts, double rho, double alpha, double beta, int maxReinit, int candidateLength, double candidateWeight)
 			: base(instance.NumberCities, TSPUtils.Fitness(instance, TSPUtils.RandomSolution(instance)),
 			       numberAnts, rho, alpha, beta, maxReinit)
 		{
@@ -68,7 +68,7 @@ namespace Metaheuristics
 						neighbors.Add(j);
 					}
 				}
-			}			
+			}
 			
 			return neighbors;
 		}

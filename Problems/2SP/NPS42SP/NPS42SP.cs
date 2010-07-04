@@ -4,13 +4,21 @@ using System.Collections.Generic;
 
 namespace Metaheuristics
 {
-	public class NPS2OptFirst42SP : IMetaheuristic
+	public class NPS42SP : IMetaheuristic
 	{
 		public void Start(string fileInput, string fileOutput, int timeLimit)
 		{
 			TwoSPInstance instance = new TwoSPInstance(fileInput);
-			int[] ordering = TwoSPUtils.RandomSolution(instance);
-			TwoSPUtils.NPSLocalSearch2OptFirst(instance, ordering);
+			List<Tuple<int,int>> sorting = new List<Tuple<int,int>>();
+			for (int i = 0; i < instance.NumberItems; i++) {
+				int area = instance.ItemsHeight[i] * instance.ItemsWidth[i];
+				sorting.Add(new Tuple<int,int>(-area, i));
+			}
+			sorting.Sort();
+			int[] ordering = new int[instance.NumberItems];
+			for (int i = 0; i < instance.NumberItems; i++) {
+				ordering[i] = sorting[i].Val2;
+			}
 			int[,] coordinates = TwoSPUtils.NPSCoordinates(instance, ordering);
 			TwoSPSolution solution = new TwoSPSolution(instance, coordinates);
 			solution.Write(fileOutput);
@@ -18,7 +26,7 @@ namespace Metaheuristics
 
 		public string Name {
 			get {
-				return "2-opt (first improvement) with the NPS heuristic for 2SP";
+				return "NPS heuristic for 2SP";
 			}
 		}
 		

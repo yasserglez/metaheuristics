@@ -2,7 +2,7 @@ using System;
 
 namespace Metaheuristics
 {
-	public class ACONPS42SP : IMetaheuristic
+	public class ACONPS42SP : IMetaheuristic, ITunableMetaheuristic
 	{
 		protected int timePenalty = 250;
 		protected double rho = 0.02;
@@ -45,5 +45,15 @@ namespace Metaheuristics
 				return About.Team;
 			}
 		}
+		
+		public void UpdateParameters(double[] parameters)
+		{
+			timePenalty = (int) parameters[0];
+			rho = parameters[1];
+			alpha = parameters[2];
+			beta = parameters[3];
+			maxReinit = (int) parameters[4];
+			numberAnts = (int) parameters[5];
+		}			
 	}
 }

@@ -7,8 +7,8 @@ namespace Metaheuristics
 	public class UMDA2OptBest4QAP : IMetaheuristic, ITunableMetaheuristic
 	{
 		protected int timePenalty = 250;		
-		protected double popFactor = 50;
-		protected double truncFactor = 0.3;
+		protected double popFactor = 0.02;
+		protected double truncFactor = 0.2;
 
 		public void Start(string fileInput, string fileOutput, int timeLimit)
 		{

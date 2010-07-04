@@ -5,8 +5,8 @@ namespace Metaheuristics
 	public class SS2OptFirst4QAP : IMetaheuristic, ITunableMetaheuristic
 	{
 		protected int timePenalty = 250;
-		public int poolSize = 100;
-		public int refSetSize = 10;
+		public int poolSize = 200;
+		public int refSetSize = 4;
 		public double explorationFactor = 0.5;
 		
 		public void Start(string inputFile, string outputFile, int timeLimit)

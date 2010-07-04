@@ -145,6 +145,14 @@
     <Compile Include="SPP\DiscreteHMTSwGRASP2OptFirst4SPP.cs" />
     <Compile Include="QAP\DiscreteHMTSwGRASP2OptFirst4QAP.cs" />
     <Compile Include="QAP\DiscreteHMTSwGRASP2OptBest4QAP.cs" />
+    <Compile Include="2SP\MaxMinAntSystemBL2OptFirst42SP.cs" />
+    <Compile Include="2SP\MaxMinAntSystemBL2OptBest42SP.cs" />
+    <Compile Include="QAP\MaxMinAntSystem2OptFirst4QAP.cs" />
+    <Compile Include="QAP\MaxMinAntSystem2OptBest4QAP.cs" />
+    <Compile Include="SPP\MaxMinAntSystem2OptFirst4SPP.cs" />
+    <Compile Include="SPP\MaxMinAntSystem2OptBest4SPP.cs" />
+    <Compile Include="TSP\MaxMinAntSystem2OptFirst4TSP.cs" />
+    <Compile Include="TSP\MaxMinAntSystem2OptBest4TSP.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

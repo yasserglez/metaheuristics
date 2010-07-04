@@ -52,6 +52,7 @@ namespace Metaheuristics
 			initialSolutions = (int) parameters[1];
 			levelLengthFactor = parameters[2];
 			tempReduction = parameters[3];
+			rclTreshold = parameters[4];
 		}		
 	}
 }

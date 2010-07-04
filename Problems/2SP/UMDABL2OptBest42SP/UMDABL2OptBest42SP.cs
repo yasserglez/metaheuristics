@@ -6,9 +6,9 @@ namespace Metaheuristics
 {
 	public class UMDABL2OptBest42SP : IMetaheuristic, ITunableMetaheuristic
 	{
-		protected int timePenalty = 250;
-		protected double popFactor = 50;
-		protected double truncFactor = 0.3;
+		protected int timePenalty = 750;
+		protected double popFactor = 0.02;
+		protected double truncFactor = 0.4;
 
 		public void Start(string fileInput, string fileOutput, int timeLimit)
 		{

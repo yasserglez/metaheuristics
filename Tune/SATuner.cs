@@ -18,12 +18,15 @@ namespace Tune
 			double[] initialSolutions = new double[] { 2, 4, 8, 10 };
 			double[] levelLengthFactors = new double[] { 0.05, 0.25, 0.75, 1.0 };
 			double[] tempReductions = new double[] { 0.75, 0.85, 0.95 };
+			double[] rclThresholds = new double[] { 0.20, 0.30, 0.40, 0.50, 0.60};
 			
 			foreach (double timePenalty in timePenalties) {
 				foreach (double initialSolution in initialSolutions) {
 					foreach (double levelLengthFactor in levelLengthFactors) {
 						foreach (double tempReduction in tempReductions) {
-							yield return new double[] { timePenalty, initialSolution, levelLengthFactor, tempReduction };
+							foreach (double rclThreshold in rclThresholds) {
+								yield return new double[] { timePenalty, initialSolution, levelLengthFactor, tempReduction, rclThreshold };
+							}
 						}
 					}
 				}

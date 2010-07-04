@@ -7,8 +7,8 @@ namespace Metaheuristics
 	public class UMDA2OptBest4TSP : IMetaheuristic, ITunableMetaheuristic
 	{
 		protected int timePenalty = 250;
-		protected double popFactor = 50;
-		protected double truncFactor = 0.3;
+		protected double popFactor = 0.03;
+		protected double truncFactor = 0.4;
 		
 		public void Start(string fileInput, string fileOutput, int timeLimit)
 		{

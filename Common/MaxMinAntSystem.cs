@@ -156,23 +156,23 @@ namespace Metaheuristics
 			double denominator;
 			
 			// Select the initial vertex randomly.
-			tour[0] = Statistics.RandomDiscreteUniform(0, tourLength - 1);
+			tour[0] = Statistics.RandomDiscreteUniform(0, tourLength-1);
 			visited[tour[0]] = true;
 			
 			// Complete the rest of the tour.
 			for (int i = 1; i < tourLength; i++) {
-				neighbors = FactibleNeighbors(i, visited);
+				neighbors = FactibleNeighbors(tour[i-1], visited);
 				
 				denominator = 0;
 				for (int j = 0; j < neighbors.Count; j++) {
-					denominator +=  (Math.Pow(pheromone[i,neighbors[j]], alpha) * 
-					                 Math.Pow(heuristic[i,neighbors[j]], beta));
+					denominator +=  (Math.Pow(pheromone[tour[i-1],neighbors[j]], alpha) * 
+					                 Math.Pow(heuristic[tour[i-1],neighbors[j]], beta));
 				}
 				
 				probabilities = new double[neighbors.Count];
 				for (int j = 0; j < neighbors.Count; j++) {
-					probabilities[j] = (Math.Pow(pheromone[i,neighbors[j]], alpha) *
-					                    Math.Pow(heuristic[i,neighbors[j]], beta)) / denominator;
+					probabilities[j] = (Math.Pow(pheromone[tour[i-1],neighbors[j]], alpha) *
+					                    Math.Pow(heuristic[tour[i-1],neighbors[j]], beta)) / denominator;
 				}
 
 				selectedNeighbor = neighbors[Statistics.SampleRoulette(probabilities)];
