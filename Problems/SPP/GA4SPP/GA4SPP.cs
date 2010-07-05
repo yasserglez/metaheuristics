@@ -5,7 +5,7 @@ namespace Metaheuristics
 {
 	public class GA4SPP : IMetaheuristic, ITunableMetaheuristic
 	{
-		protected double popSize = 2;
+		protected double popSize = 10;
 		protected double mutProbability = 0.2;
 		protected double timePenalty = 500;
 

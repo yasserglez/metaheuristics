@@ -14,12 +14,12 @@ namespace Tune
 		
 		protected override IEnumerable<double[]> EnumerateParameters()
 		{
-            double[] timePenalties = new double[] { 250, 500 };
-			double[] mutProbabilities = new double[] { 0.1, 0.2, 0.3 };
+            double[] timePenalties = new double[] { 50 };
+			double[] graspIterations = new double[] { 2, 4, 6, 8, 10 };
 			
 			foreach (double timePenalty in timePenalties) {
-				foreach (double mutProbability in mutProbabilities) {
-						yield return new double[] { timePenalty, mutProbability };
+				foreach (double graspIteration in graspIterations) {
+						yield return new double[] { timePenalty, graspIteration };
 				}
 			}
 		}

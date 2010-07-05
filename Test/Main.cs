@@ -7,12 +7,11 @@ namespace Test
 	{
 		public static void Main(string[] args)
 		{
-		   	int time = 2000;
-			string input = "../../../Problems/2SP/Instances/inst3.in";
-			string output = "../../../Problems/2SP/Instances/inst3.out";
+		   	int time = 10000;
+			string input = "../../../Problems/QAP/Instances/had20.in";
+			string output = "../../../Problems/QAP/Instances/had20.out";
 			
-			//(new TSNPS42SP()).Start(input, output+"TSNPS42SP", time);
-			(new TSBL42SP()).Start(input, output+"TSBL42SP", time);
+			(new GA2OptFirst4QAP()).Start(input, output, time);
 		}
 	}
 }

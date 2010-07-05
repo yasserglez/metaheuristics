@@ -363,6 +363,22 @@
       <Project>{71C70C39-B154-4B0E-9E45-480C63520E48}</Project>
       <Name>TSBL42SP</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Problems\TSP\HMSAwGRASP2OptFirst4TSP\HMSAwGRASP2OptFirst4TSP.csproj">
+      <Project>{109356EB-F31E-43EF-8F0F-DBD02CDB93F1}</Project>
+      <Name>HMSAwGRASP2OptFirst4TSP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\TSP\HMSAwGRASP2OptBest4TSP\HMSAwGRASP2OptBest4TSP.csproj">
+      <Project>{D273B2C6-705A-42D2-8C59-0D1D91F67D80}</Project>
+      <Name>HMSAwGRASP2OptBest4TSP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\TSP\HMTSwGRASP2OptFirst4TSP\HMTSwGRASP2OptFirst4TSP.csproj">
+      <Project>{151CB239-414B-4441-AE61-5C6676FBC513}</Project>
+      <Name>HMTSwGRASP2OptFirst4TSP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\TSP\HMTSwGRASP2OptBest4TSP\HMTSwGRASP2OptBest4TSP.csproj">
+      <Project>{096AF1A0-C3FC-4FF3-B058-6B7B94842300}</Project>
+      <Name>HMTSwGRASP2OptBest4TSP</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

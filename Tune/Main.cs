@@ -32,8 +32,6 @@ namespace Tune
 //				new ACO2OptFirst4QAP(),            
 //				new ACO4QAP(),            
 //				new SA4QAP(),            
-//				new HMSAwGRASP2OptBest4QAP(),            
-//				new HMSAwGRASP2OptFirst4QAP(),            
 //				new SS2OptBest4QAP(),            
 //				new SS2OptFirst4QAP(),            
 //				new SS4QAP(),            
@@ -46,8 +44,6 @@ namespace Tune
 //				new ACO2OptBest4SPP(),            
 //				new ACO2OptFirst4SPP(),            
 //				new ACO4SPP(),            
-//				new HMSAwGRASP2OptBest4SPP(),            
-//				new HMSAwGRASP2OptFirst4SPP(),            
 //				new SA4SPP(),            
 //				new SS2OptBest4SPP(),            
 //				new SS2OptFirst4SPP(),            
@@ -59,8 +55,6 @@ namespace Tune
 //				new ACO2OptBest4TSP(),            
 //				new ACO2OptFirst4TSP(),            
 //				new ACO4TSP(),            
-//				new HMSAwGRASP2OptBest4TSP(),            
-//				new HMSAwGRASP2OptFirst4TSP(),            
 //				new SA4TSP(),            
 //				new SS2OptBest4TSP(),            
 //				new SS2OptFirst4TSP(),            
@@ -71,53 +65,59 @@ namespace Tune
 				#endregion
 				
 				#region Ariel
-//				new GABL2OptBest42SP(),            
-//				new GABL2OptFirst42SP(),            
-//				new GABL42SP(),            
-//				new GANPS42SP(),            
-//				new PSOBL2OptBest42SP(),            
-//				new PSOBL2OptFirst42SP(),            
-//				new PSOBL42SP(),            
-//				new PSONPS42SP(),            
-//				new TSNPS42SP(),            
+//				new GABL42SP(),       
+//				new GANPS42SP(), /* OK */    
+//				new GABL2OptBest42SP(), /* OK */
+//				new GABL2OptFirst42SP(), /* OK */
+//				new PSOBL42SP(), /* OK */
+//				new PSONPS42SP(), /* OK */
+//				new PSOBL2OptBest42SP(), /* OK */
+//				new PSOBL2OptFirst42SP(), /* OK */            
+//				new TSNPS42SP(), /* OK */      
 //				new TSBL42SP(), /* OK */
-				
-//				new TwoOptBest4QAP(),            
-//				new TwoOptFirst4QAP(),            
-//				new GA2OptBest4QAP(),            
-				new GA2OptFirst4QAP(),
-				new GA4QAP(),
-//				new HMTSwGRASP2OptBest4QAP(),            
-//				new HMTSwGRASP2OptFirst4QAP(),            
-//				new TS4QAP(), /* OK */
-//				new PSO2OptBest4QAP(), /* OK */
-//				new PSO2OptFirst4QAP(), /* OK */
-//				new PSO4QAP(), /* OK */
-//				new GRASP2OptBest4QAP(), /* OK */
-//				new GRASP2OptFirst4QAP(), /* OK */    
-				
-//				new GA2OptBest4SPP(),            
-//				new GA2OptFirst4SPP(),            
-//				new GA4SPP(),            
-//				new GRASP2OptBest4SPP(),            
-//				new GRASP2OptFirst4SPP(),            
-//				new HMTSwGRASP2OptBest4SPP(),            
-//				new HMTSwGRASP2OptFirst4SPP(),            
-//				new TS4SPP(), /* OK */   
 				
 //				new TwoOptBest4TSP(),            
 //				new TwoOptFirst4TSP(),            
-//				new GA2OptBest4TSP(),  
-				new GA2OptFirst4TSP(),
-				new GA4TSP(),
-//				new HMTSwGRASP2OptBest4TSP(),            
-//				new HMTSwGRASP2OptFirst4TSP(),            
-//				new TS4TSP(), /* OK */   
+//				new GA2OptFirst4TSP(),
+//				new HMSAwGRASP2OptBest4TSP(),            
+//				new HMSAwGRASP2OptFirst4TSP(),            
+//				new GA4TSP(), /* OK */
+//				new GA2OptBest4TSP(), /* OK */
 //				new PSO4TSP(), /* OK */           
 //				new PSO2OptBest4TSP(), /* OK */            
 //				new PSO2OptFirst4TSP(), /* OK */            
 //				new GRASP2OptFirst4TSP(), /* OK */
 //				new GRASP2OptBest4TSP(), /* OK */            
+//				new TS4TSP(), /* OK */   
+//				new HMTSwGRASP2OptBest4TSP(),  /* OK */          
+//				new HMTSwGRASP2OptFirst4TSP(), /* OK */           
+				
+//				new TwoOptBest4QAP(),            
+//				new TwoOptFirst4QAP(),            
+//				new GA4QAP(),
+//				new GA2OptFirst4QAP(),
+//				new HMSAwGRASP2OptBest4QAP(),            
+//				new HMSAwGRASP2OptFirst4QAP(),            
+//				new GA2OptBest4QAP(), /* OK */   
+//				new PSO4QAP(), /* OK */
+//				new PSO2OptBest4QAP(), /* OK */
+//				new PSO2OptFirst4QAP(), /* OK */
+//				new GRASP2OptBest4QAP(), /* OK */
+//				new GRASP2OptFirst4QAP(), /* OK */    
+//				new TS4QAP(), /* OK */
+//				new HMTSwGRASP2OptBest4QAP(), /* OK */            
+//				new HMTSwGRASP2OptFirst4QAP(), /* OK */            
+				
+//				new GA2OptBest4SPP(),            
+				new GA2OptFirst4SPP(),            
+				new GRASP2OptBest4SPP(),
+				new GRASP2OptFirst4SPP(),
+				new HMTSwGRASP2OptFirst4SPP(),            
+				new HMTSwGRASP2OptBest4SPP(),       
+//				new HMSAwGRASP2OptBest4SPP(),            
+//				new HMSAwGRASP2OptFirst4SPP(),            
+//				new GA4SPP(), /* OK */           
+//				new TS4SPP(), /* OK */   
 				#endregion
 			};
 			
