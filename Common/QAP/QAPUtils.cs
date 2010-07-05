@@ -10,7 +10,7 @@ namespace Metaheuristics
 		{
 			double cost = 0;
 			
-			for (int i = 1; i < instance.NumberFacilities; i++) {
+			for (int i = 0; i < instance.NumberFacilities; i++) {
 				for (int j = 0; j < instance.NumberFacilities; j++) {
 					cost += instance.Distances[i,j] * instance.Flows[assignment[i],assignment[j]];
 				}
