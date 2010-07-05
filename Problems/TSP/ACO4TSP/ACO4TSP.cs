@@ -10,7 +10,7 @@ namespace Metaheuristics
 		protected double beta = 10;
 		protected int maxReinit = 5;
 		protected int candidateLength = 15;
-		protected double candidateWeight = 0.95;
+		protected double candidateWeight = 0.99;
 		
 		public void Start(string inputFile, string outputFile, int timeLimit)
 		{

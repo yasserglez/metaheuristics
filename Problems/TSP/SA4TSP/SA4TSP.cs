@@ -9,8 +9,8 @@ namespace Metaheuristics
 		protected int timePenalty = 250;
 		public int initialSolutions = 2;
 		public double levelLengthFactor = 0.75;
-		public double tempReduction = 0.85;
-		public double rclTreshold = 0.2;
+		public double tempReduction = 0.95;
+		public double rclTreshold = 0.6;
 		
 		public void Start(string fileInput, string fileOutput, int timeLimit)
 		{

@@ -4,12 +4,12 @@ namespace Metaheuristics
 {
 	public class ACO2OptBest4SPP : IMetaheuristic, ITunableMetaheuristic
 	{
-		protected int timePenalty = 250;
-		protected double rho = 0.02;
-		protected double alpha = 1;
-		protected double beta = 3;
-		protected int maxReinit = 5;
-		protected int numberAnts = 5;				
+		protected int timePenalty = 500;
+		protected double rho = 0.1;
+		protected double alpha = 5;
+		protected double beta = 0;
+		protected int maxReinit = 10;
+		protected int numberAnts = 2;				
 		
 		public void Start(string inputFile, string outputFile, int timeLimit)
 		{
