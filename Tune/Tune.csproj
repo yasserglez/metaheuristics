@@ -251,10 +251,6 @@
       <Project>{3420DDC7-6D6F-4D88-9095-3181361C325B}</Project>
       <Name>GRASP2OptFirst4TSP</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Problems\2SP\NPS2OptFirst42SP\NPS2OptFirst42SP.csproj">
-      <Project>{5EC8DC7C-2E7F-447E-9CD1-1DF4A39CB868}</Project>
-      <Name>NPS2OptFirst42SP</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Problems\QAP\PSO2OptFirst4QAP\PSO2OptFirst4QAP.csproj">
       <Project>{36A251E8-E284-43CC-BC60-CA7EBE509346}</Project>
       <Name>PSO2OptFirst4QAP</Name>
@@ -450,6 +446,10 @@
     <ProjectReference Include="..\Problems\SPP\HMTSwGRASP2OptFirst4SPP\HMTSwGRASP2OptFirst4SPP.csproj">
       <Project>{8F306CD4-F172-4C4C-92E9-6C9ECFFAC0C8}</Project>
       <Name>HMTSwGRASP2OptFirst4SPP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\2SP\NPS42SP\NPS42SP.csproj">
+      <Project>{5EC8DC7C-2E7F-447E-9CD1-1DF4A39CB868}</Project>
+      <Name>NPS42SP</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

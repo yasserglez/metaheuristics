@@ -736,6 +736,6 @@ Global
 		{151CB239-414B-4441-AE61-5C6676FBC513} = {5C02854E-D520-43F3-9C24-D8E16BA6405E}
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Test\Test.csproj
+		StartupItem = Tune\Tune.csproj
 	EndGlobalSection
 EndGlobal

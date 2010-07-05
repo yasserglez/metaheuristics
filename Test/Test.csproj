@@ -187,10 +187,6 @@
       <Project>{3420DDC7-6D6F-4D88-9095-3181361C325B}</Project>
       <Name>GRASP2OptFirst4TSP</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Problems\2SP\NPS2OptFirst42SP\NPS2OptFirst42SP.csproj">
-      <Project>{5EC8DC7C-2E7F-447E-9CD1-1DF4A39CB868}</Project>
-      <Name>NPS2OptFirst42SP</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Problems\QAP\PSO2OptBest4QAP\PSO2OptBest4QAP.csproj">
       <Project>{83745B16-A6F6-4E5D-B508-356A5E0F93A8}</Project>
       <Name>PSO2OptBest4QAP</Name>
@@ -303,10 +299,6 @@
       <Project>{5D8C7CF3-A94C-451C-99FC-C1C1E7CF2ED0}</Project>
       <Name>TSNPS42SP</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Tune\Tune.csproj">
-      <Project>{3E40AD8D-96D7-424F-BD48-CF6C4599B27A}</Project>
-      <Name>Tune</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Problems\QAP\UMDA2OptBest4QAP\UMDA2OptBest4QAP.csproj">
       <Project>{D046BDE9-5B53-4080-BF5B-12537700100A}</Project>
       <Name>UMDA2OptBest4QAP</Name>
@@ -378,6 +370,74 @@
     <ProjectReference Include="..\Problems\TSP\HMTSwGRASP2OptBest4TSP\HMTSwGRASP2OptBest4TSP.csproj">
       <Project>{096AF1A0-C3FC-4FF3-B058-6B7B94842300}</Project>
       <Name>HMTSwGRASP2OptBest4TSP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\QAP\ACO2OptBest4QAP\ACO2OptBest4QAP.csproj">
+      <Project>{279A71D5-348B-4E5C-BB8A-5CECCE5C04B9}</Project>
+      <Name>ACO2OptBest4QAP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\SPP\ACO2OptBest4SPP\ACO2OptBest4SPP.csproj">
+      <Project>{744DC3E0-A15C-4BD1-AE6F-12941A73A272}</Project>
+      <Name>ACO2OptBest4SPP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\TSP\ACO2OptBest4TSP\ACO2OptBest4TSP.csproj">
+      <Project>{8ECB98A9-FD6C-44DE-B595-2E93378A110E}</Project>
+      <Name>ACO2OptBest4TSP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\QAP\ACO2OptFirst4QAP\ACO2OptFirst4QAP.csproj">
+      <Project>{D5328427-3719-418B-80D6-641D7695719B}</Project>
+      <Name>ACO2OptFirst4QAP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\TSP\ACO2OptFirst4TSP\ACO2OptFirst4TSP.csproj">
+      <Project>{29A7ECE5-A882-477C-9C57-4E947AF2027D}</Project>
+      <Name>ACO2OptFirst4TSP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\SPP\ACO2OptFirst4SPP\ACO2OptFirst4SPP.csproj">
+      <Project>{C4E002DE-11A9-450D-9D61-8C8CD93FB1BC}</Project>
+      <Name>ACO2OptFirst4SPP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\2SP\ACOBL2OptBest42SP\ACOBL2OptBest42SP.csproj">
+      <Project>{71E2B5BD-C40D-4639-B772-AEB7A90F18A9}</Project>
+      <Name>ACOBL2OptBest42SP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\2SP\ACOBL2OptFirst42SP\ACOBL2OptFirst42SP.csproj">
+      <Project>{E3350705-E358-45B3-8354-3F7709857FCF}</Project>
+      <Name>ACOBL2OptFirst42SP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\QAP\HMSAwGRASP2OptBest4QAP\HMSAwGRASP2OptBest4QAP.csproj">
+      <Project>{D80A9E6D-1DD7-4F65-9D28-42C14BC38BC0}</Project>
+      <Name>HMSAwGRASP2OptBest4QAP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\SPP\HMSAwGRASP2OptBest4SPP\HMSAwGRASP2OptBest4SPP.csproj">
+      <Project>{3ECBC04C-96B6-4A22-B1F0-FA0CC6FACA96}</Project>
+      <Name>HMSAwGRASP2OptBest4SPP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\QAP\HMSAwGRASP2OptFirst4QAP\HMSAwGRASP2OptFirst4QAP.csproj">
+      <Project>{CA202300-B0A5-47D2-9D1F-364DE76AB55F}</Project>
+      <Name>HMSAwGRASP2OptFirst4QAP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\SPP\HMSAwGRASP2OptFirst4SPP\HMSAwGRASP2OptFirst4SPP.csproj">
+      <Project>{B47BF926-EFCA-4A88-BA2D-1F0305F948BA}</Project>
+      <Name>HMSAwGRASP2OptFirst4SPP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\QAP\HMTSwGRASP2OptBest4QAP\HMTSwGRASP2OptBest4QAP.csproj">
+      <Project>{36976BCF-0B27-4527-9F18-51DD58B51191}</Project>
+      <Name>HMTSwGRASP2OptBest4QAP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\SPP\HMTSwGRASP2OptBest4SPP\HMTSwGRASP2OptBest4SPP.csproj">
+      <Project>{37A11D58-C9AB-4FFE-805F-42C9CF1A064E}</Project>
+      <Name>HMTSwGRASP2OptBest4SPP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\QAP\HMTSwGRASP2OptFirst4QAP\HMTSwGRASP2OptFirst4QAP.csproj">
+      <Project>{8AC3E49A-79C7-48C1-B72E-DAD47D6E42D3}</Project>
+      <Name>HMTSwGRASP2OptFirst4QAP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\SPP\HMTSwGRASP2OptFirst4SPP\HMTSwGRASP2OptFirst4SPP.csproj">
+      <Project>{8F306CD4-F172-4C4C-92E9-6C9ECFFAC0C8}</Project>
+      <Name>HMTSwGRASP2OptFirst4SPP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\2SP\NPS42SP\NPS42SP.csproj">
+      <Project>{5EC8DC7C-2E7F-447E-9CD1-1DF4A39CB868}</Project>
+      <Name>NPS42SP</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
