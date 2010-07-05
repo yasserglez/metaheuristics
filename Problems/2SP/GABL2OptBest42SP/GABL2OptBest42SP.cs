@@ -5,8 +5,8 @@ namespace Metaheuristics
 {
 	public class GABL2OptBest42SP : IMetaheuristic, ITunableMetaheuristic
 	{
-		protected double timePenalty = 500;
-		protected double popSize = 0.02;
+		protected double timePenalty = 250;
+		protected double popSize = 2;
 		protected double mutProbability = 0.2;
 		
 

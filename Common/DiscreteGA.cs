@@ -87,7 +87,7 @@ namespace Metaheuristics
 			BestIndividual = population[0];
 			BestFitness = evaluation[0];
 			
-			
+			maxIterationTime = Environment.TickCount - startTime;				
 			while (Environment.TickCount - startTime < timeLimit - maxIterationTime) {
 				
 				iterationStartTime = Environment.TickCount;

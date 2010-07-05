@@ -40,7 +40,9 @@ namespace Metaheuristics
 			int startTime = Environment.TickCount;
 			int iterationStartTime = 0;
 			int iterationTime = 0;
-			int maxIterationTime = 0;			
+			int maxIterationTime = 0;	
+			int[] initialSolution = null;
+			double initialFitness = 0;
 			int[] currentSolution = null;
 			double currentFitness = 0;
 			int[] nextSolution = null;
@@ -53,10 +55,13 @@ namespace Metaheuristics
 			LimitedQueue<Tuple<int,int>> tabuList = new LimitedQueue<Tuple<int, int>>(TabuListLength);
 			
 			currentSolution = InitialSolution();
+			initialSolution = new int[currentSolution.Length];
+			currentSolution.CopyTo(initialSolution, 0);
 			currentFitness = Fitness(currentSolution);
 			
 			BestFitness = currentFitness;
 			BestSolution = currentSolution;
+			
 			
 			while (Environment.TickCount - startTime < timeLimit - maxIterationTime) {
 				iterationStartTime = Environment.TickCount;
@@ -64,25 +69,32 @@ namespace Metaheuristics
 				nextSolution = null;
 				nextFitness = int.MaxValue;
 				nextTabu = null;
+				bool success = false;
 				
 				// Finding the next movement.
 				Tuple<int, int> tabu = new Tuple<int, int>(-1, -1);
-				Tuple<int, int> lasTabu = new Tuple<int, int>(-1, -1);
-				while (nextSolution == null  || count < NeighborChecks) {
+				Tuple<int, int> lastTabu = new Tuple<int, int>(-1, -1);
+				
+				while (count < NeighborChecks){
+					count ++;
 					neighbor = GetNeighbor(currentSolution);
 					tabu = GetTabu(currentSolution, neighbor);
-					if(!tabuList.Contains(tabu) && tabu != lasTabu) {
+					if(!tabuList.Contains(tabu) && tabu != lastTabu) {
 						neighborFitness = Fitness(neighbor);
 						if (nextFitness > neighborFitness) {
 							nextSolution = neighbor;
 							nextFitness = neighborFitness;
 							nextTabu = tabu;
+							success = true;
 						}
 						if (currentFitness > nextFitness) {
 							break;
 						}
-						count++;
 					}
+				}
+				if (!success) {
+					nextSolution = initialSolution;
+					nextFitness = initialFitness;
 				}
 				
 				// Aspiration.

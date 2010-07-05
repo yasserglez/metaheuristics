@@ -8,15 +8,15 @@ namespace Tune
 	public class TSTuner : Tuner
 	{
 		public TSTuner(ITunableMetaheuristic metaheuristic, string dirInstances)
-			: base(metaheuristic, dirInstances, 6, new int[] { 2000, 10000 }, 5)
+			: base(metaheuristic, dirInstances, 6, new int[] { 10000 }, 5)
 		{
 		}
 		
 		protected override IEnumerable<double[]> EnumerateParameters()
 		{
-            double[] timePenalties = new double[] { 250, 500 };
-			double[] tabuListFactors = new double[] { 0.50, 0.75 };
-			double[] neighborCheckFactors = new double[] { 0.25, 0.50, 0.75 };
+            double[] timePenalties = new double[] { 100, 250 };
+			double[] tabuListFactors = new double[] { 0.20, 0.50 };
+			double[] neighborCheckFactors = new double[] { 0.10, 0.25, 0.50};
 			double[] rclThresholds = new double[] { 0.20, 0.30};
 			
 			foreach (double rclThreshold in rclThresholds) {

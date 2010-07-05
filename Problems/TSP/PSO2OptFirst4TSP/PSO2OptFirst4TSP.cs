@@ -5,8 +5,8 @@ namespace Metaheuristics
 {
 	public class PSO2OptFirst4TSP : IMetaheuristic, ITunableMetaheuristic
 	{
-		protected double timePenalty = 250;
-		protected double particlesCount = 0.25;
+		protected double timePenalty = 100;
+		protected double particlesCount = 40;
 		protected double prevConf = 0.75;
         	protected double neighConf = 0.75;
 		

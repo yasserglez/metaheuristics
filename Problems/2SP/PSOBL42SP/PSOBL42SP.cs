@@ -6,9 +6,9 @@ namespace Metaheuristics
     public class PSOBL42SP : IMetaheuristic, ITunableMetaheuristic
     {
 		protected double timePenalty = 250;
-		protected double particlesCount = 50;
-		protected double prevConf = 0.5;
-        protected double neighConf = 0.8;
+		protected double particlesCount = 30;
+		protected double prevConf = 0.75;
+        protected double neighConf = 0.75;
 		
         public void Start(string fileInput, string fileOutput, int timeLimit)
         {
