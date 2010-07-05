@@ -26,6 +26,19 @@ namespace Metaheuristics
 				}
 				NumberFacilities = int.Parse(line.Trim());
 				
+				// Getting the flow matrix.
+				Flows = new double[NumberFacilities,NumberFacilities];
+				for (int i = 0; i < NumberFacilities; i++) {
+					line = reader.ReadLine();
+					while (line.Trim() == "") {
+						line = reader.ReadLine();
+					}
+					string[] parts = regex.Split(line.Trim());
+					for (int j = 0; j < NumberFacilities; j++) {
+						Flows[i,j] = double.Parse(parts[j]);
+					}
+				}
+
 				// Getting the distance matrix.			
 				Distances = new double[NumberFacilities,NumberFacilities];
 				for (int i = 0; i < NumberFacilities; i++) {
@@ -39,18 +52,6 @@ namespace Metaheuristics
 					}
 				}
 				
-				// Getting the flow matrix.
-				Flows = new double[NumberFacilities,NumberFacilities];
-				for (int i = 0; i < NumberFacilities; i++) {
-					line = reader.ReadLine();
-					while (line.Trim() == "") {
-						line = reader.ReadLine();
-					}
-					string[] parts = regex.Split(line.Trim());
-					for (int j = 0; j < NumberFacilities; j++) {
-						Flows[i,j] = double.Parse(parts[j]);
-					}
-				}
 			}
 		}			
 	}
