@@ -4,10 +4,10 @@ namespace Metaheuristics
 {
 	public class SS2OptFirst4SPP : IMetaheuristic, ITunableMetaheuristic
 	{
-		protected int timePenalty = 250;
+		protected int timePenalty = 50;
 		public int poolSize = 100;
 		public int refSetSize = 10;
-		public double explorationFactor = 0.5;
+		public double explorationFactor = 0.75;
 		
 		public void Start(string inputFile, string outputFile, int timeLimit)
 		{

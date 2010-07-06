@@ -6,10 +6,10 @@ namespace Metaheuristics
 {
 	public class UMDA2OptFirst4QAP : IMetaheuristic, ITunableMetaheuristic
 	{
-		protected double timePenalty = 250;
-		protected double popFactor = 0.75;
-		protected double truncFactor = 0.2;
-		
+		protected double timePenalty = 100;
+		protected double popFactor = 0.02;
+		protected double truncFactor = 0.4;
+
 		public void Start(string fileInput, string fileOutput, int timeLimit)
 		{
 			QAPInstance instance = new QAPInstance(fileInput);

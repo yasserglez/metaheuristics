@@ -4,16 +4,17 @@ namespace Metaheuristics
 {
 	public class ACO2OptFirst4SPP : IMetaheuristic, ITunableMetaheuristic
 	{
-		protected int timePenalty = 250;
-		protected double rho = 0.02;
-		protected double alpha = 1;
-		protected double beta = 3;
+		protected int timePenalty = 50;
+		protected double rho = 0.1;
+		protected double alpha = 5;
+		protected double beta = 0;
 		protected int maxReinit = 5;
+		protected int numberAnts = 100;
 		
 		public void Start(string inputFile, string outputFile, int timeLimit)
 		{
 			SPPInstance instance = new SPPInstance(inputFile);
-			MaxMinAntSystem aco = new MaxMinAntSystem2OptFirst4SPP(instance, instance.NumberItems, rho, alpha, beta, maxReinit);
+			MaxMinAntSystem aco = new MaxMinAntSystem2OptFirst4SPP(instance, numberAnts, rho, alpha, beta, maxReinit);
 			// Solving the problem and writing the best solution found.
 			aco.Run(timeLimit - timePenalty);
 			SPPSolution solution = new SPPSolution(instance, aco.BestSolution);
