@@ -10,58 +10,58 @@ namespace Tune
 		{
 			ITunableMetaheuristic[] algorithms = new ITunableMetaheuristic[] {		
 				#region Yasser
-//				new	ACOBL2OptBest42SP(),            
-//				new ACOBL2OptFirst42SP(),            
-//				new ACOBL42SP(),            
-//				new ACONPS42SP(),            
-//				new BL2OptBest42SP(),            
-//				new BL2OptFirst42SP(),            
-//				new NPS2OptFirst42SP(),            
-//				new SABL42SP(),            
-//				new SANPS42SP(),            
-//				new SSBL2OptBest42SP(),            
-//				new SSBL2OptFirst42SP(),            
-//				new SSBL42SP(),            
-//				new SSNPS42SP(),            
-//				new UMDABL2OptBest42SP(),            
-//				new UMDABL2OptFirst42SP(),            
-//				new UMDABL42SP(),            
-//				new UMDANPS42SP(),        
+//				new ACOBL42SP(),
+//				new ACOBL2OptFirst42SP(),
+//				new SANPS42SP(),
+//				new SSBL2OptBest42SP(),
+//				new SSNPS42SP(),
+//				new ACOBL2OptBest42SP(), /* OK */
+//				new ACONPS42SP(), /* OK */
+//				new BL2OptBest42SP(), /* OK */
+//				new BL2OptFirst42SP(), /* OK */
+//				new NPS42SP(), /* OK */
+//				new SABL42SP(), /* OK */
+//				new SSBL2OptFirst42SP(), /* OK */
+//				new SSBL42SP(), /* OK */
+//				new UMDABL2OptBest42SP(), /* OK */
+//				new UMDABL2OptFirst42SP(), /* OK */
+//				new UMDABL42SP(), /* OK */
+//				new UMDANPS42SP(), /* OK */
+//				new UMDA4QAP(), /* OK */
 				
-//				new ACO2OptBest4QAP(),            
-//				new ACO2OptFirst4QAP(),            
-//				new ACO4QAP(),            
-//				new SA4QAP(),            
-//				new SS2OptBest4QAP(),            
-//				new SS2OptFirst4QAP(),            
-//				new SS4QAP(),            
-//				new UMDA2OptBest4QAP(),            
-//				new UMDA2OptFirst4QAP(),            
-//				new UMDA4QAP(),          
+//				new SS2OptBest4QAP(),
+//				new UMDA2OptBest4QAP(),
+//				new ACO2OptBest4QAP(),
+//				new ACO2OptFirst4QAP(), /* OK */
+//				new ACO4QAP(), /* OK */
+//				new SA4QAP(), /* OK */
+//				new SS4QAP(), /* OK */
+//				new UMDA2OptFirst4QAP(), /* OK */
+//				new SS2OptFirst4QAP(), /* OK */
+			
+//				new SS2OptBest4SPP(),
+//				new UMDA2OptBest4SPP(),
+//				new TwoOptBest4SPP(), /* OK */
+//				new TwoOptFirst4SPP(), /* OK */
+//				new ACO2OptBest4SPP(), /* OK */
+//				new SA4SPP(), /* OK */
+//				new UMDA4SPP(), /* OK */
+//				new SS2OptFirst4SPP(), /* OK */
+//				new ACO2OptFirst4SPP(), /* OK */
+//				new UMDA2OptFirst4SPP(), /* OK */
+//				new ACO4SPP(), /* OK */
+//				new SS4SPP(), /* OK */
 				
-//				new TwoOptBest4SPP(),            
-//				new TwoOptFirst4SPP(),            
-//				new ACO2OptBest4SPP(),            
-//				new ACO2OptFirst4SPP(),            
-//				new ACO4SPP(),            
-//				new SA4SPP(),            
-//				new SS2OptBest4SPP(),            
-//				new SS2OptFirst4SPP(),            
-//				new SS4SPP(),            
-//				new UMDA2OptBest4SPP(),            
-//				new UMDA2OptFirst4SPP(),            
-//				new UMDA4SPP(),            
-				
-//				new ACO2OptBest4TSP(),            
-//				new ACO2OptFirst4TSP(),            
-//				new ACO4TSP(),            
-//				new SA4TSP(),            
-//				new SS2OptBest4TSP(),            
-//				new SS2OptFirst4TSP(),            
-//				new SS4TSP(),            
-//				new UMDA2OptBest4TSP(),            
-//				new UMDA2OptFirst4TSP(),            
-//				new UMDA4TSP(),
+//				new ACO2OptBest4TSP(),
+//				new SS2OptBest4TSP(),
+//				new UMDA4TSP(), /* OK */
+//				new ACO2OptFirst4TSP(), /* OK */
+//				new ACO4TSP(), /* OK */
+//				new SA4TSP(), /* OK */
+//				new SS2OptFirst4TSP(), /* OK */
+//				new SS4TSP(), /* OK */
+//				new UMDA2OptBest4TSP(), /* OK */
+//				new UMDA2OptFirst4TSP(), /* OK */
 				#endregion
 				
 				#region Ariel

@@ -4,7 +4,7 @@ namespace Metaheuristics
 {
 	public class SS4QAP : IMetaheuristic, ITunableMetaheuristic
 	{
-		protected int timePenalty = 250;
+		protected int timePenalty = 50;
 		public int poolSize = 200;
 		public int refSetSize = 10;
 		public double explorationFactor = 0.75;

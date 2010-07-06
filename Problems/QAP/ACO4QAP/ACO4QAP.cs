@@ -4,10 +4,10 @@ namespace Metaheuristics
 {
 	public class ACO4QAP : IMetaheuristic, ITunableMetaheuristic
 	{
-		protected int timePenalty = 250;
-		protected double rho = 0.02;
-		protected double alpha = 1;
-		protected double beta = 3;
+		protected int timePenalty = 50;
+		protected double rho = 0.2;
+		protected double alpha = 5;
+		protected double beta = 0;
 		protected int maxReinit = 5;
 		
 		public void Start(string inputFile, string outputFile, int timeLimit)
