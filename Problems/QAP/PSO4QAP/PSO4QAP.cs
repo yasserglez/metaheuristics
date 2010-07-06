@@ -6,7 +6,7 @@ namespace Metaheuristics
     public class PSO4QAP : IMetaheuristic, ITunableMetaheuristic
     {
 	protected double timePenalty = 250;
-	protected double particlesCount = 80;
+	protected double particlesCount = 50;
 	protected double prevConf = 0.75;
         protected double neighConf = 0.75;
 		

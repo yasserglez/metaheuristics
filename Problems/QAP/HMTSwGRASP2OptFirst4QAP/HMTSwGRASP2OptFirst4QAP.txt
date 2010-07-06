@@ -1,0 +1,281 @@
+Parameters tuning for: TS with GRASP with 2-opt (first improvement) local search for QAP
+Estimated run time: 00:24:00
+
+Current parameters: 50, 2
+Elapsed time for chr25a.in: 1951 of 2100
+Elapsed time for chr25a.in: 1945 of 2100
+Elapsed time for chr25a.in: 1951 of 2100
+Elapsed time for chr25a.in: 1950 of 2100
+Elapsed time for chr25a.in: 1950 of 2100
+Elapsed time for chr25a.in: 1950 of 2100
+Elapsed time for chr25a.in: 9876 of 10500
+Elapsed time for chr25a.in: 9944 of 10500
+Elapsed time for chr25a.in: 9947 of 10500
+Elapsed time for chr25a.in: 9948 of 10500
+Elapsed time for chr25a.in: 9948 of 10500
+Elapsed time for chr25a.in: 9949 of 10500
+Mean fitness for chr25a.in: 4495,66666666667
+Elapsed time for had20.in: 1950 of 2100
+Elapsed time for had20.in: 1948 of 2100
+Elapsed time for had20.in: 1949 of 2100
+Elapsed time for had20.in: 1947 of 2100
+Elapsed time for had20.in: 1949 of 2100
+Elapsed time for had20.in: 1950 of 2100
+Elapsed time for had20.in: 9940 of 10500
+Elapsed time for had20.in: 9943 of 10500
+Elapsed time for had20.in: 9943 of 10500
+Elapsed time for had20.in: 9943 of 10500
+Elapsed time for had20.in: 9945 of 10500
+Elapsed time for had20.in: 9939 of 10500
+Mean fitness for had20.in: 6935,16666666667
+Elapsed time for sko56.in: 1959 of 2100
+Elapsed time for sko56.in: 1947 of 2100
+Elapsed time for sko56.in: 1952 of 2100
+Elapsed time for sko56.in: 1957 of 2100
+Elapsed time for sko56.in: 1942 of 2100
+Elapsed time for sko56.in: 1948 of 2100
+Elapsed time for sko56.in: 9941 of 10500
+Elapsed time for sko56.in: 9950 of 10500
+Elapsed time for sko56.in: 9934 of 10500
+Elapsed time for sko56.in: 9943 of 10500
+Elapsed time for sko56.in: 9942 of 10500
+Elapsed time for sko56.in: 9932 of 10500
+Mean fitness for sko56.in: 35000,3333333333
+Elapsed time for sko72.in: 1934 of 2100
+Elapsed time for sko72.in: 1943 of 2100
+Elapsed time for sko72.in: 1922 of 2100
+Elapsed time for sko72.in: 1948 of 2100
+Elapsed time for sko72.in: 1921 of 2100
+Elapsed time for sko72.in: 1926 of 2100
+Elapsed time for sko72.in: 9955 of 10500
+Elapsed time for sko72.in: 9913 of 10500
+Elapsed time for sko72.in: 9937 of 10500
+Elapsed time for sko72.in: 9901 of 10500
+Elapsed time for sko72.in: 9909 of 10500
+Elapsed time for sko72.in: 9923 of 10500
+Mean fitness for sko72.in: 67631,6666666667
+Current cost: 114062,833333333
+This is the best cost until now.
+
+Current parameters: 50, 4
+Elapsed time for chr25a.in: 1949 of 2100
+Elapsed time for chr25a.in: 1950 of 2100
+Elapsed time for chr25a.in: 1943 of 2100
+Elapsed time for chr25a.in: 1951 of 2100
+Elapsed time for chr25a.in: 1952 of 2100
+Elapsed time for chr25a.in: 1952 of 2100
+Elapsed time for chr25a.in: 9941 of 10500
+Elapsed time for chr25a.in: 9950 of 10500
+Elapsed time for chr25a.in: 9949 of 10500
+Elapsed time for chr25a.in: 9950 of 10500
+Elapsed time for chr25a.in: 9948 of 10500
+Elapsed time for chr25a.in: 9950 of 10500
+Mean fitness for chr25a.in: 4574,66666666667
+Elapsed time for had20.in: 1950 of 2100
+Elapsed time for had20.in: 1944 of 2100
+Elapsed time for had20.in: 1951 of 2100
+Elapsed time for had20.in: 1950 of 2100
+Elapsed time for had20.in: 1950 of 2100
+Elapsed time for had20.in: 1949 of 2100
+Elapsed time for had20.in: 9942 of 10500
+Elapsed time for had20.in: 9939 of 10500
+Elapsed time for had20.in: 9945 of 10500
+Elapsed time for had20.in: 9950 of 10500
+Elapsed time for had20.in: 9944 of 10500
+Elapsed time for had20.in: 9950 of 10500
+Mean fitness for had20.in: 6943
+Elapsed time for sko56.in: 1940 of 2100
+Elapsed time for sko56.in: 1954 of 2100
+Elapsed time for sko56.in: 1942 of 2100
+Elapsed time for sko56.in: 1958 of 2100
+Elapsed time for sko56.in: 1946 of 2100
+Elapsed time for sko56.in: 1939 of 2100
+Elapsed time for sko56.in: 9949 of 10500
+Elapsed time for sko56.in: 9941 of 10500
+Elapsed time for sko56.in: 9952 of 10500
+Elapsed time for sko56.in: 9936 of 10500
+Elapsed time for sko56.in: 9930 of 10500
+Elapsed time for sko56.in: 9910 of 10500
+Mean fitness for sko56.in: 35067,3333333333
+Elapsed time for sko72.in: 1899 of 2100
+Elapsed time for sko72.in: 1929 of 2100
+Elapsed time for sko72.in: 1942 of 2100
+Elapsed time for sko72.in: 1929 of 2100
+Elapsed time for sko72.in: 1938 of 2100
+Elapsed time for sko72.in: 1926 of 2100
+Elapsed time for sko72.in: 9931 of 10500
+Elapsed time for sko72.in: 9932 of 10500
+Elapsed time for sko72.in: 9917 of 10500
+Elapsed time for sko72.in: 9921 of 10500
+Elapsed time for sko72.in: 9935 of 10500
+Elapsed time for sko72.in: 9904 of 10500
+Mean fitness for sko72.in: 67589,8333333333
+Current cost: 114174,833333333
+
+Current parameters: 50, 6
+Elapsed time for chr25a.in: 1949 of 2100
+Elapsed time for chr25a.in: 1950 of 2100
+Elapsed time for chr25a.in: 1949 of 2100
+Elapsed time for chr25a.in: 1950 of 2100
+Elapsed time for chr25a.in: 1868 of 2100
+Elapsed time for chr25a.in: 1951 of 2100
+Elapsed time for chr25a.in: 9949 of 10500
+Elapsed time for chr25a.in: 9950 of 10500
+Elapsed time for chr25a.in: 9950 of 10500
+Elapsed time for chr25a.in: 9944 of 10500
+Elapsed time for chr25a.in: 9945 of 10500
+Elapsed time for chr25a.in: 9950 of 10500
+Mean fitness for chr25a.in: 4522,66666666667
+Elapsed time for had20.in: 1950 of 2100
+Elapsed time for had20.in: 1950 of 2100
+Elapsed time for had20.in: 1950 of 2100
+Elapsed time for had20.in: 1950 of 2100
+Elapsed time for had20.in: 1948 of 2100
+Elapsed time for had20.in: 1951 of 2100
+Elapsed time for had20.in: 9945 of 10500
+Elapsed time for had20.in: 9949 of 10500
+Elapsed time for had20.in: 9945 of 10500
+Elapsed time for had20.in: 9947 of 10500
+Elapsed time for had20.in: 9946 of 10500
+Elapsed time for had20.in: 9945 of 10500
+Mean fitness for had20.in: 6940
+Elapsed time for sko56.in: 1954 of 2100
+Elapsed time for sko56.in: 1953 of 2100
+Elapsed time for sko56.in: 1953 of 2100
+Elapsed time for sko56.in: 1945 of 2100
+Elapsed time for sko56.in: 1942 of 2100
+Elapsed time for sko56.in: 1941 of 2100
+Elapsed time for sko56.in: 9941 of 10500
+Elapsed time for sko56.in: 9924 of 10500
+Elapsed time for sko56.in: 9936 of 10500
+Elapsed time for sko56.in: 9934 of 10500
+Elapsed time for sko56.in: 9941 of 10500
+Elapsed time for sko56.in: 9936 of 10500
+Mean fitness for sko56.in: 35030,3333333333
+Elapsed time for sko72.in: 1943 of 2100
+Elapsed time for sko72.in: 1926 of 2100
+Elapsed time for sko72.in: 1909 of 2100
+Elapsed time for sko72.in: 1926 of 2100
+Elapsed time for sko72.in: 1946 of 2100
+Elapsed time for sko72.in: 1908 of 2100
+Elapsed time for sko72.in: 9957 of 10500
+Elapsed time for sko72.in: 9936 of 10500
+Elapsed time for sko72.in: 9951 of 10500
+Elapsed time for sko72.in: 9881 of 10500
+Elapsed time for sko72.in: 9952 of 10500
+Elapsed time for sko72.in: 9938 of 10500
+Mean fitness for sko72.in: 67453,5
+Current cost: 113946,5
+This is the best cost until now.
+
+Current parameters: 50, 8
+Elapsed time for chr25a.in: 1950 of 2100
+Elapsed time for chr25a.in: 1940 of 2100
+Elapsed time for chr25a.in: 1950 of 2100
+Elapsed time for chr25a.in: 1951 of 2100
+Elapsed time for chr25a.in: 1950 of 2100
+Elapsed time for chr25a.in: 1951 of 2100
+Elapsed time for chr25a.in: 9949 of 10500
+Elapsed time for chr25a.in: 9949 of 10500
+Elapsed time for chr25a.in: 9950 of 10500
+Elapsed time for chr25a.in: 9945 of 10500
+Elapsed time for chr25a.in: 9944 of 10500
+Elapsed time for chr25a.in: 9892 of 10500
+Mean fitness for chr25a.in: 4594
+Elapsed time for had20.in: 1950 of 2100
+Elapsed time for had20.in: 1949 of 2100
+Elapsed time for had20.in: 1949 of 2100
+Elapsed time for had20.in: 1949 of 2100
+Elapsed time for had20.in: 1947 of 2100
+Elapsed time for had20.in: 1949 of 2100
+Elapsed time for had20.in: 9949 of 10500
+Elapsed time for had20.in: 9944 of 10500
+Elapsed time for had20.in: 9944 of 10500
+Elapsed time for had20.in: 9949 of 10500
+Elapsed time for had20.in: 9943 of 10500
+Elapsed time for had20.in: 9943 of 10500
+Mean fitness for had20.in: 6937,66666666667
+Elapsed time for sko56.in: 1945 of 2100
+Elapsed time for sko56.in: 1941 of 2100
+Elapsed time for sko56.in: 1958 of 2100
+Elapsed time for sko56.in: 1956 of 2100
+Elapsed time for sko56.in: 1942 of 2100
+Elapsed time for sko56.in: 1939 of 2100
+Elapsed time for sko56.in: 9935 of 10500
+Elapsed time for sko56.in: 9934 of 10500
+Elapsed time for sko56.in: 9941 of 10500
+Elapsed time for sko56.in: 9944 of 10500
+Elapsed time for sko56.in: 9947 of 10500
+Elapsed time for sko56.in: 9948 of 10500
+Mean fitness for sko56.in: 35044,6666666667
+Elapsed time for sko72.in: 1921 of 2100
+Elapsed time for sko72.in: 1961 of 2100
+Elapsed time for sko72.in: 1965 of 2100
+Elapsed time for sko72.in: 1943 of 2100
+Elapsed time for sko72.in: 1963 of 2100
+Elapsed time for sko72.in: 1914 of 2100
+Elapsed time for sko72.in: 9950 of 10500
+Elapsed time for sko72.in: 9950 of 10500
+Elapsed time for sko72.in: 9930 of 10500
+Elapsed time for sko72.in: 9918 of 10500
+Elapsed time for sko72.in: 9949 of 10500
+Elapsed time for sko72.in: 9935 of 10500
+Mean fitness for sko72.in: 67663,1666666667
+Current cost: 114239,5
+
+Current parameters: 50, 10
+Elapsed time for chr25a.in: 1944 of 2100
+Elapsed time for chr25a.in: 1950 of 2100
+Elapsed time for chr25a.in: 1950 of 2100
+Elapsed time for chr25a.in: 1951 of 2100
+Elapsed time for chr25a.in: 1952 of 2100
+Elapsed time for chr25a.in: 1946 of 2100
+Elapsed time for chr25a.in: 9951 of 10500
+Elapsed time for chr25a.in: 9950 of 10500
+Elapsed time for chr25a.in: 9949 of 10500
+Elapsed time for chr25a.in: 9950 of 10500
+Elapsed time for chr25a.in: 9879 of 10500
+Elapsed time for chr25a.in: 9944 of 10500
+Mean fitness for chr25a.in: 4583,83333333333
+Elapsed time for had20.in: 1949 of 2100
+Elapsed time for had20.in: 1950 of 2100
+Elapsed time for had20.in: 1944 of 2100
+Elapsed time for had20.in: 1939 of 2100
+Elapsed time for had20.in: 1944 of 2100
+Elapsed time for had20.in: 1950 of 2100
+Elapsed time for had20.in: 9944 of 10500
+Elapsed time for had20.in: 9949 of 10500
+Elapsed time for had20.in: 9944 of 10500
+Elapsed time for had20.in: 9948 of 10500
+Elapsed time for had20.in: 9874 of 10500
+Elapsed time for had20.in: 9944 of 10500
+Mean fitness for had20.in: 6944,5
+Elapsed time for sko56.in: 1953 of 2100
+Elapsed time for sko56.in: 1942 of 2100
+Elapsed time for sko56.in: 1947 of 2100
+Elapsed time for sko56.in: 1956 of 2100
+Elapsed time for sko56.in: 1958 of 2100
+Elapsed time for sko56.in: 1938 of 2100
+Elapsed time for sko56.in: 9936 of 10500
+Elapsed time for sko56.in: 9933 of 10500
+Elapsed time for sko56.in: 9937 of 10500
+Elapsed time for sko56.in: 9955 of 10500
+Elapsed time for sko56.in: 9928 of 10500
+Elapsed time for sko56.in: 9943 of 10500
+Mean fitness for sko56.in: 34996,1666666667
+Elapsed time for sko72.in: 1934 of 2100
+Elapsed time for sko72.in: 1936 of 2100
+Elapsed time for sko72.in: 1931 of 2100
+Elapsed time for sko72.in: 1917 of 2100
+Elapsed time for sko72.in: 1957 of 2100
+Elapsed time for sko72.in: 1955 of 2100
+Elapsed time for sko72.in: 9958 of 10500
+Elapsed time for sko72.in: 9925 of 10500
+Elapsed time for sko72.in: 9959 of 10500
+Elapsed time for sko72.in: 9951 of 10500
+Elapsed time for sko72.in: 9947 of 10500
+Elapsed time for sko72.in: 9932 of 10500
+Mean fitness for sko72.in: 67568,5
+Current cost: 114093
+
+Final best parameters: 50, 6

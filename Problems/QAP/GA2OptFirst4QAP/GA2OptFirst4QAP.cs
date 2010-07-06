@@ -8,7 +8,7 @@ namespace Metaheuristics
 	{
 		protected double timePenalty = 250;
 		protected double popSize = 2;
-		protected double mutProbability = 0.3;
+		protected double mutProbability = 0.2;
 
 		public void Start (string fileInput, string fileOutput, int timeLimit)
 		{

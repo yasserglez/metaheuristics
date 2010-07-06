@@ -6,7 +6,7 @@ namespace Metaheuristics
 	public class HMTSwGRASP2OptFirst4QAP : IMetaheuristic, ITunableMetaheuristic
 	{
 		protected int timePenalty = 50;
-		protected int graspIterations = 8;
+		protected int graspIterations = 6;
 		//TS Params
 		public double neighborChecksFactor = 0.1;
 		public double tabuListFactor = 0.50;

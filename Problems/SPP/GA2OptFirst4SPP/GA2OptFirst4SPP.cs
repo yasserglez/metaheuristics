@@ -6,7 +6,7 @@ namespace Metaheuristics
 	public class GA2OptFirst4SPP : IMetaheuristic, ITunableMetaheuristic
 	{
 		protected double popSize = 2;
-		protected double mutProbability = 0.2;
+		protected double mutProbability = 0.3;
 		protected double timePenalty = 500;
 		
 		public void Start(string fileInput, string fileOutput, int timeLimit)

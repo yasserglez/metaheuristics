@@ -6,7 +6,7 @@ namespace Metaheuristics
 {
 	public class GA4QAP : IMetaheuristic, ITunableMetaheuristic
 	{
-		protected double timePenalty = 250;
+		protected double timePenalty = 500;
 		protected double popSize = 8;
 		protected double mutProbability = 0.3;
 

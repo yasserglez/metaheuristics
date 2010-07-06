@@ -8,7 +8,7 @@ namespace Tune
 	public class TSTuner : Tuner
 	{
 		public TSTuner(ITunableMetaheuristic metaheuristic, string dirInstances)
-			: base(metaheuristic, dirInstances, 6, new int[] { 10000 }, 5)
+			: base(metaheuristic, dirInstances, 6, new int[] { 2000, 10000 }, 5)
 		{
 		}
 		

@@ -1,1987 +1,2985 @@
 Parameters tuning for: GA with 2-opt (first improvement) local search for TSP
-Estimated run time: 02:52:48
+Estimated run time: 04:19:12
 
-Current parameters: 250, 2, 0,1
-Elapsed time for bier127.in: 1703 of 2100
-Elapsed time for bier127.in: 1735 of 2100
-Elapsed time for bier127.in: 1734 of 2100
-Elapsed time for bier127.in: 1719 of 2100
-Elapsed time for bier127.in: 1703 of 2100
-Elapsed time for bier127.in: 1719 of 2100
-Elapsed time for bier127.in: 9718 of 10500
-Elapsed time for bier127.in: 9672 of 10500
-Elapsed time for bier127.in: 9703 of 10500
-Elapsed time for bier127.in: 9719 of 10500
-Elapsed time for bier127.in: 9735 of 10500
-Elapsed time for bier127.in: 9718 of 10500
-Mean fitness for bier127.in: 198824,379462259
-Elapsed time for gr137.in: 1719 of 2100
-Elapsed time for gr137.in: 1719 of 2100
-Elapsed time for gr137.in: 1719 of 2100
-Elapsed time for gr137.in: 1734 of 2100
-Elapsed time for gr137.in: 1719 of 2100
-Elapsed time for gr137.in: 1734 of 2100
-Elapsed time for gr137.in: 9703 of 10500
-Elapsed time for gr137.in: 9688 of 10500
-Elapsed time for gr137.in: 9687 of 10500
-Elapsed time for gr137.in: 9672 of 10500
-Elapsed time for gr137.in: 9719 of 10500
-Elapsed time for gr137.in: 9703 of 10500
-Mean fitness for gr137.in: 160645,650885529
-Elapsed time for pr152.in: 1719 of 2100
-Elapsed time for pr152.in: 1734 of 2100
-Elapsed time for pr152.in: 1734 of 2100
-Elapsed time for pr152.in: 1735 of 2100
-Elapsed time for pr152.in: 1734 of 2100
-Elapsed time for pr152.in: 1719 of 2100
-Elapsed time for pr152.in: 9719 of 10500
-Elapsed time for pr152.in: 9703 of 10500
-Elapsed time for pr152.in: 9703 of 10500
-Elapsed time for pr152.in: 9734 of 10500
-Elapsed time for pr152.in: 9703 of 10500
-Elapsed time for pr152.in: 9704 of 10500
-Mean fitness for pr152.in: 325718,923911247
-Elapsed time for rat195.in: 1718 of 2100
-Elapsed time for rat195.in: 1719 of 2100
-Elapsed time for rat195.in: 1719 of 2100
-Elapsed time for rat195.in: 1719 of 2100
-Elapsed time for rat195.in: 1718 of 2100
-Elapsed time for rat195.in: 1719 of 2100
-Elapsed time for rat195.in: 9718 of 10500
-Elapsed time for rat195.in: 9719 of 10500
-Elapsed time for rat195.in: 9703 of 10500
-Elapsed time for rat195.in: 9735 of 10500
-Elapsed time for rat195.in: 9718 of 10500
-Elapsed time for rat195.in: 9704 of 10500
-Mean fitness for rat195.in: 9793,8480936145
-Current cost: 694982,802352649
+Current parameters: 250, 50, 0,1
+Elapsed time for bier127.in: 1343 of 2100
+Elapsed time for bier127.in: 1344 of 2100
+Elapsed time for bier127.in: 1312 of 2100
+Elapsed time for bier127.in: 1282 of 2100
+Elapsed time for bier127.in: 1390 of 2100
+Elapsed time for bier127.in: 1391 of 2100
+Elapsed time for bier127.in: 9531 of 10500
+Elapsed time for bier127.in: 9468 of 10500
+Elapsed time for bier127.in: 9422 of 10500
+Elapsed time for bier127.in: 9282 of 10500
+Elapsed time for bier127.in: 9562 of 10500
+Elapsed time for bier127.in: 9484 of 10500
+Mean fitness for bier127.in: 335710,623248716
+Elapsed time for gr137.in: 1359 of 2100
+Elapsed time for gr137.in: 1375 of 2100
+Elapsed time for gr137.in: 1344 of 2100
+Elapsed time for gr137.in: 1156 of 2100
+Elapsed time for gr137.in: 1203 of 2100
+Elapsed time for gr137.in: 1110 of 2100
+Elapsed time for gr137.in: 9312 of 10500
+Elapsed time for gr137.in: 9406 of 10500
+Elapsed time for gr137.in: 9360 of 10500
+Elapsed time for gr137.in: 9375 of 10500
+Elapsed time for gr137.in: 9406 of 10500
+Elapsed time for gr137.in: 9469 of 10500
+Mean fitness for gr137.in: 318055,61132493
+Elapsed time for pr152.in: 1203 of 2100
+Elapsed time for pr152.in: 1250 of 2100
+Elapsed time for pr152.in: 1047 of 2100
+Elapsed time for pr152.in: 1265 of 2100
+Elapsed time for pr152.in: 1172 of 2100
+Elapsed time for pr152.in: 1063 of 2100
+Elapsed time for pr152.in: 9094 of 10500
+Elapsed time for pr152.in: 9265 of 10500
+Elapsed time for pr152.in: 9313 of 10500
+Elapsed time for pr152.in: 9360 of 10500
+Elapsed time for pr152.in: 9312 of 10500
+Elapsed time for pr152.in: 9344 of 10500
+Mean fitness for pr152.in: 573214,158030061
+Elapsed time for rat195.in: 937 of 2100
+Elapsed time for rat195.in: 922 of 2100
+Elapsed time for rat195.in: 906 of 2100
+Elapsed time for rat195.in: 906 of 2100
+Elapsed time for rat195.in: 906 of 2100
+Elapsed time for rat195.in: 922 of 2100
+Elapsed time for rat195.in: 8797 of 10500
+Elapsed time for rat195.in: 8703 of 10500
+Elapsed time for rat195.in: 8938 of 10500
+Elapsed time for rat195.in: 8922 of 10500
+Elapsed time for rat195.in: 8938 of 10500
+Elapsed time for rat195.in: 9000 of 10500
+Mean fitness for rat195.in: 16358,4607680484
+Current cost: 1243338,85337176
 This is the best cost until now.
 
-Current parameters: 250, 4, 0,1
-Elapsed time for bier127.in: 1734 of 2100
-Elapsed time for bier127.in: 1719 of 2100
-Elapsed time for bier127.in: 1734 of 2100
-Elapsed time for bier127.in: 1703 of 2100
-Elapsed time for bier127.in: 1703 of 2100
-Elapsed time for bier127.in: 1719 of 2100
-Elapsed time for bier127.in: 9672 of 10500
-Elapsed time for bier127.in: 9687 of 10500
-Elapsed time for bier127.in: 9719 of 10500
-Elapsed time for bier127.in: 9687 of 10500
-Elapsed time for bier127.in: 9688 of 10500
-Elapsed time for bier127.in: 9687 of 10500
-Mean fitness for bier127.in: 222578,339032391
-Elapsed time for gr137.in: 1735 of 2100
-Elapsed time for gr137.in: 1703 of 2100
-Elapsed time for gr137.in: 1703 of 2100
-Elapsed time for gr137.in: 1734 of 2100
-Elapsed time for gr137.in: 1750 of 2100
-Elapsed time for gr137.in: 1703 of 2100
-Elapsed time for gr137.in: 9688 of 10500
-Elapsed time for gr137.in: 9719 of 10500
-Elapsed time for gr137.in: 9671 of 10500
-Elapsed time for gr137.in: 9672 of 10500
-Elapsed time for gr137.in: 9719 of 10500
-Elapsed time for gr137.in: 9719 of 10500
-Mean fitness for gr137.in: 186824,932514138
-Elapsed time for pr152.in: 1703 of 2100
-Elapsed time for pr152.in: 1703 of 2100
-Elapsed time for pr152.in: 1703 of 2100
-Elapsed time for pr152.in: 1688 of 2100
-Elapsed time for pr152.in: 1718 of 2100
-Elapsed time for pr152.in: 1703 of 2100
-Elapsed time for pr152.in: 9688 of 10500
-Elapsed time for pr152.in: 9718 of 10500
-Elapsed time for pr152.in: 9688 of 10500
-Elapsed time for pr152.in: 9703 of 10500
-Elapsed time for pr152.in: 9703 of 10500
-Elapsed time for pr152.in: 9735 of 10500
-Mean fitness for pr152.in: 378390,728773698
-Elapsed time for rat195.in: 1687 of 2100
-Elapsed time for rat195.in: 1688 of 2100
-Elapsed time for rat195.in: 1656 of 2100
-Elapsed time for rat195.in: 1672 of 2100
-Elapsed time for rat195.in: 1687 of 2100
-Elapsed time for rat195.in: 1688 of 2100
-Elapsed time for rat195.in: 9734 of 10500
-Elapsed time for rat195.in: 9672 of 10500
-Elapsed time for rat195.in: 9719 of 10500
-Elapsed time for rat195.in: 9687 of 10500
-Elapsed time for rat195.in: 9672 of 10500
-Elapsed time for rat195.in: 9719 of 10500
-Mean fitness for rat195.in: 11332,9184883186
-Current cost: 799126,918808545
+Current parameters: 250, 40, 0,1
+Elapsed time for bier127.in: 1468 of 2100
+Elapsed time for bier127.in: 1469 of 2100
+Elapsed time for bier127.in: 1359 of 2100
+Elapsed time for bier127.in: 1438 of 2100
+Elapsed time for bier127.in: 1484 of 2100
+Elapsed time for bier127.in: 1469 of 2100
+Elapsed time for bier127.in: 9500 of 10500
+Elapsed time for bier127.in: 9313 of 10500
+Elapsed time for bier127.in: 9547 of 10500
+Elapsed time for bier127.in: 9515 of 10500
+Elapsed time for bier127.in: 9453 of 10500
+Elapsed time for bier127.in: 9532 of 10500
+Mean fitness for bier127.in: 324098,692987462
+Elapsed time for gr137.in: 1437 of 2100
+Elapsed time for gr137.in: 1375 of 2100
+Elapsed time for gr137.in: 1359 of 2100
+Elapsed time for gr137.in: 1391 of 2100
+Elapsed time for gr137.in: 1438 of 2100
+Elapsed time for gr137.in: 1453 of 2100
+Elapsed time for gr137.in: 9438 of 10500
+Elapsed time for gr137.in: 9234 of 10500
+Elapsed time for gr137.in: 9438 of 10500
+Elapsed time for gr137.in: 9500 of 10500
+Elapsed time for gr137.in: 9406 of 10500
+Elapsed time for gr137.in: 9578 of 10500
+Mean fitness for gr137.in: 294508,603635249
+Elapsed time for pr152.in: 1344 of 2100
+Elapsed time for pr152.in: 1359 of 2100
+Elapsed time for pr152.in: 1343 of 2100
+Elapsed time for pr152.in: 1188 of 2100
+Elapsed time for pr152.in: 1344 of 2100
+Elapsed time for pr152.in: 1234 of 2100
+Elapsed time for pr152.in: 9297 of 10500
+Elapsed time for pr152.in: 9297 of 10500
+Elapsed time for pr152.in: 9266 of 10500
+Elapsed time for pr152.in: 9312 of 10500
+Elapsed time for pr152.in: 9297 of 10500
+Elapsed time for pr152.in: 9265 of 10500
+Mean fitness for pr152.in: 570359,335291988
+Elapsed time for rat195.in: 938 of 2100
+Elapsed time for rat195.in: 1016 of 2100
+Elapsed time for rat195.in: 937 of 2100
+Elapsed time for rat195.in: 938 of 2100
+Elapsed time for rat195.in: 1031 of 2100
+Elapsed time for rat195.in: 968 of 2100
+Elapsed time for rat195.in: 8875 of 10500
+Elapsed time for rat195.in: 9063 of 10500
+Elapsed time for rat195.in: 9000 of 10500
+Elapsed time for rat195.in: 8937 of 10500
+Elapsed time for rat195.in: 9110 of 10500
+Elapsed time for rat195.in: 9110 of 10500
+Mean fitness for rat195.in: 14916,0312311406
+Current cost: 1203882,66314584
+This is the best cost until now.
 
-Current parameters: 250, 6, 0,1
-Elapsed time for bier127.in: 1734 of 2100
-Elapsed time for bier127.in: 1688 of 2100
-Elapsed time for bier127.in: 1703 of 2100
-Elapsed time for bier127.in: 1734 of 2100
-Elapsed time for bier127.in: 1719 of 2100
-Elapsed time for bier127.in: 1734 of 2100
-Elapsed time for bier127.in: 9719 of 10500
+Current parameters: 250, 30, 0,1
+Elapsed time for bier127.in: 1515 of 2100
+Elapsed time for bier127.in: 1532 of 2100
+Elapsed time for bier127.in: 1578 of 2100
+Elapsed time for bier127.in: 1532 of 2100
+Elapsed time for bier127.in: 1546 of 2100
+Elapsed time for bier127.in: 1454 of 2100
 Elapsed time for bier127.in: 9625 of 10500
-Elapsed time for bier127.in: 9672 of 10500
-Elapsed time for bier127.in: 9703 of 10500
-Elapsed time for bier127.in: 9703 of 10500
-Elapsed time for bier127.in: 9672 of 10500
-Mean fitness for bier127.in: 241286,804791817
-Elapsed time for gr137.in: 1718 of 2100
-Elapsed time for gr137.in: 1735 of 2100
-Elapsed time for gr137.in: 1703 of 2100
-Elapsed time for gr137.in: 1750 of 2100
-Elapsed time for gr137.in: 1656 of 2100
-Elapsed time for gr137.in: 1703 of 2100
-Elapsed time for gr137.in: 9688 of 10500
-Elapsed time for gr137.in: 9687 of 10500
-Elapsed time for gr137.in: 9657 of 10500
-Elapsed time for gr137.in: 9687 of 10500
-Elapsed time for gr137.in: 9688 of 10500
-Elapsed time for gr137.in: 9734 of 10500
-Mean fitness for gr137.in: 211231,187031788
-Elapsed time for pr152.in: 1734 of 2100
-Elapsed time for pr152.in: 1672 of 2100
-Elapsed time for pr152.in: 1687 of 2100
-Elapsed time for pr152.in: 1672 of 2100
-Elapsed time for pr152.in: 1719 of 2100
-Elapsed time for pr152.in: 1703 of 2100
-Elapsed time for pr152.in: 9703 of 10500
-Elapsed time for pr152.in: 9735 of 10500
-Elapsed time for pr152.in: 9656 of 10500
-Elapsed time for pr152.in: 9687 of 10500
-Elapsed time for pr152.in: 9703 of 10500
-Elapsed time for pr152.in: 9704 of 10500
-Mean fitness for pr152.in: 403609,962859341
-Elapsed time for rat195.in: 1640 of 2100
-Elapsed time for rat195.in: 1672 of 2100
-Elapsed time for rat195.in: 1640 of 2100
-Elapsed time for rat195.in: 1641 of 2100
-Elapsed time for rat195.in: 1672 of 2100
-Elapsed time for rat195.in: 1640 of 2100
-Elapsed time for rat195.in: 9719 of 10500
-Elapsed time for rat195.in: 9688 of 10500
-Elapsed time for rat195.in: 9640 of 10500
-Elapsed time for rat195.in: 9703 of 10500
-Elapsed time for rat195.in: 9719 of 10500
-Elapsed time for rat195.in: 9719 of 10500
-Mean fitness for rat195.in: 11865,1064255025
-Current cost: 867993,061108449
-
-Current parameters: 250, 8, 0,1
-Elapsed time for bier127.in: 1734 of 2100
-Elapsed time for bier127.in: 1735 of 2100
-Elapsed time for bier127.in: 1687 of 2100
-Elapsed time for bier127.in: 1719 of 2100
-Elapsed time for bier127.in: 1703 of 2100
-Elapsed time for bier127.in: 1688 of 2100
+Elapsed time for bier127.in: 9625 of 10500
+Elapsed time for bier127.in: 9453 of 10500
+Elapsed time for bier127.in: 9594 of 10500
 Elapsed time for bier127.in: 9640 of 10500
-Elapsed time for bier127.in: 9735 of 10500
-Elapsed time for bier127.in: 9687 of 10500
-Elapsed time for bier127.in: 9688 of 10500
-Elapsed time for bier127.in: 9687 of 10500
-Elapsed time for bier127.in: 9656 of 10500
-Mean fitness for bier127.in: 243919,845149031
-Elapsed time for gr137.in: 1703 of 2100
-Elapsed time for gr137.in: 1719 of 2100
-Elapsed time for gr137.in: 1672 of 2100
-Elapsed time for gr137.in: 1672 of 2100
-Elapsed time for gr137.in: 1672 of 2100
-Elapsed time for gr137.in: 1672 of 2100
+Elapsed time for bier127.in: 9640 of 10500
+Mean fitness for bier127.in: 315516,551309676
+Elapsed time for gr137.in: 1485 of 2100
+Elapsed time for gr137.in: 1500 of 2100
+Elapsed time for gr137.in: 1515 of 2100
+Elapsed time for gr137.in: 1485 of 2100
+Elapsed time for gr137.in: 1468 of 2100
+Elapsed time for gr137.in: 1500 of 2100
+Elapsed time for gr137.in: 9579 of 10500
+Elapsed time for gr137.in: 9515 of 10500
+Elapsed time for gr137.in: 9563 of 10500
 Elapsed time for gr137.in: 9625 of 10500
-Elapsed time for gr137.in: 9718 of 10500
+Elapsed time for gr137.in: 9469 of 10500
+Elapsed time for gr137.in: 9578 of 10500
+Mean fitness for gr137.in: 286902,411848406
+Elapsed time for pr152.in: 1422 of 2100
+Elapsed time for pr152.in: 1422 of 2100
+Elapsed time for pr152.in: 1484 of 2100
+Elapsed time for pr152.in: 1469 of 2100
+Elapsed time for pr152.in: 1468 of 2100
+Elapsed time for pr152.in: 1453 of 2100
+Elapsed time for pr152.in: 9422 of 10500
+Elapsed time for pr152.in: 9531 of 10500
+Elapsed time for pr152.in: 9469 of 10500
+Elapsed time for pr152.in: 9437 of 10500
+Elapsed time for pr152.in: 9485 of 10500
+Elapsed time for pr152.in: 9546 of 10500
+Mean fitness for pr152.in: 531014,703920453
+Elapsed time for rat195.in: 1219 of 2100
+Elapsed time for rat195.in: 1234 of 2100
+Elapsed time for rat195.in: 1219 of 2100
+Elapsed time for rat195.in: 1234 of 2100
+Elapsed time for rat195.in: 1218 of 2100
+Elapsed time for rat195.in: 1250 of 2100
+Elapsed time for rat195.in: 9312 of 10500
+Elapsed time for rat195.in: 9250 of 10500
+Elapsed time for rat195.in: 9281 of 10500
+Elapsed time for rat195.in: 9219 of 10500
+Elapsed time for rat195.in: 9250 of 10500
+Elapsed time for rat195.in: 9312 of 10500
+Mean fitness for rat195.in: 13869,5541224585
+Current cost: 1147303,22120099
+This is the best cost until now.
+
+Current parameters: 250, 20, 0,1
+Elapsed time for bier127.in: 1609 of 2100
+Elapsed time for bier127.in: 1641 of 2100
+Elapsed time for bier127.in: 1609 of 2100
+Elapsed time for bier127.in: 1641 of 2100
+Elapsed time for bier127.in: 1625 of 2100
+Elapsed time for bier127.in: 1640 of 2100
+Elapsed time for bier127.in: 9594 of 10500
+Elapsed time for bier127.in: 9610 of 10500
+Elapsed time for bier127.in: 9656 of 10500
+Elapsed time for bier127.in: 9703 of 10500
+Elapsed time for bier127.in: 9610 of 10500
+Elapsed time for bier127.in: 9640 of 10500
+Mean fitness for bier127.in: 296934,148350762
+Elapsed time for gr137.in: 1609 of 2100
+Elapsed time for gr137.in: 1594 of 2100
+Elapsed time for gr137.in: 1641 of 2100
+Elapsed time for gr137.in: 1594 of 2100
+Elapsed time for gr137.in: 1594 of 2100
+Elapsed time for gr137.in: 1578 of 2100
 Elapsed time for gr137.in: 9672 of 10500
-Elapsed time for gr137.in: 9766 of 10500
-Elapsed time for gr137.in: 9672 of 10500
-Elapsed time for gr137.in: 9719 of 10500
-Mean fitness for gr137.in: 231909,391238349
-Elapsed time for pr152.in: 1671 of 2100
-Elapsed time for pr152.in: 1657 of 2100
-Elapsed time for pr152.in: 1656 of 2100
-Elapsed time for pr152.in: 1656 of 2100
-Elapsed time for pr152.in: 1656 of 2100
-Elapsed time for pr152.in: 1688 of 2100
-Elapsed time for pr152.in: 9625 of 10500
-Elapsed time for pr152.in: 9687 of 10500
-Elapsed time for pr152.in: 9656 of 10500
+Elapsed time for gr137.in: 9625 of 10500
+Elapsed time for gr137.in: 9625 of 10500
+Elapsed time for gr137.in: 9594 of 10500
+Elapsed time for gr137.in: 9609 of 10500
+Elapsed time for gr137.in: 9625 of 10500
+Mean fitness for gr137.in: 262496,400996568
+Elapsed time for pr152.in: 1562 of 2100
+Elapsed time for pr152.in: 1531 of 2100
+Elapsed time for pr152.in: 1547 of 2100
+Elapsed time for pr152.in: 1531 of 2100
+Elapsed time for pr152.in: 1563 of 2100
+Elapsed time for pr152.in: 1578 of 2100
+Elapsed time for pr152.in: 9563 of 10500
 Elapsed time for pr152.in: 9641 of 10500
-Elapsed time for pr152.in: 9703 of 10500
-Elapsed time for pr152.in: 9719 of 10500
-Mean fitness for pr152.in: 448911,409561194
-Elapsed time for rat195.in: 1578 of 2100
-Elapsed time for rat195.in: 1625 of 2100
-Elapsed time for rat195.in: 1594 of 2100
-Elapsed time for rat195.in: 1578 of 2100
-Elapsed time for rat195.in: 1594 of 2100
-Elapsed time for rat195.in: 1593 of 2100
-Elapsed time for rat195.in: 9610 of 10500
-Elapsed time for rat195.in: 9609 of 10500
-Elapsed time for rat195.in: 9625 of 10500
-Elapsed time for rat195.in: 9672 of 10500
-Elapsed time for rat195.in: 9672 of 10500
-Elapsed time for rat195.in: 9687 of 10500
-Mean fitness for rat195.in: 12196,238493122
-Current cost: 936936,884441696
+Elapsed time for pr152.in: 9531 of 10500
+Elapsed time for pr152.in: 9625 of 10500
+Elapsed time for pr152.in: 9609 of 10500
+Elapsed time for pr152.in: 9609 of 10500
+Mean fitness for pr152.in: 506172,18590013
+Elapsed time for rat195.in: 1422 of 2100
+Elapsed time for rat195.in: 1406 of 2100
+Elapsed time for rat195.in: 1438 of 2100
+Elapsed time for rat195.in: 1422 of 2100
+Elapsed time for rat195.in: 1437 of 2100
+Elapsed time for rat195.in: 1407 of 2100
+Elapsed time for rat195.in: 9437 of 10500
+Elapsed time for rat195.in: 9422 of 10500
+Elapsed time for rat195.in: 9250 of 10500
+Elapsed time for rat195.in: 9453 of 10500
+Elapsed time for rat195.in: 9469 of 10500
+Elapsed time for rat195.in: 9453 of 10500
+Mean fitness for rat195.in: 13043,790157828
+Current cost: 1078646,52540529
+This is the best cost until now.
 
 Current parameters: 250, 10, 0,1
 Elapsed time for bier127.in: 1672 of 2100
-Elapsed time for bier127.in: 1688 of 2100
+Elapsed time for bier127.in: 1703 of 2100
 Elapsed time for bier127.in: 1687 of 2100
 Elapsed time for bier127.in: 1672 of 2100
-Elapsed time for bier127.in: 1750 of 2100
-Elapsed time for bier127.in: 1625 of 2100
-Elapsed time for bier127.in: 9687 of 10500
-Elapsed time for bier127.in: 9688 of 10500
-Elapsed time for bier127.in: 9625 of 10500
-Elapsed time for bier127.in: 9672 of 10500
+Elapsed time for bier127.in: 1688 of 2100
+Elapsed time for bier127.in: 1687 of 2100
+Elapsed time for bier127.in: 9719 of 10500
 Elapsed time for bier127.in: 9703 of 10500
-Elapsed time for bier127.in: 9625 of 10500
-Mean fitness for bier127.in: 268371,523196908
+Elapsed time for bier127.in: 9672 of 10500
+Elapsed time for bier127.in: 9718 of 10500
+Elapsed time for bier127.in: 9704 of 10500
+Elapsed time for bier127.in: 9687 of 10500
+Mean fitness for bier127.in: 261210,43993025
+Elapsed time for gr137.in: 1703 of 2100
+Elapsed time for gr137.in: 1688 of 2100
 Elapsed time for gr137.in: 1687 of 2100
 Elapsed time for gr137.in: 1672 of 2100
+Elapsed time for gr137.in: 1703 of 2100
 Elapsed time for gr137.in: 1672 of 2100
-Elapsed time for gr137.in: 1687 of 2100
-Elapsed time for gr137.in: 1672 of 2100
-Elapsed time for gr137.in: 1672 of 2100
+Elapsed time for gr137.in: 9656 of 10500
 Elapsed time for gr137.in: 9703 of 10500
-Elapsed time for gr137.in: 9672 of 10500
+Elapsed time for gr137.in: 9734 of 10500
+Elapsed time for gr137.in: 9750 of 10500
+Elapsed time for gr137.in: 9688 of 10500
 Elapsed time for gr137.in: 9703 of 10500
-Elapsed time for gr137.in: 9641 of 10500
-Elapsed time for gr137.in: 9671 of 10500
-Elapsed time for gr137.in: 9703 of 10500
-Mean fitness for gr137.in: 241271,831171218
-Elapsed time for pr152.in: 1641 of 2100
+Mean fitness for gr137.in: 236500,850513427
 Elapsed time for pr152.in: 1672 of 2100
-Elapsed time for pr152.in: 1625 of 2100
-Elapsed time for pr152.in: 1640 of 2100
-Elapsed time for pr152.in: 1657 of 2100
-Elapsed time for pr152.in: 1609 of 2100
+Elapsed time for pr152.in: 1656 of 2100
+Elapsed time for pr152.in: 1641 of 2100
+Elapsed time for pr152.in: 1688 of 2100
+Elapsed time for pr152.in: 1656 of 2100
+Elapsed time for pr152.in: 1672 of 2100
+Elapsed time for pr152.in: 9672 of 10500
+Elapsed time for pr152.in: 9656 of 10500
+Elapsed time for pr152.in: 9672 of 10500
+Elapsed time for pr152.in: 9687 of 10500
 Elapsed time for pr152.in: 9656 of 10500
 Elapsed time for pr152.in: 9688 of 10500
-Elapsed time for pr152.in: 9687 of 10500
-Elapsed time for pr152.in: 9672 of 10500
-Elapsed time for pr152.in: 9641 of 10500
-Elapsed time for pr152.in: 9687 of 10500
-Mean fitness for pr152.in: 478888,554972731
-Elapsed time for rat195.in: 1547 of 2100
-Elapsed time for rat195.in: 1578 of 2100
-Elapsed time for rat195.in: 1485 of 2100
-Elapsed time for rat195.in: 1531 of 2100
-Elapsed time for rat195.in: 1547 of 2100
-Elapsed time for rat195.in: 1453 of 2100
-Elapsed time for rat195.in: 9578 of 10500
-Elapsed time for rat195.in: 9578 of 10500
+Mean fitness for pr152.in: 447420,720945755
+Elapsed time for rat195.in: 1625 of 2100
+Elapsed time for rat195.in: 1594 of 2100
+Elapsed time for rat195.in: 1594 of 2100
+Elapsed time for rat195.in: 1609 of 2100
+Elapsed time for rat195.in: 1609 of 2100
+Elapsed time for rat195.in: 1594 of 2100
+Elapsed time for rat195.in: 9594 of 10500
+Elapsed time for rat195.in: 9594 of 10500
 Elapsed time for rat195.in: 9593 of 10500
-Elapsed time for rat195.in: 9563 of 10500
+Elapsed time for rat195.in: 9610 of 10500
+Elapsed time for rat195.in: 9687 of 10500
 Elapsed time for rat195.in: 9625 of 10500
-Elapsed time for rat195.in: 9625 of 10500
-Mean fitness for rat195.in: 13093,5637770705
-Current cost: 1001625,47311793
+Mean fitness for rat195.in: 12037,9937407258
+Current cost: 957170,005130159
+This is the best cost until now.
 
-Current parameters: 250, 16, 0,1
-Elapsed time for bier127.in: 1609 of 2100
-Elapsed time for bier127.in: 1641 of 2100
-Elapsed time for bier127.in: 1656 of 2100
-Elapsed time for bier127.in: 1625 of 2100
-Elapsed time for bier127.in: 1625 of 2100
-Elapsed time for bier127.in: 1656 of 2100
-Elapsed time for bier127.in: 9610 of 10500
+Current parameters: 250, 8, 0,1
+Elapsed time for bier127.in: 1688 of 2100
+Elapsed time for bier127.in: 1718 of 2100
+Elapsed time for bier127.in: 1688 of 2100
+Elapsed time for bier127.in: 1718 of 2100
+Elapsed time for bier127.in: 1735 of 2100
+Elapsed time for bier127.in: 1672 of 2100
 Elapsed time for bier127.in: 9625 of 10500
+Elapsed time for bier127.in: 9703 of 10500
 Elapsed time for bier127.in: 9687 of 10500
+Elapsed time for bier127.in: 9719 of 10500
+Elapsed time for bier127.in: 9671 of 10500
 Elapsed time for bier127.in: 9610 of 10500
-Elapsed time for bier127.in: 9672 of 10500
+Mean fitness for bier127.in: 243631,713268852
+Elapsed time for gr137.in: 1656 of 2100
+Elapsed time for gr137.in: 1672 of 2100
+Elapsed time for gr137.in: 1672 of 2100
+Elapsed time for gr137.in: 1719 of 2100
+Elapsed time for gr137.in: 1687 of 2100
+Elapsed time for gr137.in: 1672 of 2100
+Elapsed time for gr137.in: 9719 of 10500
+Elapsed time for gr137.in: 9672 of 10500
+Elapsed time for gr137.in: 9734 of 10500
+Elapsed time for gr137.in: 9719 of 10500
+Elapsed time for gr137.in: 9672 of 10500
+Elapsed time for gr137.in: 9625 of 10500
+Mean fitness for gr137.in: 213564,402057488
+Elapsed time for pr152.in: 1703 of 2100
+Elapsed time for pr152.in: 1687 of 2100
+Elapsed time for pr152.in: 1687 of 2100
+Elapsed time for pr152.in: 1671 of 2100
+Elapsed time for pr152.in: 1688 of 2100
+Elapsed time for pr152.in: 1625 of 2100
+Elapsed time for pr152.in: 9640 of 10500
+Elapsed time for pr152.in: 9703 of 10500
+Elapsed time for pr152.in: 9719 of 10500
+Elapsed time for pr152.in: 9688 of 10500
+Elapsed time for pr152.in: 9719 of 10500
+Elapsed time for pr152.in: 9703 of 10500
+Mean fitness for pr152.in: 427867,82560778
+Elapsed time for rat195.in: 1625 of 2100
+Elapsed time for rat195.in: 1625 of 2100
+Elapsed time for rat195.in: 1625 of 2100
+Elapsed time for rat195.in: 1625 of 2100
+Elapsed time for rat195.in: 1610 of 2100
+Elapsed time for rat195.in: 1656 of 2100
+Elapsed time for rat195.in: 9672 of 10500
+Elapsed time for rat195.in: 9657 of 10500
+Elapsed time for rat195.in: 9640 of 10500
+Elapsed time for rat195.in: 9719 of 10500
+Elapsed time for rat195.in: 9640 of 10500
+Elapsed time for rat195.in: 9656 of 10500
+Mean fitness for rat195.in: 12031,2309802232
+Current cost: 897095,171914344
+This is the best cost until now.
+
+Current parameters: 250, 6, 0,1
+Elapsed time for bier127.in: 1734 of 2100
+Elapsed time for bier127.in: 1719 of 2100
+Elapsed time for bier127.in: 1719 of 2100
+Elapsed time for bier127.in: 1719 of 2100
+Elapsed time for bier127.in: 1718 of 2100
+Elapsed time for bier127.in: 1719 of 2100
+Elapsed time for bier127.in: 9703 of 10500
+Elapsed time for bier127.in: 9703 of 10500
+Elapsed time for bier127.in: 9703 of 10500
+Elapsed time for bier127.in: 9719 of 10500
+Elapsed time for bier127.in: 9734 of 10500
+Elapsed time for bier127.in: 9735 of 10500
+Mean fitness for bier127.in: 238145,942825212
+Elapsed time for gr137.in: 1703 of 2100
+Elapsed time for gr137.in: 1719 of 2100
+Elapsed time for gr137.in: 1719 of 2100
+Elapsed time for gr137.in: 1718 of 2100
+Elapsed time for gr137.in: 1688 of 2100
+Elapsed time for gr137.in: 1719 of 2100
+Elapsed time for gr137.in: 9718 of 10500
+Elapsed time for gr137.in: 9703 of 10500
+Elapsed time for gr137.in: 9687 of 10500
+Elapsed time for gr137.in: 9704 of 10500
+Elapsed time for gr137.in: 9703 of 10500
+Elapsed time for gr137.in: 9656 of 10500
+Mean fitness for gr137.in: 198435,245500493
+Elapsed time for pr152.in: 1719 of 2100
+Elapsed time for pr152.in: 1734 of 2100
+Elapsed time for pr152.in: 1688 of 2100
+Elapsed time for pr152.in: 1672 of 2100
+Elapsed time for pr152.in: 1687 of 2100
+Elapsed time for pr152.in: 1734 of 2100
+Elapsed time for pr152.in: 9719 of 10500
+Elapsed time for pr152.in: 9672 of 10500
+Elapsed time for pr152.in: 9688 of 10500
+Elapsed time for pr152.in: 9703 of 10500
+Elapsed time for pr152.in: 9672 of 10500
+Elapsed time for pr152.in: 9687 of 10500
+Mean fitness for pr152.in: 395173,71467517
+Elapsed time for rat195.in: 1672 of 2100
+Elapsed time for rat195.in: 1672 of 2100
+Elapsed time for rat195.in: 1640 of 2100
+Elapsed time for rat195.in: 1671 of 2100
+Elapsed time for rat195.in: 1657 of 2100
+Elapsed time for rat195.in: 1640 of 2100
+Elapsed time for rat195.in: 9657 of 10500
+Elapsed time for rat195.in: 9687 of 10500
+Elapsed time for rat195.in: 9688 of 10500
+Elapsed time for rat195.in: 9671 of 10500
+Elapsed time for rat195.in: 9657 of 10500
+Elapsed time for rat195.in: 9687 of 10500
+Mean fitness for rat195.in: 11534,2527728221
+Current cost: 843289,155773697
+This is the best cost until now.
+
+Current parameters: 250, 4, 0,1
+Elapsed time for bier127.in: 1688 of 2100
+Elapsed time for bier127.in: 1719 of 2100
+Elapsed time for bier127.in: 1718 of 2100
+Elapsed time for bier127.in: 1735 of 2100
+Elapsed time for bier127.in: 1719 of 2100
+Elapsed time for bier127.in: 1750 of 2100
+Elapsed time for bier127.in: 9703 of 10500
+Elapsed time for bier127.in: 9703 of 10500
+Elapsed time for bier127.in: 9719 of 10500
+Elapsed time for bier127.in: 9719 of 10500
 Elapsed time for bier127.in: 9687 of 10500
-Mean fitness for bier127.in: 304463,301891347
+Elapsed time for bier127.in: 9672 of 10500
+Mean fitness for bier127.in: 219378,45377461
+Elapsed time for gr137.in: 1672 of 2100
+Elapsed time for gr137.in: 1734 of 2100
+Elapsed time for gr137.in: 1735 of 2100
+Elapsed time for gr137.in: 1734 of 2100
+Elapsed time for gr137.in: 1703 of 2100
+Elapsed time for gr137.in: 1703 of 2100
+Elapsed time for gr137.in: 9735 of 10500
+Elapsed time for gr137.in: 9703 of 10500
+Elapsed time for gr137.in: 9672 of 10500
+Elapsed time for gr137.in: 9718 of 10500
+Elapsed time for gr137.in: 9703 of 10500
+Elapsed time for gr137.in: 9688 of 10500
+Mean fitness for gr137.in: 183606,718352087
+Elapsed time for pr152.in: 1719 of 2100
+Elapsed time for pr152.in: 1734 of 2100
+Elapsed time for pr152.in: 1734 of 2100
+Elapsed time for pr152.in: 1734 of 2100
+Elapsed time for pr152.in: 1703 of 2100
+Elapsed time for pr152.in: 1750 of 2100
+Elapsed time for pr152.in: 9734 of 10500
+Elapsed time for pr152.in: 9704 of 10500
+Elapsed time for pr152.in: 9718 of 10500
+Elapsed time for pr152.in: 9703 of 10500
+Elapsed time for pr152.in: 9688 of 10500
+Elapsed time for pr152.in: 9687 of 10500
+Mean fitness for pr152.in: 354174,757727619
+Elapsed time for rat195.in: 1719 of 2100
+Elapsed time for rat195.in: 1703 of 2100
+Elapsed time for rat195.in: 1688 of 2100
+Elapsed time for rat195.in: 1703 of 2100
+Elapsed time for rat195.in: 1687 of 2100
+Elapsed time for rat195.in: 1688 of 2100
+Elapsed time for rat195.in: 9703 of 10500
+Elapsed time for rat195.in: 9735 of 10500
+Elapsed time for rat195.in: 9687 of 10500
+Elapsed time for rat195.in: 9734 of 10500
+Elapsed time for rat195.in: 9719 of 10500
+Elapsed time for rat195.in: 9688 of 10500
+Mean fitness for rat195.in: 10733,8433390161
+Current cost: 767893,773193332
+This is the best cost until now.
+
+Current parameters: 250, 2, 0,1
+Elapsed time for bier127.in: 1734 of 2100
+Elapsed time for bier127.in: 1750 of 2100
+Elapsed time for bier127.in: 1734 of 2100
+Elapsed time for bier127.in: 1750 of 2100
+Elapsed time for bier127.in: 1750 of 2100
+Elapsed time for bier127.in: 1735 of 2100
+Elapsed time for bier127.in: 9719 of 10500
+Elapsed time for bier127.in: 9734 of 10500
+Elapsed time for bier127.in: 9750 of 10500
+Elapsed time for bier127.in: 9719 of 10500
+Elapsed time for bier127.in: 9672 of 10500
+Elapsed time for bier127.in: 9704 of 10500
+Mean fitness for bier127.in: 187750,160011245
+Elapsed time for gr137.in: 1719 of 2100
+Elapsed time for gr137.in: 1656 of 2100
+Elapsed time for gr137.in: 1734 of 2100
+Elapsed time for gr137.in: 1719 of 2100
+Elapsed time for gr137.in: 1750 of 2100
+Elapsed time for gr137.in: 1734 of 2100
+Elapsed time for gr137.in: 9750 of 10500
+Elapsed time for gr137.in: 9718 of 10500
+Elapsed time for gr137.in: 9703 of 10500
+Elapsed time for gr137.in: 9719 of 10500
+Elapsed time for gr137.in: 9703 of 10500
+Elapsed time for gr137.in: 9703 of 10500
+Mean fitness for gr137.in: 164682,357888464
+Elapsed time for pr152.in: 1766 of 2100
+Elapsed time for pr152.in: 1735 of 2100
+Elapsed time for pr152.in: 1734 of 2100
+Elapsed time for pr152.in: 1750 of 2100
+Elapsed time for pr152.in: 1734 of 2100
+Elapsed time for pr152.in: 1719 of 2100
+Elapsed time for pr152.in: 9735 of 10500
+Elapsed time for pr152.in: 9719 of 10500
+Elapsed time for pr152.in: 9719 of 10500
+Elapsed time for pr152.in: 9703 of 10500
+Elapsed time for pr152.in: 9703 of 10500
+Elapsed time for pr152.in: 9734 of 10500
+Mean fitness for pr152.in: 308628,557003592
+Elapsed time for rat195.in: 1735 of 2100
+Elapsed time for rat195.in: 1734 of 2100
+Elapsed time for rat195.in: 1718 of 2100
+Elapsed time for rat195.in: 1735 of 2100
+Elapsed time for rat195.in: 1734 of 2100
+Elapsed time for rat195.in: 1719 of 2100
+Elapsed time for rat195.in: 9719 of 10500
+Elapsed time for rat195.in: 9734 of 10500
+Elapsed time for rat195.in: 9719 of 10500
+Elapsed time for rat195.in: 9719 of 10500
+Elapsed time for rat195.in: 9718 of 10500
+Elapsed time for rat195.in: 9718 of 10500
+Mean fitness for rat195.in: 8960,2623772244
+Current cost: 670021,337280525
+This is the best cost until now.
+
+Current parameters: 250, 50, 0,2
+Elapsed time for bier127.in: 1407 of 2100
+Elapsed time for bier127.in: 1390 of 2100
+Elapsed time for bier127.in: 1438 of 2100
+Elapsed time for bier127.in: 1406 of 2100
+Elapsed time for bier127.in: 1422 of 2100
+Elapsed time for bier127.in: 1406 of 2100
+Elapsed time for bier127.in: 9469 of 10500
+Elapsed time for bier127.in: 9438 of 10500
+Elapsed time for bier127.in: 9437 of 10500
+Elapsed time for bier127.in: 9453 of 10500
+Elapsed time for bier127.in: 9360 of 10500
+Elapsed time for bier127.in: 9500 of 10500
+Mean fitness for bier127.in: 313712,326324546
+Elapsed time for gr137.in: 1344 of 2100
+Elapsed time for gr137.in: 1328 of 2100
+Elapsed time for gr137.in: 1328 of 2100
+Elapsed time for gr137.in: 1375 of 2100
+Elapsed time for gr137.in: 1328 of 2100
+Elapsed time for gr137.in: 1344 of 2100
+Elapsed time for gr137.in: 9469 of 10500
+Elapsed time for gr137.in: 9313 of 10500
+Elapsed time for gr137.in: 9359 of 10500
+Elapsed time for gr137.in: 9391 of 10500
+Elapsed time for gr137.in: 9390 of 10500
+Elapsed time for gr137.in: 9375 of 10500
+Mean fitness for gr137.in: 285574,489626587
+Elapsed time for pr152.in: 1282 of 2100
+Elapsed time for pr152.in: 1250 of 2100
+Elapsed time for pr152.in: 1234 of 2100
+Elapsed time for pr152.in: 1250 of 2100
+Elapsed time for pr152.in: 1265 of 2100
+Elapsed time for pr152.in: 1219 of 2100
+Elapsed time for pr152.in: 9281 of 10500
+Elapsed time for pr152.in: 9344 of 10500
+Elapsed time for pr152.in: 9375 of 10500
+Elapsed time for pr152.in: 9297 of 10500
+Elapsed time for pr152.in: 9250 of 10500
+Elapsed time for pr152.in: 9219 of 10500
+Mean fitness for pr152.in: 532496,238592205
+Elapsed time for rat195.in: 890 of 2100
+Elapsed time for rat195.in: 891 of 2100
+Elapsed time for rat195.in: 921 of 2100
+Elapsed time for rat195.in: 907 of 2100
+Elapsed time for rat195.in: 890 of 2100
+Elapsed time for rat195.in: 906 of 2100
+Elapsed time for rat195.in: 8937 of 10500
+Elapsed time for rat195.in: 9046 of 10500
+Elapsed time for rat195.in: 9000 of 10500
+Elapsed time for rat195.in: 9032 of 10500
+Elapsed time for rat195.in: 8937 of 10500
+Elapsed time for rat195.in: 8969 of 10500
+Mean fitness for rat195.in: 15769,0367733057
+Current cost: 1147552,09131664
+
+Current parameters: 250, 40, 0,2
+Elapsed time for bier127.in: 1469 of 2100
+Elapsed time for bier127.in: 1453 of 2100
+Elapsed time for bier127.in: 1485 of 2100
+Elapsed time for bier127.in: 1469 of 2100
+Elapsed time for bier127.in: 1484 of 2100
+Elapsed time for bier127.in: 1453 of 2100
+Elapsed time for bier127.in: 9531 of 10500
+Elapsed time for bier127.in: 9453 of 10500
+Elapsed time for bier127.in: 9579 of 10500
+Elapsed time for bier127.in: 9453 of 10500
+Elapsed time for bier127.in: 9688 of 10500
+Elapsed time for bier127.in: 9484 of 10500
+Mean fitness for bier127.in: 304911,967237789
+Elapsed time for gr137.in: 1453 of 2100
+Elapsed time for gr137.in: 1406 of 2100
+Elapsed time for gr137.in: 1406 of 2100
+Elapsed time for gr137.in: 1469 of 2100
+Elapsed time for gr137.in: 1437 of 2100
+Elapsed time for gr137.in: 1407 of 2100
+Elapsed time for gr137.in: 9500 of 10500
+Elapsed time for gr137.in: 9453 of 10500
+Elapsed time for gr137.in: 9531 of 10500
+Elapsed time for gr137.in: 9531 of 10500
+Elapsed time for gr137.in: 9422 of 10500
+Elapsed time for gr137.in: 9500 of 10500
+Mean fitness for gr137.in: 272911,616058579
+Elapsed time for pr152.in: 1328 of 2100
+Elapsed time for pr152.in: 1344 of 2100
+Elapsed time for pr152.in: 1343 of 2100
+Elapsed time for pr152.in: 1359 of 2100
+Elapsed time for pr152.in: 1360 of 2100
+Elapsed time for pr152.in: 1359 of 2100
+Elapsed time for pr152.in: 9328 of 10500
+Elapsed time for pr152.in: 9485 of 10500
+Elapsed time for pr152.in: 9359 of 10500
+Elapsed time for pr152.in: 9453 of 10500
+Elapsed time for pr152.in: 9484 of 10500
+Elapsed time for pr152.in: 9375 of 10500
+Mean fitness for pr152.in: 507016,541375052
+Elapsed time for rat195.in: 1109 of 2100
+Elapsed time for rat195.in: 1063 of 2100
+Elapsed time for rat195.in: 1094 of 2100
+Elapsed time for rat195.in: 1078 of 2100
+Elapsed time for rat195.in: 1062 of 2100
+Elapsed time for rat195.in: 1047 of 2100
+Elapsed time for rat195.in: 9141 of 10500
+Elapsed time for rat195.in: 9203 of 10500
+Elapsed time for rat195.in: 9203 of 10500
+Elapsed time for rat195.in: 9110 of 10500
+Elapsed time for rat195.in: 9078 of 10500
+Elapsed time for rat195.in: 9187 of 10500
+Mean fitness for rat195.in: 13735,0410892434
+Current cost: 1098575,16576066
+
+Current parameters: 250, 30, 0,2
+Elapsed time for bier127.in: 1578 of 2100
+Elapsed time for bier127.in: 1562 of 2100
+Elapsed time for bier127.in: 1547 of 2100
+Elapsed time for bier127.in: 1563 of 2100
+Elapsed time for bier127.in: 1562 of 2100
+Elapsed time for bier127.in: 1547 of 2100
+Elapsed time for bier127.in: 9562 of 10500
+Elapsed time for bier127.in: 9547 of 10500
+Elapsed time for bier127.in: 9547 of 10500
+Elapsed time for bier127.in: 9656 of 10500
+Elapsed time for bier127.in: 9593 of 10500
+Elapsed time for bier127.in: 9610 of 10500
+Mean fitness for bier127.in: 294675,725181304
+Elapsed time for gr137.in: 1469 of 2100
+Elapsed time for gr137.in: 1516 of 2100
+Elapsed time for gr137.in: 1531 of 2100
+Elapsed time for gr137.in: 1485 of 2100
+Elapsed time for gr137.in: 1515 of 2100
+Elapsed time for gr137.in: 1532 of 2100
+Elapsed time for gr137.in: 9515 of 10500
+Elapsed time for gr137.in: 9531 of 10500
+Elapsed time for gr137.in: 9562 of 10500
+Elapsed time for gr137.in: 9578 of 10500
+Elapsed time for gr137.in: 9532 of 10500
+Elapsed time for gr137.in: 9562 of 10500
+Mean fitness for gr137.in: 262844,881287134
+Elapsed time for pr152.in: 1406 of 2100
+Elapsed time for pr152.in: 1422 of 2100
+Elapsed time for pr152.in: 1438 of 2100
+Elapsed time for pr152.in: 1453 of 2100
+Elapsed time for pr152.in: 1469 of 2100
+Elapsed time for pr152.in: 1454 of 2100
+Elapsed time for pr152.in: 9468 of 10500
+Elapsed time for pr152.in: 9547 of 10500
+Elapsed time for pr152.in: 9484 of 10500
+Elapsed time for pr152.in: 9469 of 10500
+Elapsed time for pr152.in: 9500 of 10500
+Elapsed time for pr152.in: 9469 of 10500
+Mean fitness for pr152.in: 476840,751366872
+Elapsed time for rat195.in: 1250 of 2100
+Elapsed time for rat195.in: 1250 of 2100
+Elapsed time for rat195.in: 1250 of 2100
+Elapsed time for rat195.in: 1094 of 2100
+Elapsed time for rat195.in: 1047 of 2100
+Elapsed time for rat195.in: 1250 of 2100
+Elapsed time for rat195.in: 9344 of 10500
+Elapsed time for rat195.in: 9312 of 10500
+Elapsed time for rat195.in: 9328 of 10500
+Elapsed time for rat195.in: 9266 of 10500
+Elapsed time for rat195.in: 9359 of 10500
+Elapsed time for rat195.in: 9375 of 10500
+Mean fitness for rat195.in: 12887,6495401398
+Current cost: 1047249,00737545
+
+Current parameters: 250, 20, 0,2
+Elapsed time for bier127.in: 1610 of 2100
+Elapsed time for bier127.in: 1531 of 2100
+Elapsed time for bier127.in: 1641 of 2100
+Elapsed time for bier127.in: 1578 of 2100
+Elapsed time for bier127.in: 1454 of 2100
+Elapsed time for bier127.in: 1484 of 2100
+Elapsed time for bier127.in: 9703 of 10500
+Elapsed time for bier127.in: 9656 of 10500
+Elapsed time for bier127.in: 9625 of 10500
+Elapsed time for bier127.in: 9656 of 10500
+Elapsed time for bier127.in: 9625 of 10500
+Elapsed time for bier127.in: 9578 of 10500
+Mean fitness for bier127.in: 277026,255592854
+Elapsed time for gr137.in: 1578 of 2100
+Elapsed time for gr137.in: 1531 of 2100
+Elapsed time for gr137.in: 1516 of 2100
+Elapsed time for gr137.in: 1437 of 2100
+Elapsed time for gr137.in: 1438 of 2100
+Elapsed time for gr137.in: 1609 of 2100
+Elapsed time for gr137.in: 9609 of 10500
+Elapsed time for gr137.in: 9656 of 10500
+Elapsed time for gr137.in: 9656 of 10500
+Elapsed time for gr137.in: 9703 of 10500
+Elapsed time for gr137.in: 9641 of 10500
+Elapsed time for gr137.in: 9579 of 10500
+Mean fitness for gr137.in: 258353,526542234
+Elapsed time for pr152.in: 1516 of 2100
+Elapsed time for pr152.in: 1563 of 2100
+Elapsed time for pr152.in: 1547 of 2100
+Elapsed time for pr152.in: 1578 of 2100
+Elapsed time for pr152.in: 1563 of 2100
+Elapsed time for pr152.in: 1578 of 2100
+Elapsed time for pr152.in: 9578 of 10500
+Elapsed time for pr152.in: 9532 of 10500
+Elapsed time for pr152.in: 9625 of 10500
+Elapsed time for pr152.in: 9547 of 10500
+Elapsed time for pr152.in: 9547 of 10500
+Elapsed time for pr152.in: 9594 of 10500
+Mean fitness for pr152.in: 445279,081741874
+Elapsed time for rat195.in: 1406 of 2100
+Elapsed time for rat195.in: 1391 of 2100
+Elapsed time for rat195.in: 1266 of 2100
+Elapsed time for rat195.in: 1297 of 2100
+Elapsed time for rat195.in: 1422 of 2100
+Elapsed time for rat195.in: 1406 of 2100
+Elapsed time for rat195.in: 9453 of 10500
+Elapsed time for rat195.in: 9437 of 10500
+Elapsed time for rat195.in: 9500 of 10500
+Elapsed time for rat195.in: 9485 of 10500
+Elapsed time for rat195.in: 9453 of 10500
+Elapsed time for rat195.in: 9438 of 10500
+Mean fitness for rat195.in: 12287,3779396297
+Current cost: 992946,241816592
+
+Current parameters: 250, 10, 0,2
+Elapsed time for bier127.in: 1640 of 2100
+Elapsed time for bier127.in: 1735 of 2100
+Elapsed time for bier127.in: 1703 of 2100
+Elapsed time for bier127.in: 1703 of 2100
+Elapsed time for bier127.in: 1703 of 2100
+Elapsed time for bier127.in: 1687 of 2100
+Elapsed time for bier127.in: 9750 of 10500
+Elapsed time for bier127.in: 9656 of 10500
+Elapsed time for bier127.in: 9735 of 10500
+Elapsed time for bier127.in: 9672 of 10500
+Elapsed time for bier127.in: 9688 of 10500
+Elapsed time for bier127.in: 9718 of 10500
+Mean fitness for bier127.in: 236672,460619294
+Elapsed time for gr137.in: 1703 of 2100
+Elapsed time for gr137.in: 1703 of 2100
+Elapsed time for gr137.in: 1703 of 2100
+Elapsed time for gr137.in: 1688 of 2100
+Elapsed time for gr137.in: 1688 of 2100
+Elapsed time for gr137.in: 1687 of 2100
+Elapsed time for gr137.in: 9703 of 10500
+Elapsed time for gr137.in: 9656 of 10500
+Elapsed time for gr137.in: 9750 of 10500
+Elapsed time for gr137.in: 9672 of 10500
+Elapsed time for gr137.in: 9672 of 10500
+Elapsed time for gr137.in: 9672 of 10500
+Mean fitness for gr137.in: 209014,26100132
+Elapsed time for pr152.in: 1672 of 2100
+Elapsed time for pr152.in: 1641 of 2100
+Elapsed time for pr152.in: 1656 of 2100
+Elapsed time for pr152.in: 1672 of 2100
+Elapsed time for pr152.in: 1672 of 2100
+Elapsed time for pr152.in: 1656 of 2100
+Elapsed time for pr152.in: 9734 of 10500
+Elapsed time for pr152.in: 9703 of 10500
+Elapsed time for pr152.in: 9672 of 10500
+Elapsed time for pr152.in: 9656 of 10500
+Elapsed time for pr152.in: 9672 of 10500
+Elapsed time for pr152.in: 9656 of 10500
+Mean fitness for pr152.in: 413564,788976596
+Elapsed time for rat195.in: 1625 of 2100
+Elapsed time for rat195.in: 1594 of 2100
+Elapsed time for rat195.in: 1593 of 2100
+Elapsed time for rat195.in: 1594 of 2100
+Elapsed time for rat195.in: 1594 of 2100
+Elapsed time for rat195.in: 1593 of 2100
+Elapsed time for rat195.in: 9641 of 10500
+Elapsed time for rat195.in: 9593 of 10500
+Elapsed time for rat195.in: 9610 of 10500
+Elapsed time for rat195.in: 9656 of 10500
+Elapsed time for rat195.in: 9640 of 10500
+Elapsed time for rat195.in: 9594 of 10500
+Mean fitness for rat195.in: 11593,2882507189
+Current cost: 870844,798847928
+
+Current parameters: 250, 8, 0,2
+Elapsed time for bier127.in: 1719 of 2100
+Elapsed time for bier127.in: 1703 of 2100
+Elapsed time for bier127.in: 1703 of 2100
+Elapsed time for bier127.in: 1719 of 2100
+Elapsed time for bier127.in: 1703 of 2100
+Elapsed time for bier127.in: 1688 of 2100
+Elapsed time for bier127.in: 9688 of 10500
+Elapsed time for bier127.in: 9718 of 10500
+Elapsed time for bier127.in: 9672 of 10500
+Elapsed time for bier127.in: 9766 of 10500
+Elapsed time for bier127.in: 9672 of 10500
+Elapsed time for bier127.in: 9703 of 10500
+Mean fitness for bier127.in: 224902,962605584
+Elapsed time for gr137.in: 1672 of 2100
+Elapsed time for gr137.in: 1719 of 2100
+Elapsed time for gr137.in: 1703 of 2100
+Elapsed time for gr137.in: 1719 of 2100
+Elapsed time for gr137.in: 1672 of 2100
+Elapsed time for gr137.in: 1703 of 2100
+Elapsed time for gr137.in: 9750 of 10500
+Elapsed time for gr137.in: 9703 of 10500
+Elapsed time for gr137.in: 9687 of 10500
+Elapsed time for gr137.in: 9703 of 10500
+Elapsed time for gr137.in: 9688 of 10500
+Elapsed time for gr137.in: 9719 of 10500
+Mean fitness for gr137.in: 198719,236678174
+Elapsed time for pr152.in: 1719 of 2100
+Elapsed time for pr152.in: 1687 of 2100
+Elapsed time for pr152.in: 1688 of 2100
+Elapsed time for pr152.in: 1687 of 2100
+Elapsed time for pr152.in: 1688 of 2100
+Elapsed time for pr152.in: 1687 of 2100
+Elapsed time for pr152.in: 9719 of 10500
+Elapsed time for pr152.in: 9672 of 10500
+Elapsed time for pr152.in: 9687 of 10500
+Elapsed time for pr152.in: 9719 of 10500
+Elapsed time for pr152.in: 9688 of 10500
+Elapsed time for pr152.in: 9656 of 10500
+Mean fitness for pr152.in: 410396,089280444
+Elapsed time for rat195.in: 1641 of 2100
+Elapsed time for rat195.in: 1609 of 2100
+Elapsed time for rat195.in: 1625 of 2100
+Elapsed time for rat195.in: 1625 of 2100
+Elapsed time for rat195.in: 1625 of 2100
+Elapsed time for rat195.in: 1625 of 2100
+Elapsed time for rat195.in: 9656 of 10500
+Elapsed time for rat195.in: 9657 of 10500
+Elapsed time for rat195.in: 9672 of 10500
+Elapsed time for rat195.in: 9625 of 10500
+Elapsed time for rat195.in: 9578 of 10500
+Elapsed time for rat195.in: 9625 of 10500
+Mean fitness for rat195.in: 11447,950789155
+Current cost: 845466,239353357
+
+Current parameters: 250, 6, 0,2
+Elapsed time for bier127.in: 1719 of 2100
+Elapsed time for bier127.in: 1734 of 2100
+Elapsed time for bier127.in: 1719 of 2100
+Elapsed time for bier127.in: 1718 of 2100
+Elapsed time for bier127.in: 1735 of 2100
+Elapsed time for bier127.in: 1719 of 2100
+Elapsed time for bier127.in: 9656 of 10500
+Elapsed time for bier127.in: 9688 of 10500
+Elapsed time for bier127.in: 9687 of 10500
+Elapsed time for bier127.in: 9656 of 10500
+Elapsed time for bier127.in: 9687 of 10500
+Elapsed time for bier127.in: 9719 of 10500
+Mean fitness for bier127.in: 226653,24449602
+Elapsed time for gr137.in: 1688 of 2100
+Elapsed time for gr137.in: 1703 of 2100
+Elapsed time for gr137.in: 1719 of 2100
+Elapsed time for gr137.in: 1703 of 2100
+Elapsed time for gr137.in: 1718 of 2100
+Elapsed time for gr137.in: 1735 of 2100
+Elapsed time for gr137.in: 9687 of 10500
+Elapsed time for gr137.in: 9750 of 10500
+Elapsed time for gr137.in: 9719 of 10500
+Elapsed time for gr137.in: 9688 of 10500
+Elapsed time for gr137.in: 9703 of 10500
+Elapsed time for gr137.in: 9718 of 10500
+Mean fitness for gr137.in: 188451,988098461
+Elapsed time for pr152.in: 1704 of 2100
+Elapsed time for pr152.in: 1719 of 2100
+Elapsed time for pr152.in: 1734 of 2100
+Elapsed time for pr152.in: 1735 of 2100
+Elapsed time for pr152.in: 1703 of 2100
+Elapsed time for pr152.in: 1734 of 2100
+Elapsed time for pr152.in: 9688 of 10500
+Elapsed time for pr152.in: 9750 of 10500
+Elapsed time for pr152.in: 9625 of 10500
+Elapsed time for pr152.in: 9703 of 10500
+Elapsed time for pr152.in: 9687 of 10500
+Elapsed time for pr152.in: 9703 of 10500
+Mean fitness for pr152.in: 369618,094897181
+Elapsed time for rat195.in: 1687 of 2100
+Elapsed time for rat195.in: 1672 of 2100
+Elapsed time for rat195.in: 1671 of 2100
+Elapsed time for rat195.in: 1657 of 2100
+Elapsed time for rat195.in: 1641 of 2100
+Elapsed time for rat195.in: 1656 of 2100
+Elapsed time for rat195.in: 9672 of 10500
+Elapsed time for rat195.in: 9672 of 10500
+Elapsed time for rat195.in: 9609 of 10500
+Elapsed time for rat195.in: 9625 of 10500
+Elapsed time for rat195.in: 9703 of 10500
+Elapsed time for rat195.in: 9672 of 10500
+Mean fitness for rat195.in: 10709,832445355
+Current cost: 795433,159937016
+
+Current parameters: 250, 4, 0,2
+Elapsed time for bier127.in: 1704 of 2100
+Elapsed time for bier127.in: 1734 of 2100
+Elapsed time for bier127.in: 1703 of 2100
+Elapsed time for bier127.in: 1718 of 2100
+Elapsed time for bier127.in: 1719 of 2100
+Elapsed time for bier127.in: 1735 of 2100
+Elapsed time for bier127.in: 9703 of 10500
+Elapsed time for bier127.in: 9718 of 10500
+Elapsed time for bier127.in: 9656 of 10500
+Elapsed time for bier127.in: 9688 of 10500
+Elapsed time for bier127.in: 9703 of 10500
+Elapsed time for bier127.in: 9703 of 10500
+Mean fitness for bier127.in: 206970,576998423
+Elapsed time for gr137.in: 1735 of 2100
+Elapsed time for gr137.in: 1734 of 2100
+Elapsed time for gr137.in: 1750 of 2100
+Elapsed time for gr137.in: 1703 of 2100
+Elapsed time for gr137.in: 1735 of 2100
+Elapsed time for gr137.in: 1734 of 2100
+Elapsed time for gr137.in: 9703 of 10500
+Elapsed time for gr137.in: 9688 of 10500
+Elapsed time for gr137.in: 9703 of 10500
+Elapsed time for gr137.in: 9719 of 10500
+Elapsed time for gr137.in: 9672 of 10500
+Elapsed time for gr137.in: 9703 of 10500
+Mean fitness for gr137.in: 175385,155864583
+Elapsed time for pr152.in: 1703 of 2100
+Elapsed time for pr152.in: 1719 of 2100
+Elapsed time for pr152.in: 1718 of 2100
+Elapsed time for pr152.in: 1735 of 2100
+Elapsed time for pr152.in: 1718 of 2100
+Elapsed time for pr152.in: 1703 of 2100
+Elapsed time for pr152.in: 9719 of 10500
+Elapsed time for pr152.in: 9719 of 10500
+Elapsed time for pr152.in: 9703 of 10500
+Elapsed time for pr152.in: 9750 of 10500
+Elapsed time for pr152.in: 9703 of 10500
+Elapsed time for pr152.in: 9704 of 10500
+Mean fitness for pr152.in: 318923,550036604
+Elapsed time for rat195.in: 1734 of 2100
+Elapsed time for rat195.in: 1719 of 2100
+Elapsed time for rat195.in: 1703 of 2100
+Elapsed time for rat195.in: 1687 of 2100
+Elapsed time for rat195.in: 1735 of 2100
+Elapsed time for rat195.in: 1687 of 2100
+Elapsed time for rat195.in: 9688 of 10500
+Elapsed time for rat195.in: 9735 of 10500
+Elapsed time for rat195.in: 9687 of 10500
+Elapsed time for rat195.in: 9703 of 10500
+Elapsed time for rat195.in: 9750 of 10500
+Elapsed time for rat195.in: 9734 of 10500
+Mean fitness for rat195.in: 10369,2002626104
+Current cost: 711648,48316222
+
+Current parameters: 250, 2, 0,2
+Elapsed time for bier127.in: 1750 of 2100
+Elapsed time for bier127.in: 1719 of 2100
+Elapsed time for bier127.in: 1734 of 2100
+Elapsed time for bier127.in: 1719 of 2100
+Elapsed time for bier127.in: 1719 of 2100
+Elapsed time for bier127.in: 1719 of 2100
+Elapsed time for bier127.in: 9718 of 10500
+Elapsed time for bier127.in: 9704 of 10500
+Elapsed time for bier127.in: 9718 of 10500
+Elapsed time for bier127.in: 9719 of 10500
+Elapsed time for bier127.in: 9718 of 10500
+Elapsed time for bier127.in: 9719 of 10500
+Mean fitness for bier127.in: 189640,275663991
+Elapsed time for gr137.in: 1750 of 2100
+Elapsed time for gr137.in: 1734 of 2100
+Elapsed time for gr137.in: 1719 of 2100
+Elapsed time for gr137.in: 1703 of 2100
+Elapsed time for gr137.in: 1719 of 2100
+Elapsed time for gr137.in: 1750 of 2100
+Elapsed time for gr137.in: 9735 of 10500
+Elapsed time for gr137.in: 9719 of 10500
+Elapsed time for gr137.in: 9719 of 10500
+Elapsed time for gr137.in: 9703 of 10500
+Elapsed time for gr137.in: 9718 of 10500
+Elapsed time for gr137.in: 9734 of 10500
+Mean fitness for gr137.in: 150858,524605331
+Elapsed time for pr152.in: 1719 of 2100
+Elapsed time for pr152.in: 1750 of 2100
+Elapsed time for pr152.in: 1735 of 2100
+Elapsed time for pr152.in: 1734 of 2100
+Elapsed time for pr152.in: 1750 of 2100
+Elapsed time for pr152.in: 1734 of 2100
+Elapsed time for pr152.in: 9703 of 10500
+Elapsed time for pr152.in: 9781 of 10500
+Elapsed time for pr152.in: 9719 of 10500
+Elapsed time for pr152.in: 9734 of 10500
+Elapsed time for pr152.in: 9719 of 10500
+Elapsed time for pr152.in: 9734 of 10500
+Mean fitness for pr152.in: 296696,049879553
+Elapsed time for rat195.in: 1719 of 2100
+Elapsed time for rat195.in: 1750 of 2100
+Elapsed time for rat195.in: 1750 of 2100
+Elapsed time for rat195.in: 1750 of 2100
+Elapsed time for rat195.in: 1750 of 2100
+Elapsed time for rat195.in: 1719 of 2100
+Elapsed time for rat195.in: 9719 of 10500
+Elapsed time for rat195.in: 9719 of 10500
+Elapsed time for rat195.in: 9718 of 10500
+Elapsed time for rat195.in: 9719 of 10500
+Elapsed time for rat195.in: 9734 of 10500
+Elapsed time for rat195.in: 9734 of 10500
+Mean fitness for rat195.in: 9019,38249621825
+Current cost: 646214,232645093
+This is the best cost until now.
+
+Current parameters: 250, 50, 0,3
+Elapsed time for bier127.in: 1375 of 2100
+Elapsed time for bier127.in: 1422 of 2100
+Elapsed time for bier127.in: 1391 of 2100
+Elapsed time for bier127.in: 1422 of 2100
+Elapsed time for bier127.in: 1406 of 2100
+Elapsed time for bier127.in: 1375 of 2100
+Elapsed time for bier127.in: 9422 of 10500
+Elapsed time for bier127.in: 9531 of 10500
+Elapsed time for bier127.in: 9422 of 10500
+Elapsed time for bier127.in: 9547 of 10500
+Elapsed time for bier127.in: 9500 of 10500
+Elapsed time for bier127.in: 9437 of 10500
+Mean fitness for bier127.in: 312357,173977259
+Elapsed time for gr137.in: 1344 of 2100
+Elapsed time for gr137.in: 1313 of 2100
+Elapsed time for gr137.in: 1343 of 2100
+Elapsed time for gr137.in: 1328 of 2100
+Elapsed time for gr137.in: 1313 of 2100
+Elapsed time for gr137.in: 1344 of 2100
+Elapsed time for gr137.in: 9453 of 10500
+Elapsed time for gr137.in: 9297 of 10500
+Elapsed time for gr137.in: 9344 of 10500
+Elapsed time for gr137.in: 9375 of 10500
+Elapsed time for gr137.in: 9469 of 10500
+Elapsed time for gr137.in: 9359 of 10500
+Mean fitness for gr137.in: 270003,529603083
+Elapsed time for pr152.in: 1219 of 2100
+Elapsed time for pr152.in: 1266 of 2100
+Elapsed time for pr152.in: 1250 of 2100
+Elapsed time for pr152.in: 1265 of 2100
+Elapsed time for pr152.in: 1234 of 2100
+Elapsed time for pr152.in: 1235 of 2100
+Elapsed time for pr152.in: 9312 of 10500
+Elapsed time for pr152.in: 9203 of 10500
+Elapsed time for pr152.in: 9328 of 10500
+Elapsed time for pr152.in: 9235 of 10500
+Elapsed time for pr152.in: 9188 of 10500
+Elapsed time for pr152.in: 9297 of 10500
+Mean fitness for pr152.in: 506202,555345959
+Elapsed time for rat195.in: 890 of 2100
+Elapsed time for rat195.in: 938 of 2100
+Elapsed time for rat195.in: 890 of 2100
+Elapsed time for rat195.in: 907 of 2100
+Elapsed time for rat195.in: 906 of 2100
+Elapsed time for rat195.in: 891 of 2100
+Elapsed time for rat195.in: 8875 of 10500
+Elapsed time for rat195.in: 9000 of 10500
+Elapsed time for rat195.in: 8922 of 10500
+Elapsed time for rat195.in: 8953 of 10500
+Elapsed time for rat195.in: 8875 of 10500
+Elapsed time for rat195.in: 9000 of 10500
+Mean fitness for rat195.in: 15572,5003896589
+Current cost: 1104135,75931596
+
+Current parameters: 250, 40, 0,3
+Elapsed time for bier127.in: 1500 of 2100
+Elapsed time for bier127.in: 1547 of 2100
+Elapsed time for bier127.in: 1500 of 2100
+Elapsed time for bier127.in: 1484 of 2100
+Elapsed time for bier127.in: 1500 of 2100
+Elapsed time for bier127.in: 1453 of 2100
+Elapsed time for bier127.in: 9531 of 10500
+Elapsed time for bier127.in: 9625 of 10500
+Elapsed time for bier127.in: 9594 of 10500
+Elapsed time for bier127.in: 9657 of 10500
+Elapsed time for bier127.in: 9593 of 10500
+Elapsed time for bier127.in: 9578 of 10500
+Mean fitness for bier127.in: 297451,957658779
+Elapsed time for gr137.in: 1469 of 2100
+Elapsed time for gr137.in: 1437 of 2100
+Elapsed time for gr137.in: 1407 of 2100
+Elapsed time for gr137.in: 1437 of 2100
+Elapsed time for gr137.in: 1422 of 2100
+Elapsed time for gr137.in: 1453 of 2100
+Elapsed time for gr137.in: 9453 of 10500
+Elapsed time for gr137.in: 9547 of 10500
+Elapsed time for gr137.in: 9453 of 10500
+Elapsed time for gr137.in: 9453 of 10500
+Elapsed time for gr137.in: 9532 of 10500
+Elapsed time for gr137.in: 9500 of 10500
+Mean fitness for gr137.in: 261178,625380689
+Elapsed time for pr152.in: 1343 of 2100
+Elapsed time for pr152.in: 1344 of 2100
+Elapsed time for pr152.in: 1313 of 2100
+Elapsed time for pr152.in: 1328 of 2100
+Elapsed time for pr152.in: 1328 of 2100
+Elapsed time for pr152.in: 1344 of 2100
+Elapsed time for pr152.in: 9421 of 10500
+Elapsed time for pr152.in: 9344 of 10500
+Elapsed time for pr152.in: 9281 of 10500
+Elapsed time for pr152.in: 9390 of 10500
+Elapsed time for pr152.in: 9360 of 10500
+Elapsed time for pr152.in: 9328 of 10500
+Mean fitness for pr152.in: 484117,669611581
+Elapsed time for rat195.in: 1078 of 2100
+Elapsed time for rat195.in: 1063 of 2100
+Elapsed time for rat195.in: 1062 of 2100
+Elapsed time for rat195.in: 1063 of 2100
+Elapsed time for rat195.in: 1063 of 2100
+Elapsed time for rat195.in: 1062 of 2100
+Elapsed time for rat195.in: 9157 of 10500
+Elapsed time for rat195.in: 9125 of 10500
+Elapsed time for rat195.in: 9109 of 10500
+Elapsed time for rat195.in: 9047 of 10500
+Elapsed time for rat195.in: 9094 of 10500
+Elapsed time for rat195.in: 9235 of 10500
+Mean fitness for rat195.in: 12860,7206718849
+Current cost: 1055608,97332293
+
+Current parameters: 250, 30, 0,3
+Elapsed time for bier127.in: 1562 of 2100
+Elapsed time for bier127.in: 1547 of 2100
+Elapsed time for bier127.in: 1578 of 2100
+Elapsed time for bier127.in: 1547 of 2100
+Elapsed time for bier127.in: 1547 of 2100
+Elapsed time for bier127.in: 1593 of 2100
+Elapsed time for bier127.in: 9547 of 10500
+Elapsed time for bier127.in: 9563 of 10500
+Elapsed time for bier127.in: 9609 of 10500
+Elapsed time for bier127.in: 9578 of 10500
+Elapsed time for bier127.in: 9531 of 10500
+Elapsed time for bier127.in: 9594 of 10500
+Mean fitness for bier127.in: 286282,756960235
+Elapsed time for gr137.in: 1500 of 2100
+Elapsed time for gr137.in: 1500 of 2100
+Elapsed time for gr137.in: 1531 of 2100
+Elapsed time for gr137.in: 1516 of 2100
+Elapsed time for gr137.in: 1547 of 2100
+Elapsed time for gr137.in: 1485 of 2100
+Elapsed time for gr137.in: 9531 of 10500
+Elapsed time for gr137.in: 9532 of 10500
+Elapsed time for gr137.in: 9609 of 10500
+Elapsed time for gr137.in: 9640 of 10500
+Elapsed time for gr137.in: 9563 of 10500
+Elapsed time for gr137.in: 9563 of 10500
+Mean fitness for gr137.in: 254238,776163296
+Elapsed time for pr152.in: 1453 of 2100
+Elapsed time for pr152.in: 1422 of 2100
+Elapsed time for pr152.in: 1453 of 2100
+Elapsed time for pr152.in: 1438 of 2100
+Elapsed time for pr152.in: 1454 of 2100
+Elapsed time for pr152.in: 1468 of 2100
+Elapsed time for pr152.in: 9516 of 10500
+Elapsed time for pr152.in: 9500 of 10500
+Elapsed time for pr152.in: 9515 of 10500
+Elapsed time for pr152.in: 9531 of 10500
+Elapsed time for pr152.in: 9563 of 10500
+Elapsed time for pr152.in: 9469 of 10500
+Mean fitness for pr152.in: 454669,775994999
+Elapsed time for rat195.in: 1250 of 2100
+Elapsed time for rat195.in: 1234 of 2100
+Elapsed time for rat195.in: 1266 of 2100
+Elapsed time for rat195.in: 1234 of 2100
+Elapsed time for rat195.in: 1266 of 2100
+Elapsed time for rat195.in: 1265 of 2100
+Elapsed time for rat195.in: 9235 of 10500
+Elapsed time for rat195.in: 9266 of 10500
+Elapsed time for rat195.in: 9297 of 10500
+Elapsed time for rat195.in: 9219 of 10500
+Elapsed time for rat195.in: 9344 of 10500
+Elapsed time for rat195.in: 9406 of 10500
+Mean fitness for rat195.in: 12240,2818691867
+Current cost: 1007431,59098772
+
+Current parameters: 250, 20, 0,3
+Elapsed time for bier127.in: 1625 of 2100
+Elapsed time for bier127.in: 1625 of 2100
+Elapsed time for bier127.in: 1640 of 2100
+Elapsed time for bier127.in: 1641 of 2100
+Elapsed time for bier127.in: 1625 of 2100
+Elapsed time for bier127.in: 1609 of 2100
+Elapsed time for bier127.in: 9656 of 10500
+Elapsed time for bier127.in: 9688 of 10500
+Elapsed time for bier127.in: 9641 of 10500
+Elapsed time for bier127.in: 9625 of 10500
+Elapsed time for bier127.in: 9625 of 10500
+Elapsed time for bier127.in: 9641 of 10500
+Mean fitness for bier127.in: 260124,54852082
+Elapsed time for gr137.in: 1594 of 2100
+Elapsed time for gr137.in: 1578 of 2100
+Elapsed time for gr137.in: 1578 of 2100
 Elapsed time for gr137.in: 1609 of 2100
 Elapsed time for gr137.in: 1610 of 2100
 Elapsed time for gr137.in: 1594 of 2100
-Elapsed time for gr137.in: 1625 of 2100
-Elapsed time for gr137.in: 1609 of 2100
-Elapsed time for gr137.in: 1641 of 2100
-Elapsed time for gr137.in: 9671 of 10500
-Elapsed time for gr137.in: 9688 of 10500
+Elapsed time for gr137.in: 9625 of 10500
+Elapsed time for gr137.in: 9625 of 10500
 Elapsed time for gr137.in: 9640 of 10500
-Elapsed time for gr137.in: 9719 of 10500
+Elapsed time for gr137.in: 9610 of 10500
 Elapsed time for gr137.in: 9687 of 10500
-Elapsed time for gr137.in: 9641 of 10500
-Mean fitness for gr137.in: 272298,518928182
-Elapsed time for pr152.in: 1500 of 2100
-Elapsed time for pr152.in: 1594 of 2100
-Elapsed time for pr152.in: 1531 of 2100
-Elapsed time for pr152.in: 1578 of 2100
+Elapsed time for gr137.in: 9610 of 10500
+Mean fitness for gr137.in: 234181,597069082
 Elapsed time for pr152.in: 1547 of 2100
-Elapsed time for pr152.in: 1594 of 2100
-Elapsed time for pr152.in: 9640 of 10500
+Elapsed time for pr152.in: 1547 of 2100
+Elapsed time for pr152.in: 1547 of 2100
+Elapsed time for pr152.in: 1578 of 2100
+Elapsed time for pr152.in: 1562 of 2100
+Elapsed time for pr152.in: 1563 of 2100
+Elapsed time for pr152.in: 9656 of 10500
 Elapsed time for pr152.in: 9563 of 10500
-Elapsed time for pr152.in: 9594 of 10500
-Elapsed time for pr152.in: 9578 of 10500
+Elapsed time for pr152.in: 9672 of 10500
 Elapsed time for pr152.in: 9625 of 10500
 Elapsed time for pr152.in: 9531 of 10500
-Mean fitness for pr152.in: 497360,830351289
-Elapsed time for rat195.in: 1453 of 2100
-Elapsed time for rat195.in: 1406 of 2100
-Elapsed time for rat195.in: 1375 of 2100
+Elapsed time for pr152.in: 9625 of 10500
+Mean fitness for pr152.in: 433316,483024485
 Elapsed time for rat195.in: 1422 of 2100
+Elapsed time for rat195.in: 1453 of 2100
+Elapsed time for rat195.in: 1438 of 2100
 Elapsed time for rat195.in: 1406 of 2100
-Elapsed time for rat195.in: 1406 of 2100
-Elapsed time for rat195.in: 9485 of 10500
+Elapsed time for rat195.in: 1407 of 2100
+Elapsed time for rat195.in: 1422 of 2100
+Elapsed time for rat195.in: 9265 of 10500
 Elapsed time for rat195.in: 9438 of 10500
-Elapsed time for rat195.in: 9453 of 10500
-Elapsed time for rat195.in: 9500 of 10500
-Elapsed time for rat195.in: 9547 of 10500
-Elapsed time for rat195.in: 9422 of 10500
-Mean fitness for rat195.in: 13433,8894966932
-Current cost: 1087556,54066751
+Elapsed time for rat195.in: 9515 of 10500
+Elapsed time for rat195.in: 9516 of 10500
+Elapsed time for rat195.in: 9468 of 10500
+Elapsed time for rat195.in: 9516 of 10500
+Mean fitness for rat195.in: 11500,440404014
+Current cost: 939123,069018401
 
-Current parameters: 250, 2, 0,2
-Elapsed time for bier127.in: 1703 of 2100
-Elapsed time for bier127.in: 1719 of 2100
-Elapsed time for bier127.in: 1734 of 2100
-Elapsed time for bier127.in: 1719 of 2100
-Elapsed time for bier127.in: 1719 of 2100
-Elapsed time for bier127.in: 1734 of 2100
-Elapsed time for bier127.in: 9719 of 10500
-Elapsed time for bier127.in: 9703 of 10500
-Elapsed time for bier127.in: 9703 of 10500
-Elapsed time for bier127.in: 9734 of 10500
-Elapsed time for bier127.in: 9719 of 10500
-Elapsed time for bier127.in: 9688 of 10500
-Mean fitness for bier127.in: 193711,178769811
-Elapsed time for gr137.in: 1718 of 2100
-Elapsed time for gr137.in: 1719 of 2100
-Elapsed time for gr137.in: 1734 of 2100
-Elapsed time for gr137.in: 1734 of 2100
-Elapsed time for gr137.in: 1719 of 2100
-Elapsed time for gr137.in: 1719 of 2100
-Elapsed time for gr137.in: 9703 of 10500
-Elapsed time for gr137.in: 9719 of 10500
-Elapsed time for gr137.in: 9719 of 10500
-Elapsed time for gr137.in: 9734 of 10500
-Elapsed time for gr137.in: 9703 of 10500
-Elapsed time for gr137.in: 9672 of 10500
-Mean fitness for gr137.in: 164135,865190128
-Elapsed time for pr152.in: 1718 of 2100
-Elapsed time for pr152.in: 1703 of 2100
-Elapsed time for pr152.in: 1735 of 2100
-Elapsed time for pr152.in: 1734 of 2100
-Elapsed time for pr152.in: 1719 of 2100
-Elapsed time for pr152.in: 1750 of 2100
-Elapsed time for pr152.in: 9734 of 10500
-Elapsed time for pr152.in: 9719 of 10500
-Elapsed time for pr152.in: 9687 of 10500
-Elapsed time for pr152.in: 9719 of 10500
-Elapsed time for pr152.in: 9734 of 10500
-Elapsed time for pr152.in: 9672 of 10500
-Mean fitness for pr152.in: 315551,695863023
-Elapsed time for rat195.in: 1735 of 2100
-Elapsed time for rat195.in: 1718 of 2100
-Elapsed time for rat195.in: 1719 of 2100
-Elapsed time for rat195.in: 1734 of 2100
-Elapsed time for rat195.in: 1719 of 2100
-Elapsed time for rat195.in: 1719 of 2100
-Elapsed time for rat195.in: 9703 of 10500
-Elapsed time for rat195.in: 9703 of 10500
-Elapsed time for rat195.in: 9719 of 10500
-Elapsed time for rat195.in: 9703 of 10500
-Elapsed time for rat195.in: 9703 of 10500
-Elapsed time for rat195.in: 9704 of 10500
-Mean fitness for rat195.in: 9327,18540545636
-Current cost: 682725,925228418
-This is the best cost until now.
-
-Current parameters: 250, 4, 0,2
-Elapsed time for bier127.in: 1718 of 2100
-Elapsed time for bier127.in: 1719 of 2100
-Elapsed time for bier127.in: 1719 of 2100
-Elapsed time for bier127.in: 1719 of 2100
-Elapsed time for bier127.in: 1703 of 2100
-Elapsed time for bier127.in: 1719 of 2100
-Elapsed time for bier127.in: 9703 of 10500
-Elapsed time for bier127.in: 9688 of 10500
-Elapsed time for bier127.in: 9687 of 10500
-Elapsed time for bier127.in: 9703 of 10500
-Elapsed time for bier127.in: 9641 of 10500
-Elapsed time for bier127.in: 9719 of 10500
-Mean fitness for bier127.in: 211714,219972279
-Elapsed time for gr137.in: 1703 of 2100
-Elapsed time for gr137.in: 1750 of 2100
-Elapsed time for gr137.in: 1735 of 2100
-Elapsed time for gr137.in: 1719 of 2100
-Elapsed time for gr137.in: 1734 of 2100
-Elapsed time for gr137.in: 1734 of 2100
-Elapsed time for gr137.in: 9703 of 10500
-Elapsed time for gr137.in: 9735 of 10500
-Elapsed time for gr137.in: 9719 of 10500
-Elapsed time for gr137.in: 9718 of 10500
-Elapsed time for gr137.in: 9657 of 10500
-Elapsed time for gr137.in: 9703 of 10500
-Mean fitness for gr137.in: 171407,562011129
-Elapsed time for pr152.in: 1719 of 2100
-Elapsed time for pr152.in: 1750 of 2100
-Elapsed time for pr152.in: 1719 of 2100
-Elapsed time for pr152.in: 1719 of 2100
-Elapsed time for pr152.in: 1718 of 2100
-Elapsed time for pr152.in: 1719 of 2100
-Elapsed time for pr152.in: 9688 of 10500
-Elapsed time for pr152.in: 9703 of 10500
-Elapsed time for pr152.in: 9718 of 10500
-Elapsed time for pr152.in: 9719 of 10500
-Elapsed time for pr152.in: 9672 of 10500
-Elapsed time for pr152.in: 9672 of 10500
-Mean fitness for pr152.in: 338512,842434621
-Elapsed time for rat195.in: 1703 of 2100
-Elapsed time for rat195.in: 1688 of 2100
-Elapsed time for rat195.in: 1671 of 2100
-Elapsed time for rat195.in: 1672 of 2100
-Elapsed time for rat195.in: 1672 of 2100
-Elapsed time for rat195.in: 1672 of 2100
-Elapsed time for rat195.in: 9734 of 10500
-Elapsed time for rat195.in: 9672 of 10500
-Elapsed time for rat195.in: 9688 of 10500
-Elapsed time for rat195.in: 9672 of 10500
-Elapsed time for rat195.in: 9703 of 10500
-Elapsed time for rat195.in: 9703 of 10500
-Mean fitness for rat195.in: 10803,8278018078
-Current cost: 732438,452219837
-
-Current parameters: 250, 6, 0,2
-Elapsed time for bier127.in: 1703 of 2100
-Elapsed time for bier127.in: 1719 of 2100
-Elapsed time for bier127.in: 1734 of 2100
-Elapsed time for bier127.in: 1719 of 2100
-Elapsed time for bier127.in: 1734 of 2100
-Elapsed time for bier127.in: 1688 of 2100
-Elapsed time for bier127.in: 9703 of 10500
-Elapsed time for bier127.in: 9672 of 10500
-Elapsed time for bier127.in: 9672 of 10500
-Elapsed time for bier127.in: 9734 of 10500
-Elapsed time for bier127.in: 9703 of 10500
-Elapsed time for bier127.in: 9719 of 10500
-Mean fitness for bier127.in: 233622,427735702
-Elapsed time for gr137.in: 1719 of 2100
-Elapsed time for gr137.in: 1718 of 2100
-Elapsed time for gr137.in: 1719 of 2100
-Elapsed time for gr137.in: 1719 of 2100
-Elapsed time for gr137.in: 1703 of 2100
-Elapsed time for gr137.in: 1719 of 2100
-Elapsed time for gr137.in: 9688 of 10500
-Elapsed time for gr137.in: 9734 of 10500
-Elapsed time for gr137.in: 9672 of 10500
-Elapsed time for gr137.in: 9641 of 10500
-Elapsed time for gr137.in: 9687 of 10500
-Elapsed time for gr137.in: 9750 of 10500
-Mean fitness for gr137.in: 193759,660233863
-Elapsed time for pr152.in: 1688 of 2100
-Elapsed time for pr152.in: 1703 of 2100
-Elapsed time for pr152.in: 1719 of 2100
-Elapsed time for pr152.in: 1687 of 2100
-Elapsed time for pr152.in: 1719 of 2100
-Elapsed time for pr152.in: 1672 of 2100
-Elapsed time for pr152.in: 9672 of 10500
-Elapsed time for pr152.in: 9718 of 10500
-Elapsed time for pr152.in: 9672 of 10500
-Elapsed time for pr152.in: 9672 of 10500
-Elapsed time for pr152.in: 9687 of 10500
-Elapsed time for pr152.in: 9719 of 10500
-Mean fitness for pr152.in: 376408,425990282
-Elapsed time for rat195.in: 1656 of 2100
-Elapsed time for rat195.in: 1641 of 2100
-Elapsed time for rat195.in: 1641 of 2100
-Elapsed time for rat195.in: 1640 of 2100
-Elapsed time for rat195.in: 1672 of 2100
-Elapsed time for rat195.in: 1656 of 2100
-Elapsed time for rat195.in: 9703 of 10500
-Elapsed time for rat195.in: 9704 of 10500
-Elapsed time for rat195.in: 9625 of 10500
-Elapsed time for rat195.in: 9656 of 10500
-Elapsed time for rat195.in: 9672 of 10500
-Elapsed time for rat195.in: 9672 of 10500
-Mean fitness for rat195.in: 11058,2140635458
-Current cost: 814848,728023393
-
-Current parameters: 250, 8, 0,2
+Current parameters: 250, 10, 0,3
 Elapsed time for bier127.in: 1703 of 2100
 Elapsed time for bier127.in: 1718 of 2100
-Elapsed time for bier127.in: 1704 of 2100
-Elapsed time for bier127.in: 1703 of 2100
 Elapsed time for bier127.in: 1672 of 2100
-Elapsed time for bier127.in: 1703 of 2100
+Elapsed time for bier127.in: 1672 of 2100
+Elapsed time for bier127.in: 1672 of 2100
+Elapsed time for bier127.in: 1719 of 2100
+Elapsed time for bier127.in: 9688 of 10500
+Elapsed time for bier127.in: 9750 of 10500
+Elapsed time for bier127.in: 9734 of 10500
+Elapsed time for bier127.in: 9656 of 10500
+Elapsed time for bier127.in: 9719 of 10500
 Elapsed time for bier127.in: 9703 of 10500
-Elapsed time for bier127.in: 9656 of 10500
-Elapsed time for bier127.in: 9625 of 10500
-Elapsed time for bier127.in: 9672 of 10500
-Elapsed time for bier127.in: 9641 of 10500
-Elapsed time for bier127.in: 9656 of 10500
-Mean fitness for bier127.in: 242504,031719427
+Mean fitness for bier127.in: 227690,108815504
 Elapsed time for gr137.in: 1672 of 2100
-Elapsed time for gr137.in: 1703 of 2100
-Elapsed time for gr137.in: 1672 of 2100
-Elapsed time for gr137.in: 1687 of 2100
-Elapsed time for gr137.in: 1703 of 2100
 Elapsed time for gr137.in: 1688 of 2100
+Elapsed time for gr137.in: 1687 of 2100
+Elapsed time for gr137.in: 1657 of 2100
+Elapsed time for gr137.in: 1687 of 2100
+Elapsed time for gr137.in: 1704 of 2100
+Elapsed time for gr137.in: 9734 of 10500
+Elapsed time for gr137.in: 9641 of 10500
+Elapsed time for gr137.in: 9734 of 10500
+Elapsed time for gr137.in: 9656 of 10500
+Elapsed time for gr137.in: 9703 of 10500
 Elapsed time for gr137.in: 9672 of 10500
-Elapsed time for gr137.in: 9687 of 10500
-Elapsed time for gr137.in: 9672 of 10500
-Elapsed time for gr137.in: 9672 of 10500
-Elapsed time for gr137.in: 9672 of 10500
-Elapsed time for gr137.in: 9672 of 10500
-Mean fitness for gr137.in: 209778,632149536
-Elapsed time for pr152.in: 1703 of 2100
+Mean fitness for gr137.in: 194966,576573037
+Elapsed time for pr152.in: 1672 of 2100
 Elapsed time for pr152.in: 1656 of 2100
 Elapsed time for pr152.in: 1641 of 2100
 Elapsed time for pr152.in: 1656 of 2100
-Elapsed time for pr152.in: 1625 of 2100
-Elapsed time for pr152.in: 1687 of 2100
-Elapsed time for pr152.in: 9688 of 10500
-Elapsed time for pr152.in: 9734 of 10500
-Elapsed time for pr152.in: 9625 of 10500
-Elapsed time for pr152.in: 9719 of 10500
-Elapsed time for pr152.in: 9656 of 10500
+Elapsed time for pr152.in: 1703 of 2100
+Elapsed time for pr152.in: 1641 of 2100
 Elapsed time for pr152.in: 9672 of 10500
-Mean fitness for pr152.in: 415861,56042703
-Elapsed time for rat195.in: 1625 of 2100
+Elapsed time for pr152.in: 9640 of 10500
+Elapsed time for pr152.in: 9750 of 10500
+Elapsed time for pr152.in: 9704 of 10500
+Elapsed time for pr152.in: 9766 of 10500
+Elapsed time for pr152.in: 9656 of 10500
+Mean fitness for pr152.in: 388493,061486077
+Elapsed time for rat195.in: 1578 of 2100
 Elapsed time for rat195.in: 1609 of 2100
 Elapsed time for rat195.in: 1594 of 2100
-Elapsed time for rat195.in: 1625 of 2100
+Elapsed time for rat195.in: 1594 of 2100
 Elapsed time for rat195.in: 1593 of 2100
-Elapsed time for rat195.in: 1641 of 2100
-Elapsed time for rat195.in: 9656 of 10500
-Elapsed time for rat195.in: 9703 of 10500
+Elapsed time for rat195.in: 1594 of 2100
+Elapsed time for rat195.in: 9641 of 10500
+Elapsed time for rat195.in: 9609 of 10500
+Elapsed time for rat195.in: 9641 of 10500
+Elapsed time for rat195.in: 9609 of 10500
 Elapsed time for rat195.in: 9672 of 10500
-Elapsed time for rat195.in: 9609 of 10500
-Elapsed time for rat195.in: 9610 of 10500
-Elapsed time for rat195.in: 9703 of 10500
-Mean fitness for rat195.in: 11381,9276236575
-Current cost: 879526,15191965
+Elapsed time for rat195.in: 9594 of 10500
+Mean fitness for rat195.in: 10822,9300318377
+Current cost: 821972,676906455
 
-Current parameters: 250, 10, 0,2
-Elapsed time for bier127.in: 1687 of 2100
-Elapsed time for bier127.in: 1656 of 2100
+Current parameters: 250, 8, 0,3
 Elapsed time for bier127.in: 1688 of 2100
-Elapsed time for bier127.in: 1656 of 2100
-Elapsed time for bier127.in: 1672 of 2100
-Elapsed time for bier127.in: 1703 of 2100
-Elapsed time for bier127.in: 9672 of 10500
-Elapsed time for bier127.in: 9781 of 10500
+Elapsed time for bier127.in: 1718 of 2100
+Elapsed time for bier127.in: 1719 of 2100
+Elapsed time for bier127.in: 1688 of 2100
+Elapsed time for bier127.in: 1718 of 2100
+Elapsed time for bier127.in: 1719 of 2100
+Elapsed time for bier127.in: 9688 of 10500
 Elapsed time for bier127.in: 9687 of 10500
-Elapsed time for bier127.in: 9719 of 10500
 Elapsed time for bier127.in: 9672 of 10500
-Elapsed time for bier127.in: 9719 of 10500
-Mean fitness for bier127.in: 246023,711712909
-Elapsed time for gr137.in: 1672 of 2100
-Elapsed time for gr137.in: 1672 of 2100
-Elapsed time for gr137.in: 1671 of 2100
-Elapsed time for gr137.in: 1641 of 2100
-Elapsed time for gr137.in: 1641 of 2100
-Elapsed time for gr137.in: 1625 of 2100
-Elapsed time for gr137.in: 9688 of 10500
-Elapsed time for gr137.in: 9640 of 10500
-Elapsed time for gr137.in: 9688 of 10500
-Elapsed time for gr137.in: 9719 of 10500
-Elapsed time for gr137.in: 9640 of 10500
-Elapsed time for gr137.in: 9657 of 10500
-Mean fitness for gr137.in: 231511,347915646
-Elapsed time for pr152.in: 1625 of 2100
-Elapsed time for pr152.in: 1640 of 2100
-Elapsed time for pr152.in: 1610 of 2100
-Elapsed time for pr152.in: 1609 of 2100
-Elapsed time for pr152.in: 1609 of 2100
-Elapsed time for pr152.in: 1625 of 2100
-Elapsed time for pr152.in: 9657 of 10500
-Elapsed time for pr152.in: 9609 of 10500
-Elapsed time for pr152.in: 9625 of 10500
-Elapsed time for pr152.in: 9640 of 10500
-Elapsed time for pr152.in: 9610 of 10500
-Elapsed time for pr152.in: 9640 of 10500
-Mean fitness for pr152.in: 419488,960888177
-Elapsed time for rat195.in: 1594 of 2100
-Elapsed time for rat195.in: 1594 of 2100
-Elapsed time for rat195.in: 1578 of 2100
-Elapsed time for rat195.in: 1578 of 2100
-Elapsed time for rat195.in: 1594 of 2100
-Elapsed time for rat195.in: 1594 of 2100
-Elapsed time for rat195.in: 9625 of 10500
-Elapsed time for rat195.in: 9609 of 10500
-Elapsed time for rat195.in: 9625 of 10500
-Elapsed time for rat195.in: 9579 of 10500
-Elapsed time for rat195.in: 9610 of 10500
-Elapsed time for rat195.in: 9609 of 10500
-Mean fitness for rat195.in: 12145,4537525493
-Current cost: 909169,474269281
-
-Current parameters: 250, 16, 0,2
-Elapsed time for bier127.in: 1641 of 2100
-Elapsed time for bier127.in: 1625 of 2100
-Elapsed time for bier127.in: 1625 of 2100
-Elapsed time for bier127.in: 1641 of 2100
-Elapsed time for bier127.in: 1672 of 2100
-Elapsed time for bier127.in: 1625 of 2100
-Elapsed time for bier127.in: 9703 of 10500
 Elapsed time for bier127.in: 9672 of 10500
-Elapsed time for bier127.in: 9625 of 10500
-Elapsed time for bier127.in: 9640 of 10500
-Elapsed time for bier127.in: 9625 of 10500
 Elapsed time for bier127.in: 9672 of 10500
-Mean fitness for bier127.in: 274777,564218598
-Elapsed time for gr137.in: 1609 of 2100
-Elapsed time for gr137.in: 1625 of 2100
-Elapsed time for gr137.in: 1610 of 2100
+Elapsed time for bier127.in: 9734 of 10500
+Mean fitness for bier127.in: 225398,301954045
+Elapsed time for gr137.in: 1719 of 2100
 Elapsed time for gr137.in: 1656 of 2100
-Elapsed time for gr137.in: 1609 of 2100
-Elapsed time for gr137.in: 1610 of 2100
-Elapsed time for gr137.in: 9671 of 10500
-Elapsed time for gr137.in: 9594 of 10500
+Elapsed time for gr137.in: 1718 of 2100
+Elapsed time for gr137.in: 1719 of 2100
+Elapsed time for gr137.in: 1672 of 2100
+Elapsed time for gr137.in: 1718 of 2100
 Elapsed time for gr137.in: 9625 of 10500
-Elapsed time for gr137.in: 9625 of 10500
-Elapsed time for gr137.in: 9578 of 10500
-Elapsed time for gr137.in: 9594 of 10500
-Mean fitness for gr137.in: 241876,701823975
-Elapsed time for pr152.in: 1547 of 2100
-Elapsed time for pr152.in: 1562 of 2100
-Elapsed time for pr152.in: 1594 of 2100
-Elapsed time for pr152.in: 1547 of 2100
-Elapsed time for pr152.in: 1578 of 2100
-Elapsed time for pr152.in: 1531 of 2100
-Elapsed time for pr152.in: 9563 of 10500
-Elapsed time for pr152.in: 9625 of 10500
+Elapsed time for gr137.in: 9719 of 10500
+Elapsed time for gr137.in: 9672 of 10500
+Elapsed time for gr137.in: 9687 of 10500
+Elapsed time for gr137.in: 9704 of 10500
+Elapsed time for gr137.in: 9703 of 10500
+Mean fitness for gr137.in: 195473,229697445
+Elapsed time for pr152.in: 1703 of 2100
+Elapsed time for pr152.in: 1703 of 2100
+Elapsed time for pr152.in: 1703 of 2100
+Elapsed time for pr152.in: 1688 of 2100
+Elapsed time for pr152.in: 1687 of 2100
+Elapsed time for pr152.in: 1672 of 2100
 Elapsed time for pr152.in: 9609 of 10500
-Elapsed time for pr152.in: 9562 of 10500
-Elapsed time for pr152.in: 9579 of 10500
-Elapsed time for pr152.in: 9578 of 10500
-Mean fitness for pr152.in: 475901,233736987
-Elapsed time for rat195.in: 1422 of 2100
-Elapsed time for rat195.in: 1500 of 2100
-Elapsed time for rat195.in: 1453 of 2100
-Elapsed time for rat195.in: 1453 of 2100
-Elapsed time for rat195.in: 1454 of 2100
-Elapsed time for rat195.in: 1453 of 2100
-Elapsed time for rat195.in: 9562 of 10500
-Elapsed time for rat195.in: 9500 of 10500
-Elapsed time for rat195.in: 9485 of 10500
-Elapsed time for rat195.in: 9531 of 10500
-Elapsed time for rat195.in: 9484 of 10500
-Elapsed time for rat195.in: 9484 of 10500
-Mean fitness for rat195.in: 12362,5902847029
-Current cost: 1004918,09006426
+Elapsed time for pr152.in: 9672 of 10500
+Elapsed time for pr152.in: 9672 of 10500
+Elapsed time for pr152.in: 9688 of 10500
+Elapsed time for pr152.in: 9687 of 10500
+Elapsed time for pr152.in: 9735 of 10500
+Mean fitness for pr152.in: 375762,507403378
+Elapsed time for rat195.in: 1609 of 2100
+Elapsed time for rat195.in: 1609 of 2100
+Elapsed time for rat195.in: 1641 of 2100
+Elapsed time for rat195.in: 1640 of 2100
+Elapsed time for rat195.in: 1625 of 2100
+Elapsed time for rat195.in: 1625 of 2100
+Elapsed time for rat195.in: 9688 of 10500
+Elapsed time for rat195.in: 9687 of 10500
+Elapsed time for rat195.in: 9719 of 10500
+Elapsed time for rat195.in: 9640 of 10500
+Elapsed time for rat195.in: 9719 of 10500
+Elapsed time for rat195.in: 9641 of 10500
+Mean fitness for rat195.in: 10872,9454672479
+Current cost: 807506,984522116
 
-Current parameters: 250, 2, 0,3
-Elapsed time for bier127.in: 1719 of 2100
-Elapsed time for bier127.in: 1719 of 2100
+Current parameters: 250, 6, 0,3
 Elapsed time for bier127.in: 1734 of 2100
 Elapsed time for bier127.in: 1703 of 2100
 Elapsed time for bier127.in: 1735 of 2100
-Elapsed time for bier127.in: 1734 of 2100
-Elapsed time for bier127.in: 9719 of 10500
+Elapsed time for bier127.in: 1718 of 2100
+Elapsed time for bier127.in: 1719 of 2100
+Elapsed time for bier127.in: 1750 of 2100
+Elapsed time for bier127.in: 9656 of 10500
 Elapsed time for bier127.in: 9687 of 10500
-Elapsed time for bier127.in: 9719 of 10500
-Elapsed time for bier127.in: 9703 of 10500
-Elapsed time for bier127.in: 9719 of 10500
+Elapsed time for bier127.in: 9718 of 10500
+Elapsed time for bier127.in: 9688 of 10500
 Elapsed time for bier127.in: 9687 of 10500
-Mean fitness for bier127.in: 188142,746692256
-Elapsed time for gr137.in: 1766 of 2100
+Elapsed time for bier127.in: 9704 of 10500
+Mean fitness for bier127.in: 217288,93143149
+Elapsed time for gr137.in: 1703 of 2100
 Elapsed time for gr137.in: 1750 of 2100
+Elapsed time for gr137.in: 1703 of 2100
 Elapsed time for gr137.in: 1719 of 2100
-Elapsed time for gr137.in: 1750 of 2100
-Elapsed time for gr137.in: 1734 of 2100
-Elapsed time for gr137.in: 1750 of 2100
-Elapsed time for gr137.in: 9719 of 10500
-Elapsed time for gr137.in: 9703 of 10500
-Elapsed time for gr137.in: 9750 of 10500
-Elapsed time for gr137.in: 9734 of 10500
-Elapsed time for gr137.in: 9703 of 10500
+Elapsed time for gr137.in: 1719 of 2100
+Elapsed time for gr137.in: 1718 of 2100
+Elapsed time for gr137.in: 9672 of 10500
 Elapsed time for gr137.in: 9688 of 10500
-Mean fitness for gr137.in: 155295,788797032
+Elapsed time for gr137.in: 9719 of 10500
+Elapsed time for gr137.in: 9719 of 10500
+Elapsed time for gr137.in: 9719 of 10500
+Elapsed time for gr137.in: 9734 of 10500
+Mean fitness for gr137.in: 182200,322026376
 Elapsed time for pr152.in: 1703 of 2100
 Elapsed time for pr152.in: 1719 of 2100
-Elapsed time for pr152.in: 1750 of 2100
-Elapsed time for pr152.in: 1734 of 2100
-Elapsed time for pr152.in: 1719 of 2100
-Elapsed time for pr152.in: 1735 of 2100
-Elapsed time for pr152.in: 9671 of 10500
-Elapsed time for pr152.in: 9704 of 10500
-Elapsed time for pr152.in: 9703 of 10500
-Elapsed time for pr152.in: 9718 of 10500
-Elapsed time for pr152.in: 9688 of 10500
+Elapsed time for pr152.in: 1704 of 2100
+Elapsed time for pr152.in: 1703 of 2100
+Elapsed time for pr152.in: 1703 of 2100
+Elapsed time for pr152.in: 1703 of 2100
+Elapsed time for pr152.in: 9719 of 10500
+Elapsed time for pr152.in: 9672 of 10500
 Elapsed time for pr152.in: 9687 of 10500
-Mean fitness for pr152.in: 293344,653115189
-Elapsed time for rat195.in: 1719 of 2100
-Elapsed time for rat195.in: 1735 of 2100
-Elapsed time for rat195.in: 1718 of 2100
-Elapsed time for rat195.in: 1735 of 2100
-Elapsed time for rat195.in: 1718 of 2100
-Elapsed time for rat195.in: 1750 of 2100
-Elapsed time for rat195.in: 9688 of 10500
-Elapsed time for rat195.in: 9734 of 10500
-Elapsed time for rat195.in: 9703 of 10500
+Elapsed time for pr152.in: 9688 of 10500
+Elapsed time for pr152.in: 9688 of 10500
+Elapsed time for pr152.in: 9672 of 10500
+Mean fitness for pr152.in: 345327,608425323
+Elapsed time for rat195.in: 1688 of 2100
+Elapsed time for rat195.in: 1672 of 2100
+Elapsed time for rat195.in: 1688 of 2100
+Elapsed time for rat195.in: 1625 of 2100
+Elapsed time for rat195.in: 1593 of 2100
+Elapsed time for rat195.in: 1657 of 2100
 Elapsed time for rat195.in: 9750 of 10500
 Elapsed time for rat195.in: 9719 of 10500
 Elapsed time for rat195.in: 9687 of 10500
-Mean fitness for rat195.in: 9268,23043981333
-Current cost: 646051,41904429
-This is the best cost until now.
+Elapsed time for rat195.in: 9657 of 10500
+Elapsed time for rat195.in: 9703 of 10500
+Elapsed time for rat195.in: 9672 of 10500
+Mean fitness for rat195.in: 10139,2222585562
+Current cost: 754956,084141744
 
 Current parameters: 250, 4, 0,3
-Elapsed time for bier127.in: 1719 of 2100
-Elapsed time for bier127.in: 1688 of 2100
-Elapsed time for bier127.in: 1718 of 2100
 Elapsed time for bier127.in: 1735 of 2100
+Elapsed time for bier127.in: 1718 of 2100
+Elapsed time for bier127.in: 1703 of 2100
+Elapsed time for bier127.in: 1734 of 2100
 Elapsed time for bier127.in: 1703 of 2100
 Elapsed time for bier127.in: 1719 of 2100
+Elapsed time for bier127.in: 9719 of 10500
 Elapsed time for bier127.in: 9703 of 10500
-Elapsed time for bier127.in: 9687 of 10500
-Elapsed time for bier127.in: 9625 of 10500
-Elapsed time for bier127.in: 9688 of 10500
 Elapsed time for bier127.in: 9703 of 10500
-Elapsed time for bier127.in: 9687 of 10500
-Mean fitness for bier127.in: 214442,588214874
-Elapsed time for gr137.in: 1719 of 2100
+Elapsed time for bier127.in: 9704 of 10500
+Elapsed time for bier127.in: 9734 of 10500
+Elapsed time for bier127.in: 9734 of 10500
+Mean fitness for bier127.in: 207067,408403452
+Elapsed time for gr137.in: 1703 of 2100
+Elapsed time for gr137.in: 1704 of 2100
+Elapsed time for gr137.in: 1687 of 2100
+Elapsed time for gr137.in: 1750 of 2100
 Elapsed time for gr137.in: 1734 of 2100
-Elapsed time for gr137.in: 1719 of 2100
-Elapsed time for gr137.in: 1703 of 2100
 Elapsed time for gr137.in: 1735 of 2100
-Elapsed time for gr137.in: 1703 of 2100
-Elapsed time for gr137.in: 9687 of 10500
+Elapsed time for gr137.in: 9719 of 10500
 Elapsed time for gr137.in: 9703 of 10500
-Elapsed time for gr137.in: 9688 of 10500
-Elapsed time for gr137.in: 9687 of 10500
-Elapsed time for gr137.in: 9672 of 10500
-Elapsed time for gr137.in: 9688 of 10500
-Mean fitness for gr137.in: 186852,25547449
+Elapsed time for gr137.in: 9735 of 10500
+Elapsed time for gr137.in: 9718 of 10500
+Elapsed time for gr137.in: 9719 of 10500
+Elapsed time for gr137.in: 9703 of 10500
+Mean fitness for gr137.in: 173480,586815557
+Elapsed time for pr152.in: 1688 of 2100
 Elapsed time for pr152.in: 1719 of 2100
-Elapsed time for pr152.in: 1703 of 2100
 Elapsed time for pr152.in: 1718 of 2100
-Elapsed time for pr152.in: 1704 of 2100
-Elapsed time for pr152.in: 1687 of 2100
 Elapsed time for pr152.in: 1719 of 2100
-Elapsed time for pr152.in: 9781 of 10500
-Elapsed time for pr152.in: 9672 of 10500
-Elapsed time for pr152.in: 9719 of 10500
-Elapsed time for pr152.in: 9718 of 10500
-Elapsed time for pr152.in: 9688 of 10500
-Elapsed time for pr152.in: 9687 of 10500
-Mean fitness for pr152.in: 359435,707423666
+Elapsed time for pr152.in: 1719 of 2100
+Elapsed time for pr152.in: 1719 of 2100
+Elapsed time for pr152.in: 9734 of 10500
+Elapsed time for pr152.in: 9734 of 10500
+Elapsed time for pr152.in: 9703 of 10500
+Elapsed time for pr152.in: 9704 of 10500
+Elapsed time for pr152.in: 9703 of 10500
+Elapsed time for pr152.in: 9640 of 10500
+Mean fitness for pr152.in: 327613,970388242
 Elapsed time for rat195.in: 1688 of 2100
-Elapsed time for rat195.in: 1687 of 2100
+Elapsed time for rat195.in: 1688 of 2100
 Elapsed time for rat195.in: 1719 of 2100
-Elapsed time for rat195.in: 1672 of 2100
 Elapsed time for rat195.in: 1687 of 2100
-Elapsed time for rat195.in: 1672 of 2100
+Elapsed time for rat195.in: 1735 of 2100
+Elapsed time for rat195.in: 1687 of 2100
 Elapsed time for rat195.in: 9688 of 10500
-Elapsed time for rat195.in: 9671 of 10500
-Elapsed time for rat195.in: 9672 of 10500
+Elapsed time for rat195.in: 9687 of 10500
 Elapsed time for rat195.in: 9703 of 10500
-Elapsed time for rat195.in: 9735 of 10500
-Elapsed time for rat195.in: 9719 of 10500
-Mean fitness for rat195.in: 10052,1160312847
-Current cost: 770782,667144314
+Elapsed time for rat195.in: 9703 of 10500
+Elapsed time for rat195.in: 9703 of 10500
+Elapsed time for rat195.in: 9703 of 10500
+Mean fitness for rat195.in: 9342,94716719766
+Current cost: 717504,912774449
 
-Current parameters: 250, 6, 0,3
+Current parameters: 250, 2, 0,3
+Elapsed time for bier127.in: 1719 of 2100
 Elapsed time for bier127.in: 1718 of 2100
 Elapsed time for bier127.in: 1750 of 2100
+Elapsed time for bier127.in: 1735 of 2100
+Elapsed time for bier127.in: 1750 of 2100
 Elapsed time for bier127.in: 1719 of 2100
-Elapsed time for bier127.in: 1719 of 2100
-Elapsed time for bier127.in: 1703 of 2100
-Elapsed time for bier127.in: 1719 of 2100
-Elapsed time for bier127.in: 9765 of 10500
-Elapsed time for bier127.in: 9657 of 10500
-Elapsed time for bier127.in: 9765 of 10500
-Elapsed time for bier127.in: 9688 of 10500
+Elapsed time for bier127.in: 9719 of 10500
 Elapsed time for bier127.in: 9703 of 10500
-Elapsed time for bier127.in: 9672 of 10500
-Mean fitness for bier127.in: 226249,640581805
-Elapsed time for gr137.in: 1672 of 2100
-Elapsed time for gr137.in: 1703 of 2100
-Elapsed time for gr137.in: 1672 of 2100
-Elapsed time for gr137.in: 1687 of 2100
-Elapsed time for gr137.in: 1672 of 2100
-Elapsed time for gr137.in: 1672 of 2100
-Elapsed time for gr137.in: 9734 of 10500
-Elapsed time for gr137.in: 9719 of 10500
-Elapsed time for gr137.in: 9656 of 10500
-Elapsed time for gr137.in: 9688 of 10500
-Elapsed time for gr137.in: 9703 of 10500
-Elapsed time for gr137.in: 9640 of 10500
-Mean fitness for gr137.in: 189377,615227021
-Elapsed time for pr152.in: 1688 of 2100
-Elapsed time for pr152.in: 1672 of 2100
-Elapsed time for pr152.in: 1719 of 2100
-Elapsed time for pr152.in: 1687 of 2100
-Elapsed time for pr152.in: 1719 of 2100
-Elapsed time for pr152.in: 1687 of 2100
-Elapsed time for pr152.in: 9672 of 10500
-Elapsed time for pr152.in: 9656 of 10500
-Elapsed time for pr152.in: 9688 of 10500
-Elapsed time for pr152.in: 9640 of 10500
-Elapsed time for pr152.in: 9719 of 10500
-Elapsed time for pr152.in: 9609 of 10500
-Mean fitness for pr152.in: 378007,517426585
-Elapsed time for rat195.in: 1610 of 2100
-Elapsed time for rat195.in: 1672 of 2100
-Elapsed time for rat195.in: 1656 of 2100
-Elapsed time for rat195.in: 1640 of 2100
-Elapsed time for rat195.in: 1641 of 2100
-Elapsed time for rat195.in: 1625 of 2100
-Elapsed time for rat195.in: 9672 of 10500
-Elapsed time for rat195.in: 9656 of 10500
-Elapsed time for rat195.in: 9656 of 10500
-Elapsed time for rat195.in: 9657 of 10500
-Elapsed time for rat195.in: 9656 of 10500
-Elapsed time for rat195.in: 9609 of 10500
-Mean fitness for rat195.in: 10370,9540046218
-Current cost: 804005,727240032
-
-Current parameters: 250, 8, 0,3
-Elapsed time for bier127.in: 1672 of 2100
-Elapsed time for bier127.in: 1672 of 2100
-Elapsed time for bier127.in: 1688 of 2100
-Elapsed time for bier127.in: 1671 of 2100
-Elapsed time for bier127.in: 1657 of 2100
-Elapsed time for bier127.in: 1687 of 2100
-Elapsed time for bier127.in: 9672 of 10500
-Elapsed time for bier127.in: 9703 of 10500
-Elapsed time for bier127.in: 9688 of 10500
-Elapsed time for bier127.in: 9687 of 10500
-Elapsed time for bier127.in: 9656 of 10500
-Elapsed time for bier127.in: 9610 of 10500
-Mean fitness for bier127.in: 228887,556042419
-Elapsed time for gr137.in: 1656 of 2100
-Elapsed time for gr137.in: 1688 of 2100
-Elapsed time for gr137.in: 1687 of 2100
-Elapsed time for gr137.in: 1672 of 2100
-Elapsed time for gr137.in: 1656 of 2100
-Elapsed time for gr137.in: 1672 of 2100
-Elapsed time for gr137.in: 9672 of 10500
-Elapsed time for gr137.in: 9703 of 10500
-Elapsed time for gr137.in: 9688 of 10500
-Elapsed time for gr137.in: 9703 of 10500
-Elapsed time for gr137.in: 9703 of 10500
-Elapsed time for gr137.in: 9656 of 10500
-Mean fitness for gr137.in: 201635,68575456
-Elapsed time for pr152.in: 1688 of 2100
-Elapsed time for pr152.in: 1640 of 2100
-Elapsed time for pr152.in: 1672 of 2100
-Elapsed time for pr152.in: 1688 of 2100
-Elapsed time for pr152.in: 1656 of 2100
-Elapsed time for pr152.in: 1672 of 2100
-Elapsed time for pr152.in: 9656 of 10500
-Elapsed time for pr152.in: 9656 of 10500
-Elapsed time for pr152.in: 9672 of 10500
-Elapsed time for pr152.in: 9703 of 10500
-Elapsed time for pr152.in: 9641 of 10500
-Elapsed time for pr152.in: 9625 of 10500
-Mean fitness for pr152.in: 379607,471756157
-Elapsed time for rat195.in: 1609 of 2100
-Elapsed time for rat195.in: 1594 of 2100
-Elapsed time for rat195.in: 1609 of 2100
-Elapsed time for rat195.in: 1532 of 2100
-Elapsed time for rat195.in: 1578 of 2100
-Elapsed time for rat195.in: 1594 of 2100
-Elapsed time for rat195.in: 9625 of 10500
-Elapsed time for rat195.in: 9625 of 10500
-Elapsed time for rat195.in: 9547 of 10500
-Elapsed time for rat195.in: 9625 of 10500
-Elapsed time for rat195.in: 9656 of 10500
-Elapsed time for rat195.in: 9547 of 10500
-Mean fitness for rat195.in: 10871,8101550372
-Current cost: 821002,523708173
-
-Current parameters: 250, 10, 0,3
-Elapsed time for bier127.in: 1656 of 2100
-Elapsed time for bier127.in: 1656 of 2100
-Elapsed time for bier127.in: 1672 of 2100
-Elapsed time for bier127.in: 1703 of 2100
-Elapsed time for bier127.in: 1672 of 2100
-Elapsed time for bier127.in: 1657 of 2100
-Elapsed time for bier127.in: 9656 of 10500
+Elapsed time for bier127.in: 9719 of 10500
+Elapsed time for bier127.in: 9734 of 10500
 Elapsed time for bier127.in: 9719 of 10500
 Elapsed time for bier127.in: 9718 of 10500
-Elapsed time for bier127.in: 9750 of 10500
-Elapsed time for bier127.in: 9610 of 10500
-Elapsed time for bier127.in: 9609 of 10500
-Mean fitness for bier127.in: 240324,636801852
-Elapsed time for gr137.in: 1625 of 2100
-Elapsed time for gr137.in: 1625 of 2100
-Elapsed time for gr137.in: 1672 of 2100
-Elapsed time for gr137.in: 1672 of 2100
-Elapsed time for gr137.in: 1640 of 2100
-Elapsed time for gr137.in: 1657 of 2100
+Mean fitness for bier127.in: 178638,201068904
+Elapsed time for gr137.in: 1750 of 2100
+Elapsed time for gr137.in: 1750 of 2100
+Elapsed time for gr137.in: 1750 of 2100
+Elapsed time for gr137.in: 1734 of 2100
+Elapsed time for gr137.in: 1704 of 2100
+Elapsed time for gr137.in: 1734 of 2100
+Elapsed time for gr137.in: 9750 of 10500
+Elapsed time for gr137.in: 9719 of 10500
+Elapsed time for gr137.in: 9734 of 10500
+Elapsed time for gr137.in: 9734 of 10500
 Elapsed time for gr137.in: 9672 of 10500
-Elapsed time for gr137.in: 9656 of 10500
-Elapsed time for gr137.in: 9640 of 10500
-Elapsed time for gr137.in: 9688 of 10500
-Elapsed time for gr137.in: 9547 of 10500
-Elapsed time for gr137.in: 9656 of 10500
-Mean fitness for gr137.in: 215404,920491412
-Elapsed time for pr152.in: 1641 of 2100
-Elapsed time for pr152.in: 1640 of 2100
-Elapsed time for pr152.in: 1594 of 2100
-Elapsed time for pr152.in: 1641 of 2100
-Elapsed time for pr152.in: 1625 of 2100
-Elapsed time for pr152.in: 1640 of 2100
-Elapsed time for pr152.in: 9657 of 10500
-Elapsed time for pr152.in: 9656 of 10500
-Elapsed time for pr152.in: 9625 of 10500
-Elapsed time for pr152.in: 9640 of 10500
-Elapsed time for pr152.in: 9641 of 10500
-Elapsed time for pr152.in: 9672 of 10500
-Mean fitness for pr152.in: 401765,712906726
-Elapsed time for rat195.in: 1516 of 2100
-Elapsed time for rat195.in: 1515 of 2100
-Elapsed time for rat195.in: 1500 of 2100
-Elapsed time for rat195.in: 1516 of 2100
-Elapsed time for rat195.in: 1547 of 2100
-Elapsed time for rat195.in: 1515 of 2100
-Elapsed time for rat195.in: 9563 of 10500
-Elapsed time for rat195.in: 9578 of 10500
-Elapsed time for rat195.in: 9609 of 10500
-Elapsed time for rat195.in: 9532 of 10500
-Elapsed time for rat195.in: 9546 of 10500
-Elapsed time for rat195.in: 9594 of 10500
-Mean fitness for rat195.in: 11359,7723370196
-Current cost: 868855,042537011
+Elapsed time for gr137.in: 9719 of 10500
+Mean fitness for gr137.in: 157307,692661111
+Elapsed time for pr152.in: 1719 of 2100
+Elapsed time for pr152.in: 1734 of 2100
+Elapsed time for pr152.in: 1719 of 2100
+Elapsed time for pr152.in: 1750 of 2100
+Elapsed time for pr152.in: 1734 of 2100
+Elapsed time for pr152.in: 1750 of 2100
+Elapsed time for pr152.in: 9734 of 10500
+Elapsed time for pr152.in: 9735 of 10500
+Elapsed time for pr152.in: 9703 of 10500
+Elapsed time for pr152.in: 9719 of 10500
+Elapsed time for pr152.in: 9703 of 10500
+Elapsed time for pr152.in: 9703 of 10500
+Mean fitness for pr152.in: 292888,470624848
+Elapsed time for rat195.in: 1766 of 2100
+Elapsed time for rat195.in: 1735 of 2100
+Elapsed time for rat195.in: 1734 of 2100
+Elapsed time for rat195.in: 1688 of 2100
+Elapsed time for rat195.in: 1734 of 2100
+Elapsed time for rat195.in: 1734 of 2100
+Elapsed time for rat195.in: 9750 of 10500
+Elapsed time for rat195.in: 9718 of 10500
+Elapsed time for rat195.in: 9735 of 10500
+Elapsed time for rat195.in: 9734 of 10500
+Elapsed time for rat195.in: 9703 of 10500
+Elapsed time for rat195.in: 9719 of 10500
+Mean fitness for rat195.in: 8436,92662275277
+Current cost: 637271,290977616
+This is the best cost until now.
 
-Current parameters: 250, 16, 0,3
-Elapsed time for bier127.in: 1640 of 2100
-Elapsed time for bier127.in: 1625 of 2100
-Elapsed time for bier127.in: 1610 of 2100
-Elapsed time for bier127.in: 1656 of 2100
-Elapsed time for bier127.in: 1625 of 2100
-Elapsed time for bier127.in: 1656 of 2100
-Elapsed time for bier127.in: 9625 of 10500
-Elapsed time for bier127.in: 9641 of 10500
-Elapsed time for bier127.in: 9531 of 10500
-Elapsed time for bier127.in: 9641 of 10500
-Elapsed time for bier127.in: 9547 of 10500
-Elapsed time for bier127.in: 9547 of 10500
-Mean fitness for bier127.in: 261389,087605906
-Elapsed time for gr137.in: 1531 of 2100
-Elapsed time for gr137.in: 1500 of 2100
-Elapsed time for gr137.in: 1500 of 2100
-Elapsed time for gr137.in: 1547 of 2100
-Elapsed time for gr137.in: 1485 of 2100
-Elapsed time for gr137.in: 1515 of 2100
-Elapsed time for gr137.in: 9563 of 10500
-Elapsed time for gr137.in: 9531 of 10500
-Elapsed time for gr137.in: 9609 of 10500
-Elapsed time for gr137.in: 9532 of 10500
-Elapsed time for gr137.in: 9609 of 10500
-Elapsed time for gr137.in: 9641 of 10500
-Mean fitness for gr137.in: 234481,16286105
-Elapsed time for pr152.in: 1547 of 2100
-Elapsed time for pr152.in: 1515 of 2100
-Elapsed time for pr152.in: 1453 of 2100
-Elapsed time for pr152.in: 1532 of 2100
-Elapsed time for pr152.in: 1468 of 2100
-Elapsed time for pr152.in: 1500 of 2100
-Elapsed time for pr152.in: 9485 of 10500
-Elapsed time for pr152.in: 9515 of 10500
-Elapsed time for pr152.in: 9563 of 10500
-Elapsed time for pr152.in: 9609 of 10500
-Elapsed time for pr152.in: 9578 of 10500
-Elapsed time for pr152.in: 9547 of 10500
-Mean fitness for pr152.in: 442723,584104199
-Elapsed time for rat195.in: 1406 of 2100
-Elapsed time for rat195.in: 1438 of 2100
-Elapsed time for rat195.in: 1437 of 2100
-Elapsed time for rat195.in: 1422 of 2100
-Elapsed time for rat195.in: 1391 of 2100
-Elapsed time for rat195.in: 1484 of 2100
-Elapsed time for rat195.in: 9562 of 10500
-Elapsed time for rat195.in: 9454 of 10500
-Elapsed time for rat195.in: 9562 of 10500
-Elapsed time for rat195.in: 9500 of 10500
-Elapsed time for rat195.in: 9469 of 10500
-Elapsed time for rat195.in: 9437 of 10500
-Mean fitness for rat195.in: 11564,9958957516
-Current cost: 950158,830466906
+Current parameters: 500, 50, 0,1
+Elapsed time for bier127.in: 1172 of 2100
+Elapsed time for bier127.in: 1125 of 2100
+Elapsed time for bier127.in: 1156 of 2100
+Elapsed time for bier127.in: 1172 of 2100
+Elapsed time for bier127.in: 1172 of 2100
+Elapsed time for bier127.in: 1125 of 2100
+Elapsed time for bier127.in: 9203 of 10500
+Elapsed time for bier127.in: 9203 of 10500
+Elapsed time for bier127.in: 9281 of 10500
+Elapsed time for bier127.in: 9219 of 10500
+Elapsed time for bier127.in: 9156 of 10500
+Elapsed time for bier127.in: 9172 of 10500
+Mean fitness for bier127.in: 343333,945598402
+Elapsed time for gr137.in: 1109 of 2100
+Elapsed time for gr137.in: 1079 of 2100
+Elapsed time for gr137.in: 1109 of 2100
+Elapsed time for gr137.in: 1078 of 2100
+Elapsed time for gr137.in: 1094 of 2100
+Elapsed time for gr137.in: 1125 of 2100
+Elapsed time for gr137.in: 9078 of 10500
+Elapsed time for gr137.in: 9156 of 10500
+Elapsed time for gr137.in: 9078 of 10500
+Elapsed time for gr137.in: 9172 of 10500
+Elapsed time for gr137.in: 9281 of 10500
+Elapsed time for gr137.in: 9000 of 10500
+Mean fitness for gr137.in: 305077,097981183
+Elapsed time for pr152.in: 984 of 2100
+Elapsed time for pr152.in: 1000 of 2100
+Elapsed time for pr152.in: 953 of 2100
+Elapsed time for pr152.in: 984 of 2100
+Elapsed time for pr152.in: 1000 of 2100
+Elapsed time for pr152.in: 985 of 2100
+Elapsed time for pr152.in: 9125 of 10500
+Elapsed time for pr152.in: 9000 of 10500
+Elapsed time for pr152.in: 9016 of 10500
+Elapsed time for pr152.in: 9031 of 10500
+Elapsed time for pr152.in: 8985 of 10500
+Elapsed time for pr152.in: 9078 of 10500
+Mean fitness for pr152.in: 582350,135961621
+Elapsed time for rat195.in: 953 of 2100
+Elapsed time for rat195.in: 1000 of 2100
+Elapsed time for rat195.in: 891 of 2100
+Elapsed time for rat195.in: 906 of 2100
+Elapsed time for rat195.in: 969 of 2100
+Elapsed time for rat195.in: 890 of 2100
+Elapsed time for rat195.in: 8656 of 10500
+Elapsed time for rat195.in: 8719 of 10500
+Elapsed time for rat195.in: 8703 of 10500
+Elapsed time for rat195.in: 8719 of 10500
+Elapsed time for rat195.in: 8750 of 10500
+Elapsed time for rat195.in: 8781 of 10500
+Mean fitness for rat195.in: 16549,2538586703
+Current cost: 1247310,43339988
 
-Current parameters: 500, 2, 0,1
-Elapsed time for bier127.in: 1453 of 2100
-Elapsed time for bier127.in: 1500 of 2100
-Elapsed time for bier127.in: 1469 of 2100
-Elapsed time for bier127.in: 1485 of 2100
-Elapsed time for bier127.in: 1468 of 2100
-Elapsed time for bier127.in: 1469 of 2100
-Elapsed time for bier127.in: 9453 of 10500
-Elapsed time for bier127.in: 9485 of 10500
-Elapsed time for bier127.in: 9453 of 10500
-Elapsed time for bier127.in: 9484 of 10500
-Elapsed time for bier127.in: 9391 of 10500
-Elapsed time for bier127.in: 9468 of 10500
-Mean fitness for bier127.in: 195970,18812139
-Elapsed time for gr137.in: 1485 of 2100
-Elapsed time for gr137.in: 1469 of 2100
-Elapsed time for gr137.in: 1484 of 2100
-Elapsed time for gr137.in: 1469 of 2100
-Elapsed time for gr137.in: 1484 of 2100
-Elapsed time for gr137.in: 1469 of 2100
-Elapsed time for gr137.in: 9484 of 10500
-Elapsed time for gr137.in: 9453 of 10500
-Elapsed time for gr137.in: 9422 of 10500
-Elapsed time for gr137.in: 9469 of 10500
-Elapsed time for gr137.in: 9375 of 10500
-Elapsed time for gr137.in: 9468 of 10500
-Mean fitness for gr137.in: 177832,02426001
-Elapsed time for pr152.in: 1485 of 2100
-Elapsed time for pr152.in: 1484 of 2100
-Elapsed time for pr152.in: 1438 of 2100
-Elapsed time for pr152.in: 1484 of 2100
-Elapsed time for pr152.in: 1484 of 2100
-Elapsed time for pr152.in: 1500 of 2100
-Elapsed time for pr152.in: 9438 of 10500
-Elapsed time for pr152.in: 9469 of 10500
-Elapsed time for pr152.in: 9468 of 10500
-Elapsed time for pr152.in: 9453 of 10500
-Elapsed time for pr152.in: 9422 of 10500
-Elapsed time for pr152.in: 9438 of 10500
-Mean fitness for pr152.in: 335464,954873007
-Elapsed time for rat195.in: 1453 of 2100
-Elapsed time for rat195.in: 1484 of 2100
-Elapsed time for rat195.in: 1469 of 2100
-Elapsed time for rat195.in: 1469 of 2100
-Elapsed time for rat195.in: 1469 of 2100
-Elapsed time for rat195.in: 1453 of 2100
-Elapsed time for rat195.in: 9484 of 10500
-Elapsed time for rat195.in: 9469 of 10500
-Elapsed time for rat195.in: 9469 of 10500
-Elapsed time for rat195.in: 9453 of 10500
-Elapsed time for rat195.in: 9437 of 10500
-Elapsed time for rat195.in: 9469 of 10500
-Mean fitness for rat195.in: 9894,34466458583
-Current cost: 719161,511918993
-
-Current parameters: 500, 4, 0,1
-Elapsed time for bier127.in: 1500 of 2100
-Elapsed time for bier127.in: 1484 of 2100
-Elapsed time for bier127.in: 1469 of 2100
-Elapsed time for bier127.in: 1453 of 2100
-Elapsed time for bier127.in: 1500 of 2100
-Elapsed time for bier127.in: 1453 of 2100
-Elapsed time for bier127.in: 9469 of 10500
-Elapsed time for bier127.in: 9438 of 10500
-Elapsed time for bier127.in: 9468 of 10500
-Elapsed time for bier127.in: 9453 of 10500
-Elapsed time for bier127.in: 9391 of 10500
-Elapsed time for bier127.in: 9484 of 10500
-Mean fitness for bier127.in: 232602,330311527
-Elapsed time for gr137.in: 1422 of 2100
-Elapsed time for gr137.in: 1469 of 2100
-Elapsed time for gr137.in: 1453 of 2100
-Elapsed time for gr137.in: 1453 of 2100
-Elapsed time for gr137.in: 1485 of 2100
-Elapsed time for gr137.in: 1484 of 2100
-Elapsed time for gr137.in: 9438 of 10500
-Elapsed time for gr137.in: 9453 of 10500
-Elapsed time for gr137.in: 9437 of 10500
-Elapsed time for gr137.in: 9453 of 10500
-Elapsed time for gr137.in: 9407 of 10500
-Elapsed time for gr137.in: 9437 of 10500
-Mean fitness for gr137.in: 198813,967936727
-Elapsed time for pr152.in: 1469 of 2100
-Elapsed time for pr152.in: 1469 of 2100
-Elapsed time for pr152.in: 1468 of 2100
-Elapsed time for pr152.in: 1469 of 2100
-Elapsed time for pr152.in: 1484 of 2100
-Elapsed time for pr152.in: 1438 of 2100
-Elapsed time for pr152.in: 9484 of 10500
-Elapsed time for pr152.in: 9453 of 10500
-Elapsed time for pr152.in: 9469 of 10500
-Elapsed time for pr152.in: 9469 of 10500
-Elapsed time for pr152.in: 9516 of 10500
-Elapsed time for pr152.in: 9468 of 10500
-Mean fitness for pr152.in: 390585,178920488
-Elapsed time for rat195.in: 1422 of 2100
-Elapsed time for rat195.in: 1422 of 2100
-Elapsed time for rat195.in: 1390 of 2100
-Elapsed time for rat195.in: 1422 of 2100
-Elapsed time for rat195.in: 1422 of 2100
-Elapsed time for rat195.in: 1422 of 2100
-Elapsed time for rat195.in: 9453 of 10500
-Elapsed time for rat195.in: 9484 of 10500
-Elapsed time for rat195.in: 9422 of 10500
-Elapsed time for rat195.in: 9422 of 10500
-Elapsed time for rat195.in: 9422 of 10500
-Elapsed time for rat195.in: 9391 of 10500
-Mean fitness for rat195.in: 11482,4782873808
-Current cost: 833483,955456124
-
-Current parameters: 500, 6, 0,1
-Elapsed time for bier127.in: 1468 of 2100
-Elapsed time for bier127.in: 1454 of 2100
-Elapsed time for bier127.in: 1453 of 2100
-Elapsed time for bier127.in: 1468 of 2100
-Elapsed time for bier127.in: 1454 of 2100
-Elapsed time for bier127.in: 1468 of 2100
-Elapsed time for bier127.in: 9469 of 10500
-Elapsed time for bier127.in: 9453 of 10500
-Elapsed time for bier127.in: 9485 of 10500
-Elapsed time for bier127.in: 9437 of 10500
-Elapsed time for bier127.in: 9484 of 10500
-Elapsed time for bier127.in: 9438 of 10500
-Mean fitness for bier127.in: 244316,093649346
-Elapsed time for gr137.in: 1437 of 2100
-Elapsed time for gr137.in: 1422 of 2100
-Elapsed time for gr137.in: 1422 of 2100
-Elapsed time for gr137.in: 1438 of 2100
-Elapsed time for gr137.in: 1453 of 2100
-Elapsed time for gr137.in: 1422 of 2100
-Elapsed time for gr137.in: 9437 of 10500
-Elapsed time for gr137.in: 9438 of 10500
-Elapsed time for gr137.in: 9406 of 10500
-Elapsed time for gr137.in: 9375 of 10500
-Elapsed time for gr137.in: 9469 of 10500
-Elapsed time for gr137.in: 9406 of 10500
-Mean fitness for gr137.in: 216734,629810098
-Elapsed time for pr152.in: 1406 of 2100
-Elapsed time for pr152.in: 1438 of 2100
-Elapsed time for pr152.in: 1406 of 2100
-Elapsed time for pr152.in: 1453 of 2100
-Elapsed time for pr152.in: 1453 of 2100
-Elapsed time for pr152.in: 1406 of 2100
-Elapsed time for pr152.in: 9438 of 10500
-Elapsed time for pr152.in: 9453 of 10500
-Elapsed time for pr152.in: 9453 of 10500
-Elapsed time for pr152.in: 9438 of 10500
-Elapsed time for pr152.in: 9437 of 10500
-Elapsed time for pr152.in: 9406 of 10500
-Mean fitness for pr152.in: 428754,09993685
-Elapsed time for rat195.in: 1391 of 2100
-Elapsed time for rat195.in: 1390 of 2100
-Elapsed time for rat195.in: 1391 of 2100
-Elapsed time for rat195.in: 1391 of 2100
-Elapsed time for rat195.in: 1375 of 2100
-Elapsed time for rat195.in: 1375 of 2100
-Elapsed time for rat195.in: 9390 of 10500
-Elapsed time for rat195.in: 9391 of 10500
-Elapsed time for rat195.in: 9390 of 10500
-Elapsed time for rat195.in: 9454 of 10500
-Elapsed time for rat195.in: 9437 of 10500
-Elapsed time for rat195.in: 9406 of 10500
-Mean fitness for rat195.in: 12247,8083086614
-Current cost: 902052,631704956
-
-Current parameters: 500, 8, 0,1
-Elapsed time for bier127.in: 1422 of 2100
-Elapsed time for bier127.in: 1438 of 2100
-Elapsed time for bier127.in: 1453 of 2100
-Elapsed time for bier127.in: 1437 of 2100
-Elapsed time for bier127.in: 1438 of 2100
-Elapsed time for bier127.in: 1453 of 2100
+Current parameters: 500, 40, 0,1
+Elapsed time for bier127.in: 1219 of 2100
+Elapsed time for bier127.in: 1234 of 2100
+Elapsed time for bier127.in: 1250 of 2100
+Elapsed time for bier127.in: 1219 of 2100
+Elapsed time for bier127.in: 1203 of 2100
+Elapsed time for bier127.in: 1141 of 2100
+Elapsed time for bier127.in: 9281 of 10500
+Elapsed time for bier127.in: 9203 of 10500
+Elapsed time for bier127.in: 9266 of 10500
+Elapsed time for bier127.in: 9188 of 10500
+Elapsed time for bier127.in: 9281 of 10500
 Elapsed time for bier127.in: 9406 of 10500
-Elapsed time for bier127.in: 9422 of 10500
-Elapsed time for bier127.in: 9453 of 10500
+Mean fitness for bier127.in: 330321,969061193
+Elapsed time for gr137.in: 1141 of 2100
+Elapsed time for gr137.in: 1187 of 2100
+Elapsed time for gr137.in: 1157 of 2100
+Elapsed time for gr137.in: 1203 of 2100
+Elapsed time for gr137.in: 1156 of 2100
+Elapsed time for gr137.in: 1156 of 2100
+Elapsed time for gr137.in: 9031 of 10500
+Elapsed time for gr137.in: 9156 of 10500
+Elapsed time for gr137.in: 9250 of 10500
+Elapsed time for gr137.in: 9218 of 10500
+Elapsed time for gr137.in: 9188 of 10500
+Elapsed time for gr137.in: 9281 of 10500
+Mean fitness for gr137.in: 310881,425099486
+Elapsed time for pr152.in: 1094 of 2100
+Elapsed time for pr152.in: 1079 of 2100
+Elapsed time for pr152.in: 1093 of 2100
+Elapsed time for pr152.in: 1110 of 2100
+Elapsed time for pr152.in: 1093 of 2100
+Elapsed time for pr152.in: 1109 of 2100
+Elapsed time for pr152.in: 9079 of 10500
+Elapsed time for pr152.in: 9078 of 10500
+Elapsed time for pr152.in: 9140 of 10500
+Elapsed time for pr152.in: 9156 of 10500
+Elapsed time for pr152.in: 9125 of 10500
+Elapsed time for pr152.in: 9172 of 10500
+Mean fitness for pr152.in: 577828,590601794
+Elapsed time for rat195.in: 765 of 2100
+Elapsed time for rat195.in: 813 of 2100
+Elapsed time for rat195.in: 797 of 2100
+Elapsed time for rat195.in: 782 of 2100
+Elapsed time for rat195.in: 812 of 2100
+Elapsed time for rat195.in: 813 of 2100
+Elapsed time for rat195.in: 8922 of 10500
+Elapsed time for rat195.in: 8891 of 10500
+Elapsed time for rat195.in: 8875 of 10500
+Elapsed time for rat195.in: 8781 of 10500
+Elapsed time for rat195.in: 8891 of 10500
+Elapsed time for rat195.in: 8844 of 10500
+Mean fitness for rat195.in: 15502,6599172809
+Current cost: 1234534,64467975
+
+Current parameters: 500, 30, 0,1
+Elapsed time for bier127.in: 1313 of 2100
+Elapsed time for bier127.in: 1297 of 2100
+Elapsed time for bier127.in: 1281 of 2100
+Elapsed time for bier127.in: 1297 of 2100
+Elapsed time for bier127.in: 1313 of 2100
+Elapsed time for bier127.in: 1312 of 2100
+Elapsed time for bier127.in: 9344 of 10500
 Elapsed time for bier127.in: 9375 of 10500
+Elapsed time for bier127.in: 9219 of 10500
+Elapsed time for bier127.in: 9281 of 10500
+Elapsed time for bier127.in: 9344 of 10500
 Elapsed time for bier127.in: 9391 of 10500
+Mean fitness for bier127.in: 319353,867803395
+Elapsed time for gr137.in: 1235 of 2100
+Elapsed time for gr137.in: 1265 of 2100
+Elapsed time for gr137.in: 1234 of 2100
+Elapsed time for gr137.in: 1250 of 2100
+Elapsed time for gr137.in: 1234 of 2100
+Elapsed time for gr137.in: 1266 of 2100
+Elapsed time for gr137.in: 9266 of 10500
+Elapsed time for gr137.in: 9266 of 10500
+Elapsed time for gr137.in: 9297 of 10500
+Elapsed time for gr137.in: 9313 of 10500
+Elapsed time for gr137.in: 9344 of 10500
+Elapsed time for gr137.in: 9281 of 10500
+Mean fitness for gr137.in: 290129,383895313
+Elapsed time for pr152.in: 1187 of 2100
+Elapsed time for pr152.in: 1172 of 2100
+Elapsed time for pr152.in: 1172 of 2100
+Elapsed time for pr152.in: 1219 of 2100
+Elapsed time for pr152.in: 1203 of 2100
+Elapsed time for pr152.in: 1219 of 2100
+Elapsed time for pr152.in: 9250 of 10500
+Elapsed time for pr152.in: 9281 of 10500
+Elapsed time for pr152.in: 9203 of 10500
+Elapsed time for pr152.in: 9265 of 10500
+Elapsed time for pr152.in: 9250 of 10500
+Elapsed time for pr152.in: 9313 of 10500
+Mean fitness for pr152.in: 534184,242963194
+Elapsed time for rat195.in: 1016 of 2100
+Elapsed time for rat195.in: 985 of 2100
+Elapsed time for rat195.in: 984 of 2100
+Elapsed time for rat195.in: 1000 of 2100
+Elapsed time for rat195.in: 984 of 2100
+Elapsed time for rat195.in: 985 of 2100
+Elapsed time for rat195.in: 9078 of 10500
+Elapsed time for rat195.in: 9063 of 10500
+Elapsed time for rat195.in: 9047 of 10500
+Elapsed time for rat195.in: 8969 of 10500
+Elapsed time for rat195.in: 9047 of 10500
+Elapsed time for rat195.in: 9046 of 10500
+Mean fitness for rat195.in: 14011,8968352483
+Current cost: 1157679,39149715
+
+Current parameters: 500, 20, 0,1
+Elapsed time for bier127.in: 1375 of 2100
+Elapsed time for bier127.in: 1344 of 2100
+Elapsed time for bier127.in: 1344 of 2100
+Elapsed time for bier127.in: 1391 of 2100
+Elapsed time for bier127.in: 1375 of 2100
+Elapsed time for bier127.in: 1359 of 2100
 Elapsed time for bier127.in: 9375 of 10500
-Mean fitness for bier127.in: 260444,973570499
-Elapsed time for gr137.in: 1422 of 2100
+Elapsed time for bier127.in: 9328 of 10500
+Elapsed time for bier127.in: 9390 of 10500
+Elapsed time for bier127.in: 9422 of 10500
+Elapsed time for bier127.in: 9344 of 10500
+Elapsed time for bier127.in: 9391 of 10500
+Mean fitness for bier127.in: 304174,574863257
 Elapsed time for gr137.in: 1343 of 2100
-Elapsed time for gr137.in: 1407 of 2100
-Elapsed time for gr137.in: 1422 of 2100
-Elapsed time for gr137.in: 1421 of 2100
-Elapsed time for gr137.in: 1438 of 2100
-Elapsed time for gr137.in: 9437 of 10500
+Elapsed time for gr137.in: 1360 of 2100
+Elapsed time for gr137.in: 1328 of 2100
+Elapsed time for gr137.in: 1391 of 2100
+Elapsed time for gr137.in: 1343 of 2100
+Elapsed time for gr137.in: 1344 of 2100
+Elapsed time for gr137.in: 9375 of 10500
+Elapsed time for gr137.in: 9469 of 10500
 Elapsed time for gr137.in: 9406 of 10500
-Elapsed time for gr137.in: 9453 of 10500
-Elapsed time for gr137.in: 9407 of 10500
-Elapsed time for gr137.in: 9437 of 10500
-Elapsed time for gr137.in: 9328 of 10500
-Mean fitness for gr137.in: 239577,376892488
+Elapsed time for gr137.in: 9406 of 10500
+Elapsed time for gr137.in: 9375 of 10500
+Elapsed time for gr137.in: 9375 of 10500
+Mean fitness for gr137.in: 281183,278210115
+Elapsed time for pr152.in: 1282 of 2100
+Elapsed time for pr152.in: 1312 of 2100
+Elapsed time for pr152.in: 1297 of 2100
+Elapsed time for pr152.in: 1297 of 2100
 Elapsed time for pr152.in: 1344 of 2100
-Elapsed time for pr152.in: 1344 of 2100
-Elapsed time for pr152.in: 1375 of 2100
-Elapsed time for pr152.in: 1406 of 2100
-Elapsed time for pr152.in: 1438 of 2100
-Elapsed time for pr152.in: 1406 of 2100
-Elapsed time for pr152.in: 9390 of 10500
-Elapsed time for pr152.in: 9485 of 10500
-Elapsed time for pr152.in: 9406 of 10500
-Elapsed time for pr152.in: 9453 of 10500
-Elapsed time for pr152.in: 9406 of 10500
-Elapsed time for pr152.in: 9407 of 10500
-Mean fitness for pr152.in: 468503,273837535
-Elapsed time for rat195.in: 1343 of 2100
-Elapsed time for rat195.in: 1266 of 2100
-Elapsed time for rat195.in: 1250 of 2100
-Elapsed time for rat195.in: 1313 of 2100
-Elapsed time for rat195.in: 1312 of 2100
-Elapsed time for rat195.in: 1344 of 2100
-Elapsed time for rat195.in: 9344 of 10500
-Elapsed time for rat195.in: 9390 of 10500
-Elapsed time for rat195.in: 9329 of 10500
-Elapsed time for rat195.in: 9359 of 10500
-Elapsed time for rat195.in: 9359 of 10500
-Elapsed time for rat195.in: 9406 of 10500
-Mean fitness for rat195.in: 12946,8277800495
-Current cost: 981472,452080572
+Elapsed time for pr152.in: 1328 of 2100
+Elapsed time for pr152.in: 9329 of 10500
+Elapsed time for pr152.in: 9328 of 10500
+Elapsed time for pr152.in: 9312 of 10500
+Elapsed time for pr152.in: 9391 of 10500
+Elapsed time for pr152.in: 9219 of 10500
+Elapsed time for pr152.in: 9328 of 10500
+Mean fitness for pr152.in: 514900,162986344
+Elapsed time for rat195.in: 1187 of 2100
+Elapsed time for rat195.in: 1188 of 2100
+Elapsed time for rat195.in: 1187 of 2100
+Elapsed time for rat195.in: 1172 of 2100
+Elapsed time for rat195.in: 1172 of 2100
+Elapsed time for rat195.in: 1141 of 2100
+Elapsed time for rat195.in: 9203 of 10500
+Elapsed time for rat195.in: 9281 of 10500
+Elapsed time for rat195.in: 9188 of 10500
+Elapsed time for rat195.in: 9250 of 10500
+Elapsed time for rat195.in: 9125 of 10500
+Elapsed time for rat195.in: 9203 of 10500
+Mean fitness for rat195.in: 13700,1107180399
+Current cost: 1113958,12677776
 
 Current parameters: 500, 10, 0,1
 Elapsed time for bier127.in: 1453 of 2100
-Elapsed time for bier127.in: 1391 of 2100
+Elapsed time for bier127.in: 1469 of 2100
 Elapsed time for bier127.in: 1453 of 2100
-Elapsed time for bier127.in: 1438 of 2100
-Elapsed time for bier127.in: 1406 of 2100
-Elapsed time for bier127.in: 1437 of 2100
-Elapsed time for bier127.in: 9438 of 10500
-Elapsed time for bier127.in: 9390 of 10500
-Elapsed time for bier127.in: 9438 of 10500
-Elapsed time for bier127.in: 9469 of 10500
-Elapsed time for bier127.in: 9422 of 10500
+Elapsed time for bier127.in: 1422 of 2100
+Elapsed time for bier127.in: 1422 of 2100
+Elapsed time for bier127.in: 1422 of 2100
+Elapsed time for bier127.in: 9453 of 10500
+Elapsed time for bier127.in: 9407 of 10500
+Elapsed time for bier127.in: 9484 of 10500
+Elapsed time for bier127.in: 9453 of 10500
+Elapsed time for bier127.in: 9453 of 10500
 Elapsed time for bier127.in: 9437 of 10500
-Mean fitness for bier127.in: 278527,561789822
+Mean fitness for bier127.in: 256277,320486953
+Elapsed time for gr137.in: 1421 of 2100
 Elapsed time for gr137.in: 1438 of 2100
+Elapsed time for gr137.in: 1469 of 2100
 Elapsed time for gr137.in: 1437 of 2100
-Elapsed time for gr137.in: 1391 of 2100
-Elapsed time for gr137.in: 1360 of 2100
-Elapsed time for gr137.in: 1390 of 2100
-Elapsed time for gr137.in: 1375 of 2100
-Elapsed time for gr137.in: 9375 of 10500
-Elapsed time for gr137.in: 9375 of 10500
+Elapsed time for gr137.in: 1422 of 2100
+Elapsed time for gr137.in: 1422 of 2100
+Elapsed time for gr137.in: 9437 of 10500
 Elapsed time for gr137.in: 9391 of 10500
-Elapsed time for gr137.in: 9437 of 10500
-Elapsed time for gr137.in: 9438 of 10500
-Elapsed time for gr137.in: 9437 of 10500
-Mean fitness for gr137.in: 254045,638564637
-Elapsed time for pr152.in: 1360 of 2100
-Elapsed time for pr152.in: 1390 of 2100
+Elapsed time for gr137.in: 9422 of 10500
+Elapsed time for gr137.in: 9421 of 10500
+Elapsed time for gr137.in: 9375 of 10500
+Elapsed time for gr137.in: 9485 of 10500
+Mean fitness for gr137.in: 240429,560065358
+Elapsed time for pr152.in: 1406 of 2100
 Elapsed time for pr152.in: 1375 of 2100
+Elapsed time for pr152.in: 1406 of 2100
 Elapsed time for pr152.in: 1422 of 2100
-Elapsed time for pr152.in: 1313 of 2100
-Elapsed time for pr152.in: 1359 of 2100
-Elapsed time for pr152.in: 9422 of 10500
-Elapsed time for pr152.in: 9469 of 10500
-Elapsed time for pr152.in: 9469 of 10500
-Elapsed time for pr152.in: 9390 of 10500
+Elapsed time for pr152.in: 1422 of 2100
+Elapsed time for pr152.in: 1422 of 2100
+Elapsed time for pr152.in: 9438 of 10500
 Elapsed time for pr152.in: 9391 of 10500
 Elapsed time for pr152.in: 9406 of 10500
-Mean fitness for pr152.in: 486268,373240367
-Elapsed time for rat195.in: 1281 of 2100
-Elapsed time for rat195.in: 1282 of 2100
-Elapsed time for rat195.in: 1250 of 2100
-Elapsed time for rat195.in: 1281 of 2100
-Elapsed time for rat195.in: 1281 of 2100
-Elapsed time for rat195.in: 1297 of 2100
-Elapsed time for rat195.in: 9281 of 10500
-Elapsed time for rat195.in: 9281 of 10500
-Elapsed time for rat195.in: 9266 of 10500
-Elapsed time for rat195.in: 9297 of 10500
-Elapsed time for rat195.in: 9312 of 10500
-Elapsed time for rat195.in: 9344 of 10500
-Mean fitness for rat195.in: 13077,5923750028
-Current cost: 1031919,16596983
+Elapsed time for pr152.in: 9453 of 10500
+Elapsed time for pr152.in: 9437 of 10500
+Elapsed time for pr152.in: 9469 of 10500
+Mean fitness for pr152.in: 475379,88227603
+Elapsed time for rat195.in: 1329 of 2100
+Elapsed time for rat195.in: 1360 of 2100
+Elapsed time for rat195.in: 1343 of 2100
+Elapsed time for rat195.in: 1344 of 2100
+Elapsed time for rat195.in: 1344 of 2100
+Elapsed time for rat195.in: 1375 of 2100
+Elapsed time for rat195.in: 9406 of 10500
+Elapsed time for rat195.in: 9438 of 10500
+Elapsed time for rat195.in: 9328 of 10500
+Elapsed time for rat195.in: 9359 of 10500
+Elapsed time for rat195.in: 9406 of 10500
+Elapsed time for rat195.in: 9422 of 10500
+Mean fitness for rat195.in: 12533,062545569
+Current cost: 984619,825373909
 
-Current parameters: 500, 16, 0,1
-Elapsed time for bier127.in: 1422 of 2100
-Elapsed time for bier127.in: 1375 of 2100
-Elapsed time for bier127.in: 1390 of 2100
-Elapsed time for bier127.in: 1328 of 2100
-Elapsed time for bier127.in: 1375 of 2100
-Elapsed time for bier127.in: 1391 of 2100
-Elapsed time for bier127.in: 9406 of 10500
-Elapsed time for bier127.in: 9359 of 10500
-Elapsed time for bier127.in: 9391 of 10500
-Elapsed time for bier127.in: 9453 of 10500
-Elapsed time for bier127.in: 9390 of 10500
-Elapsed time for bier127.in: 9422 of 10500
-Mean fitness for bier127.in: 292222,306085854
-Elapsed time for gr137.in: 1360 of 2100
-Elapsed time for gr137.in: 1328 of 2100
-Elapsed time for gr137.in: 1359 of 2100
-Elapsed time for gr137.in: 1344 of 2100
-Elapsed time for gr137.in: 1375 of 2100
-Elapsed time for gr137.in: 1359 of 2100
-Elapsed time for gr137.in: 9422 of 10500
-Elapsed time for gr137.in: 9313 of 10500
-Elapsed time for gr137.in: 9375 of 10500
-Elapsed time for gr137.in: 9359 of 10500
-Elapsed time for gr137.in: 9344 of 10500
-Elapsed time for gr137.in: 9359 of 10500
-Mean fitness for gr137.in: 263817,011614925
-Elapsed time for pr152.in: 1281 of 2100
-Elapsed time for pr152.in: 1282 of 2100
-Elapsed time for pr152.in: 1265 of 2100
-Elapsed time for pr152.in: 1297 of 2100
-Elapsed time for pr152.in: 1297 of 2100
-Elapsed time for pr152.in: 1281 of 2100
-Elapsed time for pr152.in: 9360 of 10500
-Elapsed time for pr152.in: 9281 of 10500
-Elapsed time for pr152.in: 9375 of 10500
-Elapsed time for pr152.in: 9313 of 10500
-Elapsed time for pr152.in: 9312 of 10500
-Elapsed time for pr152.in: 9235 of 10500
-Mean fitness for pr152.in: 520252,550628533
-Elapsed time for rat195.in: 1062 of 2100
-Elapsed time for rat195.in: 985 of 2100
-Elapsed time for rat195.in: 1031 of 2100
-Elapsed time for rat195.in: 1047 of 2100
-Elapsed time for rat195.in: 1031 of 2100
-Elapsed time for rat195.in: 1031 of 2100
-Elapsed time for rat195.in: 9016 of 10500
-Elapsed time for rat195.in: 9094 of 10500
-Elapsed time for rat195.in: 8984 of 10500
-Elapsed time for rat195.in: 9234 of 10500
-Elapsed time for rat195.in: 9188 of 10500
-Elapsed time for rat195.in: 9172 of 10500
-Mean fitness for rat195.in: 13901,2871062601
-Current cost: 1090193,15543557
-
-Current parameters: 500, 2, 0,2
-Elapsed time for bier127.in: 1484 of 2100
-Elapsed time for bier127.in: 1500 of 2100
-Elapsed time for bier127.in: 1485 of 2100
-Elapsed time for bier127.in: 1500 of 2100
-Elapsed time for bier127.in: 1437 of 2100
+Current parameters: 500, 8, 0,1
 Elapsed time for bier127.in: 1469 of 2100
+Elapsed time for bier127.in: 1437 of 2100
+Elapsed time for bier127.in: 1438 of 2100
+Elapsed time for bier127.in: 1453 of 2100
+Elapsed time for bier127.in: 1469 of 2100
+Elapsed time for bier127.in: 1453 of 2100
+Elapsed time for bier127.in: 9468 of 10500
+Elapsed time for bier127.in: 9438 of 10500
 Elapsed time for bier127.in: 9453 of 10500
+Elapsed time for bier127.in: 9453 of 10500
+Elapsed time for bier127.in: 9407 of 10500
+Elapsed time for bier127.in: 9469 of 10500
+Mean fitness for bier127.in: 253905,431952968
+Elapsed time for gr137.in: 1422 of 2100
+Elapsed time for gr137.in: 1422 of 2100
+Elapsed time for gr137.in: 1469 of 2100
+Elapsed time for gr137.in: 1438 of 2100
+Elapsed time for gr137.in: 1469 of 2100
+Elapsed time for gr137.in: 1453 of 2100
+Elapsed time for gr137.in: 9422 of 10500
+Elapsed time for gr137.in: 9453 of 10500
+Elapsed time for gr137.in: 9453 of 10500
+Elapsed time for gr137.in: 9438 of 10500
+Elapsed time for gr137.in: 9453 of 10500
+Elapsed time for gr137.in: 9437 of 10500
+Mean fitness for gr137.in: 226675,487562253
+Elapsed time for pr152.in: 1438 of 2100
+Elapsed time for pr152.in: 1437 of 2100
+Elapsed time for pr152.in: 1437 of 2100
+Elapsed time for pr152.in: 1438 of 2100
+Elapsed time for pr152.in: 1421 of 2100
+Elapsed time for pr152.in: 1454 of 2100
+Elapsed time for pr152.in: 9484 of 10500
+Elapsed time for pr152.in: 9469 of 10500
+Elapsed time for pr152.in: 9437 of 10500
+Elapsed time for pr152.in: 9422 of 10500
+Elapsed time for pr152.in: 9407 of 10500
+Elapsed time for pr152.in: 9453 of 10500
+Mean fitness for pr152.in: 440950,687683066
+Elapsed time for rat195.in: 1375 of 2100
+Elapsed time for rat195.in: 1391 of 2100
+Elapsed time for rat195.in: 1391 of 2100
+Elapsed time for rat195.in: 1390 of 2100
+Elapsed time for rat195.in: 1391 of 2100
+Elapsed time for rat195.in: 1391 of 2100
+Elapsed time for rat195.in: 9422 of 10500
+Elapsed time for rat195.in: 9406 of 10500
+Elapsed time for rat195.in: 9406 of 10500
+Elapsed time for rat195.in: 9407 of 10500
+Elapsed time for rat195.in: 9390 of 10500
+Elapsed time for rat195.in: 9453 of 10500
+Mean fitness for rat195.in: 12315,9835866564
+Current cost: 933847,590784943
+
+Current parameters: 500, 6, 0,1
+Elapsed time for bier127.in: 1454 of 2100
+Elapsed time for bier127.in: 1468 of 2100
+Elapsed time for bier127.in: 1453 of 2100
+Elapsed time for bier127.in: 1469 of 2100
+Elapsed time for bier127.in: 1453 of 2100
+Elapsed time for bier127.in: 1453 of 2100
 Elapsed time for bier127.in: 9422 of 10500
-Elapsed time for bier127.in: 9469 of 10500
 Elapsed time for bier127.in: 9453 of 10500
 Elapsed time for bier127.in: 9469 of 10500
-Elapsed time for bier127.in: 9484 of 10500
-Mean fitness for bier127.in: 196093,552660584
+Elapsed time for bier127.in: 9515 of 10500
+Elapsed time for bier127.in: 9391 of 10500
+Elapsed time for bier127.in: 9422 of 10500
+Mean fitness for bier127.in: 244448,612805605
+Elapsed time for gr137.in: 1453 of 2100
 Elapsed time for gr137.in: 1469 of 2100
+Elapsed time for gr137.in: 1453 of 2100
+Elapsed time for gr137.in: 1500 of 2100
+Elapsed time for gr137.in: 1453 of 2100
 Elapsed time for gr137.in: 1469 of 2100
+Elapsed time for gr137.in: 9453 of 10500
+Elapsed time for gr137.in: 9453 of 10500
+Elapsed time for gr137.in: 9422 of 10500
+Elapsed time for gr137.in: 9500 of 10500
+Elapsed time for gr137.in: 9437 of 10500
+Elapsed time for gr137.in: 9438 of 10500
+Mean fitness for gr137.in: 197102,136164978
+Elapsed time for pr152.in: 1469 of 2100
+Elapsed time for pr152.in: 1453 of 2100
+Elapsed time for pr152.in: 1438 of 2100
+Elapsed time for pr152.in: 1468 of 2100
+Elapsed time for pr152.in: 1453 of 2100
+Elapsed time for pr152.in: 1453 of 2100
+Elapsed time for pr152.in: 9422 of 10500
+Elapsed time for pr152.in: 9453 of 10500
+Elapsed time for pr152.in: 9437 of 10500
+Elapsed time for pr152.in: 9469 of 10500
+Elapsed time for pr152.in: 9422 of 10500
+Elapsed time for pr152.in: 9468 of 10500
+Mean fitness for pr152.in: 422354,388935826
+Elapsed time for rat195.in: 1407 of 2100
+Elapsed time for rat195.in: 1406 of 2100
+Elapsed time for rat195.in: 1422 of 2100
+Elapsed time for rat195.in: 1406 of 2100
+Elapsed time for rat195.in: 1422 of 2100
+Elapsed time for rat195.in: 1437 of 2100
+Elapsed time for rat195.in: 9453 of 10500
+Elapsed time for rat195.in: 9438 of 10500
+Elapsed time for rat195.in: 9453 of 10500
+Elapsed time for rat195.in: 9438 of 10500
+Elapsed time for rat195.in: 9390 of 10500
+Elapsed time for rat195.in: 9453 of 10500
+Mean fitness for rat195.in: 12118,9858226023
+Current cost: 876024,123729011
+
+Current parameters: 500, 4, 0,1
+Elapsed time for bier127.in: 1500 of 2100
+Elapsed time for bier127.in: 1469 of 2100
+Elapsed time for bier127.in: 1484 of 2100
+Elapsed time for bier127.in: 1469 of 2100
+Elapsed time for bier127.in: 1485 of 2100
+Elapsed time for bier127.in: 1468 of 2100
+Elapsed time for bier127.in: 9454 of 10500
+Elapsed time for bier127.in: 9453 of 10500
+Elapsed time for bier127.in: 9500 of 10500
+Elapsed time for bier127.in: 9453 of 10500
+Elapsed time for bier127.in: 9453 of 10500
+Elapsed time for bier127.in: 9437 of 10500
+Mean fitness for bier127.in: 230781,698752062
+Elapsed time for gr137.in: 1485 of 2100
 Elapsed time for gr137.in: 1469 of 2100
 Elapsed time for gr137.in: 1500 of 2100
 Elapsed time for gr137.in: 1468 of 2100
-Elapsed time for gr137.in: 1469 of 2100
-Elapsed time for gr137.in: 9453 of 10500
-Elapsed time for gr137.in: 9407 of 10500
-Elapsed time for gr137.in: 9453 of 10500
-Elapsed time for gr137.in: 9453 of 10500
+Elapsed time for gr137.in: 1485 of 2100
+Elapsed time for gr137.in: 1453 of 2100
+Elapsed time for gr137.in: 9484 of 10500
+Elapsed time for gr137.in: 9500 of 10500
+Elapsed time for gr137.in: 9469 of 10500
+Elapsed time for gr137.in: 9484 of 10500
 Elapsed time for gr137.in: 9453 of 10500
 Elapsed time for gr137.in: 9437 of 10500
-Mean fitness for gr137.in: 167571,846421823
+Mean fitness for gr137.in: 197597,432326092
+Elapsed time for pr152.in: 1469 of 2100
+Elapsed time for pr152.in: 1453 of 2100
 Elapsed time for pr152.in: 1485 of 2100
-Elapsed time for pr152.in: 1469 of 2100
+Elapsed time for pr152.in: 1453 of 2100
+Elapsed time for pr152.in: 1453 of 2100
 Elapsed time for pr152.in: 1484 of 2100
-Elapsed time for pr152.in: 1500 of 2100
-Elapsed time for pr152.in: 1500 of 2100
-Elapsed time for pr152.in: 1469 of 2100
+Elapsed time for pr152.in: 9438 of 10500
+Elapsed time for pr152.in: 9422 of 10500
+Elapsed time for pr152.in: 9468 of 10500
+Elapsed time for pr152.in: 9468 of 10500
 Elapsed time for pr152.in: 9453 of 10500
 Elapsed time for pr152.in: 9453 of 10500
-Elapsed time for pr152.in: 9484 of 10500
-Elapsed time for pr152.in: 9469 of 10500
-Elapsed time for pr152.in: 9469 of 10500
-Elapsed time for pr152.in: 9453 of 10500
-Mean fitness for pr152.in: 324471,94803457
+Mean fitness for pr152.in: 365683,985297334
+Elapsed time for rat195.in: 1438 of 2100
+Elapsed time for rat195.in: 1453 of 2100
+Elapsed time for rat195.in: 1438 of 2100
+Elapsed time for rat195.in: 1453 of 2100
 Elapsed time for rat195.in: 1484 of 2100
-Elapsed time for rat195.in: 1469 of 2100
-Elapsed time for rat195.in: 1469 of 2100
-Elapsed time for rat195.in: 1469 of 2100
-Elapsed time for rat195.in: 1468 of 2100
-Elapsed time for rat195.in: 1469 of 2100
+Elapsed time for rat195.in: 1454 of 2100
 Elapsed time for rat195.in: 9469 of 10500
-Elapsed time for rat195.in: 9422 of 10500
-Elapsed time for rat195.in: 9453 of 10500
+Elapsed time for rat195.in: 9500 of 10500
+Elapsed time for rat195.in: 9438 of 10500
+Elapsed time for rat195.in: 9468 of 10500
+Elapsed time for rat195.in: 9469 of 10500
 Elapsed time for rat195.in: 9437 of 10500
-Elapsed time for rat195.in: 9453 of 10500
-Elapsed time for rat195.in: 9453 of 10500
-Mean fitness for rat195.in: 9690,09846986365
-Current cost: 697827,44558684
+Mean fitness for rat195.in: 10865,6493149136
+Current cost: 804928,765690401
 
-Current parameters: 500, 4, 0,2
+Current parameters: 500, 2, 0,1
+Elapsed time for bier127.in: 1500 of 2100
+Elapsed time for bier127.in: 1500 of 2100
+Elapsed time for bier127.in: 1500 of 2100
+Elapsed time for bier127.in: 1469 of 2100
+Elapsed time for bier127.in: 1484 of 2100
+Elapsed time for bier127.in: 1484 of 2100
+Elapsed time for bier127.in: 9469 of 10500
+Elapsed time for bier127.in: 9453 of 10500
+Elapsed time for bier127.in: 9469 of 10500
+Elapsed time for bier127.in: 9469 of 10500
+Elapsed time for bier127.in: 9453 of 10500
+Elapsed time for bier127.in: 9454 of 10500
+Mean fitness for bier127.in: 197931,992323372
+Elapsed time for gr137.in: 1484 of 2100
+Elapsed time for gr137.in: 1469 of 2100
+Elapsed time for gr137.in: 1469 of 2100
+Elapsed time for gr137.in: 1484 of 2100
+Elapsed time for gr137.in: 1453 of 2100
+Elapsed time for gr137.in: 1500 of 2100
+Elapsed time for gr137.in: 9484 of 10500
+Elapsed time for gr137.in: 9469 of 10500
+Elapsed time for gr137.in: 9500 of 10500
+Elapsed time for gr137.in: 9437 of 10500
+Elapsed time for gr137.in: 9469 of 10500
+Elapsed time for gr137.in: 9437 of 10500
+Mean fitness for gr137.in: 168276,306845098
+Elapsed time for pr152.in: 1500 of 2100
+Elapsed time for pr152.in: 1484 of 2100
+Elapsed time for pr152.in: 1469 of 2100
+Elapsed time for pr152.in: 1453 of 2100
+Elapsed time for pr152.in: 1500 of 2100
+Elapsed time for pr152.in: 1500 of 2100
+Elapsed time for pr152.in: 9453 of 10500
+Elapsed time for pr152.in: 9469 of 10500
+Elapsed time for pr152.in: 9453 of 10500
+Elapsed time for pr152.in: 9438 of 10500
+Elapsed time for pr152.in: 9468 of 10500
+Elapsed time for pr152.in: 9422 of 10500
+Mean fitness for pr152.in: 331022,612096773
+Elapsed time for rat195.in: 1484 of 2100
+Elapsed time for rat195.in: 1438 of 2100
+Elapsed time for rat195.in: 1484 of 2100
+Elapsed time for rat195.in: 1484 of 2100
+Elapsed time for rat195.in: 1516 of 2100
+Elapsed time for rat195.in: 1484 of 2100
+Elapsed time for rat195.in: 9485 of 10500
+Elapsed time for rat195.in: 9484 of 10500
+Elapsed time for rat195.in: 9469 of 10500
+Elapsed time for rat195.in: 9469 of 10500
+Elapsed time for rat195.in: 9485 of 10500
+Elapsed time for rat195.in: 9437 of 10500
+Mean fitness for rat195.in: 9336,46495444818
+Current cost: 706567,376219691
+
+Current parameters: 500, 50, 0,2
+Elapsed time for bier127.in: 1125 of 2100
+Elapsed time for bier127.in: 1187 of 2100
+Elapsed time for bier127.in: 1141 of 2100
+Elapsed time for bier127.in: 1125 of 2100
+Elapsed time for bier127.in: 1172 of 2100
+Elapsed time for bier127.in: 1141 of 2100
+Elapsed time for bier127.in: 9344 of 10500
+Elapsed time for bier127.in: 9172 of 10500
+Elapsed time for bier127.in: 9203 of 10500
+Elapsed time for bier127.in: 9187 of 10500
+Elapsed time for bier127.in: 9219 of 10500
+Elapsed time for bier127.in: 9203 of 10500
+Mean fitness for bier127.in: 324307,089133504
+Elapsed time for gr137.in: 891 of 2100
+Elapsed time for gr137.in: 953 of 2100
+Elapsed time for gr137.in: 1078 of 2100
+Elapsed time for gr137.in: 1078 of 2100
+Elapsed time for gr137.in: 1094 of 2100
+Elapsed time for gr137.in: 1141 of 2100
+Elapsed time for gr137.in: 9156 of 10500
+Elapsed time for gr137.in: 9140 of 10500
+Elapsed time for gr137.in: 9125 of 10500
+Elapsed time for gr137.in: 9125 of 10500
+Elapsed time for gr137.in: 9141 of 10500
+Elapsed time for gr137.in: 9172 of 10500
+Mean fitness for gr137.in: 292332,339431837
+Elapsed time for pr152.in: 1000 of 2100
+Elapsed time for pr152.in: 1000 of 2100
+Elapsed time for pr152.in: 875 of 2100
+Elapsed time for pr152.in: 812 of 2100
+Elapsed time for pr152.in: 844 of 2100
+Elapsed time for pr152.in: 922 of 2100
+Elapsed time for pr152.in: 8984 of 10500
+Elapsed time for pr152.in: 9094 of 10500
+Elapsed time for pr152.in: 8969 of 10500
+Elapsed time for pr152.in: 9016 of 10500
+Elapsed time for pr152.in: 8937 of 10500
+Elapsed time for pr152.in: 8844 of 10500
+Mean fitness for pr152.in: 564893,705823591
+Elapsed time for rat195.in: 1063 of 2100
+Elapsed time for rat195.in: 1032 of 2100
+Elapsed time for rat195.in: 890 of 2100
+Elapsed time for rat195.in: 1047 of 2100
+Elapsed time for rat195.in: 1031 of 2100
+Elapsed time for rat195.in: 1046 of 2100
+Elapsed time for rat195.in: 8563 of 10500
+Elapsed time for rat195.in: 8734 of 10500
+Elapsed time for rat195.in: 8671 of 10500
+Elapsed time for rat195.in: 8688 of 10500
+Elapsed time for rat195.in: 8766 of 10500
+Elapsed time for rat195.in: 8703 of 10500
+Mean fitness for rat195.in: 16089,1731432482
+Current cost: 1197622,30753218
+
+Current parameters: 500, 40, 0,2
+Elapsed time for bier127.in: 1203 of 2100
+Elapsed time for bier127.in: 1203 of 2100
+Elapsed time for bier127.in: 1250 of 2100
+Elapsed time for bier127.in: 1235 of 2100
+Elapsed time for bier127.in: 1219 of 2100
+Elapsed time for bier127.in: 1218 of 2100
+Elapsed time for bier127.in: 9313 of 10500
+Elapsed time for bier127.in: 9203 of 10500
+Elapsed time for bier127.in: 9250 of 10500
+Elapsed time for bier127.in: 9265 of 10500
+Elapsed time for bier127.in: 9282 of 10500
+Elapsed time for bier127.in: 9234 of 10500
+Mean fitness for bier127.in: 317808,345232544
+Elapsed time for gr137.in: 1219 of 2100
+Elapsed time for gr137.in: 1156 of 2100
+Elapsed time for gr137.in: 1156 of 2100
+Elapsed time for gr137.in: 1172 of 2100
+Elapsed time for gr137.in: 1156 of 2100
+Elapsed time for gr137.in: 1188 of 2100
+Elapsed time for gr137.in: 9250 of 10500
+Elapsed time for gr137.in: 9219 of 10500
+Elapsed time for gr137.in: 9171 of 10500
+Elapsed time for gr137.in: 9235 of 10500
+Elapsed time for gr137.in: 9156 of 10500
+Elapsed time for gr137.in: 9203 of 10500
+Mean fitness for gr137.in: 278539,046038562
+Elapsed time for pr152.in: 1109 of 2100
+Elapsed time for pr152.in: 1094 of 2100
+Elapsed time for pr152.in: 1109 of 2100
+Elapsed time for pr152.in: 1094 of 2100
+Elapsed time for pr152.in: 1094 of 2100
+Elapsed time for pr152.in: 1093 of 2100
+Elapsed time for pr152.in: 9141 of 10500
+Elapsed time for pr152.in: 9062 of 10500
+Elapsed time for pr152.in: 9141 of 10500
+Elapsed time for pr152.in: 9109 of 10500
+Elapsed time for pr152.in: 9109 of 10500
+Elapsed time for pr152.in: 9094 of 10500
+Mean fitness for pr152.in: 525875,324512509
+Elapsed time for rat195.in: 813 of 2100
+Elapsed time for rat195.in: 844 of 2100
+Elapsed time for rat195.in: 781 of 2100
+Elapsed time for rat195.in: 813 of 2100
+Elapsed time for rat195.in: 812 of 2100
+Elapsed time for rat195.in: 797 of 2100
+Elapsed time for rat195.in: 8891 of 10500
+Elapsed time for rat195.in: 8890 of 10500
+Elapsed time for rat195.in: 8843 of 10500
+Elapsed time for rat195.in: 8797 of 10500
+Elapsed time for rat195.in: 8844 of 10500
+Elapsed time for rat195.in: 8844 of 10500
+Mean fitness for rat195.in: 14796,8978246966
+Current cost: 1137019,61360831
+
+Current parameters: 500, 30, 0,2
+Elapsed time for bier127.in: 1312 of 2100
+Elapsed time for bier127.in: 1282 of 2100
+Elapsed time for bier127.in: 1296 of 2100
+Elapsed time for bier127.in: 1329 of 2100
+Elapsed time for bier127.in: 1296 of 2100
+Elapsed time for bier127.in: 1297 of 2100
+Elapsed time for bier127.in: 9344 of 10500
+Elapsed time for bier127.in: 9375 of 10500
+Elapsed time for bier127.in: 9406 of 10500
+Elapsed time for bier127.in: 9360 of 10500
+Elapsed time for bier127.in: 9343 of 10500
+Elapsed time for bier127.in: 9328 of 10500
+Mean fitness for bier127.in: 297607,744424089
+Elapsed time for gr137.in: 1250 of 2100
+Elapsed time for gr137.in: 1250 of 2100
+Elapsed time for gr137.in: 1250 of 2100
+Elapsed time for gr137.in: 1266 of 2100
+Elapsed time for gr137.in: 1281 of 2100
+Elapsed time for gr137.in: 1281 of 2100
+Elapsed time for gr137.in: 9297 of 10500
+Elapsed time for gr137.in: 9390 of 10500
+Elapsed time for gr137.in: 9359 of 10500
+Elapsed time for gr137.in: 9328 of 10500
+Elapsed time for gr137.in: 9375 of 10500
+Elapsed time for gr137.in: 9281 of 10500
+Mean fitness for gr137.in: 268881,976798962
+Elapsed time for pr152.in: 1219 of 2100
+Elapsed time for pr152.in: 1235 of 2100
+Elapsed time for pr152.in: 1157 of 2100
+Elapsed time for pr152.in: 1218 of 2100
+Elapsed time for pr152.in: 1235 of 2100
+Elapsed time for pr152.in: 1219 of 2100
+Elapsed time for pr152.in: 9188 of 10500
+Elapsed time for pr152.in: 9219 of 10500
+Elapsed time for pr152.in: 9203 of 10500
+Elapsed time for pr152.in: 9218 of 10500
+Elapsed time for pr152.in: 9234 of 10500
+Elapsed time for pr152.in: 9219 of 10500
+Mean fitness for pr152.in: 491775,07354634
+Elapsed time for rat195.in: 969 of 2100
+Elapsed time for rat195.in: 921 of 2100
+Elapsed time for rat195.in: 985 of 2100
+Elapsed time for rat195.in: 969 of 2100
+Elapsed time for rat195.in: 984 of 2100
+Elapsed time for rat195.in: 1000 of 2100
+Elapsed time for rat195.in: 8969 of 10500
+Elapsed time for rat195.in: 9093 of 10500
+Elapsed time for rat195.in: 9047 of 10500
+Elapsed time for rat195.in: 9000 of 10500
+Elapsed time for rat195.in: 9062 of 10500
+Elapsed time for rat195.in: 9063 of 10500
+Mean fitness for rat195.in: 13375,893102455
+Current cost: 1071640,68787184
+
+Current parameters: 500, 20, 0,2
+Elapsed time for bier127.in: 1375 of 2100
+Elapsed time for bier127.in: 1344 of 2100
+Elapsed time for bier127.in: 1360 of 2100
+Elapsed time for bier127.in: 1359 of 2100
+Elapsed time for bier127.in: 1344 of 2100
+Elapsed time for bier127.in: 1344 of 2100
+Elapsed time for bier127.in: 9484 of 10500
+Elapsed time for bier127.in: 9391 of 10500
+Elapsed time for bier127.in: 9438 of 10500
+Elapsed time for bier127.in: 9375 of 10500
+Elapsed time for bier127.in: 9391 of 10500
+Elapsed time for bier127.in: 9437 of 10500
+Mean fitness for bier127.in: 277589,899950999
+Elapsed time for gr137.in: 1328 of 2100
+Elapsed time for gr137.in: 1328 of 2100
+Elapsed time for gr137.in: 1344 of 2100
+Elapsed time for gr137.in: 1359 of 2100
+Elapsed time for gr137.in: 1328 of 2100
+Elapsed time for gr137.in: 1359 of 2100
+Elapsed time for gr137.in: 9375 of 10500
+Elapsed time for gr137.in: 9328 of 10500
+Elapsed time for gr137.in: 9329 of 10500
+Elapsed time for gr137.in: 9406 of 10500
+Elapsed time for gr137.in: 9344 of 10500
+Elapsed time for gr137.in: 9313 of 10500
+Mean fitness for gr137.in: 257314,918436238
+Elapsed time for pr152.in: 1312 of 2100
+Elapsed time for pr152.in: 1297 of 2100
+Elapsed time for pr152.in: 1312 of 2100
+Elapsed time for pr152.in: 1313 of 2100
+Elapsed time for pr152.in: 1312 of 2100
+Elapsed time for pr152.in: 1344 of 2100
+Elapsed time for pr152.in: 9297 of 10500
+Elapsed time for pr152.in: 9297 of 10500
+Elapsed time for pr152.in: 9343 of 10500
+Elapsed time for pr152.in: 9297 of 10500
+Elapsed time for pr152.in: 9328 of 10500
+Elapsed time for pr152.in: 9297 of 10500
+Mean fitness for pr152.in: 475437,949111733
+Elapsed time for rat195.in: 1188 of 2100
+Elapsed time for rat195.in: 1171 of 2100
+Elapsed time for rat195.in: 1188 of 2100
+Elapsed time for rat195.in: 1156 of 2100
+Elapsed time for rat195.in: 1156 of 2100
+Elapsed time for rat195.in: 1172 of 2100
+Elapsed time for rat195.in: 9187 of 10500
+Elapsed time for rat195.in: 9250 of 10500
+Elapsed time for rat195.in: 9297 of 10500
+Elapsed time for rat195.in: 9171 of 10500
+Elapsed time for rat195.in: 9234 of 10500
+Elapsed time for rat195.in: 9141 of 10500
+Mean fitness for rat195.in: 12357,5817585685
+Current cost: 1022700,34925754
+
+Current parameters: 500, 10, 0,2
+Elapsed time for bier127.in: 1437 of 2100
+Elapsed time for bier127.in: 1454 of 2100
+Elapsed time for bier127.in: 1468 of 2100
+Elapsed time for bier127.in: 1438 of 2100
+Elapsed time for bier127.in: 1438 of 2100
+Elapsed time for bier127.in: 1422 of 2100
+Elapsed time for bier127.in: 9469 of 10500
+Elapsed time for bier127.in: 9406 of 10500
+Elapsed time for bier127.in: 9406 of 10500
+Elapsed time for bier127.in: 9453 of 10500
+Elapsed time for bier127.in: 9485 of 10500
+Elapsed time for bier127.in: 9437 of 10500
+Mean fitness for bier127.in: 248307,501137104
+Elapsed time for gr137.in: 1438 of 2100
+Elapsed time for gr137.in: 1422 of 2100
+Elapsed time for gr137.in: 1422 of 2100
+Elapsed time for gr137.in: 1469 of 2100
+Elapsed time for gr137.in: 1422 of 2100
+Elapsed time for gr137.in: 1438 of 2100
+Elapsed time for gr137.in: 9438 of 10500
+Elapsed time for gr137.in: 9421 of 10500
+Elapsed time for gr137.in: 9453 of 10500
+Elapsed time for gr137.in: 9437 of 10500
+Elapsed time for gr137.in: 9438 of 10500
+Elapsed time for gr137.in: 9422 of 10500
+Mean fitness for gr137.in: 223070,213659168
+Elapsed time for pr152.in: 1453 of 2100
+Elapsed time for pr152.in: 1407 of 2100
+Elapsed time for pr152.in: 1406 of 2100
+Elapsed time for pr152.in: 1406 of 2100
+Elapsed time for pr152.in: 1438 of 2100
+Elapsed time for pr152.in: 1391 of 2100
+Elapsed time for pr152.in: 9390 of 10500
+Elapsed time for pr152.in: 9438 of 10500
+Elapsed time for pr152.in: 9391 of 10500
+Elapsed time for pr152.in: 9437 of 10500
+Elapsed time for pr152.in: 9422 of 10500
+Elapsed time for pr152.in: 9406 of 10500
+Mean fitness for pr152.in: 436969,229454284
+Elapsed time for rat195.in: 1343 of 2100
+Elapsed time for rat195.in: 1344 of 2100
+Elapsed time for rat195.in: 1344 of 2100
+Elapsed time for rat195.in: 1360 of 2100
+Elapsed time for rat195.in: 1359 of 2100
+Elapsed time for rat195.in: 1359 of 2100
+Elapsed time for rat195.in: 9344 of 10500
+Elapsed time for rat195.in: 9344 of 10500
+Elapsed time for rat195.in: 9375 of 10500
+Elapsed time for rat195.in: 9375 of 10500
+Elapsed time for rat195.in: 9406 of 10500
+Elapsed time for rat195.in: 9375 of 10500
+Mean fitness for rat195.in: 11801,4049303241
+Current cost: 920148,34918088
+
+Current parameters: 500, 8, 0,2
+Elapsed time for bier127.in: 1438 of 2100
+Elapsed time for bier127.in: 1453 of 2100
+Elapsed time for bier127.in: 1453 of 2100
+Elapsed time for bier127.in: 1484 of 2100
 Elapsed time for bier127.in: 1469 of 2100
 Elapsed time for bier127.in: 1453 of 2100
-Elapsed time for bier127.in: 1453 of 2100
-Elapsed time for bier127.in: 1453 of 2100
-Elapsed time for bier127.in: 1453 of 2100
-Elapsed time for bier127.in: 1485 of 2100
-Elapsed time for bier127.in: 9469 of 10500
-Elapsed time for bier127.in: 9390 of 10500
-Elapsed time for bier127.in: 9485 of 10500
-Elapsed time for bier127.in: 9453 of 10500
 Elapsed time for bier127.in: 9484 of 10500
-Elapsed time for bier127.in: 9453 of 10500
-Mean fitness for bier127.in: 222820,971225766
-Elapsed time for gr137.in: 1453 of 2100
-Elapsed time for gr137.in: 1453 of 2100
+Elapsed time for bier127.in: 9469 of 10500
+Elapsed time for bier127.in: 9437 of 10500
+Elapsed time for bier127.in: 9438 of 10500
+Elapsed time for bier127.in: 9468 of 10500
+Elapsed time for bier127.in: 9359 of 10500
+Mean fitness for bier127.in: 240712,557828021
+Elapsed time for gr137.in: 1422 of 2100
+Elapsed time for gr137.in: 1484 of 2100
+Elapsed time for gr137.in: 1438 of 2100
+Elapsed time for gr137.in: 1469 of 2100
 Elapsed time for gr137.in: 1422 of 2100
 Elapsed time for gr137.in: 1453 of 2100
+Elapsed time for gr137.in: 9422 of 10500
+Elapsed time for gr137.in: 9484 of 10500
+Elapsed time for gr137.in: 9422 of 10500
+Elapsed time for gr137.in: 9437 of 10500
+Elapsed time for gr137.in: 9437 of 10500
+Elapsed time for gr137.in: 9406 of 10500
+Mean fitness for gr137.in: 201927,732610284
+Elapsed time for pr152.in: 1469 of 2100
+Elapsed time for pr152.in: 1422 of 2100
+Elapsed time for pr152.in: 1437 of 2100
+Elapsed time for pr152.in: 1438 of 2100
+Elapsed time for pr152.in: 1437 of 2100
+Elapsed time for pr152.in: 1438 of 2100
+Elapsed time for pr152.in: 9437 of 10500
+Elapsed time for pr152.in: 9469 of 10500
+Elapsed time for pr152.in: 9469 of 10500
+Elapsed time for pr152.in: 9437 of 10500
+Elapsed time for pr152.in: 9391 of 10500
+Elapsed time for pr152.in: 9406 of 10500
+Mean fitness for pr152.in: 400860,126958619
+Elapsed time for rat195.in: 1391 of 2100
+Elapsed time for rat195.in: 1344 of 2100
+Elapsed time for rat195.in: 1390 of 2100
+Elapsed time for rat195.in: 1391 of 2100
+Elapsed time for rat195.in: 1391 of 2100
+Elapsed time for rat195.in: 1390 of 2100
+Elapsed time for rat195.in: 9407 of 10500
+Elapsed time for rat195.in: 9375 of 10500
+Elapsed time for rat195.in: 9406 of 10500
+Elapsed time for rat195.in: 9390 of 10500
+Elapsed time for rat195.in: 9390 of 10500
+Elapsed time for rat195.in: 9375 of 10500
+Mean fitness for rat195.in: 11662,4797264071
+Current cost: 855162,897123331
+
+Current parameters: 500, 6, 0,2
+Elapsed time for bier127.in: 1468 of 2100
+Elapsed time for bier127.in: 1438 of 2100
+Elapsed time for bier127.in: 1469 of 2100
+Elapsed time for bier127.in: 1484 of 2100
+Elapsed time for bier127.in: 1468 of 2100
+Elapsed time for bier127.in: 1485 of 2100
+Elapsed time for bier127.in: 9453 of 10500
+Elapsed time for bier127.in: 9469 of 10500
+Elapsed time for bier127.in: 9469 of 10500
+Elapsed time for bier127.in: 9453 of 10500
+Elapsed time for bier127.in: 9438 of 10500
+Elapsed time for bier127.in: 9469 of 10500
+Mean fitness for bier127.in: 231286,58363267
+Elapsed time for gr137.in: 1421 of 2100
+Elapsed time for gr137.in: 1438 of 2100
+Elapsed time for gr137.in: 1453 of 2100
+Elapsed time for gr137.in: 1500 of 2100
+Elapsed time for gr137.in: 1469 of 2100
+Elapsed time for gr137.in: 1469 of 2100
+Elapsed time for gr137.in: 9422 of 10500
+Elapsed time for gr137.in: 9453 of 10500
+Elapsed time for gr137.in: 9438 of 10500
+Elapsed time for gr137.in: 9469 of 10500
+Elapsed time for gr137.in: 9453 of 10500
+Elapsed time for gr137.in: 9437 of 10500
+Mean fitness for gr137.in: 195349,600959081
+Elapsed time for pr152.in: 1454 of 2100
+Elapsed time for pr152.in: 1468 of 2100
+Elapsed time for pr152.in: 1375 of 2100
+Elapsed time for pr152.in: 1469 of 2100
+Elapsed time for pr152.in: 1438 of 2100
+Elapsed time for pr152.in: 1453 of 2100
+Elapsed time for pr152.in: 9422 of 10500
+Elapsed time for pr152.in: 9468 of 10500
+Elapsed time for pr152.in: 9438 of 10500
+Elapsed time for pr152.in: 9469 of 10500
+Elapsed time for pr152.in: 9438 of 10500
+Elapsed time for pr152.in: 9437 of 10500
+Mean fitness for pr152.in: 388776,696629333
+Elapsed time for rat195.in: 1422 of 2100
+Elapsed time for rat195.in: 1359 of 2100
+Elapsed time for rat195.in: 1422 of 2100
+Elapsed time for rat195.in: 1375 of 2100
+Elapsed time for rat195.in: 1391 of 2100
+Elapsed time for rat195.in: 1454 of 2100
+Elapsed time for rat195.in: 9469 of 10500
+Elapsed time for rat195.in: 9421 of 10500
+Elapsed time for rat195.in: 9407 of 10500
+Elapsed time for rat195.in: 9422 of 10500
+Elapsed time for rat195.in: 9453 of 10500
+Elapsed time for rat195.in: 9453 of 10500
+Mean fitness for rat195.in: 11030,4785746593
+Current cost: 826443,359795744
+
+Current parameters: 500, 4, 0,2
+Elapsed time for bier127.in: 1500 of 2100
+Elapsed time for bier127.in: 1484 of 2100
+Elapsed time for bier127.in: 1468 of 2100
+Elapsed time for bier127.in: 1422 of 2100
+Elapsed time for bier127.in: 1468 of 2100
+Elapsed time for bier127.in: 1500 of 2100
+Elapsed time for bier127.in: 9484 of 10500
+Elapsed time for bier127.in: 9485 of 10500
+Elapsed time for bier127.in: 9468 of 10500
+Elapsed time for bier127.in: 9438 of 10500
+Elapsed time for bier127.in: 9453 of 10500
+Elapsed time for bier127.in: 9484 of 10500
+Mean fitness for bier127.in: 218820,578708032
+Elapsed time for gr137.in: 1454 of 2100
+Elapsed time for gr137.in: 1453 of 2100
+Elapsed time for gr137.in: 1453 of 2100
+Elapsed time for gr137.in: 1454 of 2100
+Elapsed time for gr137.in: 1468 of 2100
+Elapsed time for gr137.in: 1485 of 2100
+Elapsed time for gr137.in: 9500 of 10500
+Elapsed time for gr137.in: 9484 of 10500
+Elapsed time for gr137.in: 9469 of 10500
+Elapsed time for gr137.in: 9437 of 10500
+Elapsed time for gr137.in: 9453 of 10500
+Elapsed time for gr137.in: 9453 of 10500
+Mean fitness for gr137.in: 191101,736304052
+Elapsed time for pr152.in: 1484 of 2100
+Elapsed time for pr152.in: 1485 of 2100
+Elapsed time for pr152.in: 1515 of 2100
+Elapsed time for pr152.in: 1485 of 2100
+Elapsed time for pr152.in: 1453 of 2100
+Elapsed time for pr152.in: 1453 of 2100
+Elapsed time for pr152.in: 9484 of 10500
+Elapsed time for pr152.in: 9484 of 10500
+Elapsed time for pr152.in: 9453 of 10500
+Elapsed time for pr152.in: 9485 of 10500
+Elapsed time for pr152.in: 9422 of 10500
+Elapsed time for pr152.in: 9484 of 10500
+Mean fitness for pr152.in: 364356,957412137
+Elapsed time for rat195.in: 1469 of 2100
+Elapsed time for rat195.in: 1453 of 2100
+Elapsed time for rat195.in: 1453 of 2100
+Elapsed time for rat195.in: 1453 of 2100
+Elapsed time for rat195.in: 1390 of 2100
+Elapsed time for rat195.in: 1422 of 2100
+Elapsed time for rat195.in: 9453 of 10500
+Elapsed time for rat195.in: 9438 of 10500
+Elapsed time for rat195.in: 9469 of 10500
+Elapsed time for rat195.in: 9469 of 10500
+Elapsed time for rat195.in: 9453 of 10500
+Elapsed time for rat195.in: 9468 of 10500
+Mean fitness for rat195.in: 10610,9575687059
+Current cost: 784890,229992927
+
+Current parameters: 500, 2, 0,2
+Elapsed time for bier127.in: 1485 of 2100
+Elapsed time for bier127.in: 1500 of 2100
+Elapsed time for bier127.in: 1438 of 2100
+Elapsed time for bier127.in: 1469 of 2100
+Elapsed time for bier127.in: 1500 of 2100
+Elapsed time for bier127.in: 1484 of 2100
+Elapsed time for bier127.in: 9469 of 10500
+Elapsed time for bier127.in: 9469 of 10500
+Elapsed time for bier127.in: 9453 of 10500
+Elapsed time for bier127.in: 9469 of 10500
+Elapsed time for bier127.in: 9438 of 10500
+Elapsed time for bier127.in: 9469 of 10500
+Mean fitness for bier127.in: 196835,025247212
+Elapsed time for gr137.in: 1484 of 2100
+Elapsed time for gr137.in: 1500 of 2100
+Elapsed time for gr137.in: 1453 of 2100
+Elapsed time for gr137.in: 1469 of 2100
+Elapsed time for gr137.in: 1453 of 2100
+Elapsed time for gr137.in: 1469 of 2100
+Elapsed time for gr137.in: 9469 of 10500
+Elapsed time for gr137.in: 9468 of 10500
+Elapsed time for gr137.in: 9469 of 10500
+Elapsed time for gr137.in: 9500 of 10500
+Elapsed time for gr137.in: 9469 of 10500
+Elapsed time for gr137.in: 9469 of 10500
+Mean fitness for gr137.in: 161974,466305368
+Elapsed time for pr152.in: 1484 of 2100
+Elapsed time for pr152.in: 1500 of 2100
+Elapsed time for pr152.in: 1469 of 2100
+Elapsed time for pr152.in: 1468 of 2100
+Elapsed time for pr152.in: 1438 of 2100
+Elapsed time for pr152.in: 1437 of 2100
+Elapsed time for pr152.in: 9485 of 10500
+Elapsed time for pr152.in: 9484 of 10500
+Elapsed time for pr152.in: 9485 of 10500
+Elapsed time for pr152.in: 9484 of 10500
+Elapsed time for pr152.in: 9469 of 10500
+Elapsed time for pr152.in: 9453 of 10500
+Mean fitness for pr152.in: 319422,414110262
+Elapsed time for rat195.in: 1500 of 2100
+Elapsed time for rat195.in: 1500 of 2100
+Elapsed time for rat195.in: 1516 of 2100
+Elapsed time for rat195.in: 1468 of 2100
+Elapsed time for rat195.in: 1469 of 2100
+Elapsed time for rat195.in: 1469 of 2100
+Elapsed time for rat195.in: 9484 of 10500
+Elapsed time for rat195.in: 9453 of 10500
+Elapsed time for rat195.in: 9454 of 10500
+Elapsed time for rat195.in: 9500 of 10500
+Elapsed time for rat195.in: 9484 of 10500
+Elapsed time for rat195.in: 9453 of 10500
+Mean fitness for rat195.in: 9075,91652189693
+Current cost: 687307,82218474
+
+Current parameters: 500, 50, 0,3
+Elapsed time for bier127.in: 1141 of 2100
+Elapsed time for bier127.in: 1141 of 2100
+Elapsed time for bier127.in: 1156 of 2100
+Elapsed time for bier127.in: 1157 of 2100
+Elapsed time for bier127.in: 1156 of 2100
+Elapsed time for bier127.in: 1032 of 2100
+Elapsed time for bier127.in: 9157 of 10500
+Elapsed time for bier127.in: 9156 of 10500
+Elapsed time for bier127.in: 9219 of 10500
+Elapsed time for bier127.in: 9187 of 10500
+Elapsed time for bier127.in: 9281 of 10500
+Elapsed time for bier127.in: 9219 of 10500
+Mean fitness for bier127.in: 316543,209265885
+Elapsed time for gr137.in: 1094 of 2100
+Elapsed time for gr137.in: 1109 of 2100
+Elapsed time for gr137.in: 1094 of 2100
+Elapsed time for gr137.in: 1141 of 2100
+Elapsed time for gr137.in: 1094 of 2100
+Elapsed time for gr137.in: 1109 of 2100
+Elapsed time for gr137.in: 9171 of 10500
+Elapsed time for gr137.in: 9141 of 10500
+Elapsed time for gr137.in: 9125 of 10500
+Elapsed time for gr137.in: 9125 of 10500
+Elapsed time for gr137.in: 9250 of 10500
+Elapsed time for gr137.in: 9125 of 10500
+Mean fitness for gr137.in: 276359,766178666
+Elapsed time for pr152.in: 969 of 2100
+Elapsed time for pr152.in: 1015 of 2100
+Elapsed time for pr152.in: 1000 of 2100
+Elapsed time for pr152.in: 1016 of 2100
+Elapsed time for pr152.in: 969 of 2100
+Elapsed time for pr152.in: 984 of 2100
+Elapsed time for pr152.in: 9141 of 10500
+Elapsed time for pr152.in: 9000 of 10500
+Elapsed time for pr152.in: 9062 of 10500
+Elapsed time for pr152.in: 9000 of 10500
+Elapsed time for pr152.in: 9015 of 10500
+Elapsed time for pr152.in: 9125 of 10500
+Mean fitness for pr152.in: 519396,162906299
+Elapsed time for rat195.in: 875 of 2100
+Elapsed time for rat195.in: 907 of 2100
+Elapsed time for rat195.in: 906 of 2100
+Elapsed time for rat195.in: 922 of 2100
+Elapsed time for rat195.in: 906 of 2100
+Elapsed time for rat195.in: 906 of 2100
+Elapsed time for rat195.in: 8735 of 10500
+Elapsed time for rat195.in: 8718 of 10500
+Elapsed time for rat195.in: 8562 of 10500
+Elapsed time for rat195.in: 8688 of 10500
+Elapsed time for rat195.in: 8672 of 10500
+Elapsed time for rat195.in: 8547 of 10500
+Mean fitness for rat195.in: 15893,6670150186
+Current cost: 1128192,80536587
+
+Current parameters: 500, 40, 0,3
+Elapsed time for bier127.in: 1219 of 2100
+Elapsed time for bier127.in: 1235 of 2100
+Elapsed time for bier127.in: 1203 of 2100
+Elapsed time for bier127.in: 1250 of 2100
+Elapsed time for bier127.in: 1250 of 2100
+Elapsed time for bier127.in: 1234 of 2100
+Elapsed time for bier127.in: 9219 of 10500
+Elapsed time for bier127.in: 9328 of 10500
+Elapsed time for bier127.in: 9219 of 10500
+Elapsed time for bier127.in: 9265 of 10500
+Elapsed time for bier127.in: 9297 of 10500
+Elapsed time for bier127.in: 9312 of 10500
+Mean fitness for bier127.in: 302237,17312305
+Elapsed time for gr137.in: 1203 of 2100
+Elapsed time for gr137.in: 1172 of 2100
+Elapsed time for gr137.in: 1203 of 2100
+Elapsed time for gr137.in: 1187 of 2100
+Elapsed time for gr137.in: 1188 of 2100
+Elapsed time for gr137.in: 1156 of 2100
+Elapsed time for gr137.in: 9203 of 10500
+Elapsed time for gr137.in: 9172 of 10500
+Elapsed time for gr137.in: 9188 of 10500
+Elapsed time for gr137.in: 9265 of 10500
+Elapsed time for gr137.in: 9250 of 10500
+Elapsed time for gr137.in: 8969 of 10500
+Mean fitness for gr137.in: 271363,38334399
+Elapsed time for pr152.in: 1078 of 2100
+Elapsed time for pr152.in: 1047 of 2100
+Elapsed time for pr152.in: 1110 of 2100
+Elapsed time for pr152.in: 1078 of 2100
+Elapsed time for pr152.in: 1078 of 2100
+Elapsed time for pr152.in: 1078 of 2100
+Elapsed time for pr152.in: 9172 of 10500
+Elapsed time for pr152.in: 9172 of 10500
+Elapsed time for pr152.in: 9156 of 10500
+Elapsed time for pr152.in: 9203 of 10500
+Elapsed time for pr152.in: 9125 of 10500
+Elapsed time for pr152.in: 9157 of 10500
+Mean fitness for pr152.in: 498462,287417388
+Elapsed time for rat195.in: 796 of 2100
+Elapsed time for rat195.in: 797 of 2100
+Elapsed time for rat195.in: 813 of 2100
+Elapsed time for rat195.in: 844 of 2100
+Elapsed time for rat195.in: 765 of 2100
+Elapsed time for rat195.in: 844 of 2100
+Elapsed time for rat195.in: 8937 of 10500
+Elapsed time for rat195.in: 8922 of 10500
+Elapsed time for rat195.in: 8922 of 10500
+Elapsed time for rat195.in: 8860 of 10500
+Elapsed time for rat195.in: 8890 of 10500
+Elapsed time for rat195.in: 8875 of 10500
+Mean fitness for rat195.in: 14717,4399348141
+Current cost: 1086780,28381924
+
+Current parameters: 500, 30, 0,3
+Elapsed time for bier127.in: 1313 of 2100
+Elapsed time for bier127.in: 1312 of 2100
+Elapsed time for bier127.in: 1282 of 2100
+Elapsed time for bier127.in: 1297 of 2100
+Elapsed time for bier127.in: 1313 of 2100
+Elapsed time for bier127.in: 1312 of 2100
+Elapsed time for bier127.in: 9344 of 10500
+Elapsed time for bier127.in: 9375 of 10500
+Elapsed time for bier127.in: 9312 of 10500
+Elapsed time for bier127.in: 9313 of 10500
+Elapsed time for bier127.in: 9375 of 10500
+Elapsed time for bier127.in: 9234 of 10500
+Mean fitness for bier127.in: 289357,016055995
+Elapsed time for gr137.in: 1266 of 2100
+Elapsed time for gr137.in: 1250 of 2100
+Elapsed time for gr137.in: 1266 of 2100
+Elapsed time for gr137.in: 1265 of 2100
+Elapsed time for gr137.in: 1250 of 2100
+Elapsed time for gr137.in: 1141 of 2100
+Elapsed time for gr137.in: 9312 of 10500
+Elapsed time for gr137.in: 9313 of 10500
+Elapsed time for gr137.in: 9312 of 10500
+Elapsed time for gr137.in: 9250 of 10500
+Elapsed time for gr137.in: 9312 of 10500
+Elapsed time for gr137.in: 9204 of 10500
+Mean fitness for gr137.in: 255190,491053559
+Elapsed time for pr152.in: 1203 of 2100
+Elapsed time for pr152.in: 1203 of 2100
+Elapsed time for pr152.in: 1172 of 2100
+Elapsed time for pr152.in: 1218 of 2100
+Elapsed time for pr152.in: 1188 of 2100
+Elapsed time for pr152.in: 1234 of 2100
+Elapsed time for pr152.in: 9250 of 10500
+Elapsed time for pr152.in: 9172 of 10500
+Elapsed time for pr152.in: 9204 of 10500
+Elapsed time for pr152.in: 9218 of 10500
+Elapsed time for pr152.in: 9219 of 10500
+Elapsed time for pr152.in: 9156 of 10500
+Mean fitness for pr152.in: 472416,483519111
+Elapsed time for rat195.in: 1000 of 2100
+Elapsed time for rat195.in: 985 of 2100
+Elapsed time for rat195.in: 984 of 2100
+Elapsed time for rat195.in: 1000 of 2100
+Elapsed time for rat195.in: 969 of 2100
+Elapsed time for rat195.in: 1015 of 2100
+Elapsed time for rat195.in: 9094 of 10500
+Elapsed time for rat195.in: 9047 of 10500
+Elapsed time for rat195.in: 9141 of 10500
+Elapsed time for rat195.in: 9094 of 10500
+Elapsed time for rat195.in: 9062 of 10500
+Elapsed time for rat195.in: 9047 of 10500
+Mean fitness for rat195.in: 12700,8171618584
+Current cost: 1029664,80779052
+
+Current parameters: 500, 20, 0,3
+Elapsed time for bier127.in: 1344 of 2100
+Elapsed time for bier127.in: 1359 of 2100
+Elapsed time for bier127.in: 1407 of 2100
+Elapsed time for bier127.in: 1359 of 2100
+Elapsed time for bier127.in: 1407 of 2100
+Elapsed time for bier127.in: 1375 of 2100
+Elapsed time for bier127.in: 9406 of 10500
+Elapsed time for bier127.in: 9375 of 10500
+Elapsed time for bier127.in: 9437 of 10500
+Elapsed time for bier127.in: 9344 of 10500
+Elapsed time for bier127.in: 9359 of 10500
+Elapsed time for bier127.in: 9375 of 10500
+Mean fitness for bier127.in: 268625,834160709
+Elapsed time for gr137.in: 1313 of 2100
+Elapsed time for gr137.in: 1328 of 2100
+Elapsed time for gr137.in: 1359 of 2100
+Elapsed time for gr137.in: 1329 of 2100
+Elapsed time for gr137.in: 1359 of 2100
+Elapsed time for gr137.in: 1359 of 2100
+Elapsed time for gr137.in: 9344 of 10500
+Elapsed time for gr137.in: 9343 of 10500
+Elapsed time for gr137.in: 9391 of 10500
+Elapsed time for gr137.in: 9422 of 10500
+Elapsed time for gr137.in: 9422 of 10500
+Elapsed time for gr137.in: 9437 of 10500
+Mean fitness for gr137.in: 241940,56634029
+Elapsed time for pr152.in: 1282 of 2100
+Elapsed time for pr152.in: 1313 of 2100
+Elapsed time for pr152.in: 1343 of 2100
+Elapsed time for pr152.in: 1297 of 2100
+Elapsed time for pr152.in: 1328 of 2100
+Elapsed time for pr152.in: 1313 of 2100
+Elapsed time for pr152.in: 9281 of 10500
+Elapsed time for pr152.in: 9375 of 10500
+Elapsed time for pr152.in: 9360 of 10500
+Elapsed time for pr152.in: 9343 of 10500
+Elapsed time for pr152.in: 9313 of 10500
+Elapsed time for pr152.in: 9313 of 10500
+Mean fitness for pr152.in: 439976,815916666
+Elapsed time for rat195.in: 1172 of 2100
+Elapsed time for rat195.in: 1078 of 2100
+Elapsed time for rat195.in: 1109 of 2100
+Elapsed time for rat195.in: 1157 of 2100
+Elapsed time for rat195.in: 1187 of 2100
+Elapsed time for rat195.in: 1156 of 2100
+Elapsed time for rat195.in: 9203 of 10500
+Elapsed time for rat195.in: 9250 of 10500
+Elapsed time for rat195.in: 9203 of 10500
+Elapsed time for rat195.in: 9188 of 10500
+Elapsed time for rat195.in: 9187 of 10500
+Elapsed time for rat195.in: 9297 of 10500
+Mean fitness for rat195.in: 12137,5465898781
+Current cost: 962680,763007543
+
+Current parameters: 500, 10, 0,3
+Elapsed time for bier127.in: 1391 of 2100
+Elapsed time for bier127.in: 1390 of 2100
+Elapsed time for bier127.in: 1484 of 2100
+Elapsed time for bier127.in: 1421 of 2100
+Elapsed time for bier127.in: 1422 of 2100
+Elapsed time for bier127.in: 1375 of 2100
+Elapsed time for bier127.in: 9485 of 10500
+Elapsed time for bier127.in: 9437 of 10500
+Elapsed time for bier127.in: 9391 of 10500
+Elapsed time for bier127.in: 9453 of 10500
+Elapsed time for bier127.in: 9437 of 10500
+Elapsed time for bier127.in: 9438 of 10500
+Mean fitness for bier127.in: 239688,770162279
+Elapsed time for gr137.in: 1422 of 2100
+Elapsed time for gr137.in: 1453 of 2100
+Elapsed time for gr137.in: 1438 of 2100
+Elapsed time for gr137.in: 1406 of 2100
+Elapsed time for gr137.in: 1469 of 2100
+Elapsed time for gr137.in: 1407 of 2100
+Elapsed time for gr137.in: 9390 of 10500
+Elapsed time for gr137.in: 9438 of 10500
+Elapsed time for gr137.in: 9437 of 10500
+Elapsed time for gr137.in: 9453 of 10500
+Elapsed time for gr137.in: 9469 of 10500
+Elapsed time for gr137.in: 9453 of 10500
+Mean fitness for gr137.in: 208455,349132568
+Elapsed time for pr152.in: 1406 of 2100
+Elapsed time for pr152.in: 1391 of 2100
+Elapsed time for pr152.in: 1406 of 2100
+Elapsed time for pr152.in: 1391 of 2100
+Elapsed time for pr152.in: 1375 of 2100
+Elapsed time for pr152.in: 1422 of 2100
+Elapsed time for pr152.in: 9406 of 10500
+Elapsed time for pr152.in: 9422 of 10500
+Elapsed time for pr152.in: 9469 of 10500
+Elapsed time for pr152.in: 9313 of 10500
+Elapsed time for pr152.in: 9406 of 10500
+Elapsed time for pr152.in: 9375 of 10500
+Mean fitness for pr152.in: 412013,442248848
+Elapsed time for rat195.in: 1359 of 2100
+Elapsed time for rat195.in: 1344 of 2100
+Elapsed time for rat195.in: 1359 of 2100
+Elapsed time for rat195.in: 1344 of 2100
+Elapsed time for rat195.in: 1344 of 2100
+Elapsed time for rat195.in: 1406 of 2100
+Elapsed time for rat195.in: 9328 of 10500
+Elapsed time for rat195.in: 9422 of 10500
+Elapsed time for rat195.in: 9422 of 10500
+Elapsed time for rat195.in: 9391 of 10500
+Elapsed time for rat195.in: 9406 of 10500
+Elapsed time for rat195.in: 9329 of 10500
+Mean fitness for rat195.in: 11236,7168496812
+Current cost: 871394,278393377
+
+Current parameters: 500, 8, 0,3
+Elapsed time for bier127.in: 1453 of 2100
+Elapsed time for bier127.in: 1453 of 2100
+Elapsed time for bier127.in: 1453 of 2100
+Elapsed time for bier127.in: 1484 of 2100
+Elapsed time for bier127.in: 1438 of 2100
+Elapsed time for bier127.in: 1469 of 2100
+Elapsed time for bier127.in: 9437 of 10500
+Elapsed time for bier127.in: 9438 of 10500
+Elapsed time for bier127.in: 9484 of 10500
+Elapsed time for bier127.in: 9437 of 10500
+Elapsed time for bier127.in: 9454 of 10500
+Elapsed time for bier127.in: 9453 of 10500
+Mean fitness for bier127.in: 238017,685968966
+Elapsed time for gr137.in: 1422 of 2100
+Elapsed time for gr137.in: 1437 of 2100
+Elapsed time for gr137.in: 1422 of 2100
+Elapsed time for gr137.in: 1438 of 2100
+Elapsed time for gr137.in: 1453 of 2100
+Elapsed time for gr137.in: 1422 of 2100
+Elapsed time for gr137.in: 9484 of 10500
+Elapsed time for gr137.in: 9438 of 10500
+Elapsed time for gr137.in: 9421 of 10500
+Elapsed time for gr137.in: 9422 of 10500
+Elapsed time for gr137.in: 9453 of 10500
+Elapsed time for gr137.in: 9438 of 10500
+Mean fitness for gr137.in: 193787,200079659
+Elapsed time for pr152.in: 1406 of 2100
+Elapsed time for pr152.in: 1407 of 2100
+Elapsed time for pr152.in: 1437 of 2100
+Elapsed time for pr152.in: 1437 of 2100
+Elapsed time for pr152.in: 1438 of 2100
+Elapsed time for pr152.in: 1407 of 2100
+Elapsed time for pr152.in: 9453 of 10500
+Elapsed time for pr152.in: 9391 of 10500
+Elapsed time for pr152.in: 9438 of 10500
+Elapsed time for pr152.in: 9468 of 10500
+Elapsed time for pr152.in: 9422 of 10500
+Elapsed time for pr152.in: 9453 of 10500
+Mean fitness for pr152.in: 377073,199482749
+Elapsed time for rat195.in: 1406 of 2100
+Elapsed time for rat195.in: 1375 of 2100
+Elapsed time for rat195.in: 1391 of 2100
+Elapsed time for rat195.in: 1391 of 2100
+Elapsed time for rat195.in: 1375 of 2100
+Elapsed time for rat195.in: 1375 of 2100
+Elapsed time for rat195.in: 9375 of 10500
+Elapsed time for rat195.in: 9406 of 10500
+Elapsed time for rat195.in: 9391 of 10500
+Elapsed time for rat195.in: 9437 of 10500
+Elapsed time for rat195.in: 9469 of 10500
+Elapsed time for rat195.in: 9390 of 10500
+Mean fitness for rat195.in: 10954,1669749253
+Current cost: 819832,252506299
+
+Current parameters: 500, 6, 0,3
+Elapsed time for bier127.in: 1453 of 2100
+Elapsed time for bier127.in: 1485 of 2100
+Elapsed time for bier127.in: 1484 of 2100
+Elapsed time for bier127.in: 1453 of 2100
+Elapsed time for bier127.in: 1469 of 2100
+Elapsed time for bier127.in: 1453 of 2100
+Elapsed time for bier127.in: 9422 of 10500
+Elapsed time for bier127.in: 9453 of 10500
+Elapsed time for bier127.in: 9469 of 10500
+Elapsed time for bier127.in: 9453 of 10500
+Elapsed time for bier127.in: 9484 of 10500
+Elapsed time for bier127.in: 9406 of 10500
+Mean fitness for bier127.in: 222694,700232154
+Elapsed time for gr137.in: 1469 of 2100
+Elapsed time for gr137.in: 1469 of 2100
+Elapsed time for gr137.in: 1468 of 2100
+Elapsed time for gr137.in: 1469 of 2100
 Elapsed time for gr137.in: 1469 of 2100
 Elapsed time for gr137.in: 1469 of 2100
 Elapsed time for gr137.in: 9437 of 10500
-Elapsed time for gr137.in: 9391 of 10500
-Elapsed time for gr137.in: 9438 of 10500
-Elapsed time for gr137.in: 9468 of 10500
-Elapsed time for gr137.in: 9469 of 10500
+Elapsed time for gr137.in: 9422 of 10500
 Elapsed time for gr137.in: 9453 of 10500
-Mean fitness for gr137.in: 191054,899918211
-Elapsed time for pr152.in: 1469 of 2100
+Elapsed time for gr137.in: 9438 of 10500
+Elapsed time for gr137.in: 9484 of 10500
+Elapsed time for gr137.in: 9484 of 10500
+Mean fitness for gr137.in: 184084,798381226
 Elapsed time for pr152.in: 1469 of 2100
 Elapsed time for pr152.in: 1468 of 2100
 Elapsed time for pr152.in: 1454 of 2100
 Elapsed time for pr152.in: 1468 of 2100
-Elapsed time for pr152.in: 1469 of 2100
-Elapsed time for pr152.in: 9453 of 10500
-Elapsed time for pr152.in: 9453 of 10500
-Elapsed time for pr152.in: 9438 of 10500
-Elapsed time for pr152.in: 9437 of 10500
-Elapsed time for pr152.in: 9469 of 10500
-Elapsed time for pr152.in: 9438 of 10500
-Mean fitness for pr152.in: 353253,869774114
+Elapsed time for pr152.in: 1453 of 2100
+Elapsed time for pr152.in: 1453 of 2100
+Elapsed time for pr152.in: 9422 of 10500
+Elapsed time for pr152.in: 9422 of 10500
+Elapsed time for pr152.in: 9391 of 10500
+Elapsed time for pr152.in: 9484 of 10500
+Elapsed time for pr152.in: 9406 of 10500
+Elapsed time for pr152.in: 9422 of 10500
+Mean fitness for pr152.in: 350021,036647361
+Elapsed time for rat195.in: 1437 of 2100
 Elapsed time for rat195.in: 1422 of 2100
-Elapsed time for rat195.in: 1438 of 2100
-Elapsed time for rat195.in: 1390 of 2100
-Elapsed time for rat195.in: 1422 of 2100
+Elapsed time for rat195.in: 1406 of 2100
+Elapsed time for rat195.in: 1406 of 2100
 Elapsed time for rat195.in: 1422 of 2100
 Elapsed time for rat195.in: 1437 of 2100
-Elapsed time for rat195.in: 9453 of 10500
-Elapsed time for rat195.in: 9469 of 10500
-Elapsed time for rat195.in: 9453 of 10500
+Elapsed time for rat195.in: 9391 of 10500
 Elapsed time for rat195.in: 9438 of 10500
-Elapsed time for rat195.in: 9421 of 10500
-Elapsed time for rat195.in: 9438 of 10500
-Mean fitness for rat195.in: 10836,5013126106
-Current cost: 777966,242230702
-
-Current parameters: 500, 6, 0,2
-Elapsed time for bier127.in: 1484 of 2100
-Elapsed time for bier127.in: 1469 of 2100
-Elapsed time for bier127.in: 1469 of 2100
-Elapsed time for bier127.in: 1453 of 2100
-Elapsed time for bier127.in: 1484 of 2100
-Elapsed time for bier127.in: 1469 of 2100
-Elapsed time for bier127.in: 9422 of 10500
-Elapsed time for bier127.in: 9437 of 10500
-Elapsed time for bier127.in: 9391 of 10500
-Elapsed time for bier127.in: 9422 of 10500
-Elapsed time for bier127.in: 9468 of 10500
-Elapsed time for bier127.in: 9453 of 10500
-Mean fitness for bier127.in: 235948,987777929
-Elapsed time for gr137.in: 1485 of 2100
-Elapsed time for gr137.in: 1453 of 2100
-Elapsed time for gr137.in: 1469 of 2100
-Elapsed time for gr137.in: 1453 of 2100
-Elapsed time for gr137.in: 1453 of 2100
-Elapsed time for gr137.in: 1453 of 2100
-Elapsed time for gr137.in: 9406 of 10500
-Elapsed time for gr137.in: 9391 of 10500
-Elapsed time for gr137.in: 9437 of 10500
-Elapsed time for gr137.in: 9453 of 10500
-Elapsed time for gr137.in: 9485 of 10500
-Elapsed time for gr137.in: 9421 of 10500
-Mean fitness for gr137.in: 208945,042407043
-Elapsed time for pr152.in: 1422 of 2100
-Elapsed time for pr152.in: 1422 of 2100
-Elapsed time for pr152.in: 1406 of 2100
-Elapsed time for pr152.in: 1391 of 2100
-Elapsed time for pr152.in: 1391 of 2100
-Elapsed time for pr152.in: 1422 of 2100
-Elapsed time for pr152.in: 9406 of 10500
-Elapsed time for pr152.in: 9453 of 10500
-Elapsed time for pr152.in: 9391 of 10500
-Elapsed time for pr152.in: 9484 of 10500
-Elapsed time for pr152.in: 9453 of 10500
-Elapsed time for pr152.in: 9453 of 10500
-Mean fitness for pr152.in: 404225,690515405
-Elapsed time for rat195.in: 1375 of 2100
-Elapsed time for rat195.in: 1390 of 2100
-Elapsed time for rat195.in: 1344 of 2100
-Elapsed time for rat195.in: 1375 of 2100
-Elapsed time for rat195.in: 1360 of 2100
-Elapsed time for rat195.in: 1359 of 2100
-Elapsed time for rat195.in: 9375 of 10500
+Elapsed time for rat195.in: 9453 of 10500
+Elapsed time for rat195.in: 9422 of 10500
 Elapsed time for rat195.in: 9453 of 10500
 Elapsed time for rat195.in: 9391 of 10500
-Elapsed time for rat195.in: 9375 of 10500
-Elapsed time for rat195.in: 9375 of 10500
-Elapsed time for rat195.in: 9375 of 10500
-Mean fitness for rat195.in: 11445,388734495
-Current cost: 860565,109434873
+Mean fitness for rat195.in: 10238,2096670762
+Current cost: 767038,744927816
 
-Current parameters: 500, 8, 0,2
-Elapsed time for bier127.in: 1437 of 2100
-Elapsed time for bier127.in: 1406 of 2100
-Elapsed time for bier127.in: 1422 of 2100
-Elapsed time for bier127.in: 1407 of 2100
-Elapsed time for bier127.in: 1437 of 2100
-Elapsed time for bier127.in: 1406 of 2100
+Current parameters: 500, 4, 0,3
+Elapsed time for bier127.in: 1468 of 2100
+Elapsed time for bier127.in: 1500 of 2100
+Elapsed time for bier127.in: 1485 of 2100
+Elapsed time for bier127.in: 1484 of 2100
+Elapsed time for bier127.in: 1484 of 2100
+Elapsed time for bier127.in: 1469 of 2100
 Elapsed time for bier127.in: 9438 of 10500
-Elapsed time for bier127.in: 9453 of 10500
-Elapsed time for bier127.in: 9453 of 10500
-Elapsed time for bier127.in: 9391 of 10500
-Elapsed time for bier127.in: 9406 of 10500
-Elapsed time for bier127.in: 9422 of 10500
-Mean fitness for bier127.in: 241563,048241501
-Elapsed time for gr137.in: 1422 of 2100
-Elapsed time for gr137.in: 1437 of 2100
-Elapsed time for gr137.in: 1406 of 2100
-Elapsed time for gr137.in: 1407 of 2100
-Elapsed time for gr137.in: 1422 of 2100
-Elapsed time for gr137.in: 1421 of 2100
-Elapsed time for gr137.in: 9469 of 10500
-Elapsed time for gr137.in: 9422 of 10500
-Elapsed time for gr137.in: 9359 of 10500
-Elapsed time for gr137.in: 9438 of 10500
-Elapsed time for gr137.in: 9437 of 10500
-Elapsed time for gr137.in: 9422 of 10500
-Mean fitness for gr137.in: 213309,26155924
-Elapsed time for pr152.in: 1422 of 2100
-Elapsed time for pr152.in: 1406 of 2100
-Elapsed time for pr152.in: 1407 of 2100
-Elapsed time for pr152.in: 1390 of 2100
-Elapsed time for pr152.in: 1391 of 2100
-Elapsed time for pr152.in: 1437 of 2100
-Elapsed time for pr152.in: 9391 of 10500
-Elapsed time for pr152.in: 9469 of 10500
-Elapsed time for pr152.in: 9484 of 10500
-Elapsed time for pr152.in: 9313 of 10500
-Elapsed time for pr152.in: 9468 of 10500
-Elapsed time for pr152.in: 9469 of 10500
-Mean fitness for pr152.in: 424163,801808037
-Elapsed time for rat195.in: 1344 of 2100
-Elapsed time for rat195.in: 1312 of 2100
-Elapsed time for rat195.in: 1329 of 2100
-Elapsed time for rat195.in: 1343 of 2100
-Elapsed time for rat195.in: 1375 of 2100
-Elapsed time for rat195.in: 1360 of 2100
-Elapsed time for rat195.in: 9422 of 10500
-Elapsed time for rat195.in: 9375 of 10500
-Elapsed time for rat195.in: 9328 of 10500
-Elapsed time for rat195.in: 9297 of 10500
-Elapsed time for rat195.in: 9344 of 10500
-Elapsed time for rat195.in: 9359 of 10500
-Mean fitness for rat195.in: 11768,9031430222
-Current cost: 890805,014751799
-
-Current parameters: 500, 10, 0,2
-Elapsed time for bier127.in: 1422 of 2100
-Elapsed time for bier127.in: 1406 of 2100
-Elapsed time for bier127.in: 1407 of 2100
-Elapsed time for bier127.in: 1422 of 2100
-Elapsed time for bier127.in: 1437 of 2100
-Elapsed time for bier127.in: 1438 of 2100
-Elapsed time for bier127.in: 9406 of 10500
-Elapsed time for bier127.in: 9453 of 10500
+Elapsed time for bier127.in: 9468 of 10500
 Elapsed time for bier127.in: 9469 of 10500
-Elapsed time for bier127.in: 9390 of 10500
-Elapsed time for bier127.in: 9422 of 10500
-Elapsed time for bier127.in: 9485 of 10500
-Mean fitness for bier127.in: 251763,739145108
-Elapsed time for gr137.in: 1421 of 2100
-Elapsed time for gr137.in: 1422 of 2100
-Elapsed time for gr137.in: 1422 of 2100
-Elapsed time for gr137.in: 1391 of 2100
-Elapsed time for gr137.in: 1422 of 2100
-Elapsed time for gr137.in: 1468 of 2100
-Elapsed time for gr137.in: 9422 of 10500
-Elapsed time for gr137.in: 9344 of 10500
-Elapsed time for gr137.in: 9438 of 10500
-Elapsed time for gr137.in: 9328 of 10500
-Elapsed time for gr137.in: 9406 of 10500
-Elapsed time for gr137.in: 9422 of 10500
-Mean fitness for gr137.in: 229233,672291974
-Elapsed time for pr152.in: 1407 of 2100
-Elapsed time for pr152.in: 1375 of 2100
-Elapsed time for pr152.in: 1359 of 2100
-Elapsed time for pr152.in: 1422 of 2100
-Elapsed time for pr152.in: 1422 of 2100
-Elapsed time for pr152.in: 1390 of 2100
-Elapsed time for pr152.in: 9407 of 10500
-Elapsed time for pr152.in: 9437 of 10500
-Elapsed time for pr152.in: 9453 of 10500
-Elapsed time for pr152.in: 9469 of 10500
-Elapsed time for pr152.in: 9406 of 10500
-Elapsed time for pr152.in: 9375 of 10500
-Mean fitness for pr152.in: 429387,607631552
-Elapsed time for rat195.in: 1297 of 2100
-Elapsed time for rat195.in: 1297 of 2100
-Elapsed time for rat195.in: 1281 of 2100
-Elapsed time for rat195.in: 1312 of 2100
-Elapsed time for rat195.in: 1344 of 2100
-Elapsed time for rat195.in: 1312 of 2100
-Elapsed time for rat195.in: 9313 of 10500
-Elapsed time for rat195.in: 9312 of 10500
-Elapsed time for rat195.in: 9313 of 10500
-Elapsed time for rat195.in: 9390 of 10500
-Elapsed time for rat195.in: 9172 of 10500
-Elapsed time for rat195.in: 9344 of 10500
-Mean fitness for rat195.in: 12244,7608032534
-Current cost: 922629,779871887
-
-Current parameters: 500, 16, 0,2
-Elapsed time for bier127.in: 1391 of 2100
-Elapsed time for bier127.in: 1406 of 2100
-Elapsed time for bier127.in: 1328 of 2100
-Elapsed time for bier127.in: 1359 of 2100
-Elapsed time for bier127.in: 1375 of 2100
-Elapsed time for bier127.in: 1344 of 2100
-Elapsed time for bier127.in: 9438 of 10500
-Elapsed time for bier127.in: 9375 of 10500
-Elapsed time for bier127.in: 9359 of 10500
-Elapsed time for bier127.in: 9422 of 10500
-Elapsed time for bier127.in: 9281 of 10500
-Elapsed time for bier127.in: 9360 of 10500
-Mean fitness for bier127.in: 277941,914212879
-Elapsed time for gr137.in: 1343 of 2100
-Elapsed time for gr137.in: 1375 of 2100
-Elapsed time for gr137.in: 1313 of 2100
-Elapsed time for gr137.in: 1328 of 2100
-Elapsed time for gr137.in: 1312 of 2100
-Elapsed time for gr137.in: 1313 of 2100
-Elapsed time for gr137.in: 9343 of 10500
-Elapsed time for gr137.in: 9407 of 10500
-Elapsed time for gr137.in: 9390 of 10500
-Elapsed time for gr137.in: 9328 of 10500
-Elapsed time for gr137.in: 9375 of 10500
-Elapsed time for gr137.in: 9313 of 10500
-Mean fitness for gr137.in: 250932,227470339
-Elapsed time for pr152.in: 1312 of 2100
-Elapsed time for pr152.in: 1313 of 2100
-Elapsed time for pr152.in: 1297 of 2100
-Elapsed time for pr152.in: 1250 of 2100
-Elapsed time for pr152.in: 1297 of 2100
-Elapsed time for pr152.in: 1312 of 2100
-Elapsed time for pr152.in: 9344 of 10500
-Elapsed time for pr152.in: 9390 of 10500
-Elapsed time for pr152.in: 9204 of 10500
-Elapsed time for pr152.in: 9250 of 10500
-Elapsed time for pr152.in: 9218 of 10500
-Elapsed time for pr152.in: 9203 of 10500
-Mean fitness for pr152.in: 463549,398896726
-Elapsed time for rat195.in: 985 of 2100
-Elapsed time for rat195.in: 969 of 2100
-Elapsed time for rat195.in: 1000 of 2100
-Elapsed time for rat195.in: 984 of 2100
-Elapsed time for rat195.in: 984 of 2100
-Elapsed time for rat195.in: 1000 of 2100
-Elapsed time for rat195.in: 9000 of 10500
-Elapsed time for rat195.in: 8984 of 10500
-Elapsed time for rat195.in: 8969 of 10500
-Elapsed time for rat195.in: 9078 of 10500
-Elapsed time for rat195.in: 9110 of 10500
-Elapsed time for rat195.in: 8906 of 10500
-Mean fitness for rat195.in: 13593,8167634646
-Current cost: 1006017,35734341
-
-Current parameters: 500, 2, 0,3
-Elapsed time for bier127.in: 1469 of 2100
-Elapsed time for bier127.in: 1484 of 2100
-Elapsed time for bier127.in: 1469 of 2100
-Elapsed time for bier127.in: 1484 of 2100
-Elapsed time for bier127.in: 1484 of 2100
-Elapsed time for bier127.in: 1469 of 2100
-Elapsed time for bier127.in: 9422 of 10500
+Elapsed time for bier127.in: 9469 of 10500
 Elapsed time for bier127.in: 9484 of 10500
-Elapsed time for bier127.in: 9454 of 10500
-Elapsed time for bier127.in: 9453 of 10500
-Elapsed time for bier127.in: 9453 of 10500
-Elapsed time for bier127.in: 9422 of 10500
-Mean fitness for bier127.in: 198060,248064729
-Elapsed time for gr137.in: 1484 of 2100
-Elapsed time for gr137.in: 1484 of 2100
+Elapsed time for bier127.in: 9485 of 10500
+Mean fitness for bier127.in: 213357,567442891
+Elapsed time for gr137.in: 1485 of 2100
 Elapsed time for gr137.in: 1485 of 2100
 Elapsed time for gr137.in: 1484 of 2100
-Elapsed time for gr137.in: 1500 of 2100
+Elapsed time for gr137.in: 1484 of 2100
 Elapsed time for gr137.in: 1469 of 2100
+Elapsed time for gr137.in: 1453 of 2100
+Elapsed time for gr137.in: 9407 of 10500
+Elapsed time for gr137.in: 9468 of 10500
 Elapsed time for gr137.in: 9469 of 10500
-Elapsed time for gr137.in: 9468 of 10500
-Elapsed time for gr137.in: 9454 of 10500
-Elapsed time for gr137.in: 9453 of 10500
-Elapsed time for gr137.in: 9468 of 10500
+Elapsed time for gr137.in: 9469 of 10500
+Elapsed time for gr137.in: 9469 of 10500
 Elapsed time for gr137.in: 9422 of 10500
-Mean fitness for gr137.in: 164521,601908246
-Elapsed time for pr152.in: 1469 of 2100
-Elapsed time for pr152.in: 1469 of 2100
-Elapsed time for pr152.in: 1484 of 2100
+Mean fitness for gr137.in: 176850,888900445
 Elapsed time for pr152.in: 1485 of 2100
 Elapsed time for pr152.in: 1484 of 2100
 Elapsed time for pr152.in: 1500 of 2100
+Elapsed time for pr152.in: 1453 of 2100
+Elapsed time for pr152.in: 1485 of 2100
+Elapsed time for pr152.in: 1468 of 2100
+Elapsed time for pr152.in: 9453 of 10500
 Elapsed time for pr152.in: 9469 of 10500
-Elapsed time for pr152.in: 9484 of 10500
-Elapsed time for pr152.in: 9438 of 10500
-Elapsed time for pr152.in: 9468 of 10500
-Elapsed time for pr152.in: 9469 of 10500
-Elapsed time for pr152.in: 9422 of 10500
-Mean fitness for pr152.in: 305009,331159254
-Elapsed time for rat195.in: 1484 of 2100
+Elapsed time for pr152.in: 9453 of 10500
+Elapsed time for pr152.in: 9437 of 10500
+Elapsed time for pr152.in: 9485 of 10500
+Elapsed time for pr152.in: 9437 of 10500
+Mean fitness for pr152.in: 326040,038312811
 Elapsed time for rat195.in: 1469 of 2100
+Elapsed time for rat195.in: 1453 of 2100
 Elapsed time for rat195.in: 1469 of 2100
-Elapsed time for rat195.in: 1469 of 2100
-Elapsed time for rat195.in: 1468 of 2100
+Elapsed time for rat195.in: 1437 of 2100
 Elapsed time for rat195.in: 1485 of 2100
-Elapsed time for rat195.in: 9453 of 10500
-Elapsed time for rat195.in: 9453 of 10500
-Elapsed time for rat195.in: 9453 of 10500
-Elapsed time for rat195.in: 9500 of 10500
-Elapsed time for rat195.in: 9500 of 10500
-Elapsed time for rat195.in: 9406 of 10500
-Mean fitness for rat195.in: 9242,73781185743
-Current cost: 676833,918944087
+Elapsed time for rat195.in: 1469 of 2100
+Elapsed time for rat195.in: 9438 of 10500
+Elapsed time for rat195.in: 9469 of 10500
+Elapsed time for rat195.in: 9469 of 10500
+Elapsed time for rat195.in: 9469 of 10500
+Elapsed time for rat195.in: 9437 of 10500
+Elapsed time for rat195.in: 9469 of 10500
+Mean fitness for rat195.in: 9746,51055840403
+Current cost: 725995,005214551
 
-Current parameters: 500, 4, 0,3
-Elapsed time for bier127.in: 1469 of 2100
-Elapsed time for bier127.in: 1453 of 2100
-Elapsed time for bier127.in: 1422 of 2100
-Elapsed time for bier127.in: 1453 of 2100
+Current parameters: 500, 2, 0,3
+Elapsed time for bier127.in: 1484 of 2100
 Elapsed time for bier127.in: 1485 of 2100
-Elapsed time for bier127.in: 1468 of 2100
-Elapsed time for bier127.in: 9453 of 10500
-Elapsed time for bier127.in: 9438 of 10500
+Elapsed time for bier127.in: 1484 of 2100
+Elapsed time for bier127.in: 1500 of 2100
+Elapsed time for bier127.in: 1485 of 2100
+Elapsed time for bier127.in: 1484 of 2100
+Elapsed time for bier127.in: 9422 of 10500
 Elapsed time for bier127.in: 9469 of 10500
 Elapsed time for bier127.in: 9453 of 10500
 Elapsed time for bier127.in: 9484 of 10500
-Elapsed time for bier127.in: 9406 of 10500
-Mean fitness for bier127.in: 215122,25955167
+Elapsed time for bier127.in: 9484 of 10500
+Elapsed time for bier127.in: 9453 of 10500
+Mean fitness for bier127.in: 191487,823450069
 Elapsed time for gr137.in: 1469 of 2100
-Elapsed time for gr137.in: 1438 of 2100
-Elapsed time for gr137.in: 1453 of 2100
-Elapsed time for gr137.in: 1453 of 2100
+Elapsed time for gr137.in: 1500 of 2100
+Elapsed time for gr137.in: 1485 of 2100
 Elapsed time for gr137.in: 1500 of 2100
 Elapsed time for gr137.in: 1484 of 2100
-Elapsed time for gr137.in: 9438 of 10500
+Elapsed time for gr137.in: 1500 of 2100
 Elapsed time for gr137.in: 9453 of 10500
+Elapsed time for gr137.in: 9484 of 10500
 Elapsed time for gr137.in: 9469 of 10500
-Elapsed time for gr137.in: 9453 of 10500
-Elapsed time for gr137.in: 9454 of 10500
-Elapsed time for gr137.in: 9406 of 10500
-Mean fitness for gr137.in: 182289,292114269
-Elapsed time for pr152.in: 1390 of 2100
-Elapsed time for pr152.in: 1469 of 2100
-Elapsed time for pr152.in: 1469 of 2100
+Elapsed time for gr137.in: 9469 of 10500
+Elapsed time for gr137.in: 9469 of 10500
+Elapsed time for gr137.in: 9469 of 10500
+Mean fitness for gr137.in: 159074,544153786
 Elapsed time for pr152.in: 1484 of 2100
 Elapsed time for pr152.in: 1469 of 2100
-Elapsed time for pr152.in: 1422 of 2100
-Elapsed time for pr152.in: 9437 of 10500
-Elapsed time for pr152.in: 9469 of 10500
-Elapsed time for pr152.in: 9438 of 10500
-Elapsed time for pr152.in: 9437 of 10500
-Elapsed time for pr152.in: 9453 of 10500
-Elapsed time for pr152.in: 9469 of 10500
-Mean fitness for pr152.in: 352669,049842352
-Elapsed time for rat195.in: 1391 of 2100
-Elapsed time for rat195.in: 1437 of 2100
-Elapsed time for rat195.in: 1438 of 2100
-Elapsed time for rat195.in: 1422 of 2100
-Elapsed time for rat195.in: 1422 of 2100
-Elapsed time for rat195.in: 1453 of 2100
-Elapsed time for rat195.in: 9469 of 10500
-Elapsed time for rat195.in: 9469 of 10500
-Elapsed time for rat195.in: 9453 of 10500
-Elapsed time for rat195.in: 9484 of 10500
-Elapsed time for rat195.in: 9453 of 10500
-Elapsed time for rat195.in: 9391 of 10500
-Mean fitness for rat195.in: 10348,717868836
-Current cost: 760429,319377127
-
-Current parameters: 500, 6, 0,3
-Elapsed time for bier127.in: 1437 of 2100
-Elapsed time for bier127.in: 1469 of 2100
-Elapsed time for bier127.in: 1453 of 2100
-Elapsed time for bier127.in: 1453 of 2100
-Elapsed time for bier127.in: 1438 of 2100
-Elapsed time for bier127.in: 1469 of 2100
-Elapsed time for bier127.in: 9437 of 10500
-Elapsed time for bier127.in: 9438 of 10500
-Elapsed time for bier127.in: 9484 of 10500
-Elapsed time for bier127.in: 9453 of 10500
-Elapsed time for bier127.in: 9438 of 10500
-Elapsed time for bier127.in: 9437 of 10500
-Mean fitness for bier127.in: 238644,599278308
-Elapsed time for gr137.in: 1438 of 2100
-Elapsed time for gr137.in: 1453 of 2100
-Elapsed time for gr137.in: 1453 of 2100
-Elapsed time for gr137.in: 1344 of 2100
-Elapsed time for gr137.in: 1422 of 2100
-Elapsed time for gr137.in: 1437 of 2100
-Elapsed time for gr137.in: 9469 of 10500
-Elapsed time for gr137.in: 9453 of 10500
-Elapsed time for gr137.in: 9422 of 10500
-Elapsed time for gr137.in: 9453 of 10500
-Elapsed time for gr137.in: 9422 of 10500
-Elapsed time for gr137.in: 9484 of 10500
-Mean fitness for gr137.in: 204476,97445239
-Elapsed time for pr152.in: 1437 of 2100
-Elapsed time for pr152.in: 1469 of 2100
-Elapsed time for pr152.in: 1422 of 2100
-Elapsed time for pr152.in: 1406 of 2100
+Elapsed time for pr152.in: 1484 of 2100
 Elapsed time for pr152.in: 1453 of 2100
-Elapsed time for pr152.in: 1438 of 2100
-Elapsed time for pr152.in: 9469 of 10500
-Elapsed time for pr152.in: 9437 of 10500
-Elapsed time for pr152.in: 9391 of 10500
-Elapsed time for pr152.in: 9453 of 10500
-Elapsed time for pr152.in: 9437 of 10500
-Elapsed time for pr152.in: 9407 of 10500
-Mean fitness for pr152.in: 392065,886325356
-Elapsed time for rat195.in: 1391 of 2100
-Elapsed time for rat195.in: 1422 of 2100
-Elapsed time for rat195.in: 1390 of 2100
-Elapsed time for rat195.in: 1391 of 2100
-Elapsed time for rat195.in: 1406 of 2100
-Elapsed time for rat195.in: 1391 of 2100
-Elapsed time for rat195.in: 9390 of 10500
-Elapsed time for rat195.in: 9422 of 10500
-Elapsed time for rat195.in: 9391 of 10500
-Elapsed time for rat195.in: 9344 of 10500
-Elapsed time for rat195.in: 9422 of 10500
-Elapsed time for rat195.in: 9390 of 10500
-Mean fitness for rat195.in: 11181,4075655108
-Current cost: 846368,867621564
-
-Current parameters: 500, 8, 0,3
-Elapsed time for bier127.in: 1438 of 2100
-Elapsed time for bier127.in: 1422 of 2100
-Elapsed time for bier127.in: 1515 of 2100
-Elapsed time for bier127.in: 1422 of 2100
-Elapsed time for bier127.in: 1391 of 2100
-Elapsed time for bier127.in: 1391 of 2100
-Elapsed time for bier127.in: 9437 of 10500
-Elapsed time for bier127.in: 9438 of 10500
-Elapsed time for bier127.in: 9468 of 10500
-Elapsed time for bier127.in: 9422 of 10500
-Elapsed time for bier127.in: 9422 of 10500
-Elapsed time for bier127.in: 9453 of 10500
-Mean fitness for bier127.in: 248431,03402735
-Elapsed time for gr137.in: 1453 of 2100
-Elapsed time for gr137.in: 1422 of 2100
-Elapsed time for gr137.in: 1438 of 2100
-Elapsed time for gr137.in: 1437 of 2100
-Elapsed time for gr137.in: 1422 of 2100
-Elapsed time for gr137.in: 1375 of 2100
-Elapsed time for gr137.in: 9500 of 10500
-Elapsed time for gr137.in: 9437 of 10500
-Elapsed time for gr137.in: 9469 of 10500
-Elapsed time for gr137.in: 9469 of 10500
-Elapsed time for gr137.in: 9422 of 10500
-Elapsed time for gr137.in: 9421 of 10500
-Mean fitness for gr137.in: 208222,86550876
-Elapsed time for pr152.in: 1391 of 2100
-Elapsed time for pr152.in: 1391 of 2100
-Elapsed time for pr152.in: 1390 of 2100
-Elapsed time for pr152.in: 1407 of 2100
-Elapsed time for pr152.in: 1375 of 2100
-Elapsed time for pr152.in: 1281 of 2100
-Elapsed time for pr152.in: 9422 of 10500
+Elapsed time for pr152.in: 1469 of 2100
+Elapsed time for pr152.in: 1469 of 2100
 Elapsed time for pr152.in: 9484 of 10500
-Elapsed time for pr152.in: 9422 of 10500
-Elapsed time for pr152.in: 9391 of 10500
-Elapsed time for pr152.in: 9421 of 10500
-Elapsed time for pr152.in: 9407 of 10500
-Mean fitness for pr152.in: 405738,040010047
-Elapsed time for rat195.in: 1328 of 2100
-Elapsed time for rat195.in: 1328 of 2100
-Elapsed time for rat195.in: 1328 of 2100
-Elapsed time for rat195.in: 1313 of 2100
-Elapsed time for rat195.in: 1312 of 2100
-Elapsed time for rat195.in: 1344 of 2100
-Elapsed time for rat195.in: 9359 of 10500
-Elapsed time for rat195.in: 9344 of 10500
-Elapsed time for rat195.in: 9406 of 10500
-Elapsed time for rat195.in: 9313 of 10500
-Elapsed time for rat195.in: 9390 of 10500
-Elapsed time for rat195.in: 9375 of 10500
-Mean fitness for rat195.in: 10959,1787013908
-Current cost: 873351,118247547
-
-Current parameters: 500, 10, 0,3
-Elapsed time for bier127.in: 1422 of 2100
-Elapsed time for bier127.in: 1422 of 2100
-Elapsed time for bier127.in: 1438 of 2100
-Elapsed time for bier127.in: 1437 of 2100
-Elapsed time for bier127.in: 1438 of 2100
-Elapsed time for bier127.in: 1437 of 2100
-Elapsed time for bier127.in: 9391 of 10500
-Elapsed time for bier127.in: 9500 of 10500
-Elapsed time for bier127.in: 9437 of 10500
-Elapsed time for bier127.in: 9422 of 10500
-Elapsed time for bier127.in: 9469 of 10500
-Elapsed time for bier127.in: 9422 of 10500
-Mean fitness for bier127.in: 237544,055583186
-Elapsed time for gr137.in: 1406 of 2100
-Elapsed time for gr137.in: 1422 of 2100
-Elapsed time for gr137.in: 1406 of 2100
-Elapsed time for gr137.in: 1375 of 2100
-Elapsed time for gr137.in: 1391 of 2100
-Elapsed time for gr137.in: 1406 of 2100
-Elapsed time for gr137.in: 9406 of 10500
-Elapsed time for gr137.in: 9453 of 10500
-Elapsed time for gr137.in: 9438 of 10500
-Elapsed time for gr137.in: 9390 of 10500
-Elapsed time for gr137.in: 9391 of 10500
-Elapsed time for gr137.in: 9453 of 10500
-Mean fitness for gr137.in: 218158,830437298
-Elapsed time for pr152.in: 1391 of 2100
-Elapsed time for pr152.in: 1390 of 2100
-Elapsed time for pr152.in: 1407 of 2100
-Elapsed time for pr152.in: 1390 of 2100
-Elapsed time for pr152.in: 1360 of 2100
-Elapsed time for pr152.in: 1406 of 2100
-Elapsed time for pr152.in: 9422 of 10500
-Elapsed time for pr152.in: 9390 of 10500
-Elapsed time for pr152.in: 9375 of 10500
+Elapsed time for pr152.in: 9468 of 10500
 Elapsed time for pr152.in: 9438 of 10500
-Elapsed time for pr152.in: 9437 of 10500
-Elapsed time for pr152.in: 9422 of 10500
-Mean fitness for pr152.in: 432194,772129048
-Elapsed time for rat195.in: 1282 of 2100
-Elapsed time for rat195.in: 1265 of 2100
-Elapsed time for rat195.in: 1266 of 2100
-Elapsed time for rat195.in: 1297 of 2100
-Elapsed time for rat195.in: 1281 of 2100
-Elapsed time for rat195.in: 1281 of 2100
-Elapsed time for rat195.in: 9297 of 10500
-Elapsed time for rat195.in: 9234 of 10500
-Elapsed time for rat195.in: 9282 of 10500
-Elapsed time for rat195.in: 9359 of 10500
-Elapsed time for rat195.in: 9328 of 10500
-Elapsed time for rat195.in: 9266 of 10500
-Mean fitness for rat195.in: 11545,0192763249
-Current cost: 899442,677425857
-
-Current parameters: 500, 16, 0,3
-Elapsed time for bier127.in: 1375 of 2100
-Elapsed time for bier127.in: 1359 of 2100
-Elapsed time for bier127.in: 1391 of 2100
-Elapsed time for bier127.in: 1344 of 2100
-Elapsed time for bier127.in: 1359 of 2100
-Elapsed time for bier127.in: 1375 of 2100
-Elapsed time for bier127.in: 9359 of 10500
-Elapsed time for bier127.in: 9282 of 10500
-Elapsed time for bier127.in: 9406 of 10500
-Elapsed time for bier127.in: 9375 of 10500
-Elapsed time for bier127.in: 9375 of 10500
-Elapsed time for bier127.in: 9406 of 10500
-Mean fitness for bier127.in: 267997,183389647
-Elapsed time for gr137.in: 1344 of 2100
-Elapsed time for gr137.in: 1359 of 2100
-Elapsed time for gr137.in: 1360 of 2100
-Elapsed time for gr137.in: 1359 of 2100
-Elapsed time for gr137.in: 1359 of 2100
-Elapsed time for gr137.in: 1344 of 2100
-Elapsed time for gr137.in: 9422 of 10500
-Elapsed time for gr137.in: 9359 of 10500
-Elapsed time for gr137.in: 9359 of 10500
-Elapsed time for gr137.in: 9359 of 10500
-Elapsed time for gr137.in: 9360 of 10500
-Elapsed time for gr137.in: 9375 of 10500
-Mean fitness for gr137.in: 241971,041918008
-Elapsed time for pr152.in: 1312 of 2100
-Elapsed time for pr152.in: 1313 of 2100
-Elapsed time for pr152.in: 1312 of 2100
-Elapsed time for pr152.in: 1344 of 2100
-Elapsed time for pr152.in: 1359 of 2100
-Elapsed time for pr152.in: 1360 of 2100
-Elapsed time for pr152.in: 9390 of 10500
-Elapsed time for pr152.in: 9344 of 10500
-Elapsed time for pr152.in: 9375 of 10500
-Elapsed time for pr152.in: 9297 of 10500
-Elapsed time for pr152.in: 9312 of 10500
-Elapsed time for pr152.in: 9266 of 10500
-Mean fitness for pr152.in: 446242,975992685
-Elapsed time for rat195.in: 969 of 2100
-Elapsed time for rat195.in: 937 of 2100
-Elapsed time for rat195.in: 922 of 2100
-Elapsed time for rat195.in: 922 of 2100
-Elapsed time for rat195.in: 938 of 2100
-Elapsed time for rat195.in: 969 of 2100
-Elapsed time for rat195.in: 8953 of 10500
-Elapsed time for rat195.in: 9047 of 10500
-Elapsed time for rat195.in: 8891 of 10500
-Elapsed time for rat195.in: 8968 of 10500
-Elapsed time for rat195.in: 8969 of 10500
-Elapsed time for rat195.in: 9063 of 10500
-Mean fitness for rat195.in: 12931,5307234494
-Current cost: 969142,73202379
+Elapsed time for pr152.in: 9469 of 10500
+Elapsed time for pr152.in: 9453 of 10500
+Elapsed time for pr152.in: 9453 of 10500
+Mean fitness for pr152.in: 311218,978898252
+Elapsed time for rat195.in: 1484 of 2100
+Elapsed time for rat195.in: 1469 of 2100
+Elapsed time for rat195.in: 1484 of 2100
+Elapsed time for rat195.in: 1469 of 2100
+Elapsed time for rat195.in: 1500 of 2100
+Elapsed time for rat195.in: 1484 of 2100
+Elapsed time for rat195.in: 9469 of 10500
+Elapsed time for rat195.in: 9453 of 10500
+Elapsed time for rat195.in: 9469 of 10500
+Elapsed time for rat195.in: 9469 of 10500
+Elapsed time for rat195.in: 9454 of 10500
+Elapsed time for rat195.in: 9468 of 10500
+Mean fitness for rat195.in: 8773,69520069702
+Current cost: 670555,041702804
 
 Final best parameters: 250, 2, 0,3

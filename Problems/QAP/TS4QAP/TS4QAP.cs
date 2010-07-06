@@ -4,10 +4,10 @@ namespace Metaheuristics
 {
 	public class TS4QAP : IMetaheuristic, ITunableMetaheuristic
 	{
-		protected int timePenalty = 100;
-		public double neighborChecksFactor = 0.25;
+		protected int timePenalty = 250;
+		public double neighborChecksFactor = 0.10;
 		public double tabuListFactor = 0.50;
-		public double rclTreshold = 0.3;
+		public double rclTreshold = 0.20;
 		
 		public void Start(string inputFile, string outputFile, int timeLimit)
 		{
