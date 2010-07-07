@@ -36,6 +36,32 @@ namespace Metaheuristics
 			return solution;
 		}
 		
+		public static int[] GreedySolution(TSPInstance instance)
+		{
+			int[] solution = new int[instance.NumberCities];
+			bool[] visited = new bool[instance.NumberCities];
+			
+			for (int i = 0; i < instance.NumberCities; i++) {
+				if (i == 0) {
+					solution[i] = 0;
+				}
+				else {
+					int currentCity = solution[i-1];
+					int nextCity;
+					double bestCost = double.MaxValue;
+					for (nextCity = 1; nextCity < instance.NumberCities; nextCity++) {
+						if (!visited[nextCity] && instance.Costs[currentCity,nextCity] < bestCost) {
+							solution[i] = nextCity;
+							bestCost = instance.Costs[currentCity,nextCity];
+						}
+					}
+				}
+				visited[solution[i]] = true;
+			}
+
+			return solution;
+		}		
+		
 		public static int[] GetNeighbor(TSPInstance instance, int[] solution)
 		{
 			int[] neighbor = new int[instance.NumberCities];

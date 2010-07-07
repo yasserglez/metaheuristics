@@ -6,10 +6,13 @@ namespace Metaheuristics
 	{
 		public TSPInstance Instance { get; protected set; }
 		
+		protected int generatedSolutions;			
+		
 		public DiscreteSS2OptBest4TSP(TSPInstance instance, int poolSize, int refSetSize, double explorationFactor)
 			: base(poolSize, refSetSize, explorationFactor)
 		{
 			Instance = instance;
+			generatedSolutions = 0;			
 		}
 		
 		protected override double Fitness(int[] solution)
@@ -19,7 +22,17 @@ namespace Metaheuristics
 		
 		protected override int[] RandomSolution()
 		{
-			return TSPUtils.RandomSolution(Instance);
+			int[] solution;
+			
+			if (generatedSolutions == 0) {
+				solution = TSPUtils.GreedySolution(Instance);
+			}
+			else {
+				solution = TSPUtils.RandomSolution(Instance);
+			}
+			
+			generatedSolutions++;
+			return solution;
 		}
 		
 		protected override void Repair(int[] solution)

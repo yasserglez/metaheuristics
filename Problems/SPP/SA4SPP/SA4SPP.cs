@@ -7,16 +7,15 @@ namespace Metaheuristics
 	public class SA4SPP : IMetaheuristic, ITunableMetaheuristic
 	{
 		protected int timePenalty = 250;
-		public int initialSolutions = 2;
-		public double levelLengthFactor = 0.05;
-		public double tempReduction = 0.85;
-		public double rclTreshold = 0.6;
+		public int initialSolutions = 10;
+		public double levelLengthFactor = 0.25;
+		public double tempReduction = 0.95;
 
 		public void Start(string fileInput, string fileOutput, int timeLimit)
 		{
 			SPPInstance instance = new SPPInstance(fileInput);
 			int levelLength = (int) Math.Ceiling(levelLengthFactor * (instance.NumberSubsets - 1));
-			DiscreteSA sa = new DiscreteSA4SPP(instance, rclTreshold, initialSolutions, levelLength, tempReduction);
+			DiscreteSA sa = new DiscreteSA4SPP(instance, initialSolutions, levelLength, tempReduction);
 			sa.Run(timeLimit - timePenalty);
 			SPPSolution solution = new SPPSolution(instance, sa.BestSolution);
 			solution.Write(fileOutput);
@@ -52,7 +51,6 @@ namespace Metaheuristics
 			initialSolutions = (int) parameters[1];
 			levelLengthFactor = parameters[2];
 			tempReduction = parameters[3];
-			rclTreshold = parameters[4];
 		}				
 	}
 }

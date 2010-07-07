@@ -9,7 +9,7 @@ namespace Metaheuristics
 		public void Start(string fileInput, string fileOutput, int timeLimit)
 		{
 			QAPInstance instance = new QAPInstance(fileInput);
-			int[] assignment = QAPUtils.RandomSolution(instance);
+			int[] assignment = QAPUtils.GRCSolution(instance, 1.0);
 			QAPUtils.LocalSearch2OptBest(instance, assignment);
 			QAPSolution solution = new QAPSolution(instance, assignment);
 			solution.Write(fileOutput);

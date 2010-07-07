@@ -6,10 +6,13 @@ namespace Metaheuristics
 	{
 		public QAPInstance Instance { get; protected set; }
 		
+		protected int generatedSolutions;		
+		
 		public DiscreteSS2OptFirst4QAP(QAPInstance instance, int poolSize, int refSetSize, double explorationFactor)
 			: base(poolSize, refSetSize, explorationFactor)
 		{
 			Instance = instance;
+			generatedSolutions = 0;			
 		}
 		
 		protected override double Fitness(int[] solution)
@@ -19,7 +22,17 @@ namespace Metaheuristics
 		
 		protected override int[] RandomSolution()
 		{
-			return QAPUtils.RandomSolution(Instance);
+			int[] solution;
+			
+			if (generatedSolutions < 2) {
+				solution = QAPUtils.GRCSolution(Instance, 1.0);
+			}
+			else {
+				solution = QAPUtils.RandomSolution(Instance);
+			}
+			
+			generatedSolutions++;
+			return solution;
 		}
 		
 		protected override void Repair(int[] solution)

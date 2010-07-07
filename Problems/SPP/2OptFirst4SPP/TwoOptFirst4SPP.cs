@@ -9,7 +9,7 @@ namespace Metaheuristics
 		public void Start(string fileInput, string fileOutput, int timeLimit)
 		{
 			SPPInstance instance = new SPPInstance(fileInput);
-			int[] assignment = SPPUtils.RandomSolution(instance);
+			int[] assignment = SPPUtils.GRCSolution(instance, 1.0);
 			SPPUtils.LocalSearch2OptFirst(instance, assignment);
 			SPPSolution solution = new SPPSolution(instance, assignment);
 			solution.Write(fileOutput);

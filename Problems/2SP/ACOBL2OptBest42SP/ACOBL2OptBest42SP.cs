@@ -26,7 +26,6 @@ namespace Metaheuristics
 			get {
 				return "ACO using the BL heuristic with 2-opt (best improvement) local search for 2SP";
 			}
-			
 		}
 		
 		public MetaheuristicType Type {

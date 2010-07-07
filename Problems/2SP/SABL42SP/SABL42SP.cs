@@ -10,7 +10,7 @@ namespace Metaheuristics
 		public int initialSolutions = 4;
 		public double levelLengthFactor = 0.05;
 		public double tempReduction = 0.85;
-
+		
 		public void Start(string fileInput, string fileOutput, int timeLimit)
 		{
 			TwoSPInstance instance = new TwoSPInstance(fileInput);

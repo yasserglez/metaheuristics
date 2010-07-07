@@ -6,12 +6,15 @@ namespace Metaheuristics
 	{
 		public SPPInstance Instance { get; protected set; }
 		
+		protected int generatedSolutions;			
+		
 		public DiscreteGA2OptFirst4SPP(SPPInstance instance, int popSize, double mutationProbability,
 		                              int[] lowerBounds, int[] upperBounds)
 			: base(popSize, mutationProbability, lowerBounds, upperBounds)
 		{
 			Instance = instance;
 			LocalSearchEnabled = true;
+			generatedSolutions = 0;			
 		}
 		
 		protected override void LocalSearch(int[] individual)
@@ -26,7 +29,17 @@ namespace Metaheuristics
 		
 		protected override int[] InitialSolution ()
 		{
-			return SPPUtils.RandomSolution(Instance);
+			int[] solution;
+			
+			if (generatedSolutions < 2) {
+				solution = SPPUtils.GRCSolution(Instance, 1.0);
+			}
+			else {
+				solution = SPPUtils.RandomSolution(Instance);
+			}
+			
+			generatedSolutions++;
+			return solution;
 		}
 
 	}
