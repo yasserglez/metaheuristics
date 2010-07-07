@@ -5,7 +5,7 @@ namespace Metaheuristics
 	public class ACO2OptBest4QAP : IMetaheuristic, ITunableMetaheuristic
 	{
 		protected int timePenalty = 250;
-		protected double rho = 0.1;
+		protected double rho = 0.2;
 		protected double alpha = 5;
 		protected double beta = 0;
 		protected int maxReinit = 10;

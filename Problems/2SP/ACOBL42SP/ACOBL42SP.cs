@@ -6,9 +6,9 @@ namespace Metaheuristics
 	{
 		protected int timePenalty = 250;
 		protected double rho = 0.05;
-		protected double alpha = 3;
+		protected double alpha = 5;
 		protected double beta = 0;
-		protected int maxReinit = 10;
+		protected int maxReinit = 5;
 		protected int numberAnts = 5;
 		
 		public void Start(string inputFile, string outputFile, int timeLimit)

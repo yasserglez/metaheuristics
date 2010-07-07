@@ -4,14 +4,14 @@ namespace Metaheuristics
 {
 	public class ACO2OptBest4TSP : IMetaheuristic, ITunableMetaheuristic
 	{
-		protected int timePenalty = 250;
+		protected int timePenalty = 50;
 		protected double rho = 0.02;
 		protected double alpha = 1;
-		protected double beta = 3;
-		protected int maxReinit = 5;
-		protected int numberAnts = 5;		
-		protected int candidateLength = 40;
-		protected double candidateWeight = 0.5;
+		protected double beta = 5;
+		protected int maxReinit = 10;
+		protected int numberAnts = 2;		
+		protected int candidateLength = 15;
+		protected double candidateWeight = 0.99;
 		
 		public void Start(string inputFile, string outputFile, int timeLimit)
 		{
