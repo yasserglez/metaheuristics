@@ -6,7 +6,7 @@ namespace Metaheuristics
 {
 	public class DiscreteSANPS42SP : DiscreteSA
 	{
-		protected bool orderedSolution;
+		protected int generatedSolutions;
 			
 		public TwoSPInstance Instance { get; protected set; }
 		
@@ -14,7 +14,7 @@ namespace Metaheuristics
 			: base(initialSolutions, levelLength, tempReduction)
 		{
 			Instance = instance;
-			orderedSolution = true;
+			generatedSolutions = 0;
 		}
 		
 		protected override double Fitness(int[] solution)
@@ -24,23 +24,23 @@ namespace Metaheuristics
 		
 		protected override int[] InitialSolution()
 		{
-			if (orderedSolution) {
-				List<Tuple<int,int>> sorting = new List<Tuple<int,int>>();
-				for (int i = 0; i < Instance.NumberItems; i++) {
-					int area = Instance.ItemsHeight[i] * Instance.ItemsWidth[i];
-					sorting.Add(new Tuple<int,int>(-area, i));
-				}
-				sorting.Sort();
-				int[] ordering = new int[Instance.NumberItems];
-				for (int i = 0; i < Instance.NumberItems; i++) {
-					ordering[i] = sorting[i].Val2;
-				}
-				orderedSolution = false;
-				return ordering;
+			int[] solution;
+			
+			if (generatedSolutions == 0) {
+				solution = TwoSPUtils.DecreasingArea(Instance);
+			}
+			else if (generatedSolutions == 1) {
+				solution = TwoSPUtils.DecreasingWidth(Instance);
+			}
+			else if (generatedSolutions == 2) {
+				solution = TwoSPUtils.DecreasingHeight(Instance);
 			}
 			else {
-				return TwoSPUtils.RandomSolution(Instance);
+				solution = TwoSPUtils.RandomSolution(Instance);
 			}
+			
+			generatedSolutions++;			
+			return solution;
 		}
 		
 		protected override int[] GetNeighbor(int[] solution)

@@ -5,7 +5,58 @@ using System.Collections.Generic;
 namespace Metaheuristics
 {
 	public static class TwoSPUtils
-	{		
+	{
+		public static int[] DecreasingArea(TwoSPInstance instance)
+		{
+			int[] solution = new int[instance.NumberItems];
+			List<Tuple<int,int>> sorting = new List<Tuple<int,int>>();
+			
+			for (int i = 0; i < instance.NumberItems; i++) {
+				int area = instance.ItemsHeight[i] * instance.ItemsWidth[i];
+				sorting.Add(new Tuple<int,int>(-area, i));
+			}
+			sorting.Sort();
+			for (int i = 0; i < instance.NumberItems; i++) {
+				solution[i] = sorting[i].Val2;
+			}
+			
+			return solution;
+		}
+		
+		public static int[] DecreasingWidth(TwoSPInstance instance)
+		{
+			int[] solution = new int[instance.NumberItems];
+			List<Tuple<int,int>> sorting = new List<Tuple<int,int>>();
+			
+			for (int i = 0; i < instance.NumberItems; i++) {
+				int width = instance.ItemsWidth[i];
+				sorting.Add(new Tuple<int,int>(-width, i));
+			}
+			sorting.Sort();
+			for (int i = 0; i < instance.NumberItems; i++) {
+				solution[i] = sorting[i].Val2;
+			}	
+			
+			return solution;
+		}
+		
+		public static int[] DecreasingHeight(TwoSPInstance instance)
+		{
+			int[] solution = new int[instance.NumberItems];
+			List<Tuple<int,int>> sorting = new List<Tuple<int,int>>();
+			
+			for (int i = 0; i < instance.NumberItems; i++) {
+				int height = instance.ItemsHeight[i];
+				sorting.Add(new Tuple<int,int>(-height, i));
+			}
+			sorting.Sort();
+			for (int i = 0; i < instance.NumberItems; i++) {
+				solution[i] = sorting[i].Val2;
+			}	
+			
+			return solution;
+		}
+
 		public static int[] RandomSolution(TwoSPInstance instance)
 		{
 			int[] solution = new int[instance.NumberItems];
