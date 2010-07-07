@@ -7,8 +7,8 @@ namespace Metaheuristics
 	public class GA2OptBest4QAP : IMetaheuristic, ITunableMetaheuristic
 	{
 		protected double timePenalty = 500;
-		protected double popSize = 2;
-		protected double mutProbability = 0.2;
+		protected double popSize = 4;
+		protected double mutProbability = 0.3;
 
 		public void Start (string fileInput, string fileOutput, int timeLimit)
 		{

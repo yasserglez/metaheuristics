@@ -153,6 +153,16 @@
     <Compile Include="SPP\MaxMinAntSystem2OptBest4SPP.cs" />
     <Compile Include="TSP\MaxMinAntSystem2OptFirst4TSP.cs" />
     <Compile Include="TSP\MaxMinAntSystem2OptBest4TSP.cs" />
+    <Compile Include="DiscreteILS.cs" />
+    <Compile Include="TSP\DiscreteILS2OptBest4TSP.cs" />
+    <Compile Include="TSP\DiscreteILS2OptFirst4TSP.cs" />
+    <Compile Include="SPP\DiscreteILS2OptBest4SPP.cs" />
+    <Compile Include="SPP\DiscreteILS2OptFirst4SPP.cs" />
+    <Compile Include="QAP\DiscreteILS2OptBest4QAP.cs" />
+    <Compile Include="QAP\DiscreteILS2OptFirst4QAP.cs" />
+    <Compile Include="2SP\DiscreteILSBL2OptBest42SP.cs" />
+    <Compile Include="2SP\DiscreteILSBL2OptFirst42SP.cs" />
+    <Compile Include="2SP\DiscreteILSNPS2OptFirst42SP.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

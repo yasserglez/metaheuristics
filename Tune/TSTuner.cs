@@ -17,7 +17,7 @@ namespace Tune
             double[] timePenalties = new double[] { 100, 250 };
 			double[] tabuListFactors = new double[] { 0.20, 0.50 };
 			double[] neighborCheckFactors = new double[] { 0.10, 0.25, 0.50};
-			double[] rclThresholds = new double[] { 0.20, 0.30};
+			double[] rclThresholds = new double[] { 0.75, 0.9};
 			
 			foreach (double rclThreshold in rclThresholds) {
 				foreach (double timePenalty in timePenalties) {

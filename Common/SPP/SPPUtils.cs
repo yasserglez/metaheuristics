@@ -120,18 +120,19 @@ namespace Metaheuristics
 			double cost = 0;
 			int setItem = 0;
 			double[] setWeigths = new double[instance.NumberSubsets];
+			instance.SubsetsWeight.CopyTo(setWeigths, 0);
 			// Restricted Candidate List.
 			SortedList<double, int> rcl = new SortedList<double, int>();
 			
 			assigment[0] = Statistics.RandomDiscreteUniform(0, numSets-1);
-			setWeigths[assigment[0]] += instance.ItemsWeight[0];
+			
 			index++;
 			numItems --;
 			
 			while (numItems > 0) {
 				rcl = new SortedList<double, int>();
 				for (int i = 0; i < numSets; i++) {
-					cost = Math.Abs((setWeigths[i] + instance.ItemsWeight[index]) - instance.SubsetsWeight[i]);
+					cost = Math.Abs(setWeigths[i] - instance.ItemsWeight[index]);
 					if(rcl.Count == 0) {
 						best = cost;
 						rcl.Add(cost, i);
@@ -156,7 +157,7 @@ namespace Metaheuristics
 				}
 				setItem = rcl.Values[Statistics.RandomDiscreteUniform(0, rcl.Count-1)];
 				assigment[index] = setItem;
-				setWeigths[setItem] += instance.ItemsWeight[index];
+				setWeigths[setItem] -= instance.ItemsWeight[index];
 				index++;
 				numItems--;
 			}
@@ -206,6 +207,16 @@ namespace Metaheuristics
 			}
 			
 			return distance;
-		}		
+		}	
+		
+		public static void PerturbateSolution(SPPInstance instance, int[] solution, int perturbations)
+		{
+			int point1 = 0;
+			
+			for (int i = 0; i < perturbations; i++) {
+				point1 = Statistics.RandomDiscreteUniform(0, solution.Length -1 );	
+				solution[point1] = Statistics.RandomDiscreteUniform(0, instance.NumberSubsets - 1);
+			}
+		}
 	}
 }

@@ -451,6 +451,14 @@
       <Project>{5EC8DC7C-2E7F-447E-9CD1-1DF4A39CB868}</Project>
       <Name>NPS42SP</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Problems\TSP\ILS2OptBest4TSP\ILS2OptBest4TSP.csproj">
+      <Project>{BC376790-98CD-46F3-8744-6BA4EF450547}</Project>
+      <Name>ILS2OptBest4TSP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\TSP\ILS2OptFirst4TSP\ILS2OptFirst4TSP.csproj">
+      <Project>{1262736E-5775-411B-9091-25BBB3AEF102}</Project>
+      <Name>ILS2OptFirst4TSP</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -636,5 +636,20 @@ namespace Metaheuristics
 			
 			return tabu;
 		}
+		
+		public static void PerturbateSolution(int[] solution, int perturbations)
+		{
+			int point1 = 0;
+			int point2 = 0;
+			int tmp = 0;
+			
+			for (int i = 0; i < perturbations; i++) {
+				point1 = Statistics.RandomDiscreteUniform(0, solution.Length -1 );	
+				point2 = Statistics.RandomDiscreteUniform(0, solution.Length -1 );
+				tmp = solution[point1];
+				solution[point1] = solution[point2];
+				solution[point2] = tmp;
+			}
+		}
 	}
 }
