@@ -7,7 +7,7 @@ namespace Metaheuristics
 		protected int timePenalty = 250;
 		public double neighborChecksFactor = 0.10;
 		public double tabuListFactor = 0.50;
-		public double rclTreshold = 0.20;
+		public double rclTreshold = 1.0;
 		
 		public void Start(string inputFile, string outputFile, int timeLimit)
 		{

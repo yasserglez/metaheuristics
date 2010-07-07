@@ -1,0 +1,89 @@
+Parameters tuning for: UMDA with 2-opt (best improvement) local search for SPP
+Estimated run time: 00:16:00
+
+Current parameters: 1000, 0.01, 0.2
+Elapsed time for inst1.in: 7521 of 12000
+Elapsed time for inst1.in: 7460 of 12000
+Elapsed time for inst1.in: 7441 of 12000
+Elapsed time for inst1.in: 7603 of 12000
+Elapsed time for inst1.in: 7480 of 12000
+Elapsed time for inst1.in: 7465 of 12000
+Mean fitness for inst1.in: 887
+Elapsed time for inst2.in: 11123 of 12000
+Elapsed time for inst2.in: 11106 of 12000
+Elapsed time for inst2.in: 11095 of 12000
+Elapsed time for inst2.in: 11356 of 12000
+Elapsed time for inst2.in: 11123 of 12000
+Elapsed time for inst2.in: 11091 of 12000
+Mean fitness for inst2.in: 893.666666666667
+Elapsed time for inst3.in: 4813 of 12000
+Elapsed time for inst3.in: 4785 of 12000
+Elapsed time for inst3.in: 4781 of 12000
+Elapsed time for inst3.in: 5145 of 12000
+Elapsed time for inst3.in: 4778 of 12000
+Elapsed time for inst3.in: 4779 of 12000
+Mean fitness for inst3.in: 2139
+Elapsed time for inst4.in: 11800 of 12000
+Elapsed time for inst4.in: 11779 of 12000
+Elapsed time for inst4.in: 11774 of 12000
+Elapsed time for inst4.in: 11773 of 12000
+Elapsed time for inst4.in: 11801 of 12000
+Elapsed time for inst4.in: 11766 of 12000
+Mean fitness for inst4.in: 2770
+Current cost: 6689.66666666667
+This is the best cost until now.
+
+Current parameters: 1000, 0.02, 0.2
+Elapsed time for inst1.in: 4992 of 12000
+Elapsed time for inst1.in: 4982 of 12000
+Elapsed time for inst1.in: 4966 of 12000
+Elapsed time for inst1.in: 4987 of 12000
+Elapsed time for inst1.in: 4973 of 12000
+Elapsed time for inst1.in: 4967 of 12000
+Mean fitness for inst1.in: 868.666666666667
+Elapsed time for inst2.in: 22203 of 12000
+Skiping this parameters.
+
+Current parameters: 1000, 0.01, 0.3
+Elapsed time for inst1.in: 7463 of 12000
+Elapsed time for inst1.in: 7458 of 12000
+Elapsed time for inst1.in: 7441 of 12000
+Elapsed time for inst1.in: 7461 of 12000
+Elapsed time for inst1.in: 7476 of 12000
+Elapsed time for inst1.in: 7522 of 12000
+Mean fitness for inst1.in: 839
+Elapsed time for inst2.in: 11129 of 12000
+Elapsed time for inst2.in: 11132 of 12000
+Elapsed time for inst2.in: 11114 of 12000
+Elapsed time for inst2.in: 11151 of 12000
+Elapsed time for inst2.in: 11110 of 12000
+Elapsed time for inst2.in: 11113 of 12000
+Mean fitness for inst2.in: 905.333333333333
+Elapsed time for inst3.in: 4776 of 12000
+Elapsed time for inst3.in: 4768 of 12000
+Elapsed time for inst3.in: 4790 of 12000
+Elapsed time for inst3.in: 4778 of 12000
+Elapsed time for inst3.in: 4771 of 12000
+Elapsed time for inst3.in: 4774 of 12000
+Mean fitness for inst3.in: 2241.33333333333
+Elapsed time for inst4.in: 11757 of 12000
+Elapsed time for inst4.in: 11775 of 12000
+Elapsed time for inst4.in: 11759 of 12000
+Elapsed time for inst4.in: 11784 of 12000
+Elapsed time for inst4.in: 11795 of 12000
+Elapsed time for inst4.in: 11795 of 12000
+Mean fitness for inst4.in: 2891.66666666667
+Current cost: 6877.33333333333
+
+Current parameters: 1000, 0.02, 0.3
+Elapsed time for inst1.in: 4981 of 12000
+Elapsed time for inst1.in: 4968 of 12000
+Elapsed time for inst1.in: 4979 of 12000
+Elapsed time for inst1.in: 4970 of 12000
+Elapsed time for inst1.in: 4959 of 12000
+Elapsed time for inst1.in: 4977 of 12000
+Mean fitness for inst1.in: 815
+Elapsed time for inst2.in: 22238 of 12000
+Skiping this parameters.
+
+Final best parameters: 1000, 0.01, 0.2

@@ -60,9 +60,9 @@ namespace Metaheuristics
 			int[] newSolution = InitialSolution();
 			int[] solution = new int[numVariables];
 			
-			LocalSearch(solution);
+			LocalSearch(newSolution);
 			
-			fitness = Fitness(solution);
+			fitness = Fitness(newSolution);
 			
 			BestFitness = fitness;
 			BestSolution = new int[numVariables];
@@ -80,7 +80,6 @@ namespace Metaheuristics
 				fitness = Fitness(solution);
 				
 				if (fitness <= BestFitness) {
-					Console.WriteLine ("si");
 					BestFitness = fitness;
 					solution.CopyTo(BestSolution, 0);
 					lastImprovement = 0;
@@ -94,7 +93,7 @@ namespace Metaheuristics
 					perturbation = 2;
 				}
 				else {
-					perturbation ++;
+					perturbation++;
 					lastImprovement++;
 				}
 				
