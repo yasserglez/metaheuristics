@@ -4,9 +4,9 @@ namespace Metaheuristics
 {
 	public class SSNPS42SP : IMetaheuristic, ITunableMetaheuristic
 	{
-		protected int timePenalty = 500;
-		public int poolSize = 100;
-		public int refSetSize = 10;
+		protected int timePenalty = 1000;
+		public int poolSize = 2;
+		public int refSetSize = 1;
 		public double explorationFactor = 0.5;
 		
 		public void Start(string inputFile, string outputFile, int timeLimit)

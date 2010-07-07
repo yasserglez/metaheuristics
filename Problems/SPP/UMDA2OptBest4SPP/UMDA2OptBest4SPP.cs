@@ -6,8 +6,9 @@ namespace Metaheuristics
 {
 	public class UMDA2OptBest4SPP : IMetaheuristic, ITunableMetaheuristic
 	{
-		protected double popFactor = 50;
-		protected double truncFactor = 0.3;
+		protected double timePenalty = 1000;
+		protected double popFactor = 0.01;
+		protected double truncFactor = 0.2;
 		
 		public void Start(string fileInput, string fileOutput, int timeLimit)
 		{
@@ -24,7 +25,7 @@ namespace Metaheuristics
 			DiscreteUMDA umda = new DiscreteUMDA2OptBest4SPP(instance, popSize, truncFactor, lowerBounds, upperBounds);
 			
 			// Solving the problem and writing the best solution found.
-			umda.Run(timeLimit);
+			umda.Run(timeLimit - (int) timePenalty);
 			SPPSolution solution = new SPPSolution(instance, umda.BestIndividual);
 			solution.Write(fileOutput);
 		}
@@ -55,8 +56,9 @@ namespace Metaheuristics
 		
 		public void UpdateParameters(double[] parameters)
 		{
-			popFactor = parameters[0];
-			truncFactor = parameters[1];
+			timePenalty = parameters[0];
+			popFactor = parameters[1];
+			truncFactor = parameters[2];
 		}		
 	}
 }
