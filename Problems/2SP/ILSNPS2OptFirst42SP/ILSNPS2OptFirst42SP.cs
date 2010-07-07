@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Metaheuristics
 {
-	public class ILS2OptBest4TSP : IMetaheuristic, ITunableMetaheuristic
+	public class ILSBL2OptFirstt42SP : IMetaheuristic, ITunableMetaheuristic
 	{
 		protected int timePenalty = 250;
 		public int restartIterations = 50;
@@ -12,22 +12,23 @@ namespace Metaheuristics
 		
 		public void Start (string inputFile, string outputFile, int timeLimit)
 		{
-			TSPInstance instance = new TSPInstance(inputFile);
-			int[] lowerBounds = new int[instance.NumberCities];
-            int[] upperBounds = new int[instance.NumberCities];
-            for (int i = 0; i < instance.NumberCities; i++) {
+			TwoSPInstance instance = new TwoSPInstance(inputFile);
+			int[] lowerBounds = new int[instance.NumberItems];
+            int[] upperBounds = new int[instance.NumberItems];
+            for (int i = 0; i < instance.NumberItems; i++) {
                 lowerBounds[i] = 0;
-                upperBounds[i] = instance.NumberCities - 1;
+                upperBounds[i] = instance.NumberItems - 1;
             }
-			DiscreteILS ils = new DiscreteILS2OptBest4TSP(instance, restartIterations, perturbations, lowerBounds, upperBounds);
+			DiscreteILS ils = new DiscreteILSBL2OptFirst42SP(instance, restartIterations, perturbations, lowerBounds, upperBounds);
 			ils.Run(timeLimit - timePenalty);
-			TSPSolution solution = new TSPSolution(instance, ils.BestSolution);
+			int[,] coordinates = TwoSPUtils.BLCoordinates(instance, ils.BestSolution);
+			TwoSPSolution solution = new TwoSPSolution(instance, coordinates);
 			solution.Write(outputFile);
 		}
 		
 		public string Name {
 			get {
-				return "ILS with 2-opt (first improvement) local search for TSP";
+				return "ILS using the BL heuristic with 2-opt (first improvement) local search for 2SP";
 			}
 		}
 		
@@ -39,7 +40,7 @@ namespace Metaheuristics
 		
 		public ProblemType Problem {
 			get {
-				return ProblemType.TSP;
+				return ProblemType.TwoSP;
 			}
 		}
 

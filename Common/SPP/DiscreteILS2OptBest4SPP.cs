@@ -1,13 +1,12 @@
-
 using System;
 
 namespace Metaheuristics
 {
-
-
 	public class DiscreteILS2OptBest4SPP : DiscreteILS
 	{
 		public SPPInstance Instance { get; protected set; }
+		
+		protected int generatedSolutions;		
 		
 		public DiscreteILS2OptBest4SPP (SPPInstance instance, int restartIterations, 
 		                                 int perturbationPoints, int[] lowerBounds, 
@@ -16,6 +15,7 @@ namespace Metaheuristics
 		{
 			Instance = instance;
 			RepairEnabled = false;
+			generatedSolutions = 0;			
 		}
 		
 		protected override void LocalSearch(int[] individual)
@@ -30,9 +30,19 @@ namespace Metaheuristics
 		
 		protected override int[] InitialSolution ()
 		{
-			return SPPUtils.RandomSolution(Instance);
+			int[] solution;
+			
+			if (generatedSolutions < 2) {
+				solution = SPPUtils.GRCSolution(Instance, 1.0);
+			}
+			else {
+				solution = SPPUtils.RandomSolution(Instance);
+			}
+			
+			generatedSolutions++;
+			return solution;
 		}
-		
+
 		protected override void PerturbateSolution (int[] solution, int perturbation)
 		{
 			SPPUtils.PerturbateSolution(Instance, solution, perturbation);

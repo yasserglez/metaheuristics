@@ -10,7 +10,6 @@ namespace Metaheuristics
 		public int restartIterations = 100;
 		public int perturbations = 2;
 		
-		
 		public void Start (string inputFile, string outputFile, int timeLimit)
 		{
 			TSPInstance instance = new TSPInstance(inputFile);

@@ -1,14 +1,12 @@
-
 using System;
 
 namespace Metaheuristics
 {
-
-
 	public class DiscreteILS2OptFirst4QAP : DiscreteILS
 	{
-		
 		public QAPInstance Instance { get; protected set; }
+		
+		protected int generatedSolutions;		
 		
 		public DiscreteILS2OptFirst4QAP (QAPInstance instance, int restartIterations, 
 		                                 int perturbationPoints, int[] lowerBounds, 
@@ -17,8 +15,8 @@ namespace Metaheuristics
 		{
 			Instance = instance;
 			RepairEnabled = true;
+			generatedSolutions = 0;			
 		}
-		
 		
 		protected override void Repair(int[] individual)
 		{
@@ -37,7 +35,17 @@ namespace Metaheuristics
 		
 		protected override int[] InitialSolution ()
 		{
-			return QAPUtils.RandomSolution(Instance);
+			int[] solution;
+			
+			if (generatedSolutions < 2) {
+				solution = QAPUtils.GRCSolution(Instance, 1.0);
+			}
+			else {
+				solution = QAPUtils.RandomSolution(Instance);
+			}
+			
+			generatedSolutions++;
+			return solution;
 		}
 		
 		protected override void PerturbateSolution (int[] solution, int perturbation)

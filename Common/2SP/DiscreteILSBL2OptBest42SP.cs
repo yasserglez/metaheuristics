@@ -1,13 +1,12 @@
-
 using System;
 
 namespace Metaheuristics
 {
-
-
 	public class DiscreteILSBL2OptBest42SP : DiscreteILS
 	{
 		public TwoSPInstance Instance { get; protected set; }
+		
+		protected int generatedSolutions;	
 		
 		public DiscreteILSBL2OptBest42SP (TwoSPInstance instance, int restartIterations, 
 		                                 int perturbationPoints, int[] lowerBounds, 
@@ -16,8 +15,8 @@ namespace Metaheuristics
 		{
 			Instance = instance;
 			RepairEnabled = true;
+			generatedSolutions = 0;			
 		}
-		
 		
 		protected override void Repair(int[] individual)
 		{
@@ -36,7 +35,23 @@ namespace Metaheuristics
 		
 		protected override int[] InitialSolution ()
 		{
-			return TwoSPUtils.RandomSolution(Instance);
+			int[] solution;
+			
+			if (generatedSolutions == 0) {
+				solution = TwoSPUtils.DecreasingArea(Instance);
+			}
+			else if (generatedSolutions == 1) {
+				solution = TwoSPUtils.DecreasingWidth(Instance);
+			}
+			else if (generatedSolutions == 2) {
+				solution = TwoSPUtils.DecreasingHeight(Instance);
+			}
+			else {
+				solution = TwoSPUtils.RandomSolution(Instance);
+			}
+			
+			generatedSolutions++;			
+			return solution;
 		}
 
 		protected override void PerturbateSolution (int[] solution, int perturbation)

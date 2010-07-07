@@ -4,30 +4,30 @@ using System.Collections.Generic;
 
 namespace Metaheuristics
 {
-	public class ILS2OptBest4TSP : IMetaheuristic, ITunableMetaheuristic
+	public class ILS2OptBest4QAP : IMetaheuristic, ITunableMetaheuristic
 	{
-		protected int timePenalty = 250;
+		protected int timePenalty = 50;
 		public int restartIterations = 50;
 		public int perturbations = 4;
 		
 		public void Start (string inputFile, string outputFile, int timeLimit)
 		{
-			TSPInstance instance = new TSPInstance(inputFile);
-			int[] lowerBounds = new int[instance.NumberCities];
-            int[] upperBounds = new int[instance.NumberCities];
-            for (int i = 0; i < instance.NumberCities; i++) {
+			QAPInstance instance = new QAPInstance(inputFile);
+			int[] lowerBounds = new int[instance.NumberFacilities];
+            int[] upperBounds = new int[instance.NumberFacilities];
+            for (int i = 0; i < instance.NumberFacilities; i++) {
                 lowerBounds[i] = 0;
-                upperBounds[i] = instance.NumberCities - 1;
+                upperBounds[i] = instance.NumberFacilities - 1;
             }
-			DiscreteILS ils = new DiscreteILS2OptBest4TSP(instance, restartIterations, perturbations, lowerBounds, upperBounds);
+			DiscreteILS ils = new DiscreteILS2OptBest4QAP(instance, restartIterations, perturbations, lowerBounds, upperBounds);
 			ils.Run(timeLimit - timePenalty);
-			TSPSolution solution = new TSPSolution(instance, ils.BestSolution);
+			QAPSolution solution = new QAPSolution(instance, ils.BestSolution);
 			solution.Write(outputFile);
 		}
 		
 		public string Name {
 			get {
-				return "ILS with 2-opt (first improvement) local search for TSP";
+				return "ILS with 2-opt (best improvement) local search for QAP";
 			}
 		}
 		
@@ -39,7 +39,7 @@ namespace Metaheuristics
 		
 		public ProblemType Problem {
 			get {
-				return ProblemType.TSP;
+				return ProblemType.QAP;
 			}
 		}
 

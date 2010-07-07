@@ -6,7 +6,7 @@ namespace Metaheuristics
 	{
 		public SPPInstance Instance { get; protected set; }
 		
-		protected int generatedSolutions;		
+		protected int generatedSolutions;
 		
 		public DiscreteSA4SPP(SPPInstance instance, int initialSolutions, int levelLength, double tempReduction)
 			: base(initialSolutions, levelLength, tempReduction)

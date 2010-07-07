@@ -459,6 +459,82 @@
       <Project>{1262736E-5775-411B-9091-25BBB3AEF102}</Project>
       <Name>ILS2OptFirst4TSP</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Problems\QAP\ILS2OptBest4QAP\ILS2OptBest4QAP.csproj">
+      <Project>{B8E4A0A8-524A-4FC4-BF45-B96994A19715}</Project>
+      <Name>ILS2OptBest4QAP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\SPP\ILS2OptBest4SPP\ILS2OptBest4SPP.csproj">
+      <Project>{2AC35F39-4848-4E14-AE33-844C3DE3FA34}</Project>
+      <Name>ILS2OptBest4SPP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\QAP\ILS2OptFirst4QAP\ILS2OptFirst4QAP.csproj">
+      <Project>{F1076A86-E3E9-4C5E-8786-7F4275CB42CE}</Project>
+      <Name>ILS2OptFirst4QAP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\SPP\ILS2OptFirst4SPP\ILS2OptFirst4SPP.csproj">
+      <Project>{7118860D-88FE-49D8-A46E-00C1C50D3509}</Project>
+      <Name>ILS2OptFirst4SPP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\2SP\ILSNPS2OptBest42SP\ILSNPS2OptBest42SP.csproj">
+      <Project>{BFD0699E-34CC-41FE-BBA3-F6FC375AE874}</Project>
+      <Name>ILSNPS2OptBest42SP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\2SP\ILSNPS2OptFirst42SP\ILSNPS2OptFirst42SP.csproj">
+      <Project>{02F41E0D-9CBE-4417-8898-71C4F11755E5}</Project>
+      <Name>ILSNPS2OptFirst42SP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\QAP\MA2OptBest4QAP\MA2OptBest4QAP.csproj">
+      <Project>{A1B89BA3-7644-47A1-80B4-7CEAB057121B}</Project>
+      <Name>MA2OptBest4QAP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\SPP\MA2OptBest4SSP\MA2OptBest4SPP.csproj">
+      <Project>{533658AA-829F-4952-AA1F-D0754C76C75C}</Project>
+      <Name>MA2OptBest4SPP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\TSP\MA2OptBest4TSP\MA2OptBest4TSP.csproj">
+      <Project>{A0DA106A-8507-4553-99DC-D0B1764CC791}</Project>
+      <Name>MA2OptBest4TSP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\SPP\MA2OptFirst4SPP\MA2OptFirst4SPP.csproj">
+      <Project>{1CDCA9EC-DF7B-4311-93DF-85FF83EC891B}</Project>
+      <Name>MA2OptFirst4SPP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\QAP\MA2OptFirst4QAP\MA2OptFirst4QAP.csproj">
+      <Project>{BDA80CEA-7890-4320-9FFE-60551F97863E}</Project>
+      <Name>MA2OptFirst4QAP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\TSP\MA2OptFirst4TSP\MA2OptFirst4TSP.csproj">
+      <Project>{99D91E61-FC0A-4256-A264-65A81D687870}</Project>
+      <Name>MA2OptFirst4TSP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\QAP\MA4QAP\MA4QAP.csproj">
+      <Project>{010DF748-037C-4AED-B55B-6762E2BB6477}</Project>
+      <Name>MA4QAP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\SPP\MA4SPP\MA4SPP.csproj">
+      <Project>{47E2CBA9-EE12-48CE-8FED-E6481B04D2E9}</Project>
+      <Name>MA4SPP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\TSP\MA4TSP\MA4TSP.csproj">
+      <Project>{3194E812-D223-4C7D-878E-35D15CD6D262}</Project>
+      <Name>MA4TSP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\2SP\MABL2OptBest42SP\MABL2OptBest42SP.csproj">
+      <Project>{2C62D6E1-E525-4087-A66D-658D7569647C}</Project>
+      <Name>MABL2OptBest42SP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\2SP\MABL2OptFirst42SP\MABL2OptFirst42SP.csproj">
+      <Project>{7B265D41-393D-49CF-9806-BA5E176E601D}</Project>
+      <Name>MABL2OptFirst42SP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\2SP\MABL42SP\MABL42SP.csproj">
+      <Project>{E620F5E3-46D5-4ED0-9CFD-8C53ECBD121A}</Project>
+      <Name>MABL42SP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\2SP\MANPS42SP\MANPS42SP.csproj">
+      <Project>{62330F7C-B436-43F3-BE99-3C3B3CD9BE45}</Project>
+      <Name>MANPS42SP</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

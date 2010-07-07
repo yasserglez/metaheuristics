@@ -162,7 +162,6 @@
     <Compile Include="QAP\DiscreteILS2OptFirst4QAP.cs" />
     <Compile Include="2SP\DiscreteILSBL2OptBest42SP.cs" />
     <Compile Include="2SP\DiscreteILSBL2OptFirst42SP.cs" />
-    <Compile Include="2SP\DiscreteILSNPS2OptFirst42SP.cs" />
     <Compile Include="DiscreteMA.cs" />
     <Compile Include="TSP\DiscreteMA4TSP.cs" />
     <Compile Include="TSP\DiscreteMA2OptFirst4TSP.cs" />
