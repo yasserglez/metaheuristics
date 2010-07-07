@@ -6,12 +6,15 @@ namespace Metaheuristics
 	{
 		public TSPInstance Instance { get; protected set; }
 		
+		protected int generatedSolutions;
+		
 		public DiscreteGA4TSP(TSPInstance instance, int popSize, double mutationProbability,
 		                      int[] lowerBounds, int[] upperBounds)
 			: base(popSize, mutationProbability, lowerBounds, upperBounds)
 		{
 			Instance = instance;
 			RepairEnabled = true;
+			generatedSolutions = 0;
 		}
 		
 		protected override void Repair(int[] individual)
@@ -26,7 +29,17 @@ namespace Metaheuristics
 		
 		protected override int[] InitialSolution ()
 		{
-			return TSPUtils.RandomSolution(Instance);
+			int[] solution;
+			
+			if (generatedSolutions == 0) {
+				solution = TSPUtils.GreedySolution(Instance);
+			}
+			else {
+				solution = TSPUtils.RandomSolution(Instance);
+			}
+			
+			generatedSolutions++;
+			return solution;
 		}
 
 	}

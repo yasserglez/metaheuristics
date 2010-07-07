@@ -7,6 +7,8 @@ namespace Metaheuristics
 	public class DiscretePSO2OptFirst4QAP : DiscretePSO
 	{
 		public QAPInstance Instance { get; protected set; }
+		
+		protected int generatedSolutions;		
 
         public DiscretePSO2OptFirst4QAP(QAPInstance instance, int partsCount, double prevConf,
                                 double neighConf, int[] lowerBounds, int[] upperBounds)
@@ -14,6 +16,7 @@ namespace Metaheuristics
         {
             Instance = instance;
 			LocalSearchEnabled = true;
+			generatedSolutions = 0;			
         }
 
         protected override double Fitness(int[] individual)
@@ -23,9 +26,18 @@ namespace Metaheuristics
 		
 		protected override int[] InitialSolution ()
 		{
-			return QAPUtils.RandomSolution(Instance);
+			int[] solution;
+			
+			if (generatedSolutions < 2) {
+				solution = QAPUtils.GRCSolution(Instance, 1.0);
+			}
+			else {
+				solution = QAPUtils.RandomSolution(Instance);
+			}
+			
+			generatedSolutions++;
+			return solution;
 		}
-
 		
 		protected override void LocalSearch (int[] solution)
 		{

@@ -6,10 +6,13 @@ namespace Metaheuristics
 	{
 		public SPPInstance Instance { get; protected set; }
 		
+		protected int generatedSolutions;			
+		
 		public DiscreteSS2OptBest4SPP(SPPInstance instance, int poolSize, int refSetSize, double explorationFactor)
 			: base(poolSize, refSetSize, explorationFactor)
 		{
 			Instance = instance;
+			generatedSolutions = 0;			
 		}
 		
 		protected override double Fitness(int[] solution)
@@ -19,7 +22,17 @@ namespace Metaheuristics
 		
 		protected override int[] RandomSolution()
 		{
-			return SPPUtils.RandomSolution(Instance);
+			int[] solution;
+			
+			if (generatedSolutions < 2) {
+				solution = SPPUtils.GRCSolution(Instance, 1.0);
+			}
+			else {
+				solution = SPPUtils.RandomSolution(Instance);
+			}
+			
+			generatedSolutions++;
+			return solution;
 		}
 		
 		protected override void Repair(int[] solution)

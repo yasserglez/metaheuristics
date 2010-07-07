@@ -9,7 +9,7 @@ namespace Metaheuristics
 		public void Start(string fileInput, string fileOutput, int timeLimit)
 		{
 			TSPInstance instance = new TSPInstance(fileInput);
-			int[] assignment = TSPUtils.RandomSolution(instance);
+			int[] assignment = TSPUtils.GreedySolution(instance);
 			TSPUtils.LocalSearch2OptFirst(instance, assignment);
 			TSPSolution solution = new TSPSolution(instance, assignment);
 			solution.Write(fileOutput);

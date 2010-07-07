@@ -9,7 +9,7 @@ namespace Metaheuristics
 		public void Start(string fileInput, string fileOutput, int timeLimit)
 		{
 			TwoSPInstance instance = new TwoSPInstance(fileInput);
-			int[] ordering = TwoSPUtils.RandomSolution(instance);
+			int[] ordering = TwoSPUtils.DecreasingWidth(instance);
 			TwoSPUtils.BLLocalSearch2OptFirst(instance, ordering);
 			int[,] coordinates = TwoSPUtils.BLCoordinates(instance, ordering);
 			TwoSPSolution solution = new TwoSPSolution(instance, coordinates);
