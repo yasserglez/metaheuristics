@@ -1,12 +1,10 @@
-
 using System;
 
 namespace Metaheuristics
 {
-
-
 	public class DiscreteILS2OptFirst4TSP : DiscreteILS
 	{
+		protected int generatedSolutions;
 		
 		public TSPInstance Instance { get; protected set; }
 		
@@ -17,8 +15,8 @@ namespace Metaheuristics
 		{
 			Instance = instance;
 			RepairEnabled = true;
+			generatedSolutions = 0;
 		}
-		
 		
 		protected override void Repair(int[] individual)
 		{
@@ -37,7 +35,17 @@ namespace Metaheuristics
 		
 		protected override int[] InitialSolution ()
 		{
-			return TSPUtils.RandomSolution(Instance);
+			int[] solution;
+			
+			if (generatedSolutions == 0) {
+				solution = TSPUtils.GreedySolution(Instance);
+			}
+			else {
+				solution = TSPUtils.GRCSolution(Instance, 0.9);
+			}
+			
+			generatedSolutions++;
+			return solution;
 		}
 		
 		protected override void PerturbateSolution (int[] solution, int perturbation)
