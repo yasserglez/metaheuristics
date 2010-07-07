@@ -207,6 +207,16 @@ namespace Metaheuristics
 			}
 			
 			return distance;
-		}		
+		}	
+		
+		public static void PerturbateSolution(SPPInstance instance, int[] solution, int perturbations)
+		{
+			int point1 = 0;
+			
+			for (int i = 0; i < perturbations; i++) {
+				point1 = Statistics.RandomDiscreteUniform(0, solution.Length -1 );	
+				solution[point1] = Statistics.RandomDiscreteUniform(0, instance.NumberSubsets - 1);
+			}
+		}
 	}
 }

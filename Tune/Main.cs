@@ -96,23 +96,23 @@ namespace Tune
 //				new TwoOptFirst4QAP(),
 //				new HMSAwGRASP2OptBest4QAP(),            
 //				new HMSAwGRASP2OptFirst4QAP(),            
-//				new GA2OptBest4QAP(),
-//				new PSO2OptBest4QAP(),
+				new GA2OptBest4QAP(),
 //				new GA2OptFirst4QAP(), /* OK */   
 //				new GA4QAP(), /* OK */   
 //				new GRASP2OptBest4QAP(), /* OK */   
 //				new GRASP2OptFirst4QAP(), /* OK */   
 //				new HMTSwGRASP2OptBest4QAP(), /* OK */   
 //				new HMTSwGRASP2OptFirst4QAP(), /* OK */   
+//				new PSO2OptBest4QAP(), /* OK */
 //				new PSO2OptFirst4QAP(), /* OK */ 
 //				new PSO4QAP(), /* OK */ 
 //				new TS4QAP(), /* OK */ 
 				
-				new GA2OptBest4SPP(),         
-				new GRASP2OptBest4SPP(),
-				new GRASP2OptFirst4SPP(),
-				new HMTSwGRASP2OptFirst4SPP(),            
-				new HMTSwGRASP2OptBest4SPP(),       
+//				new GA2OptBest4SPP(),         
+//				new GRASP2OptBest4SPP(),
+//				new GRASP2OptFirst4SPP(),
+//				new HMTSwGRASP2OptFirst4SPP(),            
+//				new HMTSwGRASP2OptBest4SPP(),       
 //				new HMSAwGRASP2OptBest4SPP(),            
 //				new HMSAwGRASP2OptFirst4SPP(),            
 //				new GA2OptFirst4SPP(),  /* OK */
