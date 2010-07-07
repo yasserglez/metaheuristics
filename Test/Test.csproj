@@ -447,6 +447,10 @@
       <Project>{1262736E-5775-411B-9091-25BBB3AEF102}</Project>
       <Name>ILS2OptFirst4TSP</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Problems\TSP\MA4TSP\MA4TSP.csproj">
+      <Project>{3194E812-D223-4C7D-878E-35D15CD6D262}</Project>
+      <Name>MA4TSP</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

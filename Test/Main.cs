@@ -8,13 +8,15 @@ namespace Test
 		public static void Main(string[] args)
 		{
 		   	int time = 10000;
-			string input = "../../../Problems/TSP/Instances/bier127.in";
-			string output = "../../../Problems/TSP/Instances/bier127.out";
+			string input = "../../../Problems/TSP/Instances/rat195.in";
+			string output = "../../../Problems/TSP/Instances/rat195.out";
 			
-//			(new SA4TSP()).Start(input, output+".SA", time);
-			(new TS4TSP()).Start(input, output+".TS", time);
-			(new ILS2OptBest4TSP()).Start(input, output+".ILS2ob", time);
-			(new ILS2OptFirst4TSP()).Start(input, output+".ILS2of", time);
+			(new GA4TSP()).Start(input, output+"ga", time);
+			(new SA4TSP()).Start(input, output+"sa", time);
+			(new TS4TSP()).Start(input, output+"ts", time);
+			(new ILS2OptFirst4TSP()).Start(input, output+"ils2of", time);
+			(new MA4TSP()).Start(input, output+"ma", time);
+			
 		}
 	}
 }
