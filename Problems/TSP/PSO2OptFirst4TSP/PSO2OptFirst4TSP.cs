@@ -8,7 +8,7 @@ namespace Metaheuristics
 		protected double timePenalty = 100;
 		protected double particlesCount = 40;
 		protected double prevConf = 0.75;
-        	protected double neighConf = 0.75;
+        protected double neighConf = 0.75;
 		
         public void Start(string fileInput, string fileOutput, int timeLimit)
         {
