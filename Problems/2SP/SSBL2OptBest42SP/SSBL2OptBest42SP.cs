@@ -5,9 +5,9 @@ namespace Metaheuristics
 	public class SSBL2OptBest42SP : IMetaheuristic, ITunableMetaheuristic
 	{
 		protected int timePenalty = 250;
-		public int poolSize = 100;
-		public int refSetSize = 10;
-		public double explorationFactor = 0.5;
+		public int poolSize = 1;
+		public int refSetSize = 1;
+		public double explorationFactor = 0;
 		
 		public void Start(string inputFile, string outputFile, int timeLimit)
 		{

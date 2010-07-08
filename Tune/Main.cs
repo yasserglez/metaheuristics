@@ -10,12 +10,6 @@ namespace Tune
 		{
 			ITunableMetaheuristic[] algorithms = new ITunableMetaheuristic[] {		
 				#region Yasser
-//				new SS2OptBest4QAP(),
-//				new SS2OptBest4SPP(),
-//				new ACOBL2OptFirst42SP(),
-//				new SS2OptBest4TSP(),
-//				new SSBL2OptBest42SP(),
-				
 //				new ACOBL2OptBest42SP(), /* OK */
 //				new ACONPS42SP(), /* OK */
 //				new BL2OptBest42SP(), /* OK */
@@ -32,6 +26,8 @@ namespace Tune
 //				new ACOBL42SP(), /* OK */
 //				new SABL42SP(), /* OK */
 //				new SSNPS42SP(), /* OK */
+//				new ACOBL2OptFirst42SP(), /* OK */
+//				new SSBL2OptBest42SP(), /* OK */
 				
 //				new ACO2OptFirst4QAP(), /* OK */
 //				new ACO4QAP(), /* OK */
@@ -41,6 +37,7 @@ namespace Tune
 //				new SA4QAP(), /* OK */
 //				new UMDA2OptBest4QAP(), /* OK */
 //				new ACO2OptBest4QAP(), /* OK */
+//				new SS2OptBest4QAP(), /* OK */
 			
 //				new TwoOptBest4SPP(), /* OK */
 //				new TwoOptFirst4SPP(), /* OK */
@@ -53,6 +50,7 @@ namespace Tune
 //				new SS4SPP(), /* OK */
 //				new SA4SPP(), /* OK */
 //				new UMDA2OptBest4SPP(), /* OK */
+//				new SS2OptBest4SPP(), /* OK */
 				
 //				new UMDA4TSP(), /* OK */
 //				new ACO2OptFirst4TSP(), /* OK */
@@ -63,6 +61,7 @@ namespace Tune
 //				new UMDA2OptFirst4TSP(), /* OK */
 //				new SA4TSP(), /* OK */
 //				new ACO2OptBest4TSP(), /* OK */
+//				new SS2OptBest4TSP(), /* OK */
 				#endregion
 				
 				#region Ariel
