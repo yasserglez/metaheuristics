@@ -18,6 +18,9 @@ namespace Metaheuristics
 		
 		protected override double Fitness (int[] solution)
 		{
+			if (solution[0] >= Instance.NumberSubsets) {
+				solution[0] = Statistics.RandomDiscreteUniform(0, Instance.NumberSubsets - 1);
+			}
 			return SPPUtils.Fitness(Instance, solution);
 		}
 		
@@ -33,18 +36,19 @@ namespace Metaheuristics
 		
 		public override void LocalSearch (int[] solution)
 		{
+			if (solution[0] >= Instance.NumberSubsets) {
+				solution[0] = Statistics.RandomDiscreteUniform(0, Instance.NumberSubsets - 1);
+			}			
 			SPPUtils.LocalSearch2OptBest(Instance, solution);
-		}		
+		}
 		
 		protected override List<int> FactibleNeighbors (int i, bool[] visited)
 		{
 			List<int> neighbors = new List<int>();
 			
 			// Checking all the neighbors.
-			for (int j = 0; j < Instance.NumberItems; j++) {
-				if (i != j) {
+			for (int j = 0; j < Instance.NumberSubsets; j++) {
 					neighbors.Add(j);
-				}
 			}
 			
 			return neighbors;
