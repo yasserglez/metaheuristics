@@ -9,9 +9,8 @@ namespace Metaheuristics
 		public TSPInstance Instance { get; protected set; }
 		
 		public DiscreteILS2OptFirst4TSP (TSPInstance instance, int restartIterations, 
-		                                 int perturbationPoints, int[] lowerBounds, 
-		                                 int[] upperBounds) 
-			: base ( restartIterations, perturbationPoints, lowerBounds, upperBounds)
+		                                 int[] lowerBounds, int[] upperBounds) 
+			: base ( restartIterations, lowerBounds, upperBounds)
 		{
 			Instance = instance;
 			RepairEnabled = true;

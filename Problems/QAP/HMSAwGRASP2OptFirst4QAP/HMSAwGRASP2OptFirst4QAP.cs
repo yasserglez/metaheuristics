@@ -5,14 +5,14 @@ namespace Metaheuristics
 {
 	public class HMSAwGRASP2OptFirst4QAP : IMetaheuristic, ITunableMetaheuristic
 	{
-		protected int timePenalty = 250;
-		protected int graspIterations = 3;
+		protected int timePenalty = 50;
+		protected int graspIterations = 6;
 		//SA Params
-		public int initialSolutions = 2;
-		public double levelLengthFactor = 0.75;
+		public int initialSolutions = 3;
+		public double levelLengthFactor = 0.25;
 		public double tempReduction = 0.85;
 		//GRASP Params
-		public double rclTreshold = 0.40;
+		public double rclTreshold = 0.90;
 		
 		public void Start(string inputFile, string outputFile, int timeLimit)
 		{

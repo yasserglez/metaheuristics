@@ -8,7 +8,6 @@ namespace Metaheuristics
 	{
 		protected int timePenalty = 250;
 		public int restartIterations = 50;
-		public int perturbations = 4;
 		
 		public void Start (string inputFile, string outputFile, int timeLimit)
 		{
@@ -19,7 +18,7 @@ namespace Metaheuristics
                 lowerBounds[i] = 0;
                 upperBounds[i] = instance.NumberCities - 1;
             }
-			DiscreteILS ils = new DiscreteILS2OptBest4TSP(instance, restartIterations, perturbations, lowerBounds, upperBounds);
+			DiscreteILS ils = new DiscreteILS2OptBest4TSP(instance, restartIterations, lowerBounds, upperBounds);
 			ils.Run(timeLimit - timePenalty);
 			TSPSolution solution = new TSPSolution(instance, ils.BestSolution);
 			solution.Write(outputFile);
@@ -52,6 +51,7 @@ namespace Metaheuristics
 		public void UpdateParameters (double[] parameters)
 		{
 			timePenalty = (int)parameters[0];
+			restartIterations = (int)parameters[1];
 		}
 	}
 }

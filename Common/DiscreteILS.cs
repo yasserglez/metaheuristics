@@ -10,17 +10,15 @@ namespace Metaheuristics
 		public int[] UpperBounds { get; protected set; }
 		public bool RepairEnabled { get; protected set; }
 		public int RestartIterations { get; protected set; }
-		public int Perturbation { get; protected set; }
 		
 		public int[] BestSolution { get; protected set; }
 		public double BestFitness { get; protected set; }
 
-		public DiscreteILS (int restartIterations, int perturbation, 
-		                    int[] lowerBounds, int[] upperBounds)
+		public DiscreteILS (int restartIterations, int[] lowerBounds, 
+		                    int[] upperBounds)
 		{
 			RepairEnabled = false;
 			RestartIterations = restartIterations;
-			Perturbation = perturbation;
 			UpperBounds = upperBounds;
 			LowerBounds = lowerBounds;
 			BestSolution = null;

@@ -49,6 +49,8 @@
     <Compile Include="ACOTuner.cs" />
     <Compile Include="TSTuner.cs" />
     <Compile Include="HMTuner.cs" />
+    <Compile Include="MATuner.cs" />
+    <Compile Include="ILSTuner.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Problems\TSP\UMDA2OptBest4TSP\UMDA2OptBest4TSP.csproj">
@@ -475,14 +477,6 @@
       <Project>{7118860D-88FE-49D8-A46E-00C1C50D3509}</Project>
       <Name>ILS2OptFirst4SPP</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Problems\2SP\ILSNPS2OptBest42SP\ILSNPS2OptBest42SP.csproj">
-      <Project>{BFD0699E-34CC-41FE-BBA3-F6FC375AE874}</Project>
-      <Name>ILSNPS2OptBest42SP</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Problems\2SP\ILSNPS2OptFirst42SP\ILSNPS2OptFirst42SP.csproj">
-      <Project>{02F41E0D-9CBE-4417-8898-71C4F11755E5}</Project>
-      <Name>ILSNPS2OptFirst42SP</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Problems\QAP\MA2OptBest4QAP\MA2OptBest4QAP.csproj">
       <Project>{A1B89BA3-7644-47A1-80B4-7CEAB057121B}</Project>
       <Name>MA2OptBest4QAP</Name>
@@ -534,6 +528,14 @@
     <ProjectReference Include="..\Problems\2SP\MANPS42SP\MANPS42SP.csproj">
       <Project>{62330F7C-B436-43F3-BE99-3C3B3CD9BE45}</Project>
       <Name>MANPS42SP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\2SP\ILSNPS2OptBest42SP\ILSBL2OptBest42SP.csproj">
+      <Project>{BFD0699E-34CC-41FE-BBA3-F6FC375AE874}</Project>
+      <Name>ILSBL2OptBest42SP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problems\2SP\ILSNPS2OptFirst42SP\ILSBL2OptFirst42SP.csproj">
+      <Project>{02F41E0D-9CBE-4417-8898-71C4F11755E5}</Project>
+      <Name>ILSBL2OptFirst42SP</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

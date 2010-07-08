@@ -5,17 +5,17 @@ using Metaheuristics;
 
 namespace Tune
 {
-	public class HMTuner : Tuner
+	public class ILSTuner : Tuner
 	{
-		public HMTuner(ITunableMetaheuristic metaheuristic, string dirInstances)
+		public ILSTuner(ITunableMetaheuristic metaheuristic, string dirInstances)
 			: base(metaheuristic, dirInstances, 6, new int[] { 2000, 10000 }, 5)
 		{
 		}
 		
 		protected override IEnumerable<double[]> EnumerateParameters()
 		{
-            double[] timePenalties = new double[] { 250 };
-			double[] graspIterations = new double[] { 4, 6, 8 };
+            double[] timePenalties = new double[] { 50, 100 };
+			double[] graspIterations = new double[] { 50, 100 };
 			
 			foreach (double timePenalty in timePenalties) {
 				foreach (double graspIteration in graspIterations) {

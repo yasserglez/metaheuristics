@@ -8,11 +8,11 @@ namespace Metaheuristics
 		protected int timePenalty = 250;
 		protected int graspIterations = 3;
 		//SA Params
-		public int initialSolutions = 2;
-		public double levelLengthFactor = 0.75;
+		public int initialSolutions = 3;
+		public double levelLengthFactor = 0.25;
 		public double tempReduction = 0.85;
 		//GRASP Params
-		public double rclTreshold = 0.40;
+		public double rclTreshold = 0.80;
 		
 		public void Start(string inputFile, string outputFile, int timeLimit)
 		{

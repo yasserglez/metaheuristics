@@ -9,9 +9,8 @@ namespace Metaheuristics
 		protected int generatedSolutions;		
 		
 		public DiscreteILS2OptBest4QAP (QAPInstance instance, int restartIterations, 
-		                                 int perturbationPoints, int[] lowerBounds, 
-		                                 int[] upperBounds) 
-			: base ( restartIterations, perturbationPoints, lowerBounds, upperBounds)
+		                                 int[] lowerBounds, int[] upperBounds) 
+			: base ( restartIterations, lowerBounds, upperBounds)
 		{
 			Instance = instance;
 			RepairEnabled = true;

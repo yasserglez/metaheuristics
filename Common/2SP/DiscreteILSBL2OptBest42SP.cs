@@ -9,9 +9,8 @@ namespace Metaheuristics
 		protected int generatedSolutions;	
 		
 		public DiscreteILSBL2OptBest42SP (TwoSPInstance instance, int restartIterations, 
-		                                 int perturbationPoints, int[] lowerBounds, 
-		                                 int[] upperBounds) 
-			: base ( restartIterations, perturbationPoints, lowerBounds, upperBounds)
+		                                 int[] lowerBounds, int[] upperBounds) 
+			: base ( restartIterations, lowerBounds, upperBounds)
 		{
 			Instance = instance;
 			RepairEnabled = true;

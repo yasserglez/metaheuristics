@@ -38,7 +38,7 @@ namespace Metaheuristics
 		protected bool[] InitialMeme()
 		{
 			bool[] meme = new bool[LowerBounds.Length];
-			int points = Statistics.RandomDiscreteUniform(LowerBounds.Length / 2, (2*LowerBounds.Length) / 3);
+			int points = Statistics.RandomDiscreteUniform(LowerBounds.Length / 3, (2*LowerBounds.Length) / 3);
 			for (int i = 0; i < points; i++) {
 				meme[Statistics.RandomDiscreteUniform(0, LowerBounds.Length-1)] = true;
 			}
