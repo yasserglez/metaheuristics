@@ -23,7 +23,10 @@ namespace Tune
 				foreach (double poolSize in poolSizes) {
 					foreach (double refSetSize in refSetSizes) {
 						foreach (double explorationFactor in explorationFactors) {
-							yield return new double[] { timePenalty, poolSize, refSetSize, explorationFactor };
+							yield return new double[] { 
+								timePenalty, poolSize, 
+								refSetSize, explorationFactor 
+							};
 						}
 					}
 				}

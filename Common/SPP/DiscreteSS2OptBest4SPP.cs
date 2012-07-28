@@ -8,7 +8,8 @@ namespace Metaheuristics
 		
 		protected int generatedSolutions;			
 		
-		public DiscreteSS2OptBest4SPP(SPPInstance instance, int poolSize, int refSetSize, double explorationFactor)
+		public DiscreteSS2OptBest4SPP(SPPInstance instance, int poolSize, 
+		                              int refSetSize, double explorationFactor)
 			: base(poolSize, refSetSize, explorationFactor)
 		{
 			Instance = instance;

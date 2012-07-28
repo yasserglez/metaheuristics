@@ -8,8 +8,9 @@ namespace Metaheuristics
 		
 		protected int generatedSolutions;		
 		
-		public DiscreteMABL42SP (TwoSPInstance instance, int popSize, double mutationProbability,
-		                          int[] lowerBounds, int[] upperBounds)
+		public DiscreteMABL42SP(TwoSPInstance instance, int popSize, 
+		                        double mutationProbability,
+		                        int[] lowerBounds, int[] upperBounds)
 			: base(popSize, mutationProbability, lowerBounds, upperBounds)
 		{
 			Instance = instance;

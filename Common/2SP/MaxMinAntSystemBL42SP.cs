@@ -9,8 +9,11 @@ namespace Metaheuristics
 	{
 		public TwoSPInstance Instance { get; protected set; }
 		
-		public MaxMinAntSystemBL42SP(TwoSPInstance instance, int numberAnts, double rho, double alpha, double beta, int maxReinit)
-			: base(instance.NumberItems, TwoSPUtils.Fitness(instance, TwoSPUtils.BLCoordinates(instance, TwoSPUtils.RandomSolution(instance))), 
+		public MaxMinAntSystemBL42SP(TwoSPInstance instance, int numberAnts, 
+		                             double rho, double alpha, double beta, 
+		                             int maxReinit)
+			: base(instance.NumberItems, 
+			       TwoSPUtils.Fitness(instance, TwoSPUtils.BLCoordinates(instance, TwoSPUtils.RandomSolution(instance))), 
 			       numberAnts, rho, alpha, beta, maxReinit)
 		{
 			Instance = instance;

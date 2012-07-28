@@ -8,7 +8,8 @@ namespace Metaheuristics
 		
 		protected int generatedSolutions;		
 		
-		public DiscreteSS4QAP(QAPInstance instance, int poolSize, int refSetSize, double explorationFactor)
+		public DiscreteSS4QAP(QAPInstance instance, int poolSize, 
+		                      int refSetSize, double explorationFactor)
 			: base(poolSize, refSetSize, explorationFactor)
 		{
 			Instance = instance;

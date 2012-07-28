@@ -23,8 +23,10 @@ namespace Tune
 				foreach (double timePenalty in timePenalties) {
 					foreach (double tabuListFactor in tabuListFactors) {
 						foreach (double neighborCheckFactor in neighborCheckFactors) {
-							yield return new double[] { timePenalty, neighborCheckFactor, 
-								tabuListFactor, rclThreshold};
+							yield return new double[] { 
+								timePenalty, neighborCheckFactor, 
+								tabuListFactor, rclThreshold
+							};
 						}
 					}
 				}

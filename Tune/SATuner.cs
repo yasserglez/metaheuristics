@@ -23,7 +23,10 @@ namespace Tune
 				foreach (double initialSolution in initialSolutions) {
 					foreach (double levelLengthFactor in levelLengthFactors) {
 						foreach (double tempReduction in tempReductions) {
-							yield return new double[] { timePenalty, initialSolution, levelLengthFactor, tempReduction };
+							yield return new double[] { 
+								timePenalty, initialSolution, 
+								levelLengthFactor, tempReduction 
+							};
 						}
 					}
 				}

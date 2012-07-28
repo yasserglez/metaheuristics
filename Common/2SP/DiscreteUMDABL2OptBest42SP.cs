@@ -8,7 +8,9 @@ namespace Metaheuristics
 	{
 		public TwoSPInstance Instance { get; protected set; }
 		
-		public DiscreteUMDABL2OptBest42SP(TwoSPInstance instance, int popSize, double truncFactor, int[] lowerBounds, int[] upperBounds)
+		public DiscreteUMDABL2OptBest42SP(TwoSPInstance instance, int popSize, 
+		                                  double truncFactor, int[] lowerBounds, 
+		                                  int[] upperBounds)
 			: base(popSize, truncFactor, lowerBounds, upperBounds)
 		{
 			Instance = instance;

@@ -8,7 +8,8 @@ namespace Metaheuristics
 		
 		public TwoSPInstance Instance { get; protected set; }
 		
-		public DiscreteSABL42SP(TwoSPInstance instance, int initialSolutions, int levelLength, double tempReduction)
+		public DiscreteSABL42SP(TwoSPInstance instance, int initialSolutions, 
+		                        int levelLength, double tempReduction)
 			: base(initialSolutions, levelLength, tempReduction)
 		{
 			Instance = instance;

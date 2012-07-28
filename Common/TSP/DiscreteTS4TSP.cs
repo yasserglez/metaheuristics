@@ -8,7 +8,8 @@ namespace Metaheuristics
 		public TSPInstance Instance { get; protected set; }
 		public  double RclTreshold { get; protected set; }
 		
-		public DiscreteTS4TSP (TSPInstance instance, double rclTreshold, int tabuListLength, int neighborChecks) 
+		public DiscreteTS4TSP (TSPInstance instance, double rclTreshold, 
+		                       int tabuListLength, int neighborChecks) 
 			: base(tabuListLength, neighborChecks)
 		{
 			Instance = instance;

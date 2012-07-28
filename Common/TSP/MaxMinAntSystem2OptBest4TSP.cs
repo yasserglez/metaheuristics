@@ -12,7 +12,9 @@ namespace Metaheuristics
 		protected List<Tuple<double,int>>[] candidateLists;
 		protected double candidateWeight;
 		
-		public MaxMinAntSystem2OptBest4TSP(TSPInstance instance, int numberAnts, double rho, double alpha, double beta, int maxReinit, int candidateLength, double candidateWeight)
+		public MaxMinAntSystem2OptBest4TSP(TSPInstance instance, int numberAnts, double rho, 
+		                                   double alpha, double beta, int maxReinit, 
+		                                   int candidateLength, double candidateWeight)
 			: base(instance.NumberCities, TSPUtils.Fitness(instance, TSPUtils.RandomSolution(instance)),
 			       numberAnts, rho, alpha, beta, maxReinit)
 		{

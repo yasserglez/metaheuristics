@@ -9,30 +9,30 @@ namespace Metaheuristics
 		public bool LocalSearchEnabled { get; protected set; }
 		public int TabuListLength { get; protected set; }
 		public int NeighborChecks { get; protected set; }
-		
+
 		public int[] BestSolution { get; protected set; }
 		public double BestFitness { get; protected set; }
-		
+
 		public DiscreteTS (int tabuListLength, int neighborChecks)
 		{
 			LocalSearchEnabled = false;
 			TabuListLength = tabuListLength;
 			NeighborChecks = neighborChecks;			
-			
+
 			BestSolution = null;
 			BestFitness = 0;
 		}
-		
+
 		// Generate the initial solution.
 		protected abstract int[] InitialSolution();
-		
+
 		// Evaluate a solution.
 		protected abstract double Fitness(int[] solution);
-		
+
 		// Get a new solution in the neighborhood of the given solution.
 		protected abstract int[] GetNeighbor(int[] solution);
 		
-		// Get the Tabu for two Solutions
+		// Get the tabu for two solutions.
 		protected abstract Tuple<int, int> GetTabu(int[] current, int[] neighbor);
 		
 		public void Run(int timeLimit)
@@ -50,19 +50,17 @@ namespace Metaheuristics
 			Tuple<int, int> nextTabu = null;
 			int[] neighbor = null;
 			double neighborFitness = 0;
-			
-			
+
 			LimitedQueue<Tuple<int,int>> tabuList = new LimitedQueue<Tuple<int, int>>(TabuListLength);
-			
+
 			currentSolution = InitialSolution();
 			initialSolution = new int[currentSolution.Length];
 			currentSolution.CopyTo(initialSolution, 0);
 			currentFitness = Fitness(currentSolution);
-			
+
 			BestFitness = currentFitness;
 			BestSolution = currentSolution;
-			
-			
+
 			while (Environment.TickCount - startTime < timeLimit - maxIterationTime) {
 				iterationStartTime = Environment.TickCount;
 				int count = 0;
@@ -74,7 +72,7 @@ namespace Metaheuristics
 				// Finding the next movement.
 				Tuple<int, int> tabu = new Tuple<int, int>(-1, -1);
 				Tuple<int, int> lastTabu = new Tuple<int, int>(-1, -1);
-				
+
 				while (count < NeighborChecks){
 					count ++;
 					neighbor = GetNeighbor(currentSolution);
@@ -103,7 +101,7 @@ namespace Metaheuristics
 					BestSolution = nextSolution;
 					BestFitness = nextFitness;
 				}
-				
+
 				tabuList.Enqueue(nextTabu);
 				currentSolution = nextSolution;
 				currentFitness = nextFitness;

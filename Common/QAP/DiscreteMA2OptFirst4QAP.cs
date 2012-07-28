@@ -8,7 +8,8 @@ namespace Metaheuristics
 		
 		protected int generatedSolutions;		
 		
-		public DiscreteMA2OptFirst4QAP (QAPInstance instance, int popSize, double mutationProbability,
+		public DiscreteMA2OptFirst4QAP (QAPInstance instance, int popSize, 
+		                                double mutationProbability,
 		                                int[] lowerBounds, int[] upperBounds)
 			: base(popSize, mutationProbability, lowerBounds, upperBounds)
 		{

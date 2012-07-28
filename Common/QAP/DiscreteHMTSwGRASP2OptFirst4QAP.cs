@@ -9,7 +9,9 @@ namespace Metaheuristics
 		public DiscreteGRASP GRASP { get; protected set; }
 		public int GRASPIterations { get; protected set; }
 		
-		public DiscreteHMTSwGRASP2OptFirst4QAP(QAPInstance instance, double rclThreshold, int graspIterations, int tabuListLength, int neighborChecks) 
+		public DiscreteHMTSwGRASP2OptFirst4QAP(QAPInstance instance, double rclThreshold, 
+		                                       int graspIterations, int tabuListLength, 
+		                                       int neighborChecks) 
 			: base(tabuListLength, neighborChecks)
 		{
 			GRASP = new DiscreteGRASP2OptFirst4QAP(instance, rclThreshold);

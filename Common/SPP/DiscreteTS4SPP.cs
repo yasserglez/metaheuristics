@@ -8,7 +8,8 @@ namespace Metaheuristics
 		public SPPInstance Instance { get; protected set; }
 		public  double RclTreshold { get; protected set; }
 		
-		public DiscreteTS4SPP (SPPInstance instance, double rclTreshold, int tabuListLength, int neighborChecks) 
+		public DiscreteTS4SPP (SPPInstance instance, double rclTreshold, 
+		                       int tabuListLength, int neighborChecks) 
 			: base(tabuListLength, neighborChecks)
 		{
 			Instance = instance;

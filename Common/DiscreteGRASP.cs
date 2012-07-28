@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Metaheuristics
 {
-	public enum RunType 
+	public enum RunType
 	{
 		IterationsLimit, TimeLimit
 	}
@@ -13,7 +13,7 @@ namespace Metaheuristics
 	{
 		public double RCLThreshold { get; protected set; }
 		public bool RepairEnabled { get; protected set; }
-		
+
 		public int[] BestSolution { get; protected set; }
 		public double BestFitness { get; protected set; }
 
@@ -55,10 +55,8 @@ namespace Metaheuristics
 			int maxIterationTime = 0;			
 			int[] newSolution = GRCSolution();
 			double newFitness = 0;
-			int iteration = 0;
-			
-			
-			
+			int iteration = 0;		
+
 			// Run a local search method for each individual in the population.
 			LocalSearch(newSolution);
 			

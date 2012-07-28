@@ -1,4 +1,3 @@
-
 using System;
 
 namespace Metaheuristics
@@ -9,7 +8,7 @@ namespace Metaheuristics
 		
 		protected int generatedSolutions;		
 		
-		public DiscreteTSNPS42SP (TwoSPInstance instance, int tabuListLength, int neighborChecks) 
+		public DiscreteTSNPS42SP(TwoSPInstance instance, int tabuListLength, int neighborChecks) 
 			: base(tabuListLength, neighborChecks)
 		{
 			Instance = instance;

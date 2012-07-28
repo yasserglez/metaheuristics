@@ -19,7 +19,8 @@ namespace Metaheuristics
 		public int[] BestSolution { get; protected set; }
 		public double BestFitness { get; protected set; }		
 		
-		public MaxMinAntSystem(int tourLength, double tau, int numAnts, double rho, double alpha, double beta, int maxReinit)
+		public MaxMinAntSystem(int tourLength, double tau, int numAnts, double rho, 
+		                       double alpha, double beta, int maxReinit)
 		{
 			this.tourLength = tourLength;
 			this.tauMax = tau;
@@ -93,7 +94,8 @@ namespace Metaheuristics
 					}
 				}
 				reinitCount = bestImproved ? 0 : (reinitCount + 1);
-				PheromoneUpdate(iter, pheromone, bestTour, bestIterTourFitness, bestIterTour, bestIterTourFitness);
+				PheromoneUpdate(iter, pheromone, bestTour, bestIterTourFitness, 
+				                bestIterTour, bestIterTourFitness);
 				
 				iterTime = Environment.TickCount - iterStartTime;
 				maxIterTime = (int) Math.Max(maxIterTime, iterTime);				
@@ -113,7 +115,9 @@ namespace Metaheuristics
 			}
 		}
 		
-		protected void PheromoneUpdate(int iter, double[,] pheromone, int[] bestTour, double bestTourFitness, int[] bestIterTour, double bestIterTourFitness)
+		protected void PheromoneUpdate(int iter, double[,] pheromone, int[] bestTour, 
+		                               double bestTourFitness, int[] bestIterTour, 
+		                               double bestIterTourFitness)
 		{
 			// Evaporate.
 			for (int i = 0; i < tourLength; i++) {

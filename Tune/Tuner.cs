@@ -19,7 +19,8 @@ namespace Tune
 		
 		public int TimeTolerance { get; protected set; }
 		 
-		public Tuner(ITunableMetaheuristic metaheuristic, string dirInstances, int runsPerProblem, int[] timeLimits, int timeTolerance)
+		public Tuner(ITunableMetaheuristic metaheuristic, string dirInstances, 
+		             int runsPerProblem, int[] timeLimits, int timeTolerance)
 		{
 			Metaheuristic = metaheuristic;
 			InputFiles = Directory.GetFiles(dirInstances, "*.in", SearchOption.AllDirectories);

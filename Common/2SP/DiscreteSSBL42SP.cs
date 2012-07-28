@@ -8,7 +8,8 @@ namespace Metaheuristics
 		
 		protected int generatedSolutions;		
 		
-		public DiscreteSSBL42SP(TwoSPInstance instance, int poolSize, int refSetSize, double explorationFactor)
+		public DiscreteSSBL42SP(TwoSPInstance instance, int poolSize, 
+		                        int refSetSize, double explorationFactor)
 			: base(poolSize, refSetSize, explorationFactor)
 		{
 			Instance = instance;		

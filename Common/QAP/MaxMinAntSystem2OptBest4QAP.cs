@@ -9,7 +9,8 @@ namespace Metaheuristics
 	{
 		public QAPInstance Instance { get; protected set; }
 		
-		public MaxMinAntSystem2OptBest4QAP(QAPInstance instance, int numberAnts, double rho, double alpha, double beta, int maxReinit)
+		public MaxMinAntSystem2OptBest4QAP(QAPInstance instance, int numberAnts, double rho, 
+		                                   double alpha, double beta, int maxReinit)
 			: base(instance.NumberFacilities, QAPUtils.Fitness(instance, QAPUtils.RandomSolution(instance)),
 			       numberAnts, rho, alpha, beta, maxReinit)
 		{

@@ -10,7 +10,7 @@ namespace Metaheuristics
 		public int[] UpperBounds { get; protected set; }
 		public bool RepairEnabled { get; protected set; }
 		public int RestartIterations { get; protected set; }
-		
+
 		public int[] BestSolution { get; protected set; }
 		public double BestFitness { get; protected set; }
 
@@ -24,21 +24,21 @@ namespace Metaheuristics
 			BestSolution = null;
 			BestFitness = 0;
 		}
-		
+
 		// Evaluate an individual of the population.
 		protected abstract double Fitness(int[] individual);
-		
+
 		// Generate the initial solution.
 		protected abstract int[] InitialSolution();
-		
+
 		// Perturbate the solution.
 		protected abstract void PerturbateSolution(int[] solution, int perturbation);
-		
+
 		// Repairing method to handle constraints.
 		protected virtual void Repair(int[] individual)
 		{
 		}
-		
+
 		// Local search method.
 		protected virtual void LocalSearch(int[] individual)
 		{

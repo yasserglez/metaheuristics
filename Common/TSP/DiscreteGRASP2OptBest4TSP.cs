@@ -1,13 +1,9 @@
-
 using System;
 
 namespace Metaheuristics
 {
-
-
 	public class DiscreteGRASP2OptBest4TSP : DiscreteGRASP
 	{
-		
 		public TSPInstance Instance { get; protected set; }
 		
 		public DiscreteGRASP2OptBest4TSP (TSPInstance instance, double rclThreshold)
@@ -30,8 +26,5 @@ namespace Metaheuristics
 		{
 			TSPUtils.LocalSearch2OptBest(Instance, solution);
 		}
-		
-		
-		
 	}
 }

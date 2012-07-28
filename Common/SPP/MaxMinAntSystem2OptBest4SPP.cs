@@ -9,7 +9,8 @@ namespace Metaheuristics
 	{
 		public SPPInstance Instance { get; protected set; }
 		
-		public MaxMinAntSystem2OptBest4SPP(SPPInstance instance, int numberAnts, double rho, double alpha, double beta, int maxReinit)
+		public MaxMinAntSystem2OptBest4SPP(SPPInstance instance, int numberAnts, double rho, 
+		                                   double alpha, double beta, int maxReinit)
 			: base(instance.NumberItems, SPPUtils.Fitness(instance, SPPUtils.RandomSolution(instance)),
 			       numberAnts, rho, alpha, beta, maxReinit)
 		{

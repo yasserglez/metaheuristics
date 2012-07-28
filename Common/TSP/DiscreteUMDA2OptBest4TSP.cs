@@ -8,7 +8,9 @@ namespace Metaheuristics
 	{
 		public TSPInstance Instance { get; protected set; }
 		
-		public DiscreteUMDA2OptBest4TSP(TSPInstance instance, int popSize, double truncFactor, int[] lowerBounds, int[] upperBounds)
+		public DiscreteUMDA2OptBest4TSP(TSPInstance instance, int popSize, 
+		                                double truncFactor, int[] lowerBounds, 
+		                                int[] upperBounds)
 			: base(popSize, truncFactor, lowerBounds, upperBounds)
 		{
 			Instance = instance;

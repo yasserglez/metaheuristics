@@ -8,7 +8,9 @@ namespace Metaheuristics
 		public DiscreteGRASP GRASP { get; protected set; }
 		public int GRASPIterations { get; protected set; }
 		
-		public DiscreteHMSAwGRASP2OptBest4SPP(SPPInstance instance, double rclThreshold, int graspIterations, int initialSolutions, int levelLength, double tempReduction)
+		public DiscreteHMSAwGRASP2OptBest4SPP(SPPInstance instance, double rclThreshold, 
+		                                      int graspIterations, int initialSolutions, 
+		                                      int levelLength, double tempReduction)
 			: base(initialSolutions, levelLength, tempReduction)
 		{
 			GRASP = new DiscreteGRASP2OptBest4SPP(instance, rclThreshold);

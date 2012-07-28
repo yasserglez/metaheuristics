@@ -107,12 +107,12 @@ namespace Metaheuristics
 					BestFitness = evaluation[0];
 				}
 				
-				// Mutation's points.
+				// Mutation points.
 				int mut1stPoint = Statistics.RandomDiscreteUniform(0, numVariables - 1);		
 				int mut2ndPoint = Statistics.RandomDiscreteUniform(0, numVariables - 1);		
 				 
 				for (int i = 0; i < PopulationSize; i++) {
-					// Select by four individual's Tournament.
+					// Selection (four individual tournament).
 					parent1 = Math.Min(Math.Min(Statistics.RandomDiscreteUniform(0,PopulationSize-1), 
 				 	                                       Statistics.RandomDiscreteUniform(0,PopulationSize-1)),
 				                                  Math.Min(Statistics.RandomDiscreteUniform(0,PopulationSize-1),
@@ -166,7 +166,7 @@ namespace Metaheuristics
 				}
 				Array.Sort(iterationEvaluation, iterationPopulation);
 				
-				// Merge the new population with the existing.
+				// Merge the new populations.
 				int iterationIndex = 0;
 				int existingIndex = 0;
 				for (int k = 0; k < PopulationSize; k++) {

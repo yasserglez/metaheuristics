@@ -11,7 +11,7 @@ namespace Tune
 			: base(metaheuristic, dirInstances, 6, new int[] { 2000, 10000 }, 5)
 		{
 		}
-		
+
 		protected override IEnumerable<double[]> EnumerateParameters()
 		{
             double[] timePenalties = new double[] { 250 };
@@ -22,7 +22,7 @@ namespace Tune
 			double[] numberAnts = new double[] { 2, 5, 10 };
 			double[] candidateLengths = new double[] { 15, 20, 25, 30, 35, 40 };
 			double[] candidateWeights = new double[] { 0.25, 0.5, 0.75, 0.875, 1 };
-			
+
 			foreach (double timePenalty in timePenalties) {
 				foreach (double rho in rhos) {
 					foreach (double alpha in alphas) {
@@ -31,7 +31,10 @@ namespace Tune
 								foreach (double maxReinit in maxReinits) {
 									foreach (double candidateLength in candidateLengths) {
 										foreach (double candidateWeight in candidateWeights) {
-											yield return new double[] { timePenalty, rho, alpha, beta, maxReinit, numberAnt, candidateLength, candidateWeight };
+											yield return new double[] { 
+												timePenalty, rho, alpha, beta, maxReinit, 
+												numberAnt, candidateLength, candidateWeight 
+											};
 										}
 									}
 								}

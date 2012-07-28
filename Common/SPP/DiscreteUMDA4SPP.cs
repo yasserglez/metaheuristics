@@ -8,7 +8,9 @@ namespace Metaheuristics
 	{
 		public SPPInstance Instance { get; protected set; }
 		
-		public DiscreteUMDA4SPP(SPPInstance instance, int popSize, double truncFactor, int[] lowerBounds, int[] upperBounds)
+		public DiscreteUMDA4SPP(SPPInstance instance, int popSize, 
+		                        double truncFactor, int[] lowerBounds, 
+		                        int[] upperBounds)
 			: base(popSize, truncFactor, lowerBounds, upperBounds)
 		{
 			Instance = instance;

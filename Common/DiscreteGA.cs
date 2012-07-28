@@ -100,13 +100,13 @@ namespace Metaheuristics
 					BestFitness = evaluation[0];
 				}
 				
-				// Crossover's and Mutation's points.
+				// Crossover and mutation points.
 				int crossPoint = Statistics.RandomDiscreteUniform(0, numVariables - 1);
 				int mut1stPoint = Statistics.RandomDiscreteUniform(0, numVariables - 1);		
 				int mut2ndPoint = Statistics.RandomDiscreteUniform(0, numVariables - 1);		
 				 
 				for (int i = 0; i < PopulationSize/2; i++) {
-					// Select by four individual's Tournament.
+					// Selection (four individuals tournament).
 					parent1 = population[Math.Min(Math.Min(Statistics.RandomDiscreteUniform(0,PopulationSize-1), 
 				 	                                       Statistics.RandomDiscreteUniform(0,PopulationSize-1)),
 				                                  Math.Min(Statistics.RandomDiscreteUniform(0,PopulationSize-1),
@@ -146,7 +146,7 @@ namespace Metaheuristics
 						Repair(iterationPopulation[k]);
 					}
 				}
-				
+
 				// Run a local search method for each individual in the population.
 				if (LocalSearchEnabled && 
 				    Environment.TickCount - startTime < timeLimit) {
@@ -154,14 +154,14 @@ namespace Metaheuristics
 						LocalSearch(iterationPopulation[k]);
 					}
 				}				
-				
+
 				// Evaluate the population.
 				for (int k = 0; k < PopulationSize; k++) {
 					iterationEvaluation[k] = Fitness(iterationPopulation[k]);
 				}
 				Array.Sort(iterationEvaluation, iterationPopulation);
 				
-				// Merge the new population with the existing.
+				// Merge the new populations.
 				int iterationIndex = 0;
 				int existingIndex = 0;
 				for (int k = 0; k < PopulationSize; k++) {
