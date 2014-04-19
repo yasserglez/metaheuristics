@@ -1,5 +1,5 @@
-Implementation of a few metaheuristics in C#
-============================================
+Metaheuristics in C#
+====================
 
 This project was created by [Ariel Hernández Amador][gnuaha7] and [Yasser González Fernández][ygf] in fulfillment of the final assignment of an undergraduate course on metaheuristics for Computer Science students taught at the University of Havana, Cuba. That is why the git comments were written in Spanish.
 
