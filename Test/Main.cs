@@ -133,7 +133,7 @@ namespace Test
 				}
 
 				Console.Write("Running " + algorithm.Name + ": ");
-				algorithm.Start(fileInput, fileOutput, 10000);
+				algorithm.Start(fileInput, fileOutput, 5000);
 				Console.WriteLine("done.");
 			}
 		}
