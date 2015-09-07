@@ -3,4 +3,4 @@ solution: Metaheuristics.sln
 script:
   - xbuild /p:Configuration=Release Metaheuristics.sln
   - cd Test/bin/Release
-  - ./Test.exe
+  - mono Test.exe
