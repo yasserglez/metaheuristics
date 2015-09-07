@@ -6,7 +6,6 @@ Metaheuristics in C#
 This project was created by [Ariel Hernández Amador][gnuaha7] and
 [Yasser González Fernández][ygf] as the final assignment of a
 course on metaheuristics taught at the University of Havana, Cuba.
-
 The assignment consisted of a competition in which each team had to
 implement a group of metaheuristics to solve four well-known discrete
 optimization problems. All the algorithms were run in a group of
@@ -16,7 +15,7 @@ implemented by each team and the results of the algorithms were
 considered to rank the teams. So, each team had to implement a wide
 range of metaheuristics and obtain good results. We finished first!
 
-The metaheuristics are:
+The implemented metaheuristics are:
 
 * Genetic Algorithm (GA),
 * Greedy Randomized Adaptive Search Procedure (GRASP),
