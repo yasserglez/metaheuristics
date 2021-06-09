@@ -1,6 +1,0 @@
-language: csharp
-solution: Metaheuristics.sln
-script:
-  - xbuild /p:Configuration=Release Metaheuristics.sln
-  - cd Test/bin/Release
-  - mono Test.exe

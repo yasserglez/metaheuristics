@@ -1,8 +1,6 @@
 Metaheuristics in C#
 --------------------
 
-[![Build Status](https://travis-ci.org/yasserglez/metaheuristics.svg?branch=master)](https://travis-ci.org/yasserglez/metaheuristics)
-
 This project was created by [Ariel Hernández Amador][gnuaha7] and
 [Yasser González Fernández][ygf] as the final assignment of a
 course on metaheuristics taught at the University of Havana, Cuba.
